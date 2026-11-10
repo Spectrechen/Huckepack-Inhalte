@@ -1,0 +1,791 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/huckepack/Huckepack-Inhalte/docs/schema/pack.schema.json",
+  "title": "Huckepack pack.json",
+  "description": "Level pack (adds levels to places of the Huckepack map) or world pack (own map, places, paths, courses). Mirrors the validation of the Huckepack app; rules JSON Schema cannot express (unique pair halves, level references, unlocks) are checked by tools/check_format.py and huckepack-lint. See docs/FORMAT.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "title",
+    "author",
+    "licence",
+    "levels"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional editor hint. The app ignores it."
+    },
+    "id": {
+      "$ref": "#/$defs/packId"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Raise on every change."
+    },
+    "title": {
+      "$ref": "#/$defs/localizedText"
+    },
+    "description": {
+      "$ref": "#/$defs/localizedText"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "licence": {
+      "type": "string",
+      "minLength": 1,
+      "description": "For packs in this repository: CC-BY-4.0."
+    },
+    "courses": {
+      "type": "array",
+      "description": "Own courses (subjects). Needed for every level subject that is not math, german, science or english.",
+      "items": {
+        "$ref": "#/$defs/course"
+      }
+    },
+    "skills": {
+      "type": "object",
+      "description": "Names of the skills the pack introduces, shown in the parent analysis.",
+      "propertyNames": {
+        "$ref": "#/$defs/skillId"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/localizedText"
+      }
+    },
+    "world": {
+      "$ref": "#/$defs/world"
+    },
+    "levels": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
+      "items": {
+        "$ref": "#/$defs/level"
+      }
+    }
+  },
+  "$defs": {
+    "packId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+(\\.[a-z0-9-]+){2,}$",
+      "description": "At least three parts separated by dots: lowercase letters, digits, hyphens. Example: de.familie-muster.kurse"
+    },
+    "skillId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+(\\.[a-z0-9-]+)+$",
+      "description": "At least two dot-separated parts of lowercase letters, digits, hyphens. The first part should be the subject or course id."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]{1,40}$"
+    },
+    "localizedText": {
+      "type": "object",
+      "description": "Texts by language code. de is required by this repository; en is welcome.",
+      "required": [
+        "de"
+      ],
+      "properties": {
+        "de": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "localizedTextWithX": {
+      "type": "object",
+      "description": "Text of a relay's second step: every language must contain {x}.",
+      "required": [
+        "de"
+      ],
+      "properties": {
+        "de": {
+          "type": "string",
+          "pattern": "\\{x\\}"
+        },
+        "en": {
+          "type": "string",
+          "pattern": "\\{x\\}"
+        }
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "\\{x\\}"
+      }
+    },
+    "course": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug",
+          "not": {
+            "enum": [
+              "math",
+              "german",
+              "science",
+              "english"
+            ]
+          }
+        },
+        "title": {
+          "$ref": "#/$defs/localizedText"
+        }
+      }
+    },
+    "visual": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "clock"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "clock": {
+              "$ref": "#/$defs/time"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "digitalClock"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "digitalClock": {
+              "$ref": "#/$defs/time"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "money"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "money": {
+              "type": "object",
+              "required": [
+                "cents"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "cents": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 12,
+                  "items": {
+                    "enum": [
+                      1,
+                      2,
+                      5,
+                      10,
+                      20,
+                      50,
+                      100,
+                      200,
+                      500,
+                      1000,
+                      2000,
+                      5000
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "time": {
+      "type": "object",
+      "required": [
+        "hour",
+        "minute"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "hour": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 23
+        },
+        "minute": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 59
+        }
+      }
+    },
+    "answerFormat": {
+      "enum": [
+        "integer",
+        "euroCents",
+        "time",
+        "minutes"
+      ]
+    },
+    "answerRange": {
+      "description": "Numbers the answer pad can produce: integer 0..99999, euroCents 0..999999, time 0..1439 (minutes since midnight), minutes 0..9999.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 999999
+    },
+    "taskId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique within the level."
+    },
+    "taskSkills": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/skillId"
+      }
+    },
+    "taskDifficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "default": 2,
+      "description": "1 easy, 2 normal, 3 hard."
+    },
+    "task": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/splitInfo"
+        },
+        {
+          "$ref": "#/$defs/relay"
+        },
+        {
+          "$ref": "#/$defs/matchPairs"
+        },
+        {
+          "$ref": "#/$defs/bothAgree"
+        }
+      ]
+    },
+    "splitInfo": {
+      "type": "object",
+      "required": [
+        "id",
+        "skills",
+        "type",
+        "clue",
+        "prompt",
+        "answer"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/taskId"
+        },
+        "skills": {
+          "$ref": "#/$defs/taskSkills"
+        },
+        "difficulty": {
+          "$ref": "#/$defs/taskDifficulty"
+        },
+        "type": {
+          "const": "splitInfo"
+        },
+        "clue": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "clueVisual": {
+          "$ref": "#/$defs/visual"
+        },
+        "prompt": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "answer": {
+          "$ref": "#/$defs/answerRange"
+        },
+        "answerFormat": {
+          "$ref": "#/$defs/answerFormat"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "answerFormat"
+            ],
+            "properties": {
+              "answerFormat": {
+                "const": "time"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "answer": {
+                "maximum": 1439
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "answerFormat"
+            ],
+            "properties": {
+              "answerFormat": {
+                "const": "minutes"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "answer": {
+                "maximum": 9999
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "anyOf": [
+              {
+                "not": {
+                  "required": [
+                    "answerFormat"
+                  ]
+                }
+              },
+              {
+                "properties": {
+                  "answerFormat": {
+                    "const": "integer"
+                  }
+                }
+              }
+            ]
+          },
+          "then": {
+            "properties": {
+              "answer": {
+                "maximum": 99999
+              }
+            }
+          }
+        }
+      ]
+    },
+    "operation": {
+      "type": "object",
+      "required": [
+        "op",
+        "operand"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "enum": [
+            "add",
+            "subtract",
+            "multiply",
+            "divide"
+          ]
+        },
+        "operand": {
+          "type": "integer"
+        }
+      },
+      "if": {
+        "properties": {
+          "op": {
+            "const": "divide"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "operand": {
+            "not": {
+              "const": 0
+            }
+          }
+        }
+      }
+    },
+    "relay": {
+      "type": "object",
+      "required": [
+        "id",
+        "skills",
+        "type",
+        "first",
+        "firstAnswer",
+        "operation",
+        "second"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/taskId"
+        },
+        "skills": {
+          "$ref": "#/$defs/taskSkills"
+        },
+        "difficulty": {
+          "$ref": "#/$defs/taskDifficulty"
+        },
+        "type": {
+          "const": "relay"
+        },
+        "first": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "firstAnswer": {
+          "$ref": "#/$defs/answerRange"
+        },
+        "operation": {
+          "$ref": "#/$defs/operation"
+        },
+        "second": {
+          "$ref": "#/$defs/localizedTextWithX"
+        },
+        "answerFormat": {
+          "$ref": "#/$defs/answerFormat"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "answerFormat"
+            ],
+            "properties": {
+              "answerFormat": {
+                "const": "time"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "firstAnswer": {
+                "maximum": 1439
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "answerFormat"
+            ],
+            "properties": {
+              "answerFormat": {
+                "const": "minutes"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "firstAnswer": {
+                "maximum": 9999
+              }
+            }
+          }
+        }
+      ]
+    },
+    "matchPairs": {
+      "type": "object",
+      "required": [
+        "id",
+        "skills",
+        "type",
+        "prompt",
+        "pairs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/taskId"
+        },
+        "skills": {
+          "$ref": "#/$defs/taskSkills"
+        },
+        "difficulty": {
+          "$ref": "#/$defs/taskDifficulty"
+        },
+        "type": {
+          "const": "matchPairs"
+        },
+        "prompt": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "pairs": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": [
+              "left",
+              "right"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "left": {
+                "$ref": "#/$defs/localizedText"
+              },
+              "right": {
+                "$ref": "#/$defs/localizedText"
+              },
+              "leftVisual": {
+                "$ref": "#/$defs/visual"
+              },
+              "rightVisual": {
+                "$ref": "#/$defs/visual"
+              }
+            }
+          }
+        }
+      }
+    },
+    "bothAgree": {
+      "type": "object",
+      "required": [
+        "id",
+        "skills",
+        "type",
+        "question",
+        "options",
+        "correct"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/taskId"
+        },
+        "skills": {
+          "$ref": "#/$defs/taskSkills"
+        },
+        "difficulty": {
+          "$ref": "#/$defs/taskDifficulty"
+        },
+        "type": {
+          "const": "bothAgree"
+        },
+        "question": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "questionVisual": {
+          "$ref": "#/$defs/visual"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "$ref": "#/$defs/localizedText"
+              },
+              "visual": {
+                "$ref": "#/$defs/visual"
+              }
+            }
+          }
+        },
+        "correct": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The id of the correct option."
+        }
+      }
+    },
+    "level": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "subject",
+        "grade",
+        "tasks"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+(\\.[a-z0-9-]+){2,}/.+$",
+          "description": "<pack id>/<name>"
+        },
+        "schemaVersion": {
+          "const": 1
+        },
+        "title": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "subject": {
+          "$ref": "#/$defs/slug",
+          "description": "math, german, science, english or the id of a course of this pack."
+        },
+        "grade": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 13
+        },
+        "place": {
+          "type": "string",
+          "description": "Makes this level a further level (Band 2, 3 ...) at that place. Level packs: a place of the Huckepack map. World packs: a place of the pack's world that has a level of its own."
+        },
+        "tasks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/task"
+          }
+        }
+      }
+    },
+    "world": {
+      "type": "object",
+      "required": [
+        "image",
+        "start",
+        "nodes",
+        "paths"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "image": {
+          "type": "object",
+          "required": [
+            "file",
+            "width",
+            "height"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "file": {
+              "type": "string",
+              "pattern": "^[^/.][^/]*\\.([jJ][pP][eE]?[gG]|[pP][nN][gG])$",
+              "description": "File name next to pack.json, .jpg/.jpeg/.png, at most 8 MB."
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 512,
+              "maximum": 8192
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 512,
+              "maximum": 8192
+            }
+          }
+        },
+        "start": {
+          "type": "string",
+          "description": "Id of the node where both avatars begin."
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 60,
+          "items": {
+            "$ref": "#/$defs/node"
+          }
+        },
+        "paths": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "id",
+        "x",
+        "y"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "level": {
+          "type": "string",
+          "description": "Id of a level of this pack that has no `place`."
+        },
+        "miniGame": {
+          "enum": [
+            "ticTacToe",
+            "dotsAndBoxes"
+          ]
+        },
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "requires": {
+          "type": "array",
+          "description": "Ids of levels (without `place`) that need at least one star before this place opens. Write [] if none.",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "not": {
+        "required": [
+          "level",
+          "miniGame"
+        ]
+      }
+    }
+  }
+}

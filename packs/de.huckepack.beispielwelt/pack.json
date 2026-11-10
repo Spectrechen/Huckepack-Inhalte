@@ -1,0 +1,924 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "de.huckepack.beispielwelt",
+  "version": 1,
+  "title": {
+    "de": "Beispielwelt",
+    "en": "Example world"
+  },
+  "description": {
+    "de": "Beispielwelt für eigene Welten (ab 8 Jahren)",
+    "en": "Example world for building your own worlds (age 8 and up)"
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "kurs-a",
+      "title": {
+        "de": "Kurs A: Rechnen",
+        "en": "Course A: Maths"
+      }
+    },
+    {
+      "id": "kurs-b",
+      "title": {
+        "de": "Kurs B: Lesen",
+        "en": "Course B: Reading"
+      }
+    },
+    {
+      "id": "kurs-c",
+      "title": {
+        "de": "Kurs C: Natur",
+        "en": "Course C: Nature"
+      }
+    }
+  ],
+  "skills": {
+    "kurs-a.rechnen.malnehmen": {
+      "de": "Malnehmen"
+    },
+    "kurs-a.rechnen.teilen": {
+      "de": "Teilen"
+    },
+    "kurs-a.rechnen.addieren-subtrahieren": {
+      "de": "Addieren und Subtrahieren"
+    },
+    "kurs-a.geld.zaehlen": {
+      "de": "Geld zählen"
+    },
+    "kurs-a.geld.rechnen": {
+      "de": "Mit Geld rechnen"
+    },
+    "kurs-a.uhrzeit.lesen": {
+      "de": "Uhrzeit lesen"
+    },
+    "kurs-a.zeitspannen.rechnen": {
+      "de": "Zeitspannen berechnen"
+    },
+    "kurs-b.lesen.texte-verstehen": {
+      "de": "Kurze Texte verstehen"
+    },
+    "kurs-b.sprache.wortarten": {
+      "de": "Wortarten erkennen"
+    },
+    "kurs-b.sprache.gegenteile": {
+      "de": "Gegenteile finden"
+    },
+    "kurs-b.sprache.silben": {
+      "de": "Silben zählen"
+    },
+    "kurs-b.sprache.gross-klein": {
+      "de": "Groß- und Kleinschreibung"
+    },
+    "kurs-c.natur.tiere": {
+      "de": "Tiere am Wasser"
+    },
+    "kurs-c.natur.wasser": {
+      "de": "Wasser und Temperatur"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "lager",
+    "nodes": [
+      {
+        "id": "lager",
+        "title": {
+          "de": "Lager"
+        },
+        "x": 0.2,
+        "y": 0.8,
+        "requires": []
+      },
+      {
+        "id": "baum",
+        "title": {
+          "de": "Baumhaus"
+        },
+        "level": "de.huckepack.beispielwelt/baumhaus",
+        "x": 0.42,
+        "y": 0.58,
+        "requires": []
+      },
+      {
+        "id": "see",
+        "title": {
+          "de": "See"
+        },
+        "level": "de.huckepack.beispielwelt/see",
+        "x": 0.7,
+        "y": 0.72,
+        "requires": []
+      },
+      {
+        "id": "berg",
+        "title": {
+          "de": "Berg"
+        },
+        "level": "de.huckepack.beispielwelt/berg",
+        "x": 0.62,
+        "y": 0.3,
+        "requires": [
+          "de.huckepack.beispielwelt/baumhaus"
+        ]
+      },
+      {
+        "id": "hoehle",
+        "title": {
+          "de": "Höhle"
+        },
+        "level": "de.huckepack.beispielwelt/hoehle",
+        "x": 0.86,
+        "y": 0.46,
+        "requires": [
+          "de.huckepack.beispielwelt/berg"
+        ]
+      },
+      {
+        "id": "stein",
+        "title": {
+          "de": "Steinkreis"
+        },
+        "miniGame": "ticTacToe",
+        "x": 0.3,
+        "y": 0.34,
+        "requires": []
+      }
+    ],
+    "paths": [
+      [
+        "lager",
+        "baum"
+      ],
+      [
+        "baum",
+        "see"
+      ],
+      [
+        "baum",
+        "berg"
+      ],
+      [
+        "berg",
+        "hoehle"
+      ],
+      [
+        "see",
+        "hoehle"
+      ],
+      [
+        "lager",
+        "stein"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "de.huckepack.beispielwelt/baumhaus",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Das Baumhaus"
+      },
+      "subject": "kurs-a",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "bh-1",
+          "skills": [
+            "kurs-a.rechnen.malnehmen"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "de": "Im Baumhaus liegen 4 Stapel Bretter. In jedem Stapel sind 12 Bretter."
+          },
+          "prompt": {
+            "de": "Wie viele Bretter liegen insgesamt im Baumhaus?"
+          },
+          "answer": 48
+        },
+        {
+          "id": "bh-2",
+          "skills": [
+            "kurs-a.rechnen.addieren-subtrahieren"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Rechne 36 + 28."
+          },
+          "firstAnswer": 64,
+          "operation": {
+            "op": "subtract",
+            "operand": 19
+          },
+          "second": {
+            "de": "Rechne {x} − 19."
+          }
+        },
+        {
+          "id": "bh-3",
+          "skills": [
+            "kurs-a.rechnen.malnehmen"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Aufgabe passt zu welchem Ergebnis?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "6 · 7"
+              },
+              "right": {
+                "de": "42"
+              }
+            },
+            {
+              "left": {
+                "de": "8 · 9"
+              },
+              "right": {
+                "de": "72"
+              }
+            },
+            {
+              "left": {
+                "de": "12 · 5"
+              },
+              "right": {
+                "de": "60"
+              }
+            },
+            {
+              "left": {
+                "de": "25 · 4"
+              },
+              "right": {
+                "de": "100"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bh-4",
+          "skills": [
+            "kurs-a.rechnen.malnehmen"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Aufgabe hat das Ergebnis 240?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "30 · 8"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "24 · 8"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "40 · 7"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "bh-5",
+          "skills": [
+            "kurs-a.geld.zaehlen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Du siehst das Geld aus der Spardose. Sag deinem Partner, welche Münzen und Scheine es sind."
+          },
+          "clueVisual": {
+            "money": {
+              "cents": [
+                200,
+                100,
+                50,
+                20,
+                5
+              ]
+            }
+          },
+          "prompt": {
+            "de": "Wie viel Geld ist in der Spardose? Tippt den Betrag."
+          },
+          "answer": 375,
+          "answerFormat": "euroCents"
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.beispielwelt/baumhaus-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Das Baumhaus: Uhrzeiten"
+      },
+      "subject": "kurs-a",
+      "grade": 4,
+      "place": "baum",
+      "tasks": [
+        {
+          "id": "bu-1",
+          "skills": [
+            "kurs-a.uhrzeit.lesen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Uhr am Baumhaus zeigt, wann eure Freunde kommen (nachmittags). Sie bleiben 50 Minuten."
+          },
+          "clueVisual": {
+            "clock": {
+              "hour": 15,
+              "minute": 45
+            }
+          },
+          "prompt": {
+            "de": "Wann gehen die Freunde wieder? Tippt die Uhrzeit."
+          },
+          "answer": 995,
+          "answerFormat": "time"
+        },
+        {
+          "id": "bu-2",
+          "skills": [
+            "kurs-a.zeitspannen.rechnen"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Die Bastelgruppe beginnt um 14:20 Uhr und dauert 1 Stunde und 10 Minuten. Wann ist sie zu Ende?"
+          },
+          "firstAnswer": 930,
+          "operation": {
+            "op": "add",
+            "operand": 45
+          },
+          "second": {
+            "de": "Die Bastelgruppe ist um {x} zu Ende. Danach braucht ihr 45 Minuten zum Aufräumen. Wann seid ihr fertig?"
+          },
+          "answerFormat": "time"
+        },
+        {
+          "id": "bu-3",
+          "skills": [
+            "kurs-a.uhrzeit.lesen"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Uhrzeit in Worten passt zu welcher Uhrzeit in Zahlen?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Viertel nach drei"
+              },
+              "right": {
+                "de": "3:15 Uhr"
+              }
+            },
+            {
+              "left": {
+                "de": "halb sieben"
+              },
+              "right": {
+                "de": "6:30 Uhr"
+              }
+            },
+            {
+              "left": {
+                "de": "Viertel vor acht"
+              },
+              "right": {
+                "de": "7:45 Uhr"
+              }
+            },
+            {
+              "left": {
+                "de": "zehn nach zwei"
+              },
+              "right": {
+                "de": "2:10 Uhr"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bu-4",
+          "skills": [
+            "kurs-a.uhrzeit.lesen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Digitaluhr zeigt Viertel vor neun am Morgen?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Uhr A"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 8,
+                  "minute": 45
+                }
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Uhr B"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 9,
+                  "minute": 15
+                }
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Uhr C"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 8,
+                  "minute": 15
+                }
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "bu-5",
+          "skills": [
+            "kurs-a.zeitspannen.rechnen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Das Eichhörnchen im Baumhaus schläft von 21:00 Uhr bis 6:30 Uhr."
+          },
+          "prompt": {
+            "de": "Wie lange schläft das Eichhörnchen? Tippt die Dauer."
+          },
+          "answer": 570,
+          "answerFormat": "minutes"
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.beispielwelt/see",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Der See"
+      },
+      "subject": "kurs-c",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "se-1",
+          "skills": [
+            "kurs-c.natur.tiere"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "de": "Auf dem See schwimmen 3 Entenfamilien. Jede Familie hat 1 Mutter und 5 Küken."
+          },
+          "prompt": {
+            "de": "Wie viele Enten schwimmen auf dem See?"
+          },
+          "answer": 18
+        },
+        {
+          "id": "se-2",
+          "skills": [
+            "kurs-c.natur.tiere"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welches Tier passt zu welcher Eigenschaft?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Libelle"
+              },
+              "right": {
+                "de": "hat 6 Beine"
+              }
+            },
+            {
+              "left": {
+                "de": "Spinne"
+              },
+              "right": {
+                "de": "hat 8 Beine"
+              }
+            },
+            {
+              "left": {
+                "de": "Frosch"
+              },
+              "right": {
+                "de": "lebt an Land und im Wasser"
+              }
+            },
+            {
+              "left": {
+                "de": "Fisch"
+              },
+              "right": {
+                "de": "atmet mit Kiemen"
+              }
+            }
+          ]
+        },
+        {
+          "id": "se-3",
+          "skills": [
+            "kurs-c.natur.wasser"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Bei welcher Temperatur gefriert Wasser?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "0 °C"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "20 °C"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "100 °C"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "se-4",
+          "skills": [
+            "kurs-c.natur.tiere"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Im Teich schwimmen 24 Kaulquappen. 6 davon frisst ein Fisch. Wie viele bleiben übrig?"
+          },
+          "firstAnswer": 18,
+          "operation": {
+            "op": "divide",
+            "operand": 3
+          },
+          "second": {
+            "de": "Es bleiben {x} Kaulquappen. Sie verteilen sich gleichmäßig auf 3 Tümpel. Wie viele sind in einem Tümpel?"
+          }
+        },
+        {
+          "id": "se-5",
+          "skills": [
+            "kurs-c.natur.tiere"
+          ],
+          "difficulty": 3,
+          "type": "splitInfo",
+          "clue": {
+            "de": "Eine Libelle hat 6 Beine. Am Ufer sitzen 7 Libellen."
+          },
+          "prompt": {
+            "de": "Wie viele Libellenbeine sind das zusammen?"
+          },
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.beispielwelt/berg",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Der Berg"
+      },
+      "subject": "kurs-b",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "be-1",
+          "skills": [
+            "kurs-b.lesen.texte-verstehen"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "de": "Der Wanderweg zum Gipfel ist 4 Kilometer lang. Es gibt drei Rastplätze: einen mit Wasser, einen mit einer Bank und einen mit Aussicht."
+          },
+          "prompt": {
+            "de": "Wie lang ist der Wanderweg zum Gipfel? Tippt die Zahl der Kilometer."
+          },
+          "answer": 4
+        },
+        {
+          "id": "be-2",
+          "skills": [
+            "kurs-b.sprache.wortarten"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Die Gämse klettert flink über die Felsen. Welches Wort ist ein Verb?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Gämse"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "klettert"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "flink"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Felsen"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "be-3",
+          "skills": [
+            "kurs-b.sprache.gegenteile"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Wörter sind Gegenteile?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "steil"
+              },
+              "right": {
+                "de": "flach"
+              }
+            },
+            {
+              "left": {
+                "de": "oben"
+              },
+              "right": {
+                "de": "unten"
+              }
+            },
+            {
+              "left": {
+                "de": "laut"
+              },
+              "right": {
+                "de": "leise"
+              }
+            },
+            {
+              "left": {
+                "de": "mutig"
+              },
+              "right": {
+                "de": "ängstlich"
+              }
+            }
+          ]
+        },
+        {
+          "id": "be-4",
+          "skills": [
+            "kurs-b.sprache.silben"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Klatscht die Silben mit. Wie viele Silben hat das Wort „Wanderschuh“?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Das Wort hat {x} Silben. Ihr sagt es zweimal hintereinander. Wie viele Silben sprecht ihr insgesamt?"
+          }
+        },
+        {
+          "id": "be-5",
+          "skills": [
+            "kurs-b.sprache.gross-klein"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz ist richtig geschrieben?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Am Gipfel sehen wir ein Kreuz."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "am Gipfel sehen wir ein kreuz."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Am gipfel sehen wir ein Kreuz."
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.beispielwelt/hoehle",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Die Höhle"
+      },
+      "subject": "kurs-a",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "ho-1",
+          "skills": [
+            "kurs-a.rechnen.malnehmen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "In der Höhle stehen 3 Kisten. In jeder Kiste liegen 125 Goldstücke."
+          },
+          "prompt": {
+            "de": "Wie viele Goldstücke sind das zusammen?"
+          },
+          "answer": 375
+        },
+        {
+          "id": "ho-2",
+          "skills": [
+            "kurs-a.geld.rechnen"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Eine Taschenlampe kostet 3,50 €. Ihr kauft 2 Stück. Was kosten sie zusammen?"
+          },
+          "firstAnswer": 700,
+          "operation": {
+            "op": "subtract",
+            "operand": 150
+          },
+          "second": {
+            "de": "Die Rechnung ist {x}. Ihr bekommt 1,50 € Rabatt. Wie viel zahlt ihr am Ende?"
+          },
+          "answerFormat": "euroCents"
+        },
+        {
+          "id": "ho-3",
+          "skills": [
+            "kurs-a.rechnen.teilen"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Aufgabe passt zu welchem Ergebnis?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "84 : 7"
+              },
+              "right": {
+                "de": "12"
+              }
+            },
+            {
+              "left": {
+                "de": "90 : 6"
+              },
+              "right": {
+                "de": "15"
+              }
+            },
+            {
+              "left": {
+                "de": "72 : 9"
+              },
+              "right": {
+                "de": "8"
+              }
+            },
+            {
+              "left": {
+                "de": "100 : 4"
+              },
+              "right": {
+                "de": "25"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ho-4",
+          "skills": [
+            "kurs-a.geld.zaehlen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wie viel Geld ist das?"
+          },
+          "questionVisual": {
+            "money": {
+              "cents": [
+                500,
+                200,
+                50,
+                10
+              ]
+            }
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "7,60 €"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "6,70 €"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "7,06 €"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "ho-5",
+          "skills": [
+            "kurs-a.rechnen.addieren-subtrahieren"
+          ],
+          "difficulty": 3,
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Höhle ist 300 Meter tief. Ihr seid schon 85 Meter hinabgestiegen."
+          },
+          "prompt": {
+            "de": "Wie viele Meter müsst ihr noch bis zum Ende der Höhle?"
+          },
+          "answer": 215
+        }
+      ]
+    }
+  ]
+}
