@@ -20,16 +20,25 @@ selbst ist noch nicht öffentlich; das Format hier ist aber festgelegt und dokum
 | Anleitung | [docs/FORMAT.md](docs/FORMAT.md) | [docs/WELT-ANLEGEN.md](docs/WELT-ANLEGEN.md) |
 
 ## Für Eltern: ein Paket installieren
-1. Lade den Ordner eines Pakets aus `packs/` auf das **Eltern-Gerät** (z. B. in „Dateien“). Bei einem Level-Paket genügt die
-   Datei `pack.json`; bei einem Welt-Paket braucht ihr den ganzen Ordner mit `pack.json` und dem Kartenbild.
-2. In Huckepack auf dem Eltern-Gerät: **Eltern-Bereich › Fächer › „Paket hinzufügen …“**. Bei einem Welt-Paket wählt ihr den Ordner
-   des Pakets (mit `pack.json` und Kartenbild). **Schaltet das Paket ein.**
-3. Sobald die Geräte der Kinder sich mit dem Eltern-Gerät verbinden, bekommen sie das Paket.
-   Beide Kinder brauchen dieselben Pakete.
-4. Bei einem Welt-Paket wählen die Kinder die Welt **gemeinsam auf ihrem Startbildschirm** aus.
+**Aus dem Katalog (der übliche Weg):** In Huckepack auf dem Eltern-Gerät **Eltern-Bereich › Fächer › „Pakete aus dem
+Katalog …“** öffnen und bei einem Paket **„Laden und einschalten“** tippen. Der Katalog zeigt alle Pakete aus diesem
+Repository; ihr müsst nichts herunterladen oder in „Dateien“ ablegen.
 
-Huckepack lädt nichts selbst aus dem Internet; die Kinder-Geräte bekommen Pakete nur vom Eltern-Gerät, geprüft über
-die signierten Eltern-Einstellungen.
+**Aus einer Datei (für eigene Welten, die ihr nicht veröffentlichen wollt):** Den Paket-Ordner auf das Eltern-Gerät
+legen (z. B. in „Dateien“), dann **„Eigenes Paket aus einer Datei …“**. Bei einem Welt-Paket den ganzen Ordner mit
+`pack.json` und Kartenbild wählen, bei einem Level-Paket genügt `pack.json`. Danach das Paket einschalten.
+
+Danach:
+1. Sobald die Geräte der Kinder sich mit dem Eltern-Gerät verbinden, bekommen sie das Paket.
+   Beide Kinder brauchen dieselben Pakete.
+2. Bei einem Welt-Paket wählen die Kinder die Welt **gemeinsam auf ihrem Startbildschirm** aus.
+
+Nur das Eltern-Gerät geht für den Katalog ins Internet: Es lädt `index.json` und die Paket-Dateien und prüft jede Datei
+über ihre SHA-256-Prüfsumme. Über eure Familie oder die Kinder wird nichts gesendet. Die Kinder-Geräte bekommen Pakete
+nur vom Eltern-Gerät, geprüft über die signierten Eltern-Einstellungen.
+
+`index.json` (der Katalog) wird nach jeder Änderung auf `main` automatisch neu erzeugt (`tools/make_index.py`);
+bitte nicht von Hand bearbeiten. Ein neues Paket erscheint im Katalog, sobald es in `main` aufgenommen ist.
 
 ## Pakete
 | Paket | Art | Inhalt | Fach |
