@@ -1,0 +1,149 @@
+{
+  "id": "de.huckepack.kopfrechnen",
+  "version": 1,
+  "title": {
+    "de": "Kopfrechnen im Zahlenraum 1000",
+    "en": "Mental maths up to 1000"
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "skills": {
+    "math.mental.add-hundreds": {
+      "de": "Kopfrechnen: Hunderter addieren",
+      "en": "Mental maths: adding hundreds"
+    },
+    "math.mental.subtract-tens": {
+      "de": "Kopfrechnen: Zehner abziehen",
+      "en": "Mental maths: subtracting tens"
+    }
+  },
+  "levels": [
+    {
+      "id": "de.huckepack.kopfrechnen/hunderter-und-zehner",
+      "schemaVersion": 1,
+      "place": "numbers-hill",
+      "title": {
+        "de": "Hunderter und Zehner",
+        "en": "Hundreds and tens"
+      },
+      "subject": "math",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "kr-1",
+          "skills": [
+            "math.mental.add-hundreds"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Im Korb liegen 300 Murmeln. Ihr legt 400 dazu.",
+            "en": "There are 300 marbles in the basket. You add 400."
+          },
+          "prompt": {
+            "de": "Wie viele Murmeln sind jetzt im Korb?",
+            "en": "How many marbles are in the basket now?"
+          },
+          "answer": 700
+        },
+        {
+          "id": "kr-2",
+          "skills": [
+            "math.mental.subtract-tens"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Rechne 560 − 40.",
+            "en": "Work out 560 − 40."
+          },
+          "firstAnswer": 520,
+          "operation": {
+            "op": "subtract",
+            "operand": 20
+          },
+          "second": {
+            "de": "Rechne {x} − 20.",
+            "en": "Work out {x} − 20."
+          }
+        },
+        {
+          "id": "kr-3",
+          "skills": [
+            "math.mental.add-hundreds"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Aufgabe ergibt 900?",
+            "en": "Which sum makes 900?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "450 + 450",
+                "en": "450 + 450"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "400 + 400",
+                "en": "400 + 400"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "500 + 500",
+                "en": "500 + 500"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "kr-4",
+          "skills": [
+            "math.mental.subtract-tens"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Aufgabe passt zu welchem Ergebnis?",
+            "en": "Which sum matches which result?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "250 − 50",
+                "en": "250 − 50"
+              },
+              "right": {
+                "de": "200",
+                "en": "200"
+              }
+            },
+            {
+              "left": {
+                "de": "380 − 80",
+                "en": "380 − 80"
+              },
+              "right": {
+                "de": "300",
+                "en": "300"
+              }
+            },
+            {
+              "left": {
+                "de": "470 − 70",
+                "en": "470 − 70"
+              },
+              "right": {
+                "de": "400",
+                "en": "400"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
