@@ -1,15 +1,9 @@
 name: Pakete prüfen
 on: [push, pull_request]
 jobs:
-  lint:
-    runs-on: macos-latest
+  format:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Huckepack holen (Prüfwerkzeug)
-        run: git clone --depth 1 https://github.com/Spectrechen/Huckepack app
-      - name: Pakete prüfen und Index bauen
-        run: |
-          cd app/Packages/HuckepackCore
-          swift run huckepack-lint --index $GITHUB_WORKSPACE/packs/*/pack.json > $GITHUB_WORKSPACE/index.json
-      - uses: actions/upload-artifact@v4
-        with: { name: index, path: index.json }
+      - name: Format der Pakete prüfen
+        run: python3 tools/check_format.py packs/*/pack.json

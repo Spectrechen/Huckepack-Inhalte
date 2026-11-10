@@ -8,4 +8,4 @@ Alle Pakete in diesem Repository stehen, wenn im Paket nicht anders angegeben, u
 
 Namensnennung: der Autor im Feld `author` des Pakets und „Huckepack-Inhalte“.
 
-<!-- TODO vor dem Veröffentlichen: den vollständigen Rechtstext von creativecommons.org als LICENSE beilegen. -->
+Der vollständige Rechtstext liegt in [LICENSE](LICENSE).

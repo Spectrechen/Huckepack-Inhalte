@@ -1,2 +1,2 @@
-Die Prüfung läuft mit `huckepack-lint` aus dem App-Repository (`Packages/HuckepackCore`), damit Pakete exakt nach
-denselben Regeln geprüft werden wie in der App. `--index` erzeugt den Katalog-Index (`index.json`).
+`check_format.py` prüft das Format der Pakete (läuft bei jedem Pull Request). Die vollständige Prüfung mit den
+Regeln der App macht `huckepack-lint` aus dem (nicht öffentlichen) App-Repository; `--index` erzeugt den Katalog-Index.

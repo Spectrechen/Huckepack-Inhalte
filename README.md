@@ -1,6 +1,6 @@
 # Huckepack-Inhalte
 
-Weitere Level für [Huckepack](https://github.com/Spectrechen/Huckepack), das Koop-Lernspiel für zwei Kinder auf zwei
+Weitere Level für Huckepack, das Koop-Lernspiel für zwei Kinder auf zwei
 iPads (Grundschule, Klasse 3, NRW). Jedes Paket bringt Level an bekannte Orte der Karte („Band 2“, „Band 3“ …).
 
 *English: extra levels for Huckepack, a co-op learning game for two kids on two iPads. Content is German first.*
@@ -19,8 +19,8 @@ die signierten Eltern-Einstellungen.
 | [`de.huckepack.kopfrechnen`](packs/de.huckepack.kopfrechnen/pack.json) | Kopfrechnen im Zahlenraum 1000 (Beispiel) | Mathe |
 
 ## Mitmachen
-Siehe [CONTRIBUTING.md](CONTRIBUTING.md). Jeder Pull Request wird automatisch mit dem Prüfwerkzeug der App
-(`huckepack-lint`) geprüft und danach von Hand fachlich gelesen.
+Siehe [CONTRIBUTING.md](CONTRIBUTING.md). Jeder Pull Request wird automatisch auf das Format geprüft; danach prüft
+der Betreuer ihn mit dem Prüfwerkzeug der App (`huckepack-lint`) und liest ihn fachlich.
 
 ## Lizenz
-Inhalte: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) – siehe [LICENSE.md](LICENSE.md).
+Inhalte: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de), Rechtstext in [LICENSE](LICENSE), Erläuterung in [LICENSE.md](LICENSE.md).

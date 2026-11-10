@@ -20,9 +20,8 @@ Aufgabentypen; die genauen Regeln stehen in `CoopTask.swift` der App.
 Neue Fähigkeiten (`skills`) bekommen im Paket einen Namen für die Eltern-Auswertung.
 
 ## Prüfen
-```
-git clone https://github.com/Spectrechen/Huckepack
-cd Huckepack/Packages/HuckepackCore
-swift run huckepack-lint ../../../Huckepack-Inhalte/packs/*/pack.json
-```
+Beim Pull Request prüft GitHub automatisch das Format (`tools/check_format.py`: gültiges JSON, Paket-ID, Level-IDs,
+bekannte Orte, Aufgabentypen, Pflichtfelder). Die vollständige Prüfung mit den Regeln der App (`huckepack-lint`)
+macht der Betreuer vor dem Zusammenführen. Lokal: `python3 tools/check_format.py packs/*/pack.json`.
+
 Eine neue Version eines Pakets erhöht `version`.
