@@ -1,0 +1,77 @@
+{
+  "packs": [
+    {
+      "author": "Huckepack",
+      "bytes": 21595,
+      "courses": [
+        {
+          "de": "Kurs A: Rechnen",
+          "en": "Course A: Maths"
+        },
+        {
+          "de": "Kurs B: Lesen",
+          "en": "Course B: Reading"
+        },
+        {
+          "de": "Kurs C: Natur",
+          "en": "Course C: Nature"
+        }
+      ],
+      "description": {
+        "de": "Beispielwelt für eigene Welten (ab 8 Jahren)",
+        "en": "Example world for building your own worlds (age 8 and up)"
+      },
+      "files": [
+        {
+          "bytes": 872579,
+          "name": "karte.jpg",
+          "sha256": "c0eb58f674af210ab87ea3b0a92a506ebf921d9ae7f45bf321e02ae723e21b5c"
+        }
+      ],
+      "grades": [
+        4
+      ],
+      "id": "de.huckepack.beispielwelt",
+      "levels": 5,
+      "licence": "CC-BY-4.0",
+      "path": "packs/de.huckepack.beispielwelt/",
+      "places": 6,
+      "sha256": "175c75992601c22e793c4ced674eb46874ed7de42834a34f9ae0f2d4632b0aaa",
+      "subjects": [
+        "kurs-a",
+        "kurs-b",
+        "kurs-c"
+      ],
+      "title": {
+        "de": "Beispielwelt",
+        "en": "Example world"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 3674,
+      "courses": [],
+      "description": null,
+      "files": [],
+      "grades": [
+        3
+      ],
+      "id": "de.huckepack.kopfrechnen",
+      "levels": 1,
+      "licence": "CC-BY-4.0",
+      "path": "packs/de.huckepack.kopfrechnen/",
+      "places": null,
+      "sha256": "25c3c93908f7be75d48b3166d3b55d5f31066276d0ab80fa22a1f73c6c857165",
+      "subjects": [
+        "math"
+      ],
+      "title": {
+        "de": "Kopfrechnen im Zahlenraum 1000",
+        "en": "Mental maths up to 1000"
+      },
+      "version": 1
+    }
+  ],
+  "schemaVersion": 1
+}
