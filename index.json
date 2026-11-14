@@ -2,6 +2,63 @@
   "packs": [
     {
       "author": "Huckepack",
+      "bytes": 123063,
+      "courses": [
+        {
+          "en": "Maths",
+          "pt": "Matemática"
+        },
+        {
+          "en": "Portuguese language",
+          "pt": "Língua Portuguesa"
+        },
+        {
+          "en": "Science",
+          "pt": "Ciências"
+        },
+        {
+          "en": "Geography and history",
+          "pt": "Geografia e História"
+        }
+      ],
+      "description": {
+        "en": "For Brazilian children in grades 3 and 4 (ages 8 to 10), following the BNCC curriculum: maths, Portuguese, science, geography and history.",
+        "pt": "Para crianças do 3º e 4º ano do Ensino Fundamental no Brasil (8 a 10 anos), seguindo a BNCC: Matemática, Língua Portuguesa, Ciências e Geografia e História."
+      },
+      "files": [
+        {
+          "bytes": 952018,
+          "name": "karte.jpg",
+          "sha256": "d74dcaad06396c6592fa8a83de97d8a912d41627d6814ab44326d19fe6ed222f"
+        }
+      ],
+      "grades": [
+        3,
+        4
+      ],
+      "id": "br.huckepack.anos-3-4",
+      "languages": [
+        "pt"
+      ],
+      "levels": 28,
+      "licence": "CC-BY-4.0",
+      "path": "packs/br.huckepack.anos-3-4/",
+      "places": 17,
+      "sha256": "1f1d72682d4268d6ce563aeb832f83923940eb15354fe3098360ec0c951efab7",
+      "subjects": [
+        "ciencias",
+        "geo-historia",
+        "matematica",
+        "portugues"
+      ],
+      "title": {
+        "en": "Lighthouse Town",
+        "pt": "Cidade do Farol"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
       "bytes": 21595,
       "courses": [
         {
@@ -32,6 +89,9 @@
         4
       ],
       "id": "de.huckepack.beispielwelt",
+      "languages": [
+        "de"
+      ],
       "levels": 5,
       "licence": "CC-BY-4.0",
       "path": "packs/de.huckepack.beispielwelt/",
@@ -50,6 +110,249 @@
     },
     {
       "author": "Huckepack",
+      "bytes": 83485,
+      "courses": [
+        {
+          "de": "Mathe",
+          "en": "Maths"
+        },
+        {
+          "de": "Uhr und Geld",
+          "en": "Clock and Money"
+        },
+        {
+          "de": "Deutsch",
+          "en": "German"
+        },
+        {
+          "de": "Sachunterricht",
+          "en": "General Studies"
+        }
+      ],
+      "description": {
+        "de": "Für Kinder in Deutschland, 6 bis 8 Jahre, Klasse 1 und 2, nach den Bildungsstandards der KMK: Mathe, Zeit und Geld, Deutsch und Sachunterricht.",
+        "en": "For children in Germany, ages 6 to 8, grades 1 and 2, following the KMK educational standards: maths, time and money, German and general studies."
+      },
+      "files": [
+        {
+          "bytes": 935499,
+          "name": "karte.jpg",
+          "sha256": "7be6fcc83e25fbccb1fcf03579d826dcf514b01eaeea026594040ac2f129b0dc"
+        }
+      ],
+      "grades": [
+        1,
+        2
+      ],
+      "id": "de.huckepack.klasse-1-2",
+      "languages": [
+        "de"
+      ],
+      "levels": 28,
+      "licence": "CC-BY-4.0",
+      "path": "packs/de.huckepack.klasse-1-2/",
+      "places": 16,
+      "sha256": "79af39263029c08017b3a821c3b442bbc96bdde8c6f64281380448c925d2b7b0",
+      "subjects": [
+        "deutsch",
+        "mathe",
+        "sachunterricht",
+        "zeit-geld"
+      ],
+      "title": {
+        "de": "Bauernhof und Dorf (Klasse 1–2)",
+        "en": "Farm and Village (Grades 1–2)"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 84745,
+      "courses": [
+        {
+          "de": "Mathe",
+          "en": "Maths"
+        },
+        {
+          "de": "Deutsch",
+          "en": "German"
+        },
+        {
+          "de": "Englisch",
+          "en": "English"
+        },
+        {
+          "de": "Erdkunde",
+          "en": "Geography"
+        },
+        {
+          "de": "Biologie",
+          "en": "Biology"
+        }
+      ],
+      "description": {
+        "de": "Mathe, Deutsch, Englisch, Erdkunde und Biologie für Klasse 5 und 6 an weiterführenden Schulen in Deutschland (10 bis 12 Jahre), passend zu den Bildungsstandards.",
+        "en": "Maths, German, English, geography and biology for grades 5 and 6 of German secondary schools (ages 10 to 12), in line with the national education standards."
+      },
+      "files": [
+        {
+          "bytes": 936159,
+          "name": "karte.jpg",
+          "sha256": "efa3b03a6a840592ea699a681f1e3ddb7f56411a3cfcf0384540ea8715db1bdb"
+        }
+      ],
+      "grades": [
+        5,
+        6
+      ],
+      "id": "de.huckepack.klasse-5-6",
+      "languages": [
+        "de"
+      ],
+      "levels": 24,
+      "licence": "CC-BY-4.0",
+      "path": "packs/de.huckepack.klasse-5-6/",
+      "places": 16,
+      "sha256": "b19033db8967bdc177d10307915fc577d9dfeeeab5a14135bf74819b92e6c14b",
+      "subjects": [
+        "biologie",
+        "deutsch",
+        "englisch",
+        "erdkunde",
+        "mathe"
+      ],
+      "title": {
+        "de": "Küste und Hafen: Klasse 5 und 6",
+        "en": "Coast and Harbour: Grades 5 and 6"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 107582,
+      "courses": [
+        {
+          "de": "Mathe",
+          "en": "Maths"
+        },
+        {
+          "de": "Deutsch",
+          "en": "German"
+        },
+        {
+          "de": "Englisch",
+          "en": "English"
+        },
+        {
+          "de": "Physik",
+          "en": "Physics"
+        },
+        {
+          "de": "Geschichte",
+          "en": "History"
+        }
+      ],
+      "description": {
+        "de": "Für Schülerinnen und Schüler in Deutschland, 12 bis 14 Jahre, Klasse 7 und 8 (Sekundarstufe I): Mathe, Deutsch, Englisch, Physik und Geschichte nach den üblichen Lehrplänen.",
+        "en": "For students in Germany, ages 12 to 14, grades 7 and 8 (lower secondary): maths, German, English, physics and history following typical curricula."
+      },
+      "files": [
+        {
+          "bytes": 940994,
+          "name": "karte.jpg",
+          "sha256": "0be43cf36ecffba2477e0a6635a39247c72dba86a918b0e443473a0c223f4f5b"
+        }
+      ],
+      "grades": [
+        7,
+        8
+      ],
+      "id": "de.huckepack.klasse-7-8",
+      "languages": [
+        "de"
+      ],
+      "levels": 26,
+      "licence": "CC-BY-4.0",
+      "path": "packs/de.huckepack.klasse-7-8/",
+      "places": 18,
+      "sha256": "fb0f9dd1e3635e9314547984103265ef957f970778e99ea7ac71281e5a8caad5",
+      "subjects": [
+        "deutsch",
+        "englisch",
+        "geschichte",
+        "mathe",
+        "physik"
+      ],
+      "title": {
+        "de": "Gebirge: Klasse 7 und 8",
+        "en": "Mountains: grades 7 and 8"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 125095,
+      "courses": [
+        {
+          "de": "Mathe",
+          "en": "Maths"
+        },
+        {
+          "de": "Deutsch",
+          "en": "German"
+        },
+        {
+          "de": "Englisch",
+          "en": "English"
+        },
+        {
+          "de": "Chemie",
+          "en": "Chemistry"
+        },
+        {
+          "de": "Politik und Wirtschaft",
+          "en": "Politics and economics"
+        }
+      ],
+      "description": {
+        "de": "Für Schülerinnen und Schüler in Deutschland, Sekundarstufe I, Klasse 9 und 10 (14 bis 16 Jahre, Niveau mittlerer Schulabschluss): Mathe, Deutsch, Englisch, Chemie und Politik/Wirtschaft.",
+        "en": "For students in Germany, lower secondary school, grades 9 and 10 (ages 14 to 16): maths, German, English, chemistry and politics/economics."
+      },
+      "files": [
+        {
+          "bytes": 933262,
+          "name": "karte.jpg",
+          "sha256": "845ec006f4ce8f96ec13c0e820d88485aaacf33d66ac777a13c618c865d0f02f"
+        }
+      ],
+      "grades": [
+        9,
+        10
+      ],
+      "id": "de.huckepack.klasse-9-10",
+      "languages": [
+        "de"
+      ],
+      "levels": 28,
+      "licence": "CC-BY-4.0",
+      "path": "packs/de.huckepack.klasse-9-10/",
+      "places": 16,
+      "sha256": "4459157546fa0a0e5e4eaa9ef45bfec8ee6728c4dc96e1e92a5b310eeaca8267",
+      "subjects": [
+        "chemie",
+        "deutsch",
+        "englisch",
+        "mathe",
+        "politik"
+      ],
+      "title": {
+        "de": "Großstadt: Klasse 9 und 10",
+        "en": "Big city: grades 9 and 10"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
       "bytes": 3674,
       "courses": [],
       "description": null,
@@ -58,6 +361,10 @@
         3
       ],
       "id": "de.huckepack.kopfrechnen",
+      "languages": [
+        "de",
+        "en"
+      ],
       "levels": 1,
       "licence": "CC-BY-4.0",
       "path": "packs/de.huckepack.kopfrechnen/",
@@ -69,6 +376,385 @@
       "title": {
         "de": "Kopfrechnen im Zahlenraum 1000",
         "en": "Mental maths up to 1000"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 102628,
+      "courses": [
+        {
+          "de": "Mathe",
+          "en": "Maths"
+        },
+        {
+          "de": "Physik",
+          "en": "Physics"
+        },
+        {
+          "de": "Biologie",
+          "en": "Biology"
+        },
+        {
+          "de": "Englisch",
+          "en": "English"
+        },
+        {
+          "de": "Deutsch",
+          "en": "German"
+        }
+      ],
+      "description": {
+        "de": "Gemeinsam für das Abitur lernen: Mathe, Physik, Biologie, Englisch und Deutsch der gymnasialen Oberstufe in Deutschland (Klasse 11 bis 13, 16 bis 19 Jahre).",
+        "en": "Revising together for the Abitur: maths, physics, biology, English and German for the upper secondary school in Germany (grades 11 to 13, ages 16 to 19)."
+      },
+      "files": [
+        {
+          "bytes": 931891,
+          "name": "karte.jpg",
+          "sha256": "072199fd94d8c69d76b4b6cfcc9df0b7b88fb88d5573200cd383da21b35135d3"
+        }
+      ],
+      "grades": [
+        11,
+        12,
+        13
+      ],
+      "id": "de.huckepack.oberstufe",
+      "languages": [
+        "de"
+      ],
+      "levels": 25,
+      "licence": "CC-BY-4.0",
+      "path": "packs/de.huckepack.oberstufe/",
+      "places": 18,
+      "sha256": "1d8664b706aff8ba88b6e457402ab62f04272f94673e73eaec39a493d0977d32",
+      "subjects": [
+        "biologie",
+        "deutsch",
+        "englisch",
+        "mathe",
+        "physik"
+      ],
+      "title": {
+        "de": "Campus: Abitur gemeinsam",
+        "en": "Campus: Revising for the Abitur together"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 108103,
+      "courses": [
+        {
+          "en": "Mathematics",
+          "es": "Matemáticas"
+        },
+        {
+          "en": "Language",
+          "es": "Lengua"
+        },
+        {
+          "en": "Natural Sciences",
+          "es": "Ciencias Naturales"
+        },
+        {
+          "en": "Social Studies",
+          "es": "Ciencias Sociales"
+        }
+      ],
+      "description": {
+        "en": "World for Spanish-speaking primary school, grades 3 and 4 (ages 8-10), based on content common to the Mexican (SEP) and Spanish (LOMLOE) curricula.",
+        "es": "Mundo para 3.º y 4.º de primaria (8 a 10 años) con contenidos comunes de los currículos de México (SEP) y España (LOMLOE)."
+      },
+      "files": [
+        {
+          "bytes": 941835,
+          "name": "karte.jpg",
+          "sha256": "c3ae812f655c28b6fb59a9bf0d1737d2a12195c5249d7d3b58e0466116986791"
+        }
+      ],
+      "grades": [
+        3,
+        4
+      ],
+      "id": "es.huckepack.primaria-3-4",
+      "languages": [
+        "es"
+      ],
+      "levels": 28,
+      "licence": "CC-BY-4.0",
+      "path": "packs/es.huckepack.primaria-3-4/",
+      "places": 14,
+      "sha256": "bbfba480521c00f0e2dc5dd5126093338a5d6ca81764ee409484dfecc429b4a6",
+      "subjects": [
+        "lengua",
+        "matematicas",
+        "naturales",
+        "sociales"
+      ],
+      "title": {
+        "en": "A Village for Primary School (grades 3-4, Spanish)",
+        "es": "Un pueblo de primaria (3.º y 4.º)"
+      },
+      "version": 2
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 126543,
+      "courses": [
+        {
+          "en": "Mathematics",
+          "fr": "Mathématiques"
+        },
+        {
+          "en": "French",
+          "fr": "Français"
+        },
+        {
+          "en": "Science",
+          "fr": "Sciences"
+        },
+        {
+          "en": "History and Geography",
+          "fr": "Histoire-Géographie"
+        }
+      ],
+      "description": {
+        "en": "For pupils in France in CE2 and CM1 (cycles 2 and 3, ages 8 to 10): maths, French, science, history and geography.",
+        "fr": "Pour les élèves de CE2 et CM1 en France (programmes des cycles 2 et 3, 8 à 10 ans) : mathématiques, français, sciences et histoire-géographie."
+      },
+      "files": [
+        {
+          "bytes": 948308,
+          "name": "karte.jpg",
+          "sha256": "4b42b3f454c21851147d88ba15fa086fbb94dba4d995e91a16f9104b435bc352"
+        }
+      ],
+      "grades": [
+        3,
+        4
+      ],
+      "id": "fr.huckepack.ce2-cm1",
+      "languages": [
+        "fr"
+      ],
+      "levels": 29,
+      "licence": "CC-BY-4.0",
+      "path": "packs/fr.huckepack.ce2-cm1/",
+      "places": 20,
+      "sha256": "d0e00e0b1a4dd7a0bd7b97646ad5ec57cb9177240650efa861284fdf8ad05591",
+      "subjects": [
+        "francais",
+        "histgeo",
+        "maths",
+        "sciences"
+      ],
+      "title": {
+        "en": "The castle village",
+        "fr": "Le village du château"
+      },
+      "version": 2
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 87870,
+      "courses": [
+        {
+          "en": "Maths"
+        },
+        {
+          "en": "English"
+        },
+        {
+          "en": "Science"
+        },
+        {
+          "en": "Geography and History"
+        }
+      ],
+      "description": {
+        "en": "A village adventure for children in England aged 7 to 9 (Years 3 and 4, Key Stage 2), with Maths, English, Science and Geography and History."
+      },
+      "files": [
+        {
+          "bytes": 950635,
+          "name": "karte.jpg",
+          "sha256": "bca377fbd7e0007692e456b2e658d778922edec5dc4eacd10413fd5696c16897"
+        }
+      ],
+      "grades": [
+        3,
+        4
+      ],
+      "id": "gb.huckepack.years-3-4",
+      "languages": [
+        "en"
+      ],
+      "levels": 28,
+      "licence": "CC-BY-4.0",
+      "path": "packs/gb.huckepack.years-3-4/",
+      "places": 15,
+      "sha256": "2e380fba484897ba99b2d69f0d07fec83dd8285f75582e07f0f059b251810679",
+      "subjects": [
+        "english-ks2",
+        "history-geog",
+        "maths-ks2",
+        "science-ks2"
+      ],
+      "title": {
+        "en": "Huckepack Village: Years 3 and 4"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 98531,
+      "courses": [
+        {
+          "en": "Mathematics"
+        },
+        {
+          "en": "English"
+        },
+        {
+          "en": "EVS (Environmental Studies)"
+        }
+      ],
+      "description": {
+        "en": "A village and a small town by a river for Indian children in classes 3 to 5 (ages 8 to 11), following the CBSE and NCERT syllabus in Mathematics, English and EVS."
+      },
+      "files": [
+        {
+          "bytes": 943058,
+          "name": "karte.jpg",
+          "sha256": "ab53485e2fe40e1c1ac6ce14159e61b84b3bccc79aa910033c4f0020eacb8638"
+        }
+      ],
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "id": "in.huckepack.classes-3-5",
+      "languages": [
+        "en"
+      ],
+      "levels": 24,
+      "licence": "CC-BY-4.0",
+      "path": "packs/in.huckepack.classes-3-5/",
+      "places": 14,
+      "sha256": "e784bbc49e17ea761e2b7dfc0862895ee04e18cb676034d80fd832b9e196c6c0",
+      "subjects": [
+        "eng",
+        "evs",
+        "maths"
+      ],
+      "title": {
+        "en": "The River Village: Classes 3 to 5"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 110537,
+      "courses": [
+        {
+          "en": "Math"
+        },
+        {
+          "en": "Reading"
+        },
+        {
+          "en": "Writing & Spelling"
+        },
+        {
+          "en": "Science"
+        }
+      ],
+      "description": {
+        "en": "A small-town world for children in the USA, ages 6 to 8 (grades 1 and 2), with math, reading, writing and science tasks following Common Core and NGSS."
+      },
+      "files": [
+        {
+          "bytes": 939212,
+          "name": "karte.jpg",
+          "sha256": "aba1f6b8db40e5dab08192c48132b9fa8ab6a0ffcef8c377d5c9e099cf51812a"
+        }
+      ],
+      "grades": [
+        1,
+        2
+      ],
+      "id": "us.huckepack.grades-1-2",
+      "languages": [
+        "en"
+      ],
+      "levels": 28,
+      "licence": "CC-BY-4.0",
+      "path": "packs/us.huckepack.grades-1-2/",
+      "places": 16,
+      "sha256": "72badd04be9ac177b728617d5ddf7b55aed471b9752322251dc1bcb60e577230",
+      "subjects": [
+        "us-math",
+        "us-reading",
+        "us-science",
+        "us-writing"
+      ],
+      "title": {
+        "en": "Huckepack Town: Grades 1-2"
+      },
+      "version": 1
+    },
+    {
+      "author": "Huckepack",
+      "bytes": 105310,
+      "courses": [
+        {
+          "en": "Math"
+        },
+        {
+          "en": "Language Arts"
+        },
+        {
+          "en": "Science"
+        },
+        {
+          "en": "Social Studies"
+        }
+      ],
+      "description": {
+        "en": "Math, language arts, science and social studies for ages 8 to 11 (grades 3 to 5), based on the Common Core and NGSS in the United States."
+      },
+      "files": [
+        {
+          "bytes": 936055,
+          "name": "karte.jpg",
+          "sha256": "7e308a0fcf88baba7b2a7d815cc99b92719ff11ad3359d2bd426938e10a79cdb"
+        }
+      ],
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "id": "us.huckepack.grades-3-5",
+      "languages": [
+        "en"
+      ],
+      "levels": 24,
+      "licence": "CC-BY-4.0",
+      "path": "packs/us.huckepack.grades-3-5/",
+      "places": 13,
+      "sha256": "daa8424a081a9a526326541469903ae46c2978567a99a6de9332cd4f61c4559a",
+      "subjects": [
+        "coast-ela",
+        "coast-math",
+        "coast-science",
+        "coast-social"
+      ],
+      "title": {
+        "en": "Coast Adventure: Grades 3 to 5"
       },
       "version": 1
     }
