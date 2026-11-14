@@ -1,0 +1,4637 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "us.huckepack.grades-1-2",
+  "version": 1,
+  "title": {
+    "en": "Huckepack Town: Grades 1-2"
+  },
+  "description": {
+    "en": "A small-town world for children in the USA, ages 6 to 8 (grades 1 and 2), with math, reading, writing and science tasks following Common Core and NGSS."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "us-math",
+      "title": {
+        "en": "Math"
+      }
+    },
+    {
+      "id": "us-reading",
+      "title": {
+        "en": "Reading"
+      }
+    },
+    {
+      "id": "us-writing",
+      "title": {
+        "en": "Writing & Spelling"
+      }
+    },
+    {
+      "id": "us-science",
+      "title": {
+        "en": "Science"
+      }
+    }
+  ],
+  "skills": {
+    "us-math.add-within-20": {
+      "en": "Adding within 20"
+    },
+    "us-math.subtract-within-20": {
+      "en": "Subtracting within 20"
+    },
+    "us-reading.rhyme-words": {
+      "en": "Rhyming words and syllables"
+    },
+    "us-reading.story-understanding": {
+      "en": "Understanding stories"
+    },
+    "us-math.tens-ones": {
+      "en": "Tens and ones"
+    },
+    "us-math.add-within-100": {
+      "en": "Adding within 100"
+    },
+    "us-math.time-hour-half": {
+      "en": "Telling time to the hour and half hour"
+    },
+    "us-math.time-5-minutes": {
+      "en": "Telling time to five minutes, a.m. and p.m."
+    },
+    "us-writing.sentences": {
+      "en": "Writing sentences"
+    },
+    "us-writing.spelling": {
+      "en": "Spelling and word forms"
+    },
+    "us-math.coins": {
+      "en": "Counting coins"
+    },
+    "us-math.money-problems": {
+      "en": "Money word problems"
+    },
+    "us-science.sun-light": {
+      "en": "Sun, wind and light"
+    },
+    "us-science.sound": {
+      "en": "Sound and vibrations"
+    },
+    "us-science.water-land": {
+      "en": "Water, ice and land"
+    },
+    "us-science.materials": {
+      "en": "Properties of materials"
+    },
+    "us-science.animal-parts": {
+      "en": "Animal body parts and needs"
+    },
+    "us-science.habitats": {
+      "en": "Habitats and life cycles"
+    },
+    "us-math.groups-arrays": {
+      "en": "Equal groups, arrays and even numbers"
+    },
+    "us-math.measure-length": {
+      "en": "Measuring length in inches and feet"
+    },
+    "us-science.plant-needs": {
+      "en": "What plants need"
+    },
+    "us-science.plant-parts": {
+      "en": "Parts of plants"
+    },
+    "us-writing.nouns-verbs": {
+      "en": "Nouns and verbs"
+    },
+    "us-writing.adjectives": {
+      "en": "Adjectives and opposites"
+    },
+    "us-math.shapes": {
+      "en": "Shapes and equal parts"
+    },
+    "us-math.compare-numbers": {
+      "en": "Place value and comparing numbers"
+    },
+    "us-reading.vowel-sounds": {
+      "en": "Vowel sounds and letter sounds"
+    },
+    "us-reading.nonfiction": {
+      "en": "Reading nonfiction"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "square",
+    "nodes": [
+      {
+        "id": "square",
+        "title": {
+          "en": "Town Square"
+        },
+        "x": 0.12,
+        "y": 0.8,
+        "requires": []
+      },
+      {
+        "id": "picnic",
+        "title": {
+          "en": "Picnic Area"
+        },
+        "miniGame": "ticTacToe",
+        "x": 0.32,
+        "y": 0.9,
+        "requires": []
+      },
+      {
+        "id": "playground",
+        "title": {
+          "en": "Playground"
+        },
+        "level": "us.huckepack.grades-1-2/playground",
+        "x": 0.34,
+        "y": 0.72,
+        "requires": []
+      },
+      {
+        "id": "library",
+        "title": {
+          "en": "Library"
+        },
+        "level": "us.huckepack.grades-1-2/library",
+        "x": 0.14,
+        "y": 0.55,
+        "requires": []
+      },
+      {
+        "id": "bakery",
+        "title": {
+          "en": "Bakery"
+        },
+        "level": "us.huckepack.grades-1-2/bakery",
+        "x": 0.33,
+        "y": 0.5,
+        "requires": [
+          "us.huckepack.grades-1-2/library"
+        ]
+      },
+      {
+        "id": "clock",
+        "title": {
+          "en": "Clock Tower"
+        },
+        "level": "us.huckepack.grades-1-2/clock",
+        "x": 0.14,
+        "y": 0.28,
+        "requires": [
+          "us.huckepack.grades-1-2/library"
+        ]
+      },
+      {
+        "id": "school",
+        "title": {
+          "en": "Schoolhouse"
+        },
+        "level": "us.huckepack.grades-1-2/school",
+        "x": 0.34,
+        "y": 0.26,
+        "requires": [
+          "us.huckepack.grades-1-2/clock"
+        ]
+      },
+      {
+        "id": "stand",
+        "title": {
+          "en": "Farm Stand"
+        },
+        "level": "us.huckepack.grades-1-2/stand",
+        "x": 0.52,
+        "y": 0.46,
+        "requires": [
+          "us.huckepack.grades-1-2/bakery"
+        ]
+      },
+      {
+        "id": "windmill",
+        "title": {
+          "en": "Windmill"
+        },
+        "level": "us.huckepack.grades-1-2/windmill",
+        "x": 0.54,
+        "y": 0.14,
+        "requires": [
+          "us.huckepack.grades-1-2/school"
+        ]
+      },
+      {
+        "id": "bridge",
+        "title": {
+          "en": "Wooden Bridge"
+        },
+        "level": "us.huckepack.grades-1-2/bridge",
+        "x": 0.54,
+        "y": 0.68,
+        "requires": [
+          "us.huckepack.grades-1-2/playground"
+        ]
+      },
+      {
+        "id": "pond",
+        "title": {
+          "en": "Duck Pond"
+        },
+        "level": "us.huckepack.grades-1-2/pond",
+        "x": 0.72,
+        "y": 0.85,
+        "requires": [
+          "us.huckepack.grades-1-2/bridge"
+        ]
+      },
+      {
+        "id": "barn",
+        "title": {
+          "en": "Red Barn"
+        },
+        "level": "us.huckepack.grades-1-2/barn",
+        "x": 0.76,
+        "y": 0.58,
+        "requires": [
+          "us.huckepack.grades-1-2/stand"
+        ]
+      },
+      {
+        "id": "orchard",
+        "title": {
+          "en": "Apple Orchard"
+        },
+        "level": "us.huckepack.grades-1-2/orchard",
+        "x": 0.74,
+        "y": 0.3,
+        "requires": [
+          "us.huckepack.grades-1-2/barn"
+        ]
+      },
+      {
+        "id": "henhouse",
+        "title": {
+          "en": "Hen House"
+        },
+        "level": "us.huckepack.grades-1-2/henhouse",
+        "x": 0.91,
+        "y": 0.44,
+        "requires": [
+          "us.huckepack.grades-1-2/barn"
+        ]
+      },
+      {
+        "id": "garden",
+        "title": {
+          "en": "Community Garden"
+        },
+        "level": "us.huckepack.grades-1-2/garden",
+        "x": 0.91,
+        "y": 0.72,
+        "requires": [
+          "us.huckepack.grades-1-2/pond"
+        ]
+      },
+      {
+        "id": "hill",
+        "title": {
+          "en": "Berry Hill"
+        },
+        "level": "us.huckepack.grades-1-2/hill",
+        "x": 0.9,
+        "y": 0.16,
+        "requires": [
+          "us.huckepack.grades-1-2/orchard"
+        ]
+      }
+    ],
+    "paths": [
+      [
+        "square",
+        "playground"
+      ],
+      [
+        "square",
+        "library"
+      ],
+      [
+        "square",
+        "picnic"
+      ],
+      [
+        "picnic",
+        "playground"
+      ],
+      [
+        "playground",
+        "bridge"
+      ],
+      [
+        "playground",
+        "bakery"
+      ],
+      [
+        "library",
+        "bakery"
+      ],
+      [
+        "library",
+        "clock"
+      ],
+      [
+        "clock",
+        "school"
+      ],
+      [
+        "school",
+        "bakery"
+      ],
+      [
+        "bakery",
+        "stand"
+      ],
+      [
+        "school",
+        "windmill"
+      ],
+      [
+        "stand",
+        "bridge"
+      ],
+      [
+        "stand",
+        "windmill"
+      ],
+      [
+        "bridge",
+        "pond"
+      ],
+      [
+        "bridge",
+        "barn"
+      ],
+      [
+        "stand",
+        "barn"
+      ],
+      [
+        "barn",
+        "henhouse"
+      ],
+      [
+        "barn",
+        "orchard"
+      ],
+      [
+        "orchard",
+        "windmill"
+      ],
+      [
+        "orchard",
+        "hill"
+      ],
+      [
+        "pond",
+        "garden"
+      ],
+      [
+        "garden",
+        "barn"
+      ],
+      [
+        "henhouse",
+        "orchard"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "us.huckepack.grades-1-2/playground",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Playground: Adding to 10"
+      },
+      "subject": "us-math",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "playground-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.add-within-20"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "There are 4 kids on the swings and 3 kids on the slide."
+          },
+          "prompt": {
+            "en": "How many kids are playing in all?"
+          },
+          "answer": 7
+        },
+        {
+          "id": "playground-2",
+          "type": "relay",
+          "skills": [
+            "us-math.add-within-20"
+          ],
+          "first": {
+            "en": "5 kids are on the seesaw. 4 more kids come. How many kids are on the seesaw now?"
+          },
+          "firstAnswer": 9,
+          "operation": {
+            "op": "subtract",
+            "operand": 3
+          },
+          "second": {
+            "en": "Now there are {x} kids on the seesaw. 3 kids go home. How many kids are left?"
+          }
+        },
+        {
+          "id": "playground-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.add-within-20"
+          ],
+          "prompt": {
+            "en": "Match each addition to its sum."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "2 + 2"
+              },
+              "right": {
+                "en": "4"
+              }
+            },
+            {
+              "left": {
+                "en": "3 + 4"
+              },
+              "right": {
+                "en": "7"
+              }
+            },
+            {
+              "left": {
+                "en": "6 + 2"
+              },
+              "right": {
+                "en": "8"
+              }
+            },
+            {
+              "left": {
+                "en": "4 + 5"
+              },
+              "right": {
+                "en": "9"
+              }
+            },
+            {
+              "left": {
+                "en": "5 + 5"
+              },
+              "right": {
+                "en": "10"
+              }
+            }
+          ]
+        },
+        {
+          "id": "playground-4",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.add-within-20"
+          ],
+          "question": {
+            "en": "Which two numbers make 10?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "7 and 2"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "6 and 4"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "5 and 6"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "playground-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.add-within-20"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "The slide has 12 steps. The kids have climbed 5 steps."
+          },
+          "prompt": {
+            "en": "How many steps are left to climb?"
+          },
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/playground-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Playground: Taking Away"
+      },
+      "subject": "us-math",
+      "grade": 1,
+      "place": "playground",
+      "tasks": [
+        {
+          "id": "playground-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.subtract-within-20"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "There are 10 balls in the box. 3 balls roll away."
+          },
+          "prompt": {
+            "en": "How many balls are left in the box?"
+          },
+          "answer": 7
+        },
+        {
+          "id": "playground-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.subtract-within-20"
+          ],
+          "prompt": {
+            "en": "Match each subtraction to its answer."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "9 − 4"
+              },
+              "right": {
+                "en": "5"
+              }
+            },
+            {
+              "left": {
+                "en": "10 − 6"
+              },
+              "right": {
+                "en": "4"
+              }
+            },
+            {
+              "left": {
+                "en": "11 − 8"
+              },
+              "right": {
+                "en": "3"
+              }
+            },
+            {
+              "left": {
+                "en": "15 − 5"
+              },
+              "right": {
+                "en": "10"
+              }
+            },
+            {
+              "left": {
+                "en": "18 − 9"
+              },
+              "right": {
+                "en": "9"
+              }
+            }
+          ]
+        },
+        {
+          "id": "playground-2-3",
+          "type": "relay",
+          "skills": [
+            "us-math.subtract-within-20"
+          ],
+          "first": {
+            "en": "13 kids are at the park. 5 kids are on the swings. How many kids are not on the swings?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "add",
+            "operand": 6
+          },
+          "second": {
+            "en": "{x} kids are not on the swings. 6 more kids come and join them. How many kids are not on the swings now?"
+          }
+        },
+        {
+          "id": "playground-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.subtract-within-20"
+          ],
+          "question": {
+            "en": "Which subtraction does NOT have the answer 8?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "12 − 4"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "10 − 2"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "9 − 1"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "15 − 8"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "playground-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.subtract-within-20"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "A box has 17 pieces of chalk. The kids used 9 pieces."
+          },
+          "prompt": {
+            "en": "How many pieces of chalk are left?"
+          },
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/library",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Library: Rhyme Time"
+      },
+      "subject": "us-reading",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "library-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-reading.rhyme-words"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Sentence: The cat sat on a red mat."
+          },
+          "prompt": {
+            "en": "How many words are in the sentence?"
+          },
+          "answer": 7
+        },
+        {
+          "id": "library-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-reading.rhyme-words"
+          ],
+          "prompt": {
+            "en": "Match the words that rhyme."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "cat"
+              },
+              "right": {
+                "en": "hat"
+              }
+            },
+            {
+              "left": {
+                "en": "bike"
+              },
+              "right": {
+                "en": "like"
+              }
+            },
+            {
+              "left": {
+                "en": "moon"
+              },
+              "right": {
+                "en": "spoon"
+              }
+            },
+            {
+              "left": {
+                "en": "tree"
+              },
+              "right": {
+                "en": "bee"
+              }
+            }
+          ]
+        },
+        {
+          "id": "library-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-reading.rhyme-words"
+          ],
+          "question": {
+            "en": "Which word rhymes with boat?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "boot"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "goat"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "bat"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "beat"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "library-4",
+          "type": "relay",
+          "skills": [
+            "us-reading.rhyme-words"
+          ],
+          "first": {
+            "en": "Clap the syllables in the word butterfly. How many syllables does it have?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "en": "Butterfly has {x} syllables. Now clap the word caterpillar. Count its syllables and add them to {x}. How many syllables is that in all?"
+          }
+        },
+        {
+          "id": "library-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-reading.rhyme-words"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "The word is splash. Spell it out loud, letter by letter."
+          },
+          "prompt": {
+            "en": "How many letters does the word have?"
+          },
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/library-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Library: Story Questions"
+      },
+      "subject": "us-reading",
+      "grade": 1,
+      "place": "library",
+      "tasks": [
+        {
+          "id": "library-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-reading.story-understanding"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Story: Ben has 3 red books and 2 blue books on his shelf."
+          },
+          "prompt": {
+            "en": "How many books does Ben have?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "library-2-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-reading.story-understanding"
+          ],
+          "question": {
+            "en": "Ana put on her boots and took her umbrella. Why did she do that?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "She was hungry."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "It was raining."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "She was sleepy."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "library-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-reading.story-understanding"
+          ],
+          "prompt": {
+            "en": "Match each story word to what it means."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Characters"
+              },
+              "right": {
+                "en": "The people or animals in a story"
+              }
+            },
+            {
+              "left": {
+                "en": "Setting"
+              },
+              "right": {
+                "en": "Where and when a story happens"
+              }
+            },
+            {
+              "left": {
+                "en": "Author"
+              },
+              "right": {
+                "en": "The person who writes a book"
+              }
+            },
+            {
+              "left": {
+                "en": "Illustrator"
+              },
+              "right": {
+                "en": "The person who draws the pictures"
+              }
+            }
+          ]
+        },
+        {
+          "id": "library-2-4",
+          "type": "relay",
+          "skills": [
+            "us-reading.story-understanding"
+          ],
+          "first": {
+            "en": "Page 4 has 3 sentences. Page 5 has 4 sentences. How many sentences is that in all?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "add",
+            "operand": 5
+          },
+          "second": {
+            "en": "You read {x} sentences. Page 6 has 5 more sentences. How many sentences did you read in all?"
+          }
+        },
+        {
+          "id": "library-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-reading.story-understanding"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Pip the pup dug a hole. He hid his bone. Then he covered it with dirt. What did Pip do last?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "He dug a hole."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "He covered the bone with dirt."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "He hid his bone."
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/bakery",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Bakery: Tens and Ones"
+      },
+      "subject": "us-math",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "bakery-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.tens-ones"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The baker packs 3 boxes with 10 muffins in each box. There are also 4 loose muffins."
+          },
+          "prompt": {
+            "en": "How many muffins are there in all?"
+          },
+          "answer": 34
+        },
+        {
+          "id": "bakery-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.tens-ones"
+          ],
+          "prompt": {
+            "en": "Match each number to its tens and ones."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "27"
+              },
+              "right": {
+                "en": "2 tens and 7 ones"
+              }
+            },
+            {
+              "left": {
+                "en": "40"
+              },
+              "right": {
+                "en": "4 tens and 0 ones"
+              }
+            },
+            {
+              "left": {
+                "en": "35"
+              },
+              "right": {
+                "en": "3 tens and 5 ones"
+              }
+            },
+            {
+              "left": {
+                "en": "52"
+              },
+              "right": {
+                "en": "5 tens and 2 ones"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bakery-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.tens-ones"
+          ],
+          "question": {
+            "en": "Which number has 6 tens and 3 ones?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "36"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "603"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "63"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "bakery-4",
+          "type": "relay",
+          "skills": [
+            "us-math.tens-ones"
+          ],
+          "first": {
+            "en": "The baker has 4 trays with 10 rolls on each tray. How many rolls is that?"
+          },
+          "firstAnswer": 40,
+          "operation": {
+            "op": "add",
+            "operand": 7
+          },
+          "second": {
+            "en": "The baker has {x} rolls. She bakes 7 more. How many rolls does she have now?"
+          }
+        },
+        {
+          "id": "bakery-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.tens-ones"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "The baker has 7 bags of 10 cookies. She sells 2 of the bags."
+          },
+          "prompt": {
+            "en": "How many cookies are left?"
+          },
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/bakery-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Bakery: Adding Bigger Numbers"
+      },
+      "subject": "us-math",
+      "grade": 2,
+      "place": "bakery",
+      "tasks": [
+        {
+          "id": "bakery-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.add-within-100"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The bakery sold 34 loaves on Monday and 25 loaves on Tuesday."
+          },
+          "prompt": {
+            "en": "How many loaves did it sell in the two days?"
+          },
+          "answer": 59
+        },
+        {
+          "id": "bakery-2-2",
+          "type": "relay",
+          "skills": [
+            "us-math.add-within-100"
+          ],
+          "first": {
+            "en": "A baker has 46 rolls. She bakes 27 more. How many rolls does she have now?"
+          },
+          "firstAnswer": 73,
+          "operation": {
+            "op": "subtract",
+            "operand": 30
+          },
+          "second": {
+            "en": "The baker has {x} rolls. A school buys 30 of them. How many rolls are left?"
+          }
+        },
+        {
+          "id": "bakery-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.add-within-100"
+          ],
+          "prompt": {
+            "en": "Match each addition to its sum."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "23 + 14"
+              },
+              "right": {
+                "en": "37"
+              }
+            },
+            {
+              "left": {
+                "en": "40 + 45"
+              },
+              "right": {
+                "en": "85"
+              }
+            },
+            {
+              "left": {
+                "en": "56 + 20"
+              },
+              "right": {
+                "en": "76"
+              }
+            },
+            {
+              "left": {
+                "en": "29 + 30"
+              },
+              "right": {
+                "en": "59"
+              }
+            },
+            {
+              "left": {
+                "en": "62 + 8"
+              },
+              "right": {
+                "en": "70"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bakery-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.add-within-100"
+          ],
+          "question": {
+            "en": "What is 48 + 35?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "73"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "82"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "83"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "bakery-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.add-within-100"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "The bakery made 58 muffins in the morning and 36 muffins in the afternoon."
+          },
+          "prompt": {
+            "en": "How many muffins did the bakery make in all?"
+          },
+          "answer": 94
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/clock",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Clock Tower: Hours and Half Hours"
+      },
+      "subject": "us-math",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "clock-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.time-hour-half"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Look at the clock. It is in the afternoon. Tell your partner where the short hand and the long hand point."
+          },
+          "prompt": {
+            "en": "What hour is it? Type the hour number."
+          },
+          "answer": 3,
+          "clueVisual": {
+            "clock": {
+              "hour": 3,
+              "minute": 0
+            }
+          }
+        },
+        {
+          "id": "clock-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.time-hour-half"
+          ],
+          "question": {
+            "en": "The short hand points between the 4 and the 5. The long hand points to the 6. What time is it?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "4:30"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "5:30"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "6:04"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "clock-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.time-hour-half"
+          ],
+          "prompt": {
+            "en": "Match each clock to its time."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Clock A"
+              },
+              "right": {
+                "en": "2:00"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 2,
+                  "minute": 0
+                }
+              }
+            },
+            {
+              "left": {
+                "en": "Clock B"
+              },
+              "right": {
+                "en": "5:30"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 5,
+                  "minute": 30
+                }
+              }
+            },
+            {
+              "left": {
+                "en": "Clock C"
+              },
+              "right": {
+                "en": "9:00"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 9,
+                  "minute": 0
+                }
+              }
+            },
+            {
+              "left": {
+                "en": "Clock D"
+              },
+              "right": {
+                "en": "11:30"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 11,
+                  "minute": 30
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "clock-4",
+          "type": "relay",
+          "skills": [
+            "us-math.time-hour-half"
+          ],
+          "first": {
+            "en": "Story time starts at 3 o'clock and lasts 1 hour. At what hour does it end?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "en": "Story time ends at {x} o'clock. Snack time is 2 hours later. At what hour is snack time?"
+          }
+        },
+        {
+          "id": "clock-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.time-hour-half"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "School starts at 8 o'clock. Lunch is 4 hours later."
+          },
+          "prompt": {
+            "en": "At what hour is lunch? Type the hour number."
+          },
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/clock-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Clock Tower: Minutes and a.m. or p.m."
+      },
+      "subject": "us-math",
+      "grade": 2,
+      "place": "clock",
+      "tasks": [
+        {
+          "id": "clock-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.time-5-minutes"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Look at the clock. The long hand points to the 3. The short hand is just past the 7."
+          },
+          "prompt": {
+            "en": "How many minutes after 7 o'clock is it? Type the number of minutes."
+          },
+          "answer": 15,
+          "clueVisual": {
+            "clock": {
+              "hour": 7,
+              "minute": 15
+            }
+          }
+        },
+        {
+          "id": "clock-2-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.time-5-minutes"
+          ],
+          "question": {
+            "en": "Which is the best time for eating school lunch?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "12:15 p.m."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "7:15 a.m."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "8:30 p.m."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "3:00 a.m."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "clock-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.time-5-minutes"
+          ],
+          "prompt": {
+            "en": "Match each clock to its time."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Clock A"
+              },
+              "right": {
+                "en": "6:10"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 6,
+                  "minute": 10
+                }
+              }
+            },
+            {
+              "left": {
+                "en": "Clock B"
+              },
+              "right": {
+                "en": "8:25"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 8,
+                  "minute": 25
+                }
+              }
+            },
+            {
+              "left": {
+                "en": "Clock C"
+              },
+              "right": {
+                "en": "10:40"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 10,
+                  "minute": 40
+                }
+              }
+            },
+            {
+              "left": {
+                "en": "Clock D"
+              },
+              "right": {
+                "en": "1:55"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 1,
+                  "minute": 55
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "clock-2-4",
+          "type": "relay",
+          "skills": [
+            "us-math.time-5-minutes"
+          ],
+          "first": {
+            "en": "Story time is 20 minutes long. Music is 15 minutes long. How many minutes is that in all?"
+          },
+          "firstAnswer": 35,
+          "operation": {
+            "op": "add",
+            "operand": 10
+          },
+          "second": {
+            "en": "Story time and music take {x} minutes. Then there are 10 minutes of cleanup. How many minutes is that in all?"
+          }
+        },
+        {
+          "id": "clock-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.time-5-minutes"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "The long hand of the clock moves from the 2 to the 8."
+          },
+          "prompt": {
+            "en": "How many minutes go by? Type the number of minutes."
+          },
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/school",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Schoolhouse: Writing Sentences"
+      },
+      "subject": "us-writing",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "school-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-writing.sentences"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Sentence: The red hen sat on the nest."
+          },
+          "prompt": {
+            "en": "How many words are in the sentence?"
+          },
+          "answer": 7
+        },
+        {
+          "id": "school-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.sentences"
+          ],
+          "question": {
+            "en": "Which sentence is written correctly?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "the cow eats grass."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The cow eats grass"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "the Cow eats grass"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The cow eats grass."
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "school-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-writing.sentences"
+          ],
+          "prompt": {
+            "en": "Match each sentence to the mark that belongs at the end."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Where is the pond"
+              },
+              "right": {
+                "en": "?"
+              }
+            },
+            {
+              "left": {
+                "en": "Wow, look at that big fish"
+              },
+              "right": {
+                "en": "!"
+              }
+            },
+            {
+              "left": {
+                "en": "I like the pond"
+              },
+              "right": {
+                "en": "."
+              }
+            }
+          ]
+        },
+        {
+          "id": "school-4",
+          "type": "relay",
+          "skills": [
+            "us-writing.sentences"
+          ],
+          "first": {
+            "en": "Count the words in this sentence: We go to the park."
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "en": "The sentence has {x} words. You add the 2 words big and green before park. How many words does it have now?"
+          }
+        },
+        {
+          "id": "school-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.sentences"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which sentence needs a question mark at the end?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "I see the barn"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The barn is red"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Do you see the barn"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Look at the barn"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/school-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Schoolhouse: Spelling"
+      },
+      "subject": "us-writing",
+      "grade": 2,
+      "place": "school",
+      "tasks": [
+        {
+          "id": "school-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-writing.spelling"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The word is bridge. Spell it out loud, letter by letter."
+          },
+          "prompt": {
+            "en": "How many letters does the word have?"
+          },
+          "answer": 6
+        },
+        {
+          "id": "school-2-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.spelling"
+          ],
+          "question": {
+            "en": "Which word is spelled correctly?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "freind"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "friend"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "frend"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "frind"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "school-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-writing.spelling"
+          ],
+          "prompt": {
+            "en": "Match each word to its plural (more than one)."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "fox"
+              },
+              "right": {
+                "en": "foxes"
+              }
+            },
+            {
+              "left": {
+                "en": "baby"
+              },
+              "right": {
+                "en": "babies"
+              }
+            },
+            {
+              "left": {
+                "en": "mouse"
+              },
+              "right": {
+                "en": "mice"
+              }
+            },
+            {
+              "left": {
+                "en": "foot"
+              },
+              "right": {
+                "en": "feet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "school-2-4",
+          "type": "relay",
+          "skills": [
+            "us-writing.spelling"
+          ],
+          "first": {
+            "en": "How many letters are in the word barn?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "en": "Barn has {x} letters. The word yard has 4 letters. Put them together to make barnyard. How many letters does barnyard have?"
+          }
+        },
+        {
+          "id": "school-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.spelling"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which word has a silent letter?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "knee"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "keep"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "kite"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "key"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/stand",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Farm Stand: Counting Coins"
+      },
+      "subject": "us-math",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "stand-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.coins"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "You have 2 dimes and 3 pennies."
+          },
+          "prompt": {
+            "en": "How much money is that in all?"
+          },
+          "answer": 23,
+          "answerFormat": "dollarCents"
+        },
+        {
+          "id": "stand-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.coins"
+          ],
+          "prompt": {
+            "en": "Match each coin to its value."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Penny"
+              },
+              "right": {
+                "en": "1 cent"
+              }
+            },
+            {
+              "left": {
+                "en": "Nickel"
+              },
+              "right": {
+                "en": "5 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "Dime"
+              },
+              "right": {
+                "en": "10 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "Quarter"
+              },
+              "right": {
+                "en": "25 cents"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stand-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.coins"
+          ],
+          "question": {
+            "en": "Which group of coins is worth 30 cents?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "1 quarter and 1 dime"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "3 nickels"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "2 dimes"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "1 quarter and 1 nickel"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "stand-4",
+          "type": "relay",
+          "skills": [
+            "us-math.coins"
+          ],
+          "first": {
+            "en": "A carrot costs 1 dime. A pear costs 1 nickel. How much do they cost together?"
+          },
+          "firstAnswer": 15,
+          "operation": {
+            "op": "add",
+            "operand": 25
+          },
+          "second": {
+            "en": "The carrot and pear cost {x}. You also buy a pumpkin for 25 cents. How much is that in all?"
+          },
+          "answerFormat": "dollarCents"
+        },
+        {
+          "id": "stand-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.coins"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "You have 1 quarter, 1 dime and 1 nickel."
+          },
+          "prompt": {
+            "en": "How much money do you have?"
+          },
+          "answer": 40,
+          "answerFormat": "dollarCents"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/stand-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Farm Stand: Dollars"
+      },
+      "subject": "us-math",
+      "grade": 2,
+      "place": "stand",
+      "tasks": [
+        {
+          "id": "stand-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.money-problems"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "A jar of honey costs 4 dollars. A jar of jam costs 3 dollars."
+          },
+          "prompt": {
+            "en": "How much do both jars cost?"
+          },
+          "answer": 700,
+          "answerFormat": "dollarCents"
+        },
+        {
+          "id": "stand-2-2",
+          "type": "relay",
+          "skills": [
+            "us-math.money-problems"
+          ],
+          "first": {
+            "en": "Corn costs 2 dollars for one ear. You buy 4 ears. How much is that?"
+          },
+          "firstAnswer": 800,
+          "operation": {
+            "op": "subtract",
+            "operand": 300
+          },
+          "second": {
+            "en": "The corn costs {x}. A coupon takes off 3 dollars. How much do you pay?"
+          },
+          "answerFormat": "dollarCents"
+        },
+        {
+          "id": "stand-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.money-problems"
+          ],
+          "prompt": {
+            "en": "Match each group of money to its value."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "1 dollar"
+              },
+              "right": {
+                "en": "100 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "2 quarters"
+              },
+              "right": {
+                "en": "50 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "3 dimes"
+              },
+              "right": {
+                "en": "30 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "4 nickels"
+              },
+              "right": {
+                "en": "20 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "5 pennies"
+              },
+              "right": {
+                "en": "5 cents"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stand-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.money-problems"
+          ],
+          "question": {
+            "en": "Which is worth the most?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "3 quarters"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "9 dimes"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "1 dollar"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "15 nickels"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "stand-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.money-problems"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "A pie costs 6 dollars. A loaf of bread costs 3 dollars. A jar of jam costs 2 dollars."
+          },
+          "prompt": {
+            "en": "You buy the pie and the jar of jam. How much do you spend?"
+          },
+          "answer": 800,
+          "answerFormat": "dollarCents"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/windmill",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Windmill: Sun, Wind and Light"
+      },
+      "subject": "us-science",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "windmill-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.sun-light"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The windmill has 4 blades. There are 3 windmills on the hill."
+          },
+          "prompt": {
+            "en": "How many blades are there in all?"
+          },
+          "answer": 12
+        },
+        {
+          "id": "windmill-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.sun-light"
+          ],
+          "prompt": {
+            "en": "Match each word to what it means."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Sun"
+              },
+              "right": {
+                "en": "Gives us light and warmth"
+              }
+            },
+            {
+              "left": {
+                "en": "Shadow"
+              },
+              "right": {
+                "en": "Made when something blocks light"
+              }
+            },
+            {
+              "left": {
+                "en": "Wind"
+              },
+              "right": {
+                "en": "Moving air that can turn a windmill"
+              }
+            },
+            {
+              "left": {
+                "en": "Moon"
+              },
+              "right": {
+                "en": "Seen in the night sky"
+              }
+            }
+          ]
+        },
+        {
+          "id": "windmill-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.sun-light"
+          ],
+          "question": {
+            "en": "When is your shadow the longest?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "When the sun is high in the sky"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "When the sun is low in the sky"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "When it is dark outside"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "windmill-4",
+          "type": "relay",
+          "skills": [
+            "us-science.sun-light"
+          ],
+          "first": {
+            "en": "The wind turns the windmill 5 times each minute. How many turns is that in 2 minutes?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "add",
+            "operand": 5
+          },
+          "second": {
+            "en": "The windmill turned {x} times. Then it turned 5 more times. How many times did it turn in all?"
+          }
+        },
+        {
+          "id": "windmill-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.sun-light"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which material lets light pass all the way through?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A clear window"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A wooden door"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A thick book"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/windmill-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Windmill: Sound"
+      },
+      "subject": "us-science",
+      "grade": 1,
+      "place": "windmill",
+      "tasks": [
+        {
+          "id": "windmill-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.sound"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "A drum is hit 3 times. Then it is hit 4 more times."
+          },
+          "prompt": {
+            "en": "How many times is the drum hit in all?"
+          },
+          "answer": 7
+        },
+        {
+          "id": "windmill-2-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.sound"
+          ],
+          "question": {
+            "en": "What makes a sound?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Colors"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Shadows"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Things that shake back and forth (vibrations)"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "windmill-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.sound"
+          ],
+          "prompt": {
+            "en": "Match each object to a way it makes sound."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Drum"
+              },
+              "right": {
+                "en": "Hit it"
+              }
+            },
+            {
+              "left": {
+                "en": "Guitar string"
+              },
+              "right": {
+                "en": "Pluck it"
+              }
+            },
+            {
+              "left": {
+                "en": "Whistle"
+              },
+              "right": {
+                "en": "Blow into it"
+              }
+            },
+            {
+              "left": {
+                "en": "Rattle"
+              },
+              "right": {
+                "en": "Shake it"
+              }
+            }
+          ]
+        },
+        {
+          "id": "windmill-2-4",
+          "type": "relay",
+          "skills": [
+            "us-science.sound"
+          ],
+          "first": {
+            "en": "The old windmill creaks 4 times each minute. How many creaks is that in 3 minutes?"
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "subtract",
+            "operand": 2
+          },
+          "second": {
+            "en": "The windmill creaked {x} times. 2 creaks were too quiet to hear. How many creaks could you hear?"
+          }
+        },
+        {
+          "id": "windmill-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.sound"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "What do you feel on your throat when you hum?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A color"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Nothing at all"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A shaking (vibration)"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/bridge",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Wooden Bridge: Water and Land"
+      },
+      "subject": "us-science",
+      "grade": 2,
+      "tasks": [
+        {
+          "id": "bridge-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.water-land"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "After a big rain the creek rose by 2 feet. Before the rain it was 3 feet deep."
+          },
+          "prompt": {
+            "en": "How deep is the creek after the rain? Type the number of feet."
+          },
+          "answer": 5
+        },
+        {
+          "id": "bridge-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.water-land"
+          ],
+          "prompt": {
+            "en": "Match each place to its description."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Creek"
+              },
+              "right": {
+                "en": "A small stream of flowing water"
+              }
+            },
+            {
+              "left": {
+                "en": "Pond"
+              },
+              "right": {
+                "en": "A small body of still water"
+              }
+            },
+            {
+              "left": {
+                "en": "Ocean"
+              },
+              "right": {
+                "en": "A huge body of salt water"
+              }
+            },
+            {
+              "left": {
+                "en": "Waterfall"
+              },
+              "right": {
+                "en": "Water falling over a high edge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bridge-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.water-land"
+          ],
+          "question": {
+            "en": "In winter, the water in the creek freezes into ice. What is ice?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A liquid"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A gas"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A solid"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "bridge-4",
+          "type": "relay",
+          "skills": [
+            "us-science.water-land"
+          ],
+          "first": {
+            "en": "Water freezes at 32 degrees Fahrenheit. The air is 27 degrees. How many degrees below freezing is the air?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "en": "The air is {x} degrees below freezing. By morning it gets 3 degrees colder. How many degrees below freezing is it?"
+          }
+        },
+        {
+          "id": "bridge-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.water-land"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "What can change the land by moving rocks and soil?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A blue sky"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Fast-moving water"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A red barn"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/bridge-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Wooden Bridge: Materials"
+      },
+      "subject": "us-science",
+      "grade": 2,
+      "place": "bridge",
+      "tasks": [
+        {
+          "id": "bridge-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.materials"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The bridge has 8 wooden boards on each side."
+          },
+          "prompt": {
+            "en": "How many boards are on both sides in all?"
+          },
+          "answer": 16
+        },
+        {
+          "id": "bridge-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.materials"
+          ],
+          "prompt": {
+            "en": "Match each object to a property that makes it useful."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Sponge"
+              },
+              "right": {
+                "en": "Soaks up water"
+              }
+            },
+            {
+              "left": {
+                "en": "Rubber boot"
+              },
+              "right": {
+                "en": "Keeps water out"
+              }
+            },
+            {
+              "left": {
+                "en": "Metal spoon"
+              },
+              "right": {
+                "en": "Hard and strong"
+              }
+            },
+            {
+              "left": {
+                "en": "Cotton sock"
+              },
+              "right": {
+                "en": "Soft and warm"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bridge-2-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.materials"
+          ],
+          "question": {
+            "en": "Which material is best for a rain jacket?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Paper"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Plastic that keeps water out"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A sponge"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "bridge-2-4",
+          "type": "relay",
+          "skills": [
+            "us-science.materials"
+          ],
+          "first": {
+            "en": "A puddle on the bridge holds 10 cups of water. The sun dries up 4 cups. How many cups are left?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "en": "There are {x} cups of water left. A second puddle holds twice as much. How many cups does the second puddle hold?"
+          }
+        },
+        {
+          "id": "bridge-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.materials"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which material can you change into a new shape by squishing it?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Clay"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A glass window"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A metal bolt"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/pond",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Duck Pond: Animal Helpers"
+      },
+      "subject": "us-science",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "pond-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.animal-parts"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "A duck has 2 legs. There are 5 ducks at the pond."
+          },
+          "prompt": {
+            "en": "How many duck legs are there in all?"
+          },
+          "answer": 10
+        },
+        {
+          "id": "pond-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.animal-parts"
+          ],
+          "prompt": {
+            "en": "Match each animal to a body part that helps it."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Duck"
+              },
+              "right": {
+                "en": "Webbed feet for swimming"
+              }
+            },
+            {
+              "left": {
+                "en": "Frog"
+              },
+              "right": {
+                "en": "Strong back legs for jumping"
+              }
+            },
+            {
+              "left": {
+                "en": "Fish"
+              },
+              "right": {
+                "en": "Gills for breathing in water"
+              }
+            },
+            {
+              "left": {
+                "en": "Turtle"
+              },
+              "right": {
+                "en": "Hard shell for protection"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pond-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.animal-parts"
+          ],
+          "question": {
+            "en": "What do all animals need to live?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Food, water and air"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Toys and games"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Only sunshine"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "pond-4",
+          "type": "relay",
+          "skills": [
+            "us-science.animal-parts"
+          ],
+          "first": {
+            "en": "A mother duck has 8 ducklings. 3 ducklings swim away. How many ducklings stay?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "en": "{x} ducklings stay. 4 ducklings from another nest join them. How many ducklings are there now?"
+          }
+        },
+        {
+          "id": "pond-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.animal-parts"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "A frog begins as an egg. Which is the right order?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "frog, egg, tadpole"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "tadpole, egg, frog"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "egg, tadpole, frog"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/pond-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Duck Pond: Homes and Life Cycles"
+      },
+      "subject": "us-science",
+      "grade": 2,
+      "place": "pond",
+      "tasks": [
+        {
+          "id": "pond-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.habitats"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The pond has 7 turtles on a log and 6 turtles in the water."
+          },
+          "prompt": {
+            "en": "How many turtles are at the pond?"
+          },
+          "answer": 13
+        },
+        {
+          "id": "pond-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.habitats"
+          ],
+          "prompt": {
+            "en": "Match each animal to where it lives."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Fish"
+              },
+              "right": {
+                "en": "In the pond"
+              }
+            },
+            {
+              "left": {
+                "en": "Cow"
+              },
+              "right": {
+                "en": "On the farm"
+              }
+            },
+            {
+              "left": {
+                "en": "Bee"
+              },
+              "right": {
+                "en": "In a hive"
+              }
+            },
+            {
+              "left": {
+                "en": "Bird"
+              },
+              "right": {
+                "en": "In a nest"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pond-2-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.habitats"
+          ],
+          "question": {
+            "en": "Which shows how a butterfly grows?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "caterpillar, egg, butterfly, chrysalis"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "chrysalis, butterfly, egg, caterpillar"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "egg, caterpillar, chrysalis, butterfly"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "pond-2-4",
+          "type": "relay",
+          "skills": [
+            "us-science.habitats"
+          ],
+          "first": {
+            "en": "A frog lays 10 eggs. A second frog lays 10 eggs. How many eggs is that in all?"
+          },
+          "firstAnswer": 20,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "en": "There are {x} eggs. A fish eats 5 of them. How many eggs are left?"
+          }
+        },
+        {
+          "id": "pond-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.habitats"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which animal lives in water its whole life and breathes with gills?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A duck"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A fish"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A turtle"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/barn",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Red Barn: Groups and Rows"
+      },
+      "subject": "us-math",
+      "grade": 2,
+      "tasks": [
+        {
+          "id": "barn-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.groups-arrays"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "There are 3 rows of hay bales. Each row has 4 bales."
+          },
+          "prompt": {
+            "en": "How many hay bales are there in all?"
+          },
+          "answer": 12
+        },
+        {
+          "id": "barn-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.groups-arrays"
+          ],
+          "prompt": {
+            "en": "Match each repeated addition to its total."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "5 + 5 + 5"
+              },
+              "right": {
+                "en": "15"
+              }
+            },
+            {
+              "left": {
+                "en": "2 + 2 + 2 + 2"
+              },
+              "right": {
+                "en": "8"
+              }
+            },
+            {
+              "left": {
+                "en": "4 + 4 + 4"
+              },
+              "right": {
+                "en": "12"
+              }
+            },
+            {
+              "left": {
+                "en": "10 + 10 + 10"
+              },
+              "right": {
+                "en": "30"
+              }
+            }
+          ]
+        },
+        {
+          "id": "barn-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.groups-arrays"
+          ],
+          "question": {
+            "en": "The farmer wants to put the cows into 2 equal groups with none left over. How many cows can she have?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "13"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "15"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "12"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "17"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "barn-4",
+          "type": "relay",
+          "skills": [
+            "us-math.groups-arrays"
+          ],
+          "first": {
+            "en": "A barn has 2 rows of stalls with 5 cows in each row. How many cows is that?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "en": "There are {x} cows. Each cow drinks 2 buckets of water. How many buckets is that in all?"
+          }
+        },
+        {
+          "id": "barn-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.groups-arrays"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "A tray of eggs has 4 rows. Each row has 5 eggs."
+          },
+          "prompt": {
+            "en": "How many eggs are on the tray?"
+          },
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/barn-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Red Barn: Measuring"
+      },
+      "subject": "us-math",
+      "grade": 2,
+      "place": "barn",
+      "tasks": [
+        {
+          "id": "barn-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.measure-length"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "One foot is 12 inches long. The barn cat is 2 feet long."
+          },
+          "prompt": {
+            "en": "How many inches long is the barn cat?"
+          },
+          "answer": 24
+        },
+        {
+          "id": "barn-2-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.measure-length"
+          ],
+          "question": {
+            "en": "Which is the best unit for measuring how long the barn is?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "inches"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "pounds"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "miles"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "feet"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "barn-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.measure-length"
+          ],
+          "prompt": {
+            "en": "Match each object to its best length."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Paper clip"
+              },
+              "right": {
+                "en": "About 1 inch"
+              }
+            },
+            {
+              "left": {
+                "en": "New pencil"
+              },
+              "right": {
+                "en": "About 7 inches"
+              }
+            },
+            {
+              "left": {
+                "en": "Picnic table"
+              },
+              "right": {
+                "en": "About 6 feet"
+              }
+            },
+            {
+              "left": {
+                "en": "Barn"
+              },
+              "right": {
+                "en": "About 50 feet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "barn-2-4",
+          "type": "relay",
+          "skills": [
+            "us-math.measure-length"
+          ],
+          "first": {
+            "en": "A fence post is 3 feet tall. One foot is 12 inches. How many inches tall is the post?"
+          },
+          "firstAnswer": 36,
+          "operation": {
+            "op": "subtract",
+            "operand": 6
+          },
+          "second": {
+            "en": "The post is {x} inches tall. 6 inches are under the ground. How many inches show above the ground?"
+          }
+        },
+        {
+          "id": "barn-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.measure-length"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "The red ribbon is 9 inches long. The blue ribbon is 14 inches long."
+          },
+          "prompt": {
+            "en": "How many inches longer is the blue ribbon?"
+          },
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/garden",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Community Garden: What Plants Need"
+      },
+      "subject": "us-science",
+      "grade": 2,
+      "tasks": [
+        {
+          "id": "garden-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.plant-needs"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Each garden bed has 6 bean plants. There are 3 beds."
+          },
+          "prompt": {
+            "en": "How many bean plants are there in all?"
+          },
+          "answer": 18
+        },
+        {
+          "id": "garden-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.plant-needs"
+          ],
+          "prompt": {
+            "en": "Match each plant need to why it matters."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Sunlight"
+              },
+              "right": {
+                "en": "Gives the plant energy to make food"
+              }
+            },
+            {
+              "left": {
+                "en": "Water"
+              },
+              "right": {
+                "en": "Helps the plant stay alive and grow"
+              }
+            },
+            {
+              "left": {
+                "en": "Soil"
+              },
+              "right": {
+                "en": "Holds the roots in place"
+              }
+            },
+            {
+              "left": {
+                "en": "Air"
+              },
+              "right": {
+                "en": "Has a gas that the leaves take in"
+              }
+            }
+          ]
+        },
+        {
+          "id": "garden-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.plant-needs"
+          ],
+          "question": {
+            "en": "A bean seed is planted in a dark closet and watered. What will happen to the plant?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "It will grow strong and green"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "It will grow faster than plants in the sun"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "It will grow weak and pale"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "garden-4",
+          "type": "relay",
+          "skills": [
+            "us-science.plant-needs"
+          ],
+          "first": {
+            "en": "A bean seed sprouts after 6 days. It grows its first leaf 4 days later. How many days is that in all?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "add",
+            "operand": 7
+          },
+          "second": {
+            "en": "It takes {x} days to get a leaf. It takes 7 more days to get a flower. How many days does it take to get a flower?"
+          }
+        },
+        {
+          "id": "garden-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.plant-needs"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Bees visit flowers. How do bees help plants?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "They give plants water"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "They carry pollen from flower to flower"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "They give plants soil"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/garden-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Community Garden: Plant Parts"
+      },
+      "subject": "us-science",
+      "grade": 1,
+      "place": "garden",
+      "tasks": [
+        {
+          "id": "garden-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-science.plant-parts"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The garden has 5 flowers. Each flower has 3 leaves."
+          },
+          "prompt": {
+            "en": "How many leaves are there in all?"
+          },
+          "answer": 15
+        },
+        {
+          "id": "garden-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-science.plant-parts"
+          ],
+          "prompt": {
+            "en": "Match each plant part to its job."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Roots"
+              },
+              "right": {
+                "en": "Hold the plant in the soil and take in water"
+              }
+            },
+            {
+              "left": {
+                "en": "Stem"
+              },
+              "right": {
+                "en": "Holds the plant up"
+              }
+            },
+            {
+              "left": {
+                "en": "Leaf"
+              },
+              "right": {
+                "en": "Makes food from sunlight"
+              }
+            },
+            {
+              "left": {
+                "en": "Flower"
+              },
+              "right": {
+                "en": "Makes seeds"
+              }
+            }
+          ]
+        },
+        {
+          "id": "garden-2-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.plant-parts"
+          ],
+          "question": {
+            "en": "Which part of a carrot plant do we eat?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The flower"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The stem"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The root"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The seed"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "garden-2-4",
+          "type": "relay",
+          "skills": [
+            "us-science.plant-parts"
+          ],
+          "first": {
+            "en": "A pack has 12 seeds. You plant 5 of them. How many seeds are left?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "en": "You have {x} seeds left. A friend gives you 3 more. How many seeds do you have now?"
+          }
+        },
+        {
+          "id": "garden-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-science.plant-parts"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "A pumpkin vine grows an orange pumpkin. Where are the seeds?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Inside the pumpkin"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "On the roots"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "In the leaves"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/orchard",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Apple Orchard: Nouns and Verbs"
+      },
+      "subject": "us-writing",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "orchard-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-writing.nouns-verbs"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Sentence: The bird sings in the tree."
+          },
+          "prompt": {
+            "en": "How many nouns (naming words) are in the sentence?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "orchard-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-writing.nouns-verbs"
+          ],
+          "prompt": {
+            "en": "Match each word to its kind of word."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "orchard"
+              },
+              "right": {
+                "en": "Noun"
+              }
+            },
+            {
+              "left": {
+                "en": "climb"
+              },
+              "right": {
+                "en": "Verb"
+              }
+            },
+            {
+              "left": {
+                "en": "juicy"
+              },
+              "right": {
+                "en": "Adjective"
+              }
+            }
+          ]
+        },
+        {
+          "id": "orchard-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.nouns-verbs"
+          ],
+          "question": {
+            "en": "The kids pick red apples. Which word is the verb?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "kids"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "pick"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "red"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "apples"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "orchard-4",
+          "type": "relay",
+          "skills": [
+            "us-writing.nouns-verbs"
+          ],
+          "first": {
+            "en": "Count the verbs in this sentence: The kids run, jump and climb."
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "en": "The first sentence has {x} verbs. Now read: The bees buzz, hum and land. Count its verbs and add them to {x}. How many verbs are in both sentences?"
+          }
+        },
+        {
+          "id": "orchard-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.nouns-verbs"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which sentence has a noun that names a place?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "We eat a pear."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "She jumps high."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The bee buzzes."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "We walk to the orchard."
+              }
+            }
+          ],
+          "correct": "d"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/orchard-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Apple Orchard: Describing Words"
+      },
+      "subject": "us-writing",
+      "grade": 2,
+      "place": "orchard",
+      "tasks": [
+        {
+          "id": "orchard-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-writing.adjectives"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Sentence: The big red apple fell down."
+          },
+          "prompt": {
+            "en": "How many describing words (adjectives) are in the sentence?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "orchard-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-writing.adjectives"
+          ],
+          "prompt": {
+            "en": "Match each word to its opposite."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "big"
+              },
+              "right": {
+                "en": "small"
+              }
+            },
+            {
+              "left": {
+                "en": "tall"
+              },
+              "right": {
+                "en": "short"
+              }
+            },
+            {
+              "left": {
+                "en": "hot"
+              },
+              "right": {
+                "en": "cold"
+              }
+            },
+            {
+              "left": {
+                "en": "wet"
+              },
+              "right": {
+                "en": "dry"
+              }
+            },
+            {
+              "left": {
+                "en": "loud"
+              },
+              "right": {
+                "en": "quiet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "orchard-2-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.adjectives"
+          ],
+          "question": {
+            "en": "Which word describes how an apple tastes?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "ran"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "tree"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "under"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "sweet"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "orchard-2-4",
+          "type": "relay",
+          "skills": [
+            "us-writing.adjectives"
+          ],
+          "first": {
+            "en": "Count the describing words in this sentence: The tiny green frog is slimy."
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "en": "The sentence has {x} describing words. You add 2 more. How many describing words does it have now?"
+          }
+        },
+        {
+          "id": "orchard-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-writing.adjectives"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which one is a complete sentence?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The ripe pear"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The ripe pear fell."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Fell from the tree"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/henhouse",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Hen House: Shapes"
+      },
+      "subject": "us-math",
+      "grade": 1,
+      "tasks": [
+        {
+          "id": "henhouse-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.shapes"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The hen house has 4 square windows. Each window has 4 sides."
+          },
+          "prompt": {
+            "en": "How many sides do all the windows have together?"
+          },
+          "answer": 16
+        },
+        {
+          "id": "henhouse-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.shapes"
+          ],
+          "prompt": {
+            "en": "Match each shape to its number of sides."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Triangle"
+              },
+              "right": {
+                "en": "3 sides"
+              }
+            },
+            {
+              "left": {
+                "en": "Rectangle"
+              },
+              "right": {
+                "en": "4 sides"
+              }
+            },
+            {
+              "left": {
+                "en": "Pentagon"
+              },
+              "right": {
+                "en": "5 sides"
+              }
+            },
+            {
+              "left": {
+                "en": "Hexagon"
+              },
+              "right": {
+                "en": "6 sides"
+              }
+            }
+          ]
+        },
+        {
+          "id": "henhouse-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.shapes"
+          ],
+          "question": {
+            "en": "A pie is cut into 4 equal parts. What is each part called?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A fourth (a quarter)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A half"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A whole"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "henhouse-4",
+          "type": "relay",
+          "skills": [
+            "us-math.shapes"
+          ],
+          "first": {
+            "en": "How many corners does a rectangle have?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "en": "A rectangle has {x} corners. There are 3 rectangles. How many corners do they have in all?"
+          }
+        },
+        {
+          "id": "henhouse-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.shapes"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "A cube has 6 flat faces. The farmer has 5 cube-shaped crates."
+          },
+          "prompt": {
+            "en": "How many flat faces do the crates have in all?"
+          },
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/henhouse-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Hen House: Comparing Numbers"
+      },
+      "subject": "us-math",
+      "grade": 2,
+      "place": "henhouse",
+      "tasks": [
+        {
+          "id": "henhouse-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.compare-numbers"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Hen A laid 47 eggs. Hen B laid 52 eggs."
+          },
+          "prompt": {
+            "en": "Which hen laid more eggs? Type 1 for Hen A or 2 for Hen B."
+          },
+          "answer": 2
+        },
+        {
+          "id": "henhouse-2-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-math.compare-numbers"
+          ],
+          "question": {
+            "en": "Which number is greater than 358?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "349"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "308"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "299"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "385"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "henhouse-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-math.compare-numbers"
+          ],
+          "prompt": {
+            "en": "Match each number to its words."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "145"
+              },
+              "right": {
+                "en": "one hundred forty-five"
+              }
+            },
+            {
+              "left": {
+                "en": "206"
+              },
+              "right": {
+                "en": "two hundred six"
+              }
+            },
+            {
+              "left": {
+                "en": "310"
+              },
+              "right": {
+                "en": "three hundred ten"
+              }
+            },
+            {
+              "left": {
+                "en": "589"
+              },
+              "right": {
+                "en": "five hundred eighty-nine"
+              }
+            }
+          ]
+        },
+        {
+          "id": "henhouse-2-4",
+          "type": "relay",
+          "skills": [
+            "us-math.compare-numbers"
+          ],
+          "first": {
+            "en": "The hen house has 2 hundreds, 3 tens and 5 ones of seeds. What number is that?"
+          },
+          "firstAnswer": 235,
+          "operation": {
+            "op": "add",
+            "operand": 100
+          },
+          "second": {
+            "en": "There are {x} seeds. The farmer pours in 100 more. How many seeds are there now?"
+          }
+        },
+        {
+          "id": "henhouse-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "us-math.compare-numbers"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "en": "A number has 4 hundreds, 0 tens and 7 ones."
+          },
+          "prompt": {
+            "en": "What is the number?"
+          },
+          "answer": 407
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/hill",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Berry Hill: Vowel Sounds"
+      },
+      "subject": "us-reading",
+      "grade": 2,
+      "tasks": [
+        {
+          "id": "hill-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-reading.vowel-sounds"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "The words are: bike, hat, kite, cat, hide."
+          },
+          "prompt": {
+            "en": "How many of the words have the long i sound?"
+          },
+          "answer": 3
+        },
+        {
+          "id": "hill-2",
+          "type": "matchPairs",
+          "skills": [
+            "us-reading.vowel-sounds"
+          ],
+          "prompt": {
+            "en": "Match each word to its vowel sound."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "rain"
+              },
+              "right": {
+                "en": "Long a"
+              }
+            },
+            {
+              "left": {
+                "en": "feet"
+              },
+              "right": {
+                "en": "Long e"
+              }
+            },
+            {
+              "left": {
+                "en": "boat"
+              },
+              "right": {
+                "en": "Long o"
+              }
+            },
+            {
+              "left": {
+                "en": "mule"
+              },
+              "right": {
+                "en": "Long u"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hill-3",
+          "type": "bothAgree",
+          "skills": [
+            "us-reading.vowel-sounds"
+          ],
+          "question": {
+            "en": "Which word has the short a sound, like in cap?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "cake"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "rain"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "map"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "play"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "hill-4",
+          "type": "relay",
+          "skills": [
+            "us-reading.vowel-sounds"
+          ],
+          "first": {
+            "en": "Say the word ship slowly: sh-i-p. How many sounds does it have?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "en": "Ship has {x} sounds. Now say the word chop slowly. Count its sounds and add them to {x}. How many sounds is that in all?"
+          }
+        },
+        {
+          "id": "hill-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-reading.vowel-sounds"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "Which word has the sh sound at the end?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "fish"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "chin"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "shop"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "thin"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-1-2/hill-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Berry Hill: True Books"
+      },
+      "subject": "us-reading",
+      "grade": 2,
+      "place": "hill",
+      "tasks": [
+        {
+          "id": "hill-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "us-reading.nonfiction"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "en": "Sentence: Berries grow on the hill and they taste sweet."
+          },
+          "prompt": {
+            "en": "How many words are in the sentence?"
+          },
+          "answer": 9
+        },
+        {
+          "id": "hill-2-2",
+          "type": "bothAgree",
+          "skills": [
+            "us-reading.nonfiction"
+          ],
+          "question": {
+            "en": "Which one is nonfiction (true facts)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A story about a talking bee king"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A book about how bees make honey"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A tale of a berry that flew to the moon"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "hill-2-3",
+          "type": "matchPairs",
+          "skills": [
+            "us-reading.nonfiction"
+          ],
+          "prompt": {
+            "en": "Match each book part to its job."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Title"
+              },
+              "right": {
+                "en": "Tells the name of the book"
+              }
+            },
+            {
+              "left": {
+                "en": "Heading"
+              },
+              "right": {
+                "en": "Tells what a section is about"
+              }
+            },
+            {
+              "left": {
+                "en": "Caption"
+              },
+              "right": {
+                "en": "Words under a photo"
+              }
+            },
+            {
+              "left": {
+                "en": "Glossary"
+              },
+              "right": {
+                "en": "Explains hard words at the back"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hill-2-4",
+          "type": "relay",
+          "skills": [
+            "us-reading.nonfiction"
+          ],
+          "first": {
+            "en": "A page has 3 headings. Each heading has 2 photos. How many photos is that in all?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "en": "The page has {x} photos. The next page has 4 more photos. How many photos is that in all?"
+          }
+        },
+        {
+          "id": "hill-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "us-reading.nonfiction"
+          ],
+          "difficulty": 3,
+          "question": {
+            "en": "A caption under a photo of a goat says: A goat eats grass. What does the caption tell you?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Who wrote the book"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "What the photo shows"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Where the book is sold"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    }
+  ]
+}

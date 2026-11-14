@@ -1,0 +1,4312 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "us.huckepack.grades-3-5",
+  "version": 1,
+  "title": {
+    "en": "Coast Adventure: Grades 3 to 5"
+  },
+  "description": {
+    "en": "Math, language arts, science and social studies for ages 8 to 11 (grades 3 to 5), based on the Common Core and NGSS in the United States."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "coast-math",
+      "title": {
+        "en": "Math"
+      }
+    },
+    {
+      "id": "coast-ela",
+      "title": {
+        "en": "Language Arts"
+      }
+    },
+    {
+      "id": "coast-science",
+      "title": {
+        "en": "Science"
+      }
+    },
+    {
+      "id": "coast-social",
+      "title": {
+        "en": "Social Studies"
+      }
+    }
+  ],
+  "skills": {
+    "coast-math.multiplication.facts": {
+      "en": "Multiplication facts"
+    },
+    "coast-math.multiplication.multi-digit": {
+      "en": "Multiplying larger numbers"
+    },
+    "coast-math.division.facts": {
+      "en": "Division facts"
+    },
+    "coast-math.money.cents": {
+      "en": "Dollars and cents"
+    },
+    "coast-math.fractions.basics": {
+      "en": "Understanding fractions"
+    },
+    "coast-math.fractions.add-subtract": {
+      "en": "Adding and subtracting fractions"
+    },
+    "coast-math.fractions.compare": {
+      "en": "Comparing fractions"
+    },
+    "coast-math.geometry.area": {
+      "en": "Area"
+    },
+    "coast-math.geometry.perimeter": {
+      "en": "Perimeter"
+    },
+    "coast-math.decimals.tenths": {
+      "en": "Decimals and tenths"
+    },
+    "coast-math.decimals.compare": {
+      "en": "Comparing decimals"
+    },
+    "coast-ela.grammar.nouns-verbs": {
+      "en": "Nouns and verbs"
+    },
+    "coast-ela.grammar.adjectives-adverbs": {
+      "en": "Adjectives and adverbs"
+    },
+    "coast-ela.grammar.capitalization": {
+      "en": "Capital letters"
+    },
+    "coast-ela.vocabulary.affixes": {
+      "en": "Prefixes and suffixes"
+    },
+    "coast-ela.vocabulary.synonyms-antonyms": {
+      "en": "Synonyms and antonyms"
+    },
+    "coast-ela.vocabulary.figurative": {
+      "en": "Figurative language"
+    },
+    "coast-ela.vocabulary.context": {
+      "en": "Word meanings"
+    },
+    "coast-ela.spelling.homophones": {
+      "en": "Homophones and spelling"
+    },
+    "coast-ela.spelling.syllables": {
+      "en": "Syllables"
+    },
+    "coast-ela.spelling.apostrophes": {
+      "en": "Apostrophes"
+    },
+    "coast-ela.reading.comprehension": {
+      "en": "Reading comprehension"
+    },
+    "coast-science.light.waves": {
+      "en": "Light and waves"
+    },
+    "coast-science.earth.erosion": {
+      "en": "Weathering and erosion"
+    },
+    "coast-science.earth.weather": {
+      "en": "Weather and climate"
+    },
+    "coast-science.life.food-webs": {
+      "en": "Food chains and food webs"
+    },
+    "coast-science.life.adaptations": {
+      "en": "Animal adaptations"
+    },
+    "coast-science.matter.mixtures": {
+      "en": "Matter and mixtures"
+    },
+    "coast-social.maps.skills": {
+      "en": "Map skills"
+    },
+    "coast-social.geography.states": {
+      "en": "States and regions"
+    },
+    "coast-social.geography.landforms": {
+      "en": "Landforms and waters"
+    },
+    "coast-social.economics.basics": {
+      "en": "Goods, services and needs"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "dock",
+    "nodes": [
+      {
+        "id": "dock",
+        "title": {
+          "en": "Ferry Dock"
+        },
+        "x": 0.1,
+        "y": 0.84,
+        "requires": []
+      },
+      {
+        "id": "market",
+        "title": {
+          "en": "Fish Market"
+        },
+        "x": 0.28,
+        "y": 0.72,
+        "level": "us.huckepack.grades-3-5/market",
+        "requires": []
+      },
+      {
+        "id": "harbor",
+        "title": {
+          "en": "Harbor"
+        },
+        "x": 0.48,
+        "y": 0.86,
+        "level": "us.huckepack.grades-3-5/harbor",
+        "requires": [
+          "us.huckepack.grades-3-5/market"
+        ]
+      },
+      {
+        "id": "tidepools",
+        "title": {
+          "en": "Tide Pools"
+        },
+        "x": 0.7,
+        "y": 0.88,
+        "level": "us.huckepack.grades-3-5/tidepools",
+        "requires": [
+          "us.huckepack.grades-3-5/harbor"
+        ]
+      },
+      {
+        "id": "bakery",
+        "title": {
+          "en": "Bakery"
+        },
+        "x": 0.12,
+        "y": 0.56,
+        "level": "us.huckepack.grades-3-5/bakery",
+        "requires": [
+          "us.huckepack.grades-3-5/market"
+        ]
+      },
+      {
+        "id": "boatyard",
+        "title": {
+          "en": "Boatyard"
+        },
+        "x": 0.46,
+        "y": 0.62,
+        "level": "us.huckepack.grades-3-5/boatyard",
+        "requires": [
+          "us.huckepack.grades-3-5/market"
+        ]
+      },
+      {
+        "id": "library",
+        "title": {
+          "en": "Library"
+        },
+        "x": 0.66,
+        "y": 0.66,
+        "level": "us.huckepack.grades-3-5/library",
+        "requires": [
+          "us.huckepack.grades-3-5/boatyard"
+        ]
+      },
+      {
+        "id": "dunes",
+        "title": {
+          "en": "Sand Dunes"
+        },
+        "x": 0.87,
+        "y": 0.62,
+        "level": "us.huckepack.grades-3-5/dunes",
+        "requires": [
+          "us.huckepack.grades-3-5/library"
+        ]
+      },
+      {
+        "id": "forest",
+        "title": {
+          "en": "Forest"
+        },
+        "x": 0.14,
+        "y": 0.32,
+        "level": "us.huckepack.grades-3-5/forest",
+        "requires": [
+          "us.huckepack.grades-3-5/bakery"
+        ]
+      },
+      {
+        "id": "ranger",
+        "title": {
+          "en": "Ranger Station"
+        },
+        "x": 0.34,
+        "y": 0.42,
+        "level": "us.huckepack.grades-3-5/ranger",
+        "requires": [
+          "us.huckepack.grades-3-5/boatyard"
+        ]
+      },
+      {
+        "id": "townhall",
+        "title": {
+          "en": "Town Hall"
+        },
+        "x": 0.54,
+        "y": 0.4,
+        "level": "us.huckepack.grades-3-5/townhall",
+        "requires": [
+          "us.huckepack.grades-3-5/ranger"
+        ]
+      },
+      {
+        "id": "picnic",
+        "title": {
+          "en": "Picnic Rock"
+        },
+        "x": 0.62,
+        "y": 0.18,
+        "miniGame": "ticTacToe",
+        "requires": [
+          "us.huckepack.grades-3-5/townhall"
+        ]
+      },
+      {
+        "id": "lighthouse",
+        "title": {
+          "en": "Lighthouse"
+        },
+        "x": 0.86,
+        "y": 0.16,
+        "level": "us.huckepack.grades-3-5/lighthouse",
+        "requires": [
+          "us.huckepack.grades-3-5/townhall"
+        ]
+      }
+    ],
+    "paths": [
+      [
+        "dock",
+        "market"
+      ],
+      [
+        "dock",
+        "bakery"
+      ],
+      [
+        "market",
+        "bakery"
+      ],
+      [
+        "market",
+        "boatyard"
+      ],
+      [
+        "market",
+        "harbor"
+      ],
+      [
+        "harbor",
+        "boatyard"
+      ],
+      [
+        "harbor",
+        "tidepools"
+      ],
+      [
+        "boatyard",
+        "library"
+      ],
+      [
+        "tidepools",
+        "library"
+      ],
+      [
+        "library",
+        "dunes"
+      ],
+      [
+        "tidepools",
+        "dunes"
+      ],
+      [
+        "bakery",
+        "forest"
+      ],
+      [
+        "forest",
+        "ranger"
+      ],
+      [
+        "ranger",
+        "boatyard"
+      ],
+      [
+        "ranger",
+        "townhall"
+      ],
+      [
+        "townhall",
+        "boatyard"
+      ],
+      [
+        "townhall",
+        "picnic"
+      ],
+      [
+        "picnic",
+        "lighthouse"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "us.huckepack.grades-3-5/market",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Fish Market: Multiplication"
+      },
+      "subject": "coast-math",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "a1",
+          "skills": [
+            "coast-math.multiplication.facts"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The fish stand has 6 crates. Each crate holds 7 fish."
+          },
+          "prompt": {
+            "en": "How many fish are there in all?"
+          },
+          "answer": 42
+        },
+        {
+          "id": "a2",
+          "skills": [
+            "coast-math.multiplication.facts"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each multiplication fact to its product."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "7 × 8"
+              },
+              "right": {
+                "en": "56"
+              }
+            },
+            {
+              "left": {
+                "en": "9 × 9"
+              },
+              "right": {
+                "en": "81"
+              }
+            },
+            {
+              "left": {
+                "en": "6 × 7"
+              },
+              "right": {
+                "en": "42"
+              }
+            },
+            {
+              "left": {
+                "en": "9 × 4"
+              },
+              "right": {
+                "en": "36"
+              }
+            },
+            {
+              "left": {
+                "en": "8 × 6"
+              },
+              "right": {
+                "en": "48"
+              }
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "skills": [
+            "coast-math.multiplication.facts"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "5 boxes hold 8 fish each. How many fish are there in all?"
+          },
+          "firstAnswer": 40,
+          "operation": {
+            "op": "subtract",
+            "operand": 9
+          },
+          "second": {
+            "en": "The market has {x} fish. Hungry gulls grab 9 of them. How many fish are left?"
+          }
+        },
+        {
+          "id": "a4",
+          "skills": [
+            "coast-math.multiplication.facts"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which way helps you find 7 × 6 by using 5 × 6?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "5 × 6 + 2 × 6"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "5 × 6 + 2"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "5 + 6 + 2"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "5 × 6 × 2"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "a5",
+          "skills": [
+            "coast-math.multiplication.facts"
+          ],
+          "difficulty": 3,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Stall A has 9 baskets with 8 clams in each. Stall B has 7 baskets with 9 clams in each."
+          },
+          "prompt": {
+            "en": "How many more clams does stall A have than stall B?"
+          },
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/market-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Fish Market: Division"
+      },
+      "subject": "coast-math",
+      "grade": 3,
+      "place": "market",
+      "tasks": [
+        {
+          "id": "b1",
+          "skills": [
+            "coast-math.division.facts"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "We have 24 oysters to share equally among 4 buckets."
+          },
+          "prompt": {
+            "en": "How many oysters go in each bucket?"
+          },
+          "answer": 6
+        },
+        {
+          "id": "b2",
+          "skills": [
+            "coast-math.division.facts"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each division problem to its answer."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "20 ÷ 4"
+              },
+              "right": {
+                "en": "5"
+              }
+            },
+            {
+              "left": {
+                "en": "18 ÷ 3"
+              },
+              "right": {
+                "en": "6"
+              }
+            },
+            {
+              "left": {
+                "en": "42 ÷ 6"
+              },
+              "right": {
+                "en": "7"
+              }
+            },
+            {
+              "left": {
+                "en": "64 ÷ 8"
+              },
+              "right": {
+                "en": "8"
+              }
+            },
+            {
+              "left": {
+                "en": "81 ÷ 9"
+              },
+              "right": {
+                "en": "9"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "skills": [
+            "coast-math.division.facts"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A boat brings 8 crates with 9 fish in each. How many fish is that?"
+          },
+          "firstAnswer": 72,
+          "operation": {
+            "op": "divide",
+            "operand": 6
+          },
+          "second": {
+            "en": "The {x} fish are shared equally among 6 stalls. How many fish does each stall get?"
+          }
+        },
+        {
+          "id": "b4",
+          "skills": [
+            "coast-math.division.facts"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which multiplication fact helps you solve 45 ÷ 5?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "5 × 8 = 40"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "5 × 9 = 45"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "4 × 5 = 20"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "9 + 5 = 14"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "b5",
+          "skills": [
+            "coast-math.division.facts"
+          ],
+          "difficulty": 3,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A net holds 30 fish. 3 nets are full. The fish are packed 5 to a box."
+          },
+          "prompt": {
+            "en": "How many boxes are needed?"
+          },
+          "answer": 18
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/market-3",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Fish Market: Dollars and Cents"
+      },
+      "subject": "coast-math",
+      "grade": 3,
+      "place": "market",
+      "tasks": [
+        {
+          "id": "c1",
+          "skills": [
+            "coast-math.money.cents"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A pack of shells costs 85 cents. A starfish sticker costs 40 cents."
+          },
+          "prompt": {
+            "en": "What do they cost together?"
+          },
+          "answer": 125,
+          "answerFormat": "dollarCents"
+        },
+        {
+          "id": "c2",
+          "skills": [
+            "coast-math.money.cents"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each set of coins to its value."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "3 quarters"
+              },
+              "right": {
+                "en": "75 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "2 dimes and 1 nickel"
+              },
+              "right": {
+                "en": "25 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "4 quarters"
+              },
+              "right": {
+                "en": "$1.00"
+              }
+            },
+            {
+              "left": {
+                "en": "5 dimes"
+              },
+              "right": {
+                "en": "50 cents"
+              }
+            },
+            {
+              "left": {
+                "en": "1 quarter and 1 dime"
+              },
+              "right": {
+                "en": "35 cents"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c3",
+          "skills": [
+            "coast-math.money.cents"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A kite costs $4.50 and a hat costs $2.75. What is the total?"
+          },
+          "firstAnswer": 725,
+          "operation": {
+            "op": "subtract",
+            "operand": 100
+          },
+          "second": {
+            "en": "Together they cost {x}. You get a discount of $1.00. How much do you pay?"
+          },
+          "answerFormat": "dollarCents"
+        },
+        {
+          "id": "c4",
+          "skills": [
+            "coast-math.money.cents"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which amount is the same as $4.07?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "4 dollars and 70 cents"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "47 dollars"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "4 dollars and 7 cents"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "4 dollars and 7 dimes"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "c5",
+          "skills": [
+            "coast-math.money.cents"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Maya buys 3 oranges for 60 cents each and a loaf of bread for $1.25."
+          },
+          "prompt": {
+            "en": "What is the total?"
+          },
+          "answer": 305,
+          "answerFormat": "dollarCents"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/bakery",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Bakery: Fractions"
+      },
+      "subject": "coast-math",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "d1",
+          "skills": [
+            "coast-math.fractions.basics"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The baker cut a pie into 8 equal slices. The kids ate 3 slices."
+          },
+          "prompt": {
+            "en": "How many slices are left?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "d2",
+          "skills": [
+            "coast-math.fractions.basics"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each fraction to the equal fraction."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "1/2"
+              },
+              "right": {
+                "en": "4/8"
+              }
+            },
+            {
+              "left": {
+                "en": "1/4"
+              },
+              "right": {
+                "en": "2/8"
+              }
+            },
+            {
+              "left": {
+                "en": "3/4"
+              },
+              "right": {
+                "en": "6/8"
+              }
+            },
+            {
+              "left": {
+                "en": "1/3"
+              },
+              "right": {
+                "en": "2/6"
+              }
+            },
+            {
+              "left": {
+                "en": "2/3"
+              },
+              "right": {
+                "en": "4/6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d3",
+          "skills": [
+            "coast-math.fractions.compare"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which fraction of a pie is the biggest?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "3/8"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "3/4"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "1/4"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "3/6"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "d4",
+          "skills": [
+            "coast-math.fractions.basics"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A tray holds 24 rolls. One fourth of them are cinnamon rolls. How many cinnamon rolls are on the tray?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "en": "One tray has {x} cinnamon rolls. The baker bakes 3 trays like this. How many cinnamon rolls is that?"
+          }
+        },
+        {
+          "id": "d5",
+          "skills": [
+            "coast-math.fractions.basics"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A loaf is cut into 6 equal pieces. Sam eats 1/6, Ana eats 2/6 and Leo eats 1/6."
+          },
+          "prompt": {
+            "en": "How many sixths of the loaf did they eat in all?"
+          },
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/bakery-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Bakery: Adding Fractions"
+      },
+      "subject": "coast-math",
+      "grade": 4,
+      "place": "bakery",
+      "tasks": [
+        {
+          "id": "e1",
+          "skills": [
+            "coast-math.fractions.add-subtract"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The recipe uses 3/8 cup of sugar and 2/8 cup of honey."
+          },
+          "prompt": {
+            "en": "How many eighths of a cup is that altogether?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "e2",
+          "skills": [
+            "coast-math.fractions.add-subtract"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "Add 5/10 + 3/10. How many tenths is the sum?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "en": "You have {x}/10 of a gallon of juice. You pour out 5/10 of a gallon. How many tenths are left?"
+          }
+        },
+        {
+          "id": "e3",
+          "skills": [
+            "coast-math.fractions.add-subtract"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each problem to its answer."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "3/5 + 1/5"
+              },
+              "right": {
+                "en": "4/5"
+              }
+            },
+            {
+              "left": {
+                "en": "5/8 + 2/8"
+              },
+              "right": {
+                "en": "7/8"
+              }
+            },
+            {
+              "left": {
+                "en": "1/3 + 1/3"
+              },
+              "right": {
+                "en": "2/3"
+              }
+            },
+            {
+              "left": {
+                "en": "7/10 − 3/10"
+              },
+              "right": {
+                "en": "4/10"
+              }
+            },
+            {
+              "left": {
+                "en": "6/6 − 1/6"
+              },
+              "right": {
+                "en": "5/6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e4",
+          "skills": [
+            "coast-math.fractions.add-subtract"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Ben ran 3/4 mile on Monday and 2/4 mile on Tuesday."
+          },
+          "prompt": {
+            "en": "How many fourths of a mile did Ben run in all?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "e5",
+          "skills": [
+            "coast-math.fractions.add-subtract"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "What is 1/4 + 2/4 + 3/4?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "1 1/2"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "6/12"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "1 1/4"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "2 1/2"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/boatyard",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Boatyard: Area and Perimeter"
+      },
+      "subject": "coast-math",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "f1",
+          "skills": [
+            "coast-math.geometry.area"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A rectangular sail is 6 feet long and 4 feet wide."
+          },
+          "prompt": {
+            "en": "What is the area of the sail in square feet?"
+          },
+          "answer": 24
+        },
+        {
+          "id": "f2",
+          "skills": [
+            "coast-math.geometry.area"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A dock is 9 feet long and 3 feet wide. What is its area in square feet?"
+          },
+          "firstAnswer": 27,
+          "operation": {
+            "op": "divide",
+            "operand": 9
+          },
+          "second": {
+            "en": "{x} square feet of the dock need paint. One can of paint covers 9 square feet. How many cans do you need?"
+          }
+        },
+        {
+          "id": "f3",
+          "skills": [
+            "coast-math.geometry.perimeter"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each shape to its measure."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Rectangle 5 ft by 3 ft: perimeter"
+              },
+              "right": {
+                "en": "16 ft"
+              }
+            },
+            {
+              "left": {
+                "en": "Square with side 6 ft: area"
+              },
+              "right": {
+                "en": "36 square ft"
+              }
+            },
+            {
+              "left": {
+                "en": "Rectangle 7 ft by 2 ft: area"
+              },
+              "right": {
+                "en": "14 square ft"
+              }
+            },
+            {
+              "left": {
+                "en": "Rectangle 10 ft by 4 ft: perimeter"
+              },
+              "right": {
+                "en": "28 ft"
+              }
+            },
+            {
+              "left": {
+                "en": "Square with side 5 ft: perimeter"
+              },
+              "right": {
+                "en": "20 ft"
+              }
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "skills": [
+            "coast-math.geometry.perimeter"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "A rectangle is 7 cm long and 3 cm wide. What is its perimeter?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "20 cm"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "21 square cm"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "10 cm"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "14 cm"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "f5",
+          "skills": [
+            "coast-math.geometry.area"
+          ],
+          "difficulty": 3,
+          "type": "splitInfo",
+          "clue": {
+            "en": "An L-shaped garden is made of two rectangles: one is 5 ft by 4 ft, the other is 3 ft by 2 ft."
+          },
+          "prompt": {
+            "en": "What is the total area of the garden in square feet?"
+          },
+          "answer": 26
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/boatyard-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Boatyard: Bigger Multiplication"
+      },
+      "subject": "coast-math",
+      "grade": 4,
+      "place": "boatyard",
+      "tasks": [
+        {
+          "id": "g1",
+          "skills": [
+            "coast-math.multiplication.multi-digit"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The boatyard has 12 boxes of nails. Each box holds 25 nails."
+          },
+          "prompt": {
+            "en": "How many nails are there in all?"
+          },
+          "answer": 300
+        },
+        {
+          "id": "g2",
+          "skills": [
+            "coast-math.multiplication.multi-digit"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A boat has 4 ropes. Each rope is 15 feet long. How many feet of rope is that?"
+          },
+          "firstAnswer": 60,
+          "operation": {
+            "op": "multiply",
+            "operand": 6
+          },
+          "second": {
+            "en": "One boat needs {x} feet of rope. How many feet of rope do 6 boats need?"
+          }
+        },
+        {
+          "id": "g3",
+          "skills": [
+            "coast-math.multiplication.multi-digit"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each problem to its product."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "30 × 40"
+              },
+              "right": {
+                "en": "1,200"
+              }
+            },
+            {
+              "left": {
+                "en": "50 × 6"
+              },
+              "right": {
+                "en": "300"
+              }
+            },
+            {
+              "left": {
+                "en": "12 × 11"
+              },
+              "right": {
+                "en": "132"
+              }
+            },
+            {
+              "left": {
+                "en": "25 × 8"
+              },
+              "right": {
+                "en": "200"
+              }
+            },
+            {
+              "left": {
+                "en": "9 × 70"
+              },
+              "right": {
+                "en": "630"
+              }
+            }
+          ]
+        },
+        {
+          "id": "g4",
+          "skills": [
+            "coast-math.multiplication.multi-digit"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "You want to estimate 38 × 21. Which estimate is the best?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "About 800"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "About 80"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "About 8,000"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "About 1,200"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "g5",
+          "skills": [
+            "coast-math.multiplication.multi-digit"
+          ],
+          "difficulty": 3,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The shipyard builds 14 boats a year. Each boat needs 32 planks for the hull and 8 planks for the deck."
+          },
+          "prompt": {
+            "en": "How many planks does the shipyard use in one year?"
+          },
+          "answer": 560
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/boatyard-3",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Boatyard: Decimals"
+      },
+      "subject": "coast-math",
+      "grade": 4,
+      "place": "boatyard",
+      "tasks": [
+        {
+          "id": "h1",
+          "skills": [
+            "coast-math.decimals.tenths"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "One board is 3 tenths of a meter long. Another board is 4 tenths of a meter long."
+          },
+          "prompt": {
+            "en": "Put the boards end to end. How many tenths of a meter is that?"
+          },
+          "answer": 7
+        },
+        {
+          "id": "h2",
+          "skills": [
+            "coast-math.decimals.tenths"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each decimal to the equal fraction."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "0.5"
+              },
+              "right": {
+                "en": "1/2"
+              }
+            },
+            {
+              "left": {
+                "en": "0.25"
+              },
+              "right": {
+                "en": "1/4"
+              }
+            },
+            {
+              "left": {
+                "en": "0.75"
+              },
+              "right": {
+                "en": "3/4"
+              }
+            },
+            {
+              "left": {
+                "en": "0.1"
+              },
+              "right": {
+                "en": "1/10"
+              }
+            },
+            {
+              "left": {
+                "en": "0.2"
+              },
+              "right": {
+                "en": "1/5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "skills": [
+            "coast-math.decimals.compare"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which number is the greatest?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "0.45"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "0.06"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "0.6"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "0.5"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "h4",
+          "skills": [
+            "coast-math.decimals.tenths"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A plank is 2.5 meters long. How many centimeters is that? (1 meter = 100 centimeters)"
+          },
+          "firstAnswer": 250,
+          "operation": {
+            "op": "divide",
+            "operand": 5
+          },
+          "second": {
+            "en": "The plank is {x} centimeters long. It is cut into 5 equal pieces. How many centimeters long is each piece?"
+          }
+        },
+        {
+          "id": "h5",
+          "skills": [
+            "coast-math.decimals.compare"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which number is between 0.3 and 0.4?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "0.03"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "0.35"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "0.5"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "0.43"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/harbor",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Harbor Words: Nouns and Verbs"
+      },
+      "subject": "coast-ela",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "i1",
+          "skills": [
+            "coast-ela.grammar.nouns-verbs"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Read the sentence: The gulls fly over the boats."
+          },
+          "prompt": {
+            "en": "How many nouns are in the sentence? Your partner reads the sentence to you."
+          },
+          "answer": 2
+        },
+        {
+          "id": "i2",
+          "skills": [
+            "coast-ela.grammar.nouns-verbs"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each verb to its past tense."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "run"
+              },
+              "right": {
+                "en": "ran"
+              }
+            },
+            {
+              "left": {
+                "en": "sail"
+              },
+              "right": {
+                "en": "sailed"
+              }
+            },
+            {
+              "left": {
+                "en": "swim"
+              },
+              "right": {
+                "en": "swam"
+              }
+            },
+            {
+              "left": {
+                "en": "catch"
+              },
+              "right": {
+                "en": "caught"
+              }
+            },
+            {
+              "left": {
+                "en": "fly"
+              },
+              "right": {
+                "en": "flew"
+              }
+            }
+          ]
+        },
+        {
+          "id": "i3",
+          "skills": [
+            "coast-ela.grammar.capitalization"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence is written correctly?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "We sailed to Boston on Friday."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "we sailed to boston on friday."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "We sailed to boston on friday."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "We sailed to Boston on friday."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "i4",
+          "skills": [
+            "coast-ela.spelling.syllables"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "Count the nouns in this sentence: The captain tied the rope to the dock."
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "en": "That sentence has {x} nouns. Now read: The gulls watched the boats. Count its nouns and add them to {x}. How many nouns is that in all?"
+          }
+        },
+        {
+          "id": "i5",
+          "skills": [
+            "coast-ela.grammar.nouns-verbs"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Read the sentence: Pelicans dive, splash, and swim near the pier."
+          },
+          "prompt": {
+            "en": "How many verbs are in the sentence? Your partner reads it to you."
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/harbor-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Harbor Words: Describing Words"
+      },
+      "subject": "coast-ela",
+      "grade": 4,
+      "place": "harbor",
+      "tasks": [
+        {
+          "id": "j1",
+          "skills": [
+            "coast-ela.grammar.adjectives-adverbs"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Read the sentence: The old red boat sailed slowly into the busy harbor."
+          },
+          "prompt": {
+            "en": "How many adjectives are in the sentence?"
+          },
+          "answer": 3
+        },
+        {
+          "id": "j2",
+          "skills": [
+            "coast-ela.vocabulary.synonyms-antonyms"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each word to its opposite."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "calm"
+              },
+              "right": {
+                "en": "stormy"
+              }
+            },
+            {
+              "left": {
+                "en": "ancient"
+              },
+              "right": {
+                "en": "modern"
+              }
+            },
+            {
+              "left": {
+                "en": "shallow"
+              },
+              "right": {
+                "en": "deep"
+              }
+            },
+            {
+              "left": {
+                "en": "tiny"
+              },
+              "right": {
+                "en": "enormous"
+              }
+            },
+            {
+              "left": {
+                "en": "bumpy"
+              },
+              "right": {
+                "en": "smooth"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j3",
+          "skills": [
+            "coast-ela.grammar.adjectives-adverbs"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which word is an adverb in this sentence: The waves crashed loudly on the rocks?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "crashed"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "waves"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "loudly"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "rocks"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "j4",
+          "skills": [
+            "coast-ela.grammar.adjectives-adverbs"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "Count the adverbs: Quietly, the sailors worked carefully and quickly."
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "en": "Sentence one has {x} adverbs. Sentence two has twice as many. How many adverbs are in sentence two?"
+          }
+        },
+        {
+          "id": "j5",
+          "skills": [
+            "coast-ela.grammar.adjectives-adverbs"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence uses a comparing word correctly?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The lighthouse is more tall than the tower."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The lighthouse is taller than the tower."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The lighthouse is tallest than the tower."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The lighthouse is taller then the tower."
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/harbor-3",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Harbor Words: Word Parts"
+      },
+      "subject": "coast-ela",
+      "grade": 4,
+      "place": "harbor",
+      "tasks": [
+        {
+          "id": "k1",
+          "skills": [
+            "coast-ela.vocabulary.affixes"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The word is rewrite. Its prefix is re-, which means again."
+          },
+          "prompt": {
+            "en": "How many letters are in the base word, without the prefix?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "k2",
+          "skills": [
+            "coast-ela.vocabulary.affixes"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each word to its meaning."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "unsafe"
+              },
+              "right": {
+                "en": "not safe"
+              }
+            },
+            {
+              "left": {
+                "en": "rebuild"
+              },
+              "right": {
+                "en": "build again"
+              }
+            },
+            {
+              "left": {
+                "en": "preheat"
+              },
+              "right": {
+                "en": "heat before"
+              }
+            },
+            {
+              "left": {
+                "en": "misspell"
+              },
+              "right": {
+                "en": "spell wrongly"
+              }
+            },
+            {
+              "left": {
+                "en": "dishonest"
+              },
+              "right": {
+                "en": "not honest"
+              }
+            }
+          ]
+        },
+        {
+          "id": "k3",
+          "skills": [
+            "coast-ela.vocabulary.affixes"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which suffix means without, as in hopeless?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "-less"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "-ful"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "-er"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "-ly"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "k4",
+          "skills": [
+            "coast-ela.vocabulary.affixes"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many letters are in the word careless?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "subtract",
+            "operand": 4
+          },
+          "second": {
+            "en": "The word careless has {x} letters. Take away the suffix -less, which has 4 letters. How many letters are in the base word?"
+          }
+        },
+        {
+          "id": "k5",
+          "skills": [
+            "coast-ela.vocabulary.affixes"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "What does the word unbelievable mean?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "able to be believed again"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "full of belief"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "before belief"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "not able to be believed"
+              }
+            }
+          ],
+          "correct": "d"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/library",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Library: Spelling and Sounds"
+      },
+      "subject": "coast-ela",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "l1",
+          "skills": [
+            "coast-ela.spelling.apostrophes"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The contraction is don't. It stands for do not."
+          },
+          "prompt": {
+            "en": "How many letters does the apostrophe replace?"
+          },
+          "answer": 1
+        },
+        {
+          "id": "l2",
+          "skills": [
+            "coast-ela.spelling.homophones"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each word to the word that sounds the same."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "sail"
+              },
+              "right": {
+                "en": "sale"
+              }
+            },
+            {
+              "left": {
+                "en": "whole"
+              },
+              "right": {
+                "en": "hole"
+              }
+            },
+            {
+              "left": {
+                "en": "pier"
+              },
+              "right": {
+                "en": "peer"
+              }
+            },
+            {
+              "left": {
+                "en": "tide"
+              },
+              "right": {
+                "en": "tied"
+              }
+            },
+            {
+              "left": {
+                "en": "sea"
+              },
+              "right": {
+                "en": "see"
+              }
+            }
+          ]
+        },
+        {
+          "id": "l3",
+          "skills": [
+            "coast-ela.spelling.homophones"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence uses there, their and they're correctly?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "They're packing their bags over there."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Their packing they're bags over there."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "There packing their bags over they're."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "They're packing there bags over their."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "l4",
+          "skills": [
+            "coast-ela.spelling.syllables"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many syllables are in the word seashell?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "en": "The word seashell has {x} syllables. Now clap the word lighthouse. Count its syllables and add them to {x}. How many syllables is that in all?"
+          }
+        },
+        {
+          "id": "l5",
+          "skills": [
+            "coast-ela.spelling.apostrophes"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "These phrases need apostrophes: the captains hat, the pelicans beak, the childrens boat."
+          },
+          "prompt": {
+            "en": "How many apostrophes are needed in all (one for each phrase)?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/library-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Library: Reading Stories"
+      },
+      "subject": "coast-ela",
+      "grade": 4,
+      "place": "library",
+      "tasks": [
+        {
+          "id": "m1",
+          "skills": [
+            "coast-ela.reading.comprehension"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Nina walked along the pier at sunrise. She counted 5 pelicans on the railing and 3 more in the water. Then a boat horn made them all fly away."
+          },
+          "prompt": {
+            "en": "How many pelicans did Nina count before they flew away?"
+          },
+          "answer": 8
+        },
+        {
+          "id": "m2",
+          "skills": [
+            "coast-ela.reading.comprehension"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Read: Dunes are hills of sand. Wind moves the sand. Grass roots hold the sand in place, so dunes do not blow away. What is the main idea?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Plants help keep dunes in place."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Wind is always cold."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Dunes are found only in deserts."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Sand is a kind of rock."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "m3",
+          "skills": [
+            "coast-ela.vocabulary.context"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each word to its meaning."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "harbor"
+              },
+              "right": {
+                "en": "a safe place for boats"
+              }
+            },
+            {
+              "left": {
+                "en": "cargo"
+              },
+              "right": {
+                "en": "goods carried by a ship"
+              }
+            },
+            {
+              "left": {
+                "en": "anchor"
+              },
+              "right": {
+                "en": "a heavy weight that holds a boat in place"
+              }
+            },
+            {
+              "left": {
+                "en": "voyage"
+              },
+              "right": {
+                "en": "a long trip by sea"
+              }
+            },
+            {
+              "left": {
+                "en": "horizon"
+              },
+              "right": {
+                "en": "where the sky seems to meet the sea"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "skills": [
+            "coast-ela.reading.comprehension"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A story book has 3 chapters. Each chapter is 12 pages long. How many pages does the book have?"
+          },
+          "firstAnswer": 36,
+          "operation": {
+            "op": "divide",
+            "operand": 9
+          },
+          "second": {
+            "en": "The book has {x} pages. Nina reads 9 pages each day. How many days does she need to finish the book?"
+          }
+        },
+        {
+          "id": "m5",
+          "skills": [
+            "coast-ela.reading.comprehension"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Read: Leo zipped his raincoat, grabbed his boots, and watched dark clouds roll over the bay. What can you tell from the story?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Leo is going swimming."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "It is about to rain."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "It is a sunny day."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Leo is lost."
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/library-3",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Library: Figurative Language"
+      },
+      "subject": "coast-ela",
+      "grade": 5,
+      "place": "library",
+      "tasks": [
+        {
+          "id": "n1",
+          "skills": [
+            "coast-ela.vocabulary.figurative"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "1) The fog was as thick as soup. 2) The waves danced. 3) The sea was a mirror. 4) The wind howled like a wolf."
+          },
+          "prompt": {
+            "en": "How many of these four sentences are similes?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "n2",
+          "skills": [
+            "coast-ela.vocabulary.figurative"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each saying to what it means."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "It's raining cats and dogs"
+              },
+              "right": {
+                "en": "raining very hard"
+              }
+            },
+            {
+              "left": {
+                "en": "a piece of cake"
+              },
+              "right": {
+                "en": "very easy"
+              }
+            },
+            {
+              "left": {
+                "en": "under the weather"
+              },
+              "right": {
+                "en": "feeling sick"
+              }
+            },
+            {
+              "left": {
+                "en": "spill the beans"
+              },
+              "right": {
+                "en": "tell a secret"
+              }
+            },
+            {
+              "left": {
+                "en": "break the ice"
+              },
+              "right": {
+                "en": "start a friendly talk"
+              }
+            }
+          ]
+        },
+        {
+          "id": "n3",
+          "skills": [
+            "coast-ela.vocabulary.figurative"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence is a metaphor?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The lighthouse is a giant candle in the night."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The lighthouse is as bright as a star."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The lighthouse stood on the cliff."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The lighthouse shone brightly."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "n4",
+          "skills": [
+            "coast-ela.reading.comprehension"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "Read: The moon was as round as a coin. The waves were like silver. The fog was a blanket. How many of these sentences are similes?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "en": "You found {x} similes. Now read: The street was a river of cars. Her smile was sunshine. The rain sang. The stars were diamonds. Count the metaphors here and add them to {x}. How many similes and metaphors is that in all?"
+          }
+        },
+        {
+          "id": "n5",
+          "skills": [
+            "coast-ela.vocabulary.synonyms-antonyms"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which word is closest in meaning to reluctant?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "unwilling"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "eager"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "tired"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "quiet"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/lighthouse",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Lighthouse: Light"
+      },
+      "subject": "coast-science",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "o1",
+          "skills": [
+            "coast-science.light.waves"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The lighthouse lamp turns once every 10 seconds. It flashes once on each turn."
+          },
+          "prompt": {
+            "en": "How many flashes are there in 60 seconds?"
+          },
+          "answer": 6
+        },
+        {
+          "id": "o2",
+          "skills": [
+            "coast-science.light.waves"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "How does light from the lamp travel?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "In straight lines until it hits something"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "In circles"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Around every corner"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Only in the dark"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "o3",
+          "skills": [
+            "coast-science.light.waves"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each material to what it does with light."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Mirror"
+              },
+              "right": {
+                "en": "bounces light back"
+              }
+            },
+            {
+              "left": {
+                "en": "Clear glass"
+              },
+              "right": {
+                "en": "lets light pass through"
+              }
+            },
+            {
+              "left": {
+                "en": "Wooden door"
+              },
+              "right": {
+                "en": "blocks light"
+              }
+            },
+            {
+              "left": {
+                "en": "Wax paper"
+              },
+              "right": {
+                "en": "lets some light through"
+              }
+            },
+            {
+              "left": {
+                "en": "Lens"
+              },
+              "right": {
+                "en": "bends light"
+              }
+            }
+          ]
+        },
+        {
+          "id": "o4",
+          "skills": [
+            "coast-science.light.waves"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "The beam flashes every 5 seconds. How many flashes are there in 60 seconds?"
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "en": "In one minute there are {x} flashes. How many flashes are there in 2 minutes?"
+          }
+        },
+        {
+          "id": "o5",
+          "skills": [
+            "coast-science.light.waves"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Why can sailors see the lighthouse far away at night?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Light bends around the waves."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Their eyes send out light."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Light travels in a straight line from the bright lamp to their eyes."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Sound carries the light."
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/dunes",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Dunes: Wind and Water"
+      },
+      "subject": "coast-science",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "p1",
+          "skills": [
+            "coast-science.earth.erosion"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A dune is 20 feet tall. Storms wear away 2 feet each year for 4 years."
+          },
+          "prompt": {
+            "en": "How many feet tall is the dune after 4 years?"
+          },
+          "answer": 12
+        },
+        {
+          "id": "p2",
+          "skills": [
+            "coast-science.earth.erosion"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which is an example of erosion?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A seed grows into a plant."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Waves carry sand away from the beach."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Water freezes in a bowl."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "A shell sits on the sand."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "p3",
+          "skills": [
+            "coast-science.earth.erosion"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each word to an example."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Weathering"
+              },
+              "right": {
+                "en": "water freezes in a crack and breaks the rock"
+              }
+            },
+            {
+              "left": {
+                "en": "Erosion"
+              },
+              "right": {
+                "en": "wind blows sand away"
+              }
+            },
+            {
+              "left": {
+                "en": "Deposition"
+              },
+              "right": {
+                "en": "a river drops sand where it meets the sea"
+              }
+            },
+            {
+              "left": {
+                "en": "Dune grass"
+              },
+              "right": {
+                "en": "roots hold the sand in place"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p4",
+          "skills": [
+            "coast-science.earth.erosion"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A storm moves 8 inches of sand off the beach. How many inches are moved by 5 storms like this?"
+          },
+          "firstAnswer": 40,
+          "operation": {
+            "op": "subtract",
+            "operand": 12
+          },
+          "second": {
+            "en": "{x} inches of sand would wash away. Dune grass keeps 12 inches in place. How many inches are lost?"
+          }
+        },
+        {
+          "id": "p5",
+          "skills": [
+            "coast-science.earth.erosion"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "How does dune grass help protect a dune?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Its roots hold the sand so less is carried away."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "It makes the wind stronger."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "It melts the rocks."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "It makes waves bigger."
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/dunes-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Weather Station"
+      },
+      "subject": "coast-science",
+      "grade": 3,
+      "place": "dunes",
+      "tasks": [
+        {
+          "id": "q1",
+          "skills": [
+            "coast-science.earth.weather"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Daily high temperatures in degrees Fahrenheit: Monday 68, Tuesday 71, Wednesday 74, Thursday 70."
+          },
+          "prompt": {
+            "en": "How many degrees warmer is the warmest day than the coolest day?"
+          },
+          "answer": 6
+        },
+        {
+          "id": "q2",
+          "skills": [
+            "coast-science.earth.weather"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which tool measures temperature?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Thermometer"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Rain gauge"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Weather vane"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Ruler"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "q3",
+          "skills": [
+            "coast-science.earth.weather"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each weather tool to what it shows."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Thermometer"
+              },
+              "right": {
+                "en": "how warm the air is"
+              }
+            },
+            {
+              "left": {
+                "en": "Rain gauge"
+              },
+              "right": {
+                "en": "how much rain fell"
+              }
+            },
+            {
+              "left": {
+                "en": "Wind vane"
+              },
+              "right": {
+                "en": "which way the wind blows"
+              }
+            },
+            {
+              "left": {
+                "en": "Anemometer"
+              },
+              "right": {
+                "en": "how fast the wind blows"
+              }
+            },
+            {
+              "left": {
+                "en": "Barometer"
+              },
+              "right": {
+                "en": "the pressure of the air"
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "skills": [
+            "coast-science.earth.weather"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "The rain gauge showed 2 inches on Monday, 4 inches on Wednesday and 1 inch on Friday. How many inches fell in all?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "en": "This week {x} inches of rain fell. Last week it rained 3 inches more. How many inches fell last week?"
+          }
+        },
+        {
+          "id": "q5",
+          "skills": [
+            "coast-science.earth.weather"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence describes climate?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "It rained this morning."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Summers on the coast are usually warm and winters are mild."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Tomorrow will be foggy."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The wind is strong today."
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/forest",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Forest Trail: Food Webs"
+      },
+      "subject": "coast-science",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "r1",
+          "skills": [
+            "coast-science.life.food-webs"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A food chain: sun, grass, rabbit, fox."
+          },
+          "prompt": {
+            "en": "How many living things are in the chain?"
+          },
+          "answer": 3
+        },
+        {
+          "id": "r2",
+          "skills": [
+            "coast-science.life.food-webs"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each role to an example."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Producer"
+              },
+              "right": {
+                "en": "an oak tree making food from sunlight"
+              }
+            },
+            {
+              "left": {
+                "en": "Herbivore"
+              },
+              "right": {
+                "en": "a deer eating leaves"
+              }
+            },
+            {
+              "left": {
+                "en": "Carnivore"
+              },
+              "right": {
+                "en": "an owl eating mice"
+              }
+            },
+            {
+              "left": {
+                "en": "Decomposer"
+              },
+              "right": {
+                "en": "a mushroom breaking down a log"
+              }
+            },
+            {
+              "left": {
+                "en": "Omnivore"
+              },
+              "right": {
+                "en": "a raccoon eating berries and frogs"
+              }
+            }
+          ]
+        },
+        {
+          "id": "r3",
+          "skills": [
+            "coast-science.life.food-webs"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "In a food web, what do the arrows show?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The direction energy moves when food is eaten."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Which animal is stronger."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Where animals live."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The way animals walk."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "r4",
+          "skills": [
+            "coast-science.life.food-webs"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A fox eats 3 mice each night. How many mice does it eat in 7 nights?"
+          },
+          "firstAnswer": 21,
+          "operation": {
+            "op": "add",
+            "operand": 12
+          },
+          "second": {
+            "en": "The fox ate {x} mice this week. The owls ate 12 mice. How many mice were eaten in all?"
+          }
+        },
+        {
+          "id": "r5",
+          "skills": [
+            "coast-science.life.food-webs"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "What may happen if most of the rabbits in a forest disappear?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Nothing changes."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Foxes may go hungry and the plants rabbits eat may grow more."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Foxes will have more food."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The plants will all die."
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/tidepools",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Tide Pools: Animal Adaptations"
+      },
+      "subject": "coast-science",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "s1",
+          "skills": [
+            "coast-science.life.adaptations"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A starfish has 5 arms. There are 6 starfish in the tide pool."
+          },
+          "prompt": {
+            "en": "How many arms do the starfish have in all?"
+          },
+          "answer": 30
+        },
+        {
+          "id": "s2",
+          "skills": [
+            "coast-science.life.adaptations"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Why do mussels stick tightly to rocks?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "So the waves do not wash them away."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "So they can fly."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "So they can see better."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "So they can hide in the sand."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "s3",
+          "skills": [
+            "coast-science.life.adaptations"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each body part to what it helps the animal do."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "A crab's hard shell"
+              },
+              "right": {
+                "en": "protects it from enemies"
+              }
+            },
+            {
+              "left": {
+                "en": "A fish's gills"
+              },
+              "right": {
+                "en": "let it breathe underwater"
+              }
+            },
+            {
+              "left": {
+                "en": "A seagull's webbed feet"
+              },
+              "right": {
+                "en": "help it swim"
+              }
+            },
+            {
+              "left": {
+                "en": "A flounder's sandy color"
+              },
+              "right": {
+                "en": "hides it on the sea floor"
+              }
+            },
+            {
+              "left": {
+                "en": "A pelican's big beak pouch"
+              },
+              "right": {
+                "en": "scoops up fish"
+              }
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "skills": [
+            "coast-science.life.adaptations"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "There are 3 snails on each of 9 rocks. How many snails are there?"
+          },
+          "firstAnswer": 27,
+          "operation": {
+            "op": "subtract",
+            "operand": 8
+          },
+          "second": {
+            "en": "The pool has {x} snails. A big wave washes 8 away. How many snails are left?"
+          }
+        },
+        {
+          "id": "s5",
+          "skills": [
+            "coast-science.life.adaptations"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which is a behavior that helps an animal survive?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A seal's thick layer of fat"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A fish's streamlined body"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A bird flying south for the winter"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "A crab's strong claws"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/tidepools-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Salt and Water"
+      },
+      "subject": "coast-science",
+      "grade": 5,
+      "place": "tidepools",
+      "tasks": [
+        {
+          "id": "t1",
+          "skills": [
+            "coast-science.matter.mixtures"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Mix 100 grams of water with 20 grams of salt. The salt dissolves."
+          },
+          "prompt": {
+            "en": "How many grams is the salty water altogether?"
+          },
+          "answer": 120
+        },
+        {
+          "id": "t2",
+          "skills": [
+            "coast-science.matter.mixtures"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Salty water sits in a sunny dish until all the water evaporates. What is left in the dish?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The salt"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Nothing"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "More water"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Sand"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "t3",
+          "skills": [
+            "coast-science.matter.mixtures"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each change to what happens."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Melting"
+              },
+              "right": {
+                "en": "solid to liquid"
+              }
+            },
+            {
+              "left": {
+                "en": "Freezing"
+              },
+              "right": {
+                "en": "liquid to solid"
+              }
+            },
+            {
+              "left": {
+                "en": "Evaporation"
+              },
+              "right": {
+                "en": "liquid to gas"
+              }
+            },
+            {
+              "left": {
+                "en": "Condensation"
+              },
+              "right": {
+                "en": "gas to liquid"
+              }
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "skills": [
+            "coast-science.matter.mixtures"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "Seawater has about 35 grams of salt in every 1,000 grams. How many grams of salt are in 4,000 grams?"
+          },
+          "firstAnswer": 140,
+          "operation": {
+            "op": "divide",
+            "operand": 2
+          },
+          "second": {
+            "en": "A pot holds {x} grams of salt. It is split equally into 2 jars. How many grams are in each jar?"
+          }
+        },
+        {
+          "id": "t5",
+          "skills": [
+            "coast-science.matter.mixtures"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which is a physical change?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Wood burning"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Ice melting into water"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "An iron nail rusting"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Bread toasting"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/ranger",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Ranger Station: Map Skills"
+      },
+      "subject": "coast-social",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "u1",
+          "skills": [
+            "coast-social.maps.skills"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "On the map, 1 inch stands for 5 miles. The trail is 4 inches long on the map."
+          },
+          "prompt": {
+            "en": "How many miles long is the real trail?"
+          },
+          "answer": 20
+        },
+        {
+          "id": "u2",
+          "skills": [
+            "coast-social.maps.skills"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each part of a map to its job."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Compass rose"
+              },
+              "right": {
+                "en": "shows directions"
+              }
+            },
+            {
+              "left": {
+                "en": "Map key"
+              },
+              "right": {
+                "en": "explains the symbols"
+              }
+            },
+            {
+              "left": {
+                "en": "Scale"
+              },
+              "right": {
+                "en": "shows distances"
+              }
+            },
+            {
+              "left": {
+                "en": "Title"
+              },
+              "right": {
+                "en": "tells what the map shows"
+              }
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "skills": [
+            "coast-social.maps.skills"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "The lighthouse is north of the harbor. In which direction is the harbor from the lighthouse?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "South"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "North"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "East"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "West"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "u4",
+          "skills": [
+            "coast-social.maps.skills"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "Trail A is 3 miles, trail B is 5 miles and trail C is 4 miles. How many miles is that in all?"
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "divide",
+            "operand": 2
+          },
+          "second": {
+            "en": "You hike {x} miles. You walk 2 miles each hour. How many hours do you hike?"
+          }
+        },
+        {
+          "id": "u5",
+          "skills": [
+            "coast-social.maps.skills"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A grid map: the camp is at B3. The path goes right 2 squares to D3, then up 3 squares to D6."
+          },
+          "prompt": {
+            "en": "How many squares long is the path?"
+          },
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/townhall",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Town Hall: States and Capitals"
+      },
+      "subject": "coast-social",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "v1",
+          "skills": [
+            "coast-social.geography.states"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The United States has 50 states. The lower 48 states are joined together. Alaska and Hawaii are the other states."
+          },
+          "prompt": {
+            "en": "How many states are not part of the lower 48?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "v2",
+          "skills": [
+            "coast-social.geography.states"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each state to its capital."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Massachusetts"
+              },
+              "right": {
+                "en": "Boston"
+              }
+            },
+            {
+              "left": {
+                "en": "California"
+              },
+              "right": {
+                "en": "Sacramento"
+              }
+            },
+            {
+              "left": {
+                "en": "Texas"
+              },
+              "right": {
+                "en": "Austin"
+              }
+            },
+            {
+              "left": {
+                "en": "Florida"
+              },
+              "right": {
+                "en": "Tallahassee"
+              }
+            },
+            {
+              "left": {
+                "en": "New York"
+              },
+              "right": {
+                "en": "Albany"
+              }
+            }
+          ]
+        },
+        {
+          "id": "v3",
+          "skills": [
+            "coast-social.geography.states"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which ocean touches the west coast of the United States?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Atlantic Ocean"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Arctic Ocean"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Pacific Ocean"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Indian Ocean"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "v4",
+          "skills": [
+            "coast-social.geography.states"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "The Pacific coast states of the lower 48 are California, Oregon and Washington. How many states is that?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "en": "Each of the {x} states sends 2 senators to Congress. How many senators is that?"
+          }
+        },
+        {
+          "id": "v5",
+          "skills": [
+            "coast-social.geography.states"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which state does not touch the Gulf of Mexico?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Georgia"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Alabama"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Louisiana"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Texas"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/townhall-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Town Hall: Land and Water"
+      },
+      "subject": "coast-social",
+      "grade": 5,
+      "place": "townhall",
+      "tasks": [
+        {
+          "id": "w1",
+          "skills": [
+            "coast-social.geography.landforms"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The Great Lakes are Superior, Michigan, Huron, Erie and Ontario."
+          },
+          "prompt": {
+            "en": "How many Great Lakes are there?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "w2",
+          "skills": [
+            "coast-social.geography.landforms"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each place to its description."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Rocky Mountains"
+              },
+              "right": {
+                "en": "mountains in the western United States"
+              }
+            },
+            {
+              "left": {
+                "en": "Mississippi River"
+              },
+              "right": {
+                "en": "flows south to the Gulf of Mexico"
+              }
+            },
+            {
+              "left": {
+                "en": "Great Plains"
+              },
+              "right": {
+                "en": "a large flat grassland in the middle"
+              }
+            },
+            {
+              "left": {
+                "en": "Appalachian Mountains"
+              },
+              "right": {
+                "en": "mountains in the eastern United States"
+              }
+            },
+            {
+              "left": {
+                "en": "Grand Canyon"
+              },
+              "right": {
+                "en": "a deep canyon in Arizona"
+              }
+            }
+          ]
+        },
+        {
+          "id": "w3",
+          "skills": [
+            "coast-social.geography.landforms"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which landform has water on three sides?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Island"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Peninsula"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Plateau"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Valley"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "w4",
+          "skills": [
+            "coast-social.geography.landforms"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A square island has water on every side. How many sides have water?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "en": "A boat sails along each of the {x} sides of the island. It takes 3 hours per side. How many hours is that?"
+          }
+        },
+        {
+          "id": "w5",
+          "skills": [
+            "coast-social.geography.landforms"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Why did many big cities grow near rivers and coasts?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Rivers make the land flat everywhere."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Water helps with travel, trade and food."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Cities need ice all year."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Mountains cannot be built on."
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "us.huckepack.grades-3-5/townhall-3",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Town Hall: Goods and Services"
+      },
+      "subject": "coast-social",
+      "grade": 3,
+      "place": "townhall",
+      "tasks": [
+        {
+          "id": "x1",
+          "skills": [
+            "coast-social.economics.basics"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The list: fish, delivery, haircut, net, boat repair, bread."
+          },
+          "prompt": {
+            "en": "How many things on the list are services? (A service is work done for you.)"
+          },
+          "answer": 3
+        },
+        {
+          "id": "x2",
+          "skills": [
+            "coast-social.economics.basics"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Match each word to its meaning."
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Good"
+              },
+              "right": {
+                "en": "something you can touch and buy"
+              }
+            },
+            {
+              "left": {
+                "en": "Service"
+              },
+              "right": {
+                "en": "work someone does for you"
+              }
+            },
+            {
+              "left": {
+                "en": "Producer"
+              },
+              "right": {
+                "en": "a person who makes goods or services"
+              }
+            },
+            {
+              "left": {
+                "en": "Consumer"
+              },
+              "right": {
+                "en": "a person who buys and uses goods"
+              }
+            },
+            {
+              "left": {
+                "en": "Want"
+              },
+              "right": {
+                "en": "something nice to have but not needed to live"
+              }
+            }
+          ]
+        },
+        {
+          "id": "x3",
+          "skills": [
+            "coast-social.economics.basics"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which of these is a need?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Drinking water"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A video game"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A toy boat"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Ice cream"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "x4",
+          "skills": [
+            "coast-social.economics.basics"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "The bakery bakes 36 muffins each morning for 5 mornings. How many muffins is that?"
+          },
+          "firstAnswer": 180,
+          "operation": {
+            "op": "divide",
+            "operand": 6
+          },
+          "second": {
+            "en": "The bakery has {x} muffins. They are packed in boxes of 6. How many boxes are needed?"
+          }
+        },
+        {
+          "id": "x5",
+          "skills": [
+            "coast-social.economics.basics"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Why do towns trade goods with other towns?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Every town makes the same things."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Trading is not allowed."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "No place makes or grows everything people want."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Goods never get used up."
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    }
+  ]
+}

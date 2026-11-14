@@ -1,0 +1,5052 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "br.huckepack.anos-3-4",
+  "version": 1,
+  "title": {
+    "pt": "Cidade do Farol",
+    "en": "Lighthouse Town"
+  },
+  "description": {
+    "pt": "Para crianças do 3º e 4º ano do Ensino Fundamental no Brasil (8 a 10 anos), seguindo a BNCC: Matemática, Língua Portuguesa, Ciências e Geografia e História.",
+    "en": "For Brazilian children in grades 3 and 4 (ages 8 to 10), following the BNCC curriculum: maths, Portuguese, science, geography and history."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "matematica",
+      "title": {
+        "pt": "Matemática",
+        "en": "Maths"
+      }
+    },
+    {
+      "id": "portugues",
+      "title": {
+        "pt": "Língua Portuguesa",
+        "en": "Portuguese language"
+      }
+    },
+    {
+      "id": "ciencias",
+      "title": {
+        "pt": "Ciências",
+        "en": "Science"
+      }
+    },
+    {
+      "id": "geo-historia",
+      "title": {
+        "pt": "Geografia e História",
+        "en": "Geography and history"
+      }
+    }
+  ],
+  "skills": {
+    "matematica.dinheiro.reais": {
+      "pt": "Dinheiro: reais e centavos"
+    },
+    "matematica.dinheiro.troco": {
+      "pt": "Troco e compras"
+    },
+    "matematica.operacoes.multiplicacao": {
+      "pt": "Multiplicação"
+    },
+    "matematica.operacoes.divisao": {
+      "pt": "Divisão"
+    },
+    "matematica.tempo.horas": {
+      "pt": "Ler horas e calcular durações"
+    },
+    "matematica.medidas.unidades": {
+      "pt": "Medidas de comprimento, massa e capacidade"
+    },
+    "matematica.fracoes.basico": {
+      "pt": "Frações"
+    },
+    "portugues.palavras.silabas": {
+      "pt": "Separar e contar sílabas"
+    },
+    "portugues.gramatica.substantivos": {
+      "pt": "Substantivos: próprio, comum, gênero e número"
+    },
+    "portugues.ortografia.letras": {
+      "pt": "Ortografia"
+    },
+    "portugues.ortografia.acentuacao": {
+      "pt": "Acentuação gráfica"
+    },
+    "portugues.gramatica.adjetivos": {
+      "pt": "Adjetivos e antônimos"
+    },
+    "portugues.gramatica.verbos": {
+      "pt": "Verbos e tempos verbais"
+    },
+    "portugues.texto.pontuacao": {
+      "pt": "Pontuação e sinônimos"
+    },
+    "ciencias.animais.grupos": {
+      "pt": "Animais: grupos e alimentação"
+    },
+    "ciencias.animais.cadeia-alimentar": {
+      "pt": "Cadeia alimentar"
+    },
+    "ciencias.plantas.partes": {
+      "pt": "Plantas: partes e ciclo de vida"
+    },
+    "ciencias.ambiente.floresta": {
+      "pt": "Floresta e meio ambiente"
+    },
+    "ciencias.agua.estados-ciclo": {
+      "pt": "Água: estados físicos e ciclo"
+    },
+    "ciencias.solo.tipos": {
+      "pt": "Solo e erosão"
+    },
+    "ciencias.corpo.humano": {
+      "pt": "Corpo humano e saúde"
+    },
+    "geo-historia.geografia.pontos-cardeais": {
+      "pt": "Pontos cardeais"
+    },
+    "geo-historia.geografia.regioes": {
+      "pt": "Regiões e biomas do Brasil"
+    },
+    "geo-historia.geografia.paisagens-mapas": {
+      "pt": "Paisagens e mapas"
+    },
+    "geo-historia.geografia.estados-capitais": {
+      "pt": "Estados e capitais"
+    },
+    "geo-historia.historia.povos": {
+      "pt": "Povos e fatos da história do Brasil"
+    },
+    "geo-historia.historia.tempo-fontes": {
+      "pt": "Tempo histórico e fontes"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "cais",
+    "nodes": [
+      {
+        "id": "cais",
+        "title": {
+          "pt": "Cais do Porto"
+        },
+        "x": 0.6,
+        "y": 0.82,
+        "requires": []
+      },
+      {
+        "id": "praia",
+        "title": {
+          "pt": "Praia"
+        },
+        "x": 0.8,
+        "y": 0.84,
+        "requires": [],
+        "level": "br.huckepack.anos-3-4/praia"
+      },
+      {
+        "id": "mercado",
+        "title": {
+          "pt": "Mercado"
+        },
+        "x": 0.46,
+        "y": 0.68,
+        "requires": [],
+        "level": "br.huckepack.anos-3-4/mercado"
+      },
+      {
+        "id": "padaria",
+        "title": {
+          "pt": "Padaria"
+        },
+        "x": 0.3,
+        "y": 0.82,
+        "requires": [
+          "br.huckepack.anos-3-4/mercado"
+        ],
+        "level": "br.huckepack.anos-3-4/padaria"
+      },
+      {
+        "id": "quadra",
+        "title": {
+          "pt": "Quadra de Areia"
+        },
+        "x": 0.4,
+        "y": 0.92,
+        "requires": [],
+        "miniGame": "ticTacToe"
+      },
+      {
+        "id": "farol",
+        "title": {
+          "pt": "Farol"
+        },
+        "x": 0.88,
+        "y": 0.6,
+        "requires": [
+          "br.huckepack.anos-3-4/praia"
+        ],
+        "level": "br.huckepack.anos-3-4/farol"
+      },
+      {
+        "id": "coreto",
+        "title": {
+          "pt": "Coreto"
+        },
+        "x": 0.36,
+        "y": 0.58,
+        "requires": [
+          "br.huckepack.anos-3-4/mercado"
+        ],
+        "level": "br.huckepack.anos-3-4/coreto"
+      },
+      {
+        "id": "ponte",
+        "title": {
+          "pt": "Ponte Velha"
+        },
+        "x": 0.22,
+        "y": 0.64,
+        "requires": [
+          "br.huckepack.anos-3-4/padaria"
+        ],
+        "level": "br.huckepack.anos-3-4/ponte"
+      },
+      {
+        "id": "fazenda",
+        "title": {
+          "pt": "Fazenda"
+        },
+        "x": 0.08,
+        "y": 0.82,
+        "requires": [
+          "br.huckepack.anos-3-4/ponte"
+        ],
+        "level": "br.huckepack.anos-3-4/fazenda"
+      },
+      {
+        "id": "escola",
+        "title": {
+          "pt": "Escola"
+        },
+        "x": 0.5,
+        "y": 0.5,
+        "requires": [
+          "br.huckepack.anos-3-4/coreto"
+        ],
+        "level": "br.huckepack.anos-3-4/escola"
+      },
+      {
+        "id": "biblioteca",
+        "title": {
+          "pt": "Biblioteca"
+        },
+        "x": 0.66,
+        "y": 0.5,
+        "requires": [
+          "br.huckepack.anos-3-4/escola"
+        ],
+        "level": "br.huckepack.anos-3-4/biblioteca"
+      },
+      {
+        "id": "horta",
+        "title": {
+          "pt": "Horta"
+        },
+        "x": 0.3,
+        "y": 0.38,
+        "requires": [
+          "br.huckepack.anos-3-4/coreto"
+        ],
+        "level": "br.huckepack.anos-3-4/horta"
+      },
+      {
+        "id": "floresta",
+        "title": {
+          "pt": "Floresta"
+        },
+        "x": 0.14,
+        "y": 0.22,
+        "requires": [
+          "br.huckepack.anos-3-4/horta"
+        ],
+        "level": "br.huckepack.anos-3-4/floresta"
+      },
+      {
+        "id": "cachoeira",
+        "title": {
+          "pt": "Cachoeira"
+        },
+        "x": 0.4,
+        "y": 0.18,
+        "requires": [
+          "br.huckepack.anos-3-4/horta"
+        ],
+        "level": "br.huckepack.anos-3-4/cachoeira"
+      },
+      {
+        "id": "mirante",
+        "title": {
+          "pt": "Mirante"
+        },
+        "x": 0.62,
+        "y": 0.22,
+        "requires": [
+          "br.huckepack.anos-3-4/escola"
+        ],
+        "level": "br.huckepack.anos-3-4/mirante"
+      },
+      {
+        "id": "museu",
+        "title": {
+          "pt": "Museu do Mar"
+        },
+        "x": 0.76,
+        "y": 0.38,
+        "requires": [
+          "br.huckepack.anos-3-4/biblioteca"
+        ],
+        "level": "br.huckepack.anos-3-4/museu"
+      },
+      {
+        "id": "mangue",
+        "title": {
+          "pt": "Manguezal"
+        },
+        "x": 0.9,
+        "y": 0.24,
+        "requires": [
+          "br.huckepack.anos-3-4/museu"
+        ],
+        "level": "br.huckepack.anos-3-4/mangue"
+      }
+    ],
+    "paths": [
+      [
+        "cais",
+        "praia"
+      ],
+      [
+        "cais",
+        "mercado"
+      ],
+      [
+        "cais",
+        "quadra"
+      ],
+      [
+        "quadra",
+        "padaria"
+      ],
+      [
+        "mercado",
+        "padaria"
+      ],
+      [
+        "mercado",
+        "coreto"
+      ],
+      [
+        "mercado",
+        "escola"
+      ],
+      [
+        "padaria",
+        "ponte"
+      ],
+      [
+        "padaria",
+        "fazenda"
+      ],
+      [
+        "ponte",
+        "fazenda"
+      ],
+      [
+        "ponte",
+        "coreto"
+      ],
+      [
+        "coreto",
+        "escola"
+      ],
+      [
+        "coreto",
+        "horta"
+      ],
+      [
+        "escola",
+        "biblioteca"
+      ],
+      [
+        "escola",
+        "mirante"
+      ],
+      [
+        "praia",
+        "farol"
+      ],
+      [
+        "farol",
+        "biblioteca"
+      ],
+      [
+        "biblioteca",
+        "museu"
+      ],
+      [
+        "museu",
+        "mangue"
+      ],
+      [
+        "museu",
+        "mirante"
+      ],
+      [
+        "mirante",
+        "cachoeira"
+      ],
+      [
+        "cachoeira",
+        "horta"
+      ],
+      [
+        "horta",
+        "floresta"
+      ],
+      [
+        "cachoeira",
+        "floresta"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "br.huckepack.anos-3-4/mercado",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "No Mercado"
+      },
+      "subject": "matematica",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.dinheiro.reais"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "A banca de frutas vende a melancia por R$ 8 e o melão por R$ 5. Conte isso ao seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quanto custa comprar uma melancia e um melão juntos?"
+          },
+          "answer": 1300,
+          "answerFormat": "realCentavos",
+          "id": "mercado-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "matematica.dinheiro.reais"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada grupo de dinheiro ao valor certo."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "2 notas de R$ 10"
+              },
+              "right": {
+                "pt": "R$ 20"
+              }
+            },
+            {
+              "left": {
+                "pt": "3 moedas de R$ 1"
+              },
+              "right": {
+                "pt": "R$ 3"
+              }
+            },
+            {
+              "left": {
+                "pt": "4 moedas de 50 centavos"
+              },
+              "right": {
+                "pt": "R$ 2"
+              }
+            },
+            {
+              "left": {
+                "pt": "10 moedas de 10 centavos"
+              },
+              "right": {
+                "pt": "R$ 1"
+              }
+            },
+            {
+              "left": {
+                "pt": "1 nota de R$ 50 e 1 nota de R$ 20"
+              },
+              "right": {
+                "pt": "R$ 70"
+              }
+            }
+          ],
+          "id": "mercado-2"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "matematica.dinheiro.reais"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual grupo de dinheiro vale R$ 35?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "1 nota de R$ 20, 1 nota de R$ 10 e 1 nota de R$ 5"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "2 notas de R$ 20 e 1 moeda de R$ 1"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "1 nota de R$ 20 e 2 notas de R$ 5"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "1 nota de R$ 20, 1 nota de R$ 10 e 1 moeda de R$ 1"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "mercado-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "matematica.dinheiro.reais"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Ana compra 3 maçãs. Cada maçã custa R$ 4. Quantos reais ela gasta?"
+          },
+          "firstAnswer": 1200,
+          "operation": {
+            "op": "add",
+            "operand": 500
+          },
+          "second": {
+            "pt": "Ana gastou {x} com as maçãs. Agora ela compra também um suco de R$ 5. Quanto ela gastou ao todo?"
+          },
+          "answerFormat": "realCentavos",
+          "id": "mercado-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.dinheiro.troco"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "O caderno custa R$ 18 e a caneta custa R$ 7. Vocês têm uma nota de R$ 50."
+          },
+          "prompt": {
+            "pt": "Vocês compram o caderno e a caneta. Quanto sobra de troco?"
+          },
+          "answer": 2500,
+          "answerFormat": "realCentavos",
+          "id": "mercado-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/mercado-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Troco Certo"
+      },
+      "subject": "matematica",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.dinheiro.reais"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "Uma bala custa 25 centavos. Vocês vão comprar 4 balas."
+          },
+          "prompt": {
+            "pt": "Quanto custam as 4 balas?"
+          },
+          "answer": 100,
+          "answerFormat": "realCentavos",
+          "id": "mercado-2-1"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "matematica.dinheiro.troco"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Uma dúzia de ovos custa R$ 9. Vocês compram 3 dúzias. Quanto custam?"
+          },
+          "firstAnswer": 2700,
+          "operation": {
+            "op": "subtract",
+            "operand": 400
+          },
+          "second": {
+            "pt": "A conta deu {x}, mas a loja dá R$ 4 de desconto. Quanto vocês pagam?"
+          },
+          "answerFormat": "realCentavos",
+          "id": "mercado-2-2"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "matematica.dinheiro.troco"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Você paga cada compra com uma nota de R$ 20. Una cada compra ao troco certo."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Compra de R$ 12"
+              },
+              "right": {
+                "pt": "Troco: R$ 8"
+              }
+            },
+            {
+              "left": {
+                "pt": "Compra de R$ 15"
+              },
+              "right": {
+                "pt": "Troco: R$ 5"
+              }
+            },
+            {
+              "left": {
+                "pt": "Compra de R$ 7"
+              },
+              "right": {
+                "pt": "Troco: R$ 13"
+              }
+            },
+            {
+              "left": {
+                "pt": "Compra de R$ 19"
+              },
+              "right": {
+                "pt": "Troco: R$ 1"
+              }
+            }
+          ],
+          "id": "mercado-2-3"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "matematica.dinheiro.troco"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Mariana paga uma compra de R$ 37 com 2 notas de R$ 20. Qual é o troco?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "R$ 13"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "R$ 3"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "R$ 7"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "R$ 17"
+              }
+            }
+          ],
+          "correct": "b",
+          "id": "mercado-2-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.dinheiro.troco"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "A bola custa R$ 46, a corda custa R$ 18 e o apito custa R$ 12. Vocês levam R$ 100."
+          },
+          "prompt": {
+            "pt": "Quanto sobra depois de comprar a bola, a corda e o apito?"
+          },
+          "answer": 2400,
+          "answerFormat": "realCentavos",
+          "id": "mercado-2-5"
+        }
+      ],
+      "place": "mercado"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/padaria",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Na Padaria"
+      },
+      "subject": "matematica",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.operacoes.multiplicacao"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "Cada bandeja tem 6 pães. A padaria tem 5 bandejas."
+          },
+          "prompt": {
+            "pt": "Quantos pães há ao todo?"
+          },
+          "answer": 30,
+          "id": "padaria-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "matematica.operacoes.multiplicacao"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada multiplicação ao resultado."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "4 × 7"
+              },
+              "right": {
+                "pt": "28"
+              }
+            },
+            {
+              "left": {
+                "pt": "6 × 6"
+              },
+              "right": {
+                "pt": "36"
+              }
+            },
+            {
+              "left": {
+                "pt": "5 × 9"
+              },
+              "right": {
+                "pt": "45"
+              }
+            },
+            {
+              "left": {
+                "pt": "8 × 3"
+              },
+              "right": {
+                "pt": "24"
+              }
+            },
+            {
+              "left": {
+                "pt": "7 × 7"
+              },
+              "right": {
+                "pt": "49"
+              }
+            }
+          ],
+          "id": "padaria-2"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "matematica.operacoes.multiplicacao"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "A padaria faz 8 fornadas com 7 pães em cada uma. Quantos pães ela faz?"
+          },
+          "firstAnswer": 56,
+          "operation": {
+            "op": "subtract",
+            "operand": 6
+          },
+          "second": {
+            "pt": "A padaria fez {x} pães. Seis queimaram e foram jogados fora. Quantos pães bons restaram?"
+          },
+          "id": "padaria-3"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "matematica.operacoes.multiplicacao"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual conta dá 54 como resultado?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "6 × 9"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "7 × 8"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "6 × 8"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "9 × 7"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "padaria-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.operacoes.multiplicacao"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "Cada saco tem 25 pãezinhos. De manhã a padaria vendeu 4 sacos e à tarde vendeu 3 sacos."
+          },
+          "prompt": {
+            "pt": "Quantos pãezinhos foram vendidos no dia todo?"
+          },
+          "answer": 175,
+          "id": "padaria-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/padaria-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Dividindo os Pães"
+      },
+      "subject": "matematica",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.operacoes.divisao"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "A padeira tem 24 pãezinhos e coloca a mesma quantidade em cada uma de 4 cestas."
+          },
+          "prompt": {
+            "pt": "Quantos pãezinhos ficam em cada cesta?"
+          },
+          "answer": 6,
+          "id": "padaria-2-1"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "matematica.operacoes.divisao"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "36 biscoitos são divididos igualmente entre 4 crianças. Quantos biscoitos cada criança recebe?"
+          },
+          "firstAnswer": 9,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "pt": "Cada criança comeu {x} biscoitos. Se 3 amigos comerem a mesma quantidade cada um, quantos biscoitos eles comem juntos?"
+          },
+          "id": "padaria-2-2"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "matematica.operacoes.divisao"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada divisão ao resultado."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "20 ÷ 4"
+              },
+              "right": {
+                "pt": "5"
+              }
+            },
+            {
+              "left": {
+                "pt": "42 ÷ 6"
+              },
+              "right": {
+                "pt": "7"
+              }
+            },
+            {
+              "left": {
+                "pt": "72 ÷ 8"
+              },
+              "right": {
+                "pt": "9"
+              }
+            },
+            {
+              "left": {
+                "pt": "48 ÷ 6"
+              },
+              "right": {
+                "pt": "8"
+              }
+            },
+            {
+              "left": {
+                "pt": "30 ÷ 5"
+              },
+              "right": {
+                "pt": "6"
+              }
+            }
+          ],
+          "id": "padaria-2-3"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "matematica.operacoes.divisao"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Há 30 balas para dividir igualmente entre 6 crianças. Qual conta resolve o problema?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "30 × 6"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "30 − 6"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "30 ÷ 6"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "6 ÷ 30"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "padaria-2-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.operacoes.divisao"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "Uma caixa tem 50 pães. Eles foram divididos igualmente em 5 pacotes. Depois foram vendidos 3 pacotes."
+          },
+          "prompt": {
+            "pt": "Quantos pães foram vendidos?"
+          },
+          "answer": 30,
+          "id": "padaria-2-5"
+        }
+      ],
+      "place": "padaria"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/farol",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "O Relógio do Farol"
+      },
+      "subject": "matematica",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.tempo.horas"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "Olhe o relógio do farol. É de tarde. Descreva para o seu parceiro onde estão os ponteiros."
+          },
+          "prompt": {
+            "pt": "Que horas são? Digite a hora e os minutos."
+          },
+          "answer": 930,
+          "clueVisual": {
+            "clock": {
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          "answerFormat": "time",
+          "id": "farol-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "matematica.tempo.horas"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Cada relógio de um de vocês combina com uma hora escrita do outro. Descrevam os ponteiros e as horas."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Relógio A"
+              },
+              "right": {
+                "pt": "8:15"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 8,
+                  "minute": 15
+                }
+              }
+            },
+            {
+              "left": {
+                "pt": "Relógio B"
+              },
+              "right": {
+                "pt": "10:45"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 10,
+                  "minute": 45
+                }
+              }
+            },
+            {
+              "left": {
+                "pt": "Relógio C"
+              },
+              "right": {
+                "pt": "6:30"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 6,
+                  "minute": 30
+                }
+              }
+            },
+            {
+              "left": {
+                "pt": "Relógio D"
+              },
+              "right": {
+                "pt": "12:05"
+              },
+              "leftVisual": {
+                "clock": {
+                  "hour": 12,
+                  "minute": 5
+                }
+              }
+            }
+          ],
+          "id": "farol-2"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "matematica.tempo.horas"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "A visita ao farol começa às 9:15 e dura 50 minutos. A que horas ela termina?"
+          },
+          "firstAnswer": 605,
+          "operation": {
+            "op": "add",
+            "operand": 25
+          },
+          "second": {
+            "pt": "A visita termina às {x}. Depois há um lanche de 25 minutos. A que horas o lanche termina?"
+          },
+          "answerFormat": "time",
+          "id": "farol-3"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "matematica.tempo.horas"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Quantos minutos tem 1 hora e meia?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "90 minutos"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "150 minutos"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "130 minutos"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "80 minutos"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "farol-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.tempo.horas"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "A aula de natação começa às 15:40 e termina às 16:25."
+          },
+          "prompt": {
+            "pt": "Quantos minutos dura a aula?"
+          },
+          "answer": 45,
+          "id": "farol-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/farol-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Medindo o Porto"
+      },
+      "subject": "matematica",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.medidas.unidades"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "A corda do barco mede 3 metros."
+          },
+          "prompt": {
+            "pt": "Quantos centímetros tem a corda?"
+          },
+          "answer": 300,
+          "id": "farol-2-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "matematica.medidas.unidades"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada medida à mesma medida escrita de outro jeito."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "2 km"
+              },
+              "right": {
+                "pt": "2000 m"
+              }
+            },
+            {
+              "left": {
+                "pt": "3 kg"
+              },
+              "right": {
+                "pt": "3000 g"
+              }
+            },
+            {
+              "left": {
+                "pt": "5 L"
+              },
+              "right": {
+                "pt": "5000 mL"
+              }
+            },
+            {
+              "left": {
+                "pt": "4 m"
+              },
+              "right": {
+                "pt": "400 cm"
+              }
+            }
+          ],
+          "id": "farol-2-2"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "matematica.medidas.unidades"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Um barco leva 4 caixas de peixe. Cada caixa pesa 25 quilos. Quantos quilos de peixe o barco leva?"
+          },
+          "firstAnswer": 100,
+          "operation": {
+            "op": "add",
+            "operand": 35
+          },
+          "second": {
+            "pt": "O barco leva {x} quilos de peixe e embarca mais 35 quilos. Quantos quilos ele leva agora?"
+          },
+          "id": "farol-2-3"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "matematica.medidas.unidades"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual é a maior medida?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "95 cm"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "1 m"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "1100 mm"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "980 mm"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "farol-2-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.medidas.unidades"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "Um garrafão tem 2 litros de suco. Cada copo leva 250 mL."
+          },
+          "prompt": {
+            "pt": "Quantos copos cheios dá para encher com o garrafão?"
+          },
+          "answer": 8,
+          "id": "farol-2-5"
+        }
+      ],
+      "place": "farol"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/coreto",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Frações no Coreto"
+      },
+      "subject": "matematica",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.fracoes.basico"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "Uma barra de chocolate tem 10 quadradinhos iguais. Pedro comeu 3 quadradinhos e Ana comeu 4."
+          },
+          "prompt": {
+            "pt": "Quantos décimos da barra foram comidos?"
+          },
+          "answer": 7,
+          "id": "coreto-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "matematica.fracoes.basico"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada fração escrita em palavras à fração em números."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "metade"
+              },
+              "right": {
+                "pt": "1/2"
+              }
+            },
+            {
+              "left": {
+                "pt": "um quarto"
+              },
+              "right": {
+                "pt": "1/4"
+              }
+            },
+            {
+              "left": {
+                "pt": "três quartos"
+              },
+              "right": {
+                "pt": "3/4"
+              }
+            },
+            {
+              "left": {
+                "pt": "um terço"
+              },
+              "right": {
+                "pt": "1/3"
+              }
+            },
+            {
+              "left": {
+                "pt": "dois quintos"
+              },
+              "right": {
+                "pt": "2/5"
+              }
+            }
+          ],
+          "id": "coreto-2"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "matematica.fracoes.basico"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Uma torta tem 12 fatias. Vocês comem 1/3 da torta. Quantas fatias vocês comem?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "pt": "Na festa de ontem comeram {x} fatias. Em 3 festas iguais a essa, quantas fatias vão comer?"
+          },
+          "id": "coreto-3"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "matematica.fracoes.basico"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual é a maior fração?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "3/8"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "1/2"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "1/4"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "2/8"
+              }
+            }
+          ],
+          "correct": "b",
+          "id": "coreto-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "matematica.fracoes.basico"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "Uma fita mede 24 centímetros. Vamos usar 3/4 da fita."
+          },
+          "prompt": {
+            "pt": "Quantos centímetros de fita vamos usar?"
+          },
+          "answer": 18,
+          "id": "coreto-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/escola",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Sílabas na Escola"
+      },
+      "subject": "portugues",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.palavras.silabas"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "A palavra é BORBOLETA. Diga a palavra ao seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantas sílabas tem a palavra que o seu parceiro vai dizer?"
+          },
+          "answer": 4,
+          "id": "escola-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.palavras.silabas"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada palavra ao número de sílabas."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "casa"
+              },
+              "right": {
+                "pt": "2 sílabas"
+              }
+            },
+            {
+              "left": {
+                "pt": "sapato"
+              },
+              "right": {
+                "pt": "3 sílabas"
+              }
+            },
+            {
+              "left": {
+                "pt": "sol"
+              },
+              "right": {
+                "pt": "1 sílaba"
+              }
+            },
+            {
+              "left": {
+                "pt": "borboleta"
+              },
+              "right": {
+                "pt": "4 sílabas"
+              }
+            },
+            {
+              "left": {
+                "pt": "hipopótamo"
+              },
+              "right": {
+                "pt": "5 sílabas"
+              }
+            }
+          ],
+          "id": "escola-2"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.palavras.silabas"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual palavra está separada corretamente em sílabas?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "ca-ran-gue-jo"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "car-an-gue-jo"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "cara-ngue-jo"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "ca-rang-ue-jo"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "escola-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "portugues.palavras.silabas"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Quantas sílabas tem a palavra 'pescador'?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 1
+          },
+          "second": {
+            "pt": "A palavra 'pescador' tem {x} sílabas. A palavra 'caravela' tem uma sílaba a mais. Quantas sílabas tem 'caravela'?"
+          },
+          "id": "escola-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.palavras.silabas"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "A palavra é PÁSSARO. Diga a palavra e soletre as letras para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Some o número de sílabas com o número de letras da palavra que o seu parceiro vai dizer. Quanto dá?"
+          },
+          "answer": 10,
+          "id": "escola-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/escola-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Nomes e Plurais"
+      },
+      "subject": "portugues",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.gramatica.substantivos"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "Frase: Os gatos dormem no sofá. Leia a frase em voz alta para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantos substantivos há na frase que o seu parceiro vai ler?"
+          },
+          "answer": 2,
+          "id": "escola-2-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.gramatica.substantivos"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada nome próprio ao nome comum que o descreve."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Brasil"
+              },
+              "right": {
+                "pt": "país"
+              }
+            },
+            {
+              "left": {
+                "pt": "Salvador"
+              },
+              "right": {
+                "pt": "cidade"
+              }
+            },
+            {
+              "left": {
+                "pt": "São Francisco"
+              },
+              "right": {
+                "pt": "rio"
+              }
+            },
+            {
+              "left": {
+                "pt": "Atlântico"
+              },
+              "right": {
+                "pt": "oceano"
+              }
+            }
+          ],
+          "id": "escola-2-2"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.gramatica.substantivos"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual é o plural de 'papel'?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "papéis"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "papels"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "papeles"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "papeis"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "escola-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "portugues.gramatica.substantivos"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Na frase 'A menina comprou pão, leite e frutas no mercado', quantos substantivos há?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "subtract",
+            "operand": 2
+          },
+          "second": {
+            "pt": "A frase tinha {x} substantivos. Se tirarmos 'pão' e 'leite' da frase, quantos substantivos restam?"
+          },
+          "id": "escola-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.gramatica.substantivos"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual é o plural de 'cidadão'?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "cidadões"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "cidadães"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "cidadãos"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "cidadãs"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "escola-2-5"
+        }
+      ],
+      "place": "escola"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/biblioteca",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Ortografia na Biblioteca"
+      },
+      "subject": "portugues",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.ortografia.letras"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual palavra está escrita corretamente?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "passarinho"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "pasarinho"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "paçarinho"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "biblioteca-1"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.ortografia.letras"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "A palavra é BICICLETA. Soletre a palavra para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantas letras tem a palavra?"
+          },
+          "answer": 9,
+          "id": "biblioteca-2"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.ortografia.letras"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada palavra incompleta às letras que faltam."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "ca__o (veículo)"
+              },
+              "right": {
+                "pt": "rr"
+              }
+            },
+            {
+              "left": {
+                "pt": "ma_ã (fruta)"
+              },
+              "right": {
+                "pt": "ç"
+              }
+            },
+            {
+              "left": {
+                "pt": "o__o (parte do rosto)"
+              },
+              "right": {
+                "pt": "lh"
+              }
+            },
+            {
+              "left": {
+                "pt": "ni__o (casa do passarinho)"
+              },
+              "right": {
+                "pt": "nh"
+              }
+            }
+          ],
+          "id": "biblioteca-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "portugues.ortografia.letras"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Quantas letras tem a palavra 'chocolate'?"
+          },
+          "firstAnswer": 9,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "pt": "A palavra 'chocolate' tem {x} letras. A palavra 'doce' tem 4 letras. Quantas letras têm as duas palavras juntas?"
+          },
+          "id": "biblioteca-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.ortografia.letras"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Em qual palavra o X tem o som de CH?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "peixe"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "táxi"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "exame"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "fixo"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "biblioteca-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/biblioteca-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Acentos e Sinais"
+      },
+      "subject": "portugues",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.ortografia.acentuacao"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual palavra está escrita corretamente?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "café"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "cafê"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "câfe"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "cafe"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "biblioteca-2-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.ortografia.acentuacao"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada palavra ao sinal que ela tem."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "vovó"
+              },
+              "right": {
+                "pt": "acento agudo"
+              }
+            },
+            {
+              "left": {
+                "pt": "vovô"
+              },
+              "right": {
+                "pt": "acento circunflexo"
+              }
+            },
+            {
+              "left": {
+                "pt": "mãe"
+              },
+              "right": {
+                "pt": "til"
+              }
+            },
+            {
+              "left": {
+                "pt": "caçula"
+              },
+              "right": {
+                "pt": "cedilha"
+              }
+            },
+            {
+              "left": {
+                "pt": "à tarde"
+              },
+              "right": {
+                "pt": "acento grave"
+              }
+            }
+          ],
+          "id": "biblioteca-2-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.ortografia.acentuacao"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Frase: A vovó bebeu café e saiu da cozinha no sábado. Leia a frase para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantas palavras da frase têm acento agudo?"
+          },
+          "answer": 3,
+          "id": "biblioteca-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "portugues.ortografia.acentuacao"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Na lista 'pé, mesa, avô, janela, café', quantas palavras têm acento?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "pt": "Uma lista tem {x} palavras com acento. Vocês escrevem a lista duas vezes. Quantas palavras com acento escreveram ao todo?"
+          },
+          "id": "biblioteca-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.ortografia.acentuacao"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual frase está escrita corretamente?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Meu avo mora no sítio."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Meu avô mora no sítio."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Meu avô mora no sitio."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Meu avó mora no sítio."
+              }
+            }
+          ],
+          "correct": "b",
+          "id": "biblioteca-2-5"
+        }
+      ],
+      "place": "biblioteca"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/ponte",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Adjetivos na Ponte"
+      },
+      "subject": "portugues",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.gramatica.adjetivos"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual destas palavras é um adjetivo?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "alto"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "correr"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "mesa"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "ontem"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "ponte-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.gramatica.adjetivos"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada adjetivo ao seu antônimo (o contrário)."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "grande"
+              },
+              "right": {
+                "pt": "pequeno"
+              }
+            },
+            {
+              "left": {
+                "pt": "alto"
+              },
+              "right": {
+                "pt": "baixo"
+              }
+            },
+            {
+              "left": {
+                "pt": "claro"
+              },
+              "right": {
+                "pt": "escuro"
+              }
+            },
+            {
+              "left": {
+                "pt": "quente"
+              },
+              "right": {
+                "pt": "frio"
+              }
+            },
+            {
+              "left": {
+                "pt": "rápido"
+              },
+              "right": {
+                "pt": "lento"
+              }
+            }
+          ],
+          "id": "ponte-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.gramatica.adjetivos"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Frase: A menina esperta pintou a casa amarela e o barco velho. Leia a frase para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantos adjetivos há na frase que o seu parceiro vai ler?"
+          },
+          "answer": 3,
+          "id": "ponte-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "portugues.gramatica.adjetivos"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Na frase 'O gato preto e pequeno bebeu leite fresco', quantos adjetivos há?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "pt": "A frase tinha {x} adjetivos. Vocês inventam outra frase com mais 4 adjetivos. Quantos adjetivos terão as duas frases juntas?"
+          },
+          "id": "ponte-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.gramatica.adjetivos"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual adjetivo combina com 'as casas'?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "pequeno"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "pequena"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "pequenos"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "pequenas"
+              }
+            }
+          ],
+          "correct": "d",
+          "id": "ponte-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/ponte-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Verbos em Ação"
+      },
+      "subject": "portugues",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.gramatica.verbos"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual destas palavras é um verbo?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "pular"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "casa"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "bonito"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "rápido"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "ponte-2-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.gramatica.verbos"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada exemplo ao tempo ou à forma do verbo."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Ontem eu pulei"
+              },
+              "right": {
+                "pt": "passado"
+              }
+            },
+            {
+              "left": {
+                "pt": "Agora eu pulo"
+              },
+              "right": {
+                "pt": "presente"
+              }
+            },
+            {
+              "left": {
+                "pt": "Amanhã eu pularei"
+              },
+              "right": {
+                "pt": "futuro"
+              }
+            },
+            {
+              "left": {
+                "pt": "pular"
+              },
+              "right": {
+                "pt": "infinitivo"
+              }
+            }
+          ],
+          "id": "ponte-2-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.gramatica.verbos"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Frase: As crianças correm na praia e pulam nas ondas. Leia a frase para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantos verbos há na frase que o seu parceiro vai ler?"
+          },
+          "answer": 2,
+          "id": "ponte-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "portugues.gramatica.verbos"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Quantos verbos há na frase 'Ana abre a janela, olha o mar e sorri'?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "pt": "A frase tinha {x} verbos. Outra frase tem o dobro de verbos. Quantos verbos tem a outra frase?"
+          },
+          "id": "ponte-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.gramatica.verbos"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual frase está no passado?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Eu comi peixe ontem."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Eu como peixe hoje."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Eu comerei peixe amanhã."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Eu vou comer peixe."
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "ponte-2-5"
+        }
+      ],
+      "place": "ponte"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/coreto-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Pontuação e Sinônimos"
+      },
+      "subject": "portugues",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.texto.pontuacao"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada sinal ao seu nome."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "."
+              },
+              "right": {
+                "pt": "ponto final"
+              }
+            },
+            {
+              "left": {
+                "pt": "?"
+              },
+              "right": {
+                "pt": "ponto de interrogação"
+              }
+            },
+            {
+              "left": {
+                "pt": "!"
+              },
+              "right": {
+                "pt": "ponto de exclamação"
+              }
+            },
+            {
+              "left": {
+                "pt": ","
+              },
+              "right": {
+                "pt": "vírgula"
+              }
+            }
+          ],
+          "id": "coreto-2-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "portugues.texto.pontuacao"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual frase está pontuada corretamente?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Onde fica o farol?"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Onde fica o farol!"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Onde fica o farol,"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Onde fica o farol."
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "coreto-2-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "portugues.texto.pontuacao"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Texto: Ana chegou à praia. Viu o mar? Nossa, que lindo! Correu para a água. Leia o texto para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantos pontos finais (.) tem o texto que o seu parceiro vai ler?"
+          },
+          "answer": 2,
+          "id": "coreto-2-3"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "portugues.texto.pontuacao"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada palavra ao seu sinônimo (palavra de significado parecido)."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "bonito"
+              },
+              "right": {
+                "pt": "belo"
+              }
+            },
+            {
+              "left": {
+                "pt": "feliz"
+              },
+              "right": {
+                "pt": "contente"
+              }
+            },
+            {
+              "left": {
+                "pt": "casa"
+              },
+              "right": {
+                "pt": "lar"
+              }
+            },
+            {
+              "left": {
+                "pt": "rápido"
+              },
+              "right": {
+                "pt": "veloz"
+              }
+            },
+            {
+              "left": {
+                "pt": "grande"
+              },
+              "right": {
+                "pt": "enorme"
+              }
+            }
+          ],
+          "id": "coreto-2-4"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "portugues.texto.pontuacao"
+          ],
+          "difficulty": 3,
+          "first": {
+            "pt": "Quantas vírgulas há na frase 'Comprei pão, leite, queijo, mel e ovos.'?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "pt": "A frase tem {x} vírgulas. Uma lista mais longa tem 2 vírgulas a mais. Quantas vírgulas tem a lista mais longa?"
+          },
+          "id": "coreto-2-5"
+        }
+      ],
+      "place": "coreto"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/fazenda",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Animais da Fazenda"
+      },
+      "subject": "ciencias",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "ciencias.animais.grupos"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada animal ao que ele nos dá."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "vaca"
+              },
+              "right": {
+                "pt": "leite"
+              }
+            },
+            {
+              "left": {
+                "pt": "galinha"
+              },
+              "right": {
+                "pt": "ovos"
+              }
+            },
+            {
+              "left": {
+                "pt": "ovelha"
+              },
+              "right": {
+                "pt": "lã"
+              }
+            },
+            {
+              "left": {
+                "pt": "abelha"
+              },
+              "right": {
+                "pt": "mel"
+              }
+            }
+          ],
+          "id": "fazenda-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.animais.grupos"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual destes animais é um mamífero?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "vaca"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "galinha"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "sapo"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "tubarão"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "fazenda-2"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "ciencias.animais.grupos"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Uma vaca tem 4 patas. Quantas patas têm 6 vacas?"
+          },
+          "firstAnswer": 24,
+          "operation": {
+            "op": "add",
+            "operand": 10
+          },
+          "second": {
+            "pt": "As vacas têm {x} patas no total. Cinco galinhas têm 10 patas. Quantas patas há ao todo?"
+          },
+          "id": "fazenda-3"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.animais.grupos"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual grupo tem só animais vertebrados (com esqueleto de ossos)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "cavalo, galinha e sapo"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "cavalo, minhoca e sapo"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "abelha, galinha e peixe"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "borboleta, cavalo e sapo"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "fazenda-4"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "ciencias.animais.grupos"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "pt": "Na fazenda há 5 galinhas e 2 porcos. Galinha tem 2 patas e porco tem 4 patas."
+          },
+          "prompt": {
+            "pt": "Quantas patas há ao todo nas galinhas e nos porcos juntos?"
+          },
+          "answer": 18,
+          "id": "fazenda-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/fazenda-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Quem Come Quem"
+      },
+      "subject": "ciencias",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "splitInfo",
+          "skills": [
+            "ciencias.animais.cadeia-alimentar"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "Cadeia alimentar: alface, lagarta, passarinho, gavião. Leia para o seu parceiro."
+          },
+          "prompt": {
+            "pt": "Quantos animais há na cadeia alimentar que o seu parceiro vai ler?"
+          },
+          "answer": 3,
+          "id": "fazenda-2-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "ciencias.animais.cadeia-alimentar"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada ser vivo à sua função na natureza."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "capim"
+              },
+              "right": {
+                "pt": "produtor (faz seu alimento)"
+              }
+            },
+            {
+              "left": {
+                "pt": "vaca"
+              },
+              "right": {
+                "pt": "herbívoro (só come plantas)"
+              }
+            },
+            {
+              "left": {
+                "pt": "onça"
+              },
+              "right": {
+                "pt": "carnívoro (come outros animais)"
+              }
+            },
+            {
+              "left": {
+                "pt": "porco"
+              },
+              "right": {
+                "pt": "onívoro (come plantas e animais)"
+              }
+            }
+          ],
+          "id": "fazenda-2-2"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.animais.cadeia-alimentar"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual cadeia alimentar está na ordem certa?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "capim, gafanhoto, sapo, cobra"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "gafanhoto, capim, sapo, cobra"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "capim, sapo, gafanhoto, cobra"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "cobra, sapo, gafanhoto, capim"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "fazenda-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "ciencias.animais.cadeia-alimentar"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Uma galinha come 3 minhocas por dia. Quantas minhocas ela come em 5 dias?"
+          },
+          "firstAnswer": 15,
+          "operation": {
+            "op": "add",
+            "operand": 8
+          },
+          "second": {
+            "pt": "A galinha comeu {x} minhocas. Depois ela comeu mais 8. Quantas minhocas comeu ao todo?"
+          },
+          "id": "fazenda-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.animais.cadeia-alimentar"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "O que pode acontecer se todos os sapos de uma lagoa desaparecerem?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "A lagoa fica sem água na hora"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "As plantas deixam de crescer na hora"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Nada muda na natureza"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Os insetos podem aumentar muito"
+              }
+            }
+          ],
+          "correct": "d",
+          "id": "fazenda-2-5"
+        }
+      ],
+      "place": "fazenda"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/horta",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "A Horta"
+      },
+      "subject": "ciencias",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "ciencias.plantas.partes"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada parte da planta ao que ela faz."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "raiz"
+              },
+              "right": {
+                "pt": "prende a planta e absorve água"
+              }
+            },
+            {
+              "left": {
+                "pt": "caule"
+              },
+              "right": {
+                "pt": "sustenta a planta"
+              }
+            },
+            {
+              "left": {
+                "pt": "folha"
+              },
+              "right": {
+                "pt": "faz alimento com a luz do sol"
+              }
+            },
+            {
+              "left": {
+                "pt": "fruto"
+              },
+              "right": {
+                "pt": "guarda as sementes"
+              }
+            }
+          ],
+          "id": "horta-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.plantas.partes"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual parte da cenoura nós comemos?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "a raiz"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "a folha"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "a flor"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "o fruto"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "horta-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "ciencias.plantas.partes"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "O canteiro tem 6 fileiras de alface. Em cada fileira há 8 pés de alface."
+          },
+          "prompt": {
+            "pt": "Quantos pés de alface há no canteiro?"
+          },
+          "answer": 48,
+          "id": "horta-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "ciencias.plantas.partes"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Uma planta de feijão tem 3 vagens com 6 sementes em cada uma. Quantas sementes ela tem?"
+          },
+          "firstAnswer": 18,
+          "operation": {
+            "op": "divide",
+            "operand": 2
+          },
+          "second": {
+            "pt": "Vocês têm {x} sementes de feijão. Plantam metade delas na horta. Quantas sementes plantam?"
+          },
+          "id": "horta-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.plantas.partes"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual é a ordem correta do ciclo de vida de uma planta?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "flor, semente, fruto, raiz"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "fruto, raiz, semente, flor"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "semente, germinação, planta jovem, planta adulta com flor e fruto"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "planta adulta, semente, flor, germinação"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "horta-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/floresta",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "A Floresta"
+      },
+      "subject": "ciencias",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "ciencias.ambiente.floresta"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada ser vivo ao lugar onde ele vive."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "arara"
+              },
+              "right": {
+                "pt": "copa das árvores"
+              }
+            },
+            {
+              "left": {
+                "pt": "minhoca"
+              },
+              "right": {
+                "pt": "dentro do solo"
+              }
+            },
+            {
+              "left": {
+                "pt": "peixe"
+              },
+              "right": {
+                "pt": "rio"
+              }
+            },
+            {
+              "left": {
+                "pt": "caranguejo"
+              },
+              "right": {
+                "pt": "manguezal"
+              }
+            }
+          ],
+          "id": "floresta-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.ambiente.floresta"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "O que é desmatamento?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "retirar as árvores de uma floresta"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "plantar muitas árvores"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "limpar um rio"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "separar o lixo"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "floresta-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "ciencias.ambiente.floresta"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Uma reserva tem 120 árvores. Foram plantadas mais 45 árvores e 20 árvores velhas caíram."
+          },
+          "prompt": {
+            "pt": "Quantas árvores há na reserva agora?"
+          },
+          "answer": 145,
+          "id": "floresta-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "ciencias.ambiente.floresta"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Cada árvore da trilha dá 8 frutos. Quantos frutos dão 5 árvores?"
+          },
+          "firstAnswer": 40,
+          "operation": {
+            "op": "subtract",
+            "operand": 15
+          },
+          "second": {
+            "pt": "A trilha tem {x} frutos. Os animais comem 15 deles. Quantos frutos sobram?"
+          },
+          "id": "floresta-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.ambiente.floresta"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Por que as raízes das árvores são importantes para o solo?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Elas seguram a terra e evitam que a chuva a leve embora"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Elas fazem a terra ficar seca para sempre"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Elas impedem que a chuva caia"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Elas esquentam a terra"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "floresta-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/cachoeira",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "A Cachoeira e a Água"
+      },
+      "subject": "ciencias",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "ciencias.agua.estados-ciclo"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada exemplo ao estado da água."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "gelo"
+              },
+              "right": {
+                "pt": "estado sólido"
+              }
+            },
+            {
+              "left": {
+                "pt": "água do rio"
+              },
+              "right": {
+                "pt": "estado líquido"
+              }
+            },
+            {
+              "left": {
+                "pt": "vapor da chaleira"
+              },
+              "right": {
+                "pt": "estado gasoso"
+              }
+            }
+          ],
+          "id": "cachoeira-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.agua.estados-ciclo"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Como se chama a passagem da água líquida para vapor?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "evaporação"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "congelamento"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "condensação"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "solidificação"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "cachoeira-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "ciencias.agua.estados-ciclo"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "A água congela a 0 graus Celsius e ferve a 100 graus Celsius. A água da panela está a 25 graus."
+          },
+          "prompt": {
+            "pt": "Quantos graus faltam para a água da panela ferver?"
+          },
+          "answer": 75,
+          "id": "cachoeira-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "ciencias.agua.estados-ciclo"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "O rio enche um balde com 5 litros a cada minuto. Quantos litros ele enche em 6 minutos?"
+          },
+          "firstAnswer": 30,
+          "operation": {
+            "op": "divide",
+            "operand": 10
+          },
+          "second": {
+            "pt": "O rio encheu {x} litros. Cada balde grande leva 10 litros. Quantos baldes cheios dá?"
+          },
+          "id": "cachoeira-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.agua.estados-ciclo"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual é a ordem do ciclo da água?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "condensação, evaporação, precipitação"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "precipitação, condensação, evaporação"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "evaporação, precipitação, condensação"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "evaporação, condensação, precipitação"
+              }
+            }
+          ],
+          "correct": "d",
+          "id": "cachoeira-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/cachoeira-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "O Solo"
+      },
+      "subject": "ciencias",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "ciencias.solo.tipos"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada termo à sua descrição."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "solo arenoso"
+              },
+              "right": {
+                "pt": "deixa a água passar rápido"
+              }
+            },
+            {
+              "left": {
+                "pt": "solo argiloso"
+              },
+              "right": {
+                "pt": "segura bastante água"
+              }
+            },
+            {
+              "left": {
+                "pt": "solo com húmus"
+              },
+              "right": {
+                "pt": "rico em restos de plantas e animais"
+              }
+            },
+            {
+              "left": {
+                "pt": "erosão"
+              },
+              "right": {
+                "pt": "a chuva leva a terra embora"
+              }
+            }
+          ],
+          "id": "cachoeira-2-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.solo.tipos"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual solo é melhor para plantar uma horta?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "solo rico em húmus"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "solo duro, sem vida"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "solo coberto de asfalto"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "solo só de pedras"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "cachoeira-2-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "ciencias.solo.tipos"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Dois solos foram testados. O solo A deixou passar 200 mL de água em 1 minuto. O solo B deixou passar 80 mL."
+          },
+          "prompt": {
+            "pt": "Quantos mL a mais de água passaram pelo solo A do que pelo solo B?"
+          },
+          "answer": 120,
+          "id": "cachoeira-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "ciencias.solo.tipos"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Uma minhoca faz 3 galerias por dia no solo. Quantas galerias ela faz em 7 dias?"
+          },
+          "firstAnswer": 21,
+          "operation": {
+            "op": "add",
+            "operand": 9
+          },
+          "second": {
+            "pt": "O solo da horta já tem {x} galerias de minhoca. Formigas fizeram mais 9. Quantas galerias há ao todo?"
+          },
+          "id": "cachoeira-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.solo.tipos"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "O que ajuda a evitar a erosão em um barranco?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "tirar toda a vegetação"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "plantar grama e árvores na encosta"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "cavar mais buracos"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "queimar o mato"
+              }
+            }
+          ],
+          "correct": "b",
+          "id": "cachoeira-2-5"
+        }
+      ],
+      "place": "cachoeira"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/praia",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "O Corpo na Praia"
+      },
+      "subject": "ciencias",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "ciencias.corpo.humano"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada sentido ao órgão que o usa."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "visão"
+              },
+              "right": {
+                "pt": "olhos"
+              }
+            },
+            {
+              "left": {
+                "pt": "audição"
+              },
+              "right": {
+                "pt": "ouvidos"
+              }
+            },
+            {
+              "left": {
+                "pt": "olfato"
+              },
+              "right": {
+                "pt": "nariz"
+              }
+            },
+            {
+              "left": {
+                "pt": "paladar"
+              },
+              "right": {
+                "pt": "língua"
+              }
+            },
+            {
+              "left": {
+                "pt": "tato"
+              },
+              "right": {
+                "pt": "pele"
+              }
+            }
+          ],
+          "id": "praia-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.corpo.humano"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "O que devemos usar na praia para proteger a pele do sol?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "protetor solar, chapéu e sombra"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "óleo de cozinha"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "casaco de lã"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "nada, o sol nunca faz mal"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "praia-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "ciencias.corpo.humano"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "O esqueleto de um adulto tem 206 ossos. As duas mãos têm 54 ossos e os dois pés têm 52 ossos."
+          },
+          "prompt": {
+            "pt": "Quantos ossos sobram para o resto do corpo?"
+          },
+          "answer": 100,
+          "id": "praia-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "ciencias.corpo.humano"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Uma criança bebe 6 copos de água por dia. Quantos copos ela bebe em 5 dias?"
+          },
+          "firstAnswer": 30,
+          "operation": {
+            "op": "multiply",
+            "operand": 200
+          },
+          "second": {
+            "pt": "Em 5 dias a criança bebeu {x} copos. Cada copo tem 200 mL. Quantos mL de água ela bebeu?"
+          },
+          "id": "praia-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "ciencias.corpo.humano"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual é o caminho do ar quando respiramos?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "nariz, traqueia, pulmões"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "boca, estômago, pulmões"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "nariz, estômago, coração"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "pulmões, traqueia, nariz"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "praia-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/mirante",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Pontos Cardeais"
+      },
+      "subject": "geo-historia",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.geografia.pontos-cardeais"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada descrição ao ponto cardeal."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "onde o Sol nasce"
+              },
+              "right": {
+                "pt": "Leste"
+              }
+            },
+            {
+              "left": {
+                "pt": "onde o Sol se põe"
+              },
+              "right": {
+                "pt": "Oeste"
+              }
+            },
+            {
+              "left": {
+                "pt": "o contrário do Norte"
+              },
+              "right": {
+                "pt": "Sul"
+              }
+            },
+            {
+              "left": {
+                "pt": "entre o Norte e o Leste"
+              },
+              "right": {
+                "pt": "Nordeste"
+              }
+            }
+          ],
+          "id": "mirante-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.pontos-cardeais"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Em um mapa, qual ponto cardeal fica em geral na parte de cima?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Norte"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Sul"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Leste"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Oeste"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "mirante-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "geo-historia.geografia.pontos-cardeais"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Você está olhando para o Norte. O mar está à sua direita."
+          },
+          "prompt": {
+            "pt": "Em qual direção fica o mar? Digite 1 para Norte, 2 para Sul, 3 para Leste ou 4 para Oeste."
+          },
+          "answer": 3,
+          "id": "mirante-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "geo-historia.geografia.pontos-cardeais"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "O barco anda 4 km para o Leste e depois 3 km para o Norte. Quantos km ele andou ao todo?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "add",
+            "operand": 5
+          },
+          "second": {
+            "pt": "O barco já andou {x} km. Agora ele anda mais 5 km para o Oeste. Quantos km ele andou ao todo?"
+          },
+          "id": "mirante-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.pontos-cardeais"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "O Sol nasce na sua frente. Qual direção fica atrás de você?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Norte"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Sul"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Leste"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Oeste"
+              }
+            }
+          ],
+          "correct": "d",
+          "id": "mirante-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/mirante-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Regiões do Brasil"
+      },
+      "subject": "geo-historia",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada estado à sua região do Brasil."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Amazonas"
+              },
+              "right": {
+                "pt": "Norte"
+              }
+            },
+            {
+              "left": {
+                "pt": "Bahia"
+              },
+              "right": {
+                "pt": "Nordeste"
+              }
+            },
+            {
+              "left": {
+                "pt": "Goiás"
+              },
+              "right": {
+                "pt": "Centro-Oeste"
+              }
+            },
+            {
+              "left": {
+                "pt": "São Paulo"
+              },
+              "right": {
+                "pt": "Sudeste"
+              }
+            },
+            {
+              "left": {
+                "pt": "Paraná"
+              },
+              "right": {
+                "pt": "Sul"
+              }
+            }
+          ],
+          "id": "mirante-2-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Quantas regiões tem o Brasil?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "3"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "4"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "5"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "6"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "mirante-2-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "O Brasil tem 26 estados e o Distrito Federal. Isso dá 27 partes. O Sudeste tem 4 estados."
+          },
+          "prompt": {
+            "pt": "Quantas partes (estados e o Distrito Federal) existem fora da região Sudeste?"
+          },
+          "answer": 23,
+          "id": "mirante-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "A região Sul tem 3 estados e a região Sudeste tem 4. Quantos estados as duas regiões têm juntas?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "add",
+            "operand": 9
+          },
+          "second": {
+            "pt": "As duas regiões têm {x} estados. Somando com os 9 estados do Nordeste, quantos estados há nas três regiões?"
+          },
+          "id": "mirante-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual região do Brasil não toca o oceano Atlântico?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Norte"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Nordeste"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Centro-Oeste"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Sul"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "mirante-2-5"
+        }
+      ],
+      "place": "mirante"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/museu",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Os Povos do Brasil"
+      },
+      "subject": "geo-historia",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.historia.povos"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada elemento à tradição de onde ele vem."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "mandioca"
+              },
+              "right": {
+                "pt": "tradição indígena"
+              }
+            },
+            {
+              "left": {
+                "pt": "capoeira"
+              },
+              "right": {
+                "pt": "tradição africana"
+              }
+            },
+            {
+              "left": {
+                "pt": "pizza"
+              },
+              "right": {
+                "pt": "imigrantes italianos"
+              }
+            },
+            {
+              "left": {
+                "pt": "sushi"
+              },
+              "right": {
+                "pt": "imigrantes japoneses"
+              }
+            }
+          ],
+          "id": "museu-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.historia.povos"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Em que ano os portugueses chegaram ao Brasil?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "1500"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "1822"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "1889"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "1950"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "museu-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "geo-historia.historia.povos"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "Os portugueses chegaram ao Brasil em 1500. A Independência do Brasil foi em 1822."
+          },
+          "prompt": {
+            "pt": "Quantos anos se passaram entre 1500 e 1822?"
+          },
+          "answer": 322,
+          "id": "museu-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "geo-historia.historia.povos"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "A República foi proclamada em 1889. Quantos anos se passaram até 1900?"
+          },
+          "firstAnswer": 11,
+          "operation": {
+            "op": "add",
+            "operand": 67
+          },
+          "second": {
+            "pt": "Passaram {x} anos de 1889 até 1900. A Independência foi 67 anos antes da República. Quantos anos se passaram de 1822 até 1900?"
+          },
+          "id": "museu-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.historia.povos"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Qual é a ordem correta dos fatos?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Independência, chegada dos portugueses, República"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "chegada dos portugueses, Independência, República"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "República, Independência, chegada dos portugueses"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "chegada dos portugueses, República, Independência"
+              }
+            }
+          ],
+          "correct": "b",
+          "id": "museu-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/museu-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Tempo e Fontes"
+      },
+      "subject": "geo-historia",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.historia.tempo-fontes"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Quantos anos tem um século?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "10 anos"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "50 anos"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "100 anos"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "1000 anos"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "museu-2-1"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.historia.tempo-fontes"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada fonte histórica ao seu tipo."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "foto antiga"
+              },
+              "right": {
+                "pt": "fonte visual"
+              }
+            },
+            {
+              "left": {
+                "pt": "gravação de voz"
+              },
+              "right": {
+                "pt": "fonte oral"
+              }
+            },
+            {
+              "left": {
+                "pt": "diário velho"
+              },
+              "right": {
+                "pt": "fonte escrita"
+              }
+            },
+            {
+              "left": {
+                "pt": "panela antiga"
+              },
+              "right": {
+                "pt": "fonte material"
+              }
+            }
+          ],
+          "id": "museu-2-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "geo-historia.historia.tempo-fontes"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "O farol foi construído em 1920 e reformado em 1990."
+          },
+          "prompt": {
+            "pt": "Quantos anos se passaram entre a construção e a reforma do farol?"
+          },
+          "answer": 70,
+          "id": "museu-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "geo-historia.historia.tempo-fontes"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Um século tem 100 anos. Quantos anos têm 3 séculos?"
+          },
+          "firstAnswer": 300,
+          "operation": {
+            "op": "subtract",
+            "operand": 120
+          },
+          "second": {
+            "pt": "O museu guarda objetos de {x} anos atrás. Um dos objetos é 120 anos mais novo. De quantos anos atrás ele é?"
+          },
+          "id": "museu-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.historia.tempo-fontes"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "O ano de 1850 pertence a qual século?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "século XIX (19)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "século XVIII (18)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "século XX (20)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "século XVII (17)"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "museu-2-5"
+        }
+      ],
+      "place": "museu"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/mangue",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Paisagens e Mapas"
+      },
+      "subject": "geo-historia",
+      "grade": 3,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.geografia.paisagens-mapas"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada descrição ao tipo de paisagem."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "plantações e animais de criação"
+              },
+              "right": {
+                "pt": "paisagem rural"
+              }
+            },
+            {
+              "left": {
+                "pt": "prédios, avenidas e muitos carros"
+              },
+              "right": {
+                "pt": "paisagem urbana"
+              }
+            },
+            {
+              "left": {
+                "pt": "areia, ondas e coqueiros"
+              },
+              "right": {
+                "pt": "paisagem de praia"
+              }
+            },
+            {
+              "left": {
+                "pt": "árvores de raízes aéreas e lama"
+              },
+              "right": {
+                "pt": "manguezal"
+              }
+            }
+          ],
+          "id": "mangue-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.paisagens-mapas"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Quais destes elementos são naturais?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "rio, floresta e morro"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "ponte, rua e prédio"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "casa, carro e estrada"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "poste, muro e ponte"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "mangue-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "geo-historia.geografia.paisagens-mapas"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "No manguezal vivem 4 espécies de aves. Cada espécie tem 15 aves."
+          },
+          "prompt": {
+            "pt": "Quantas aves há ao todo?"
+          },
+          "answer": 60,
+          "id": "mangue-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "geo-historia.geografia.paisagens-mapas"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "Em um mapa, 1 cm vale 5 km. Uma estrada mede 4 cm no mapa. Quantos km ela mede de verdade?"
+          },
+          "firstAnswer": 20,
+          "operation": {
+            "op": "divide",
+            "operand": 10
+          },
+          "second": {
+            "pt": "A estrada mede {x} km. Um ônibus anda 10 km por hora. Quantas horas ele leva para percorrer a estrada?"
+          },
+          "id": "mangue-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.paisagens-mapas"
+          ],
+          "difficulty": 3,
+          "question": {
+            "pt": "Para que serve a legenda de um mapa?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "mostra o nome do desenhista"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "mostra o tamanho do papel"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "explica o significado dos símbolos e das cores"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "mostra o vento"
+              }
+            }
+          ],
+          "correct": "c",
+          "id": "mangue-5"
+        }
+      ]
+    },
+    {
+      "id": "br.huckepack.anos-3-4/mangue-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Estados e Capitais"
+      },
+      "subject": "geo-historia",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.geografia.estados-capitais"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "pt": "Una cada estado à sua capital."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Bahia"
+              },
+              "right": {
+                "pt": "Salvador"
+              }
+            },
+            {
+              "left": {
+                "pt": "Pernambuco"
+              },
+              "right": {
+                "pt": "Recife"
+              }
+            },
+            {
+              "left": {
+                "pt": "Paraná"
+              },
+              "right": {
+                "pt": "Curitiba"
+              }
+            },
+            {
+              "left": {
+                "pt": "Ceará"
+              },
+              "right": {
+                "pt": "Fortaleza"
+              }
+            },
+            {
+              "left": {
+                "pt": "Pará"
+              },
+              "right": {
+                "pt": "Belém"
+              }
+            }
+          ],
+          "id": "mangue-2-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.estados-capitais"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Qual é a capital do Brasil?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Brasília"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Rio de Janeiro"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "São Paulo"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Salvador"
+              }
+            }
+          ],
+          "correct": "a",
+          "id": "mangue-2-2"
+        },
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.geografia.estados-capitais"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada estado à sua capital."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Minas Gerais"
+              },
+              "right": {
+                "pt": "Belo Horizonte"
+              }
+            },
+            {
+              "left": {
+                "pt": "Rio Grande do Sul"
+              },
+              "right": {
+                "pt": "Porto Alegre"
+              }
+            },
+            {
+              "left": {
+                "pt": "Santa Catarina"
+              },
+              "right": {
+                "pt": "Florianópolis"
+              }
+            },
+            {
+              "left": {
+                "pt": "Amazonas"
+              },
+              "right": {
+                "pt": "Manaus"
+              }
+            },
+            {
+              "left": {
+                "pt": "Goiás"
+              },
+              "right": {
+                "pt": "Goiânia"
+              }
+            }
+          ],
+          "id": "mangue-2-3"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "geo-historia.geografia.estados-capitais"
+          ],
+          "difficulty": 2,
+          "clue": {
+            "pt": "O Nordeste tem 9 estados e o Sudeste tem 4 estados. Cada estado tem uma capital."
+          },
+          "prompt": {
+            "pt": "Quantas capitais de estados há no Nordeste e no Sudeste juntos?"
+          },
+          "answer": 13,
+          "id": "mangue-2-4"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "geo-historia.geografia.estados-capitais"
+          ],
+          "difficulty": 3,
+          "first": {
+            "pt": "O Brasil tem 26 estados e cada estado tem uma capital. Quantas capitais de estados existem?"
+          },
+          "firstAnswer": 26,
+          "operation": {
+            "op": "subtract",
+            "operand": 9
+          },
+          "second": {
+            "pt": "O Brasil tem {x} capitais de estados. Vocês já conhecem 9 delas. Quantas ainda faltam conhecer?"
+          },
+          "id": "mangue-2-5"
+        }
+      ],
+      "place": "mangue"
+    },
+    {
+      "id": "br.huckepack.anos-3-4/floresta-2",
+      "schemaVersion": 1,
+      "title": {
+        "pt": "Os Biomas"
+      },
+      "subject": "geo-historia",
+      "grade": 4,
+      "tasks": [
+        {
+          "type": "matchPairs",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "pt": "Una cada bioma à sua descrição."
+          },
+          "pairs": [
+            {
+              "left": {
+                "pt": "Amazônia"
+              },
+              "right": {
+                "pt": "maior floresta tropical do Brasil"
+              }
+            },
+            {
+              "left": {
+                "pt": "Pantanal"
+              },
+              "right": {
+                "pt": "grande planície que alaga"
+              }
+            },
+            {
+              "left": {
+                "pt": "Caatinga"
+              },
+              "right": {
+                "pt": "clima seco e muitos cactos"
+              }
+            },
+            {
+              "left": {
+                "pt": "Pampa"
+              },
+              "right": {
+                "pt": "campos de capim no Sul"
+              }
+            },
+            {
+              "left": {
+                "pt": "Mata Atlântica"
+              },
+              "right": {
+                "pt": "floresta ao longo do litoral"
+              }
+            }
+          ],
+          "id": "floresta-2-1"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 1,
+          "question": {
+            "pt": "Quantos biomas tem o Brasil?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "4"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "5"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "7"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "6"
+              }
+            }
+          ],
+          "correct": "d",
+          "id": "floresta-2-2"
+        },
+        {
+          "type": "splitInfo",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "pt": "Os biomas do Brasil são: Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa."
+          },
+          "prompt": {
+            "pt": "Quantos desses biomas têm o nome começando com a letra C?"
+          },
+          "answer": 2,
+          "id": "floresta-2-3"
+        },
+        {
+          "type": "relay",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 2,
+          "first": {
+            "pt": "A trilha da Mata Atlântica tem 3 etapas de 4 km cada. Quantos km ela tem?"
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "pt": "A trilha tem {x} km. Vocês já andaram 5 km. Quantos km ainda faltam?"
+          },
+          "id": "floresta-2-4"
+        },
+        {
+          "type": "bothAgree",
+          "skills": [
+            "geo-historia.geografia.regioes"
+          ],
+          "difficulty": 2,
+          "question": {
+            "pt": "Qual bioma tem plantas que guardam água, como os cactos?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "pt": "Amazônia"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "pt": "Caatinga"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "pt": "Pantanal"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "pt": "Mata Atlântica"
+              }
+            }
+          ],
+          "correct": "b",
+          "id": "floresta-2-5"
+        }
+      ],
+      "place": "floresta"
+    }
+  ]
+}

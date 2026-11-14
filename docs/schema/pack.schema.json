@@ -87,10 +87,7 @@
     },
     "localizedText": {
       "type": "object",
-      "description": "Texts by language code. de is required by this repository; en is welcome.",
-      "required": [
-        "de"
-      ],
+      "description": "Texts by language code (ISO 639-1, e.g. de, en, es, pt, fr). At least one language; write the language of the families the pack is for, en is welcome as a second.",
       "properties": {
         "de": {
           "type": "string",
@@ -103,14 +100,12 @@
       },
       "additionalProperties": {
         "type": "string"
-      }
+      },
+      "minProperties": 1
     },
     "localizedTextWithX": {
       "type": "object",
       "description": "Text of a relay's second step: every language must contain {x}.",
-      "required": [
-        "de"
-      ],
       "properties": {
         "de": {
           "type": "string",
@@ -124,7 +119,8 @@
       "additionalProperties": {
         "type": "string",
         "pattern": "\\{x\\}"
-      }
+      },
+      "minProperties": 1
     },
     "course": {
       "type": "object",
@@ -241,6 +237,10 @@
       "enum": [
         "integer",
         "euroCents",
+        "dollarCents",
+        "poundPence",
+        "rupeePaise",
+        "realCentavos",
         "time",
         "minutes"
       ]

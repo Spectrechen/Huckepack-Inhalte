@@ -196,7 +196,7 @@ und tippt die Zahl ein.
 | `clueVisual` | nein | [Bild](#7-bilder-in-aufgaben-visuals) (Uhr, Geld), ebenfalls nur beim Hinweis-Kind. |
 | `prompt` | ja | Frage. **Nur** das Eingabe-Kind sieht sie, dazu das Ziffernfeld. |
 | `answer` | ja | Die Lösung als ganze Zahl (nicht negativ), siehe [Antwortformate](#8-antwortformate). |
-| `answerFormat` | nein | `integer` (Standard), `euroCents`, `time`, `minutes`. |
+| `answerFormat` | nein | `integer` (Standard), `euroCents`, `dollarCents`, `poundPence`, `rupeePaise`, `realCentavos`, `time`, `minutes`. |
 
 Wer sieht was:
 
@@ -384,6 +384,11 @@ im JSON steht.
 
 Beispiele:
 - 5,50 € → `"answer": 550, "answerFormat": "euroCents"`
+- Andere Währungen genauso, immer in der kleinsten Einheit gespeichert: `dollarCents` ($5.50 → 550), `poundPence`
+  (£5.50 → 550), `rupeePaise` (₹5.50 → 550), `realCentavos` (R$ 5,50 → 550). Das Bild `money` (Münzen und Scheine)
+  zeigt bisher nur Euro; für andere Währungen die Beträge im Text nennen.
+- Die Uhrzeit (`time`, `digitalClock`) wird im 24-Stunden-Format getippt und gezeigt; eine 12-Stunden-Eingabe mit
+  a.m./p.m. gibt es noch nicht. Die analoge Uhr (`clock`) passt für beide.
 - 7:05 Uhr → `"answer": 425, "answerFormat": "time"`
 - 1 h 20 min → `"answer": 80, "answerFormat": "minutes"`
 - 0,87 € → `87` (die Kinder tippen `87`)
@@ -543,10 +548,10 @@ Jeder sichtbare Text ist ein Objekt mit Sprachcodes:
 { "de": "Wie viele Bretter?", "en": "How many boards?" }
 ```
 
-- `de` (Deutsch) ist in diesem Repository **Pflicht**. Die App fällt notfalls auf eine vorhandene Sprache zurück, das Prüfskript und das Schema
-  verlangen aber `de`.
-- `en` ist erwünscht, die App zeigt es, wenn das Gerät Englisch eingestellt hat.
-- Andere Sprachcodes (`fr`, `tr`, …) sind erlaubt.
+- Mindestens **eine** Sprache, als Sprachcode nach ISO 639-1 (`de`, `en`, `es`, `pt`, `fr`, `tr`, …). Schreibt in der Sprache
+  der Familien, für die das Paket gedacht ist; ein englisches Paket braucht kein `de`.
+- Die App zeigt die Sprache des Geräts, sonst Deutsch, sonst irgendeine vorhandene. Eine zweite Sprache (oft `en`) ist
+  willkommen, aber keine Pflicht.
 - Bei `relay.second` muss `{x}` in **jeder** angegebenen Sprache vorkommen.
 - Keine Emojis, keine Links.
 

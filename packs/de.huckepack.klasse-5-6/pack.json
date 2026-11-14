@@ -1,0 +1,4512 @@
+{
+ "$schema": "../../docs/schema/pack.schema.json",
+ "id": "de.huckepack.klasse-5-6",
+ "version": 1,
+ "title": {
+  "de": "Küste und Hafen: Klasse 5 und 6",
+  "en": "Coast and Harbour: Grades 5 and 6"
+ },
+ "description": {
+  "de": "Mathe, Deutsch, Englisch, Erdkunde und Biologie für Klasse 5 und 6 an weiterführenden Schulen in Deutschland (10 bis 12 Jahre), passend zu den Bildungsstandards.",
+  "en": "Maths, German, English, geography and biology for grades 5 and 6 of German secondary schools (ages 10 to 12), in line with the national education standards."
+ },
+ "author": "Huckepack",
+ "licence": "CC-BY-4.0",
+ "courses": [
+  {
+   "id": "mathe",
+   "title": {
+    "de": "Mathe",
+    "en": "Maths"
+   }
+  },
+  {
+   "id": "deutsch",
+   "title": {
+    "de": "Deutsch",
+    "en": "German"
+   }
+  },
+  {
+   "id": "englisch",
+   "title": {
+    "de": "Englisch",
+    "en": "English"
+   }
+  },
+  {
+   "id": "erdkunde",
+   "title": {
+    "de": "Erdkunde",
+    "en": "Geography"
+   }
+  },
+  {
+   "id": "biologie",
+   "title": {
+    "de": "Biologie",
+    "en": "Biology"
+   }
+  }
+ ],
+ "skills": {
+  "mathe.dezimal.rechnen": {
+   "de": "Mit Dezimalzahlen rechnen"
+  },
+  "mathe.geld.rechnen": {
+   "de": "Mit Geld rechnen"
+  },
+  "mathe.dezimal.lesen": {
+   "de": "Dezimalzahlen lesen"
+  },
+  "mathe.dezimal.vergleichen": {
+   "de": "Dezimalzahlen vergleichen"
+  },
+  "mathe.teilbarkeit.teiler": {
+   "de": "Teiler und Teilbarkeit"
+  },
+  "mathe.teilbarkeit.regeln": {
+   "de": "Teilbarkeitsregeln"
+  },
+  "mathe.teilbarkeit.vielfache": {
+   "de": "Vielfache und kgV"
+  },
+  "mathe.geometrie.flaeche": {
+   "de": "Fläche berechnen"
+  },
+  "mathe.geometrie.umfang": {
+   "de": "Umfang berechnen"
+  },
+  "mathe.brueche.anteile": {
+   "de": "Anteile berechnen"
+  },
+  "mathe.brueche.erweitern": {
+   "de": "Brüche erweitern"
+  },
+  "mathe.brueche.vergleichen": {
+   "de": "Brüche vergleichen"
+  },
+  "mathe.negativ.differenz": {
+   "de": "Temperaturunterschiede"
+  },
+  "mathe.negativ.ordnen": {
+   "de": "Negative Zahlen ordnen"
+  },
+  "mathe.negativ.rechnen": {
+   "de": "Mit negativen Zahlen rechnen"
+  },
+  "mathe.groessen.laenge": {
+   "de": "Längen umrechnen"
+  },
+  "mathe.groessen.zeit": {
+   "de": "Zeitspannen berechnen"
+  },
+  "mathe.groessen.umrechnen": {
+   "de": "Größen umrechnen"
+  },
+  "deutsch.wortarten.bestimmen": {
+   "de": "Wortarten bestimmen"
+  },
+  "deutsch.wortarten.erkennen": {
+   "de": "Wortarten erkennen"
+  },
+  "deutsch.satzglieder.fragen": {
+   "de": "Satzglieder erfragen"
+  },
+  "deutsch.satzglieder.erkennen": {
+   "de": "Satzglieder erkennen"
+  },
+  "deutsch.satzglieder.umstellprobe": {
+   "de": "Umstellprobe"
+  },
+  "deutsch.zeitformen.bilden": {
+   "de": "Zeitformen bilden"
+  },
+  "deutsch.zeitformen.erkennen": {
+   "de": "Zeitformen erkennen"
+  },
+  "deutsch.komma.aufzaehlung": {
+   "de": "Komma bei Aufzählungen"
+  },
+  "deutsch.komma.nebensatz": {
+   "de": "Komma bei Nebensätzen"
+  },
+  "deutsch.rechtschreibung.ableiten": {
+   "de": "Ableiten"
+  },
+  "deutsch.rechtschreibung.schaerfung": {
+   "de": "Schärfung"
+  },
+  "deutsch.rechtschreibung.dassdas": {
+   "de": "das oder dass"
+  },
+  "deutsch.rechtschreibung.dehnung": {
+   "de": "Dehnung"
+  },
+  "englisch.vocab.sea": {
+   "de": "Wortschatz Meer"
+  },
+  "englisch.vocab.weather": {
+   "de": "Wortschatz Wetter"
+  },
+  "englisch.past.irregular": {
+   "de": "Simple Past unregelmäßig"
+  },
+  "englisch.past.regular": {
+   "de": "Simple Past regelmäßig"
+  },
+  "englisch.past.questions": {
+   "de": "Fragen im Simple Past"
+  },
+  "englisch.prepositions.place": {
+   "de": "Präpositionen des Ortes"
+  },
+  "englisch.numbers.time": {
+   "de": "Zahlen und Uhrzeit"
+  },
+  "englisch.grammar.have": {
+   "de": "have und be"
+  },
+  "englisch.present.simple": {
+   "de": "Present Simple"
+  },
+  "englisch.present.continuous": {
+   "de": "Present Continuous"
+  },
+  "englisch.vocab.food": {
+   "de": "Wortschatz Essen"
+  },
+  "englisch.numbers.prices": {
+   "de": "Preise und Zahlen"
+  },
+  "englisch.phrases.polite": {
+   "de": "Höflich fragen"
+  },
+  "erdkunde.orientierung.kontinente": {
+   "de": "Kontinente"
+  },
+  "erdkunde.orientierung.ozeane": {
+   "de": "Ozeane"
+  },
+  "erdkunde.deutschland.hauptstaedte": {
+   "de": "Landeshauptstädte"
+  },
+  "erdkunde.deutschland.bundeslaender": {
+   "de": "Bundesländer"
+  },
+  "erdkunde.gradnetz.begriffe": {
+   "de": "Begriffe des Gradnetzes"
+  },
+  "erdkunde.gradnetz.breitenkreise": {
+   "de": "Breitenkreise"
+  },
+  "erdkunde.gradnetz.koordinaten": {
+   "de": "Koordinaten lesen"
+  },
+  "erdkunde.gradnetz.laengenkreise": {
+   "de": "Längenkreise"
+  },
+  "erdkunde.karte.himmelsrichtungen": {
+   "de": "Himmelsrichtungen"
+  },
+  "erdkunde.karte.massstab": {
+   "de": "Maßstab"
+  },
+  "biologie.pflanzen.bau": {
+   "de": "Bau der Pflanze"
+  },
+  "biologie.pflanzen.fotosynthese": {
+   "de": "Fotosynthese"
+  },
+  "biologie.pflanzen.anpassung": {
+   "de": "Pflanzen an der Küste"
+  },
+  "biologie.zelle.bau": {
+   "de": "Bau der Zelle"
+  },
+  "biologie.zelle.mikroskop": {
+   "de": "Mikroskopieren"
+  },
+  "biologie.tiere.wirbeltierklassen": {
+   "de": "Wirbeltierklassen"
+  },
+  "biologie.tiere.merkmale": {
+   "de": "Merkmale von Tieren"
+  },
+  "biologie.watt.nahrung": {
+   "de": "Ernährung im Watt"
+  },
+  "biologie.watt.gezeiten": {
+   "de": "Ebbe und Flut"
+  },
+  "biologie.watt.nahrungskette": {
+   "de": "Nahrungsketten"
+  },
+  "biologie.watt.anpassung": {
+   "de": "Anpassung im Watt"
+  }
+ },
+ "world": {
+  "image": {
+   "file": "karte.jpg",
+   "width": 2048,
+   "height": 1536
+  },
+  "start": "faehre",
+  "nodes": [
+   {
+    "id": "faehre",
+    "title": {
+     "de": "Fähranleger"
+    },
+    "x": 0.12,
+    "y": 0.86,
+    "requires": []
+   },
+   {
+    "id": "fischmarkt",
+    "title": {
+     "de": "Fischmarkt"
+    },
+    "level": "de.huckepack.klasse-5-6/fischmarkt",
+    "x": 0.3,
+    "y": 0.74,
+    "requires": []
+   },
+   {
+    "id": "werft",
+    "title": {
+     "de": "Werft"
+    },
+    "level": "de.huckepack.klasse-5-6/werft",
+    "x": 0.14,
+    "y": 0.58,
+    "requires": []
+   },
+   {
+    "id": "deich",
+    "title": {
+     "de": "Deich"
+    },
+    "level": "de.huckepack.klasse-5-6/deich",
+    "x": 0.4,
+    "y": 0.58,
+    "requires": [
+     "de.huckepack.klasse-5-6/fischmarkt"
+    ]
+   },
+   {
+    "id": "watt",
+    "title": {
+     "de": "Wattenmeer"
+    },
+    "level": "de.huckepack.klasse-5-6/watt",
+    "x": 0.5,
+    "y": 0.86,
+    "requires": [
+     "de.huckepack.klasse-5-6/fischmarkt"
+    ]
+   },
+   {
+    "id": "hallig",
+    "title": {
+     "de": "Hallig"
+    },
+    "level": "de.huckepack.klasse-5-6/hallig",
+    "x": 0.72,
+    "y": 0.8,
+    "requires": [
+     "de.huckepack.klasse-5-6/watt"
+    ]
+   },
+   {
+    "id": "duene",
+    "title": {
+     "de": "Düne"
+    },
+    "level": "de.huckepack.klasse-5-6/duene",
+    "x": 0.9,
+    "y": 0.62,
+    "requires": [
+     "de.huckepack.klasse-5-6/hallig"
+    ]
+   },
+   {
+    "id": "lotsenhaus",
+    "title": {
+     "de": "Lotsenhaus"
+    },
+    "level": "de.huckepack.klasse-5-6/lotsenhaus",
+    "x": 0.64,
+    "y": 0.58,
+    "requires": [
+     "de.huckepack.klasse-5-6/deich"
+    ]
+   },
+   {
+    "id": "fischerdorf",
+    "title": {
+     "de": "Fischerdorf"
+    },
+    "level": "de.huckepack.klasse-5-6/fischerdorf",
+    "x": 0.14,
+    "y": 0.34,
+    "requires": [
+     "de.huckepack.klasse-5-6/werft"
+    ]
+   },
+   {
+    "id": "seebruecke",
+    "title": {
+     "de": "Seebrücke"
+    },
+    "level": "de.huckepack.klasse-5-6/seebruecke",
+    "x": 0.32,
+    "y": 0.38,
+    "requires": [
+     "de.huckepack.klasse-5-6/deich"
+    ]
+   },
+   {
+    "id": "salzwiese",
+    "title": {
+     "de": "Salzwiese"
+    },
+    "level": "de.huckepack.klasse-5-6/salzwiese",
+    "x": 0.52,
+    "y": 0.38,
+    "requires": [
+     "de.huckepack.klasse-5-6/seebruecke"
+    ]
+   },
+   {
+    "id": "robbenbank",
+    "title": {
+     "de": "Robbenbank"
+    },
+    "level": "de.huckepack.klasse-5-6/robbenbank",
+    "x": 0.78,
+    "y": 0.38,
+    "requires": [
+     "de.huckepack.klasse-5-6/salzwiese"
+    ]
+   },
+   {
+    "id": "vogelwarte",
+    "title": {
+     "de": "Vogelwarte"
+    },
+    "level": "de.huckepack.klasse-5-6/vogelwarte",
+    "x": 0.5,
+    "y": 0.14,
+    "requires": [
+     "de.huckepack.klasse-5-6/salzwiese"
+    ]
+   },
+   {
+    "id": "leuchtturm",
+    "title": {
+     "de": "Leuchtturm"
+    },
+    "level": "de.huckepack.klasse-5-6/leuchtturm",
+    "x": 0.84,
+    "y": 0.14,
+    "requires": [
+     "de.huckepack.klasse-5-6/robbenbank"
+    ]
+   },
+   {
+    "id": "museumsschiff",
+    "title": {
+     "de": "Museumsschiff"
+    },
+    "level": "de.huckepack.klasse-5-6/museumsschiff",
+    "x": 0.22,
+    "y": 0.14,
+    "requires": [
+     "de.huckepack.klasse-5-6/fischerdorf"
+    ]
+   },
+   {
+    "id": "segelschule",
+    "title": {
+     "de": "Segelschule"
+    },
+    "level": "de.huckepack.klasse-5-6/segelschule",
+    "x": 0.92,
+    "y": 0.84,
+    "requires": [
+     "de.huckepack.klasse-5-6/hallig"
+    ]
+   }
+  ],
+  "paths": [
+   [
+    "faehre",
+    "fischmarkt"
+   ],
+   [
+    "faehre",
+    "werft"
+   ],
+   [
+    "fischmarkt",
+    "deich"
+   ],
+   [
+    "fischmarkt",
+    "watt"
+   ],
+   [
+    "werft",
+    "deich"
+   ],
+   [
+    "watt",
+    "hallig"
+   ],
+   [
+    "deich",
+    "lotsenhaus"
+   ],
+   [
+    "hallig",
+    "lotsenhaus"
+   ],
+   [
+    "hallig",
+    "segelschule"
+   ],
+   [
+    "segelschule",
+    "duene"
+   ],
+   [
+    "duene",
+    "lotsenhaus"
+   ],
+   [
+    "werft",
+    "fischerdorf"
+   ],
+   [
+    "deich",
+    "seebruecke"
+   ],
+   [
+    "fischerdorf",
+    "seebruecke"
+   ],
+   [
+    "seebruecke",
+    "salzwiese"
+   ],
+   [
+    "lotsenhaus",
+    "salzwiese"
+   ],
+   [
+    "salzwiese",
+    "robbenbank"
+   ],
+   [
+    "duene",
+    "robbenbank"
+   ],
+   [
+    "salzwiese",
+    "vogelwarte"
+   ],
+   [
+    "robbenbank",
+    "leuchtturm"
+   ],
+   [
+    "vogelwarte",
+    "leuchtturm"
+   ],
+   [
+    "seebruecke",
+    "museumsschiff"
+   ],
+   [
+    "fischerdorf",
+    "museumsschiff"
+   ],
+   [
+    "vogelwarte",
+    "museumsschiff"
+   ]
+  ]
+ },
+ "levels": [
+  {
+   "id": "de.huckepack.klasse-5-6/fischmarkt",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Fischmarkt: Dezimalzahlen und Preise"
+   },
+   "subject": "mathe",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "fm-1",
+     "skills": [
+      "mathe.dezimal.rechnen"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Ein Kilo Krabben kostet 12,40 €. Ihr kauft ein halbes Kilo."
+     },
+     "prompt": {
+      "de": "Wie viel kostet das halbe Kilo? Tippt den Betrag."
+     },
+     "answer": 620,
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "fm-2",
+     "skills": [
+      "mathe.geld.rechnen"
+     ],
+     "type": "relay",
+     "difficulty": 1,
+     "first": {
+      "de": "Ein Fischbrötchen kostet 3,60 €. Ihr kauft 3 Stück. Was kosten sie zusammen?"
+     },
+     "firstAnswer": 1080,
+     "operation": {
+      "op": "subtract",
+      "operand": 280
+     },
+     "second": {
+      "de": "Die Rechnung ist {x}. Ihr habt einen Gutschein über 2,80 €. Wie viel zahlt ihr?"
+     },
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "fm-3",
+     "skills": [
+      "mathe.dezimal.lesen"
+     ],
+     "type": "matchPairs",
+     "difficulty": 2,
+     "prompt": {
+      "de": "Welche Dezimalzahl passt zu welchem Wortlaut?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "0,5"
+       },
+       "right": {
+        "de": "5 Zehntel"
+       }
+      },
+      {
+       "left": {
+        "de": "0,05"
+       },
+       "right": {
+        "de": "5 Hundertstel"
+       }
+      },
+      {
+       "left": {
+        "de": "0,75"
+       },
+       "right": {
+        "de": "75 Hundertstel"
+       }
+      },
+      {
+       "left": {
+        "de": "0,125"
+       },
+       "right": {
+        "de": "125 Tausendstel"
+       }
+      }
+     ]
+    },
+    {
+     "id": "fm-4",
+     "skills": [
+      "mathe.dezimal.vergleichen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welche Zahl ist die größte?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "0,89"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "0,091"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "0,9"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "0,5"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "fm-5",
+     "skills": [
+      "mathe.dezimal.rechnen"
+     ],
+     "type": "splitInfo",
+     "difficulty": 3,
+     "clue": {
+      "de": "Drei Kisten stehen auf der Waage: 2,35 kg, 1,8 kg und 0,95 kg."
+     },
+     "prompt": {
+      "de": "Wie viele Gramm wiegen alle drei Kisten zusammen?"
+     },
+     "answer": 5100
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/fischmarkt-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Fischmarkt: Teilbarkeit"
+   },
+   "subject": "mathe",
+   "grade": 5,
+   "place": "fischmarkt",
+   "tasks": [
+    {
+     "id": "ft-1",
+     "skills": [
+      "mathe.teilbarkeit.teiler"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Ein Fischer hat 36 Heringe. In jede Kiste legt er 4 Heringe."
+     },
+     "prompt": {
+      "de": "Wie viele Kisten braucht er?"
+     },
+     "answer": 9
+    },
+    {
+     "id": "ft-2",
+     "skills": [
+      "mathe.teilbarkeit.regeln"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welche Zahl ist durch 3 teilbar?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "124"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "217"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "135"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "242"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "ft-3",
+     "skills": [
+      "mathe.teilbarkeit.teiler"
+     ],
+     "type": "matchPairs",
+     "difficulty": 2,
+     "prompt": {
+      "de": "Was passt zusammen?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Kleinste Primzahl"
+       },
+       "right": {
+        "de": "2"
+       }
+      },
+      {
+       "left": {
+        "de": "Kleinstes gemeinsames Vielfaches von 4 und 6"
+       },
+       "right": {
+        "de": "12"
+       }
+      },
+      {
+       "left": {
+        "de": "Größter gemeinsamer Teiler von 18 und 24"
+       },
+       "right": {
+        "de": "6"
+       }
+      },
+      {
+       "left": {
+        "de": "Alle Teiler von 10"
+       },
+       "right": {
+        "de": "1, 2, 5, 10"
+       }
+      }
+     ]
+    },
+    {
+     "id": "ft-4",
+     "skills": [
+      "mathe.teilbarkeit.teiler"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Ein Händler packt 7 Kisten mit je 12 Fischen. Wie viele Fische sind das?"
+     },
+     "firstAnswer": 84,
+     "operation": {
+      "op": "divide",
+      "operand": 6
+     },
+     "second": {
+      "de": "Der Händler hat {x} Fische. Er verteilt sie gleichmäßig auf 6 Stände. Wie viele Fische bekommt jeder Stand?"
+     }
+    },
+    {
+     "id": "ft-5",
+     "skills": [
+      "mathe.teilbarkeit.vielfache"
+     ],
+     "type": "splitInfo",
+     "difficulty": 3,
+     "clue": {
+      "de": "Zwei Leuchtfeuer blinken: das eine alle 6 Sekunden, das andere alle 8 Sekunden. Gerade blinken beide gleichzeitig."
+     },
+     "prompt": {
+      "de": "Nach wie vielen Sekunden blinken beide zum ersten Mal wieder gleichzeitig?"
+     },
+     "answer": 24
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/werft",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Werft: Umfang und Fläche"
+   },
+   "subject": "mathe",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "we-1",
+     "skills": [
+      "mathe.geometrie.flaeche"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Das Deck eines Bootes ist ein Rechteck: 8 m lang und 3 m breit."
+     },
+     "prompt": {
+      "de": "Wie groß ist die Fläche des Decks in Quadratmetern?"
+     },
+     "answer": 24
+    },
+    {
+     "id": "we-2",
+     "skills": [
+      "mathe.geometrie.flaeche"
+     ],
+     "type": "relay",
+     "difficulty": 1,
+     "first": {
+      "de": "Ein rechteckiger Bootsschuppen ist 12 m lang und 5 m breit. Wie groß ist sein Boden in m²?"
+     },
+     "firstAnswer": 60,
+     "operation": {
+      "op": "multiply",
+      "operand": 3
+     },
+     "second": {
+      "de": "Der Boden ist {x} m² groß. Für jeden Quadratmeter braucht ihr 3 Fliesen. Wie viele Fliesen braucht ihr?"
+     }
+    },
+    {
+     "id": "we-3",
+     "skills": [
+      "mathe.geometrie.umfang"
+     ],
+     "type": "matchPairs",
+     "difficulty": 2,
+     "prompt": {
+      "de": "Welche Figur passt zu welchem Ergebnis?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Rechteck 6 m mal 4 m: Umfang"
+       },
+       "right": {
+        "de": "20 m"
+       }
+      },
+      {
+       "left": {
+        "de": "Rechteck 6 m mal 4 m: Fläche"
+       },
+       "right": {
+        "de": "24 m²"
+       }
+      },
+      {
+       "left": {
+        "de": "Quadrat mit Seite 5 m: Fläche"
+       },
+       "right": {
+        "de": "25 m²"
+       }
+      },
+      {
+       "left": {
+        "de": "Quadrat mit Seite 3 m: Umfang"
+       },
+       "right": {
+        "de": "12 m"
+       }
+      }
+     ]
+    },
+    {
+     "id": "we-4",
+     "skills": [
+      "mathe.geometrie.umfang"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Ein Rechteck hat 14 m Umfang. Eine Seite ist 4 m lang. Wie lang ist die andere Seite?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "10 m"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "6 m"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "3 m"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "7 m"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "we-5",
+     "skills": [
+      "mathe.geometrie.flaeche"
+     ],
+     "type": "splitInfo",
+     "difficulty": 3,
+     "clue": {
+      "de": "Die Werfthalle besteht aus zwei Rechtecken: eines ist 10 m mal 4 m, das andere 6 m mal 3 m."
+     },
+     "prompt": {
+      "de": "Wie groß ist die gesamte Fläche der Halle in Quadratmetern?"
+     },
+     "answer": 58
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/werft-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Werft: Brüche"
+   },
+   "subject": "mathe",
+   "grade": 6,
+   "place": "werft",
+   "tasks": [
+    {
+     "id": "wb-1",
+     "skills": [
+      "mathe.brueche.anteile"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Ein Fischkutter hat 24 Kisten geladen. Ein Viertel der Kisten ist für den Markt."
+     },
+     "prompt": {
+      "de": "Wie viele Kisten sind für den Markt?"
+     },
+     "answer": 6
+    },
+    {
+     "id": "wb-2",
+     "skills": [
+      "mathe.brueche.erweitern"
+     ],
+     "type": "matchPairs",
+     "difficulty": 2,
+     "prompt": {
+      "de": "Welche Brüche sind gleich groß?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "1/2"
+       },
+       "right": {
+        "de": "4/8"
+       }
+      },
+      {
+       "left": {
+        "de": "1/3"
+       },
+       "right": {
+        "de": "2/6"
+       }
+      },
+      {
+       "left": {
+        "de": "2/5"
+       },
+       "right": {
+        "de": "4/10"
+       }
+      },
+      {
+       "left": {
+        "de": "3/4"
+       },
+       "right": {
+        "de": "9/12"
+       }
+      }
+     ]
+    },
+    {
+     "id": "wb-3",
+     "skills": [
+      "mathe.brueche.anteile"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Von 36 Fischen ist ein Drittel Hering. Wie viele Heringe sind das?"
+     },
+     "firstAnswer": 12,
+     "operation": {
+      "op": "divide",
+      "operand": 2
+     },
+     "second": {
+      "de": "Es sind {x} Heringe. Die Hälfte davon wird geräuchert. Wie viele Heringe sind das?"
+     }
+    },
+    {
+     "id": "wb-4",
+     "skills": [
+      "mathe.brueche.vergleichen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welcher Bruch ist am größten?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "3/5"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "1/2"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "2/3"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "5/8"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "wb-5",
+     "skills": [
+      "mathe.brueche.anteile"
+     ],
+     "type": "splitInfo",
+     "difficulty": 3,
+     "clue": {
+      "de": "Auf dem Boot sind 3/8 der Fracht Fischkisten. Das sind 15 Kisten."
+     },
+     "prompt": {
+      "de": "Wie viele Kisten hat das Boot insgesamt geladen?"
+     },
+     "answer": 40
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/deich",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Deich: Negative Zahlen"
+   },
+   "subject": "mathe",
+   "grade": 6,
+   "tasks": [
+    {
+     "id": "de-1",
+     "skills": [
+      "mathe.negativ.differenz"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Morgens zeigt das Thermometer am Deich −3 Grad. Mittags sind es 5 Grad."
+     },
+     "prompt": {
+      "de": "Um wie viele Grad ist es mittags wärmer als morgens?"
+     },
+     "answer": 8
+    },
+    {
+     "id": "de-2",
+     "skills": [
+      "mathe.negativ.ordnen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Welche Zahl ist die kleinste?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "−2"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "0"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "−7"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "3"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "de-3",
+     "skills": [
+      "mathe.negativ.rechnen"
+     ],
+     "type": "matchPairs",
+     "difficulty": 2,
+     "prompt": {
+      "de": "Welche Aufgabe passt zu welchem Ergebnis?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "−3 + 5"
+       },
+       "right": {
+        "de": "2"
+       }
+      },
+      {
+       "left": {
+        "de": "4 − 9"
+       },
+       "right": {
+        "de": "−5"
+       }
+      },
+      {
+       "left": {
+        "de": "−6 − 2"
+       },
+       "right": {
+        "de": "−8"
+       }
+      },
+      {
+       "left": {
+        "de": "−4 + 4"
+       },
+       "right": {
+        "de": "0"
+       }
+      }
+     ]
+    },
+    {
+     "id": "de-4",
+     "skills": [
+      "mathe.negativ.rechnen"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Bei Ebbe steht das Wasser am Pegel bei −2 m. Die Flut steigt um 5 m. Bei wie viel Metern steht das Wasser dann?"
+     },
+     "firstAnswer": 3,
+     "operation": {
+      "op": "add",
+      "operand": 4
+     },
+     "second": {
+      "de": "Das Wasser steht bei {x} m. Eine Sturmflut hebt es noch um 4 m. Wie viele Meter zeigt der Pegel dann?"
+     }
+    },
+    {
+     "id": "de-5",
+     "skills": [
+      "mathe.negativ.rechnen"
+     ],
+     "type": "splitInfo",
+     "difficulty": 3,
+     "clue": {
+      "de": "Ein Tauchroboter ist bei −15 m. Er taucht weiter bis −38 m und steigt dann 10 m auf."
+     },
+     "prompt": {
+      "de": "Wie tief unter dem Meeresspiegel ist er jetzt? Tippt die Tiefe in Metern ohne Minuszeichen."
+     },
+     "answer": 28
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/lotsenhaus",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Lotsenhaus: Größen"
+   },
+   "subject": "mathe",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "lo-1",
+     "skills": [
+      "mathe.groessen.laenge"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Das Lotsenboot fährt 3 Kilometer weit."
+     },
+     "prompt": {
+      "de": "Wie viele Meter sind das?"
+     },
+     "answer": 3000
+    },
+    {
+     "id": "lo-2",
+     "skills": [
+      "mathe.groessen.zeit"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Das Schiff legt um 13:45 Uhr ab. Die Fahrt dauert 2 Stunden und 30 Minuten."
+     },
+     "prompt": {
+      "de": "Wann kommt es an? Tippt die Uhrzeit."
+     },
+     "answer": 975,
+     "answerFormat": "time"
+    },
+    {
+     "id": "lo-3",
+     "skills": [
+      "mathe.groessen.umrechnen"
+     ],
+     "type": "matchPairs",
+     "difficulty": 2,
+     "prompt": {
+      "de": "Welche Angaben sind gleich groß?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "2 kg"
+       },
+       "right": {
+        "de": "2000 g"
+       }
+      },
+      {
+       "left": {
+        "de": "350 cm"
+       },
+       "right": {
+        "de": "3,5 m"
+       }
+      },
+      {
+       "left": {
+        "de": "1,5 h"
+       },
+       "right": {
+        "de": "90 min"
+       }
+      },
+      {
+       "left": {
+        "de": "4 t"
+       },
+       "right": {
+        "de": "4000 kg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "lo-4",
+     "skills": [
+      "mathe.groessen.zeit"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Die Überfahrt zur Hallig dauert 1 Stunde und 20 Minuten. Wie viele Minuten sind das?"
+     },
+     "firstAnswer": 80,
+     "operation": {
+      "op": "multiply",
+      "operand": 2
+     },
+     "second": {
+      "de": "Die Hinfahrt dauert {x}. Die Rückfahrt dauert genauso lang. Wie viele Minuten seid ihr insgesamt unterwegs?"
+     },
+     "answerFormat": "minutes"
+    },
+    {
+     "id": "lo-5",
+     "skills": [
+      "mathe.groessen.laenge"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welche Strecke ist am längsten?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "1,2 km"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "1150 m"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "11 000 dm"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "130 000 cm"
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/fischerdorf",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Fischerdorf: Wortarten"
+   },
+   "subject": "deutsch",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "fd-1",
+     "skills": [
+      "deutsch.wortarten.bestimmen"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welches Wort gehört zu welcher Wortart?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Hafen"
+       },
+       "right": {
+        "de": "Nomen"
+       }
+      },
+      {
+       "left": {
+        "de": "laufen"
+       },
+       "right": {
+        "de": "Verb"
+       }
+      },
+      {
+       "left": {
+        "de": "salzig"
+       },
+       "right": {
+        "de": "Adjektiv"
+       }
+      },
+      {
+       "left": {
+        "de": "unter"
+       },
+       "right": {
+        "de": "Präposition"
+       }
+      }
+     ]
+    },
+    {
+     "id": "fd-2",
+     "skills": [
+      "deutsch.wortarten.erkennen"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Der Satz lautet: Der alte Fischer flickt das große Netz am Hafen."
+     },
+     "prompt": {
+      "de": "Wie viele Nomen stehen im Satz, den dein Partner vorliest?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "fd-3",
+     "skills": [
+      "deutsch.wortarten.erkennen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welches Wort ist ein Adjektiv?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Wellen"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "rauschen"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "stürmisch"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "am"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "fd-4",
+     "skills": [
+      "deutsch.wortarten.erkennen"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Wie viele Wörter hat der Satz: Die Möwen kreischen laut über dem Hafen?"
+     },
+     "firstAnswer": 7,
+     "operation": {
+      "op": "subtract",
+      "operand": 2
+     },
+     "second": {
+      "de": "Der Satz hat {x} Wörter. Zwei davon sind Nomen. Wie viele Wörter sind keine Nomen?"
+     }
+    },
+    {
+     "id": "fd-5",
+     "skills": [
+      "deutsch.wortarten.bestimmen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welches Wort ist eine Konjunktion (Bindewort)?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "wegen"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "weil"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "weit"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "wer"
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/fischerdorf-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Fischerdorf: Satzglieder"
+   },
+   "subject": "deutsch",
+   "grade": 6,
+   "place": "fischerdorf",
+   "tasks": [
+    {
+     "id": "fz-1",
+     "skills": [
+      "deutsch.satzglieder.fragen"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welche Frage passt zu welchem Satzglied?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Wer oder was?"
+       },
+       "right": {
+        "de": "Subjekt"
+       }
+      },
+      {
+       "left": {
+        "de": "Was tut jemand?"
+       },
+       "right": {
+        "de": "Prädikat"
+       }
+      },
+      {
+       "left": {
+        "de": "Wen oder was?"
+       },
+       "right": {
+        "de": "Akkusativobjekt"
+       }
+      },
+      {
+       "left": {
+        "de": "Wem?"
+       },
+       "right": {
+        "de": "Dativobjekt"
+       }
+      }
+     ]
+    },
+    {
+     "id": "fz-2",
+     "skills": [
+      "deutsch.satzglieder.erkennen"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Der Satz lautet: Am Morgen fängt der Fischer viele Heringe."
+     },
+     "prompt": {
+      "de": "Aus wie vielen Satzgliedern besteht der Satz, den dein Partner vorliest?"
+     },
+     "answer": 4
+    },
+    {
+     "id": "fz-3",
+     "skills": [
+      "deutsch.satzglieder.fragen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Im Satz „Die Kinder füttern die Möwen“: Welche Frage ergibt das Akkusativobjekt?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Wer füttert die Möwen?"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Wem füttern die Kinder?"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Wen oder was füttern die Kinder?"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "fz-4",
+     "skills": [
+      "deutsch.satzglieder.erkennen"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Wie viele Satzglieder hat der Satz: Der alte Leuchtturmwärter repariert gestern das Licht?"
+     },
+     "firstAnswer": 4,
+     "operation": {
+      "op": "add",
+      "operand": 2
+     },
+     "second": {
+      "de": "Der Satz hat {x} Satzglieder. Ihr ergänzt noch 2 Satzglieder. Wie viele Satzglieder hat der Satz dann?"
+     }
+    },
+    {
+     "id": "fz-5",
+     "skills": [
+      "deutsch.satzglieder.umstellprobe"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welcher Satz entsteht durch eine richtige Umstellprobe aus „Der Wind weht heute stark“?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Der Wind heute weht stark."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Heute weht der Wind stark."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Der weht Wind heute stark."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Stark Wind der weht heute."
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/seebruecke",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Seebrücke: Zeitformen"
+   },
+   "subject": "deutsch",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "sb-1",
+     "skills": [
+      "deutsch.zeitformen.bilden"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welche Präsensform gehört zu welchem Präteritum?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "ich gehe"
+       },
+       "right": {
+        "de": "ich ging"
+       }
+      },
+      {
+       "left": {
+        "de": "er fährt"
+       },
+       "right": {
+        "de": "er fuhr"
+       }
+      },
+      {
+       "left": {
+        "de": "wir sehen"
+       },
+       "right": {
+        "de": "wir sahen"
+       }
+      },
+      {
+       "left": {
+        "de": "sie fangen"
+       },
+       "right": {
+        "de": "sie fingen"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sb-2",
+     "skills": [
+      "deutsch.zeitformen.erkennen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "In welcher Zeitform steht der Satz „Die Fähre hat gestern angelegt“?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Präsens"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Präteritum"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Perfekt"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Futur"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "sb-3",
+     "skills": [
+      "deutsch.zeitformen.erkennen"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Vier Sätze: 1) Ich lache. 2) Wir sind gesegelt. 3) Er wird kommen. 4) Sie sprang."
+     },
+     "prompt": {
+      "de": "In wie vielen der vier Sätze, die dein Partner vorliest, geht es um die Vergangenheit?"
+     },
+     "answer": 2
+    },
+    {
+     "id": "sb-4",
+     "skills": [
+      "deutsch.zeitformen.bilden"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Im Satz „Wir fuhren los, sahen Robben und blieben lange.“ stehen Verben im Präteritum. Wie viele sind es?"
+     },
+     "firstAnswer": 3,
+     "operation": {
+      "op": "multiply",
+      "operand": 4
+     },
+     "second": {
+      "de": "Im Satz stehen {x} Verben im Präteritum. Ein Text besteht aus 4 solchen Sätzen. Wie viele Präteritum-Verben hat der Text?"
+     }
+    },
+    {
+     "id": "sb-5",
+     "skills": [
+      "deutsch.zeitformen.erkennen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welcher Satz steht im Plusquamperfekt?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Er hat das Netz geflickt."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Er flickte das Netz."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Er hatte das Netz geflickt."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Er wird das Netz flicken."
+       }
+      }
+     ],
+     "correct": "c"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/seebruecke-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Seebrücke: Kommasetzung"
+   },
+   "subject": "deutsch",
+   "grade": 6,
+   "place": "seebruecke",
+   "tasks": [
+    {
+     "id": "sk-1",
+     "skills": [
+      "deutsch.komma.aufzaehlung"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Der Satz lautet: Am Strand liegen Muscheln Steine Algen und Quallen."
+     },
+     "prompt": {
+      "de": "Wie viele Kommas braucht der Satz, den dein Partner vorliest?"
+     },
+     "answer": 2
+    },
+    {
+     "id": "sk-2",
+     "skills": [
+      "deutsch.komma.nebensatz"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Welcher Satz ist richtig geschrieben?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Ich glaube, dass das Wetter hält."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Ich glaube dass, das Wetter hält."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Ich glaube dass das Wetter, hält."
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "sk-3",
+     "skills": [
+      "deutsch.komma.nebensatz"
+     ],
+     "type": "matchPairs",
+     "difficulty": 2,
+     "prompt": {
+      "de": "Welche Satzhälften passen zusammen?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Wir gehen ans Meer,"
+       },
+       "right": {
+        "de": "weil die Sonne scheint."
+       }
+      },
+      {
+       "left": {
+        "de": "Ich bleibe zu Hause,"
+       },
+       "right": {
+        "de": "wenn es stürmt."
+       }
+      },
+      {
+       "left": {
+        "de": "Er fragt,"
+       },
+       "right": {
+        "de": "ob die Fähre fährt."
+       }
+      },
+      {
+       "left": {
+        "de": "Sie sagt,"
+       },
+       "right": {
+        "de": "dass es kalt ist."
+       }
+      }
+     ]
+    },
+    {
+     "id": "sk-4",
+     "skills": [
+      "deutsch.komma.nebensatz"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Im Satz „Ich weiß dass die Flut kommt aber ich bleibe ruhig“ fehlen Kommas. Wie viele?"
+     },
+     "firstAnswer": 2,
+     "operation": {
+      "op": "add",
+      "operand": 3
+     },
+     "second": {
+      "de": "Im ersten Satz fehlen {x} Kommas. Im Satz „Ich weiß dass er kommt weil er es versprochen hat aber ich zweifle noch“ fehlen drei Kommas. Wie viele Kommas fehlen in beiden Sätzen zusammen?"
+     }
+    },
+    {
+     "id": "sk-5",
+     "skills": [
+      "deutsch.komma.nebensatz"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "In welchem Satz steht ein überflüssiges Komma?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Wir packen Brot, Käse und Äpfel ein."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Der Fischer, der alt ist, flickt Netze."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Wir warten, bis die Flut kommt."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Es regnet, und wir bleiben, drinnen."
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/museumsschiff",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Museumsschiff: Rechtschreibung"
+   },
+   "subject": "deutsch",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "ms-1",
+     "skills": [
+      "deutsch.rechtschreibung.ableiten"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welches Wort gehört zu welchem Stammwort (Ableiten hilft beim Schreiben)?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Wälder"
+       },
+       "right": {
+        "de": "Wald"
+       }
+      },
+      {
+       "left": {
+        "de": "Häfen"
+       },
+       "right": {
+        "de": "Hafen"
+       }
+      },
+      {
+       "left": {
+        "de": "Tänze"
+       },
+       "right": {
+        "de": "Tanz"
+       }
+      },
+      {
+       "left": {
+        "de": "Räuber"
+       },
+       "right": {
+        "de": "Raub"
+       }
+      }
+     ]
+    },
+    {
+     "id": "ms-2",
+     "skills": [
+      "deutsch.rechtschreibung.schaerfung"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Welches Wort ist richtig geschrieben?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Schif"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Schiff"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Schieff"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Schihf"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "ms-3",
+     "skills": [
+      "deutsch.rechtschreibung.dassdas"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welcher Satz ist richtig?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Das Boot, dass dort liegt, ist alt."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Ich sehe, das der Wind dreht."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Ich sehe, dass das Boot ablegt."
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "ms-4",
+     "skills": [
+      "deutsch.rechtschreibung.dehnung"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Sechs Wörter: Meer, Boot, Seefahrer, Wal, Quelle, Strand."
+     },
+     "prompt": {
+      "de": "Wie viele der sechs Wörter haben einen Doppelvokal (aa, ee oder oo)?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "ms-5",
+     "skills": [
+      "deutsch.rechtschreibung.schaerfung"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welches Wort ist falsch geschrieben?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Schifffahrt"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Fährschiff"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Schiffahrt"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Segelschiff"
+       }
+      }
+     ],
+     "correct": "c"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/watt",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Wattenmeer: Sea and weather"
+   },
+   "subject": "englisch",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "wa-1",
+     "skills": [
+      "englisch.vocab.sea"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welches deutsche Wort passt zu welchem englischen Wort?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Boot"
+       },
+       "right": {
+        "de": "boat"
+       }
+      },
+      {
+       "left": {
+        "de": "Strand"
+       },
+       "right": {
+        "de": "beach"
+       }
+      },
+      {
+       "left": {
+        "de": "Möwe"
+       },
+       "right": {
+        "de": "seagull"
+       }
+      },
+      {
+       "left": {
+        "de": "Muschel"
+       },
+       "right": {
+        "de": "shell"
+       }
+      }
+     ]
+    },
+    {
+     "id": "wa-2",
+     "skills": [
+      "englisch.vocab.sea"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Wie heißt „Ebbe“ auf Englisch?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "high tide"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "low tide"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "wave"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "storm"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "wa-3",
+     "skills": [
+      "englisch.vocab.weather"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Der Wetterbericht lautet: „Today it is sunny and windy. It is eighteen degrees.“"
+     },
+     "prompt": {
+      "de": "Wie viele Grad sind es laut Wetterbericht, den dein Partner vorliest?"
+     },
+     "answer": 18
+    },
+    {
+     "id": "wa-4",
+     "skills": [
+      "englisch.vocab.sea"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "There are „three boats“. On every boat sit „four seagulls“. Wie viele Möwen sind das insgesamt?"
+     },
+     "firstAnswer": 12,
+     "operation": {
+      "op": "subtract",
+      "operand": 5
+     },
+     "second": {
+      "de": "Es sind {x} Möwen. „Five seagulls fly away.“ Wie viele Möwen bleiben?"
+     }
+    },
+    {
+     "id": "wa-5",
+     "skills": [
+      "englisch.vocab.weather"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Which word does NOT belong to the group?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "rainy"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "sunny"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "windy"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "harbour"
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/watt-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Wattenmeer: Simple Past"
+   },
+   "subject": "englisch",
+   "grade": 6,
+   "place": "watt",
+   "tasks": [
+    {
+     "id": "wp-1",
+     "skills": [
+      "englisch.past.irregular"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welche Grundform gehört zu welcher Past-Form?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "go"
+       },
+       "right": {
+        "de": "went"
+       }
+      },
+      {
+       "left": {
+        "de": "see"
+       },
+       "right": {
+        "de": "saw"
+       }
+      },
+      {
+       "left": {
+        "de": "have"
+       },
+       "right": {
+        "de": "had"
+       }
+      },
+      {
+       "left": {
+        "de": "eat"
+       },
+       "right": {
+        "de": "ate"
+       }
+      }
+     ]
+    },
+    {
+     "id": "wp-2",
+     "skills": [
+      "englisch.past.regular"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Yesterday we ___ to the lighthouse."
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "walk"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "walked"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "walking"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "walks"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "wp-3",
+     "skills": [
+      "englisch.past.irregular"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "What is the past form of „swim“?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "swimmed"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "swam"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "swum"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "swimmen"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "wp-4",
+     "skills": [
+      "englisch.past.irregular"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Im Text steht: „We went to the harbour. We saw a big ship. It was blue.“ Wie viele Verben im Simple Past stehen darin?"
+     },
+     "firstAnswer": 3,
+     "operation": {
+      "op": "add",
+      "operand": 2
+     },
+     "second": {
+      "de": "Im ersten Text stehen {x} Past-Verben. Im zweiten Text „We ate fish. We left at six.“ stehen weitere. Wie viele Past-Verben sind es in beiden Texten zusammen?"
+     }
+    },
+    {
+     "id": "wp-5",
+     "skills": [
+      "englisch.past.questions"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Which sentence is correct?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Did you saw the ship?"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Do you saw the ship?"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "You did saw the ship?"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Did you see the ship?"
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/hallig",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Hallig: Wo ist was?"
+   },
+   "subject": "englisch",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "ha-1",
+     "skills": [
+      "englisch.prepositions.place"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welche Präposition passt zu welcher deutschen Bedeutung?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "in front of"
+       },
+       "right": {
+        "de": "vor"
+       }
+      },
+      {
+       "left": {
+        "de": "behind"
+       },
+       "right": {
+        "de": "hinter"
+       }
+      },
+      {
+       "left": {
+        "de": "next to"
+       },
+       "right": {
+        "de": "neben"
+       }
+      },
+      {
+       "left": {
+        "de": "between"
+       },
+       "right": {
+        "de": "zwischen"
+       }
+      }
+     ]
+    },
+    {
+     "id": "ha-2",
+     "skills": [
+      "englisch.numbers.time"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Die Fähre fährt um „half past two“ am Nachmittag."
+     },
+     "prompt": {
+      "de": "Um wie viel Uhr fährt die Fähre? Tippt die Uhrzeit."
+     },
+     "answer": 870,
+     "answerFormat": "time"
+    },
+    {
+     "id": "ha-3",
+     "skills": [
+      "englisch.prepositions.place"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Was bedeutet: „The boat is between the two islands“?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Das Boot ist hinter den zwei Inseln."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Das Boot ist zwischen den zwei Inseln."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Das Boot ist neben den zwei Inseln."
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "ha-4",
+     "skills": [
+      "englisch.numbers.time"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Am Strand liegen „thirteen shells“ und „twelve shells“. Wie viele Muscheln sind das zusammen? Tippt die Zahl."
+     },
+     "firstAnswer": 25,
+     "operation": {
+      "op": "subtract",
+      "operand": 10
+     },
+     "second": {
+      "de": "Es sind {x} Muscheln. „Ten shells fall in the water.“ Wie viele Muscheln bleiben?"
+     }
+    },
+    {
+     "id": "ha-5",
+     "skills": [
+      "englisch.grammar.have"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welcher Satz ist richtig?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "She have a boat."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "She is have a boat."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "She haves a boat."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "She has a boat."
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/segelschule",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Segelschule: Present Simple and Continuous"
+   },
+   "subject": "englisch",
+   "grade": 6,
+   "tasks": [
+    {
+     "id": "sg-1",
+     "skills": [
+      "englisch.present.simple"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welcher englische Satz passt zu welchem deutschen Satz?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Sie segelt jeden Sonntag."
+       },
+       "right": {
+        "de": "She sails every Sunday."
+       }
+      },
+      {
+       "left": {
+        "de": "Sie segelt gerade."
+       },
+       "right": {
+        "de": "She is sailing now."
+       }
+      },
+      {
+       "left": {
+        "de": "Sie segelt nicht."
+       },
+       "right": {
+        "de": "She doesn't sail."
+       }
+      },
+      {
+       "left": {
+        "de": "Segelt sie?"
+       },
+       "right": {
+        "de": "Does she sail?"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sg-2",
+     "skills": [
+      "englisch.present.continuous"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Look! The boat ___ out of the harbour."
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "sails"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "is sailing"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "sail"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "sailing"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "sg-3",
+     "skills": [
+      "englisch.present.simple"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "He ___ fish on Fridays."
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "eat"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "is eat"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "eats"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "eating"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "sg-4",
+     "skills": [
+      "englisch.present.simple"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Jan sails every Saturday for two hours."
+     },
+     "prompt": {
+      "de": "Wie viele Stunden segelt Jan an 4 Samstagen insgesamt?"
+     },
+     "answer": 8
+    },
+    {
+     "id": "sg-5",
+     "skills": [
+      "englisch.present.simple"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Which question is correct?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Do he sail?"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Does he sails?"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Is he sail?"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Does he sail?"
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/duene",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Düne: At the beach kiosk"
+   },
+   "subject": "englisch",
+   "grade": 6,
+   "tasks": [
+    {
+     "id": "du-1",
+     "skills": [
+      "englisch.vocab.food"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welches deutsche Wort passt zu welchem englischen Wort?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Brot"
+       },
+       "right": {
+        "de": "bread"
+       }
+      },
+      {
+       "left": {
+        "de": "Käse"
+       },
+       "right": {
+        "de": "cheese"
+       }
+      },
+      {
+       "left": {
+        "de": "Apfel"
+       },
+       "right": {
+        "de": "apple"
+       }
+      },
+      {
+       "left": {
+        "de": "Fisch"
+       },
+       "right": {
+        "de": "fish"
+       }
+      }
+     ]
+    },
+    {
+     "id": "du-2",
+     "skills": [
+      "englisch.numbers.prices"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Am Kiosk sagt der Verkäufer: „An ice cream is two euros fifty. A lemonade is one euro eighty.“"
+     },
+     "prompt": {
+      "de": "Wie viel kosten Eis und Limonade zusammen? Tippt den Betrag."
+     },
+     "answer": 430,
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "du-3",
+     "skills": [
+      "englisch.numbers.prices"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Wie fragt man auf Englisch nach dem Preis?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "How many is it?"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "How much is it?"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "How old is it?"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "How long is it?"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "du-4",
+     "skills": [
+      "englisch.numbers.prices"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Ein Sandwich kostet „two euros fifty“. Ihr kauft 2 Sandwiches. Wie viel kosten sie?"
+     },
+     "firstAnswer": 500,
+     "operation": {
+      "op": "add",
+      "operand": 150
+     },
+     "second": {
+      "de": "Die Sandwiches kosten {x}. Dazu kauft ihr ein Getränk für „one euro fifty“. Wie viel kostet alles?"
+     },
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "du-5",
+     "skills": [
+      "englisch.phrases.polite"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Which sentence is polite?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Give me water."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "I want water."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Water!"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Can I have some water, please?"
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/vogelwarte",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Vogelwarte: Kontinente und Ozeane"
+   },
+   "subject": "erdkunde",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "vw-1",
+     "skills": [
+      "erdkunde.orientierung.kontinente"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welcher Kontinent passt zu welcher Beschreibung?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Der größte Kontinent"
+       },
+       "right": {
+        "de": "Asien"
+       }
+      },
+      {
+       "left": {
+        "de": "Der eisige Kontinent am Südpol"
+       },
+       "right": {
+        "de": "Antarktis"
+       }
+      },
+      {
+       "left": {
+        "de": "Der Kontinent mit der Sahara"
+       },
+       "right": {
+        "de": "Afrika"
+       }
+      },
+      {
+       "left": {
+        "de": "Der Kontinent mit dem Känguru"
+       },
+       "right": {
+        "de": "Australien"
+       }
+      }
+     ]
+    },
+    {
+     "id": "vw-2",
+     "skills": [
+      "erdkunde.orientierung.kontinente"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Die sieben Kontinente heißen: Afrika, Antarktis, Asien, Australien, Europa, Nordamerika, Südamerika."
+     },
+     "prompt": {
+      "de": "Wie viele Kontinente beginnen mit dem Buchstaben A?"
+     },
+     "answer": 4
+    },
+    {
+     "id": "vw-3",
+     "skills": [
+      "erdkunde.orientierung.ozeane"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welcher Ozean liegt zwischen Europa und Amerika?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Pazifik"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Atlantik"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Indischer Ozean"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Arktischer Ozean"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "vw-4",
+     "skills": [
+      "erdkunde.orientierung.kontinente"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Es gibt 7 Kontinente. Ihr habt schon 3 davon besucht. Wie viele fehlen noch?"
+     },
+     "firstAnswer": 4,
+     "operation": {
+      "op": "subtract",
+      "operand": 1
+     },
+     "second": {
+      "de": "Es fehlen noch {x} Kontinente. Einer davon ist die Antarktis, wo niemand dauerhaft wohnt. Wie viele Kontinente bleiben, wenn ihr die Antarktis weglasst?"
+     }
+    },
+    {
+     "id": "vw-5",
+     "skills": [
+      "erdkunde.orientierung.ozeane"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welche Aussage stimmt?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Europa ist größer als Asien."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Der Pazifik ist der größte Ozean."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Die Antarktis liegt am Nordpol."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Australien liegt auf der Nordhalbkugel."
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/vogelwarte-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Vogelwarte: Bundesländer"
+   },
+   "subject": "erdkunde",
+   "grade": 5,
+   "place": "vogelwarte",
+   "tasks": [
+    {
+     "id": "vb-1",
+     "skills": [
+      "erdkunde.deutschland.hauptstaedte"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welche Landeshauptstadt gehört zu welchem Bundesland?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Bayern"
+       },
+       "right": {
+        "de": "München"
+       }
+      },
+      {
+       "left": {
+        "de": "Niedersachsen"
+       },
+       "right": {
+        "de": "Hannover"
+       }
+      },
+      {
+       "left": {
+        "de": "Schleswig-Holstein"
+       },
+       "right": {
+        "de": "Kiel"
+       }
+      },
+      {
+       "left": {
+        "de": "Sachsen"
+       },
+       "right": {
+        "de": "Dresden"
+       }
+      },
+      {
+       "left": {
+        "de": "Hessen"
+       },
+       "right": {
+        "de": "Wiesbaden"
+       }
+      }
+     ]
+    },
+    {
+     "id": "vb-2",
+     "skills": [
+      "erdkunde.deutschland.bundeslaender"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Deutschland hat 16 Bundesländer. Berlin, Hamburg und Bremen sind Stadtstaaten."
+     },
+     "prompt": {
+      "de": "Wie viele Stadtstaaten hat Deutschland?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "vb-3",
+     "skills": [
+      "erdkunde.deutschland.hauptstaedte"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welches Bundesland hat die Hauptstadt Düsseldorf?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Hessen"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Nordrhein-Westfalen"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Niedersachsen"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Rheinland-Pfalz"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "vb-4",
+     "skills": [
+      "erdkunde.deutschland.bundeslaender"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Deutschland hat 16 Bundesländer. 3 davon sind Stadtstaaten, der Rest sind Flächenländer. Wie viele Flächenländer gibt es?"
+     },
+     "firstAnswer": 13,
+     "operation": {
+      "op": "subtract",
+      "operand": 5
+     },
+     "second": {
+      "de": "Es gibt {x} Flächenländer. Fünf davon liegen im Osten: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen. Wie viele Flächenländer liegen im Westen?"
+     }
+    },
+    {
+     "id": "vb-5",
+     "skills": [
+      "erdkunde.deutschland.hauptstaedte"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welche Stadt ist die Hauptstadt von Rheinland-Pfalz?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Koblenz"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Trier"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Mainz"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Mannheim"
+       }
+      }
+     ],
+     "correct": "c"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/leuchtturm",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Leuchtturm: Das Gradnetz"
+   },
+   "subject": "erdkunde",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "le-1",
+     "skills": [
+      "erdkunde.gradnetz.begriffe"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welcher Begriff passt zu welcher Erklärung?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Äquator"
+       },
+       "right": {
+        "de": "0 Grad Breite"
+       }
+      },
+      {
+       "left": {
+        "de": "Nullmeridian"
+       },
+       "right": {
+        "de": "0 Grad Länge durch Greenwich"
+       }
+      },
+      {
+       "left": {
+        "de": "Breitenkreise"
+       },
+       "right": {
+        "de": "verlaufen parallel zum Äquator"
+       }
+      },
+      {
+       "left": {
+        "de": "Längenkreise"
+       },
+       "right": {
+        "de": "verlaufen von Pol zu Pol"
+       }
+      }
+     ]
+    },
+    {
+     "id": "le-2",
+     "skills": [
+      "erdkunde.gradnetz.breitenkreise"
+     ],
+     "type": "splitInfo",
+     "difficulty": 1,
+     "clue": {
+      "de": "Der Äquator teilt die Erde in zwei Halbkugeln. Der Nordpol liegt am Ende der Nordhalbkugel."
+     },
+     "prompt": {
+      "de": "Wie viele Grad Nord liegt der Nordpol vom Äquator entfernt?"
+     },
+     "answer": 90
+    },
+    {
+     "id": "le-3",
+     "skills": [
+      "erdkunde.gradnetz.koordinaten"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Eine Insel liegt bei 54° Nord und 8° Ost. Wo liegt sie?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Nordhalbkugel, östlich von Greenwich"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Südhalbkugel, östlich von Greenwich"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Nordhalbkugel, westlich von Greenwich"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Südhalbkugel, westlich von Greenwich"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "le-4",
+     "skills": [
+      "erdkunde.gradnetz.laengenkreise"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Wie viele Längengrade liegen zwischen 10° Ost und 40° Ost?"
+     },
+     "firstAnswer": 30,
+     "operation": {
+      "op": "multiply",
+      "operand": 100
+     },
+     "second": {
+      "de": "Es sind {x} Längengrade. Am Äquator ist ein Längengrad etwa 100 km breit (gerundet). Wie viele Kilometer sind das am Äquator ungefähr?"
+     }
+    },
+    {
+     "id": "le-5",
+     "skills": [
+      "erdkunde.gradnetz.breitenkreise"
+     ],
+     "type": "splitInfo",
+     "difficulty": 3,
+     "clue": {
+      "de": "Ein Schiff startet bei 20° Süd und fährt 45 Breitengrade genau nach Norden."
+     },
+     "prompt": {
+      "de": "Auf welcher Breite ist das Schiff danach? Tippt die Zahl der Grad Nord."
+     },
+     "answer": 25
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/leuchtturm-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Leuchtturm: Karten lesen"
+   },
+   "subject": "erdkunde",
+   "grade": 5,
+   "place": "leuchtturm",
+   "tasks": [
+    {
+     "id": "lk-1",
+     "skills": [
+      "erdkunde.karte.himmelsrichtungen"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welche Himmelsrichtung passt zu welcher Abkürzung?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Nordost"
+       },
+       "right": {
+        "de": "NO"
+       }
+      },
+      {
+       "left": {
+        "de": "Südwest"
+       },
+       "right": {
+        "de": "SW"
+       }
+      },
+      {
+       "left": {
+        "de": "Osten"
+       },
+       "right": {
+        "de": "O"
+       }
+      },
+      {
+       "left": {
+        "de": "Süden"
+       },
+       "right": {
+        "de": "S"
+       }
+      }
+     ]
+    },
+    {
+     "id": "lk-2",
+     "skills": [
+      "erdkunde.karte.massstab"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Eine Karte hat den Maßstab 1 : 100 000. Zwei Orte sind auf der Karte 3 cm voneinander entfernt."
+     },
+     "prompt": {
+      "de": "Wie viele Kilometer sind die Orte in Wirklichkeit voneinander entfernt?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "lk-3",
+     "skills": [
+      "erdkunde.karte.himmelsrichtungen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welche Himmelsrichtung liegt Nordwest genau gegenüber?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Südost"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Südwest"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Nordost"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Süden"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "lk-4",
+     "skills": [
+      "erdkunde.karte.massstab"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Auf einer Karte 1 : 50 000 sind es 4 cm bis zur Hallig. Wie viele Meter sind das in Wirklichkeit?"
+     },
+     "firstAnswer": 2000,
+     "operation": {
+      "op": "divide",
+      "operand": 100
+     },
+     "second": {
+      "de": "Der Weg ist {x} m lang. Ihr geht 100 m pro Minute. Wie viele Minuten braucht ihr?"
+     }
+    },
+    {
+     "id": "lk-5",
+     "skills": [
+      "erdkunde.karte.massstab"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welche Karte zeigt am meisten Einzelheiten (größter Maßstab)?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "1 : 1 000 000"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "1 : 500 000"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "1 : 100 000"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "1 : 25 000"
+       }
+      }
+     ],
+     "correct": "d"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/salzwiese",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Salzwiese: Pflanzen"
+   },
+   "subject": "biologie",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "sa-1",
+     "skills": [
+      "biologie.pflanzen.bau"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welcher Pflanzenteil hat welche Aufgabe?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Wurzel"
+       },
+       "right": {
+        "de": "nimmt Wasser aus dem Boden auf"
+       }
+      },
+      {
+       "left": {
+        "de": "Blatt"
+       },
+       "right": {
+        "de": "bildet mit Licht Zucker"
+       }
+      },
+      {
+       "left": {
+        "de": "Blüte"
+       },
+       "right": {
+        "de": "bildet Früchte und Samen"
+       }
+      },
+      {
+       "left": {
+        "de": "Stängel"
+       },
+       "right": {
+        "de": "trägt die Blätter und leitet Wasser nach oben"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sa-2",
+     "skills": [
+      "biologie.pflanzen.fotosynthese"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Was braucht eine Pflanze für die Fotosynthese?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Licht, Wasser und Kohlenstoffdioxid"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Nur Erde"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Sauerstoff und Zucker"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Salz und Dunkelheit"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "sa-3",
+     "skills": [
+      "biologie.pflanzen.bau"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Eine Strandpflanze hat 5 Blüten. Jede Blüte hat 4 Blütenblätter."
+     },
+     "prompt": {
+      "de": "Wie viele Blütenblätter hat die Pflanze insgesamt?"
+     },
+     "answer": 20
+    },
+    {
+     "id": "sa-4",
+     "skills": [
+      "biologie.pflanzen.bau"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Eine Strandnelke hat 12 Blätter. 3 davon sind verwelkt. Wie viele grüne Blätter hat sie?"
+     },
+     "firstAnswer": 9,
+     "operation": {
+      "op": "multiply",
+      "operand": 2
+     },
+     "second": {
+      "de": "Es sind {x} grüne Blätter. Jedes Blatt bildet an einem Tag etwa 2 g Zucker. Wie viele Gramm bilden alle zusammen?"
+     }
+    },
+    {
+     "id": "sa-5",
+     "skills": [
+      "biologie.pflanzen.anpassung"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Wie kommt der Queller auf der Salzwiese mit Salz zurecht?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Er hat Wurzeln bis zum Grundwasser."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Er speichert Wasser in fleischigen Stängeln und verträgt Salz."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Er lebt nur im Süßwasser."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Er braucht kein Licht."
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/salzwiese-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Salzwiese: Die Zelle"
+   },
+   "subject": "biologie",
+   "grade": 6,
+   "place": "salzwiese",
+   "tasks": [
+    {
+     "id": "sz-1",
+     "skills": [
+      "biologie.zelle.bau"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welcher Zellbestandteil hat welche Aufgabe?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Zellkern"
+       },
+       "right": {
+        "de": "steuert die Zelle"
+       }
+      },
+      {
+       "left": {
+        "de": "Zellwand"
+       },
+       "right": {
+        "de": "gibt der Pflanzenzelle Halt"
+       }
+      },
+      {
+       "left": {
+        "de": "Chloroplast"
+       },
+       "right": {
+        "de": "betreibt die Fotosynthese"
+       }
+      },
+      {
+       "left": {
+        "de": "Zellmembran"
+       },
+       "right": {
+        "de": "regelt den Stoffaustausch"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sz-2",
+     "skills": [
+      "biologie.zelle.bau"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Welcher Teil kommt nur in Pflanzenzellen vor?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Zellkern"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Zellmembran"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Chloroplast"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Zellplasma"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "sz-3",
+     "skills": [
+      "biologie.zelle.mikroskop"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Am Mikroskop vergrößert das Okular 10-fach und das Objektiv 40-fach."
+     },
+     "prompt": {
+      "de": "Wie stark ist die Gesamtvergrößerung?"
+     },
+     "answer": 400
+    },
+    {
+     "id": "sz-4",
+     "skills": [
+      "biologie.zelle.mikroskop"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Eine Zelle ist 0,05 mm lang. Wie viele solcher Zellen passen nebeneinander in 1 mm?"
+     },
+     "firstAnswer": 20,
+     "operation": {
+      "op": "multiply",
+      "operand": 5
+     },
+     "second": {
+      "de": "In 1 mm passen {x} Zellen. Eine Zellreihe ist 5 mm lang. Wie viele Zellen sind das?"
+     }
+    },
+    {
+     "id": "sz-5",
+     "skills": [
+      "biologie.zelle.bau"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Welche Aussage stimmt?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Tierzellen haben eine Zellwand."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Pflanzenzellen haben Chloroplasten, Tierzellen nicht."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Alle Zellen kann man mit bloßem Auge gut sehen."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Der Zellkern liegt außerhalb der Zelle."
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/robbenbank",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Robbenbank: Wirbeltiere"
+   },
+   "subject": "biologie",
+   "grade": 5,
+   "tasks": [
+    {
+     "id": "ro-1",
+     "skills": [
+      "biologie.tiere.wirbeltierklassen"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welches Tier gehört zu welcher Wirbeltierklasse?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Seehund"
+       },
+       "right": {
+        "de": "Säugetier"
+       }
+      },
+      {
+       "left": {
+        "de": "Möwe"
+       },
+       "right": {
+        "de": "Vogel"
+       }
+      },
+      {
+       "left": {
+        "de": "Hering"
+       },
+       "right": {
+        "de": "Fisch"
+       }
+      },
+      {
+       "left": {
+        "de": "Ringelnatter"
+       },
+       "right": {
+        "de": "Reptil"
+       }
+      },
+      {
+       "left": {
+        "de": "Erdkröte"
+       },
+       "right": {
+        "de": "Amphibium"
+       }
+      }
+     ]
+    },
+    {
+     "id": "ro-2",
+     "skills": [
+      "biologie.tiere.wirbeltierklassen"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Welches Tier ist ein Säugetier?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Hering"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Schweinswal"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Möwe"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Hai"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "ro-3",
+     "skills": [
+      "biologie.tiere.merkmale"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "Eine Möwe legt 3 Eier in ihr Nest. Am Strand sind 6 Nester."
+     },
+     "prompt": {
+      "de": "Wie viele Eier liegen in den Nestern insgesamt?"
+     },
+     "answer": 18
+    },
+    {
+     "id": "ro-4",
+     "skills": [
+      "biologie.tiere.merkmale"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Eine Robbengruppe hat 14 Tiere. 5 davon sind Jungtiere. Wie viele Erwachsene sind es?"
+     },
+     "firstAnswer": 9,
+     "operation": {
+      "op": "multiply",
+      "operand": 4
+     },
+     "second": {
+      "de": "Es sind {x} erwachsene Robben. Jede frisst am Tag 4 kg Fisch. Wie viele Kilogramm Fisch sind das insgesamt?"
+     }
+    },
+    {
+     "id": "ro-5",
+     "skills": [
+      "biologie.tiere.merkmale"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welches Merkmal haben alle Wirbeltiere?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Federn"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Kiemen"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Fell"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Wirbelsäule"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "ro-6",
+     "skills": [
+      "biologie.tiere.merkmale"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Warum ist ein Wal kein Fisch?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Er hat Flossen."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Er ist sehr groß."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Er atmet mit Lungen und säugt seine Jungen."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Er lebt im Wasser."
+       }
+      }
+     ],
+     "correct": "c"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-5-6/robbenbank-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Robbenbank: Leben im Watt"
+   },
+   "subject": "biologie",
+   "grade": 6,
+   "place": "robbenbank",
+   "tasks": [
+    {
+     "id": "rw-1",
+     "skills": [
+      "biologie.watt.nahrung"
+     ],
+     "type": "matchPairs",
+     "difficulty": 1,
+     "prompt": {
+      "de": "Welcher Wattbewohner ernährt sich wie?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Miesmuschel"
+       },
+       "right": {
+        "de": "filtert Plankton aus dem Wasser"
+       }
+      },
+      {
+       "left": {
+        "de": "Wattwurm"
+       },
+       "right": {
+        "de": "frisst Sand mit Kleinstlebewesen"
+       }
+      },
+      {
+       "left": {
+        "de": "Austernfischer"
+       },
+       "right": {
+        "de": "sucht Muscheln und Würmer"
+       }
+      },
+      {
+       "left": {
+        "de": "Seehund"
+       },
+       "right": {
+        "de": "jagt Fische"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rw-2",
+     "skills": [
+      "biologie.watt.gezeiten"
+     ],
+     "type": "bothAgree",
+     "difficulty": 1,
+     "question": {
+      "de": "Was passiert im Watt bei Ebbe?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Das Wasser steigt."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Es regnet immer."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Das Wasser läuft ab und der Meeresboden fällt trocken."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Das Watt friert ein."
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "rw-3",
+     "skills": [
+      "biologie.watt.gezeiten"
+     ],
+     "type": "splitInfo",
+     "difficulty": 2,
+     "clue": {
+      "de": "An der Nordsee gibt es zweimal am Tag Ebbe und zweimal am Tag Flut."
+     },
+     "prompt": {
+      "de": "Wie viele Ebben gibt es in 3 Tagen?"
+     },
+     "answer": 6
+    },
+    {
+     "id": "rw-4",
+     "skills": [
+      "biologie.watt.nahrungskette"
+     ],
+     "type": "bothAgree",
+     "difficulty": 2,
+     "question": {
+      "de": "Welche Nahrungskette ist richtig? Der Pfeil heißt „wird gefressen von“."
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Austernfischer → Miesmuschel → Plankton"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Miesmuschel → Plankton → Austernfischer"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Plankton → Miesmuschel → Austernfischer"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Plankton → Austernfischer → Miesmuschel"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "rw-5",
+     "skills": [
+      "biologie.watt.nahrungskette"
+     ],
+     "type": "relay",
+     "difficulty": 2,
+     "first": {
+      "de": "Ein Seehund frisst am Tag etwa 4 kg Fisch. Wie viele Kilogramm sind das in 5 Tagen?"
+     },
+     "firstAnswer": 20,
+     "operation": {
+      "op": "divide",
+      "operand": 5
+     },
+     "second": {
+      "de": "Der Seehund frisst {x} kg. Eine Kiste Fisch wiegt 5 kg. Wie viele Kisten sind das?"
+     }
+    },
+    {
+     "id": "rw-6",
+     "skills": [
+      "biologie.watt.anpassung"
+     ],
+     "type": "bothAgree",
+     "difficulty": 3,
+     "question": {
+      "de": "Wie überleben Wattwürmer die Ebbe?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Sie graben sich in den feuchten Boden ein."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Sie schwimmen aufs Meer hinaus."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Sie fliegen davon."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "de": "Sie trocknen in der Sonne."
+       }
+      }
+     ],
+     "correct": "a"
+    }
+   ]
+  }
+ ]
+}

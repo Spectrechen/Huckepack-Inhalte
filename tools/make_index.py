@@ -33,6 +33,8 @@ for name in sorted(os.listdir(packs_dir)):
         path = os.path.join(folder, image["file"])
         files.append({"name": image["file"], "bytes": os.path.getsize(path), "sha256": sha256(path)})
     levels = p.get("levels", [])
+    # Languages the tasks are written in (keys of the level titles).
+    languages = sorted({k for l in levels for k in (l.get("title") or {}) if isinstance(l.get("title"), dict)})
     entries.append({
         "id": p["id"],
         "version": p["version"],
@@ -40,6 +42,7 @@ for name in sorted(os.listdir(packs_dir)):
         "description": p.get("description"),
         "author": p["author"],
         "licence": p["licence"],
+        "languages": languages,
         "levels": len(levels),
         "grades": sorted({l["grade"] for l in levels}),
         "subjects": sorted({l["subject"] for l in levels}),

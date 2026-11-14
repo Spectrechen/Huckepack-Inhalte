@@ -1,0 +1,4107 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "in.huckepack.classes-3-5",
+  "version": 1,
+  "title": {
+    "en": "The River Village: Classes 3 to 5"
+  },
+  "description": {
+    "en": "A village and a small town by a river for Indian children in classes 3 to 5 (ages 8 to 11), following the CBSE and NCERT syllabus in Mathematics, English and EVS."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "maths",
+      "title": {
+        "en": "Mathematics"
+      }
+    },
+    {
+      "id": "eng",
+      "title": {
+        "en": "English"
+      }
+    },
+    {
+      "id": "evs",
+      "title": {
+        "en": "EVS (Environmental Studies)"
+      }
+    }
+  ],
+  "skills": {
+    "maths.numbers.place-value": {
+      "en": "Place value and 3-digit numbers"
+    },
+    "evs.water.use-and-safety": {
+      "en": "Water: sources, use and safety"
+    },
+    "eng.grammar.nouns-opposites": {
+      "en": "Nouns, opposites and sentences"
+    },
+    "maths.operations.add-sub-multiply": {
+      "en": "Addition, subtraction and tables"
+    },
+    "maths.multiplication.tables": {
+      "en": "Multiplication and division tables"
+    },
+    "evs.farming.crops": {
+      "en": "Crops, seasons and farming"
+    },
+    "maths.money.rupees": {
+      "en": "Money: rupees and paise"
+    },
+    "eng.grammar.plurals-verbs": {
+      "en": "Plurals, verbs and adjectives"
+    },
+    "evs.animals.pond-life": {
+      "en": "Animals and plants of the pond"
+    },
+    "eng.words.rhymes-plurals": {
+      "en": "Rhymes, plurals and past tense"
+    },
+    "maths.measures.length": {
+      "en": "Length: m, cm, km"
+    },
+    "evs.geography.rivers": {
+      "en": "Rivers of India"
+    },
+    "maths.division.fractions": {
+      "en": "Division and fractions"
+    },
+    "evs.plants.seeds-fruits": {
+      "en": "Plants, fruits and seeds"
+    },
+    "evs.geography.mountains": {
+      "en": "Mountains and weather"
+    },
+    "maths.geometry.perimeter-area": {
+      "en": "Perimeter and area"
+    },
+    "maths.time.clock-24h": {
+      "en": "Time and 24-hour clock"
+    },
+    "eng.grammar.tenses": {
+      "en": "Tenses and verb forms"
+    },
+    "eng.grammar.word-classes": {
+      "en": "Verbs, opposites and punctuation"
+    },
+    "evs.geography.states-capitals": {
+      "en": "States and capitals of India"
+    },
+    "eng.words.synonyms-antonyms": {
+      "en": "Synonyms, antonyms and capitals"
+    },
+    "maths.measures.weight-volume": {
+      "en": "Weight and volume"
+    },
+    "maths.numbers.lakh": {
+      "en": "Large numbers and lakhs"
+    },
+    "eng.words.homophones-riddles": {
+      "en": "Homophones and riddles"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "banyan",
+    "nodes": [
+      {
+        "id": "banyan",
+        "title": {
+          "en": "Banyan Tree"
+        },
+        "x": 0.12,
+        "y": 0.82,
+        "requires": []
+      },
+      {
+        "id": "well",
+        "title": {
+          "en": "Village Well"
+        },
+        "level": "in.huckepack.classes-3-5/well",
+        "x": 0.28,
+        "y": 0.68,
+        "requires": []
+      },
+      {
+        "id": "school",
+        "title": {
+          "en": "Village School"
+        },
+        "level": "in.huckepack.classes-3-5/school",
+        "x": 0.14,
+        "y": 0.55,
+        "requires": []
+      },
+      {
+        "id": "fields",
+        "title": {
+          "en": "Rice Fields"
+        },
+        "level": "in.huckepack.classes-3-5/fields",
+        "x": 0.3,
+        "y": 0.89,
+        "requires": [
+          "in.huckepack.classes-3-5/well"
+        ]
+      },
+      {
+        "id": "pond",
+        "title": {
+          "en": "Village Pond"
+        },
+        "level": "in.huckepack.classes-3-5/pond",
+        "x": 0.12,
+        "y": 0.34,
+        "requires": [
+          "in.huckepack.classes-3-5/school"
+        ]
+      },
+      {
+        "id": "market",
+        "title": {
+          "en": "Weekly Market"
+        },
+        "level": "in.huckepack.classes-3-5/market",
+        "x": 0.46,
+        "y": 0.76,
+        "requires": [
+          "in.huckepack.classes-3-5/well"
+        ]
+      },
+      {
+        "id": "bridge",
+        "title": {
+          "en": "River Bridge"
+        },
+        "level": "in.huckepack.classes-3-5/bridge",
+        "x": 0.5,
+        "y": 0.52,
+        "requires": [
+          "in.huckepack.classes-3-5/market"
+        ]
+      },
+      {
+        "id": "orchard",
+        "title": {
+          "en": "Mango Orchard"
+        },
+        "level": "in.huckepack.classes-3-5/orchard",
+        "x": 0.34,
+        "y": 0.38,
+        "requires": [
+          "in.huckepack.classes-3-5/pond"
+        ]
+      },
+      {
+        "id": "playground",
+        "title": {
+          "en": "Playground"
+        },
+        "miniGame": "ticTacToe",
+        "x": 0.28,
+        "y": 0.18,
+        "requires": []
+      },
+      {
+        "id": "hill",
+        "title": {
+          "en": "Hill Top"
+        },
+        "level": "in.huckepack.classes-3-5/hill",
+        "x": 0.5,
+        "y": 0.14,
+        "requires": [
+          "in.huckepack.classes-3-5/orchard"
+        ]
+      },
+      {
+        "id": "station",
+        "title": {
+          "en": "Railway Station"
+        },
+        "level": "in.huckepack.classes-3-5/station",
+        "x": 0.72,
+        "y": 0.8,
+        "requires": [
+          "in.huckepack.classes-3-5/market"
+        ]
+      },
+      {
+        "id": "post",
+        "title": {
+          "en": "Post Office"
+        },
+        "level": "in.huckepack.classes-3-5/post",
+        "x": 0.7,
+        "y": 0.56,
+        "requires": [
+          "in.huckepack.classes-3-5/bridge"
+        ]
+      },
+      {
+        "id": "library",
+        "title": {
+          "en": "Town Library"
+        },
+        "level": "in.huckepack.classes-3-5/library",
+        "x": 0.88,
+        "y": 0.4,
+        "requires": [
+          "in.huckepack.classes-3-5/post"
+        ]
+      },
+      {
+        "id": "tower",
+        "title": {
+          "en": "Clock Tower"
+        },
+        "level": "in.huckepack.classes-3-5/tower",
+        "x": 0.7,
+        "y": 0.3,
+        "requires": [
+          "in.huckepack.classes-3-5/hill",
+          "in.huckepack.classes-3-5/post"
+        ]
+      }
+    ],
+    "paths": [
+      [
+        "banyan",
+        "well"
+      ],
+      [
+        "banyan",
+        "school"
+      ],
+      [
+        "banyan",
+        "fields"
+      ],
+      [
+        "well",
+        "school"
+      ],
+      [
+        "well",
+        "market"
+      ],
+      [
+        "fields",
+        "market"
+      ],
+      [
+        "school",
+        "pond"
+      ],
+      [
+        "pond",
+        "orchard"
+      ],
+      [
+        "market",
+        "bridge"
+      ],
+      [
+        "bridge",
+        "orchard"
+      ],
+      [
+        "bridge",
+        "post"
+      ],
+      [
+        "orchard",
+        "playground"
+      ],
+      [
+        "pond",
+        "playground"
+      ],
+      [
+        "playground",
+        "hill"
+      ],
+      [
+        "hill",
+        "tower"
+      ],
+      [
+        "post",
+        "tower"
+      ],
+      [
+        "post",
+        "station"
+      ],
+      [
+        "market",
+        "station"
+      ],
+      [
+        "post",
+        "library"
+      ],
+      [
+        "tower",
+        "library"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "in.huckepack.classes-3-5/well",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Counting at the Well"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "well-1",
+          "skills": [
+            "maths.numbers.place-value"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A bucket holds 3 hundreds, 0 tens and 7 ones of pebbles. Tell your partner."
+          },
+          "prompt": {
+            "en": "Which number is that? Type it."
+          },
+          "answer": 307
+        },
+        {
+          "id": "well-2",
+          "skills": [
+            "maths.numbers.place-value"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The well wall has 8 rows of 10 bricks and 6 more single bricks."
+          },
+          "prompt": {
+            "en": "How many bricks are there in all?"
+          },
+          "answer": 86
+        },
+        {
+          "id": "well-3",
+          "skills": [
+            "maths.numbers.place-value"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A tank holds 250 litres. The village adds 175 litres. How many litres are in the tank now?"
+          },
+          "firstAnswer": 425,
+          "operation": {
+            "op": "subtract",
+            "operand": 300
+          },
+          "second": {
+            "en": "The tank has {x} litres. Farmers take out 300 litres. How many litres are left?"
+          }
+        },
+        {
+          "id": "well-4",
+          "skills": [
+            "maths.numbers.place-value"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which addition matches which number?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "200 + 40 + 6"
+              },
+              "right": {
+                "en": "246"
+              }
+            },
+            {
+              "left": {
+                "en": "500 + 5"
+              },
+              "right": {
+                "en": "505"
+              }
+            },
+            {
+              "left": {
+                "en": "700 + 70"
+              },
+              "right": {
+                "en": "770"
+              }
+            },
+            {
+              "left": {
+                "en": "100 + 90 + 9"
+              },
+              "right": {
+                "en": "199"
+              }
+            }
+          ]
+        },
+        {
+          "id": "well-5",
+          "skills": [
+            "maths.numbers.place-value"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which number is the smallest?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "409"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "394"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "349"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "430"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/well-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Water Matters"
+      },
+      "subject": "evs",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "well-2-1",
+          "skills": [
+            "evs.water.use-and-safety"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A family uses 5 buckets of water to bathe, 3 to wash clothes and 2 to cook."
+          },
+          "prompt": {
+            "en": "How many buckets of water does the family use in a day?"
+          },
+          "answer": 10
+        },
+        {
+          "id": "well-2-2",
+          "skills": [
+            "evs.water.use-and-safety"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which source of water matches which description?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Well"
+              },
+              "right": {
+                "en": "Water from under the ground"
+              }
+            },
+            {
+              "left": {
+                "en": "Rain"
+              },
+              "right": {
+                "en": "Water that falls from clouds"
+              }
+            },
+            {
+              "left": {
+                "en": "River"
+              },
+              "right": {
+                "en": "Water flowing across the land"
+              }
+            },
+            {
+              "left": {
+                "en": "Pond"
+              },
+              "right": {
+                "en": "Still water in a hollow"
+              }
+            }
+          ]
+        },
+        {
+          "id": "well-2-3",
+          "skills": [
+            "evs.water.use-and-safety"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A tap fills 4 buckets every minute. How many buckets does it fill in 6 minutes?"
+          },
+          "firstAnswer": 24,
+          "operation": {
+            "op": "multiply",
+            "operand": 10
+          },
+          "second": {
+            "en": "The tap filled {x} buckets. Each bucket holds 10 litres. How many litres is that?"
+          }
+        },
+        {
+          "id": "well-2-4",
+          "skills": [
+            "evs.water.use-and-safety"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Water looks clear but may still have germs. What should you do before drinking it?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Drink it, because it is clear"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Boil it and let it cool"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Add a spoon of sugar"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Keep it in the sun for a minute"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "well-2-5",
+          "skills": [
+            "evs.water.use-and-safety"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A leaking tap wastes 2 litres of water every hour."
+          },
+          "prompt": {
+            "en": "How many litres of water are wasted in a whole day of 24 hours?"
+          },
+          "answer": 48
+        }
+      ],
+      "place": "well"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/school",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Our School Day"
+      },
+      "subject": "eng",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "school-1",
+          "skills": [
+            "eng.grammar.nouns-opposites"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which word is a noun?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "quickly"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "blue"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "run"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "teacher"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "school-2",
+          "skills": [
+            "eng.grammar.nouns-opposites"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which word matches its opposite?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "open"
+              },
+              "right": {
+                "en": "close"
+              }
+            },
+            {
+              "left": {
+                "en": "early"
+              },
+              "right": {
+                "en": "late"
+              }
+            },
+            {
+              "left": {
+                "en": "noisy"
+              },
+              "right": {
+                "en": "quiet"
+              }
+            },
+            {
+              "left": {
+                "en": "full"
+              },
+              "right": {
+                "en": "empty"
+              }
+            }
+          ]
+        },
+        {
+          "id": "school-3",
+          "skills": [
+            "eng.grammar.nouns-opposites"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Your word is: elephant. Clap it out and tell your partner how many claps you made."
+          },
+          "prompt": {
+            "en": "Your partner claps a word. How many syllables does it have? Type the number."
+          },
+          "answer": 3
+        },
+        {
+          "id": "school-4",
+          "skills": [
+            "eng.grammar.nouns-opposites"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many words are in this sentence? The bell rings at nine o'clock."
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "add",
+            "operand": 5
+          },
+          "second": {
+            "en": "The first sentence has {x} words. The second sentence is: Children walk to school together. It has 5 words. How many words are there in both sentences?"
+          }
+        },
+        {
+          "id": "school-5",
+          "skills": [
+            "eng.grammar.nouns-opposites"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence is written correctly?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "the children sit on the mat."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The Children sit on the mat"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The children sit on the mat."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "the Children Sit on the mat."
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/school-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "School Sums"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "school-2-1",
+          "skills": [
+            "maths.operations.add-sub-multiply"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The school has 345 boys and 278 girls."
+          },
+          "prompt": {
+            "en": "How many children are there in the school?"
+          },
+          "answer": 623
+        },
+        {
+          "id": "school-2-2",
+          "skills": [
+            "maths.operations.add-sub-multiply"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "There are 5 benches in each of 7 classrooms."
+          },
+          "prompt": {
+            "en": "How many benches are there in all?"
+          },
+          "answer": 35
+        },
+        {
+          "id": "school-2-3",
+          "skills": [
+            "maths.operations.add-sub-multiply"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A library has 400 books. 135 of them are lent out. How many books are on the shelves?"
+          },
+          "firstAnswer": 265,
+          "operation": {
+            "op": "add",
+            "operand": 60
+          },
+          "second": {
+            "en": "{x} books are on the shelves. 60 new books arrive. How many books are on the shelves now?"
+          }
+        },
+        {
+          "id": "school-2-4",
+          "skills": [
+            "maths.operations.add-sub-multiply"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which sum matches which answer?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "9 × 6"
+              },
+              "right": {
+                "en": "54"
+              }
+            },
+            {
+              "left": {
+                "en": "7 × 8"
+              },
+              "right": {
+                "en": "56"
+              }
+            },
+            {
+              "left": {
+                "en": "63 ÷ 9"
+              },
+              "right": {
+                "en": "7"
+              }
+            },
+            {
+              "left": {
+                "en": "48 ÷ 6"
+              },
+              "right": {
+                "en": "8"
+              }
+            }
+          ]
+        },
+        {
+          "id": "school-2-5",
+          "skills": [
+            "maths.operations.add-sub-multiply"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "What is 702 − 358?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "456"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "354"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "344"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "1060"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ],
+      "place": "school"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/fields",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Rows in the Field"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "fields-1",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The farmer plants rice in 6 rows. Each row has 8 plants."
+          },
+          "prompt": {
+            "en": "How many plants are there in all?"
+          },
+          "answer": 48
+        },
+        {
+          "id": "fields-2",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which multiplication matches which answer?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "3 × 7"
+              },
+              "right": {
+                "en": "21"
+              }
+            },
+            {
+              "left": {
+                "en": "6 × 4"
+              },
+              "right": {
+                "en": "24"
+              }
+            },
+            {
+              "left": {
+                "en": "5 × 9"
+              },
+              "right": {
+                "en": "45"
+              }
+            },
+            {
+              "left": {
+                "en": "8 × 8"
+              },
+              "right": {
+                "en": "64"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fields-3",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A field has 9 rows of 12 plants. How many plants are there?"
+          },
+          "firstAnswer": 108,
+          "operation": {
+            "op": "subtract",
+            "operand": 18
+          },
+          "second": {
+            "en": "The field has {x} plants. The farmer takes out 18 weak plants. How many plants are left?"
+          }
+        },
+        {
+          "id": "fields-4",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A field has 72 plants in 8 equal rows."
+          },
+          "prompt": {
+            "en": "How many plants are there in each row?"
+          },
+          "answer": 9
+        },
+        {
+          "id": "fields-5",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "The farmer wants 100 plants. He has planted 7 rows of 9 plants. How many more plants does he need?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "47"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "37"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "63"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "27"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/fields-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Crops and Seasons"
+      },
+      "subject": "evs",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "fields-2-1",
+          "skills": [
+            "evs.farming.crops"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which crop matches what we get from it?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Wheat"
+              },
+              "right": {
+                "en": "Flour for rotis"
+              }
+            },
+            {
+              "left": {
+                "en": "Sugarcane"
+              },
+              "right": {
+                "en": "Sugar"
+              }
+            },
+            {
+              "left": {
+                "en": "Cotton"
+              },
+              "right": {
+                "en": "Thread and cloth"
+              }
+            },
+            {
+              "left": {
+                "en": "Mustard"
+              },
+              "right": {
+                "en": "Oil"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fields-2-2",
+          "skills": [
+            "evs.farming.crops"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A farmer sowed rice at the start of June and harvested it at the start of October."
+          },
+          "prompt": {
+            "en": "How many months did the rice take to grow? Type the number."
+          },
+          "answer": 4
+        },
+        {
+          "id": "fields-2-3",
+          "skills": [
+            "evs.farming.crops"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which crop is mainly grown in the cool winter months and harvested in spring?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Rice"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Wheat"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Cotton"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Jute"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "fields-2-4",
+          "skills": [
+            "evs.farming.crops"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A farmer gets 8 sacks of wheat from one field. He has 5 such fields. How many sacks does he get?"
+          },
+          "firstAnswer": 40,
+          "operation": {
+            "op": "multiply",
+            "operand": 50
+          },
+          "second": {
+            "en": "The farmer has {x} sacks of wheat. Each sack weighs 50 kg. How many kilograms of wheat is that?"
+          }
+        },
+        {
+          "id": "fields-2-5",
+          "skills": [
+            "evs.farming.crops"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Farmers keep cattle dung and dry leaves in a pit for some weeks. What do they get?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Seeds for the next crop"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Pesticide that must be sprayed"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Compost, a natural manure for the soil"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Water for the crops"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ],
+      "place": "fields"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/market",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Market Money"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "market-1",
+          "skills": [
+            "maths.money.rupees"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Meena buys 2 kg of tomatoes at ₹30 per kg."
+          },
+          "prompt": {
+            "en": "How many rupees does she pay?"
+          },
+          "answer": 60
+        },
+        {
+          "id": "market-2",
+          "skills": [
+            "maths.money.rupees"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which amount in paise matches which amount in rupees?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "100 paise"
+              },
+              "right": {
+                "en": "₹1"
+              }
+            },
+            {
+              "left": {
+                "en": "250 paise"
+              },
+              "right": {
+                "en": "₹2.50"
+              }
+            },
+            {
+              "left": {
+                "en": "75 paise"
+              },
+              "right": {
+                "en": "₹0.75"
+              }
+            },
+            {
+              "left": {
+                "en": "400 paise"
+              },
+              "right": {
+                "en": "₹4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "market-3",
+          "skills": [
+            "maths.money.rupees"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A shopkeeper sells 5 notebooks at ₹24 each. How many rupees do they cost together?"
+          },
+          "firstAnswer": 120,
+          "operation": {
+            "op": "subtract",
+            "operand": 15
+          },
+          "second": {
+            "en": "The bill is ₹{x}. The shopkeeper gives a discount of ₹15. How many rupees does Ravi pay?"
+          }
+        },
+        {
+          "id": "market-4",
+          "skills": [
+            "maths.money.rupees"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Imran buys a pencil box for ₹45 and a ruler for ₹12. He gives the shopkeeper ₹100."
+          },
+          "prompt": {
+            "en": "How many rupees does he get back?"
+          },
+          "answer": 43
+        },
+        {
+          "id": "market-5",
+          "skills": [
+            "maths.money.rupees"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Ravi buys 3 pens at ₹15 each and 2 books at ₹40 each. How much does he pay in all?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "₹95"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "₹125"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "₹135"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "₹105"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/market-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "At the Market"
+      },
+      "subject": "eng",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "market-2-1",
+          "skills": [
+            "eng.grammar.plurals-verbs"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which singular word matches its plural?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "mango"
+              },
+              "right": {
+                "en": "mangoes"
+              }
+            },
+            {
+              "left": {
+                "en": "box"
+              },
+              "right": {
+                "en": "boxes"
+              }
+            },
+            {
+              "left": {
+                "en": "baby"
+              },
+              "right": {
+                "en": "babies"
+              }
+            },
+            {
+              "left": {
+                "en": "leaf"
+              },
+              "right": {
+                "en": "leaves"
+              }
+            }
+          ]
+        },
+        {
+          "id": "market-2-2",
+          "skills": [
+            "eng.grammar.plurals-verbs"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Choose the correct word: The vegetables ___ fresh."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "is"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "are"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "am"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "be"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "market-2-3",
+          "skills": [
+            "eng.grammar.plurals-verbs"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Your word is: vegetable. Count its vowels (a, e, i, o, u) and tell your partner."
+          },
+          "prompt": {
+            "en": "Your partner counts the vowels in a word. How many vowels does it have? Type the number."
+          },
+          "answer": 4
+        },
+        {
+          "id": "market-2-4",
+          "skills": [
+            "eng.grammar.plurals-verbs"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many letters are in the word customer?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "add",
+            "operand": 10
+          },
+          "second": {
+            "en": "Customer has {x} letters. Shopkeeper has 10 letters. How many letters are there in both words together?"
+          }
+        },
+        {
+          "id": "market-2-5",
+          "skills": [
+            "eng.grammar.plurals-verbs"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which word is the adjective (describing word) in this sentence? The ripe mango fell on the road."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "ripe"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "mango"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "fell"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "road"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ],
+      "place": "market"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/pond",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Life at the Pond"
+      },
+      "subject": "evs",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "pond-1",
+          "skills": [
+            "evs.animals.pond-life"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which pond animal matches its special feature?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Frog"
+              },
+              "right": {
+                "en": "Starts life as a tadpole"
+              }
+            },
+            {
+              "left": {
+                "en": "Duck"
+              },
+              "right": {
+                "en": "Has webbed feet"
+              }
+            },
+            {
+              "left": {
+                "en": "Fish"
+              },
+              "right": {
+                "en": "Lives only in water and has fins"
+              }
+            },
+            {
+              "left": {
+                "en": "Egret"
+              },
+              "right": {
+                "en": "Wades on long legs"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pond-2",
+          "skills": [
+            "evs.animals.pond-life"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "There are 6 frogs, 4 fish and 3 ducks at the pond."
+          },
+          "prompt": {
+            "en": "How many animals are there in all?"
+          },
+          "answer": 13
+        },
+        {
+          "id": "pond-3",
+          "skills": [
+            "evs.animals.pond-life"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which plant floats on the water of a pond?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Water lily"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Mango tree"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Wheat"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Neem tree"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "pond-4",
+          "skills": [
+            "evs.animals.pond-life"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A pond has 8 water lilies. Each has 5 leaves. How many leaves are there?"
+          },
+          "firstAnswer": 40,
+          "operation": {
+            "op": "subtract",
+            "operand": 12
+          },
+          "second": {
+            "en": "There are {x} lily leaves. 12 leaves dry up. How many leaves are left?"
+          }
+        },
+        {
+          "id": "pond-5",
+          "skills": [
+            "evs.animals.pond-life"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which food chain is correct? The arrows show who is eaten by whom."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Algae, tadpole, fish, egret"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Egret, fish, tadpole, algae"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Fish, algae, egret, tadpole"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Tadpole, egret, algae, fish"
+              }
+            }
+          ],
+          "correct": "a"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/pond-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Pond Poems"
+      },
+      "subject": "eng",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "pond-2-1",
+          "skills": [
+            "eng.words.rhymes-plurals"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which word rhymes with which?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "frog"
+              },
+              "right": {
+                "en": "log"
+              }
+            },
+            {
+              "left": {
+                "en": "duck"
+              },
+              "right": {
+                "en": "truck"
+              }
+            },
+            {
+              "left": {
+                "en": "fish"
+              },
+              "right": {
+                "en": "dish"
+              }
+            },
+            {
+              "left": {
+                "en": "lake"
+              },
+              "right": {
+                "en": "cake"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pond-2-2",
+          "skills": [
+            "eng.words.rhymes-plurals"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "What is the plural of goose?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "gooses"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "geeses"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "geese"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "goosen"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "pond-2-3",
+          "skills": [
+            "eng.words.rhymes-plurals"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Read this sentence aloud to your partner: The little frog jumped into the cool pond."
+          },
+          "prompt": {
+            "en": "Your partner reads a sentence aloud. How many words does it have? Type the number."
+          },
+          "answer": 8
+        },
+        {
+          "id": "pond-2-4",
+          "skills": [
+            "eng.words.rhymes-plurals"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Choose the correct word: The ducks ___ in the pond yesterday."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "swim"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "swims"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "swam"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "swum"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "pond-2-5",
+          "skills": [
+            "eng.words.rhymes-plurals"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many letters are in the word ripple?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "subtract",
+            "operand": 4
+          },
+          "second": {
+            "en": "Ripple has {x} letters. Lily has 4 letters. How many more letters does ripple have than lily?"
+          }
+        }
+      ],
+      "place": "pond"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/bridge",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Measuring the Bridge"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "bridge-1",
+          "skills": [
+            "maths.measures.length"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The bridge is 3 metres wide. Each metre has 100 centimetres."
+          },
+          "prompt": {
+            "en": "How many centimetres wide is the bridge?"
+          },
+          "answer": 300
+        },
+        {
+          "id": "bridge-2",
+          "skills": [
+            "maths.measures.length"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which length matches which?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "1 km"
+              },
+              "right": {
+                "en": "1000 m"
+              }
+            },
+            {
+              "left": {
+                "en": "2 m"
+              },
+              "right": {
+                "en": "200 cm"
+              }
+            },
+            {
+              "left": {
+                "en": "5 cm"
+              },
+              "right": {
+                "en": "50 mm"
+              }
+            },
+            {
+              "left": {
+                "en": "1 m 20 cm"
+              },
+              "right": {
+                "en": "120 cm"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bridge-3",
+          "skills": [
+            "maths.measures.length"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "The bridge is 250 m long. A boy walks across it 4 times. How many metres does he walk?"
+          },
+          "firstAnswer": 1000,
+          "operation": {
+            "op": "add",
+            "operand": 350
+          },
+          "second": {
+            "en": "The boy walked {x} metres on the bridge. Then he walks 350 m home. How many metres has he walked in all?"
+          }
+        },
+        {
+          "id": "bridge-4",
+          "skills": [
+            "maths.measures.length"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "One rope is 4 m 50 cm long. A second rope is 3 m 75 cm long."
+          },
+          "prompt": {
+            "en": "What is the total length of the two ropes in centimetres?"
+          },
+          "answer": 825
+        },
+        {
+          "id": "bridge-5",
+          "skills": [
+            "maths.measures.length"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which is the longest distance?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "950 m"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "1 km 20 m"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "1005 m"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "99 000 cm"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/bridge-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Rivers of India"
+      },
+      "subject": "evs",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "bridge-2-1",
+          "skills": [
+            "evs.geography.rivers"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which river flows through which state?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Kaveri"
+              },
+              "right": {
+                "en": "Karnataka"
+              }
+            },
+            {
+              "left": {
+                "en": "Godavari"
+              },
+              "right": {
+                "en": "Telangana"
+              }
+            },
+            {
+              "left": {
+                "en": "Brahmaputra"
+              },
+              "right": {
+                "en": "Assam"
+              }
+            },
+            {
+              "left": {
+                "en": "Sabarmati"
+              },
+              "right": {
+                "en": "Gujarat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bridge-2-2",
+          "skills": [
+            "evs.geography.rivers"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which of these rivers flows into the Arabian Sea?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Ganga"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Godavari"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Narmada"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Mahanadi"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "bridge-2-3",
+          "skills": [
+            "evs.geography.rivers"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The Ganga is about 2500 km long. A boat travels 100 km each day."
+          },
+          "prompt": {
+            "en": "About how many days would the boat need to travel the whole river?"
+          },
+          "answer": 25
+        },
+        {
+          "id": "bridge-2-4",
+          "skills": [
+            "evs.geography.rivers"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "Three villages along a river have 14, 18 and 23 wells. How many wells are there in all?"
+          },
+          "firstAnswer": 55,
+          "operation": {
+            "op": "subtract",
+            "operand": 15
+          },
+          "second": {
+            "en": "There are {x} wells. 15 wells are dry in summer. How many wells still have water?"
+          }
+        },
+        {
+          "id": "bridge-2-5",
+          "skills": [
+            "evs.geography.rivers"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "What is the mouth of a river?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The place where it starts in the hills"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The place where it meets the sea"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The widest part of the river"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The bridge across the river"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ],
+      "place": "bridge"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/orchard",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Mangoes in Boxes"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "orchard-1",
+          "skills": [
+            "maths.division.fractions"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "An orchard has 48 mangoes. They go into 6 equal boxes."
+          },
+          "prompt": {
+            "en": "How many mangoes are in each box?"
+          },
+          "answer": 8
+        },
+        {
+          "id": "orchard-2",
+          "skills": [
+            "maths.division.fractions"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which fraction question matches which answer?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Half of 20"
+              },
+              "right": {
+                "en": "10"
+              }
+            },
+            {
+              "left": {
+                "en": "A quarter of 20"
+              },
+              "right": {
+                "en": "5"
+              }
+            },
+            {
+              "left": {
+                "en": "Half of 30"
+              },
+              "right": {
+                "en": "15"
+              }
+            },
+            {
+              "left": {
+                "en": "One-third of 18"
+              },
+              "right": {
+                "en": "6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "orchard-3",
+          "skills": [
+            "maths.division.fractions"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "78 mangoes are packed 6 in each box. How many boxes are needed?"
+          },
+          "firstAnswer": 13,
+          "operation": {
+            "op": "multiply",
+            "operand": 120
+          },
+          "second": {
+            "en": "There are {x} boxes. Each box is sold for ₹120. How many rupees do all the boxes bring?"
+          }
+        },
+        {
+          "id": "orchard-4",
+          "skills": [
+            "maths.division.fractions"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A farmer has 50 mangoes. He packs 8 mangoes in each box."
+          },
+          "prompt": {
+            "en": "How many mangoes are left over after he fills the boxes?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "orchard-5",
+          "skills": [
+            "maths.division.fractions"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which fraction is equal to 1/2?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "2/6"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "3/6"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "2/3"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "1/3"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/orchard-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Fruits and Seeds"
+      },
+      "subject": "evs",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "orchard-2-1",
+          "skills": [
+            "evs.plants.seeds-fruits"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "How does each seed travel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Coconut"
+              },
+              "right": {
+                "en": "Floats away on water"
+              }
+            },
+            {
+              "left": {
+                "en": "Mango stone"
+              },
+              "right": {
+                "en": "Dropped by birds and animals"
+              }
+            },
+            {
+              "left": {
+                "en": "Silk cotton seed"
+              },
+              "right": {
+                "en": "Carried by the wind"
+              }
+            },
+            {
+              "left": {
+                "en": "Burr seed"
+              },
+              "right": {
+                "en": "Sticks to fur"
+              }
+            }
+          ]
+        },
+        {
+          "id": "orchard-2-2",
+          "skills": [
+            "evs.plants.seeds-fruits"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A mango tree has 5 branches. Each branch has 12 mangoes."
+          },
+          "prompt": {
+            "en": "How many mangoes are on the tree?"
+          },
+          "answer": 60
+        },
+        {
+          "id": "orchard-2-3",
+          "skills": [
+            "evs.plants.seeds-fruits"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "A seed sprouts. What comes out first?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The root"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The flower"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The fruit"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The leaf"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "orchard-2-4",
+          "skills": [
+            "evs.plants.seeds-fruits"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A tree has 90 flowers. Only 1 in 3 flowers becomes a fruit. How many fruits are there?"
+          },
+          "firstAnswer": 30,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "en": "The tree has {x} fruits. Each fruit has 1 seed. How many seeds do 4 trees like this have?"
+          }
+        },
+        {
+          "id": "orchard-2-5",
+          "skills": [
+            "evs.plants.seeds-fruits"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which of these is a fruit that we often call a vegetable?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Potato"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Tomato"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Carrot"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Spinach"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ],
+      "place": "orchard"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/hill",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Up the Hill"
+      },
+      "subject": "evs",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "hill-1",
+          "skills": [
+            "evs.geography.mountains"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which mountain range is where?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Himalayas"
+              },
+              "right": {
+                "en": "In the north"
+              }
+            },
+            {
+              "left": {
+                "en": "Western Ghats"
+              },
+              "right": {
+                "en": "Along the west coast"
+              }
+            },
+            {
+              "left": {
+                "en": "Eastern Ghats"
+              },
+              "right": {
+                "en": "Along the east coast"
+              }
+            },
+            {
+              "left": {
+                "en": "Aravalli Hills"
+              },
+              "right": {
+                "en": "Mostly in Rajasthan"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hill-2",
+          "skills": [
+            "evs.geography.mountains"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Every 1000 m up a hill, the air gets about 6 degrees Celsius colder. The village is at 30 degrees Celsius. The hilltop is 2000 m higher."
+          },
+          "prompt": {
+            "en": "About how many degrees Celsius is it at the hilltop?"
+          },
+          "answer": 18
+        },
+        {
+          "id": "hill-3",
+          "skills": [
+            "evs.geography.mountains"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Why is it colder high up on a hill?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Hills are close to the Sun"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The air is thinner and cooler higher up"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The wind never blows there"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "There are no clouds there"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "hill-4",
+          "skills": [
+            "evs.geography.mountains"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A path climbs 120 m in the first hour and 85 m in the second hour. How many metres is that in all?"
+          },
+          "firstAnswer": 205,
+          "operation": {
+            "op": "add",
+            "operand": 95
+          },
+          "second": {
+            "en": "The climbers are {x} m above the village. They climb another 95 m. How many metres above the village are they now?"
+          }
+        },
+        {
+          "id": "hill-5",
+          "skills": [
+            "evs.geography.mountains"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which of these mountains lies partly in Sikkim and is the third highest in the world?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Mount Everest"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Kangchenjunga"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Nanda Devi"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Anamudi"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/hill-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Hill Paths"
+      },
+      "subject": "maths",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "hill-2-1",
+          "skills": [
+            "maths.geometry.perimeter-area"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A rectangular terrace on the hill is 12 m long and 5 m wide."
+          },
+          "prompt": {
+            "en": "What is its perimeter in metres?"
+          },
+          "answer": 34
+        },
+        {
+          "id": "hill-2-2",
+          "skills": [
+            "maths.geometry.perimeter-area"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A square field on the hill has sides of 9 m."
+          },
+          "prompt": {
+            "en": "What is its area in square metres?"
+          },
+          "answer": 81
+        },
+        {
+          "id": "hill-2-3",
+          "skills": [
+            "maths.geometry.perimeter-area"
+          ],
+          "difficulty": 2,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which shape question matches which answer?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Area of a rectangle 6 m by 4 m"
+              },
+              "right": {
+                "en": "24 sq m"
+              }
+            },
+            {
+              "left": {
+                "en": "Area of a square with side 5 m"
+              },
+              "right": {
+                "en": "25 sq m"
+              }
+            },
+            {
+              "left": {
+                "en": "Perimeter of a rectangle 10 m by 3 m"
+              },
+              "right": {
+                "en": "26 m"
+              }
+            },
+            {
+              "left": {
+                "en": "Perimeter of a square with side 7 m"
+              },
+              "right": {
+                "en": "28 m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hill-2-4",
+          "skills": [
+            "maths.geometry.perimeter-area"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A garden is 15 m long and 8 m wide. What is its area in square metres?"
+          },
+          "firstAnswer": 120,
+          "operation": {
+            "op": "divide",
+            "operand": 2
+          },
+          "second": {
+            "en": "The garden has an area of {x} square metres. Each plant needs 2 square metres. How many plants fit in the garden?"
+          }
+        },
+        {
+          "id": "hill-2-5",
+          "skills": [
+            "maths.geometry.perimeter-area"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "A fence goes round a rectangular field 20 m long and 15 m wide. How long is the fence?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "35 m"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "300 m"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "70 m"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "55 m"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ],
+      "place": "hill"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/station",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Train Timetable"
+      },
+      "subject": "maths",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "station-1",
+          "skills": [
+            "maths.time.clock-24h"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The train leaves at 9:15 in the morning. The journey takes 40 minutes."
+          },
+          "prompt": {
+            "en": "When does the train arrive? Type the time as four digits, like 0830."
+          },
+          "answer": 595,
+          "answerFormat": "time"
+        },
+        {
+          "id": "station-2",
+          "skills": [
+            "maths.time.clock-24h"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which 24-hour time matches which 12-hour time?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "13:00"
+              },
+              "right": {
+                "en": "1:00 pm"
+              }
+            },
+            {
+              "left": {
+                "en": "18:30"
+              },
+              "right": {
+                "en": "6:30 pm"
+              }
+            },
+            {
+              "left": {
+                "en": "07:45"
+              },
+              "right": {
+                "en": "7:45 am"
+              }
+            },
+            {
+              "left": {
+                "en": "23:15"
+              },
+              "right": {
+                "en": "11:15 pm"
+              }
+            }
+          ]
+        },
+        {
+          "id": "station-3",
+          "skills": [
+            "maths.time.clock-24h"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A train leaves at 14:20 and takes 2 hours 15 minutes. When does it arrive?"
+          },
+          "firstAnswer": 995,
+          "operation": {
+            "op": "add",
+            "operand": 25
+          },
+          "second": {
+            "en": "The train was due at {x}, but it is 25 minutes late. When does it really arrive?"
+          },
+          "answerFormat": "time"
+        },
+        {
+          "id": "station-4",
+          "skills": [
+            "maths.time.clock-24h"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The train leaves at 6:50 am and arrives at 10:15 am."
+          },
+          "prompt": {
+            "en": "How many minutes does the journey take? Type the minutes."
+          },
+          "answer": 205,
+          "answerFormat": "minutes"
+        },
+        {
+          "id": "station-5",
+          "skills": [
+            "maths.time.clock-24h"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which time is 25 minutes after 11:50 am?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "12:05 pm"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "12:15 pm"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "12:25 pm"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "12:15 am"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/station-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Station Announcements"
+      },
+      "subject": "eng",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "station-2-1",
+          "skills": [
+            "eng.grammar.tenses"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Choose the correct words: The train is ___ at platform 2."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "stand"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "stands"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "standing"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "stood"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "station-2-2",
+          "skills": [
+            "eng.grammar.tenses"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which verb matches its past tense?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "walk"
+              },
+              "right": {
+                "en": "walked"
+              }
+            },
+            {
+              "left": {
+                "en": "go"
+              },
+              "right": {
+                "en": "went"
+              }
+            },
+            {
+              "left": {
+                "en": "buy"
+              },
+              "right": {
+                "en": "bought"
+              }
+            },
+            {
+              "left": {
+                "en": "run"
+              },
+              "right": {
+                "en": "ran"
+              }
+            }
+          ]
+        },
+        {
+          "id": "station-2-3",
+          "skills": [
+            "eng.grammar.tenses"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Read this announcement aloud to your partner: The train from Delhi will arrive at platform number seven in ten minutes."
+          },
+          "prompt": {
+            "en": "Your partner reads an announcement aloud. How many words does it have? Type the number."
+          },
+          "answer": 13
+        },
+        {
+          "id": "station-2-4",
+          "skills": [
+            "eng.grammar.tenses"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many letters are in the word platform?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "add",
+            "operand": 6
+          },
+          "second": {
+            "en": "Platform has {x} letters. Ticket has 6 letters. How many letters are there in both words together?"
+          }
+        },
+        {
+          "id": "station-2-5",
+          "skills": [
+            "eng.grammar.tenses"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence is in the past tense?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "The train arrives now."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "The train will arrive soon."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "The train arrived on time."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "The train is arriving."
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ],
+      "place": "station"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/post",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Letters and Words"
+      },
+      "subject": "eng",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "post-1",
+          "skills": [
+            "eng.grammar.word-classes"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which word is a verb?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "red"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "write"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "letter"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "slowly"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "post-2",
+          "skills": [
+            "eng.grammar.word-classes"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which word matches its opposite?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "heavy"
+              },
+              "right": {
+                "en": "light"
+              }
+            },
+            {
+              "left": {
+                "en": "near"
+              },
+              "right": {
+                "en": "far"
+              }
+            },
+            {
+              "left": {
+                "en": "happy"
+              },
+              "right": {
+                "en": "sad"
+              }
+            },
+            {
+              "left": {
+                "en": "begin"
+              },
+              "right": {
+                "en": "end"
+              }
+            }
+          ]
+        },
+        {
+          "id": "post-3",
+          "skills": [
+            "eng.grammar.word-classes"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Your word is: address. Clap it out and tell your partner how many claps you made."
+          },
+          "prompt": {
+            "en": "Your partner claps a word. How many syllables does it have? Type the number."
+          },
+          "answer": 2
+        },
+        {
+          "id": "post-4",
+          "skills": [
+            "eng.grammar.word-classes"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many words are in this sentence? Please send the parcel by speed post."
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "add",
+            "operand": 9
+          },
+          "second": {
+            "en": "The first sentence has {x} words. A second sentence has 9 words. How many words are there in both sentences?"
+          }
+        },
+        {
+          "id": "post-5",
+          "skills": [
+            "eng.grammar.word-classes"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence has the correct punctuation?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Where is the post office."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Where is the post office?"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Where is the post office,"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Where, is the post office!"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/post-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "States and Capitals"
+      },
+      "subject": "evs",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "post-2-1",
+          "skills": [
+            "evs.geography.states-capitals"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which state matches its capital?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "Rajasthan"
+              },
+              "right": {
+                "en": "Jaipur"
+              }
+            },
+            {
+              "left": {
+                "en": "Kerala"
+              },
+              "right": {
+                "en": "Thiruvananthapuram"
+              }
+            },
+            {
+              "left": {
+                "en": "Assam"
+              },
+              "right": {
+                "en": "Dispur"
+              }
+            },
+            {
+              "left": {
+                "en": "West Bengal"
+              },
+              "right": {
+                "en": "Kolkata"
+              }
+            }
+          ]
+        },
+        {
+          "id": "post-2-2",
+          "skills": [
+            "evs.geography.states-capitals"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which city is the capital of Karnataka?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Chennai"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Hyderabad"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Bengaluru"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Kochi"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "post-2-3",
+          "skills": [
+            "evs.geography.states-capitals"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "India has 28 states and 8 Union Territories."
+          },
+          "prompt": {
+            "en": "How many states and Union Territories are there altogether?"
+          },
+          "answer": 36
+        },
+        {
+          "id": "post-2-4",
+          "skills": [
+            "evs.geography.states-capitals"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A class learns the names of 5 states every week for 3 weeks. How many states do they learn?"
+          },
+          "firstAnswer": 15,
+          "operation": {
+            "op": "add",
+            "operand": 8
+          },
+          "second": {
+            "en": "The class has learnt {x} states. In the next week they learn 8 more. How many states have they learnt in all?"
+          }
+        },
+        {
+          "id": "post-2-5",
+          "skills": [
+            "evs.geography.states-capitals"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which pair of state and capital is correct?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Odisha and Patna"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Bihar and Bhubaneswar"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Gujarat and Gandhinagar"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Punjab and Lucknow"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ],
+      "place": "post"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/library",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Library Shelves"
+      },
+      "subject": "eng",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "library-1",
+          "skills": [
+            "eng.words.synonyms-antonyms"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which word means the same?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "big"
+              },
+              "right": {
+                "en": "large"
+              }
+            },
+            {
+              "left": {
+                "en": "quick"
+              },
+              "right": {
+                "en": "fast"
+              }
+            },
+            {
+              "left": {
+                "en": "begin"
+              },
+              "right": {
+                "en": "start"
+              }
+            },
+            {
+              "left": {
+                "en": "tiny"
+              },
+              "right": {
+                "en": "small"
+              }
+            }
+          ]
+        },
+        {
+          "id": "library-2",
+          "skills": [
+            "eng.words.synonyms-antonyms"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which word means the opposite of ancient?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "old"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "modern"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "broken"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "huge"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "library-3",
+          "skills": [
+            "eng.words.synonyms-antonyms"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Your word is: watermelon. Clap it out and tell your partner how many claps you made."
+          },
+          "prompt": {
+            "en": "Your partner claps a word. How many syllables does it have? Type the number."
+          },
+          "answer": 4
+        },
+        {
+          "id": "library-4",
+          "skills": [
+            "eng.words.synonyms-antonyms"
+          ],
+          "difficulty": 2,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence uses capital letters correctly?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "i read a book about mumbai."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "I read a book about Mumbai."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "I read a book about mumbai."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "i read a book about Mumbai."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "library-5",
+          "skills": [
+            "eng.words.synonyms-antonyms"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many letters are in the word library?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "subtract",
+            "operand": 4
+          },
+          "second": {
+            "en": "Library has {x} letters. Book has 4 letters. How many more letters does library have than book?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/library-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Weights and Volumes"
+      },
+      "subject": "maths",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "library-2-1",
+          "skills": [
+            "maths.measures.weight-volume"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A bag of rice weighs 5 kg. There are 1000 g in 1 kg."
+          },
+          "prompt": {
+            "en": "How many grams does the bag weigh?"
+          },
+          "answer": 5000
+        },
+        {
+          "id": "library-2-2",
+          "skills": [
+            "maths.measures.weight-volume"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which measure matches which?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "1 kg"
+              },
+              "right": {
+                "en": "1000 g"
+              }
+            },
+            {
+              "left": {
+                "en": "2 litres"
+              },
+              "right": {
+                "en": "2000 ml"
+              }
+            },
+            {
+              "left": {
+                "en": "Half a kilogram"
+              },
+              "right": {
+                "en": "500 g"
+              }
+            },
+            {
+              "left": {
+                "en": "A quarter of a litre"
+              },
+              "right": {
+                "en": "250 ml"
+              }
+            }
+          ]
+        },
+        {
+          "id": "library-2-3",
+          "skills": [
+            "maths.measures.weight-volume"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A can has 3 litres of milk. How many millilitres is that?"
+          },
+          "firstAnswer": 3000,
+          "operation": {
+            "op": "divide",
+            "operand": 250
+          },
+          "second": {
+            "en": "The can has {x} ml of milk. Each cup takes 250 ml. How many cups can be filled?"
+          }
+        },
+        {
+          "id": "library-2-4",
+          "skills": [
+            "maths.measures.weight-volume"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A sack has 2 kg of flour. A cook uses 450 g in the morning and 650 g in the evening."
+          },
+          "prompt": {
+            "en": "How many grams of flour are left?"
+          },
+          "answer": 900
+        },
+        {
+          "id": "library-2-5",
+          "skills": [
+            "maths.measures.weight-volume"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which weight is the heaviest?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "1050 g"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "1 kg 20 g"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "1 kg 200 g"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "1 kg 100 g"
+              }
+            }
+          ],
+          "correct": "c"
+        }
+      ],
+      "place": "library"
+    },
+    {
+      "id": "in.huckepack.classes-3-5/tower",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Town Population"
+      },
+      "subject": "maths",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "tower-1",
+          "skills": [
+            "maths.numbers.lakh"
+          ],
+          "difficulty": 1,
+          "type": "splitInfo",
+          "clue": {
+            "en": "The town has 1,25,000 people. That is one lakh and twenty-five thousand."
+          },
+          "prompt": {
+            "en": "How many thousands of people live in the town? Type the number."
+          },
+          "answer": 125
+        },
+        {
+          "id": "tower-2",
+          "skills": [
+            "maths.numbers.lakh"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which number matches its name?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "1,00,000"
+              },
+              "right": {
+                "en": "One lakh"
+              }
+            },
+            {
+              "left": {
+                "en": "10,00,000"
+              },
+              "right": {
+                "en": "Ten lakh"
+              }
+            },
+            {
+              "left": {
+                "en": "25,000"
+              },
+              "right": {
+                "en": "Twenty-five thousand"
+              }
+            },
+            {
+              "left": {
+                "en": "5,00,000"
+              },
+              "right": {
+                "en": "Five lakh"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tower-3",
+          "skills": [
+            "maths.numbers.lakh"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "A town of 42 thousand people gets 15 thousand more. How many thousand people live there now?"
+          },
+          "firstAnswer": 57,
+          "operation": {
+            "op": "subtract",
+            "operand": 8
+          },
+          "second": {
+            "en": "The town has {x} thousand people. Then 8 thousand people leave for the city. How many thousand people are left?"
+          }
+        },
+        {
+          "id": "tower-4",
+          "skills": [
+            "maths.numbers.lakh"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "A school collects ₹45,000 in one month and ₹38,000 in the next month."
+          },
+          "prompt": {
+            "en": "How many thousand rupees is that in all? Type the number."
+          },
+          "answer": 83
+        },
+        {
+          "id": "tower-5",
+          "skills": [
+            "maths.numbers.lakh"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which is the largest number?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "9,99,999"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "10,00,000"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "9,09,090"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "99,999"
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ]
+    },
+    {
+      "id": "in.huckepack.classes-3-5/tower-2",
+      "schemaVersion": 1,
+      "title": {
+        "en": "Tower Riddles"
+      },
+      "subject": "eng",
+      "grade": 5,
+      "tasks": [
+        {
+          "id": "tower-2-1",
+          "skills": [
+            "eng.words.homophones-riddles"
+          ],
+          "difficulty": 1,
+          "type": "matchPairs",
+          "prompt": {
+            "en": "Which word sounds like its partner?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "en": "write"
+              },
+              "right": {
+                "en": "right"
+              }
+            },
+            {
+              "left": {
+                "en": "sun"
+              },
+              "right": {
+                "en": "son"
+              }
+            },
+            {
+              "left": {
+                "en": "hour"
+              },
+              "right": {
+                "en": "our"
+              }
+            },
+            {
+              "left": {
+                "en": "meet"
+              },
+              "right": {
+                "en": "meat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tower-2-2",
+          "skills": [
+            "eng.words.homophones-riddles"
+          ],
+          "difficulty": 1,
+          "type": "bothAgree",
+          "question": {
+            "en": "Choose the correct word: The tower clock ___ very old."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "am"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "is"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "are"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "be"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "tower-2-3",
+          "skills": [
+            "eng.words.homophones-riddles"
+          ],
+          "difficulty": 2,
+          "type": "splitInfo",
+          "clue": {
+            "en": "Read this riddle aloud: I have a face and two hands but no arms or legs. I tell you the time."
+          },
+          "prompt": {
+            "en": "Your partner reads a riddle aloud. How many letters are in the answer word? Type the number."
+          },
+          "answer": 5
+        },
+        {
+          "id": "tower-2-4",
+          "skills": [
+            "eng.words.homophones-riddles"
+          ],
+          "difficulty": 2,
+          "type": "relay",
+          "first": {
+            "en": "How many words are in this line? I tell the time all day."
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "en": "One line of the riddle has {x} words. The riddle has 4 lines of the same length. How many words does the riddle have?"
+          }
+        },
+        {
+          "id": "tower-2-5",
+          "skills": [
+            "eng.words.homophones-riddles"
+          ],
+          "difficulty": 3,
+          "type": "bothAgree",
+          "question": {
+            "en": "Which sentence uses the correct word?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "I will meat you at the tower."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "I will meet you at the tower."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "I will met you at the tower."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "I will mead you at the tower."
+              }
+            }
+          ],
+          "correct": "b"
+        }
+      ],
+      "place": "tower"
+    }
+  ]
+}

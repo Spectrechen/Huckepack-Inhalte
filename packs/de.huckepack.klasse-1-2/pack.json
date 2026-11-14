@@ -1,0 +1,4525 @@
+{
+ "$schema": "../../docs/schema/pack.schema.json",
+ "id": "de.huckepack.klasse-1-2",
+ "version": 1,
+ "title": {
+  "de": "Bauernhof und Dorf (Klasse 1–2)",
+  "en": "Farm and Village (Grades 1–2)"
+ },
+ "description": {
+  "de": "Für Kinder in Deutschland, 6 bis 8 Jahre, Klasse 1 und 2, nach den Bildungsstandards der KMK: Mathe, Zeit und Geld, Deutsch und Sachunterricht.",
+  "en": "For children in Germany, ages 6 to 8, grades 1 and 2, following the KMK educational standards: maths, time and money, German and general studies."
+ },
+ "author": "Huckepack",
+ "licence": "CC-BY-4.0",
+ "courses": [
+  {
+   "id": "mathe",
+   "title": {
+    "de": "Mathe",
+    "en": "Maths"
+   }
+  },
+  {
+   "id": "zeit-geld",
+   "title": {
+    "de": "Uhr und Geld",
+    "en": "Clock and Money"
+   }
+  },
+  {
+   "id": "deutsch",
+   "title": {
+    "de": "Deutsch",
+    "en": "German"
+   }
+  },
+  {
+   "id": "sachunterricht",
+   "title": {
+    "de": "Sachunterricht",
+    "en": "General Studies"
+   }
+  }
+ ],
+ "skills": {
+  "mathe.zahlen20.plus": {
+   "de": "Plus bis 20",
+   "en": "Addition up to 20"
+  },
+  "mathe.zahlen20.minus": {
+   "de": "Minus bis 20",
+   "en": "Subtraction up to 20"
+  },
+  "mathe.zahlen100.zehner": {
+   "de": "Zehner und Einer",
+   "en": "Tens and ones"
+  },
+  "mathe.zahlen100.nachbarn": {
+   "de": "Nachbarzahlen und Vergleichen",
+   "en": "Neighbour numbers and comparing"
+  },
+  "mathe.zahlen100.ergaenzen": {
+   "de": "Bis 100 ergänzen",
+   "en": "Completing to 100"
+  },
+  "mathe.rechnen100.plusminus": {
+   "de": "Plus und Minus bis 100",
+   "en": "Addition and subtraction up to 100"
+  },
+  "mathe.verdoppeln": {
+   "de": "Verdoppeln und Halbieren",
+   "en": "Doubling and halving"
+  },
+  "mathe.einmaleins.anfang": {
+   "de": "Einmaleins: 2er, 5er und 10er",
+   "en": "Times tables: 2, 5 and 10"
+  },
+  "zeit-geld.uhr.volle-stunde": {
+   "de": "Volle Stunde",
+   "en": "Full hours"
+  },
+  "zeit-geld.uhr.halbe-stunde": {
+   "de": "Halbe Stunde",
+   "en": "Half hours"
+  },
+  "zeit-geld.uhr.zeitspannen": {
+   "de": "Zeitspannen",
+   "en": "Time spans"
+  },
+  "zeit-geld.geld.zaehlen": {
+   "de": "Geld zählen",
+   "en": "Counting money"
+  },
+  "zeit-geld.geld.wechselgeld": {
+   "de": "Preise und Wechselgeld",
+   "en": "Prices and change"
+  },
+  "deutsch.laute.anlaute": {
+   "de": "Laute und Anlaute",
+   "en": "Sounds and initial sounds"
+  },
+  "deutsch.silben": {
+   "de": "Silben",
+   "en": "Syllables"
+  },
+  "deutsch.nomen": {
+   "de": "Nomen groß schreiben",
+   "en": "Capitalising nouns"
+  },
+  "deutsch.rechtschreibung": {
+   "de": "Einfache Rechtschreibung",
+   "en": "Simple spelling"
+  },
+  "deutsch.saetze": {
+   "de": "Wörter und Sätze",
+   "en": "Words and sentences"
+  },
+  "deutsch.wortarten": {
+   "de": "Wortarten und Gegenteile",
+   "en": "Word types and opposites"
+  },
+  "sachunterricht.jahreszeiten": {
+   "de": "Jahreszeiten und Monate",
+   "en": "Seasons and months"
+  },
+  "sachunterricht.pflanzen": {
+   "de": "Pflanzen",
+   "en": "Plants"
+  },
+  "sachunterricht.tiere": {
+   "de": "Tiere",
+   "en": "Animals"
+  },
+  "sachunterricht.wasser": {
+   "de": "Wasser",
+   "en": "Water"
+  },
+  "sachunterricht.verkehr": {
+   "de": "Verkehr und Schulweg",
+   "en": "Traffic and the way to school"
+  },
+  "sachunterricht.koerper": {
+   "de": "Körper und Gesundheit",
+   "en": "Body and health"
+  }
+ },
+ "world": {
+  "image": {
+   "file": "karte.jpg",
+   "width": 2048,
+   "height": 1536
+  },
+  "start": "hof",
+  "nodes": [
+   {
+    "id": "hof",
+    "title": {
+     "de": "Bauernhof"
+    },
+    "x": 0.46,
+    "y": 0.82,
+    "requires": []
+   },
+   {
+    "id": "stall",
+    "title": {
+     "de": "Kuhstall"
+    },
+    "level": "de.huckepack.klasse-1-2/stall",
+    "x": 0.22,
+    "y": 0.84,
+    "requires": []
+   },
+   {
+    "id": "garten",
+    "title": {
+     "de": "Gemüsegarten"
+    },
+    "level": "de.huckepack.klasse-1-2/garten",
+    "x": 0.68,
+    "y": 0.86,
+    "requires": []
+   },
+   {
+    "id": "huehner",
+    "title": {
+     "de": "Hühnerhof"
+    },
+    "level": "de.huckepack.klasse-1-2/huehner",
+    "x": 0.12,
+    "y": 0.66,
+    "requires": [
+     "de.huckepack.klasse-1-2/stall"
+    ]
+   },
+   {
+    "id": "scheune",
+    "title": {
+     "de": "Scheune"
+    },
+    "level": "de.huckepack.klasse-1-2/scheune",
+    "x": 0.32,
+    "y": 0.64,
+    "requires": [
+     "de.huckepack.klasse-1-2/stall"
+    ]
+   },
+   {
+    "id": "obstwiese",
+    "title": {
+     "de": "Obstwiese"
+    },
+    "level": "de.huckepack.klasse-1-2/obstwiese",
+    "x": 0.9,
+    "y": 0.78,
+    "requires": [
+     "de.huckepack.klasse-1-2/garten"
+    ]
+   },
+   {
+    "id": "baeckerei",
+    "title": {
+     "de": "Bäckerei"
+    },
+    "level": "de.huckepack.klasse-1-2/baeckerei",
+    "x": 0.52,
+    "y": 0.62,
+    "requires": [
+     "de.huckepack.klasse-1-2/obstwiese"
+    ]
+   },
+   {
+    "id": "teich",
+    "title": {
+     "de": "Teich"
+    },
+    "level": "de.huckepack.klasse-1-2/teich",
+    "x": 0.86,
+    "y": 0.54,
+    "requires": [
+     "de.huckepack.klasse-1-2/obstwiese"
+    ]
+   },
+   {
+    "id": "laden",
+    "title": {
+     "de": "Dorfladen"
+    },
+    "level": "de.huckepack.klasse-1-2/laden",
+    "x": 0.7,
+    "y": 0.62,
+    "requires": [
+     "de.huckepack.klasse-1-2/baeckerei"
+    ]
+   },
+   {
+    "id": "uhrturm",
+    "title": {
+     "de": "Uhrenturm"
+    },
+    "level": "de.huckepack.klasse-1-2/uhrturm",
+    "x": 0.58,
+    "y": 0.42,
+    "requires": [
+     "de.huckepack.klasse-1-2/baeckerei"
+    ]
+   },
+   {
+    "id": "strasse",
+    "title": {
+     "de": "Dorfstraße"
+    },
+    "level": "de.huckepack.klasse-1-2/strasse",
+    "x": 0.36,
+    "y": 0.46,
+    "requires": [
+     "de.huckepack.klasse-1-2/scheune"
+    ]
+   },
+   {
+    "id": "muehle",
+    "title": {
+     "de": "Mühle"
+    },
+    "level": "de.huckepack.klasse-1-2/muehle",
+    "x": 0.88,
+    "y": 0.26,
+    "requires": [
+     "de.huckepack.klasse-1-2/teich"
+    ]
+   },
+   {
+    "id": "wald",
+    "title": {
+     "de": "Wald"
+    },
+    "level": "de.huckepack.klasse-1-2/wald",
+    "x": 0.12,
+    "y": 0.44,
+    "requires": [
+     "de.huckepack.klasse-1-2/strasse"
+    ]
+   },
+   {
+    "id": "huette",
+    "title": {
+     "de": "Waldhütte"
+    },
+    "level": "de.huckepack.klasse-1-2/huette",
+    "x": 0.28,
+    "y": 0.24,
+    "requires": [
+     "de.huckepack.klasse-1-2/wald"
+    ]
+   },
+   {
+    "id": "spielplatz",
+    "title": {
+     "de": "Spielplatz"
+    },
+    "miniGame": "ticTacToe",
+    "x": 0.46,
+    "y": 0.22,
+    "requires": [
+     "de.huckepack.klasse-1-2/huette"
+    ]
+   },
+   {
+    "id": "bienen",
+    "title": {
+     "de": "Bienenstand"
+    },
+    "level": "de.huckepack.klasse-1-2/bienen",
+    "x": 0.66,
+    "y": 0.22,
+    "requires": [
+     "de.huckepack.klasse-1-2/muehle"
+    ]
+   }
+  ],
+  "paths": [
+   [
+    "hof",
+    "stall"
+   ],
+   [
+    "hof",
+    "scheune"
+   ],
+   [
+    "hof",
+    "garten"
+   ],
+   [
+    "hof",
+    "baeckerei"
+   ],
+   [
+    "stall",
+    "huehner"
+   ],
+   [
+    "huehner",
+    "scheune"
+   ],
+   [
+    "scheune",
+    "strasse"
+   ],
+   [
+    "garten",
+    "obstwiese"
+   ],
+   [
+    "obstwiese",
+    "teich"
+   ],
+   [
+    "teich",
+    "muehle"
+   ],
+   [
+    "baeckerei",
+    "laden"
+   ],
+   [
+    "laden",
+    "teich"
+   ],
+   [
+    "baeckerei",
+    "uhrturm"
+   ],
+   [
+    "uhrturm",
+    "strasse"
+   ],
+   [
+    "strasse",
+    "wald"
+   ],
+   [
+    "wald",
+    "huette"
+   ],
+   [
+    "huette",
+    "spielplatz"
+   ],
+   [
+    "spielplatz",
+    "bienen"
+   ],
+   [
+    "bienen",
+    "muehle"
+   ],
+   [
+    "laden",
+    "uhrturm"
+   ],
+   [
+    "huehner",
+    "wald"
+   ]
+  ]
+ },
+ "levels": [
+  {
+   "id": "de.huckepack.klasse-1-2/stall",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Im Kuhstall"
+   },
+   "subject": "mathe",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "stall-1",
+     "skills": [
+      "mathe.zahlen20.plus"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Im Stall stehen 6 Kühe. Dann kommen 3 Kühe dazu."
+     },
+     "prompt": {
+      "de": "Wie viele Kühe sind es jetzt?"
+     },
+     "answer": 9
+    },
+    {
+     "id": "stall-2",
+     "skills": [
+      "mathe.zahlen20.plus"
+     ],
+     "difficulty": 1,
+     "type": "relay",
+     "first": {
+      "de": "Im Stall sind 8 Kälber. 4 Kälber kommen dazu. Wie viele sind es?"
+     },
+     "firstAnswer": 12,
+     "operation": {
+      "op": "add",
+      "operand": 5
+     },
+     "second": {
+      "de": "Jetzt sind {x} Kälber da. Noch 5 kommen dazu. Wie viele sind es?"
+     }
+    },
+    {
+     "id": "stall-3",
+     "skills": [
+      "mathe.zahlen20.plus"
+     ],
+     "difficulty": 2,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Aufgabe passt zu welchem Ergebnis?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "7 + 5"
+       },
+       "right": {
+        "de": "12"
+       }
+      },
+      {
+       "left": {
+        "de": "9 + 6"
+       },
+       "right": {
+        "de": "15"
+       }
+      },
+      {
+       "left": {
+        "de": "8 + 8"
+       },
+       "right": {
+        "de": "16"
+       }
+      },
+      {
+       "left": {
+        "de": "6 + 7"
+       },
+       "right": {
+        "de": "13"
+       }
+      },
+      {
+       "left": {
+        "de": "9 + 9"
+       },
+       "right": {
+        "de": "18"
+       }
+      }
+     ]
+    },
+    {
+     "id": "stall-4",
+     "skills": [
+      "mathe.zahlen20.plus"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was ist 9 + 7?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "16"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "15"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "17"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "stall-5",
+     "skills": [
+      "mathe.zahlen20.plus"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Auf der Weide sind 9 Kühe. Im Stall sind 7 Kühe. Auf dem Hof sind 4 Kühe."
+     },
+     "prompt": {
+      "de": "Wie viele Kühe sind es zusammen?"
+     },
+     "answer": 20
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/stall-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Milch und Eimer"
+   },
+   "subject": "mathe",
+   "grade": 1,
+   "place": "stall",
+   "tasks": [
+    {
+     "id": "stall-2-1",
+     "skills": [
+      "mathe.zahlen20.minus"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Es gibt 10 Eimer. 4 Eimer sind kaputt."
+     },
+     "prompt": {
+      "de": "Wie viele Eimer sind noch ganz?"
+     },
+     "answer": 6
+    },
+    {
+     "id": "stall-2-2",
+     "skills": [
+      "mathe.zahlen20.minus"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Aufgabe passt zu welchem Ergebnis?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "15 − 6"
+       },
+       "right": {
+        "de": "9"
+       }
+      },
+      {
+       "left": {
+        "de": "12 − 5"
+       },
+       "right": {
+        "de": "7"
+       }
+      },
+      {
+       "left": {
+        "de": "14 − 8"
+       },
+       "right": {
+        "de": "6"
+       }
+      },
+      {
+       "left": {
+        "de": "13 − 5"
+       },
+       "right": {
+        "de": "8"
+       }
+      },
+      {
+       "left": {
+        "de": "11 − 6"
+       },
+       "right": {
+        "de": "5"
+       }
+      }
+     ]
+    },
+    {
+     "id": "stall-2-3",
+     "skills": [
+      "mathe.zahlen20.minus"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Die Kühe fressen 9 von 17 Äpfeln. Wie viele Äpfel bleiben?"
+     },
+     "firstAnswer": 8,
+     "operation": {
+      "op": "subtract",
+      "operand": 3
+     },
+     "second": {
+      "de": "Es bleiben {x} Äpfel. Der Bauer nimmt 3 weg. Wie viele sind es noch?"
+     }
+    },
+    {
+     "id": "stall-2-4",
+     "skills": [
+      "mathe.zahlen20.minus"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was ist 16 − 9?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "6"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "7"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "8"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "stall-2-5",
+     "skills": [
+      "mathe.zahlen20.minus"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Im Stall sind 20 Tiere. 6 Kühe gehen raus. 5 Schafe gehen auch raus."
+     },
+     "prompt": {
+      "de": "Wie viele Tiere sind noch im Stall?"
+     },
+     "answer": 9
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/huehner",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Hühnerhof"
+   },
+   "subject": "mathe",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "huehner-1",
+     "skills": [
+      "mathe.zahlen100.zehner"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Im Hühnerhof stehen 4 Kisten. In jeder Kiste sind 10 Eier."
+     },
+     "prompt": {
+      "de": "Wie viele Eier sind es?"
+     },
+     "answer": 40
+    },
+    {
+     "id": "huehner-2",
+     "skills": [
+      "mathe.zahlen100.zehner"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Zahl passt zu welchen Zehnern und Einern?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "3 Zehner und 4 Einer"
+       },
+       "right": {
+        "de": "34"
+       }
+      },
+      {
+       "left": {
+        "de": "5 Zehner und 2 Einer"
+       },
+       "right": {
+        "de": "52"
+       }
+      },
+      {
+       "left": {
+        "de": "2 Zehner und 7 Einer"
+       },
+       "right": {
+        "de": "27"
+       }
+      },
+      {
+       "left": {
+        "de": "6 Zehner und 1 Einer"
+       },
+       "right": {
+        "de": "61"
+       }
+      }
+     ]
+    },
+    {
+     "id": "huehner-3",
+     "skills": [
+      "mathe.zahlen100.zehner"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Es sind 5 Kisten mit je 10 Eiern. Wie viele Eier sind das?"
+     },
+     "firstAnswer": 50,
+     "operation": {
+      "op": "add",
+      "operand": 7
+     },
+     "second": {
+      "de": "Das sind {x} Eier. Dazu kommen noch 7 einzelne Eier. Wie viele Eier sind es?"
+     }
+    },
+    {
+     "id": "huehner-4",
+     "skills": [
+      "mathe.zahlen100.zehner"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welche Zahl hat 6 Zehner und 3 Einer?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "36"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "60"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "63"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "huehner-5",
+     "skills": [
+      "mathe.zahlen100.zehner"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Es sind 7 Kisten mit je 10 Eiern. Dazu kommen 8 einzelne Eier."
+     },
+     "prompt": {
+      "de": "Wie viele Eier sind es?"
+     },
+     "answer": 78
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/huehner-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Hühner zählen"
+   },
+   "subject": "mathe",
+   "grade": 2,
+   "place": "huehner",
+   "tasks": [
+    {
+     "id": "huehner-2-1",
+     "skills": [
+      "mathe.verdoppeln"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Auf dem Zaun sitzen 6 Hühner. Auf dem Boden sind doppelt so viele."
+     },
+     "prompt": {
+      "de": "Wie viele Hühner sind auf dem Boden?"
+     },
+     "answer": 12
+    },
+    {
+     "id": "huehner-2-2",
+     "skills": [
+      "mathe.verdoppeln"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welches Doppelte passt zu welcher Zahl?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Das Doppelte von 4"
+       },
+       "right": {
+        "de": "8"
+       }
+      },
+      {
+       "left": {
+        "de": "Das Doppelte von 7"
+       },
+       "right": {
+        "de": "14"
+       }
+      },
+      {
+       "left": {
+        "de": "Das Doppelte von 9"
+       },
+       "right": {
+        "de": "18"
+       }
+      },
+      {
+       "left": {
+        "de": "Das Doppelte von 10"
+       },
+       "right": {
+        "de": "20"
+       }
+      },
+      {
+       "left": {
+        "de": "Das Doppelte von 6"
+       },
+       "right": {
+        "de": "12"
+       }
+      }
+     ]
+    },
+    {
+     "id": "huehner-2-3",
+     "skills": [
+      "mathe.verdoppeln"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Im Stall sind 9 Hühner. Im Garten sind doppelt so viele. Wie viele sind im Garten?"
+     },
+     "firstAnswer": 18,
+     "operation": {
+      "op": "add",
+      "operand": 9
+     },
+     "second": {
+      "de": "Im Garten sind {x} Hühner. Im Stall sind 9 Hühner. Wie viele Hühner sind es zusammen?"
+     }
+    },
+    {
+     "id": "huehner-2-4",
+     "skills": [
+      "mathe.verdoppeln"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was ist die Hälfte von 18?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "9"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "36"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "8"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "huehner-2-5",
+     "skills": [
+      "mathe.verdoppeln"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Bauer hat 36 Hühner. Die Hälfte davon ist braun."
+     },
+     "prompt": {
+      "de": "Wie viele Hühner sind nicht braun?"
+     },
+     "answer": 18
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/scheune",
+   "schemaVersion": 1,
+   "title": {
+    "de": "In der Scheune"
+   },
+   "subject": "mathe",
+   "grade": 2,
+   "tasks": [
+    {
+     "id": "scheune-1",
+     "skills": [
+      "mathe.rechnen100.plusminus"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "In der Scheune liegen 30 Heuballen. Der Bauer bringt 20 Ballen dazu."
+     },
+     "prompt": {
+      "de": "Wie viele Heuballen sind es jetzt?"
+     },
+     "answer": 50
+    },
+    {
+     "id": "scheune-2",
+     "skills": [
+      "mathe.rechnen100.plusminus"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "In der Scheune sind 45 Säcke. 30 Säcke kommen dazu. Wie viele sind es?"
+     },
+     "firstAnswer": 75,
+     "operation": {
+      "op": "subtract",
+      "operand": 20
+     },
+     "second": {
+      "de": "Es sind {x} Säcke. 20 Säcke gehen zur Mühle. Wie viele bleiben?"
+     }
+    },
+    {
+     "id": "scheune-3",
+     "skills": [
+      "mathe.rechnen100.plusminus"
+     ],
+     "difficulty": 2,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Aufgabe passt zu welchem Ergebnis?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "34 + 25"
+       },
+       "right": {
+        "de": "59"
+       }
+      },
+      {
+       "left": {
+        "de": "47 + 30"
+       },
+       "right": {
+        "de": "77"
+       }
+      },
+      {
+       "left": {
+        "de": "68 − 20"
+       },
+       "right": {
+        "de": "48"
+       }
+      },
+      {
+       "left": {
+        "de": "90 − 35"
+       },
+       "right": {
+        "de": "55"
+       }
+      },
+      {
+       "left": {
+        "de": "56 + 19"
+       },
+       "right": {
+        "de": "75"
+       }
+      }
+     ]
+    },
+    {
+     "id": "scheune-4",
+     "skills": [
+      "mathe.rechnen100.plusminus"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was ist 73 − 40?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "43"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "33"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "23"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "scheune-5",
+     "skills": [
+      "mathe.rechnen100.plusminus"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Zuerst sind 85 Heuballen da. 40 Ballen werden verkauft. 15 Ballen kommen neu dazu."
+     },
+     "prompt": {
+      "de": "Wie viele Ballen sind dann da?"
+     },
+     "answer": 60
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/scheune-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Körbe und Kisten"
+   },
+   "subject": "mathe",
+   "grade": 2,
+   "place": "scheune",
+   "tasks": [
+    {
+     "id": "scheune-2-1",
+     "skills": [
+      "mathe.einmaleins.anfang"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "5 Körbe stehen in der Scheune. In jedem Korb sind 2 Äpfel."
+     },
+     "prompt": {
+      "de": "Wie viele Äpfel sind es?"
+     },
+     "answer": 10
+    },
+    {
+     "id": "scheune-2-2",
+     "skills": [
+      "mathe.einmaleins.anfang"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Malaufgabe passt zu welchem Ergebnis?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "2 · 4"
+       },
+       "right": {
+        "de": "8"
+       }
+      },
+      {
+       "left": {
+        "de": "5 · 3"
+       },
+       "right": {
+        "de": "15"
+       }
+      },
+      {
+       "left": {
+        "de": "10 · 6"
+       },
+       "right": {
+        "de": "60"
+       }
+      },
+      {
+       "left": {
+        "de": "5 · 7"
+       },
+       "right": {
+        "de": "35"
+       }
+      },
+      {
+       "left": {
+        "de": "2 · 9"
+       },
+       "right": {
+        "de": "18"
+       }
+      }
+     ]
+    },
+    {
+     "id": "scheune-2-3",
+     "skills": [
+      "mathe.einmaleins.anfang"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Es stehen 3 Körbe mit je 5 Eiern da. Wie viele Eier sind das?"
+     },
+     "firstAnswer": 15,
+     "operation": {
+      "op": "multiply",
+      "operand": 2
+     },
+     "second": {
+      "de": "Das sind {x} Eier. Im Stall sind doppelt so viele Eier. Wie viele Eier sind im Stall?"
+     }
+    },
+    {
+     "id": "scheune-2-4",
+     "skills": [
+      "mathe.einmaleins.anfang"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welche Aufgabe passt zu 5 + 5 + 5 + 5?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "5 · 5"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "4 + 5"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "4 · 5"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "scheune-2-5",
+     "skills": [
+      "mathe.einmaleins.anfang"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Auf dem Hof sind 6 Zäune. Jeder Zaun hat 10 Latten. 5 Latten sind kaputt."
+     },
+     "prompt": {
+      "de": "Wie viele Latten sind noch ganz?"
+     },
+     "answer": 55
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/muehle",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Die Mühle"
+   },
+   "subject": "mathe",
+   "grade": 2,
+   "tasks": [
+    {
+     "id": "muehle-1",
+     "skills": [
+      "mathe.zahlen100.nachbarn"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Auf dem Mühlstein steht die Zahl 47."
+     },
+     "prompt": {
+      "de": "Welche Zahl kommt direkt danach?"
+     },
+     "answer": 48
+    },
+    {
+     "id": "muehle-2",
+     "skills": [
+      "mathe.zahlen100.nachbarn"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Nachbarzahl passt?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Vorgänger von 30"
+       },
+       "right": {
+        "de": "29"
+       }
+      },
+      {
+       "left": {
+        "de": "Nachfolger von 59"
+       },
+       "right": {
+        "de": "60"
+       }
+      },
+      {
+       "left": {
+        "de": "Vorgänger von 71"
+       },
+       "right": {
+        "de": "70"
+       }
+      },
+      {
+       "left": {
+        "de": "Nachfolger von 89"
+       },
+       "right": {
+        "de": "90"
+       }
+      },
+      {
+       "left": {
+        "de": "Nachfolger von 38"
+       },
+       "right": {
+        "de": "39"
+       }
+      }
+     ]
+    },
+    {
+     "id": "muehle-3",
+     "skills": [
+      "mathe.zahlen100.nachbarn"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Auf dem Wagen liegen 69 Säcke. Noch 1 Sack kommt dazu. Wie viele Säcke sind es?"
+     },
+     "firstAnswer": 70,
+     "operation": {
+      "op": "add",
+      "operand": 10
+     },
+     "second": {
+      "de": "Es sind {x} Säcke. Noch 10 Säcke kommen dazu. Wie viele sind es?"
+     }
+    },
+    {
+     "id": "muehle-4",
+     "skills": [
+      "mathe.zahlen100.nachbarn"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welche Zahl ist die größte? Schaut auf die Zehner."
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "85"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "58"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "48"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "muehle-5",
+     "skills": [
+      "mathe.zahlen100.nachbarn"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Eine Zahl hat 7 Zehner und 3 Einer."
+     },
+     "prompt": {
+      "de": "Welche Zahl kommt direkt davor?"
+     },
+     "answer": 72
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/muehle-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Mehl und Säcke"
+   },
+   "subject": "mathe",
+   "grade": 2,
+   "place": "muehle",
+   "tasks": [
+    {
+     "id": "muehle-2-1",
+     "skills": [
+      "mathe.zahlen100.ergaenzen"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Auf dem Etikett steht 60. Der Müller braucht 100."
+     },
+     "prompt": {
+      "de": "Wie viele fehlen bis 100?"
+     },
+     "answer": 40
+    },
+    {
+     "id": "muehle-2-2",
+     "skills": [
+      "mathe.zahlen100.ergaenzen"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Wie viel fehlt bis 100?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "70 + ? = 100"
+       },
+       "right": {
+        "de": "30"
+       }
+      },
+      {
+       "left": {
+        "de": "45 + ? = 100"
+       },
+       "right": {
+        "de": "55"
+       }
+      },
+      {
+       "left": {
+        "de": "80 + ? = 100"
+       },
+       "right": {
+        "de": "20"
+       }
+      },
+      {
+       "left": {
+        "de": "25 + ? = 100"
+       },
+       "right": {
+        "de": "75"
+       }
+      },
+      {
+       "left": {
+        "de": "90 + ? = 100"
+       },
+       "right": {
+        "de": "10"
+       }
+      }
+     ]
+    },
+    {
+     "id": "muehle-2-3",
+     "skills": [
+      "mathe.zahlen100.ergaenzen"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Der Müller hat 38 Säcke. Er braucht 50 Säcke. Wie viele fehlen?"
+     },
+     "firstAnswer": 12,
+     "operation": {
+      "op": "add",
+      "operand": 5
+     },
+     "second": {
+      "de": "Es fehlen {x} Säcke. Der Müller bestellt 5 Säcke mehr. Wie viele bestellt er?"
+     }
+    },
+    {
+     "id": "muehle-2-4",
+     "skills": [
+      "mathe.zahlen100.ergaenzen"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was ist 48 + 7?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "54"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "55"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "45"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "muehle-2-5",
+     "skills": [
+      "mathe.zahlen100.ergaenzen"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "In der Mühle sind 56 Säcke. Am Morgen kommen 27 Säcke dazu."
+     },
+     "prompt": {
+      "de": "Wie viele Säcke sind es dann?"
+     },
+     "answer": 83
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/uhrturm",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Uhrenturm"
+   },
+   "subject": "zeit-geld",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "uhrturm-1",
+     "skills": [
+      "zeit-geld.uhr.volle-stunde"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Du siehst die Uhr am Turm. Sag deinem Partner, wo der kleine und der große Zeiger stehen."
+     },
+     "prompt": {
+      "de": "Wie viel Uhr ist es? Tippt die Zahl: Es ist … Uhr."
+     },
+     "answer": 9,
+     "clueVisual": {
+      "clock": {
+       "hour": 9,
+       "minute": 0
+      }
+     }
+    },
+    {
+     "id": "uhrturm-2",
+     "skills": [
+      "zeit-geld.uhr.volle-stunde"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Uhr passt zu welcher Uhrzeit?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Uhr A"
+       },
+       "right": {
+        "de": "2 Uhr"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Uhr B"
+       },
+       "right": {
+        "de": "5 Uhr"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 5,
+         "minute": 0
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Uhr C"
+       },
+       "right": {
+        "de": "7 Uhr"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 7,
+         "minute": 0
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Uhr D"
+       },
+       "right": {
+        "de": "10 Uhr"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 10,
+         "minute": 0
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "uhrturm-3",
+     "skills": [
+      "zeit-geld.uhr.volle-stunde"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "de": "Wie viel Uhr ist es?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "12 Uhr"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "3 Uhr"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "6 Uhr"
+       }
+      }
+     ],
+     "correct": "c",
+     "questionVisual": {
+      "clock": {
+       "hour": 6,
+       "minute": 0
+      }
+     }
+    },
+    {
+     "id": "uhrturm-4",
+     "skills": [
+      "zeit-geld.uhr.volle-stunde"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Der Bauer steht um 5 Uhr auf. Nach 2 Stunden frühstückt er. Um wie viel Uhr frühstückt er?"
+     },
+     "firstAnswer": 7,
+     "operation": {
+      "op": "add",
+      "operand": 1
+     },
+     "second": {
+      "de": "Er frühstückt um {x} Uhr. Eine Stunde später melkt er die Kühe. Um wie viel Uhr melkt er?"
+     }
+    },
+    {
+     "id": "uhrturm-5",
+     "skills": [
+      "zeit-geld.uhr.volle-stunde"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Das ist die Uhr am Turm. Der Bus kommt 3 Stunden später."
+     },
+     "prompt": {
+      "de": "Um wie viel Uhr kommt der Bus? Tippt die Zahl: Er kommt um … Uhr."
+     },
+     "answer": 5,
+     "clueVisual": {
+      "clock": {
+       "hour": 2,
+       "minute": 0
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/uhrturm-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Halb und halb"
+   },
+   "subject": "zeit-geld",
+   "grade": 2,
+   "place": "uhrturm",
+   "tasks": [
+    {
+     "id": "uhrturm-2-1",
+     "skills": [
+      "zeit-geld.uhr.halbe-stunde"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Du siehst die Uhr am Turm. Es ist morgens. Sag deinem Partner, wie spät es ist."
+     },
+     "prompt": {
+      "de": "Wie viel Uhr ist es? Tippt die Uhrzeit."
+     },
+     "answer": 450,
+     "clueVisual": {
+      "clock": {
+       "hour": 7,
+       "minute": 30
+      }
+     },
+     "answerFormat": "time"
+    },
+    {
+     "id": "uhrturm-2-2",
+     "skills": [
+      "zeit-geld.uhr.halbe-stunde"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Uhr passt zu welcher Uhrzeit?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Uhr A"
+       },
+       "right": {
+        "de": "halb vier"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 3,
+         "minute": 30
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Uhr B"
+       },
+       "right": {
+        "de": "halb sieben"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 6,
+         "minute": 30
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Uhr C"
+       },
+       "right": {
+        "de": "halb zehn"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 9,
+         "minute": 30
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Uhr D"
+       },
+       "right": {
+        "de": "halb neun"
+       },
+       "leftVisual": {
+        "clock": {
+         "hour": 8,
+         "minute": 30
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "uhrturm-2-3",
+     "skills": [
+      "zeit-geld.uhr.halbe-stunde"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Wie spät ist es?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "halb sechs"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "halb fünf"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "fünf Uhr"
+       }
+      }
+     ],
+     "correct": "a",
+     "questionVisual": {
+      "digitalClock": {
+       "hour": 5,
+       "minute": 30
+      }
+     }
+    },
+    {
+     "id": "uhrturm-2-4",
+     "skills": [
+      "zeit-geld.uhr.halbe-stunde"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Der Hahn kräht um 6:30 Uhr. Eine halbe Stunde später steht der Bauer auf. Wann steht er auf?"
+     },
+     "firstAnswer": 420,
+     "operation": {
+      "op": "add",
+      "operand": 30
+     },
+     "second": {
+      "de": "Er steht um {x} auf. Eine halbe Stunde später melkt er. Wann melkt er?"
+     },
+     "answerFormat": "time"
+    },
+    {
+     "id": "uhrturm-2-5",
+     "skills": [
+      "zeit-geld.uhr.halbe-stunde"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Film beginnt um halb vier nachmittags. Er dauert 1 Stunde."
+     },
+     "prompt": {
+      "de": "Wann ist der Film zu Ende? Tippt die Uhrzeit."
+     },
+     "answer": 990,
+     "answerFormat": "time"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/laden",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Dorfladen"
+   },
+   "subject": "zeit-geld",
+   "grade": 2,
+   "tasks": [
+    {
+     "id": "laden-1",
+     "skills": [
+      "zeit-geld.geld.zaehlen"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Du siehst das Geld im Portemonnaie. Sag deinem Partner, welche Münzen es sind."
+     },
+     "prompt": {
+      "de": "Wie viel Geld ist das? Tippt den Betrag."
+     },
+     "answer": 350,
+     "clueVisual": {
+      "money": {
+       "cents": [
+        200,
+        100,
+        50
+       ]
+      }
+     },
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "laden-2",
+     "skills": [
+      "zeit-geld.geld.zaehlen"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welches Geld passt zu welchem Betrag?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Geld A"
+       },
+       "right": {
+        "de": "2,50 €"
+       },
+       "leftVisual": {
+        "money": {
+         "cents": [
+          200,
+          50
+         ]
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Geld B"
+       },
+       "right": {
+        "de": "1,25 €"
+       },
+       "leftVisual": {
+        "money": {
+         "cents": [
+          100,
+          20,
+          5
+         ]
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Geld C"
+       },
+       "right": {
+        "de": "6,00 €"
+       },
+       "leftVisual": {
+        "money": {
+         "cents": [
+          500,
+          100
+         ]
+        }
+       }
+      },
+      {
+       "left": {
+        "de": "Geld D"
+       },
+       "right": {
+        "de": "0,80 €"
+       },
+       "leftVisual": {
+        "money": {
+         "cents": [
+          50,
+          20,
+          10
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "laden-3",
+     "skills": [
+      "zeit-geld.geld.zaehlen"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Ein Apfel kostet 40 Cent. Ihr kauft 3 Äpfel. Wie viel kosten sie?"
+     },
+     "firstAnswer": 120,
+     "operation": {
+      "op": "add",
+      "operand": 80
+     },
+     "second": {
+      "de": "Die Äpfel kosten {x}. Ein Brot kostet 80 Cent. Wie viel kostet alles zusammen?"
+     },
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "laden-4",
+     "skills": [
+      "zeit-geld.geld.zaehlen"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Wie viel Geld ist das?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "4,06 €"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "4,60 €"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "6,40 €"
+       }
+      }
+     ],
+     "correct": "b",
+     "questionVisual": {
+      "money": {
+       "cents": [
+        200,
+        200,
+        50,
+        10
+       ]
+      }
+     }
+    },
+    {
+     "id": "laden-5",
+     "skills": [
+      "zeit-geld.geld.zaehlen"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Eine Milch kostet 90 Cent. Ein Brot kostet 1,10 €."
+     },
+     "prompt": {
+      "de": "Wie viel kosten Milch und Brot zusammen?"
+     },
+     "answer": 200,
+     "answerFormat": "euroCents"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/laden-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Wechselgeld"
+   },
+   "subject": "zeit-geld",
+   "grade": 2,
+   "place": "laden",
+   "tasks": [
+    {
+     "id": "laden-2-1",
+     "skills": [
+      "zeit-geld.geld.wechselgeld"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Ein Ball kostet 2 €. Du gibst dem Verkäufer 5 €."
+     },
+     "prompt": {
+      "de": "Wie viel Wechselgeld bekommst du?"
+     },
+     "answer": 300,
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "laden-2-2",
+     "skills": [
+      "zeit-geld.geld.wechselgeld"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Das Brot kostet 1,40 €. Ihr zahlt mit 2 €. Wie viel Wechselgeld bekommt ihr?"
+     },
+     "firstAnswer": 60,
+     "operation": {
+      "op": "subtract",
+      "operand": 20
+     },
+     "second": {
+      "de": "Ihr bekommt {x} zurück. Dann kauft ihr ein Bonbon für 20 Cent. Wie viel Geld bleibt?"
+     },
+     "answerFormat": "euroCents"
+    },
+    {
+     "id": "laden-2-3",
+     "skills": [
+      "zeit-geld.geld.wechselgeld"
+     ],
+     "difficulty": 2,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welcher Einkauf passt zu welchem Wechselgeld?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Preis 60 Cent, bezahlt 1 €"
+       },
+       "right": {
+        "de": "40 Cent"
+       }
+      },
+      {
+       "left": {
+        "de": "Preis 1,50 €, bezahlt 2 €"
+       },
+       "right": {
+        "de": "50 Cent"
+       }
+      },
+      {
+       "left": {
+        "de": "Preis 3 €, bezahlt 5 €"
+       },
+       "right": {
+        "de": "2 €"
+       }
+      },
+      {
+       "left": {
+        "de": "Preis 80 Cent, bezahlt 1 €"
+       },
+       "right": {
+        "de": "20 Cent"
+       }
+      },
+      {
+       "left": {
+        "de": "Preis 7 €, bezahlt 10 €"
+       },
+       "right": {
+        "de": "3 €"
+       }
+      }
+     ]
+    },
+    {
+     "id": "laden-2-4",
+     "skills": [
+      "zeit-geld.geld.wechselgeld"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Der Saft kostet 3 €. Du zahlst mit einem 5-Euro-Schein. Wie viel Wechselgeld bekommst du?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "3 €"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "8 €"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "2 €"
+       }
+      }
+     ],
+     "correct": "c",
+     "questionVisual": {
+      "money": {
+       "cents": [
+        500
+       ]
+      }
+     }
+    },
+    {
+     "id": "laden-2-5",
+     "skills": [
+      "zeit-geld.geld.wechselgeld"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Du hast 10 €. Du kaufst Käse für 4 € und Butter für 2 €."
+     },
+     "prompt": {
+      "de": "Wie viel Geld hast du noch?"
+     },
+     "answer": 400,
+     "answerFormat": "euroCents"
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/obstwiese",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Die Obstwiese"
+   },
+   "subject": "deutsch",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "obstwiese-1",
+     "skills": [
+      "deutsch.laute.anlaute"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Das Wort ist: BIRNE."
+     },
+     "prompt": {
+      "de": "Wie viele Buchstaben hat das Wort?"
+     },
+     "answer": 5
+    },
+    {
+     "id": "obstwiese-2",
+     "skills": [
+      "deutsch.laute.anlaute"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Mit welchem Buchstaben beginnt das Wort?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Apfel"
+       },
+       "right": {
+        "de": "A"
+       }
+      },
+      {
+       "left": {
+        "de": "Birne"
+       },
+       "right": {
+        "de": "B"
+       }
+      },
+      {
+       "left": {
+        "de": "Nuss"
+       },
+       "right": {
+        "de": "N"
+       }
+      },
+      {
+       "left": {
+        "de": "Kirsche"
+       },
+       "right": {
+        "de": "K"
+       }
+      },
+      {
+       "left": {
+        "de": "Pflaume"
+       },
+       "right": {
+        "de": "P"
+       }
+      }
+     ]
+    },
+    {
+     "id": "obstwiese-3",
+     "skills": [
+      "deutsch.laute.anlaute"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "de": "Mit welchem Laut beginnt das Wort Erdbeere?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "E"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "R"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "B"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "obstwiese-4",
+     "skills": [
+      "deutsch.laute.anlaute"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Wie viele Buchstaben hat das Wort Apfel?"
+     },
+     "firstAnswer": 5,
+     "operation": {
+      "op": "add",
+      "operand": 4
+     },
+     "second": {
+      "de": "Apfel hat {x} Buchstaben. Baum hat 4 Buchstaben. Wie viele Buchstaben hat das Wort Apfelbaum?"
+     }
+    },
+    {
+     "id": "obstwiese-5",
+     "skills": [
+      "deutsch.laute.anlaute"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Das Wort ist: SCHAF. Sch ist ein Laut."
+     },
+     "prompt": {
+      "de": "Wie viele Laute hat das Wort?"
+     },
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/obstwiese-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Silben klatschen"
+   },
+   "subject": "deutsch",
+   "grade": 1,
+   "place": "obstwiese",
+   "tasks": [
+    {
+     "id": "obstwiese-2-1",
+     "skills": [
+      "deutsch.silben"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Das Wort ist: Banane."
+     },
+     "prompt": {
+      "de": "Wie viele Silben hat das Wort? Klatscht mit."
+     },
+     "answer": 3
+    },
+    {
+     "id": "obstwiese-2-2",
+     "skills": [
+      "deutsch.silben"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Wie viele Silben hat das Wort?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Baum"
+       },
+       "right": {
+        "de": "1 Silbe"
+       }
+      },
+      {
+       "left": {
+        "de": "Apfel"
+       },
+       "right": {
+        "de": "2 Silben"
+       }
+      },
+      {
+       "left": {
+        "de": "Banane"
+       },
+       "right": {
+        "de": "3 Silben"
+       }
+      },
+      {
+       "left": {
+        "de": "Marienkäfer"
+       },
+       "right": {
+        "de": "5 Silben"
+       }
+      }
+     ]
+    },
+    {
+     "id": "obstwiese-2-3",
+     "skills": [
+      "deutsch.silben"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welches Wort hat 3 Silben?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Pflaume"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Erdbeere"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Nuss"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "obstwiese-2-4",
+     "skills": [
+      "deutsch.silben"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Wie viele Silben hat das Wort Traktor?"
+     },
+     "firstAnswer": 2,
+     "operation": {
+      "op": "multiply",
+      "operand": 3
+     },
+     "second": {
+      "de": "Traktor hat {x} Silben. Ihr sagt das Wort 3 Mal. Wie viele Silben sprecht ihr insgesamt?"
+     }
+    },
+    {
+     "id": "obstwiese-2-5",
+     "skills": [
+      "deutsch.silben"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Wörter sind: Hase, Igel, Schmetterling."
+     },
+     "prompt": {
+      "de": "Wie viele Silben haben alle drei Wörter zusammen?"
+     },
+     "answer": 7
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/baeckerei",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Die Bäckerei"
+   },
+   "subject": "deutsch",
+   "grade": 2,
+   "tasks": [
+    {
+     "id": "baeckerei-1",
+     "skills": [
+      "deutsch.nomen"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Satz heißt: Der Bäcker backt Brot und Brötchen."
+     },
+     "prompt": {
+      "de": "Wie viele Nomen sind im Satz?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "baeckerei-2",
+     "skills": [
+      "deutsch.nomen"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Wortart passt zu welchem Wort?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Brot"
+       },
+       "right": {
+        "de": "Nomen"
+       }
+      },
+      {
+       "left": {
+        "de": "backen"
+       },
+       "right": {
+        "de": "Verb"
+       }
+      },
+      {
+       "left": {
+        "de": "knusprig"
+       },
+       "right": {
+        "de": "Adjektiv"
+       }
+      },
+      {
+       "left": {
+        "de": "der"
+       },
+       "right": {
+        "de": "Artikel"
+       }
+      }
+     ]
+    },
+    {
+     "id": "baeckerei-3",
+     "skills": [
+      "deutsch.nomen"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welcher Satz ist richtig geschrieben?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Der bäcker hat einen Ofen."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Der Bäcker hat einen ofen."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Der Bäcker hat einen Ofen."
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "baeckerei-4",
+     "skills": [
+      "deutsch.nomen"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Im Satz Die Katze trinkt Milch: Wie viele Nomen sind es?"
+     },
+     "firstAnswer": 2,
+     "operation": {
+      "op": "multiply",
+      "operand": 3
+     },
+     "second": {
+      "de": "Der Satz hat {x} Nomen. Ihr schreibt ihn 3 Mal auf. Wie viele Nomen schreibt ihr insgesamt?"
+     }
+    },
+    {
+     "id": "baeckerei-5",
+     "skills": [
+      "deutsch.nomen"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Wörter sind: Tisch, laufen, Brot, rot, Messer, Ofen."
+     },
+     "prompt": {
+      "de": "Wie viele Wörter davon schreibt man groß?"
+     },
+     "answer": 4
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/baeckerei-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Backstube"
+   },
+   "subject": "deutsch",
+   "grade": 2,
+   "place": "baeckerei",
+   "tasks": [
+    {
+     "id": "baeckerei-2-1",
+     "skills": [
+      "deutsch.rechtschreibung"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Das Wort ist: Semmel. Du zählst das m."
+     },
+     "prompt": {
+      "de": "Wie oft steht das m im Wort?"
+     },
+     "answer": 2
+    },
+    {
+     "id": "baeckerei-2-2",
+     "skills": [
+      "deutsch.rechtschreibung"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Wortteile gehören zusammen?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Bä"
+       },
+       "right": {
+        "de": "cker"
+       }
+      },
+      {
+       "left": {
+        "de": "Bröt"
+       },
+       "right": {
+        "de": "chen"
+       }
+      },
+      {
+       "left": {
+        "de": "Sem"
+       },
+       "right": {
+        "de": "mel"
+       }
+      },
+      {
+       "left": {
+        "de": "Mü"
+       },
+       "right": {
+        "de": "hle"
+       }
+      }
+     ]
+    },
+    {
+     "id": "baeckerei-2-3",
+     "skills": [
+      "deutsch.rechtschreibung"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welches Wort ist richtig geschrieben?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Brötchen"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Brötschen"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Brödchen"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "baeckerei-2-4",
+     "skills": [
+      "deutsch.rechtschreibung"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Wie viele Buchstaben hat das Wort Brötchen?"
+     },
+     "firstAnswer": 8,
+     "operation": {
+      "op": "subtract",
+      "operand": 2
+     },
+     "second": {
+      "de": "Brötchen hat {x} Buchstaben. Kuchen hat 2 Buchstaben weniger. Wie viele hat Kuchen?"
+     }
+    },
+    {
+     "id": "baeckerei-2-5",
+     "skills": [
+      "deutsch.rechtschreibung"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Wörter sind: Kuchen, Semmel, Mutter, Brot, Butter, Mehl."
+     },
+     "prompt": {
+      "de": "Wie viele Wörter haben zwei gleiche Mitlaute hintereinander?"
+     },
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/bienen",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Bienenstand"
+   },
+   "subject": "deutsch",
+   "grade": 2,
+   "tasks": [
+    {
+     "id": "bienen-1",
+     "skills": [
+      "deutsch.saetze"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Satz ist: Die Biene fliegt zur Blume."
+     },
+     "prompt": {
+      "de": "Wie viele Wörter hat der Satz?"
+     },
+     "answer": 5
+    },
+    {
+     "id": "bienen-2",
+     "skills": [
+      "deutsch.saetze"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Gegenteile gehören zusammen?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "groß"
+       },
+       "right": {
+        "de": "klein"
+       }
+      },
+      {
+       "left": {
+        "de": "warm"
+       },
+       "right": {
+        "de": "kalt"
+       }
+      },
+      {
+       "left": {
+        "de": "laut"
+       },
+       "right": {
+        "de": "leise"
+       }
+      },
+      {
+       "left": {
+        "de": "hell"
+       },
+       "right": {
+        "de": "dunkel"
+       }
+      },
+      {
+       "left": {
+        "de": "süß"
+       },
+       "right": {
+        "de": "sauer"
+       }
+      }
+     ]
+    },
+    {
+     "id": "bienen-3",
+     "skills": [
+      "deutsch.saetze"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welcher Satz ist richtig aufgeschrieben?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "die Bienen summen."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Die Bienen summen."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Die bienen summen."
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "bienen-4",
+     "skills": [
+      "deutsch.saetze"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Im Satz Die Bienen sammeln Honig: Wie viele Wörter sind es?"
+     },
+     "firstAnswer": 4,
+     "operation": {
+      "op": "multiply",
+      "operand": 2
+     },
+     "second": {
+      "de": "Der Satz hat {x} Wörter. Der Imker schreibt ihn 2 Mal auf. Wie viele Wörter schreibt er?"
+     }
+    },
+    {
+     "id": "bienen-5",
+     "skills": [
+      "deutsch.saetze"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Wörter sind: summen, Biene, süß, Honig, fliegen, Blume."
+     },
+     "prompt": {
+      "de": "Wie viele davon sind Verben (Tunwörter)?"
+     },
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/bienen-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Reime und Wörter"
+   },
+   "subject": "deutsch",
+   "grade": 2,
+   "place": "bienen",
+   "tasks": [
+    {
+     "id": "bienen-2-1",
+     "skills": [
+      "deutsch.wortarten"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Das Wort ist: Biene. Ihr sagt die Buchstaben der Reihe nach."
+     },
+     "prompt": {
+      "de": "Der wievielte Buchstabe ist das N?"
+     },
+     "answer": 4
+    },
+    {
+     "id": "bienen-2-2",
+     "skills": [
+      "deutsch.wortarten"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Wörter reimen sich?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Haus"
+       },
+       "right": {
+        "de": "Maus"
+       }
+      },
+      {
+       "left": {
+        "de": "Hose"
+       },
+       "right": {
+        "de": "Rose"
+       }
+      },
+      {
+       "left": {
+        "de": "Baum"
+       },
+       "right": {
+        "de": "Traum"
+       }
+      },
+      {
+       "left": {
+        "de": "Hand"
+       },
+       "right": {
+        "de": "Sand"
+       }
+      },
+      {
+       "left": {
+        "de": "Katze"
+       },
+       "right": {
+        "de": "Tatze"
+       }
+      }
+     ]
+    },
+    {
+     "id": "bienen-2-3",
+     "skills": [
+      "deutsch.wortarten"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welches Wort ist ein Adjektiv (Wiewort)?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Honig"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "summen"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "süß"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "bienen-2-4",
+     "skills": [
+      "deutsch.wortarten"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Wie viele Buchstaben hat das Wort Honig?"
+     },
+     "firstAnswer": 5,
+     "operation": {
+      "op": "add",
+      "operand": 4
+     },
+     "second": {
+      "de": "Honig hat {x} Buchstaben. Brot hat 4 Buchstaben. Wie viele Buchstaben hat das Wort Honigbrot?"
+     }
+    },
+    {
+     "id": "bienen-2-5",
+     "skills": [
+      "deutsch.wortarten"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Wörter sind: hell, Sonne, singen, lang, springen, Wiese, rot."
+     },
+     "prompt": {
+      "de": "Wie viele davon sind Adjektive (Wiewörter)?"
+     },
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/garten",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Gemüsegarten"
+   },
+   "subject": "sachunterricht",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "garten-1",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Es gibt 4 Jahreszeiten. Zuerst kommt der Frühling. Dann kommen Sommer, Herbst und Winter."
+     },
+     "prompt": {
+      "de": "Der Sommer ist die wievielte Jahreszeit?"
+     },
+     "answer": 2
+    },
+    {
+     "id": "garten-2",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Jahreszeit passt?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Frühling"
+       },
+       "right": {
+        "de": "Die Blumen blühen auf."
+       }
+      },
+      {
+       "left": {
+        "de": "Sommer"
+       },
+       "right": {
+        "de": "Es ist heiß. Wir baden."
+       }
+      },
+      {
+       "left": {
+        "de": "Herbst"
+       },
+       "right": {
+        "de": "Die Blätter werden bunt."
+       }
+      },
+      {
+       "left": {
+        "de": "Winter"
+       },
+       "right": {
+        "de": "Es schneit."
+       }
+      }
+     ]
+    },
+    {
+     "id": "garten-3",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "de": "Wann werden meistens die Äpfel geerntet?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "im Herbst"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "im Frühling"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "im Winter"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "garten-4",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Wie viele Monate hat ein Jahr?"
+     },
+     "firstAnswer": 12,
+     "operation": {
+      "op": "divide",
+      "operand": 4
+     },
+     "second": {
+      "de": "Ein Jahr hat {x} Monate. Man teilt das Jahr in 4 gleich lange Jahreszeiten. Wie viele Monate hat eine Jahreszeit?"
+     }
+    },
+    {
+     "id": "garten-5",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Monate sind: Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember."
+     },
+     "prompt": {
+      "de": "Der wievielte Monat ist der Oktober?"
+     },
+     "answer": 10
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/garten-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Im Beet"
+   },
+   "subject": "sachunterricht",
+   "grade": 1,
+   "place": "garten",
+   "tasks": [
+    {
+     "id": "garten-2-1",
+     "skills": [
+      "sachunterricht.pflanzen"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Eine Blume hat vier Teile: Wurzel, Stängel, Blatt und Blüte."
+     },
+     "prompt": {
+      "de": "Wie viele Teile hat die Blume?"
+     },
+     "answer": 4
+    },
+    {
+     "id": "garten-2-2",
+     "skills": [
+      "sachunterricht.pflanzen"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welcher Pflanzenteil macht was?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Wurzel"
+       },
+       "right": {
+        "de": "trinkt Wasser"
+       }
+      },
+      {
+       "left": {
+        "de": "Blatt"
+       },
+       "right": {
+        "de": "fängt Licht"
+       }
+      },
+      {
+       "left": {
+        "de": "Stängel"
+       },
+       "right": {
+        "de": "trägt die Pflanze"
+       }
+      },
+      {
+       "left": {
+        "de": "Blüte"
+       },
+       "right": {
+        "de": "lockt die Bienen an"
+       }
+      }
+     ]
+    },
+    {
+     "id": "garten-2-3",
+     "skills": [
+      "sachunterricht.pflanzen"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was essen wir von der Möhre?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "die Blüte"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "die Wurzel"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "das Blatt"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "garten-2-4",
+     "skills": [
+      "sachunterricht.pflanzen"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Im Beet sind 3 Reihen Salat. In jeder Reihe sind 5 Pflanzen. Wie viele Pflanzen sind das?"
+     },
+     "firstAnswer": 15,
+     "operation": {
+      "op": "subtract",
+      "operand": 4
+     },
+     "second": {
+      "de": "Es sind {x} Salatpflanzen. Schnecken fressen 4 Pflanzen. Wie viele bleiben?"
+     }
+    },
+    {
+     "id": "garten-2-5",
+     "skills": [
+      "sachunterricht.pflanzen"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Im Beet wachsen: Möhre, Kartoffel, Tomate, Radieschen, Gurke. Möhre, Kartoffel und Radieschen wachsen unter der Erde."
+     },
+     "prompt": {
+      "de": "Wie viele Pflanzen wachsen nicht unter der Erde?"
+     },
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/teich",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Teich"
+   },
+   "subject": "sachunterricht",
+   "grade": 2,
+   "tasks": [
+    {
+     "id": "teich-1",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Am Teich sitzen 3 Frösche. 2 Enten schwimmen. 4 Fische sind im Wasser."
+     },
+     "prompt": {
+      "de": "Wie viele Tiere sind es zusammen?"
+     },
+     "answer": 9
+    },
+    {
+     "id": "teich-2",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welches Tier passt?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Frosch"
+       },
+       "right": {
+        "de": "hüpft und quakt"
+       }
+      },
+      {
+       "left": {
+        "de": "Ente"
+       },
+       "right": {
+        "de": "hat Federn und Schwimmfüße"
+       }
+      },
+      {
+       "left": {
+        "de": "Fisch"
+       },
+       "right": {
+        "de": "atmet mit Kiemen"
+       }
+      },
+      {
+       "left": {
+        "de": "Libelle"
+       },
+       "right": {
+        "de": "hat vier Flügel"
+       }
+      }
+     ]
+    },
+    {
+     "id": "teich-3",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Wie heißt das Baby vom Frosch?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Küken"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Raupe"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Kaulquappe"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "teich-4",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Zwei Enten haben je 7 Küken. Wie viele Küken sind das?"
+     },
+     "firstAnswer": 14,
+     "operation": {
+      "op": "subtract",
+      "operand": 5
+     },
+     "second": {
+      "de": "Es sind {x} Küken. 5 Küken schlafen. Wie viele Küken sind wach?"
+     }
+    },
+    {
+     "id": "teich-5",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Ein Frosch hat 4 Beine. Am Teich sind 6 Frösche."
+     },
+     "prompt": {
+      "de": "Wie viele Froschbeine sind das?"
+     },
+     "answer": 24
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/teich-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Wasser, Eis und Dampf"
+   },
+   "subject": "sachunterricht",
+   "grade": 2,
+   "place": "teich",
+   "tasks": [
+    {
+     "id": "teich-2-1",
+     "skills": [
+      "sachunterricht.wasser"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Wasser kann Eis sein, flüssiges Wasser oder Dampf."
+     },
+     "prompt": {
+      "de": "Wie viele Formen hat Wasser?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "teich-2-2",
+     "skills": [
+      "sachunterricht.wasser"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welche Form von Wasser passt?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Eis"
+       },
+       "right": {
+        "de": "hart und glatt"
+       }
+      },
+      {
+       "left": {
+        "de": "Wasser im Teich"
+       },
+       "right": {
+        "de": "flüssig"
+       }
+      },
+      {
+       "left": {
+        "de": "Dampf"
+       },
+       "right": {
+        "de": "steigt nach oben"
+       }
+      },
+      {
+       "left": {
+        "de": "Schnee"
+       },
+       "right": {
+        "de": "fällt als weiße Flocken"
+       }
+      }
+     ]
+    },
+    {
+     "id": "teich-2-3",
+     "skills": [
+      "sachunterricht.wasser"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was schwimmt auf dem Wasser?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "ein Holzbrett"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "ein Stein"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "ein Schlüssel"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "teich-2-4",
+     "skills": [
+      "sachunterricht.wasser"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Das Wasser im Teich hat 7 Grad. Es wird 4 Grad kälter. Wie viele Grad hat es dann?"
+     },
+     "firstAnswer": 3,
+     "operation": {
+      "op": "subtract",
+      "operand": 3
+     },
+     "second": {
+      "de": "Das Wasser hat {x} Grad. Es wird noch 3 Grad kälter. Wie viele Grad hat es dann?"
+     }
+    },
+    {
+     "id": "teich-2-5",
+     "skills": [
+      "sachunterricht.wasser"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Teich ist im Dezember, Januar und Februar zugefroren."
+     },
+     "prompt": {
+      "de": "Wie viele Monate ist der Teich zugefroren?"
+     },
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/strasse",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Die Dorfstraße"
+   },
+   "subject": "sachunterricht",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "strasse-1",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Ampel hat 3 Lichter: rot, gelb und grün."
+     },
+     "prompt": {
+      "de": "Wie viele Lichter hat die Ampel?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "strasse-2",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Was gehört zusammen?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "rote Ampel"
+       },
+       "right": {
+        "de": "stehen bleiben"
+       }
+      },
+      {
+       "left": {
+        "de": "grüne Ampel"
+       },
+       "right": {
+        "de": "gehen"
+       }
+      },
+      {
+       "left": {
+        "de": "Zebrastreifen"
+       },
+       "right": {
+        "de": "sicher über die Straße"
+       }
+      },
+      {
+       "left": {
+        "de": "Fahrradhelm"
+       },
+       "right": {
+        "de": "schützt den Kopf"
+       }
+      }
+     ]
+    },
+    {
+     "id": "strasse-3",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was machst du an der roten Ampel?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Schnell rennen"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Stehen bleiben"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Langsam gehen"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "strasse-4",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Am Zebrastreifen warten 6 Kinder. 3 Kinder kommen dazu. Wie viele Kinder warten?"
+     },
+     "firstAnswer": 9,
+     "operation": {
+      "op": "subtract",
+      "operand": 4
+     },
+     "second": {
+      "de": "Jetzt warten {x} Kinder. Die Ampel wird grün. 4 Kinder gehen los. Wie viele Kinder warten noch?"
+     }
+    },
+    {
+     "id": "strasse-5",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Ein Auto hat 4 Räder. Ein Fahrrad hat 2 Räder. Auf der Straße sind 5 Autos und 3 Fahrräder."
+     },
+     "prompt": {
+      "de": "Wie viele Räder sind es zusammen?"
+     },
+     "answer": 26
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/strasse-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Schulweg"
+   },
+   "subject": "sachunterricht",
+   "grade": 2,
+   "place": "strasse",
+   "tasks": [
+    {
+     "id": "strasse-2-1",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Schulweg hat 3 Straßen. An jeder Straße ist ein Zebrastreifen."
+     },
+     "prompt": {
+      "de": "Wie viele Zebrastreifen sind es?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "strasse-2-2",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Welches Verkehrszeichen bedeutet was?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "rotes Achteck mit STOP"
+       },
+       "right": {
+        "de": "Du musst anhalten."
+       }
+      },
+      {
+       "left": {
+        "de": "Dreieck mit rotem Rand und Kindern"
+       },
+       "right": {
+        "de": "Hier laufen Kinder."
+       }
+      },
+      {
+       "left": {
+        "de": "blauer Kreis mit Fahrrad"
+       },
+       "right": {
+        "de": "Hier ist ein Radweg."
+       }
+      },
+      {
+       "left": {
+        "de": "rote Ampel"
+       },
+       "right": {
+        "de": "Du musst warten."
+       }
+      }
+     ]
+    },
+    {
+     "id": "strasse-2-3",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was machst du zuerst an einer Straße?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Gleich losgehen"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Schnell losrennen"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Stehen bleiben und schauen"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "strasse-2-4",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Der Schulbus fährt um 7:30 Uhr los. Er fährt 20 Minuten. Wann kommt er an?"
+     },
+     "firstAnswer": 470,
+     "operation": {
+      "op": "add",
+      "operand": 10
+     },
+     "second": {
+      "de": "Der Bus kommt um {x} an. Die Schule beginnt 10 Minuten später. Wann beginnt die Schule?"
+     },
+     "answerFormat": "time"
+    },
+    {
+     "id": "strasse-2-5",
+     "skills": [
+      "sachunterricht.verkehr"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Bus hat 20 Plätze. 5 Plätze sind schon besetzt. 12 Kinder warten an der Haltestelle."
+     },
+     "prompt": {
+      "de": "Wie viele Plätze bleiben frei, wenn alle 12 Kinder einsteigen?"
+     },
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/wald",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Wald"
+   },
+   "subject": "sachunterricht",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "wald-1",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Im Wald leben ein Fuchs, ein Reh, ein Igel und ein Eichhörnchen."
+     },
+     "prompt": {
+      "de": "Wie viele Tiere sind das?"
+     },
+     "answer": 4
+    },
+    {
+     "id": "wald-2",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Was frisst das Tier?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Eichhörnchen"
+       },
+       "right": {
+        "de": "Nüsse"
+       }
+      },
+      {
+       "left": {
+        "de": "Reh"
+       },
+       "right": {
+        "de": "Gras und Blätter"
+       }
+      },
+      {
+       "left": {
+        "de": "Fuchs"
+       },
+       "right": {
+        "de": "Mäuse"
+       }
+      },
+      {
+       "left": {
+        "de": "Igel"
+       },
+       "right": {
+        "de": "Käfer und Würmer"
+       }
+      }
+     ]
+    },
+    {
+     "id": "wald-3",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Welcher Baum hat Nadeln?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "die Fichte"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "die Eiche"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "die Buche"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "wald-4",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Das Eichhörnchen versteckt 5 Nüsse an einem Baum und 6 Nüsse am nächsten. Wie viele Nüsse sind das?"
+     },
+     "firstAnswer": 11,
+     "operation": {
+      "op": "subtract",
+      "operand": 4
+     },
+     "second": {
+      "de": "Es hat {x} Nüsse versteckt. 4 Nüsse findet es nicht wieder. Wie viele findet es wieder?"
+     }
+    },
+    {
+     "id": "wald-5",
+     "skills": [
+      "sachunterricht.tiere"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Im Wald leben 4 Igelmütter. Jede hat 2 Junge."
+     },
+     "prompt": {
+      "de": "Wie viele Igeljunge sind das?"
+     },
+     "answer": 8
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/wald-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Der Wald im Jahr"
+   },
+   "subject": "sachunterricht",
+   "grade": 2,
+   "place": "wald",
+   "tasks": [
+    {
+     "id": "wald-2-1",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Im Herbst fallen die Blätter. Unter dem Baum liegen 7 rote und 5 gelbe Blätter."
+     },
+     "prompt": {
+      "de": "Wie viele Blätter liegen unter dem Baum?"
+     },
+     "answer": 12
+    },
+    {
+     "id": "wald-2-2",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Was passiert im Wald in welcher Jahreszeit?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Frühling"
+       },
+       "right": {
+        "de": "Die Knospen gehen auf."
+       }
+      },
+      {
+       "left": {
+        "de": "Sommer"
+       },
+       "right": {
+        "de": "Die Bäume sind ganz grün."
+       }
+      },
+      {
+       "left": {
+        "de": "Herbst"
+       },
+       "right": {
+        "de": "Die Blätter fallen."
+       }
+      },
+      {
+       "left": {
+        "de": "Winter"
+       },
+       "right": {
+        "de": "Der Igel schläft."
+       }
+      }
+     ]
+    },
+    {
+     "id": "wald-2-3",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was macht der Igel im Winter?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Er fliegt in den Süden."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Er hält Winterschlaf."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "Er baut ein Nest im Baum."
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "wald-2-4",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Im Wald stehen 20 Bäume. 8 Bäume haben Nadeln. Wie viele haben keine Nadeln?"
+     },
+     "firstAnswer": 12,
+     "operation": {
+      "op": "divide",
+      "operand": 2
+     },
+     "second": {
+      "de": "{x} Bäume haben keine Nadeln. Die Hälfte davon sind Eichen. Wie viele Eichen sind es?"
+     }
+    },
+    {
+     "id": "wald-2-5",
+     "skills": [
+      "sachunterricht.jahreszeiten"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Der Förster pflanzt 3 Reihen mit je 8 jungen Bäumen."
+     },
+     "prompt": {
+      "de": "Wie viele junge Bäume sind das?"
+     },
+     "answer": 24
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/huette",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Die Waldhütte"
+   },
+   "subject": "sachunterricht",
+   "grade": 1,
+   "tasks": [
+    {
+     "id": "huette-1",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Die Sinne sind: Sehen, Hören, Riechen, Schmecken und Fühlen."
+     },
+     "prompt": {
+      "de": "Wie viele Sinne hat ein Mensch?"
+     },
+     "answer": 5
+    },
+    {
+     "id": "huette-2",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Womit nimmst du etwas wahr?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Auge"
+       },
+       "right": {
+        "de": "sehen"
+       }
+      },
+      {
+       "left": {
+        "de": "Ohr"
+       },
+       "right": {
+        "de": "hören"
+       }
+      },
+      {
+       "left": {
+        "de": "Nase"
+       },
+       "right": {
+        "de": "riechen"
+       }
+      },
+      {
+       "left": {
+        "de": "Zunge"
+       },
+       "right": {
+        "de": "schmecken"
+       }
+      },
+      {
+       "left": {
+        "de": "Haut"
+       },
+       "right": {
+        "de": "fühlen"
+       }
+      }
+     ]
+    },
+    {
+     "id": "huette-3",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was pumpt das Blut durch den Körper?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "die Lunge"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "der Magen"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "das Herz"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "huette-4",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Eine Hand hat 5 Finger. Wie viele Finger haben zwei Hände?"
+     },
+     "firstAnswer": 10,
+     "operation": {
+      "op": "multiply",
+      "operand": 2
+     },
+     "second": {
+      "de": "Ein Kind hat {x} Finger. Zwei Kinder stehen da. Wie viele Finger haben sie zusammen?"
+     }
+    },
+    {
+     "id": "huette-5",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Ein Kind hat 20 Milchzähne. 3 Zähne sind ausgefallen."
+     },
+     "prompt": {
+      "de": "Wie viele Milchzähne sind noch da?"
+     },
+     "answer": 17
+    }
+   ]
+  },
+  {
+   "id": "de.huckepack.klasse-1-2/huette-2",
+   "schemaVersion": 1,
+   "title": {
+    "de": "Gesund bleiben"
+   },
+   "subject": "sachunterricht",
+   "grade": 2,
+   "place": "huette",
+   "tasks": [
+    {
+     "id": "huette-2-1",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Man putzt die Zähne morgens und abends. Das sind 2 Mal am Tag. Eine Woche hat 7 Tage."
+     },
+     "prompt": {
+      "de": "Wie oft putzt man die Zähne in einer Woche?"
+     },
+     "answer": 14
+    },
+    {
+     "id": "huette-2-2",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "de": "Was ist gut für den Körper?"
+     },
+     "pairs": [
+      {
+       "left": {
+        "de": "Obst und Gemüse"
+       },
+       "right": {
+        "de": "viele Vitamine"
+       }
+      },
+      {
+       "left": {
+        "de": "Wasser"
+       },
+       "right": {
+        "de": "löscht den Durst"
+       }
+      },
+      {
+       "left": {
+        "de": "Milch"
+       },
+       "right": {
+        "de": "gut für die Knochen"
+       }
+      },
+      {
+       "left": {
+        "de": "Süßigkeiten"
+       },
+       "right": {
+        "de": "nur ab und zu"
+       }
+      }
+     ]
+    },
+    {
+     "id": "huette-2-3",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "de": "Was ist ein gesundes Pausenbrot?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "de": "Vollkornbrot mit Käse und Gurke"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "de": "Weißbrot mit Schokocreme"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "de": "nur Bonbons"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "huette-2-4",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "de": "Ein Kind geht um 20 Uhr ins Bett. Es schläft 10 Stunden. Wann wacht es morgens auf?"
+     },
+     "firstAnswer": 360,
+     "operation": {
+      "op": "add",
+      "operand": 120
+     },
+     "second": {
+      "de": "Es wacht um {x} auf. Die Schule beginnt 2 Stunden später. Wann beginnt die Schule?"
+     },
+     "answerFormat": "time"
+    },
+    {
+     "id": "huette-2-5",
+     "skills": [
+      "sachunterricht.koerper"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "de": "Man soll am Tag 5 Mal Obst oder Gemüse essen. Heute hast du schon 2 Mal gegessen."
+     },
+     "prompt": {
+      "de": "Wie oft musst du heute noch Obst oder Gemüse essen?"
+     },
+     "answer": 3
+    }
+   ]
+  }
+ ]
+}

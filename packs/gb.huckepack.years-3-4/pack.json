@@ -1,0 +1,4823 @@
+{
+ "$schema": "../../docs/schema/pack.schema.json",
+ "id": "gb.huckepack.years-3-4",
+ "version": 1,
+ "title": {
+  "en": "Huckepack Village: Years 3 and 4"
+ },
+ "description": {
+  "en": "A village adventure for children in England aged 7 to 9 (Years 3 and 4, Key Stage 2), with Maths, English, Science and Geography and History."
+ },
+ "author": "Huckepack",
+ "licence": "CC-BY-4.0",
+ "courses": [
+  {
+   "id": "maths-ks2",
+   "title": {
+    "en": "Maths"
+   }
+  },
+  {
+   "id": "english-ks2",
+   "title": {
+    "en": "English"
+   }
+  },
+  {
+   "id": "science-ks2",
+   "title": {
+    "en": "Science"
+   }
+  },
+  {
+   "id": "history-geog",
+   "title": {
+    "en": "Geography and History"
+   }
+  }
+ ],
+ "skills": {
+  "english-ks2.homophones-spelling": {
+   "en": "Homophones and tricky spellings"
+  },
+  "english-ks2.poetry-vocabulary": {
+   "en": "Poetry and vocabulary"
+  },
+  "english-ks2.punctuation": {
+   "en": "Punctuation"
+  },
+  "english-ks2.spelling": {
+   "en": "Spelling patterns"
+  },
+  "english-ks2.word-classes": {
+   "en": "Word classes"
+  },
+  "history-geog.castles": {
+   "en": "Castles"
+  },
+  "history-geog.map-skills": {
+   "en": "Map skills"
+  },
+  "history-geog.prehistory": {
+   "en": "Stone Age to Iron Age"
+  },
+  "history-geog.romans": {
+   "en": "The Romans"
+  },
+  "history-geog.saxons-vikings": {
+   "en": "Anglo-Saxons and Vikings"
+  },
+  "history-geog.uk-rivers": {
+   "en": "UK geography and rivers"
+  },
+  "maths-ks2.fractions": {
+   "en": "Fractions"
+  },
+  "maths-ks2.measures": {
+   "en": "Length, mass and capacity"
+  },
+  "maths-ks2.money": {
+   "en": "Pounds and pence"
+  },
+  "maths-ks2.money-problems": {
+   "en": "Money problems"
+  },
+  "maths-ks2.perimeter-area": {
+   "en": "Perimeter and area"
+  },
+  "maths-ks2.place-value": {
+   "en": "Place value and rounding"
+  },
+  "maths-ks2.roman-numerals": {
+   "en": "Roman numerals"
+  },
+  "maths-ks2.time": {
+   "en": "Telling the time"
+  },
+  "maths-ks2.times-tables-12": {
+   "en": "Times tables up to 12 × 12"
+  },
+  "maths-ks2.times-tables-3-4-8": {
+   "en": "Times tables 3, 4 and 8"
+  },
+  "science-ks2.body-nutrition": {
+   "en": "Bones, muscles and nutrition"
+  },
+  "science-ks2.light": {
+   "en": "Light and shadows"
+  },
+  "science-ks2.living-things": {
+   "en": "Living things and food chains"
+  },
+  "science-ks2.plants": {
+   "en": "Plants"
+  },
+  "science-ks2.rocks-soils": {
+   "en": "Rocks and soils"
+  },
+  "science-ks2.sound-electricity": {
+   "en": "Sound and electricity"
+  },
+  "science-ks2.states-water": {
+   "en": "States of matter and the water cycle"
+  }
+ },
+ "world": {
+  "image": {
+   "file": "karte.jpg",
+   "width": 2048,
+   "height": 1536
+  },
+  "start": "green",
+  "nodes": [
+   {
+    "id": "green",
+    "title": {
+     "en": "Village Green"
+    },
+    "x": 0.14,
+    "y": 0.84,
+    "requires": []
+   },
+   {
+    "id": "bakery",
+    "title": {
+     "en": "Bakery"
+    },
+    "level": "gb.huckepack.years-3-4/bakery",
+    "x": 0.3,
+    "y": 0.7,
+    "requires": []
+   },
+   {
+    "id": "market",
+    "title": {
+     "en": "Market Square"
+    },
+    "level": "gb.huckepack.years-3-4/market",
+    "x": 0.48,
+    "y": 0.84,
+    "requires": []
+   },
+   {
+    "id": "school",
+    "title": {
+     "en": "Village School"
+    },
+    "level": "gb.huckepack.years-3-4/school",
+    "x": 0.14,
+    "y": 0.6,
+    "requires": [
+     "gb.huckepack.years-3-4/bakery"
+    ]
+   },
+   {
+    "id": "library",
+    "title": {
+     "en": "Library"
+    },
+    "level": "gb.huckepack.years-3-4/library",
+    "x": 0.46,
+    "y": 0.58,
+    "requires": [
+     "gb.huckepack.years-3-4/bakery"
+    ]
+   },
+   {
+    "id": "bridge",
+    "title": {
+     "en": "Old Stone Bridge"
+    },
+    "level": "gb.huckepack.years-3-4/bridge",
+    "x": 0.62,
+    "y": 0.7,
+    "requires": [
+     "gb.huckepack.years-3-4/market"
+    ]
+   },
+   {
+    "id": "lock",
+    "title": {
+     "en": "Canal Lock"
+    },
+    "level": "gb.huckepack.years-3-4/lock",
+    "x": 0.8,
+    "y": 0.82,
+    "requires": [
+     "gb.huckepack.years-3-4/bridge"
+    ]
+   },
+   {
+    "id": "mill",
+    "title": {
+     "en": "Water Mill"
+    },
+    "level": "gb.huckepack.years-3-4/mill",
+    "x": 0.78,
+    "y": 0.58,
+    "requires": [
+     "gb.huckepack.years-3-4/bridge"
+    ]
+   },
+   {
+    "id": "farm",
+    "title": {
+     "en": "Hill Farm"
+    },
+    "level": "gb.huckepack.years-3-4/farm",
+    "x": 0.12,
+    "y": 0.36,
+    "requires": [
+     "gb.huckepack.years-3-4/school"
+    ]
+   },
+   {
+    "id": "wood",
+    "title": {
+     "en": "Oak Wood"
+    },
+    "level": "gb.huckepack.years-3-4/wood",
+    "x": 0.3,
+    "y": 0.4,
+    "requires": [
+     "gb.huckepack.years-3-4/school"
+    ]
+   },
+   {
+    "id": "orchard",
+    "title": {
+     "en": "Orchard"
+    },
+    "level": "gb.huckepack.years-3-4/orchard",
+    "x": 0.46,
+    "y": 0.36,
+    "requires": [
+     "gb.huckepack.years-3-4/library"
+    ]
+   },
+   {
+    "id": "hill",
+    "title": {
+     "en": "Beacon Hill"
+    },
+    "level": "gb.huckepack.years-3-4/hill",
+    "x": 0.3,
+    "y": 0.16,
+    "requires": [
+     "gb.huckepack.years-3-4/wood"
+    ]
+   },
+   {
+    "id": "museum",
+    "title": {
+     "en": "Village Museum"
+    },
+    "level": "gb.huckepack.years-3-4/museum",
+    "x": 0.62,
+    "y": 0.42,
+    "requires": [
+     "gb.huckepack.years-3-4/orchard"
+    ]
+   },
+   {
+    "id": "castle",
+    "title": {
+     "en": "Castle Ruins"
+    },
+    "level": "gb.huckepack.years-3-4/castle",
+    "x": 0.6,
+    "y": 0.16,
+    "requires": [
+     "gb.huckepack.years-3-4/hill"
+    ]
+   },
+   {
+    "id": "quarry",
+    "title": {
+     "en": "Stone Quarry"
+    },
+    "level": "gb.huckepack.years-3-4/quarry",
+    "x": 0.88,
+    "y": 0.36,
+    "requires": [
+     "gb.huckepack.years-3-4/mill"
+    ]
+   }
+  ],
+  "paths": [
+   [
+    "green",
+    "bakery"
+   ],
+   [
+    "green",
+    "market"
+   ],
+   [
+    "bakery",
+    "market"
+   ],
+   [
+    "bakery",
+    "school"
+   ],
+   [
+    "bakery",
+    "library"
+   ],
+   [
+    "market",
+    "bridge"
+   ],
+   [
+    "library",
+    "bridge"
+   ],
+   [
+    "bridge",
+    "lock"
+   ],
+   [
+    "bridge",
+    "mill"
+   ],
+   [
+    "school",
+    "farm"
+   ],
+   [
+    "school",
+    "wood"
+   ],
+   [
+    "farm",
+    "wood"
+   ],
+   [
+    "wood",
+    "orchard"
+   ],
+   [
+    "library",
+    "orchard"
+   ],
+   [
+    "wood",
+    "hill"
+   ],
+   [
+    "orchard",
+    "museum"
+   ],
+   [
+    "hill",
+    "castle"
+   ],
+   [
+    "castle",
+    "museum"
+   ],
+   [
+    "museum",
+    "mill"
+   ],
+   [
+    "mill",
+    "quarry"
+   ]
+  ]
+ },
+ "levels": [
+  {
+   "id": "gb.huckepack.years-3-4/bakery",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Buns and Trays"
+   },
+   "subject": "maths-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.times-tables-3-4-8"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "There are 6 trays with 8 buns on each tray."
+     },
+     "prompt": {
+      "en": "How many buns are there altogether?"
+     },
+     "answer": 48
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.times-tables-3-4-8"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each multiplication to its answer."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "3 × 9"
+       },
+       "right": {
+        "en": "27"
+       }
+      },
+      {
+       "left": {
+        "en": "4 × 7"
+       },
+       "right": {
+        "en": "28"
+       }
+      },
+      {
+       "left": {
+        "en": "8 × 4"
+       },
+       "right": {
+        "en": "32"
+       }
+      },
+      {
+       "left": {
+        "en": "8 × 7"
+       },
+       "right": {
+        "en": "56"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.times-tables-3-4-8"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Each bag holds 4 rolls. Sam buys 7 bags. How many rolls does he have?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "11 rolls"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "24 rolls"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "32 rolls"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "28 rolls"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.times-tables-3-4-8"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A box holds 3 pies. How many pies are in 9 boxes?"
+     },
+     "firstAnswer": 27,
+     "operation": {
+      "op": "divide",
+      "operand": 9
+     },
+     "second": {
+      "en": "There are {x} pies. They are put on plates of 9 pies each. How many plates are needed?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.times-tables-3-4-8"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A tray holds 8 scones. The baker has 9 trays and sells 25 scones."
+     },
+     "prompt": {
+      "en": "How many scones are left?"
+     },
+     "answer": 47
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/bakery-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Dozens of Cakes"
+   },
+   "subject": "maths-ks2",
+   "grade": 4,
+   "place": "bakery",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.times-tables-12"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "There are 7 boxes with 12 cakes in each box."
+     },
+     "prompt": {
+      "en": "How many cakes is that?"
+     },
+     "answer": 84
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.times-tables-12"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each multiplication to its answer."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "7 × 8"
+       },
+       "right": {
+        "en": "56"
+       }
+      },
+      {
+       "left": {
+        "en": "12 × 12"
+       },
+       "right": {
+        "en": "144"
+       }
+      },
+      {
+       "left": {
+        "en": "11 × 9"
+       },
+       "right": {
+        "en": "99"
+       }
+      },
+      {
+       "left": {
+        "en": "6 × 9"
+       },
+       "right": {
+        "en": "54"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.times-tables-12"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Priya says that 7 × 8 = 54. What is the correct answer?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "49"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "63"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "64"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "56"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.times-tables-12"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A dozen is 12. How many eggs are there in 6 dozen?"
+     },
+     "firstAnswer": 72,
+     "operation": {
+      "op": "subtract",
+      "operand": 9
+     },
+     "second": {
+      "en": "The baker has {x} eggs and uses 9 of them for one cake mix. How many eggs are left?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.times-tables-12"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A baker packs 11 cookies into each bag. She fills 9 bags and has 4 cookies left over."
+     },
+     "prompt": {
+      "en": "How many cookies did she bake in total?"
+     },
+     "answer": 103
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/market",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Pounds and Pence"
+   },
+   "subject": "maths-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.money"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "One apple costs 35p. Sam buys 2 apples."
+     },
+     "prompt": {
+      "en": "How much do the apples cost altogether?"
+     },
+     "answer": 70,
+     "answerFormat": "poundPence"
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.money"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each amount in pounds to the same amount in pence."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "£1.50"
+       },
+       "right": {
+        "en": "150p"
+       }
+      },
+      {
+       "left": {
+        "en": "£2.05"
+       },
+       "right": {
+        "en": "205p"
+       }
+      },
+      {
+       "left": {
+        "en": "£0.75"
+       },
+       "right": {
+        "en": "75p"
+       }
+      },
+      {
+       "left": {
+        "en": "£3.20"
+       },
+       "right": {
+        "en": "320p"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.money"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "A pencil costs 40p. You pay with a £1 coin. How much change do you get?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "50p"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "40p"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "£1.40"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "60p"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.money"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A loaf costs £1.20 and milk costs 85p. How much is that altogether?"
+     },
+     "firstAnswer": 205,
+     "operation": {
+      "op": "add",
+      "operand": 45
+     },
+     "second": {
+      "en": "The shopping costs {x}. You also buy a pen for 45p. How much is the total now?"
+     },
+     "answerFormat": "poundPence"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.money"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A kite costs £4.50 and a ball costs £2.75."
+     },
+     "prompt": {
+      "en": "How much do they cost together?"
+     },
+     "answer": 725,
+     "answerFormat": "poundPence"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/market-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Market Bargains"
+   },
+   "subject": "maths-ks2",
+   "grade": 4,
+   "place": "market",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.money-problems"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "Maya buys a book for £3.40."
+     },
+     "prompt": {
+      "en": "She pays with a £5 note. How much change does she get?"
+     },
+     "answer": 160,
+     "answerFormat": "poundPence"
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.money-problems"
+     ],
+     "difficulty": 1,
+     "type": "relay",
+     "first": {
+      "en": "Tickets cost £4 each. How much do 5 tickets cost?"
+     },
+     "firstAnswer": 2000,
+     "operation": {
+      "op": "subtract",
+      "operand": 300
+     },
+     "second": {
+      "en": "The tickets cost {x}. You have a voucher worth £3. How much do you pay?"
+     },
+     "answerFormat": "poundPence"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.money-problems"
+     ],
+     "difficulty": 2,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each price in pounds to the same amount in pence."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "£6.05"
+       },
+       "right": {
+        "en": "605p"
+       }
+      },
+      {
+       "left": {
+        "en": "£0.60"
+       },
+       "right": {
+        "en": "60p"
+       }
+      },
+      {
+       "left": {
+        "en": "£6.50"
+       },
+       "right": {
+        "en": "650p"
+       }
+      },
+      {
+       "left": {
+        "en": "£5.06"
+       },
+       "right": {
+        "en": "506p"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.money-problems"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these is the biggest amount?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "£3.50"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "£3.05"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "£0.35"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "£3.15"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.money-problems"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "Notebooks cost £1.25 each. Tom buys 4 of them."
+     },
+     "prompt": {
+      "en": "Tom pays with a £10 note. How much change does he get?"
+     },
+     "answer": 500,
+     "answerFormat": "poundPence"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/bridge",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Measures at the Bridge"
+   },
+   "subject": "maths-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.measures"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A wall is 2 m and 30 cm high."
+     },
+     "prompt": {
+      "en": "How many centimetres high is the wall?"
+     },
+     "answer": 230
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.measures"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match the measurements that are equal."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "1 m"
+       },
+       "right": {
+        "en": "100 cm"
+       }
+      },
+      {
+       "left": {
+        "en": "1 kg"
+       },
+       "right": {
+        "en": "1000 g"
+       }
+      },
+      {
+       "left": {
+        "en": "1 litre"
+       },
+       "right": {
+        "en": "1000 ml"
+       }
+      },
+      {
+       "left": {
+        "en": "1 cm"
+       },
+       "right": {
+        "en": "10 mm"
+       }
+      },
+      {
+       "left": {
+        "en": "half a metre"
+       },
+       "right": {
+        "en": "50 cm"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.measures"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these is the longest?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "199 cm"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "1 m 90 cm"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "2 m"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "2 m 5 cm"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.measures"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A rope is 3 m long. How many centimetres is that?"
+     },
+     "firstAnswer": 300,
+     "operation": {
+      "op": "subtract",
+      "operand": 85
+     },
+     "second": {
+      "en": "The rope is {x} cm long. You cut off 85 cm. How many centimetres are left?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.measures"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A jug holds 1 litre of water. A cup holds 250 ml. Sam fills 3 cups from the jug."
+     },
+     "prompt": {
+      "en": "How many millilitres are left in the jug?"
+     },
+     "answer": 250
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/bridge-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Perimeter and Area"
+   },
+   "subject": "maths-ks2",
+   "grade": 4,
+   "place": "bridge",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.perimeter-area"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A garden is a rectangle that is 6 m long and 4 m wide."
+     },
+     "prompt": {
+      "en": "What is the perimeter of the garden in metres?"
+     },
+     "answer": 20
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.perimeter-area"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each shape to its perimeter."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "square, side 7 cm"
+       },
+       "right": {
+        "en": "28 cm"
+       }
+      },
+      {
+       "left": {
+        "en": "rectangle, 2 cm by 6 cm"
+       },
+       "right": {
+        "en": "16 cm"
+       }
+      },
+      {
+       "left": {
+        "en": "rectangle, 4 cm by 9 cm"
+       },
+       "right": {
+        "en": "26 cm"
+       }
+      },
+      {
+       "left": {
+        "en": "square, side 10 cm"
+       },
+       "right": {
+        "en": "40 cm"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.perimeter-area"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "A rectangle is made of 3 rows with 5 squares in each row. What is its area?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "8 squares"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "18 squares"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "35 squares"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "15 squares"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.perimeter-area"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A pen is 8 m long and 5 m wide. How many metres of fence go all the way round it?"
+     },
+     "firstAnswer": 26,
+     "operation": {
+      "op": "divide",
+      "operand": 2
+     },
+     "second": {
+      "en": "The fence is {x} m long. A post stands every 2 m. How many posts are needed?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.perimeter-area"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A rectangle has a perimeter of 30 cm. One side is 9 cm long."
+     },
+     "prompt": {
+      "en": "How long is the side next to it, in centimetres?"
+     },
+     "answer": 6
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/mill",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Time at the Mill"
+   },
+   "subject": "maths-ks2",
+   "grade": 4,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.time"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "It is the afternoon. The hour hand is just before the 4 and the minute hand is at the 9."
+     },
+     "prompt": {
+      "en": "What time is it? Type four digits in 24-hour time."
+     },
+     "answer": 945,
+     "clueVisual": {
+      "clock": {
+       "hour": 15,
+       "minute": 45
+      }
+     },
+     "answerFormat": "time"
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.time"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each time to the same time on the 24-hour clock."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "3:30 pm"
+       },
+       "right": {
+        "en": "15:30"
+       }
+      },
+      {
+       "left": {
+        "en": "7:15 am"
+       },
+       "right": {
+        "en": "07:15"
+       }
+      },
+      {
+       "left": {
+        "en": "9:45 pm"
+       },
+       "right": {
+        "en": "21:45"
+       }
+      },
+      {
+       "left": {
+        "en": "10 past 6 in the evening"
+       },
+       "right": {
+        "en": "18:10"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.time"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these is the same time as 8:50?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "ten past eight"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "twenty to nine"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "ten to eight"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "ten to nine"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.time"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A film starts at 14:10 and lasts 95 minutes. When does it end?"
+     },
+     "firstAnswer": 945,
+     "operation": {
+      "op": "add",
+      "operand": 20
+     },
+     "second": {
+      "en": "The film ends at {x}. It takes 20 minutes to walk home. When do you get home?"
+     },
+     "answerFormat": "time"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.time"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A train leaves at 09:48 and arrives at 11:05."
+     },
+     "prompt": {
+      "en": "How many minutes does the journey take?"
+     },
+     "answer": 77,
+     "answerFormat": "minutes"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/mill-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Roman Numerals"
+   },
+   "subject": "maths-ks2",
+   "grade": 4,
+   "place": "mill",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.roman-numerals"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The mill wall has the Roman numerals XXIV carved on it."
+     },
+     "prompt": {
+      "en": "What number is that?"
+     },
+     "answer": 24
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.roman-numerals"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each Roman numeral to its number."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "IV"
+       },
+       "right": {
+        "en": "4"
+       }
+      },
+      {
+       "left": {
+        "en": "IX"
+       },
+       "right": {
+        "en": "9"
+       }
+      },
+      {
+       "left": {
+        "en": "XIV"
+       },
+       "right": {
+        "en": "14"
+       }
+      },
+      {
+       "left": {
+        "en": "XL"
+       },
+       "right": {
+        "en": "40"
+       }
+      },
+      {
+       "left": {
+        "en": "LXXVII"
+       },
+       "right": {
+        "en": "77"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.roman-numerals"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which Roman numeral means 49?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "IL"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "XXXXIX"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "LIX"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "XLIX"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.roman-numerals"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "What number is the Roman numeral XVI?"
+     },
+     "firstAnswer": 16,
+     "operation": {
+      "op": "add",
+      "operand": 12
+     },
+     "second": {
+      "en": "The mill wheel has {x} paddles. Another XII paddles are added. How many paddles are there now?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.roman-numerals"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The date on the old stone is written as LXXXIV."
+     },
+     "prompt": {
+      "en": "What number is that?"
+     },
+     "answer": 84
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/orchard-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Sharing the Apples"
+   },
+   "subject": "maths-ks2",
+   "grade": 3,
+   "place": "orchard",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.fractions"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A pie is cut into 8 equal slices. Sam eats 3 slices."
+     },
+     "prompt": {
+      "en": "How many slices are left?"
+     },
+     "answer": 5
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.fractions"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each fraction of an amount to its answer."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "1/2 of 12"
+       },
+       "right": {
+        "en": "6"
+       }
+      },
+      {
+       "left": {
+        "en": "1/4 of 20"
+       },
+       "right": {
+        "en": "5"
+       }
+      },
+      {
+       "left": {
+        "en": "1/10 of 70"
+       },
+       "right": {
+        "en": "7"
+       }
+      },
+      {
+       "left": {
+        "en": "1/3 of 24"
+       },
+       "right": {
+        "en": "8"
+       }
+      },
+      {
+       "left": {
+        "en": "1/8 of 16"
+       },
+       "right": {
+        "en": "2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.fractions"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these fractions is the biggest?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "1/3"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "1/4"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "1/8"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "1/2"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.fractions"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A crate holds 36 apples. How many apples are in one third of the crate?"
+     },
+     "firstAnswer": 12,
+     "operation": {
+      "op": "divide",
+      "operand": 4
+     },
+     "second": {
+      "en": "One third of the apples is {x} apples. Each bag holds 4 apples. How many bags can be filled?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.fractions"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "There are 40 apples. Half are red, a quarter are green and the rest are yellow."
+     },
+     "prompt": {
+      "en": "How many apples are yellow?"
+     },
+     "answer": 10
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/quarry-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Quarry Loads"
+   },
+   "subject": "maths-ks2",
+   "grade": 4,
+   "place": "quarry",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "maths-ks2.place-value"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The number is made of 5 thousands, 3 hundreds, 0 tens and 8 ones."
+     },
+     "prompt": {
+      "en": "What is the number?"
+     },
+     "answer": 5308
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "maths-ks2.place-value"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each number to its name in words."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "4,070"
+       },
+       "right": {
+        "en": "four thousand and seventy"
+       }
+      },
+      {
+       "left": {
+        "en": "4,700"
+       },
+       "right": {
+        "en": "four thousand seven hundred"
+       }
+      },
+      {
+       "left": {
+        "en": "4,007"
+       },
+       "right": {
+        "en": "four thousand and seven"
+       }
+      },
+      {
+       "left": {
+        "en": "4,077"
+       },
+       "right": {
+        "en": "four thousand and seventy-seven"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "maths-ks2.place-value"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Round 3,846 to the nearest hundred."
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "3,900"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "3,850"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "4,000"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "3,800"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "maths-ks2.place-value"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "Round 6,482 to the nearest thousand."
+     },
+     "firstAnswer": 6000,
+     "operation": {
+      "op": "add",
+      "operand": 450
+     },
+     "second": {
+      "en": "The quarry moved {x} kg of stone in the morning and 450 kg more in the afternoon. How many kilograms is that altogether?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "maths-ks2.place-value"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "At dawn it is minus 3 degrees in the quarry. The temperature rises by 8 degrees."
+     },
+     "prompt": {
+      "en": "What is the temperature at noon, in degrees?"
+     },
+     "answer": 5
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/school",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Spelling Bee"
+   },
+   "subject": "english-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "english-ks2.spelling"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The word is 'butterfly'."
+     },
+     "prompt": {
+      "en": "How many syllables are in the word?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "english-ks2.spelling"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match the prefix and the root word to the new word."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "dis + appear"
+       },
+       "right": {
+        "en": "disappear"
+       }
+      },
+      {
+       "left": {
+        "en": "mis + spell"
+       },
+       "right": {
+        "en": "misspell"
+       }
+      },
+      {
+       "left": {
+        "en": "re + build"
+       },
+       "right": {
+        "en": "rebuild"
+       }
+      },
+      {
+       "left": {
+        "en": "un + lock"
+       },
+       "right": {
+        "en": "unlock"
+       }
+      },
+      {
+       "left": {
+        "en": "in + visible"
+       },
+       "right": {
+        "en": "invisible"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "english-ks2.spelling"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which word is spelt correctly?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "beutiful"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "beautifull"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "butiful"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "beautiful"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "english-ks2.spelling"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "How many letters are in the word 'quick'?"
+     },
+     "firstAnswer": 5,
+     "operation": {
+      "op": "add",
+      "operand": 2
+     },
+     "second": {
+      "en": "The word 'quick' has {x} letters. You add the suffix -ly to make 'quickly'. How many letters does the new word have?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "english-ks2.spelling"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The word is 'unfortunately'."
+     },
+     "prompt": {
+      "en": "How many syllables are in the word?"
+     },
+     "answer": 5
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/school-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Tricky Words"
+   },
+   "subject": "english-ks2",
+   "grade": 4,
+   "place": "school",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "english-ks2.homophones-spelling"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which word completes the sentence? 'The children put on ___ coats.'"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "there"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "they're"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "their"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "english-ks2.homophones-spelling"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each homophone to its meaning."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "write"
+       },
+       "right": {
+        "en": "put words on paper"
+       }
+      },
+      {
+       "left": {
+        "en": "right"
+       },
+       "right": {
+        "en": "correct, or the opposite of left"
+       }
+      },
+      {
+       "left": {
+        "en": "weather"
+       },
+       "right": {
+        "en": "rain, sun and wind"
+       }
+      },
+      {
+       "left": {
+        "en": "whether"
+       },
+       "right": {
+        "en": "if"
+       }
+      },
+      {
+       "left": {
+        "en": "herd"
+       },
+       "right": {
+        "en": "a group of cows"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "english-ks2.homophones-spelling"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The word is 'knight'."
+     },
+     "prompt": {
+      "en": "How many letters in the word are silent (you cannot hear them)?"
+     },
+     "answer": 3
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "english-ks2.homophones-spelling"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which word is spelt correctly?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "necessary"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "neccessary"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "necesary"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "necessery"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "english-ks2.homophones-spelling"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The word is 'adventurous'."
+     },
+     "prompt": {
+      "en": "How many syllables are in the word?"
+     },
+     "answer": 4
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/library",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Word Classes"
+   },
+   "subject": "english-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "english-ks2.word-classes"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The sentence is: The small dog barked loudly at the cat."
+     },
+     "prompt": {
+      "en": "How many nouns are in the sentence?"
+     },
+     "answer": 2
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "english-ks2.word-classes"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each word to its word class."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "quickly"
+       },
+       "right": {
+        "en": "adverb"
+       }
+      },
+      {
+       "left": {
+        "en": "castle"
+       },
+       "right": {
+        "en": "noun"
+       }
+      },
+      {
+       "left": {
+        "en": "jump"
+       },
+       "right": {
+        "en": "verb"
+       }
+      },
+      {
+       "left": {
+        "en": "gentle"
+       },
+       "right": {
+        "en": "adjective"
+       }
+      },
+      {
+       "left": {
+        "en": "under"
+       },
+       "right": {
+        "en": "preposition"
+       }
+      },
+      {
+       "left": {
+        "en": "because"
+       },
+       "right": {
+        "en": "conjunction"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "english-ks2.word-classes"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which word is the verb in: 'The knight climbed the tower.'?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "knight"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "tower"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "the"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "climbed"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "english-ks2.word-classes"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "How many words are in the sentence 'The cat sat on the mat.'?"
+     },
+     "firstAnswer": 6,
+     "operation": {
+      "op": "add",
+      "operand": 2
+     },
+     "second": {
+      "en": "The sentence has {x} words. You add the adjectives 'fluffy' and 'old'. How many words does it have now?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "english-ks2.word-classes"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The sentence is: The brave knight quickly climbed the tall, grey tower."
+     },
+     "prompt": {
+      "en": "How many adjectives are in the sentence?"
+     },
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/library-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Punctuation Corner"
+   },
+   "subject": "english-ks2",
+   "grade": 4,
+   "place": "library",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "english-ks2.punctuation"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each pair of words to its short form with an apostrophe."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "do not"
+       },
+       "right": {
+        "en": "don't"
+       }
+      },
+      {
+       "left": {
+        "en": "I am"
+       },
+       "right": {
+        "en": "I'm"
+       }
+      },
+      {
+       "left": {
+        "en": "they are"
+       },
+       "right": {
+        "en": "they're"
+       }
+      },
+      {
+       "left": {
+        "en": "she will"
+       },
+       "right": {
+        "en": "she'll"
+       }
+      },
+      {
+       "left": {
+        "en": "it is"
+       },
+       "right": {
+        "en": "it's"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "english-ks2.punctuation"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "One boy has a ball. Which phrase shows that the ball belongs to him?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "the boys ball"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "the boys' ball"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "the boy's ball"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "the boy ball's"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "english-ks2.punctuation"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "Tom said hello. Then Anna said hi."
+     },
+     "prompt": {
+      "en": "To write both spoken words with speech marks, how many speech marks do you need altogether? Count every single mark, opening and closing."
+     },
+     "answer": 4
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "english-ks2.punctuation"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which sentence has the comma in the right place?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "After lunch, we went to the castle."
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "After, lunch we went to the castle."
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "After lunch we, went to the castle."
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "After lunch we went, to the castle."
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "english-ks2.punctuation"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The sentence is: Yesterday, the knights' horses ate the farmer's apples."
+     },
+     "prompt": {
+      "en": "How many apostrophes are in the sentence?"
+     },
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/library-3",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Poems and Stories"
+   },
+   "subject": "english-ks2",
+   "grade": 4,
+   "place": "library",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "english-ks2.poetry-vocabulary"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which word means almost the same as 'tiny'?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "enormous"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "small"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "bright"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "quick"
+       }
+      }
+     ],
+     "correct": "b"
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "english-ks2.poetry-vocabulary"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each word to what it means."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "simile"
+       },
+       "right": {
+        "en": "compares things using 'like' or 'as'"
+       }
+      },
+      {
+       "left": {
+        "en": "alliteration"
+       },
+       "right": {
+        "en": "words that start with the same sound"
+       }
+      },
+      {
+       "left": {
+        "en": "rhyme"
+       },
+       "right": {
+        "en": "words that end with the same sound"
+       }
+      },
+      {
+       "left": {
+        "en": "synonym"
+       },
+       "right": {
+        "en": "a word with a similar meaning"
+       }
+      },
+      {
+       "left": {
+        "en": "antonym"
+       },
+       "right": {
+        "en": "a word with the opposite meaning"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "english-ks2.poetry-vocabulary"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The poem has 4 verses with 4 lines in each verse."
+     },
+     "prompt": {
+      "en": "How many lines does the poem have?"
+     },
+     "answer": 16
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "english-ks2.poetry-vocabulary"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which one is a simile?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "as brave as a lion"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "Slithering snakes slide silently"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "The wind whispered a secret"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "The dragon is very big"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "english-ks2.poetry-vocabulary"
+     ],
+     "difficulty": 3,
+     "type": "relay",
+     "first": {
+      "en": "Chapter one has 135 words and chapter two has 165 words. How many words is that altogether?"
+     },
+     "firstAnswer": 300,
+     "operation": {
+      "op": "divide",
+      "operand": 50
+     },
+     "second": {
+      "en": "The story has {x} words. One page holds 50 words. How many pages does the story need?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/lock",
+   "schemaVersion": 1,
+   "title": {
+    "en": "The Canal Lock"
+   },
+   "subject": "science-ks2",
+   "grade": 4,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "science-ks2.states-water"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each change to its name."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "Water turns into steam"
+       },
+       "right": {
+        "en": "evaporation"
+       }
+      },
+      {
+       "left": {
+        "en": "Steam turns into drops of water"
+       },
+       "right": {
+        "en": "condensation"
+       }
+      },
+      {
+       "left": {
+        "en": "Ice turns into water"
+       },
+       "right": {
+        "en": "melting"
+       }
+      },
+      {
+       "left": {
+        "en": "Water turns into ice"
+       },
+       "right": {
+        "en": "freezing"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "science-ks2.states-water"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "At what temperature does water boil?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "0 degrees Celsius"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "10 degrees Celsius"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "100 degrees Celsius"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "50 degrees Celsius"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "science-ks2.states-water"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "Water freezes at 0 degrees Celsius. The canal water is at 14 degrees Celsius."
+     },
+     "prompt": {
+      "en": "By how many degrees must it cool down before it freezes?"
+     },
+     "answer": 14
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "science-ks2.states-water"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A kettle holds 2 litres. How many millilitres is that?"
+     },
+     "firstAnswer": 2000,
+     "operation": {
+      "op": "divide",
+      "operand": 250
+     },
+     "second": {
+      "en": "The kettle holds {x} ml. A cup holds 250 ml. How many cups can you fill?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "science-ks2.states-water"
+     ],
+     "difficulty": 3,
+     "type": "bothAgree",
+     "question": {
+      "en": "What happens first when the Sun warms a puddle?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "Clouds fall as rain"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "Water evaporates into the air"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "The water freezes"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Water vapour condenses"
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/lock-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Sound and Circuits"
+   },
+   "subject": "science-ks2",
+   "grade": 4,
+   "place": "lock",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "science-ks2.sound-electricity"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each part of a circuit to its job."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "battery"
+       },
+       "right": {
+        "en": "gives the energy"
+       }
+      },
+      {
+       "left": {
+        "en": "switch"
+       },
+       "right": {
+        "en": "turns the circuit on and off"
+       }
+      },
+      {
+       "left": {
+        "en": "bulb"
+       },
+       "right": {
+        "en": "lights up"
+       }
+      },
+      {
+       "left": {
+        "en": "wire"
+       },
+       "right": {
+        "en": "carries the electricity"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "science-ks2.sound-electricity"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these is a good electrical conductor?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "a plastic ruler"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "a wooden spoon"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "a copper wire"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "a rubber band"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "science-ks2.sound-electricity"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "There are 5 circuit kits. Each kit has 3 wires."
+     },
+     "prompt": {
+      "en": "How many wires are there altogether?"
+     },
+     "answer": 15
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "science-ks2.sound-electricity"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "What makes a drum sound louder?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "Hitting the drum harder"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "Hitting the drum more gently"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "Touching the drum skin to stop it moving"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Covering the drum with a thick blanket"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "science-ks2.sound-electricity"
+     ],
+     "difficulty": 3,
+     "type": "relay",
+     "first": {
+      "en": "Sound travels about 340 m in one second. How far does it travel in 3 seconds?"
+     },
+     "firstAnswer": 1020,
+     "operation": {
+      "op": "subtract",
+      "operand": 20
+     },
+     "second": {
+      "en": "The bell tower is {x} m from you. You walk 20 m closer to it. How many metres away is it now?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/farm",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Plants on the Farm"
+   },
+   "subject": "science-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "science-ks2.plants"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each part of a plant to its job."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "roots"
+       },
+       "right": {
+        "en": "take in water from the soil"
+       }
+      },
+      {
+       "left": {
+        "en": "stem"
+       },
+       "right": {
+        "en": "carries water up the plant"
+       }
+      },
+      {
+       "left": {
+        "en": "leaves"
+       },
+       "right": {
+        "en": "make food using sunlight"
+       }
+      },
+      {
+       "left": {
+        "en": "flower"
+       },
+       "right": {
+        "en": "makes the seeds"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "science-ks2.plants"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these does a plant not need to stay healthy?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "light"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "water"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "loud music"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "room to grow"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "science-ks2.plants"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The farmer plants 7 rows of cabbage seeds with 6 seeds in each row."
+     },
+     "prompt": {
+      "en": "How many seeds is that?"
+     },
+     "answer": 42
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "science-ks2.plants"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A farmer waters 4 rows of bean plants with 8 plants in each row. How many plants is that?"
+     },
+     "firstAnswer": 32,
+     "operation": {
+      "op": "multiply",
+      "operand": 3
+     },
+     "second": {
+      "en": "There are {x} bean plants. Each plant grows 3 pods. How many pods are there?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "science-ks2.plants"
+     ],
+     "difficulty": 3,
+     "type": "bothAgree",
+     "question": {
+      "en": "How do bees help flowers to make seeds?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "They carry water to the roots"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "They carry pollen from flower to flower"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "They eat the leaves"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "They help the flowers grow roots"
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/farm-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Bones and Food"
+   },
+   "subject": "science-ks2",
+   "grade": 3,
+   "place": "farm",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "science-ks2.body-nutrition"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each part of the body to its job."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "skull"
+       },
+       "right": {
+        "en": "protects the brain"
+       }
+      },
+      {
+       "left": {
+        "en": "ribs"
+       },
+       "right": {
+        "en": "protect the heart and lungs"
+       }
+      },
+      {
+       "left": {
+        "en": "muscles"
+       },
+       "right": {
+        "en": "pull on bones to move us"
+       }
+      },
+      {
+       "left": {
+        "en": "backbone"
+       },
+       "right": {
+        "en": "holds the body up"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "science-ks2.body-nutrition"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these foods gives us protein to build and repair the body?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "sugar"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "butter"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "beans"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "salt"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "science-ks2.body-nutrition"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A hand has 27 bones and a foot has 26 bones. Sam has 2 hands and 2 feet."
+     },
+     "prompt": {
+      "en": "How many bones are in Sam's hands and feet altogether?"
+     },
+     "answer": 106
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "science-ks2.body-nutrition"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "Mia drinks 6 glasses of water. Each glass holds 200 ml. How many millilitres is that?"
+     },
+     "firstAnswer": 1200,
+     "operation": {
+      "op": "subtract",
+      "operand": 300
+     },
+     "second": {
+      "en": "Mia drank {x} ml of water. Her brother drank 300 ml less. How many millilitres did he drink?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "science-ks2.body-nutrition"
+     ],
+     "difficulty": 3,
+     "type": "bothAgree",
+     "question": {
+      "en": "How do muscles move a bone?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "Muscles push on the bone"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "Muscles pull on the bone"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "Bones pull on the muscles"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Bones push on the muscles"
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/wood",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Oak Wood Habitats"
+   },
+   "subject": "science-ks2",
+   "grade": 4,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "science-ks2.living-things"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each animal to its group."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "fox"
+       },
+       "right": {
+        "en": "mammal"
+       }
+      },
+      {
+       "left": {
+        "en": "robin"
+       },
+       "right": {
+        "en": "bird"
+       }
+      },
+      {
+       "left": {
+        "en": "frog"
+       },
+       "right": {
+        "en": "amphibian"
+       }
+      },
+      {
+       "left": {
+        "en": "slug"
+       },
+       "right": {
+        "en": "invertebrate"
+       }
+      },
+      {
+       "left": {
+        "en": "grass snake"
+       },
+       "right": {
+        "en": "reptile"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "science-ks2.living-things"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "In the food chain grass, rabbit, fox, which is the producer?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "the rabbit"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "the fox"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "the grass"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "the Sun"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "science-ks2.living-things"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "In the wood there are 6 nests with 4 eggs in each nest."
+     },
+     "prompt": {
+      "en": "How many eggs are there altogether?"
+     },
+     "answer": 24
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "science-ks2.living-things"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "An owl catches 3 mice each night. How many mice does it catch in 7 nights?"
+     },
+     "firstAnswer": 21,
+     "operation": {
+      "op": "subtract",
+      "operand": 4
+     },
+     "second": {
+      "en": "The owl caught {x} mice this week. Next week it catches 4 fewer. How many mice does it catch next week?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "science-ks2.living-things"
+     ],
+     "difficulty": 3,
+     "type": "bothAgree",
+     "question": {
+      "en": "Most of the rabbits in the wood disappear. What is likely to happen to the foxes?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "Foxes will eat more grass"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "There is less food, so there may be fewer foxes"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "Foxes will become producers"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Nothing will change"
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/orchard",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Light and Shadows"
+   },
+   "subject": "science-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "science-ks2.light"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each material to the right word."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "glass window"
+       },
+       "right": {
+        "en": "transparent"
+       }
+      },
+      {
+       "left": {
+        "en": "tracing paper"
+       },
+       "right": {
+        "en": "translucent"
+       }
+      },
+      {
+       "left": {
+        "en": "wooden door"
+       },
+       "right": {
+        "en": "opaque"
+       }
+      },
+      {
+       "left": {
+        "en": "mirror"
+       },
+       "right": {
+        "en": "reflects light"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "science-ks2.light"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "When are shadows longest?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "At midday, when the Sun is high"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "They are always the same length"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "Early in the morning, when the Sun is low"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Only at night"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "science-ks2.light"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A tree's shadow is 6 m long at breakfast time. At lunchtime it is 2 m long."
+     },
+     "prompt": {
+      "en": "How many metres shorter is it at lunchtime?"
+     },
+     "answer": 4
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "science-ks2.light"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "How can we see something that makes no light of its own?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "Light bounces off it and enters our eyes"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "Light comes out of our eyes"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "The object makes its own light"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Shadows carry the light to us"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "science-ks2.light"
+     ],
+     "difficulty": 3,
+     "type": "relay",
+     "first": {
+      "en": "The orchard has 4 rows with 5 lamps in each row. How many lamps are there?"
+     },
+     "firstAnswer": 20,
+     "operation": {
+      "op": "subtract",
+      "operand": 6
+     },
+     "second": {
+      "en": "There are {x} lamps. 6 of them are broken and give no light. How many lamps give light?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/quarry",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Rocks and Soil"
+   },
+   "subject": "science-ks2",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "science-ks2.rocks-soils"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each rock to its feature."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "granite"
+       },
+       "right": {
+        "en": "very hard and does not soak up water"
+       }
+      },
+      {
+       "left": {
+        "en": "chalk"
+       },
+       "right": {
+        "en": "soft and white and leaves marks"
+       }
+      },
+      {
+       "left": {
+        "en": "slate"
+       },
+       "right": {
+        "en": "splits into thin layers and is used on roofs"
+       }
+      },
+      {
+       "left": {
+        "en": "pumice"
+       },
+       "right": {
+        "en": "light enough to float on water"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "science-ks2.rocks-soils"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "What is a fossil?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "A new type of rock"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "A shiny crystal"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "The remains of a living thing from long ago, kept in rock"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "A kind of soil"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "science-ks2.rocks-soils"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The quarry lorry carries 9 blocks of stone on each trip. It makes 7 trips."
+     },
+     "prompt": {
+      "en": "How many blocks does it carry altogether?"
+     },
+     "answer": 63
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "science-ks2.rocks-soils"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which soil lets water drain through the fastest?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "clay soil"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "peaty soil"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "sandy soil"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "science-ks2.rocks-soils"
+     ],
+     "difficulty": 3,
+     "type": "relay",
+     "first": {
+      "en": "A scientist tests 4 rocks, 6 times each. How many tests is that?"
+     },
+     "firstAnswer": 24,
+     "operation": {
+      "op": "multiply",
+      "operand": 5
+     },
+     "second": {
+      "en": "There were {x} tests. Each test takes 5 minutes. How many minutes do all the tests take?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/hill",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Map Skills on Beacon Hill"
+   },
+   "subject": "history-geog",
+   "grade": 4,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "history-geog.map-skills"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each compass direction to the one opposite it."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "North"
+       },
+       "right": {
+        "en": "South"
+       }
+      },
+      {
+       "left": {
+        "en": "East"
+       },
+       "right": {
+        "en": "West"
+       }
+      },
+      {
+       "left": {
+        "en": "North-east"
+       },
+       "right": {
+        "en": "South-west"
+       }
+      },
+      {
+       "left": {
+        "en": "North-west"
+       },
+       "right": {
+        "en": "South-east"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "history-geog.map-skills"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "On most maps, what does a blue line show?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "a road"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "a railway"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "a river"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "a footpath"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "history-geog.map-skills"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "On a map, 1 cm stands for 2 km. The hill is 5 cm from the village on the map."
+     },
+     "prompt": {
+      "en": "How many kilometres away is the hill in real life?"
+     },
+     "answer": 10
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "history-geog.map-skills"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "The path up Beacon Hill is 3 km long. How many metres is that?"
+     },
+     "firstAnswer": 3000,
+     "operation": {
+      "op": "divide",
+      "operand": 500
+     },
+     "second": {
+      "en": "The path is {x} m long. You rest after every 500 m. How many parts is the walk split into?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "history-geog.map-skills"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The castle ruin is in the grid square whose bottom-left corner is where grid line 34 (going up the map) meets grid line 52 (going across the map)."
+     },
+     "prompt": {
+      "en": "Type the four-figure grid reference. Give the eastings first, then the northings."
+     },
+     "answer": 3452
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/hill-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Rivers and Countries"
+   },
+   "subject": "history-geog",
+   "grade": 4,
+   "place": "hill",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "history-geog.uk-rivers"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each country of the UK to its capital city."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "England"
+       },
+       "right": {
+        "en": "London"
+       }
+      },
+      {
+       "left": {
+        "en": "Scotland"
+       },
+       "right": {
+        "en": "Edinburgh"
+       }
+      },
+      {
+       "left": {
+        "en": "Wales"
+       },
+       "right": {
+        "en": "Cardiff"
+       }
+      },
+      {
+       "left": {
+        "en": "Northern Ireland"
+       },
+       "right": {
+        "en": "Belfast"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "history-geog.uk-rivers"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Where does a river begin?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "at its mouth"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "at its sea"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "at its source"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "at its bridge"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "history-geog.uk-rivers"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A river is 120 km long. A walker follows it for 45 km."
+     },
+     "prompt": {
+      "en": "How many kilometres are left to walk?"
+     },
+     "answer": 75
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "history-geog.uk-rivers"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which sea is to the east of England?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "the North Sea"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "the Irish Sea"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "the English Channel"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "the Celtic Sea"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "history-geog.uk-rivers"
+     ],
+     "difficulty": 3,
+     "type": "relay",
+     "first": {
+      "en": "A river is 8 km long. How many metres is that?"
+     },
+     "firstAnswer": 8000,
+     "operation": {
+      "op": "divide",
+      "operand": 2000
+     },
+     "second": {
+      "en": "The river is {x} m long. A boat travels 2000 m each hour. How many hours does it take to travel the whole river?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/castle",
+   "schemaVersion": 1,
+   "title": {
+    "en": "The Castle Ruins"
+   },
+   "subject": "history-geog",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "history-geog.castles"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each part of a castle to what it is."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "moat"
+       },
+       "right": {
+        "en": "a ditch full of water round the castle"
+       }
+      },
+      {
+       "left": {
+        "en": "drawbridge"
+       },
+       "right": {
+        "en": "a bridge that can be lifted up"
+       }
+      },
+      {
+       "left": {
+        "en": "portcullis"
+       },
+       "right": {
+        "en": "a heavy gate that slides down"
+       }
+      },
+      {
+       "left": {
+        "en": "keep"
+       },
+       "right": {
+        "en": "the strong main tower"
+       }
+      },
+      {
+       "left": {
+        "en": "battlements"
+       },
+       "right": {
+        "en": "the top of the wall, with gaps"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "history-geog.castles"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Why were castle arrow slits so narrow?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "To let in lots of light"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "To let the smoke out"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "Archers could shoot out, but it was hard to shoot in"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "To let in the breeze"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "history-geog.castles"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The Normans built many castles after the year 1066. One castle was built in the year 1086."
+     },
+     "prompt": {
+      "en": "How many years after 1066 was it built?"
+     },
+     "answer": 20
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "history-geog.castles"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A castle tower is built from 120 stones each day. How many stones is that in 5 days?"
+     },
+     "firstAnswer": 600,
+     "operation": {
+      "op": "divide",
+      "operand": 50
+     },
+     "second": {
+      "en": "The tower needs {x} stones. Each cart carries 50 stones. How many cartloads are needed?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "history-geog.castles"
+     ],
+     "difficulty": 3,
+     "type": "bothAgree",
+     "question": {
+      "en": "What were the first Norman castles mostly made of?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "glass and metal"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "wood, on a mound of earth"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "concrete"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "straw only"
+       }
+      }
+     ],
+     "correct": "b"
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/castle-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "The Romans Arrive"
+   },
+   "subject": "history-geog",
+   "grade": 4,
+   "place": "castle",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "history-geog.romans"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each word to its meaning."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "Londinium"
+       },
+       "right": {
+        "en": "the Roman name for London"
+       }
+      },
+      {
+       "left": {
+        "en": "Latin"
+       },
+       "right": {
+        "en": "the language of the Romans"
+       }
+      },
+      {
+       "left": {
+        "en": "legion"
+       },
+       "right": {
+        "en": "a big group of Roman soldiers"
+       }
+      },
+      {
+       "left": {
+        "en": "Hadrian's Wall"
+       },
+       "right": {
+        "en": "a Roman wall in the north of England"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "history-geog.romans"
+     ],
+     "difficulty": 1,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The Romans invaded Britain in the year AD 43. They left in about the year AD 410 (use 410 for the sum)."
+     },
+     "prompt": {
+      "en": "Using those two years, how many years did the Romans stay?"
+     },
+     "answer": 367
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "history-geog.romans"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "What were Roman roads famous for?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "being made of wood"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "being very winding"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "being made of mud"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "being long and straight"
+       }
+      }
+     ],
+     "correct": "d"
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "history-geog.romans"
+     ],
+     "difficulty": 2,
+     "type": "relay",
+     "first": {
+      "en": "A Roman century had 80 soldiers. How many soldiers are in 6 centuries?"
+     },
+     "firstAnswer": 480,
+     "operation": {
+      "op": "divide",
+      "operand": 10
+     },
+     "second": {
+      "en": "A group of {x} soldiers march in rows of 10. How many rows are there?"
+     }
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "history-geog.romans"
+     ],
+     "difficulty": 3,
+     "type": "splitInfo",
+     "clue": {
+      "en": "Hadrian's Wall was begun in the year AD 122. The Romans invaded Britain in AD 43."
+     },
+     "prompt": {
+      "en": "How many years after the invasion was the wall begun?"
+     },
+     "answer": 79
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/museum",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Stone, Bronze and Iron"
+   },
+   "subject": "history-geog",
+   "grade": 3,
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "history-geog.prehistory"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each name to what it is known for."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "Stone Age"
+       },
+       "right": {
+        "en": "tools made of flint and bone"
+       }
+      },
+      {
+       "left": {
+        "en": "Bronze Age"
+       },
+       "right": {
+        "en": "tools made of copper mixed with tin"
+       }
+      },
+      {
+       "left": {
+        "en": "Iron Age"
+       },
+       "right": {
+        "en": "strong iron tools and hill forts"
+       }
+      },
+      {
+       "left": {
+        "en": "Stonehenge"
+       },
+       "right": {
+        "en": "a stone circle in Wiltshire"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "history-geog.prehistory"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Which of these comes first in time?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "the Bronze Age"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "the Iron Age"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "the Stone Age"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "the Romans"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "history-geog.prehistory"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "A museum case holds 3 flint axes on each of 4 shelves, and 2 bronze axes on each of 3 shelves."
+     },
+     "prompt": {
+      "en": "How many axes are in the case altogether?"
+     },
+     "answer": 18
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "history-geog.prehistory"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Bronze is a mixture of which two metals?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "copper and tin"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "iron and gold"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "copper and lead"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "silver and tin"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "history-geog.prehistory"
+     ],
+     "difficulty": 3,
+     "type": "relay",
+     "first": {
+      "en": "A potter makes 14 pots a week. How many pots does the potter make in 4 weeks?"
+     },
+     "firstAnswer": 56,
+     "operation": {
+      "op": "subtract",
+      "operand": 18
+     },
+     "second": {
+      "en": "The museum has {x} pots. 18 of them are broken. How many pots are whole?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gb.huckepack.years-3-4/museum-2",
+   "schemaVersion": 1,
+   "title": {
+    "en": "Anglo-Saxons and Vikings"
+   },
+   "subject": "history-geog",
+   "grade": 4,
+   "place": "museum",
+   "tasks": [
+    {
+     "id": "t1",
+     "skills": [
+      "history-geog.saxons-vikings"
+     ],
+     "difficulty": 1,
+     "type": "matchPairs",
+     "prompt": {
+      "en": "Match each name to what it is."
+     },
+     "pairs": [
+      {
+       "left": {
+        "en": "longship"
+       },
+       "right": {
+        "en": "a Viking boat"
+       }
+      },
+      {
+       "left": {
+        "en": "Danelaw"
+       },
+       "right": {
+        "en": "part of England ruled by the Vikings"
+       }
+      },
+      {
+       "left": {
+        "en": "Alfred the Great"
+       },
+       "right": {
+        "en": "a king of Wessex who fought the Vikings"
+       }
+      },
+      {
+       "left": {
+        "en": "Sutton Hoo"
+       },
+       "right": {
+        "en": "an Anglo-Saxon ship burial"
+       }
+      },
+      {
+       "left": {
+        "en": "runes"
+       },
+       "right": {
+        "en": "letters used by the Vikings"
+       }
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "skills": [
+      "history-geog.saxons-vikings"
+     ],
+     "difficulty": 1,
+     "type": "bothAgree",
+     "question": {
+      "en": "Where did the Vikings come from?"
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "Rome"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "France"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "Scandinavia, for example Norway and Denmark"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Egypt"
+       }
+      }
+     ],
+     "correct": "c"
+    },
+    {
+     "id": "t3",
+     "skills": [
+      "history-geog.saxons-vikings"
+     ],
+     "difficulty": 2,
+     "type": "splitInfo",
+     "clue": {
+      "en": "The Vikings first raided Lindisfarne in the year AD 793."
+     },
+     "prompt": {
+      "en": "How many years was that before the year 1066?"
+     },
+     "answer": 273
+    },
+    {
+     "id": "t4",
+     "skills": [
+      "history-geog.saxons-vikings"
+     ],
+     "difficulty": 2,
+     "type": "bothAgree",
+     "question": {
+      "en": "Many English places end in -by, such as Whitby. These names come from the..."
+     },
+     "options": [
+      {
+       "id": "a",
+       "text": {
+        "en": "Vikings"
+       }
+      },
+      {
+       "id": "b",
+       "text": {
+        "en": "Romans"
+       }
+      },
+      {
+       "id": "c",
+       "text": {
+        "en": "Normans"
+       }
+      },
+      {
+       "id": "d",
+       "text": {
+        "en": "Stone Age people"
+       }
+      }
+     ],
+     "correct": "a"
+    },
+    {
+     "id": "t5",
+     "skills": [
+      "history-geog.saxons-vikings"
+     ],
+     "difficulty": 3,
+     "type": "relay",
+     "first": {
+      "en": "A longship has 20 oars on each side. How many oars does it have in all?"
+     },
+     "firstAnswer": 40,
+     "operation": {
+      "op": "multiply",
+      "operand": 6
+     },
+     "second": {
+      "en": "One longship has {x} oars. There are 6 ships in the fleet. How many oars are there in total?"
+     }
+    }
+   ]
+  }
+ ]
+}
