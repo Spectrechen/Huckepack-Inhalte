@@ -1,0 +1,4255 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "de.huckepack.klasse-7-8",
+  "version": 1,
+  "title": {
+    "de": "Gebirge: Klasse 7 und 8",
+    "en": "Mountains: grades 7 and 8"
+  },
+  "description": {
+    "de": "Für Schülerinnen und Schüler in Deutschland, 12 bis 14 Jahre, Klasse 7 und 8 (Sekundarstufe I): Mathe, Deutsch, Englisch, Physik und Geschichte nach den üblichen Lehrplänen.",
+    "en": "For students in Germany, ages 12 to 14, grades 7 and 8 (lower secondary): maths, German, English, physics and history following typical curricula."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "mathe",
+      "title": {
+        "de": "Mathe",
+        "en": "Maths"
+      }
+    },
+    {
+      "id": "deutsch",
+      "title": {
+        "de": "Deutsch",
+        "en": "German"
+      }
+    },
+    {
+      "id": "englisch",
+      "title": {
+        "de": "Englisch",
+        "en": "English"
+      }
+    },
+    {
+      "id": "physik",
+      "title": {
+        "de": "Physik",
+        "en": "Physics"
+      }
+    },
+    {
+      "id": "geschichte",
+      "title": {
+        "de": "Geschichte",
+        "en": "History"
+      }
+    }
+  ],
+  "skills": {
+    "deutsch.konjunktiv": {
+      "de": "Konjunktiv",
+      "en": "Subjunctive"
+    },
+    "deutsch.passiv": {
+      "de": "Aktiv und Passiv",
+      "en": "Active and passive"
+    },
+    "deutsch.satzgefuege": {
+      "de": "Satzgefüge",
+      "en": "Complex sentences"
+    },
+    "deutsch.satzglieder": {
+      "de": "Satzglieder",
+      "en": "Sentence parts"
+    },
+    "deutsch.zeichen": {
+      "de": "Zeichensetzung",
+      "en": "Punctuation"
+    },
+    "englisch.comparison": {
+      "de": "Steigerung",
+      "en": "Comparison"
+    },
+    "englisch.conditional": {
+      "de": "Conditional I",
+      "en": "Conditional I"
+    },
+    "englisch.irregular": {
+      "de": "Unregelmäßige Verben",
+      "en": "Irregular verbs"
+    },
+    "englisch.tenses": {
+      "de": "Present perfect und simple past",
+      "en": "Present perfect and simple past"
+    },
+    "englisch.vocab": {
+      "de": "Wortschatz",
+      "en": "Vocabulary"
+    },
+    "geschichte.entdeckungen": {
+      "de": "Entdeckungsfahrten",
+      "en": "Voyages of discovery"
+    },
+    "geschichte.mittelalter": {
+      "de": "Mittelalter: Lehnswesen und Burg",
+      "en": "Middle Ages: feudalism and castles"
+    },
+    "geschichte.reformation": {
+      "de": "Buchdruck und Reformation",
+      "en": "Printing and Reformation"
+    },
+    "geschichte.stadt": {
+      "de": "Mittelalterliche Stadt",
+      "en": "Medieval town"
+    },
+    "geschichte.zeitleiste": {
+      "de": "Zeitleiste",
+      "en": "Timeline"
+    },
+    "mathe.kreis": {
+      "de": "Kreis",
+      "en": "Circle"
+    },
+    "mathe.prozent": {
+      "de": "Prozentrechnung",
+      "en": "Percentages"
+    },
+    "mathe.terme": {
+      "de": "Terme und Gleichungen",
+      "en": "Terms and equations"
+    },
+    "mathe.winkel": {
+      "de": "Winkel und Dreiecke",
+      "en": "Angles and triangles"
+    },
+    "mathe.zinsen": {
+      "de": "Zinsrechnung",
+      "en": "Interest"
+    },
+    "mathe.zuordnungen": {
+      "de": "Zuordnungen",
+      "en": "Proportional relations"
+    },
+    "physik.brechung": {
+      "de": "Lichtbrechung und Linsen",
+      "en": "Refraction and lenses"
+    },
+    "physik.geschwindigkeit": {
+      "de": "Geschwindigkeit",
+      "en": "Speed"
+    },
+    "physik.kraft": {
+      "de": "Kraft",
+      "en": "Force"
+    },
+    "physik.spiegel": {
+      "de": "Licht und Spiegel",
+      "en": "Light and mirrors"
+    },
+    "physik.strom": {
+      "de": "Einfacher Stromkreis",
+      "en": "Simple circuits"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "talstation",
+    "nodes": [
+      {
+        "id": "talstation",
+        "title": {
+          "de": "Talstation"
+        },
+        "x": 0.12,
+        "y": 0.86,
+        "requires": []
+      },
+      {
+        "id": "dorf",
+        "title": {
+          "de": "Bergdorf"
+        },
+        "x": 0.3,
+        "y": 0.8,
+        "requires": [],
+        "level": "de.huckepack.klasse-7-8/prozente"
+      },
+      {
+        "id": "muehle",
+        "title": {
+          "de": "Sägemühle"
+        },
+        "x": 0.12,
+        "y": 0.64,
+        "requires": [
+          "de.huckepack.klasse-7-8/prozente"
+        ],
+        "level": "de.huckepack.klasse-7-8/saegemuehle"
+      },
+      {
+        "id": "schmiede",
+        "title": {
+          "de": "Schmiede"
+        },
+        "x": 0.5,
+        "y": 0.88,
+        "requires": [
+          "de.huckepack.klasse-7-8/prozente"
+        ],
+        "level": "de.huckepack.klasse-7-8/schmiede"
+      },
+      {
+        "id": "bruecke",
+        "title": {
+          "de": "Hängebrücke"
+        },
+        "x": 0.64,
+        "y": 0.74,
+        "requires": [
+          "de.huckepack.klasse-7-8/schmiede"
+        ],
+        "level": "de.huckepack.klasse-7-8/bruecke-tenses"
+      },
+      {
+        "id": "bergwerk",
+        "title": {
+          "de": "Bergwerk"
+        },
+        "x": 0.88,
+        "y": 0.84,
+        "requires": [
+          "de.huckepack.klasse-7-8/bruecke-tenses"
+        ],
+        "level": "de.huckepack.klasse-7-8/bergwerk"
+      },
+      {
+        "id": "bergsee",
+        "title": {
+          "de": "Bergsee"
+        },
+        "x": 0.34,
+        "y": 0.58,
+        "requires": [
+          "de.huckepack.klasse-7-8/prozente"
+        ],
+        "level": "de.huckepack.klasse-7-8/bergsee"
+      },
+      {
+        "id": "huette",
+        "title": {
+          "de": "Berghütte"
+        },
+        "x": 0.54,
+        "y": 0.62,
+        "requires": [
+          "de.huckepack.klasse-7-8/bergsee"
+        ],
+        "level": "de.huckepack.klasse-7-8/huette-satzgefuege"
+      },
+      {
+        "id": "aussicht",
+        "title": {
+          "de": "Aussichtsturm"
+        },
+        "x": 0.12,
+        "y": 0.42,
+        "requires": [
+          "de.huckepack.klasse-7-8/saegemuehle"
+        ],
+        "level": "de.huckepack.klasse-7-8/aussichtsturm"
+      },
+      {
+        "id": "seilbahn",
+        "title": {
+          "de": "Seilbahn"
+        },
+        "x": 0.3,
+        "y": 0.36,
+        "requires": [
+          "de.huckepack.klasse-7-8/bergsee"
+        ],
+        "level": "de.huckepack.klasse-7-8/seilbahn"
+      },
+      {
+        "id": "alm",
+        "title": {
+          "de": "Almwiese"
+        },
+        "x": 0.5,
+        "y": 0.4,
+        "requires": [
+          "de.huckepack.klasse-7-8/huette-satzgefuege"
+        ],
+        "level": "de.huckepack.klasse-7-8/alm-zuordnungen"
+      },
+      {
+        "id": "wasserfall",
+        "title": {
+          "de": "Wasserfall"
+        },
+        "x": 0.86,
+        "y": 0.6,
+        "requires": [
+          "de.huckepack.klasse-7-8/bruecke-tenses"
+        ],
+        "level": "de.huckepack.klasse-7-8/wasserfall"
+      },
+      {
+        "id": "hoehle",
+        "title": {
+          "de": "Tropfsteinhöhle"
+        },
+        "x": 0.74,
+        "y": 0.44,
+        "requires": [
+          "de.huckepack.klasse-7-8/wasserfall"
+        ],
+        "level": "de.huckepack.klasse-7-8/hoehle-vocab"
+      },
+      {
+        "id": "wetter",
+        "title": {
+          "de": "Wetterwarte"
+        },
+        "x": 0.28,
+        "y": 0.14,
+        "requires": [
+          "de.huckepack.klasse-7-8/seilbahn"
+        ],
+        "level": "de.huckepack.klasse-7-8/wetterwarte"
+      },
+      {
+        "id": "gipfel",
+        "title": {
+          "de": "Gipfel"
+        },
+        "x": 0.48,
+        "y": 0.16,
+        "requires": [
+          "de.huckepack.klasse-7-8/alm-zuordnungen"
+        ],
+        "level": "de.huckepack.klasse-7-8/winkel"
+      },
+      {
+        "id": "pass",
+        "title": {
+          "de": "Passhöhe"
+        },
+        "x": 0.66,
+        "y": 0.28,
+        "requires": [
+          "de.huckepack.klasse-7-8/alm-zuordnungen"
+        ],
+        "level": "de.huckepack.klasse-7-8/passhoehe"
+      },
+      {
+        "id": "markt",
+        "title": {
+          "de": "Burgmarkt"
+        },
+        "x": 0.66,
+        "y": 0.1,
+        "requires": [
+          "de.huckepack.klasse-7-8/passhoehe"
+        ],
+        "level": "de.huckepack.klasse-7-8/burgmarkt"
+      },
+      {
+        "id": "burg",
+        "title": {
+          "de": "Burg"
+        },
+        "x": 0.88,
+        "y": 0.2,
+        "requires": [
+          "de.huckepack.klasse-7-8/passhoehe",
+          "de.huckepack.klasse-7-8/burgmarkt"
+        ],
+        "level": "de.huckepack.klasse-7-8/burg"
+      }
+    ],
+    "paths": [
+      [
+        "talstation",
+        "dorf"
+      ],
+      [
+        "dorf",
+        "muehle"
+      ],
+      [
+        "dorf",
+        "schmiede"
+      ],
+      [
+        "dorf",
+        "bergsee"
+      ],
+      [
+        "muehle",
+        "aussicht"
+      ],
+      [
+        "aussicht",
+        "seilbahn"
+      ],
+      [
+        "bergsee",
+        "seilbahn"
+      ],
+      [
+        "bergsee",
+        "huette"
+      ],
+      [
+        "schmiede",
+        "bruecke"
+      ],
+      [
+        "huette",
+        "bruecke"
+      ],
+      [
+        "bruecke",
+        "bergwerk"
+      ],
+      [
+        "bruecke",
+        "wasserfall"
+      ],
+      [
+        "wasserfall",
+        "hoehle"
+      ],
+      [
+        "huette",
+        "alm"
+      ],
+      [
+        "seilbahn",
+        "alm"
+      ],
+      [
+        "seilbahn",
+        "wetter"
+      ],
+      [
+        "alm",
+        "gipfel"
+      ],
+      [
+        "alm",
+        "pass"
+      ],
+      [
+        "hoehle",
+        "pass"
+      ],
+      [
+        "wetter",
+        "gipfel"
+      ],
+      [
+        "gipfel",
+        "markt"
+      ],
+      [
+        "pass",
+        "markt"
+      ],
+      [
+        "pass",
+        "burg"
+      ],
+      [
+        "markt",
+        "burg"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "de.huckepack.klasse-7-8/prozente",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Prozente im Bergdorf"
+      },
+      "subject": "mathe",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "prozente-p1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.prozent"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Im Dorfladen kostet eine Jacke 80 €. Sie ist um 25 % reduziert."
+          },
+          "prompt": {
+            "de": "Wie viel Euro Rabatt gibt es auf die Jacke?"
+          },
+          "answer": 20
+        },
+        {
+          "id": "prozente-p2",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.prozent"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "de": "Welcher Prozentsatz passt zu welchem Bruch?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "50 %"
+              },
+              "right": {
+                "de": "1/2"
+              }
+            },
+            {
+              "left": {
+                "de": "25 %"
+              },
+              "right": {
+                "de": "1/4"
+              }
+            },
+            {
+              "left": {
+                "de": "10 %"
+              },
+              "right": {
+                "de": "1/10"
+              }
+            },
+            {
+              "left": {
+                "de": "75 %"
+              },
+              "right": {
+                "de": "3/4"
+              }
+            },
+            {
+              "left": {
+                "de": "20 %"
+              },
+              "right": {
+                "de": "1/5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "prozente-p3",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.prozent"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Ein Preis steigt von 50 € auf 60 €. Um wie viel Prozent ist er gestiegen?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "10 %"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "16,7 %"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "20 %"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "60 %"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "prozente-p4",
+          "type": "relay",
+          "skills": [
+            "mathe.prozent"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Rucksack kostet 80 €. Er ist um 25 % reduziert. Was kostet er jetzt in Euro?"
+          },
+          "firstAnswer": 60,
+          "operation": {
+            "op": "add",
+            "operand": 5
+          },
+          "second": {
+            "de": "Der Rucksack kostet jetzt {x} €. Dazu kommen 5 € für eine Regenhülle. Wie viel Euro zahlt ihr insgesamt?"
+          }
+        },
+        {
+          "id": "prozente-p5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.prozent"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Ein Smartphone kostet nach 20 % Rabatt noch 240 €."
+          },
+          "prompt": {
+            "de": "Wie viel Euro kostete es vor dem Rabatt?"
+          },
+          "answer": 300
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/zinsen",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Zinsen auf dem Sparbuch"
+      },
+      "subject": "mathe",
+      "grade": 7,
+      "place": "dorf",
+      "tasks": [
+        {
+          "id": "zinsen-z1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.zinsen"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Ihr zahlt 500 € auf ein Sparbuch ein. Die Bank gibt 2 % Zinsen im Jahr."
+          },
+          "prompt": {
+            "de": "Wie viel Euro Zinsen gibt es nach einem Jahr?"
+          },
+          "answer": 10
+        },
+        {
+          "id": "zinsen-z2",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.zinsen"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "de": "Ordnet den Begriff der Erklärung zu."
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Kapital"
+              },
+              "right": {
+                "de": "Geld, das angelegt wird"
+              }
+            },
+            {
+              "left": {
+                "de": "Zinssatz"
+              },
+              "right": {
+                "de": "Prozent pro Jahr"
+              }
+            },
+            {
+              "left": {
+                "de": "Zinsen"
+              },
+              "right": {
+                "de": "Preis für das geliehene Geld"
+              }
+            },
+            {
+              "left": {
+                "de": "Laufzeit"
+              },
+              "right": {
+                "de": "Dauer der Geldanlage"
+              }
+            }
+          ]
+        },
+        {
+          "id": "zinsen-z3",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.zinsen"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "600 € werden zu 5 % angelegt. Wie viel Zinsen gibt es nach 6 Monaten?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "30 €"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "15 €"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "180 €"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "3 €"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "zinsen-z4",
+          "type": "relay",
+          "skills": [
+            "mathe.zinsen"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Wie viel Euro Zinsen bringen 1 200 € bei 3 % in einem Jahr?"
+          },
+          "firstAnswer": 36,
+          "operation": {
+            "op": "add",
+            "operand": 1200
+          },
+          "second": {
+            "de": "Ihr bekommt {x} € Zinsen. Das Kapital war 1 200 €. Wie viel Euro habt ihr nach einem Jahr insgesamt?"
+          }
+        },
+        {
+          "id": "zinsen-z5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.zinsen"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Auf einem Konto liegen 2 000 €. Nach einem Jahr gab es 60 € Zinsen."
+          },
+          "prompt": {
+            "de": "Wie hoch ist der Zinssatz in Prozent?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/schmiede",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Terme in der Schmiede"
+      },
+      "subject": "mathe",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "schmiede-t1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.terme"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Die Gleichung lautet 3x + 5 = 20."
+          },
+          "prompt": {
+            "de": "Wie groß ist x?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "schmiede-t2",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.terme"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welcher Text passt zu welchem Term?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Das Doppelte von x, plus 3"
+              },
+              "right": {
+                "de": "2x + 3"
+              }
+            },
+            {
+              "left": {
+                "de": "Die Hälfte von x"
+              },
+              "right": {
+                "de": "x : 2"
+              }
+            },
+            {
+              "left": {
+                "de": "x um 4 vermindert"
+              },
+              "right": {
+                "de": "x − 4"
+              }
+            },
+            {
+              "left": {
+                "de": "Das Dreifache der Summe aus x und 1"
+              },
+              "right": {
+                "de": "3 · (x + 1)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "schmiede-t3",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.terme"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Ihr löst 3x − 4 = 11. Was ist der richtige erste Umformungsschritt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Auf beiden Seiten 4 addieren"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Auf beiden Seiten 4 subtrahieren"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Beide Seiten durch 4 teilen"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Nur auf der linken Seite 4 addieren"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "schmiede-t4",
+          "type": "relay",
+          "skills": [
+            "mathe.terme"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Löst die Gleichung 2x + 7 = 25. Wie groß ist x?"
+          },
+          "firstAnswer": 9,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "de": "Es gilt x = {x}. Wie groß ist dann der Term 4x?"
+          }
+        },
+        {
+          "id": "schmiede-t5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.terme"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Ein Rechteck hat die Breite x und die Länge x + 5. Der Umfang beträgt 34 cm."
+          },
+          "prompt": {
+            "de": "Wie groß ist x in cm?"
+          },
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/alm-zuordnungen",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Zuordnungen auf der Alm"
+      },
+      "subject": "mathe",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "alm-zuordnungen-a1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.zuordnungen"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Ein Lastwagen fährt gleichmäßig. In 2 Stunden schafft er 120 km."
+          },
+          "prompt": {
+            "de": "Wie viele km schafft er in 5 Stunden?"
+          },
+          "answer": 300
+        },
+        {
+          "id": "alm-zuordnungen-a2",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.zuordnungen"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Zuordnung gehört zu welcher Art?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Anzahl Brötchen und Preis"
+              },
+              "right": {
+                "de": "proportional"
+              }
+            },
+            {
+              "left": {
+                "de": "Tempo und Fahrzeit für 60 km"
+              },
+              "right": {
+                "de": "antiproportional"
+              }
+            },
+            {
+              "left": {
+                "de": "Alter und Körpergröße"
+              },
+              "right": {
+                "de": "weder noch"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alm-zuordnungen-a3",
+          "type": "relay",
+          "skills": [
+            "mathe.zuordnungen"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Auto braucht 6 Liter auf 100 km. Wie viele Liter braucht es auf 350 km?"
+          },
+          "firstAnswer": 21,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Für die Fahrt braucht ihr {x} Liter. Ein Liter kostet 2 €. Wie viel Euro kostet der Treibstoff?"
+          }
+        },
+        {
+          "id": "alm-zuordnungen-a4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.zuordnungen"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "3 Arbeiter brauchen für eine Hütte 8 Tage. Wie lange brauchen 6 Arbeiter bei gleichem Tempo?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "16 Tage"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "11 Tage"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "4 Tage"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "24 Tage"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "alm-zuordnungen-a5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.zuordnungen"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Eine Tabelle zeigt: 4 Arbeiter brauchen 15 Tage für einen Stollen."
+          },
+          "prompt": {
+            "de": "Wie viele Tage brauchen 10 Arbeiter?"
+          },
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/winkel",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Winkel am Gipfel"
+      },
+      "subject": "mathe",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "winkel-w1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.winkel"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Ein Dreieck hat zwei Winkel: 50 Grad und 60 Grad."
+          },
+          "prompt": {
+            "de": "Wie groß ist der dritte Winkel in Grad?"
+          },
+          "answer": 70
+        },
+        {
+          "id": "winkel-w2",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.winkel"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "de": "Ordnet die Winkelart der Größe zu."
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "spitzer Winkel"
+              },
+              "right": {
+                "de": "kleiner als 90 Grad"
+              }
+            },
+            {
+              "left": {
+                "de": "rechter Winkel"
+              },
+              "right": {
+                "de": "genau 90 Grad"
+              }
+            },
+            {
+              "left": {
+                "de": "stumpfer Winkel"
+              },
+              "right": {
+                "de": "zwischen 90 und 180 Grad"
+              }
+            },
+            {
+              "left": {
+                "de": "gestreckter Winkel"
+              },
+              "right": {
+                "de": "genau 180 Grad"
+              }
+            }
+          ]
+        },
+        {
+          "id": "winkel-w3",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.winkel"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Zwei Geraden schneiden sich. Ein Winkel misst 65 Grad. Wie groß ist sein Nebenwinkel?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "25 Grad"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "65 Grad"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "295 Grad"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "115 Grad"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "winkel-w4",
+          "type": "relay",
+          "skills": [
+            "mathe.winkel"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein gleichschenkliges Dreieck hat an der Spitze 40 Grad. Wie groß ist ein Basiswinkel in Grad?"
+          },
+          "firstAnswer": 70,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Ein Basiswinkel misst {x} Grad. Wie groß sind beide Basiswinkel zusammen in Grad?"
+          }
+        },
+        {
+          "id": "winkel-w5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.winkel"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Ein Viereck hat drei Winkel: 85, 95 und 110 Grad."
+          },
+          "prompt": {
+            "de": "Wie groß ist der vierte Winkel in Grad?"
+          },
+          "answer": 70
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/kreis",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Kreise und Räder"
+      },
+      "subject": "mathe",
+      "grade": 8,
+      "place": "gipfel",
+      "tasks": [
+        {
+          "id": "kreis-k1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.kreis"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Ein Kreis hat den Radius 7 cm."
+          },
+          "prompt": {
+            "de": "Wie lang ist der Durchmesser in cm?"
+          },
+          "answer": 14
+        },
+        {
+          "id": "kreis-k2",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.kreis"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welcher Begriff passt zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Radius"
+              },
+              "right": {
+                "de": "Strecke vom Mittelpunkt zum Rand"
+              }
+            },
+            {
+              "left": {
+                "de": "Durchmesser"
+              },
+              "right": {
+                "de": "größter Abstand zweier Randpunkte"
+              }
+            },
+            {
+              "left": {
+                "de": "Umfang"
+              },
+              "right": {
+                "de": "Länge der Kreislinie"
+              }
+            },
+            {
+              "left": {
+                "de": "Kreisfläche"
+              },
+              "right": {
+                "de": "Fläche innerhalb der Kreislinie"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kreis-k3",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.kreis"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Der Radius eines Kreises wird verdoppelt. Was passiert mit der Kreisfläche?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Sie wird doppelt so groß."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Sie wird 4-mal so groß."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Sie wird 3-mal so groß."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Sie wird 8-mal so groß."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "kreis-k4",
+          "type": "relay",
+          "skills": [
+            "mathe.kreis"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Rad hat den Durchmesser 50 cm. Wie lang ist sein Umfang in cm? Rechnet mit π ≈ 3,14."
+          },
+          "firstAnswer": 157,
+          "operation": {
+            "op": "multiply",
+            "operand": 10
+          },
+          "second": {
+            "de": "Das Rad hat einen Umfang von {x} cm. Wie viele cm rollt es bei 10 Umdrehungen?"
+          }
+        },
+        {
+          "id": "kreis-k5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.kreis"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Ein runder Tisch hat den Durchmesser 20 dm. Rechnet mit π ≈ 3,14."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Tischfläche in dm²?"
+          },
+          "answer": 314
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/saegemuehle",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Passiv in der Sägemühle"
+      },
+      "subject": "deutsch",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "saegemuehle-v1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.passiv"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "1. Der Bäcker backt Brot. 2. Das Brot wird gebacken. 3. Die Mühle wurde gebaut. 4. Der Müller sieht den Bach."
+          },
+          "prompt": {
+            "de": "Wie viele der vier Sätze stehen im Passiv?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "saegemuehle-v2",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.passiv"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welcher Aktivsatz gehört zu welchem Passivsatz?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Der Müller mahlt das Korn."
+              },
+              "right": {
+                "de": "Das Korn wird vom Müller gemahlen."
+              }
+            },
+            {
+              "left": {
+                "de": "Die Kinder bauen ein Floß."
+              },
+              "right": {
+                "de": "Ein Floß wird von den Kindern gebaut."
+              }
+            },
+            {
+              "left": {
+                "de": "Der Wind drehte das Rad."
+              },
+              "right": {
+                "de": "Das Rad wurde vom Wind gedreht."
+              }
+            },
+            {
+              "left": {
+                "de": "Man hat die Brücke repariert."
+              },
+              "right": {
+                "de": "Die Brücke ist repariert worden."
+              }
+            }
+          ]
+        },
+        {
+          "id": "saegemuehle-v3",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.passiv"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welcher Satz steht im Passiv?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Es wird langsam dunkel."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Der Müller ist müde geworden."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Das Brett wird gehobelt."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Der Müller hat gehobelt."
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "saegemuehle-v4",
+          "type": "relay",
+          "skills": [
+            "deutsch.passiv"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Der Satz lautet: „Gestern wurde die Mühle von den Kindern besichtigt.“ Wie viele Wörter hat er?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "multiply",
+            "operand": 5
+          },
+          "second": {
+            "de": "Der Satz hat {x} Wörter. In einem Text stehen 5 Sätze dieser Länge. Wie viele Wörter sind es insgesamt?"
+          }
+        },
+        {
+          "id": "saegemuehle-v5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.passiv"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Text: Die Mühle wurde 1850 gebaut. Sie wird heute noch genutzt. Früher mahlte man dort Korn. Das Mehl wurde verkauft. Die Kinder besuchen die Mühle."
+          },
+          "prompt": {
+            "de": "Wie viele Passivsätze stehen im Text?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/konjunktiv",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Wenn ich ein Floß hätte"
+      },
+      "subject": "deutsch",
+      "grade": 8,
+      "place": "muehle",
+      "tasks": [
+        {
+          "id": "konjunktiv-j1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.konjunktiv"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "1. Wenn ich Zeit hätte, käme ich. 2. Ich habe Zeit. 3. Er wäre gern dabei. 4. Sie kommt."
+          },
+          "prompt": {
+            "de": "Wie viele der vier Sätze stehen im Konjunktiv II?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "konjunktiv-j2",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.konjunktiv"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Form im Konjunktiv II gehört zu welcher Form im Präteritum?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "sie kam"
+              },
+              "right": {
+                "de": "sie käme"
+              }
+            },
+            {
+              "left": {
+                "de": "wir hatten"
+              },
+              "right": {
+                "de": "wir hätten"
+              }
+            },
+            {
+              "left": {
+                "de": "er war"
+              },
+              "right": {
+                "de": "er wäre"
+              }
+            },
+            {
+              "left": {
+                "de": "ich gab"
+              },
+              "right": {
+                "de": "ich gäbe"
+              }
+            }
+          ]
+        },
+        {
+          "id": "konjunktiv-j3",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.konjunktiv"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Wann nimmt man in der indirekten Rede den Konjunktiv II statt des Konjunktivs I?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Immer, wenn der Satz mit „dass“ beginnt."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Wenn die Konjunktiv-I-Form genauso aussieht wie der Indikativ."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Nur bei Fragen."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Nie, man nimmt dann immer „würde“."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "konjunktiv-j4",
+          "type": "relay",
+          "skills": [
+            "deutsch.konjunktiv"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Im Satz „Er sagte, er sei müde und habe Hunger.“ stehen Verben im Konjunktiv I. Wie viele?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "multiply",
+            "operand": 6
+          },
+          "second": {
+            "de": "In einem Satz stehen {x} Formen im Konjunktiv I. Der Text hat 6 solche Sätze. Wie viele Formen sind es insgesamt?"
+          }
+        },
+        {
+          "id": "konjunktiv-j5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.konjunktiv"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "1. Hätte ich ein Floß, führe ich über den See. 2. Ich würde dich mitnehmen. 3. Ich bin müde. 4. Wäre es nicht so kalt, bliebe ich."
+          },
+          "prompt": {
+            "de": "Wie viele Sätze enthalten einen Konjunktiv II (auch die Form mit „würde“)?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/huette-satzgefuege",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Satzgefüge in der Hütte"
+      },
+      "subject": "deutsch",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "huette-satzgefuege-s1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.satzgefuege"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Der Satz lautet: Wir bleiben in der Hütte, weil es regnet."
+          },
+          "prompt": {
+            "de": "Wie viele Teilsätze (Hauptsatz und Nebensatz zusammen) hat das Satzgefüge?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "huette-satzgefuege-s2",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.satzgefuege"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Konjunktion gehört zu welchem Sinn?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "weil"
+              },
+              "right": {
+                "de": "Begründung"
+              }
+            },
+            {
+              "left": {
+                "de": "obwohl"
+              },
+              "right": {
+                "de": "Gegengrund"
+              }
+            },
+            {
+              "left": {
+                "de": "damit"
+              },
+              "right": {
+                "de": "Absicht"
+              }
+            },
+            {
+              "left": {
+                "de": "falls"
+              },
+              "right": {
+                "de": "Bedingung"
+              }
+            }
+          ]
+        },
+        {
+          "id": "huette-satzgefuege-s3",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.satzgefuege"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Wo steht das gebeugte Verb in einem Nebensatz mit „weil“?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "An zweiter Stelle"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Am Ende des Nebensatzes"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Ganz am Anfang"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Direkt hinter dem Komma"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "huette-satzgefuege-s4",
+          "type": "relay",
+          "skills": [
+            "deutsch.satzgefuege"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Im Satz „Wir wanderten los, obwohl es regnete, weil wir die Hütte erreichen wollten.“ gibt es Nebensätze. Wie viele?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "de": "Das Satzgefüge hat {x} Nebensätze. In einem Text stehen 4 solche Sätze. Wie viele Nebensätze sind es insgesamt?"
+          }
+        },
+        {
+          "id": "huette-satzgefuege-s5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.satzgefuege"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Text: Die Kinder gingen los, obwohl es spät war. Sie wollten rasten, falls die Hütte offen wäre. Zuerst aßen sie, dann tranken sie. Sie schliefen, bis die Sonne aufging."
+          },
+          "prompt": {
+            "de": "Wie viele Nebensätze enthält der Text?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/wetterwarte",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Kommas in der Wetterwarte"
+      },
+      "subject": "deutsch",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "wetterwarte-c1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.zeichen"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Der Satz ohne Kommas: Wir gehen wandern weil die Sonne scheint und wir Zeit haben."
+          },
+          "prompt": {
+            "de": "Wie viele Kommas fehlen?"
+          },
+          "answer": 1
+        },
+        {
+          "id": "wetterwarte-c2",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.zeichen"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Regel gehört zu welchem Beispiel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Aufzählung"
+              },
+              "right": {
+                "de": "Wir brauchen Seil, Helm und Wasser."
+              }
+            },
+            {
+              "left": {
+                "de": "Nebensatz"
+              },
+              "right": {
+                "de": "Ich komme, wenn es hell ist."
+              }
+            },
+            {
+              "left": {
+                "de": "Anrede"
+              },
+              "right": {
+                "de": "Paul, komm bitte her!"
+              }
+            },
+            {
+              "left": {
+                "de": "Wörtliche Rede"
+              },
+              "right": {
+                "de": "Sie rief: „Hierher!“"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wetterwarte-c3",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.zeichen"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welcher Satz ist richtig gesetzt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Er sagte, dass, er müde sei."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Er sagte dass, er müde sei."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Er sagte, dass er müde sei."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Er sagte dass er, müde sei."
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "wetterwarte-c4",
+          "type": "relay",
+          "skills": [
+            "deutsch.zeichen"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Im Satz „Wir packen Brot Käse Äpfel Nüsse und Tee ein.“ fehlen Kommas. Wie viele?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 5
+          },
+          "second": {
+            "de": "Es fehlen {x} Kommas. Auf dem Zettel stehen 5 solche Sätze. Wie viele Kommas fehlen insgesamt?"
+          }
+        },
+        {
+          "id": "wetterwarte-c5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.zeichen"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Der Satz ohne Kommas: Der Wanderer der gestern ankam erzählte uns dass der Pass offen ist."
+          },
+          "prompt": {
+            "de": "Wie viele Kommas fehlen?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/wetterwarte-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Satzglieder bei den Wolken"
+      },
+      "subject": "deutsch",
+      "grade": 7,
+      "place": "wetter",
+      "tasks": [
+        {
+          "id": "wetterwarte-2-g1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.satzglieder"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Der Satz lautet: Der kleine Hund holt am Morgen den Stock."
+          },
+          "prompt": {
+            "de": "Wie viele Satzglieder hat der Satz?"
+          },
+          "answer": 4
+        },
+        {
+          "id": "wetterwarte-2-g2",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.satzglieder"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welches Satzglied gehört zu welcher Frage?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Subjekt"
+              },
+              "right": {
+                "de": "Wer oder was?"
+              }
+            },
+            {
+              "left": {
+                "de": "Akkusativobjekt"
+              },
+              "right": {
+                "de": "Wen oder was?"
+              }
+            },
+            {
+              "left": {
+                "de": "Dativobjekt"
+              },
+              "right": {
+                "de": "Wem?"
+              }
+            },
+            {
+              "left": {
+                "de": "Adverbiale der Zeit"
+              },
+              "right": {
+                "de": "Wann?"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wetterwarte-2-g3",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.satzglieder"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welche Wortgruppe ist im Satz „Die Wanderer rasten in der Hütte.“ ein Satzglied?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Wanderer rasten"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "in der"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Die Wanderer"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "rasten in der"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "wetterwarte-2-g4",
+          "type": "relay",
+          "skills": [
+            "deutsch.satzglieder"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Der Satz lautet: „Gestern gab der Wirt den Gästen eine warme Suppe.“ Wie viele Satzglieder hat er?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "de": "Der erste Satz hat {x} Satzglieder. Der zweite Satz hat 2 Satzglieder mehr. Wie viele hat der zweite Satz?"
+          }
+        },
+        {
+          "id": "wetterwarte-2-g5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.satzglieder"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Der Satz lautet: Dem Gast reicht die Wirtin heute einen heißen Tee."
+          },
+          "prompt": {
+            "de": "Wie viele Objekte (Dativ- und Akkusativobjekte zusammen) hat der Satz?"
+          },
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/bruecke-tenses",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Present perfect oder simple past"
+      },
+      "subject": "englisch",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "bruecke-tenses-t1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.tenses"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "1. I have never seen a glacier. 2. We climbed the hill last week. 3. She has lost her key. 4. They arrived at noon."
+          },
+          "prompt": {
+            "de": "Wie viele der vier Sätze stehen im present perfect?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "bruecke-tenses-t2",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.tenses"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welches Signalwort passt zu welchem Satz?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "yesterday"
+              },
+              "right": {
+                "de": "I visited the castle yesterday."
+              }
+            },
+            {
+              "left": {
+                "de": "ever"
+              },
+              "right": {
+                "de": "Have you ever been here?"
+              }
+            },
+            {
+              "left": {
+                "de": "ago"
+              },
+              "right": {
+                "de": "We left two hours ago."
+              }
+            },
+            {
+              "left": {
+                "de": "just"
+              },
+              "right": {
+                "de": "He has just arrived."
+              }
+            }
+          ]
+        },
+        {
+          "id": "bruecke-tenses-t3",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.tenses"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welcher Satz ist richtig?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "I have seen him yesterday."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "I saw him yesterday."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "I have saw him yesterday."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "I seen him yesterday."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "bruecke-tenses-t4",
+          "type": "relay",
+          "skills": [
+            "englisch.tenses"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Im Satz „We have walked for hours and have seen two lakes, but we stopped only once.“ stehen Verben im present perfect. Wie viele?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "de": "Ein Satz hat {x} Verben im present perfect. Drei solche Sätze stehen im Text. Wie viele Formen sind es insgesamt?"
+          }
+        },
+        {
+          "id": "bruecke-tenses-t5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.tenses"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "1. She has lived here since 2019. 2. She moved here in 2019. 3. We have known him for years. 4. We met him last summer. 5. He has been ill since Monday. 6. He fell ill on Monday."
+          },
+          "prompt": {
+            "de": "Wie viele der sechs Sätze stehen im simple past?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/bruecke-irregular",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Irregular verbs"
+      },
+      "subject": "englisch",
+      "grade": 7,
+      "place": "bruecke",
+      "tasks": [
+        {
+          "id": "bruecke-irregular-i1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.irregular"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Liste: walk, go, eat, play, see, help, write, jump."
+          },
+          "prompt": {
+            "de": "Wie viele dieser Verben sind unregelmäßig (irregular)?"
+          },
+          "answer": 4
+        },
+        {
+          "id": "bruecke-irregular-i2",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.irregular"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Grundform gehört zu welcher Form im simple past?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "go"
+              },
+              "right": {
+                "de": "went"
+              }
+            },
+            {
+              "left": {
+                "de": "buy"
+              },
+              "right": {
+                "de": "bought"
+              }
+            },
+            {
+              "left": {
+                "de": "swim"
+              },
+              "right": {
+                "de": "swam"
+              }
+            },
+            {
+              "left": {
+                "de": "catch"
+              },
+              "right": {
+                "de": "caught"
+              }
+            },
+            {
+              "left": {
+                "de": "write"
+              },
+              "right": {
+                "de": "wrote"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bruecke-irregular-i3",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.irregular"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Wie lautet das past participle von „take“?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "took"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "taked"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "taken"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "token"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "bruecke-irregular-i4",
+          "type": "relay",
+          "skills": [
+            "englisch.irregular"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Welche Formen sind richtig: saw, taked, went, buyed, ate? Wie viele?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "de": "{x} Formen sind richtig. Ihr habt 4 solche Listen. Wie viele richtige Formen sind es insgesamt?"
+          }
+        },
+        {
+          "id": "bruecke-irregular-i5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.irregular"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "1. She has swam. 2. They have gone. 3. He has wrote a letter. 4. We have eaten. 5. I have saw it."
+          },
+          "prompt": {
+            "de": "Wie viele der fünf Sätze enthalten einen Fehler?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/aussichtsturm",
+      "schemaVersion": 1,
+      "title": {
+        "de": "If it rains"
+      },
+      "subject": "englisch",
+      "grade": 8,
+      "tasks": [
+        {
+          "id": "aussichtsturm-c1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.conditional"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "1. If it rains, we will stay home. 2. If it rained, we would stay home. 3. If I see him, I will tell him."
+          },
+          "prompt": {
+            "de": "Wie viele Sätze sind Conditional I (if + present, will)?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "aussichtsturm-c2",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.conditional"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welcher if-Satz gehört zu welchem Hauptsatz?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "If it snows,"
+              },
+              "right": {
+                "de": "we will go sledding."
+              }
+            },
+            {
+              "left": {
+                "de": "If you heat ice,"
+              },
+              "right": {
+                "de": "it will melt."
+              }
+            },
+            {
+              "left": {
+                "de": "If I find the key,"
+              },
+              "right": {
+                "de": "I will open the door."
+              }
+            },
+            {
+              "left": {
+                "de": "If we hurry,"
+              },
+              "right": {
+                "de": "we will catch the cable car."
+              }
+            }
+          ]
+        },
+        {
+          "id": "aussichtsturm-c3",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.conditional"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welcher Satz ist richtig?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "If it will rain, we stay in."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "If it rains, we will stay in."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "If it rain, we will stay in."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "If it rains, we would stay in."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "aussichtsturm-c4",
+          "type": "relay",
+          "skills": [
+            "englisch.conditional"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "1. If you come, I will cook. 2. If it is late, we will sleep. 3. If he sleeps, I will wait. 4. If I know, I tell you. Wie viele Sätze sind richtiges Conditional I?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "de": "{x} Sätze sind richtig. Jeden schreibt ihr 3-mal ab. Wie viele Zeilen schreibt ihr?"
+          }
+        },
+        {
+          "id": "aussichtsturm-c5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.conditional"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "1. If you will come, I wait. 2. If you come, I will wait. 3. If he helps, we will finish. 4. If she will call, we answer. 5. If they hurry, we will be on time."
+          },
+          "prompt": {
+            "de": "Wie viele Sätze enthalten einen Fehler?"
+          },
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/hoehle-vocab",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Words in the cave"
+      },
+      "subject": "englisch",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "hoehle-vocab-v1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.vocab"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Wörter: valley, lake, bread, peak, cave, shirt, rope, bridge."
+          },
+          "prompt": {
+            "de": "Wie viele dieser Wörter bezeichnen etwas Natürliches in der Landschaft?"
+          },
+          "answer": 4
+        },
+        {
+          "id": "hoehle-vocab-v2",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.vocab"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "de": "Welches deutsche Wort gehört zu welchem englischen Wort?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Gipfel"
+              },
+              "right": {
+                "de": "peak"
+              }
+            },
+            {
+              "left": {
+                "de": "Tal"
+              },
+              "right": {
+                "de": "valley"
+              }
+            },
+            {
+              "left": {
+                "de": "Höhle"
+              },
+              "right": {
+                "de": "cave"
+              }
+            },
+            {
+              "left": {
+                "de": "Seil"
+              },
+              "right": {
+                "de": "rope"
+              }
+            },
+            {
+              "left": {
+                "de": "Wasserfall"
+              },
+              "right": {
+                "de": "waterfall"
+              }
+            },
+            {
+              "left": {
+                "de": "Rucksack"
+              },
+              "right": {
+                "de": "backpack"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hoehle-vocab-v3",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.vocab"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Was bedeutet das englische Wort „gift“?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Gift"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Geschenk"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Gabel"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Gipfel"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "hoehle-vocab-v4",
+          "type": "relay",
+          "skills": [
+            "englisch.vocab"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Rechnet: „forty plus fifteen“. Wie lautet das Ergebnis in Ziffern?"
+          },
+          "firstAnswer": 55,
+          "operation": {
+            "op": "subtract",
+            "operand": 11
+          },
+          "second": {
+            "de": "Das Ergebnis ist {x}. Jetzt rechnet: „subtract eleven“. Wie lautet das neue Ergebnis in Ziffern?"
+          }
+        },
+        {
+          "id": "hoehle-vocab-v5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.vocab"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Schild an der Bergbahn: „The cable car leaves at a quarter past nine and arrives at half past nine.“"
+          },
+          "prompt": {
+            "de": "Wie viele Minuten dauert die Fahrt?"
+          },
+          "answer": 15
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/hoehle-comparison",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Higher, highest"
+      },
+      "subject": "englisch",
+      "grade": 7,
+      "place": "hoehle",
+      "tasks": [
+        {
+          "id": "hoehle-comparison-m1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.comparison"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Wörter: big, beautiful, dangerous, small, interesting."
+          },
+          "prompt": {
+            "de": "Wie viele davon steigert man mit „more“ und „most“ statt mit „-er“ und „-est“?"
+          },
+          "answer": 3
+        },
+        {
+          "id": "hoehle-comparison-m2",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.comparison"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Grundform gehört zu welchem comparative?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "good"
+              },
+              "right": {
+                "de": "better"
+              }
+            },
+            {
+              "left": {
+                "de": "bad"
+              },
+              "right": {
+                "de": "worse"
+              }
+            },
+            {
+              "left": {
+                "de": "far"
+              },
+              "right": {
+                "de": "further"
+              }
+            },
+            {
+              "left": {
+                "de": "little"
+              },
+              "right": {
+                "de": "less"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hoehle-comparison-m3",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.comparison"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welche Wortgruppe ist richtig?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "the most high mountain"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "the higher mountain of all"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "the highest mountain"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "the more high mountain"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "hoehle-comparison-m4",
+          "type": "relay",
+          "skills": [
+            "englisch.comparison"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "1. The peak is higher than the hill. 2. This lake is more deep than that. 3. He is the tallest in the group. 4. It is more bad today. Wie viele Sätze sind richtig?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "multiply",
+            "operand": 6
+          },
+          "second": {
+            "de": "{x} Sätze sind richtig. Ihr habt 6 solche Übungen. Wie viele richtige Sätze sind es insgesamt?"
+          }
+        },
+        {
+          "id": "hoehle-comparison-m5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.comparison"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "1. This is gooder than that. 2. She is taller than me. 3. It is the baddest day. 4. He runs faster than I. 5. The trail is more long."
+          },
+          "prompt": {
+            "de": "Wie viele Sätze enthalten einen Fehler?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/bergsee",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Spiegel im Bergsee"
+      },
+      "subject": "physik",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "bergsee-o1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.spiegel"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Ein Lichtstrahl trifft unter 35 Grad zum Lot auf einen ebenen Spiegel."
+          },
+          "prompt": {
+            "de": "Unter wie viel Grad zum Lot wird der Strahl zurückgeworfen?"
+          },
+          "answer": 35
+        },
+        {
+          "id": "bergsee-o2",
+          "type": "matchPairs",
+          "skills": [
+            "physik.spiegel"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "de": "Welcher Begriff passt zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Reflexion"
+              },
+              "right": {
+                "de": "Licht wird zurückgeworfen"
+              }
+            },
+            {
+              "left": {
+                "de": "Brechung"
+              },
+              "right": {
+                "de": "Licht ändert beim Übergang in einen anderen Stoff die Richtung"
+              }
+            },
+            {
+              "left": {
+                "de": "Schatten"
+              },
+              "right": {
+                "de": "Bereich, den kein Licht trifft"
+              }
+            },
+            {
+              "left": {
+                "de": "Lichtquelle"
+              },
+              "right": {
+                "de": "Körper, der selbst leuchtet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bergsee-o3",
+          "type": "bothAgree",
+          "skills": [
+            "physik.spiegel"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Warum sieht man sich im ruhigen Bergsee gespiegelt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Das Wasser leuchtet selbst."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Das Licht wird vom Wasser ganz verschluckt."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Die Fische werfen das Licht zurück."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Die glatte Oberfläche wirft das Licht geordnet zurück."
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "bergsee-o4",
+          "type": "relay",
+          "skills": [
+            "physik.spiegel"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Strahl trifft unter 25 Grad zum Lot auf einen Spiegel. Wie groß ist der Winkel zwischen einfallendem und reflektiertem Strahl in Grad?"
+          },
+          "firstAnswer": 50,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Der Winkel zwischen den beiden Strahlen beträgt {x} Grad. Jetzt wird der Einfallswinkel verdoppelt. Wie groß ist der Winkel zwischen den Strahlen dann in Grad?"
+          }
+        },
+        {
+          "id": "bergsee-o5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.spiegel"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Ein Mann ist 1,80 m groß und steht 2 m vor einem ebenen Spiegel."
+          },
+          "prompt": {
+            "de": "Wie weit ist sein Spiegelbild von ihm entfernt, in Metern?"
+          },
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/bergsee-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Brechung und Linsen"
+      },
+      "subject": "physik",
+      "grade": 8,
+      "place": "bergsee",
+      "tasks": [
+        {
+          "id": "bergsee-2-b1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.brechung"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Nach der klassischen Einteilung zählt man beim Regenbogen diese Farben: Rot, Orange, Gelb, Grün, Blau, Indigo und Violett."
+          },
+          "prompt": {
+            "de": "Wie viele Farben sind das?"
+          },
+          "answer": 7
+        },
+        {
+          "id": "bergsee-2-b2",
+          "type": "matchPairs",
+          "skills": [
+            "physik.brechung"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Was passiert in welchem Fall?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Strahl von Luft in Wasser"
+              },
+              "right": {
+                "de": "wird zum Lot hin gebrochen"
+              }
+            },
+            {
+              "left": {
+                "de": "Strahl von Wasser in Luft"
+              },
+              "right": {
+                "de": "wird vom Lot weg gebrochen"
+              }
+            },
+            {
+              "left": {
+                "de": "Prisma"
+              },
+              "right": {
+                "de": "zerlegt weißes Licht in Farben"
+              }
+            },
+            {
+              "left": {
+                "de": "Sammellinse"
+              },
+              "right": {
+                "de": "bündelt Licht im Brennpunkt"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bergsee-2-b3",
+          "type": "bothAgree",
+          "skills": [
+            "physik.brechung"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Ein Löffel im Wasserglas sieht geknickt aus. Warum?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Der Löffel verbiegt sich im kalten Wasser."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Das Glas spiegelt den Löffel doppelt."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Das Licht wird an der Grenze zwischen Wasser und Luft gebrochen."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Das Wasser drückt den Löffel zusammen."
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "bergsee-2-b4",
+          "type": "relay",
+          "skills": [
+            "physik.brechung"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Eine Sammellinse hat die Brennweite 25 cm. Ein sehr weit entfernter Baum wird abgebildet. In welchem Abstand hinter der Linse (in cm) entsteht das scharfe Bild?"
+          },
+          "firstAnswer": 25,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "de": "Der Schirm steht {x} cm hinter der Linse. Ihr schiebt ihn 5 cm näher an die Linse. Wie weit ist er jetzt von der Linse entfernt (in cm)?"
+          }
+        },
+        {
+          "id": "bergsee-2-b5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.brechung"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Licht legt etwa 300 000 km in einer Sekunde zurück."
+          },
+          "prompt": {
+            "de": "Wie viele Sekunden braucht Licht für 900 000 km?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/seilbahn",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Tempo der Seilbahn"
+      },
+      "subject": "physik",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "seilbahn-s1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.geschwindigkeit"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Die Seilbahn fährt 3 km in 10 Minuten."
+          },
+          "prompt": {
+            "de": "Wie viele Meter fährt sie in einer Minute?"
+          },
+          "answer": 300
+        },
+        {
+          "id": "seilbahn-s2",
+          "type": "matchPairs",
+          "skills": [
+            "physik.geschwindigkeit"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Geschwindigkeit in km/h passt zu welcher in m/s?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "36 km/h"
+              },
+              "right": {
+                "de": "10 m/s"
+              }
+            },
+            {
+              "left": {
+                "de": "72 km/h"
+              },
+              "right": {
+                "de": "20 m/s"
+              }
+            },
+            {
+              "left": {
+                "de": "18 km/h"
+              },
+              "right": {
+                "de": "5 m/s"
+              }
+            },
+            {
+              "left": {
+                "de": "108 km/h"
+              },
+              "right": {
+                "de": "30 m/s"
+              }
+            }
+          ]
+        },
+        {
+          "id": "seilbahn-s3",
+          "type": "bothAgree",
+          "skills": [
+            "physik.geschwindigkeit"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welche Formel für die Geschwindigkeit v ist richtig? (s = Strecke, t = Zeit)"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "v = s · t"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "v = t : s"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "v = s : t"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "v = s − t"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "seilbahn-s4",
+          "type": "relay",
+          "skills": [
+            "physik.geschwindigkeit"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Eine Gondel fährt mit 18 km/h. Wie viele km legt sie in 2 Stunden zurück?"
+          },
+          "firstAnswer": 36,
+          "operation": {
+            "op": "multiply",
+            "operand": 1000
+          },
+          "second": {
+            "de": "Die Gondel legt {x} km zurück. Wie viele Meter sind das?"
+          }
+        },
+        {
+          "id": "seilbahn-s5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.geschwindigkeit"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Ein Zug fährt 150 km in 1 Stunde und 30 Minuten."
+          },
+          "prompt": {
+            "de": "Wie schnell fährt er im Durchschnitt, in km/h?"
+          },
+          "answer": 100
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/seilbahn-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Kräfte am Seil"
+      },
+      "subject": "physik",
+      "grade": 7,
+      "place": "seilbahn",
+      "tasks": [
+        {
+          "id": "seilbahn-2-f1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.kraft"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Ein Rucksack hat die Masse 8 kg. Rechnet mit 10 N pro kg."
+          },
+          "prompt": {
+            "de": "Wie groß ist seine Gewichtskraft in Newton?"
+          },
+          "answer": 80
+        },
+        {
+          "id": "seilbahn-2-f2",
+          "type": "matchPairs",
+          "skills": [
+            "physik.kraft"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Kraft passt zu welchem Beispiel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Gewichtskraft"
+              },
+              "right": {
+                "de": "zieht den Stein nach unten"
+              }
+            },
+            {
+              "left": {
+                "de": "Reibungskraft"
+              },
+              "right": {
+                "de": "bremst den rutschenden Schlitten"
+              }
+            },
+            {
+              "left": {
+                "de": "Auftriebskraft"
+              },
+              "right": {
+                "de": "hält das Boot an der Wasseroberfläche"
+              }
+            },
+            {
+              "left": {
+                "de": "Federkraft"
+              },
+              "right": {
+                "de": "zieht den gedehnten Expander zurück"
+              }
+            }
+          ]
+        },
+        {
+          "id": "seilbahn-2-f3",
+          "type": "bothAgree",
+          "skills": [
+            "physik.kraft"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Ein Rucksack wird auf den Mond gebracht. Was ist richtig?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Masse und Gewichtskraft bleiben gleich."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Die Masse wird kleiner, die Gewichtskraft bleibt."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Die Masse bleibt, die Gewichtskraft wird kleiner."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Beides wird größer."
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "seilbahn-2-f4",
+          "type": "relay",
+          "skills": [
+            "physik.kraft"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Eine Feder dehnt sich bei 2 N um 4 cm. Wie weit dehnt sie sich bei 5 N (in cm)?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "add",
+            "operand": 12
+          },
+          "second": {
+            "de": "Die Feder dehnt sich um {x} cm. Sie war vorher 12 cm lang. Wie lang ist sie jetzt (in cm)?"
+          }
+        },
+        {
+          "id": "seilbahn-2-f5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.kraft"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Eine Seilbahn-Kabine mit Fahrgästen hat die Masse 600 kg. Rechnet mit 10 N pro kg."
+          },
+          "prompt": {
+            "de": "Wie groß muss die Kraft des Seils mindestens sein, um sie zu halten, in Newton?"
+          },
+          "answer": 6000
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/wasserfall",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Strom vom Wasserfall"
+      },
+      "subject": "physik",
+      "grade": 8,
+      "tasks": [
+        {
+          "id": "wasserfall-e1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.strom"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Eine Lampe liegt an 12 Volt und hat den Widerstand 4 Ohm."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Stromstärke in Ampere?"
+          },
+          "answer": 3
+        },
+        {
+          "id": "wasserfall-e2",
+          "type": "matchPairs",
+          "skills": [
+            "physik.strom"
+          ],
+          "difficulty": 1,
+          "prompt": {
+            "de": "Welche Größe gehört zu welcher Einheit?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Spannung"
+              },
+              "right": {
+                "de": "Volt"
+              }
+            },
+            {
+              "left": {
+                "de": "Stromstärke"
+              },
+              "right": {
+                "de": "Ampere"
+              }
+            },
+            {
+              "left": {
+                "de": "Widerstand"
+              },
+              "right": {
+                "de": "Ohm"
+              }
+            },
+            {
+              "left": {
+                "de": "Leistung"
+              },
+              "right": {
+                "de": "Watt"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wasserfall-e3",
+          "type": "bothAgree",
+          "skills": [
+            "physik.strom"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "In welcher Schaltung leuchten die anderen Lampen weiter, wenn eine ausfällt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Kurzschluss"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Reihenschaltung"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Parallelschaltung"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "offener Stromkreis"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "wasserfall-e4",
+          "type": "relay",
+          "skills": [
+            "physik.strom"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Gerät hat bei 20 V die Stromstärke 5 A. Wie groß ist sein Widerstand in Ohm?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Der Widerstand beträgt {x} Ohm. Zwei gleiche Geräte werden in Reihe geschaltet. Wie groß ist der Gesamtwiderstand in Ohm?"
+          }
+        },
+        {
+          "id": "wasserfall-e5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.strom"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Ein Gerät nimmt bei 230 Volt eine Stromstärke von 5 Ampere auf."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Leistung in Watt? (P = U · I)"
+          },
+          "answer": 1150
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/burg",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Auf der Burg"
+      },
+      "subject": "geschichte",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "burg-m1",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.mittelalter"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Das Mittelalter dauerte etwa von 500 bis 1500."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre dauerte es etwa?"
+          },
+          "answer": 1000
+        },
+        {
+          "id": "burg-m2",
+          "type": "matchPairs",
+          "skills": [
+            "geschichte.mittelalter"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welcher Begriff passt zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Lehen"
+              },
+              "right": {
+                "de": "Land, das ein Herr seinem Gefolgsmann gibt"
+              }
+            },
+            {
+              "left": {
+                "de": "Vasall"
+              },
+              "right": {
+                "de": "Gefolgsmann, der Treue und Dienst schwört"
+              }
+            },
+            {
+              "left": {
+                "de": "Bergfried"
+              },
+              "right": {
+                "de": "hoher Hauptturm der Burg"
+              }
+            },
+            {
+              "left": {
+                "de": "Zugbrücke"
+              },
+              "right": {
+                "de": "bewegliche Brücke vor dem Tor"
+              }
+            },
+            {
+              "left": {
+                "de": "Grundherr"
+              },
+              "right": {
+                "de": "besitzt Land, auf dem Bauern arbeiten"
+              }
+            }
+          ]
+        },
+        {
+          "id": "burg-m3",
+          "type": "bothAgree",
+          "skills": [
+            "geschichte.mittelalter"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Wer gab einem Ritter sein Lehen?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Ein Bauer"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Ein Händler"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Sein Lehnsherr"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Ein Knappe"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "burg-m4",
+          "type": "relay",
+          "skills": [
+            "geschichte.mittelalter"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Bauer erntet 240 Säcke Getreide und gibt 10 % davon ab. Wie viele Säcke bleiben ihm?"
+          },
+          "firstAnswer": 216,
+          "operation": {
+            "op": "divide",
+            "operand": 18
+          },
+          "second": {
+            "de": "Dem Bauern bleiben {x} Säcke. Die Familie isst im Monat 18 Säcke. Für wie viele Monate reicht das?"
+          }
+        },
+        {
+          "id": "burg-m5",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.mittelalter"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Mit 7 Jahren wurde ein Junge Page, mit 14 Knappe und mit 21 Ritter."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre dauerte die Ausbildung vom Page bis zum Ritterschlag?"
+          },
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/bergwerk",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Stadt und Bergwerk"
+      },
+      "subject": "geschichte",
+      "grade": 7,
+      "tasks": [
+        {
+          "id": "bergwerk-s1",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.stadt"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Im Jahr 1200 hatte eine Stadt 2 000 Einwohner. 100 Jahre später waren es dreimal so viele."
+          },
+          "prompt": {
+            "de": "Wie viele Einwohner hatte die Stadt im Jahr 1300?"
+          },
+          "answer": 6000
+        },
+        {
+          "id": "bergwerk-s2",
+          "type": "matchPairs",
+          "skills": [
+            "geschichte.stadt"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welcher Begriff passt zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Zunft"
+              },
+              "right": {
+                "de": "Zusammenschluss von Handwerkern eines Berufs"
+              }
+            },
+            {
+              "left": {
+                "de": "Markt"
+              },
+              "right": {
+                "de": "Ort, an dem Waren verkauft und getauscht werden"
+              }
+            },
+            {
+              "left": {
+                "de": "Stadtluft macht frei"
+              },
+              "right": {
+                "de": "Wer Jahr und Tag in der Stadt lebte, war nicht mehr unfrei"
+              }
+            },
+            {
+              "left": {
+                "de": "Stollen"
+              },
+              "right": {
+                "de": "waagerechter Gang im Bergwerk"
+              }
+            },
+            {
+              "left": {
+                "de": "Schacht"
+              },
+              "right": {
+                "de": "senkrechter Gang in die Tiefe"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bergwerk-s3",
+          "type": "bothAgree",
+          "skills": [
+            "geschichte.stadt"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Was war ein Vorteil der Zünfte für die Handwerker?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Sie wählten den König."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Sie waren von allen Steuern befreit."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Sie legten Qualität und Preise fest und halfen sich gegenseitig."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Sie durften eigene Heere aufstellen."
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "bergwerk-s4",
+          "type": "relay",
+          "skills": [
+            "geschichte.stadt"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Stollen soll 120 m lang werden. Die Bergleute schaffen 4 m am Tag. Wie viele Tage dauert die Arbeit?"
+          },
+          "firstAnswer": 30,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Die Arbeit dauert {x} Tage. Ein Bergmann bekommt 2 Pfennige am Tag. Wie viele Pfennige verdient er in dieser Zeit?"
+          }
+        },
+        {
+          "id": "bergwerk-s5",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.stadt"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Eine Stadt hat 4 Tore. An jedem Tor stehen am Tag 3 Wachen und in der Nacht 2."
+          },
+          "prompt": {
+            "de": "Wie viele Wachen sind es insgesamt an allen Toren (Tag und Nacht)?"
+          },
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/passhoehe",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Entdeckerfahrten"
+      },
+      "subject": "geschichte",
+      "grade": 8,
+      "tasks": [
+        {
+          "id": "passhoehe-d1",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.entdeckungen"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Kolumbus segelte 1492 los und erreichte Amerika. Vasco da Gama kam 1498 in Indien an."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre liegen zwischen beiden Ereignissen?"
+          },
+          "answer": 6
+        },
+        {
+          "id": "passhoehe-d2",
+          "type": "matchPairs",
+          "skills": [
+            "geschichte.entdeckungen"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Wer oder was gehört zu welcher Leistung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Christoph Kolumbus"
+              },
+              "right": {
+                "de": "erreichte 1492 die Karibik"
+              }
+            },
+            {
+              "left": {
+                "de": "Vasco da Gama"
+              },
+              "right": {
+                "de": "fand 1498 den Seeweg nach Indien um Afrika"
+              }
+            },
+            {
+              "left": {
+                "de": "Ferdinand Magellan"
+              },
+              "right": {
+                "de": "seine Flotte umsegelte 1519 bis 1522 als erste die Erde"
+              }
+            },
+            {
+              "left": {
+                "de": "Karavelle"
+              },
+              "right": {
+                "de": "wendiges Segelschiff der Entdecker"
+              }
+            }
+          ]
+        },
+        {
+          "id": "passhoehe-d3",
+          "type": "bothAgree",
+          "skills": [
+            "geschichte.entdeckungen"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Welche Erfindung half den Seefahrern, sich auf dem Meer zu orientieren?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Der Buchdruck"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Der Kompass"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Das Schießpulver"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Die Wassermühle"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "passhoehe-d4",
+          "type": "relay",
+          "skills": [
+            "geschichte.entdeckungen"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Magellans Flotte brach 1519 auf und kam 1522 zurück. Wie viele Jahre war sie unterwegs?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 12
+          },
+          "second": {
+            "de": "Die Reise dauerte {x} Jahre. Wie viele Monate sind das?"
+          }
+        },
+        {
+          "id": "passhoehe-d5",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.entdeckungen"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Konstantinopel wurde 1453 von den Osmanen erobert. Kolumbus segelte 1492."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre liegen zwischen der Eroberung und Kolumbus' Fahrt?"
+          },
+          "answer": 39
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/burgmarkt",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Buchdruck und Reformation"
+      },
+      "subject": "geschichte",
+      "grade": 8,
+      "tasks": [
+        {
+          "id": "burgmarkt-r1",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.reformation"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Gutenberg erfand um das Jahr 1450 den Buchdruck mit beweglichen Lettern. Luther veröffentlichte 1517 seine Thesen."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre liegen zwischen 1450 und 1517?"
+          },
+          "answer": 67
+        },
+        {
+          "id": "burgmarkt-r2",
+          "type": "matchPairs",
+          "skills": [
+            "geschichte.reformation"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welcher Begriff passt zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Bewegliche Lettern"
+              },
+              "right": {
+                "de": "einzelne Metallbuchstaben, die man immer neu setzt"
+              }
+            },
+            {
+              "left": {
+                "de": "Flugblatt"
+              },
+              "right": {
+                "de": "gedruckter Zettel mit Nachrichten oder Bildern"
+              }
+            },
+            {
+              "left": {
+                "de": "Reichstag"
+              },
+              "right": {
+                "de": "Versammlung der Fürsten des Reiches"
+              }
+            },
+            {
+              "left": {
+                "de": "Thesen"
+              },
+              "right": {
+                "de": "Behauptungen, die man zur Diskussion stellt"
+              }
+            }
+          ]
+        },
+        {
+          "id": "burgmarkt-r3",
+          "type": "bothAgree",
+          "skills": [
+            "geschichte.reformation"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "Warum verbreiteten sich Luthers Schriften so schnell?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Die meisten Menschen konnten schon lesen und schreiben."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Der Kaiser ließ sie im ganzen Reich verkünden."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Es gab schon Zeitungen mit Millionenauflage."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Mit dem Buchdruck konnte man Flugblätter und Schriften schnell vervielfältigen."
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "burgmarkt-r4",
+          "type": "relay",
+          "skills": [
+            "geschichte.reformation"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Ein Drucker setzt eine Seite mit 40 Zeilen zu je 35 Buchstaben. Wie viele Buchstaben hat die Seite?"
+          },
+          "firstAnswer": 1400,
+          "operation": {
+            "op": "multiply",
+            "operand": 10
+          },
+          "second": {
+            "de": "Eine Seite hat {x} Buchstaben. Das Buch hat 10 gleiche Seiten. Wie viele Buchstaben sind es insgesamt?"
+          }
+        },
+        {
+          "id": "burgmarkt-r5",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.reformation"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Luthers Thesen erschienen 1517, der Reichstag in Worms war 1521, der Augsburger Religionsfriede 1555."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre liegen zwischen den Thesen und dem Religionsfrieden?"
+          },
+          "answer": 38
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-7-8/burg-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Zeitleiste der Burg"
+      },
+      "subject": "geschichte",
+      "grade": 8,
+      "place": "burg",
+      "tasks": [
+        {
+          "id": "burg-2-z1",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.zeitleiste"
+          ],
+          "difficulty": 1,
+          "clue": {
+            "de": "Karl der Große wurde im Jahr 800 Kaiser. Otto der Große wurde im Jahr 962 Kaiser."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre liegen dazwischen?"
+          },
+          "answer": 162
+        },
+        {
+          "id": "burg-2-z2",
+          "type": "matchPairs",
+          "skills": [
+            "geschichte.zeitleiste"
+          ],
+          "difficulty": 2,
+          "prompt": {
+            "de": "Welche Jahreszahl gehört zu welchem Ereignis?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "800"
+              },
+              "right": {
+                "de": "Karl der Große wird Kaiser"
+              }
+            },
+            {
+              "left": {
+                "de": "962"
+              },
+              "right": {
+                "de": "Otto der Große wird Kaiser"
+              }
+            },
+            {
+              "left": {
+                "de": "um 1450"
+              },
+              "right": {
+                "de": "Gutenberg erfindet den Buchdruck"
+              }
+            },
+            {
+              "left": {
+                "de": "1492"
+              },
+              "right": {
+                "de": "Kolumbus erreicht Amerika"
+              }
+            },
+            {
+              "left": {
+                "de": "1517"
+              },
+              "right": {
+                "de": "Luthers Thesen"
+              }
+            }
+          ]
+        },
+        {
+          "id": "burg-2-z3",
+          "type": "bothAgree",
+          "skills": [
+            "geschichte.zeitleiste"
+          ],
+          "difficulty": 2,
+          "question": {
+            "de": "In welchem Jahrhundert liegt das Jahr 1492?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "im 14. Jahrhundert"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "im 15. Jahrhundert"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "im 16. Jahrhundert"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "im 13. Jahrhundert"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "burg-2-z4",
+          "type": "relay",
+          "skills": [
+            "geschichte.zeitleiste"
+          ],
+          "difficulty": 2,
+          "first": {
+            "de": "Wie viele Jahrhunderte liegen zwischen dem Jahr 800 und dem Jahr 1500?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "multiply",
+            "operand": 100
+          },
+          "second": {
+            "de": "Das sind {x} Jahrhunderte. Wie viele Jahre sind das?"
+          }
+        },
+        {
+          "id": "burg-2-z5",
+          "type": "splitInfo",
+          "skills": [
+            "geschichte.zeitleiste"
+          ],
+          "difficulty": 3,
+          "clue": {
+            "de": "Eine Burg wurde 1180 gebaut und 1480 erweitert."
+          },
+          "prompt": {
+            "de": "Wie viele Jahre war die Burg bei der Erweiterung alt?"
+          },
+          "answer": 300
+        }
+      ]
+    }
+  ]
+}

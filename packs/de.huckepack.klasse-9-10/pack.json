@@ -1,0 +1,5121 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "de.huckepack.klasse-9-10",
+  "version": 1,
+  "title": {
+    "de": "Großstadt: Klasse 9 und 10",
+    "en": "Big city: grades 9 and 10"
+  },
+  "description": {
+    "de": "Für Schülerinnen und Schüler in Deutschland, Sekundarstufe I, Klasse 9 und 10 (14 bis 16 Jahre, Niveau mittlerer Schulabschluss): Mathe, Deutsch, Englisch, Chemie und Politik/Wirtschaft.",
+    "en": "For students in Germany, lower secondary school, grades 9 and 10 (ages 14 to 16): maths, German, English, chemistry and politics/economics."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "mathe",
+      "title": {
+        "de": "Mathe",
+        "en": "Maths"
+      }
+    },
+    {
+      "id": "deutsch",
+      "title": {
+        "de": "Deutsch",
+        "en": "German"
+      }
+    },
+    {
+      "id": "englisch",
+      "title": {
+        "de": "Englisch",
+        "en": "English"
+      }
+    },
+    {
+      "id": "chemie",
+      "title": {
+        "de": "Chemie",
+        "en": "Chemistry"
+      }
+    },
+    {
+      "id": "politik",
+      "title": {
+        "de": "Politik und Wirtschaft",
+        "en": "Politics and economics"
+      }
+    }
+  ],
+  "skills": {
+    "mathe.potenzen": {
+      "de": "Potenzen"
+    },
+    "mathe.wurzeln": {
+      "de": "Wurzeln"
+    },
+    "mathe.pythagoras": {
+      "de": "Satz des Pythagoras"
+    },
+    "mathe.quadratisch": {
+      "de": "Quadratische Funktionen"
+    },
+    "mathe.quadratische-gleichungen": {
+      "de": "Quadratische Gleichungen"
+    },
+    "mathe.trigonometrie": {
+      "de": "Trigonometrie"
+    },
+    "mathe.wahrscheinlichkeit": {
+      "de": "Wahrscheinlichkeit"
+    },
+    "mathe.zufallsversuche": {
+      "de": "Mehrstufige Zufallsversuche"
+    },
+    "deutsch.rhetorik": {
+      "de": "Rhetorische Mittel"
+    },
+    "deutsch.textsorten": {
+      "de": "Textsorten"
+    },
+    "deutsch.indirekte-rede": {
+      "de": "Indirekte Rede"
+    },
+    "deutsch.kommas": {
+      "de": "Kommaregeln"
+    },
+    "deutsch.rechtschreibung": {
+      "de": "Rechtschreibung und Satzglieder"
+    },
+    "englisch.passive": {
+      "de": "Passive"
+    },
+    "englisch.reported-speech": {
+      "de": "Reported Speech"
+    },
+    "englisch.conditionals": {
+      "de": "If-Sätze"
+    },
+    "chemie.atombau": {
+      "de": "Atombau"
+    },
+    "chemie.periodensystem": {
+      "de": "Periodensystem"
+    },
+    "chemie.reaktionsgleichungen": {
+      "de": "Reaktionsgleichungen"
+    },
+    "chemie.saeuren-basen": {
+      "de": "Säuren und Basen"
+    },
+    "chemie.neutralisation": {
+      "de": "Neutralisation und Salze"
+    },
+    "politik.grundgesetz": {
+      "de": "Grundgesetz"
+    },
+    "politik.wirtschaft": {
+      "de": "Wirtschaft im Alltag"
+    },
+    "politik.bundestag": {
+      "de": "Bundestag"
+    },
+    "politik.gesetzgebung": {
+      "de": "Gesetzgebung und Bundesrat"
+    },
+    "politik.gewaltenteilung": {
+      "de": "Gewaltenteilung"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "bahnhof",
+    "nodes": [
+      {
+        "id": "bahnhof",
+        "title": {
+          "de": "Hauptbahnhof"
+        },
+        "x": 0.12,
+        "y": 0.84,
+        "requires": []
+      },
+      {
+        "id": "park",
+        "title": {
+          "de": "Stadtpark"
+        },
+        "miniGame": "ticTacToe",
+        "x": 0.12,
+        "y": 0.58,
+        "requires": []
+      },
+      {
+        "id": "markt",
+        "title": {
+          "de": "Marktplatz"
+        },
+        "level": "de.huckepack.klasse-9-10/markt",
+        "x": 0.32,
+        "y": 0.72,
+        "requires": []
+      },
+      {
+        "id": "bibliothek",
+        "title": {
+          "de": "Bibliothek"
+        },
+        "level": "de.huckepack.klasse-9-10/bibliothek",
+        "x": 0.3,
+        "y": 0.48,
+        "requires": [
+          "de.huckepack.klasse-9-10/markt"
+        ]
+      },
+      {
+        "id": "bruecke",
+        "title": {
+          "de": "Brücke"
+        },
+        "level": "de.huckepack.klasse-9-10/bruecke",
+        "x": 0.52,
+        "y": 0.64,
+        "requires": [
+          "de.huckepack.klasse-9-10/markt"
+        ]
+      },
+      {
+        "id": "hafen",
+        "title": {
+          "de": "Flusshafen"
+        },
+        "level": "de.huckepack.klasse-9-10/hafen",
+        "x": 0.7,
+        "y": 0.84,
+        "requires": [
+          "de.huckepack.klasse-9-10/bruecke"
+        ]
+      },
+      {
+        "id": "turm",
+        "title": {
+          "de": "Fernsehturm"
+        },
+        "level": "de.huckepack.klasse-9-10/turm",
+        "x": 0.88,
+        "y": 0.66,
+        "requires": [
+          "de.huckepack.klasse-9-10/hafen"
+        ]
+      },
+      {
+        "id": "stadion",
+        "title": {
+          "de": "Stadion"
+        },
+        "level": "de.huckepack.klasse-9-10/stadion",
+        "x": 0.9,
+        "y": 0.4,
+        "requires": [
+          "de.huckepack.klasse-9-10/turm"
+        ]
+      },
+      {
+        "id": "flughafen",
+        "title": {
+          "de": "Flughafen"
+        },
+        "level": "de.huckepack.klasse-9-10/flughafen",
+        "x": 0.85,
+        "y": 0.14,
+        "requires": [
+          "de.huckepack.klasse-9-10/turm"
+        ]
+      },
+      {
+        "id": "labor",
+        "title": {
+          "de": "Labor"
+        },
+        "level": "de.huckepack.klasse-9-10/labor",
+        "x": 0.52,
+        "y": 0.4,
+        "requires": [
+          "de.huckepack.klasse-9-10/bruecke"
+        ]
+      },
+      {
+        "id": "wasserwerk",
+        "title": {
+          "de": "Wasserwerk"
+        },
+        "level": "de.huckepack.klasse-9-10/wasserwerk",
+        "x": 0.7,
+        "y": 0.54,
+        "requires": [
+          "de.huckepack.klasse-9-10/labor"
+        ]
+      },
+      {
+        "id": "theater",
+        "title": {
+          "de": "Theater"
+        },
+        "level": "de.huckepack.klasse-9-10/theater",
+        "x": 0.14,
+        "y": 0.32,
+        "requires": [
+          "de.huckepack.klasse-9-10/bibliothek"
+        ]
+      },
+      {
+        "id": "museum",
+        "title": {
+          "de": "Museum"
+        },
+        "miniGame": "dotsAndBoxes",
+        "x": 0.45,
+        "y": 0.24,
+        "requires": []
+      },
+      {
+        "id": "rathaus",
+        "title": {
+          "de": "Rathaus"
+        },
+        "level": "de.huckepack.klasse-9-10/rathaus",
+        "x": 0.3,
+        "y": 0.1,
+        "requires": [
+          "de.huckepack.klasse-9-10/theater"
+        ]
+      },
+      {
+        "id": "parlament",
+        "title": {
+          "de": "Parlament"
+        },
+        "level": "de.huckepack.klasse-9-10/parlament",
+        "x": 0.64,
+        "y": 0.26,
+        "requires": [
+          "de.huckepack.klasse-9-10/rathaus"
+        ]
+      },
+      {
+        "id": "gericht",
+        "title": {
+          "de": "Gericht"
+        },
+        "level": "de.huckepack.klasse-9-10/gericht",
+        "x": 0.62,
+        "y": 0.08,
+        "requires": [
+          "de.huckepack.klasse-9-10/parlament"
+        ]
+      }
+    ],
+    "paths": [
+      [
+        "bahnhof",
+        "markt"
+      ],
+      [
+        "bahnhof",
+        "park"
+      ],
+      [
+        "park",
+        "bibliothek"
+      ],
+      [
+        "markt",
+        "bibliothek"
+      ],
+      [
+        "markt",
+        "bruecke"
+      ],
+      [
+        "bibliothek",
+        "theater"
+      ],
+      [
+        "bibliothek",
+        "labor"
+      ],
+      [
+        "bruecke",
+        "labor"
+      ],
+      [
+        "bruecke",
+        "hafen"
+      ],
+      [
+        "bruecke",
+        "wasserwerk"
+      ],
+      [
+        "labor",
+        "wasserwerk"
+      ],
+      [
+        "hafen",
+        "turm"
+      ],
+      [
+        "wasserwerk",
+        "turm"
+      ],
+      [
+        "turm",
+        "stadion"
+      ],
+      [
+        "stadion",
+        "flughafen"
+      ],
+      [
+        "theater",
+        "museum"
+      ],
+      [
+        "theater",
+        "rathaus"
+      ],
+      [
+        "museum",
+        "rathaus"
+      ],
+      [
+        "museum",
+        "parlament"
+      ],
+      [
+        "labor",
+        "parlament"
+      ],
+      [
+        "rathaus",
+        "parlament"
+      ],
+      [
+        "parlament",
+        "gericht"
+      ],
+      [
+        "gericht",
+        "flughafen"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "de.huckepack.klasse-9-10/markt",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Markt: Potenzen"
+      },
+      "subject": "mathe",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "m1-1",
+          "skills": [
+            "mathe.potenzen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Auf dem Markt stapelt ein Händler Kisten zu einem Würfel. Jede Kante des Würfels ist 4 Kisten lang."
+          },
+          "prompt": {
+            "de": "Der Kistenstapel ist ein Würfel. Wie viele Kisten sind es insgesamt?"
+          },
+          "answer": 64,
+          "difficulty": 1
+        },
+        {
+          "id": "m1-2",
+          "skills": [
+            "mathe.potenzen"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Berechne 5³."
+          },
+          "firstAnswer": 125,
+          "operation": {
+            "op": "subtract",
+            "operand": 25
+          },
+          "second": {
+            "de": "Ein Stand hat {x} Äpfel. 25 davon werden verkauft. Wie viele Äpfel bleiben?"
+          }
+        },
+        {
+          "id": "m1-3",
+          "skills": [
+            "mathe.potenzen"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Potenz passt zu welchem Wert?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "2⁶"
+              },
+              "right": {
+                "de": "64"
+              }
+            },
+            {
+              "left": {
+                "de": "3³"
+              },
+              "right": {
+                "de": "27"
+              }
+            },
+            {
+              "left": {
+                "de": "10⁴"
+              },
+              "right": {
+                "de": "10 000"
+              }
+            },
+            {
+              "left": {
+                "de": "6²"
+              },
+              "right": {
+                "de": "36"
+              }
+            },
+            {
+              "left": {
+                "de": "5³"
+              },
+              "right": {
+                "de": "125"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m1-4",
+          "skills": [
+            "mathe.potenzen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welches Ergebnis hat 3² · 3⁴?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "3⁸"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "3⁶"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "9⁶"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "3²"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "m1-5",
+          "skills": [
+            "mathe.potenzen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Bakterium verdoppelt sich jede Stunde. Am Anfang sind es 3 Bakterien."
+          },
+          "prompt": {
+            "de": "Wie viele Bakterien sind es nach 6 Stunden?"
+          },
+          "answer": 192,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/markt-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Markt: Wurzeln"
+      },
+      "subject": "mathe",
+      "grade": 9,
+      "place": "markt",
+      "tasks": [
+        {
+          "id": "m2-1",
+          "skills": [
+            "mathe.wurzeln"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein quadratischer Platz hat eine Fläche von 144 m²."
+          },
+          "prompt": {
+            "de": "Wie lang ist eine Seite des Platzes in Metern?"
+          },
+          "answer": 12,
+          "difficulty": 1
+        },
+        {
+          "id": "m2-2",
+          "skills": [
+            "mathe.wurzeln"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Wurzel passt zu welchem Ergebnis?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "√49"
+              },
+              "right": {
+                "de": "7"
+              }
+            },
+            {
+              "left": {
+                "de": "√121"
+              },
+              "right": {
+                "de": "11"
+              }
+            },
+            {
+              "left": {
+                "de": "√169"
+              },
+              "right": {
+                "de": "13"
+              }
+            },
+            {
+              "left": {
+                "de": "∛27"
+              },
+              "right": {
+                "de": "3"
+              }
+            },
+            {
+              "left": {
+                "de": "∛125"
+              },
+              "right": {
+                "de": "5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m2-3",
+          "skills": [
+            "mathe.wurzeln"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein quadratischer Spielplatz hat 225 m² Fläche. Wie lang ist eine Seite in Metern?"
+          },
+          "firstAnswer": 15,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "de": "Eine Seite ist {x} m lang. Wie viele Meter Zaun braucht man rund um den ganzen Platz?"
+          }
+        },
+        {
+          "id": "m2-4",
+          "skills": [
+            "mathe.wurzeln"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Zwischen welchen ganzen Zahlen liegt √50?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "6 und 7"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "5 und 6"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "7 und 8"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "8 und 9"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "m2-5",
+          "skills": [
+            "mathe.wurzeln"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wie groß ist √(9 + 16)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "7"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "12,5"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "5"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "25"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "m2-6",
+          "skills": [
+            "mathe.wurzeln"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Eine Zahl hat die Basis 2 und den Exponenten 3. Diese Potenz wird noch einmal mit 2 potenziert, also (2³)²."
+          },
+          "prompt": {
+            "de": "Wie groß ist das Ergebnis?"
+          },
+          "answer": 64,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/bruecke",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Brücke: Satz des Pythagoras"
+      },
+      "subject": "mathe",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "m3-1",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein rechtwinkliges Dreieck hat die Katheten 3 cm und 4 cm."
+          },
+          "prompt": {
+            "de": "Wie lang ist die Hypotenuse in cm?"
+          },
+          "answer": 5,
+          "difficulty": 1
+        },
+        {
+          "id": "m3-2",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Die Katheten eines Dreiecks sind 6 m und 8 m lang. Wie lang ist die Hypotenuse in Metern?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Eine Stahlstrebe der Brücke ist {x} m lang. Es gibt 2 solche Streben. Wie viele Meter Stahl sind das?"
+          }
+        },
+        {
+          "id": "m3-3",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Katheten gehören zu welcher Hypotenuse?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Katheten 5 und 12"
+              },
+              "right": {
+                "de": "Hypotenuse 13"
+              }
+            },
+            {
+              "left": {
+                "de": "Katheten 8 und 15"
+              },
+              "right": {
+                "de": "Hypotenuse 17"
+              }
+            },
+            {
+              "left": {
+                "de": "Katheten 7 und 24"
+              },
+              "right": {
+                "de": "Hypotenuse 25"
+              }
+            },
+            {
+              "left": {
+                "de": "Katheten 9 und 12"
+              },
+              "right": {
+                "de": "Hypotenuse 15"
+              }
+            },
+            {
+              "left": {
+                "de": "Katheten 20 und 21"
+              },
+              "right": {
+                "de": "Hypotenuse 29"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m3-4",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Gleichung gilt im rechtwinkligen Dreieck mit den Katheten a, b und der Hypotenuse c?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "a + b = c"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "a² + b² = c²"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "a² + c² = b²"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "a² · b² = c²"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "m3-5",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Hypotenuse eines rechtwinkligen Dreiecks ist 13 m lang, eine Kathete 5 m."
+          },
+          "prompt": {
+            "de": "Wie lang ist die andere Kathete in Metern?"
+          },
+          "answer": 12,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/bruecke-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Brücke: Pythagoras im Alltag"
+      },
+      "subject": "mathe",
+      "grade": 9,
+      "place": "bruecke",
+      "tasks": [
+        {
+          "id": "m4-1",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Eine Leiter steht 5 m von einer Hauswand entfernt. Sie reicht an der Wand 12 m hoch."
+          },
+          "prompt": {
+            "de": "Wie lang ist die Leiter in Metern?"
+          },
+          "answer": 13,
+          "difficulty": 1
+        },
+        {
+          "id": "m4-2",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Bildschirm ist 24 cm breit und 32 cm hoch."
+          },
+          "prompt": {
+            "de": "Wie lang ist seine Diagonale in cm?"
+          },
+          "answer": 40
+        },
+        {
+          "id": "m4-3",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein Seil führt von der Spitze eines Pfeilers, 9 m über dem Wasser, zu einem Punkt 12 m vom Fuß des Pfeilers entfernt. Wie lang ist das Seil in Metern?"
+          },
+          "firstAnswer": 15,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "de": "Ein Seil ist {x} m lang. Für die Brücke braucht man 4 solche Seile. Wie viele Meter Seil sind das?"
+          }
+        },
+        {
+          "id": "m4-4",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Ein Dreieck hat die Seiten 6 cm, 8 cm und 10 cm. Was gilt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Es ist nicht rechtwinklig, weil 6 + 8 nicht 10 ist."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Es ist rechtwinklig, weil 6² + 8² = 10² ist."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Es ist rechtwinklig, weil 6 + 8 > 10 ist."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Es ist stumpfwinklig."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "m4-5",
+          "skills": [
+            "mathe.pythagoras"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Quader ist 3 m lang, 4 m breit und 12 m hoch."
+          },
+          "prompt": {
+            "de": "Wie lang ist die Raumdiagonale in Metern?"
+          },
+          "answer": 13,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/hafen",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Hafen: Quadratische Funktionen"
+      },
+      "subject": "mathe",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "m5-1",
+          "skills": [
+            "mathe.quadratisch"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Parabel hat die Gleichung f(x) = x² + 2."
+          },
+          "prompt": {
+            "de": "Wie groß ist f(3)?"
+          },
+          "answer": 11,
+          "difficulty": 1
+        },
+        {
+          "id": "m5-2",
+          "skills": [
+            "mathe.quadratisch"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Funktion hat welchen Scheitelpunkt?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "f(x) = (x − 2)² + 3"
+              },
+              "right": {
+                "de": "S(2 | 3)"
+              }
+            },
+            {
+              "left": {
+                "de": "f(x) = (x + 1)² − 4"
+              },
+              "right": {
+                "de": "S(−1 | −4)"
+              }
+            },
+            {
+              "left": {
+                "de": "f(x) = x² + 5"
+              },
+              "right": {
+                "de": "S(0 | 5)"
+              }
+            },
+            {
+              "left": {
+                "de": "f(x) = (x − 4)²"
+              },
+              "right": {
+                "de": "S(4 | 0)"
+              }
+            },
+            {
+              "left": {
+                "de": "f(x) = −(x − 3)² + 1"
+              },
+              "right": {
+                "de": "S(3 | 1)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m5-3",
+          "skills": [
+            "mathe.quadratisch"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wie sieht die Parabel f(x) = −2x² + 5 aus?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Nach unten geöffnet und enger als die Normalparabel"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Nach unten geöffnet und weiter als die Normalparabel"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Nach oben geöffnet und enger als die Normalparabel"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Nach oben geöffnet und weiter als die Normalparabel"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "m5-4",
+          "skills": [
+            "mathe.quadratisch"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Berechne f(4) für f(x) = x² + 2x."
+          },
+          "firstAnswer": 24,
+          "operation": {
+            "op": "subtract",
+            "operand": 4
+          },
+          "second": {
+            "de": "Der Brückenbogen ist an einer Stelle {x} dm hoch. Ein Boot ist 4 dm hoch. Wie viele dm Platz bleiben?"
+          }
+        },
+        {
+          "id": "m5-5",
+          "skills": [
+            "mathe.quadratisch"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Parabel hat die Gleichung f(x) = x² − 25."
+          },
+          "prompt": {
+            "de": "Wie weit liegen die beiden Nullstellen auseinander?"
+          },
+          "answer": 10,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/hafen-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Hafen: Quadratische Gleichungen"
+      },
+      "subject": "mathe",
+      "grade": 10,
+      "place": "hafen",
+      "tasks": [
+        {
+          "id": "m6-1",
+          "skills": [
+            "mathe.quadratische-gleichungen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Gleichung lautet x² = 49."
+          },
+          "prompt": {
+            "de": "Wie heißt die positive Lösung?"
+          },
+          "answer": 7,
+          "difficulty": 1
+        },
+        {
+          "id": "m6-2",
+          "skills": [
+            "mathe.quadratische-gleichungen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wie lauten die Lösungen von x² − 5x + 6 = 0?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "x = −2 und x = −3"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "x = 1 und x = 6"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "x = 2 und x = 3"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "x = −1 und x = 6"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "m6-3",
+          "skills": [
+            "mathe.quadratische-gleichungen"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Löse x² − 7x + 12 = 0. Wie heißt die größere der beiden Lösungen?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "multiply",
+            "operand": 5
+          },
+          "second": {
+            "de": "Ein Rechteck ist {x} m lang und 5 m breit. Wie groß ist sein Flächeninhalt in m²?"
+          }
+        },
+        {
+          "id": "m6-4",
+          "skills": [
+            "mathe.quadratische-gleichungen"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Gleichung hat welche Lösung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "x² − 9 = 0"
+              },
+              "right": {
+                "de": "x = 3 oder x = −3"
+              }
+            },
+            {
+              "left": {
+                "de": "x² + 9 = 0"
+              },
+              "right": {
+                "de": "keine reelle Lösung"
+              }
+            },
+            {
+              "left": {
+                "de": "x² = 0"
+              },
+              "right": {
+                "de": "x = 0"
+              }
+            },
+            {
+              "left": {
+                "de": "(x − 2)(x + 5) = 0"
+              },
+              "right": {
+                "de": "x = 2 oder x = −5"
+              }
+            },
+            {
+              "left": {
+                "de": "x² − 3x = 0"
+              },
+              "right": {
+                "de": "x = 0 oder x = 3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m6-5",
+          "skills": [
+            "mathe.quadratische-gleichungen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Das Produkt zweier aufeinanderfolgender positiver ganzer Zahlen ist 156."
+          },
+          "prompt": {
+            "de": "Wie lautet die kleinere der beiden Zahlen?"
+          },
+          "answer": 12,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/turm",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Turm: Trigonometrie"
+      },
+      "subject": "mathe",
+      "grade": 10,
+      "tasks": [
+        {
+          "id": "m7-1",
+          "skills": [
+            "mathe.trigonometrie"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wie berechnet man den Sinus von α im rechtwinkligen Dreieck?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Ankathete : Hypotenuse"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Gegenkathete : Ankathete"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Gegenkathete : Hypotenuse"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Hypotenuse : Gegenkathete"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 1
+        },
+        {
+          "id": "m7-2",
+          "skills": [
+            "mathe.trigonometrie"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Was gehört zusammen?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "sin α"
+              },
+              "right": {
+                "de": "Gegenkathete : Hypotenuse"
+              }
+            },
+            {
+              "left": {
+                "de": "cos α"
+              },
+              "right": {
+                "de": "Ankathete : Hypotenuse"
+              }
+            },
+            {
+              "left": {
+                "de": "tan α"
+              },
+              "right": {
+                "de": "Gegenkathete : Ankathete"
+              }
+            },
+            {
+              "left": {
+                "de": "sin 30°"
+              },
+              "right": {
+                "de": "0,5"
+              }
+            },
+            {
+              "left": {
+                "de": "tan 45°"
+              },
+              "right": {
+                "de": "1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m7-3",
+          "skills": [
+            "mathe.trigonometrie"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Dreieck hat die Seiten 3 cm, 4 cm und 5 cm (rechter Winkel zwischen 3 und 4). Der Winkel α liegt der 3-cm-Seite gegenüber."
+          },
+          "prompt": {
+            "de": "Wie viel Prozent ist sin α?"
+          },
+          "answer": 60
+        },
+        {
+          "id": "m7-4",
+          "skills": [
+            "mathe.trigonometrie"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein Gebäude wirft einen Schatten von 30 m. Es gilt tan α = 1,5 (Höhe : Schattenlänge). Wie hoch ist das Gebäude in Metern?"
+          },
+          "firstAnswer": 45,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "de": "Der Turm ist {x} m hoch. Die Aussichtsplattform liegt 5 m unter der Spitze. In welcher Höhe liegt sie?"
+          }
+        },
+        {
+          "id": "m7-5",
+          "skills": [
+            "mathe.trigonometrie"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Seil ist 10 m lang und bildet mit dem Boden einen Winkel von 30°. Es gilt sin 30° = 0,5."
+          },
+          "prompt": {
+            "de": "Wie hoch über dem Boden ist das obere Ende in Metern?"
+          },
+          "answer": 5,
+          "difficulty": 2
+        },
+        {
+          "id": "m7-6",
+          "skills": [
+            "mathe.trigonometrie"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "In einem rechtwinkligen Dreieck ist ein spitzer Winkel 35° groß."
+          },
+          "prompt": {
+            "de": "Wie groß ist der andere spitze Winkel in Grad?"
+          },
+          "answer": 55,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/stadion",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Stadion: Wahrscheinlichkeit"
+      },
+      "subject": "mathe",
+      "grade": 10,
+      "tasks": [
+        {
+          "id": "m8-1",
+          "skills": [
+            "mathe.wahrscheinlichkeit"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "In einer Lostrommel liegen 20 Lose: 5 Gewinne und 15 Nieten."
+          },
+          "prompt": {
+            "de": "Mit wie viel Prozent zieht man einen Gewinn?"
+          },
+          "answer": 25,
+          "difficulty": 1
+        },
+        {
+          "id": "m8-2",
+          "skills": [
+            "mathe.wahrscheinlichkeit"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welches Ereignis hat welche Wahrscheinlichkeit?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Münzwurf: Zahl"
+              },
+              "right": {
+                "de": "1/2"
+              }
+            },
+            {
+              "left": {
+                "de": "Würfel: eine 6"
+              },
+              "right": {
+                "de": "1/6"
+              }
+            },
+            {
+              "left": {
+                "de": "Würfel: Zahl größer als 4"
+              },
+              "right": {
+                "de": "1/3"
+              }
+            },
+            {
+              "left": {
+                "de": "Würfel: Zahl kleiner als 7"
+              },
+              "right": {
+                "de": "1"
+              }
+            },
+            {
+              "left": {
+                "de": "Würfel: eine 7"
+              },
+              "right": {
+                "de": "0"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m8-3",
+          "skills": [
+            "mathe.wahrscheinlichkeit"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein Würfel wird 300-mal geworfen. Wie oft erwartet man eine 6?"
+          },
+          "firstAnswer": 50,
+          "operation": {
+            "op": "add",
+            "operand": 20
+          },
+          "second": {
+            "de": "Ihr erwartet {x} Sechsen. Tatsächlich fallen 20 mehr. Wie viele Sechsen fallen?"
+          }
+        },
+        {
+          "id": "m8-4",
+          "skills": [
+            "mathe.wahrscheinlichkeit"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wie groß ist die Wahrscheinlichkeit, bei zwei Münzwürfen zweimal Zahl zu werfen?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "1/2"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "1/3"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "3/4"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "1/4"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "m8-5",
+          "skills": [
+            "mathe.wahrscheinlichkeit"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Eine Urne enthält 2 rote und 3 blaue Kugeln. Man zieht zwei Kugeln nacheinander ohne Zurücklegen."
+          },
+          "prompt": {
+            "de": "Mit wie viel Prozent sind beide Kugeln rot?"
+          },
+          "answer": 10,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/stadion-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Stadion: Mehrstufige Versuche"
+      },
+      "subject": "mathe",
+      "grade": 10,
+      "place": "stadion",
+      "tasks": [
+        {
+          "id": "m9-1",
+          "skills": [
+            "mathe.zufallsversuche"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Eisstand hat 3 Sorten und 2 Waffelarten."
+          },
+          "prompt": {
+            "de": "Wie viele Kombinationen aus einer Sorte und einer Waffel gibt es?"
+          },
+          "answer": 6,
+          "difficulty": 1
+        },
+        {
+          "id": "m9-2",
+          "skills": [
+            "mathe.zufallsversuche"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Vier Freunde stellen sich in einer Reihe auf."
+          },
+          "prompt": {
+            "de": "Auf wie viele Arten können sie sich aufstellen?"
+          },
+          "answer": 24
+        },
+        {
+          "id": "m9-3",
+          "skills": [
+            "mathe.zufallsversuche"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein Zahlenschloss hat 3 Rädchen mit den Ziffern 0 bis 9. Wie viele verschiedene Codes gibt es?"
+          },
+          "firstAnswer": 1000,
+          "operation": {
+            "op": "divide",
+            "operand": 8
+          },
+          "second": {
+            "de": "Ein Dieb probiert 8 Codes pro Minute. Wie viele Minuten braucht er höchstens, um alle {x} Codes zu probieren?"
+          }
+        },
+        {
+          "id": "m9-4",
+          "skills": [
+            "mathe.zufallsversuche"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Regel passt zu welcher Aussage?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Pfadregel (und)"
+              },
+              "right": {
+                "de": "Wahrscheinlichkeiten multiplizieren"
+              }
+            },
+            {
+              "left": {
+                "de": "Summenregel (oder)"
+              },
+              "right": {
+                "de": "Wahrscheinlichkeiten addieren"
+              }
+            },
+            {
+              "left": {
+                "de": "Gegenereignis"
+              },
+              "right": {
+                "de": "1 minus P(A)"
+              }
+            },
+            {
+              "left": {
+                "de": "Laplace-Versuch"
+              },
+              "right": {
+                "de": "günstige : mögliche Fälle"
+              }
+            },
+            {
+              "left": {
+                "de": "Alle Pfade zusammen"
+              },
+              "right": {
+                "de": "Summe ist 1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m9-5",
+          "skills": [
+            "mathe.zufallsversuche"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Eine Münze wird dreimal geworfen. Es gibt 8 mögliche Ergebnisreihen."
+          },
+          "prompt": {
+            "de": "Bei wie vielen davon kommt genau zweimal Zahl vor?"
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/bibliothek",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Bibliothek: Rhetorische Mittel"
+      },
+      "subject": "deutsch",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "d1-1",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welches Stilmittel passt zu welchem Beispiel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Metapher"
+              },
+              "right": {
+                "de": "Er ist ein Löwe im Kampf."
+              }
+            },
+            {
+              "left": {
+                "de": "Vergleich"
+              },
+              "right": {
+                "de": "stark wie ein Bär"
+              }
+            },
+            {
+              "left": {
+                "de": "Personifikation"
+              },
+              "right": {
+                "de": "Der Wind flüstert durch die Gassen."
+              }
+            },
+            {
+              "left": {
+                "de": "Hyperbel"
+              },
+              "right": {
+                "de": "Ich habe es tausendmal gesagt!"
+              }
+            },
+            {
+              "left": {
+                "de": "Rhetorische Frage"
+              },
+              "right": {
+                "de": "Wer will das schon?"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d1-2",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welches Stilmittel steckt in „Das Haus schlief im Mondlicht“?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Vergleich"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Personifikation"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Hyperbel"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Antithese"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "d1-3",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Redner sagt: „Wir wollen Frieden. Wir wollen Freiheit. Wir wollen Zukunft.“"
+          },
+          "prompt": {
+            "de": "Wie viele Sätze beginnen mit demselben Wort (Anapher)?"
+          },
+          "answer": 3
+        },
+        {
+          "id": "d1-4",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Eine Rede hat 4 Absätze mit je 3 rhetorischen Fragen. Wie viele Fragen sind das insgesamt?"
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "subtract",
+            "operand": 2
+          },
+          "second": {
+            "de": "Die Rede enthält {x} rhetorische Fragen. 2 davon werden gestrichen. Wie viele bleiben?"
+          }
+        },
+        {
+          "id": "d1-5",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was macht eine Antithese?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Sie wiederholt dasselbe Wort"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Sie übertreibt stark"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Sie stellt Gegensätze gegenüber"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Sie stellt eine Frage ohne Antwort"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/bibliothek-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Bibliothek: Textsorten"
+      },
+      "subject": "deutsch",
+      "grade": 9,
+      "place": "bibliothek",
+      "tasks": [
+        {
+          "id": "d2-1",
+          "skills": [
+            "deutsch.textsorten"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Textsorte informiert sachlich und knapp über ein Ereignis, ohne eine Meinung?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Kommentar"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Nachricht"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Glosse"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Leserbrief"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "d2-2",
+          "skills": [
+            "deutsch.textsorten"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Textsorte hat welches Merkmal?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Bericht"
+              },
+              "right": {
+                "de": "sachlich, in der Vergangenheit, beantwortet die W-Fragen"
+              }
+            },
+            {
+              "left": {
+                "de": "Kommentar"
+              },
+              "right": {
+                "de": "Meinung mit Begründung"
+              }
+            },
+            {
+              "left": {
+                "de": "Reportage"
+              },
+              "right": {
+                "de": "lebendig, mit Beobachtungen vor Ort"
+              }
+            },
+            {
+              "left": {
+                "de": "Glosse"
+              },
+              "right": {
+                "de": "kurz, ironisch, zugespitzt"
+              }
+            },
+            {
+              "left": {
+                "de": "Interview"
+              },
+              "right": {
+                "de": "Fragen und Antworten"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d2-3",
+          "skills": [
+            "deutsch.textsorten"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Eine Nachricht beantwortet diese sechs W-Fragen: Wer, was, wann, wo, wie, warum."
+          },
+          "prompt": {
+            "de": "Wie viele W-Fragen stehen in dieser Liste?"
+          },
+          "answer": 6
+        },
+        {
+          "id": "d2-4",
+          "skills": [
+            "deutsch.textsorten"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "In welcher Zeitform steht eine Inhaltsangabe?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Präteritum"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Perfekt"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Präsens"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Futur"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "d2-5",
+          "skills": [
+            "deutsch.textsorten"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein Leserbrief darf höchstens 25 Zeilen mit je 40 Zeichen haben. Wie viele Zeichen sind das höchstens?"
+          },
+          "firstAnswer": 1000,
+          "operation": {
+            "op": "divide",
+            "operand": 5
+          },
+          "second": {
+            "de": "Der Brief darf höchstens {x} Zeichen haben. Ein Wort hat mit Leerzeichen im Schnitt 5 Zeichen. Wie viele Wörter passen ungefähr hinein?"
+          }
+        },
+        {
+          "id": "d2-6",
+          "skills": [
+            "deutsch.textsorten"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Merkmale hat eine Erörterung?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Wörtliche Rede und Spannungsbogen"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "These, Argumente mit Beispielen und ein Schluss"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Reime und Verse"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Handlungsschritte in Stichpunkten"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/theater",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Theater: Indirekte Rede"
+      },
+      "subject": "deutsch",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "d3-1",
+          "skills": [
+            "deutsch.indirekte-rede"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Anna sagt: „Ich bin müde.“ Welche indirekte Rede ist richtig?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Anna sagt, sie sei müde."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Anna sagt, ich sei müde."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Anna sagt, sie war müde."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Anna sagt, sie ist müde sei."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "d3-2",
+          "skills": [
+            "deutsch.indirekte-rede"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Indikativform gehört zu welcher Form im Konjunktiv I?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "er hat"
+              },
+              "right": {
+                "de": "er habe"
+              }
+            },
+            {
+              "left": {
+                "de": "er ist"
+              },
+              "right": {
+                "de": "er sei"
+              }
+            },
+            {
+              "left": {
+                "de": "er kommt"
+              },
+              "right": {
+                "de": "er komme"
+              }
+            },
+            {
+              "left": {
+                "de": "er kann"
+              },
+              "right": {
+                "de": "er könne"
+              }
+            },
+            {
+              "left": {
+                "de": "er will"
+              },
+              "right": {
+                "de": "er wolle"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d3-3",
+          "skills": [
+            "deutsch.indirekte-rede"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Paul sagt: „Mein Hund ist krank.“ Wie lautet die indirekte Rede?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Paul sagt, mein Hund sei krank."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Paul sagt, sein Hund sei krank."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Paul sagt, dass mein Hund krank sei."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "d3-4",
+          "skills": [
+            "deutsch.indirekte-rede"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Der Satz „Ich habe Hunger, und ich komme gleich“ wird in indirekte Rede gesetzt."
+          },
+          "prompt": {
+            "de": "Wie viele Verben müssen in den Konjunktiv?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "d3-5",
+          "skills": [
+            "deutsch.indirekte-rede"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Der Satz „Tim sagt, er habe Hunger.“ ist indirekte Rede. Wie viele Wörter hat er?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "multiply",
+            "operand": 5
+          },
+          "second": {
+            "de": "Der Satz hat {x} Wörter. Er steht fünfmal auf einem Plakat. Wie viele Wörter sind das zusammen?"
+          }
+        },
+        {
+          "id": "d3-6",
+          "skills": [
+            "deutsch.indirekte-rede"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wann nimmt man in der indirekten Rede den Konjunktiv II statt Konjunktiv I?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Immer bei Fragen"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Nur bei Verneinung"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Wenn die Konjunktiv-I-Form mit dem Indikativ gleich ist"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Nie"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/theater-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Theater: Kommaregeln"
+      },
+      "subject": "deutsch",
+      "grade": 9,
+      "place": "theater",
+      "tasks": [
+        {
+          "id": "d4-1",
+          "skills": [
+            "deutsch.kommas"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Der Satz lautet: Ich kaufe Brot Milch Eier und Käse."
+          },
+          "prompt": {
+            "de": "Wie viele Kommas muss man setzen?"
+          },
+          "answer": 2,
+          "difficulty": 1
+        },
+        {
+          "id": "d4-2",
+          "skills": [
+            "deutsch.kommas"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Der Satz lautet: Weil es regnet bleiben wir zu Hause."
+          },
+          "prompt": {
+            "de": "Wie viele Kommas gehören in den Satz?"
+          },
+          "answer": 1
+        },
+        {
+          "id": "d4-3",
+          "skills": [
+            "deutsch.kommas"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz ist richtig gesetzt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Er sagte dass, er kommt."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Er sagte, dass er kommt."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Er sagte dass er, kommt."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Er, sagte dass er kommt."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "d4-4",
+          "skills": [
+            "deutsch.kommas"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Kommaregel passt zu welchem Beispiel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Aufzählung"
+              },
+              "right": {
+                "de": "Äpfel, Birnen und Nüsse"
+              }
+            },
+            {
+              "left": {
+                "de": "Nebensatz"
+              },
+              "right": {
+                "de": "Ich gehe, weil es spät ist."
+              }
+            },
+            {
+              "left": {
+                "de": "Anrede"
+              },
+              "right": {
+                "de": "Komm her, Paul!"
+              }
+            },
+            {
+              "left": {
+                "de": "Zusatz"
+              },
+              "right": {
+                "de": "Berlin, die Hauptstadt, ist groß."
+              }
+            },
+            {
+              "left": {
+                "de": "Infinitivgruppe"
+              },
+              "right": {
+                "de": "Er versucht, pünktlich zu sein."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d4-5",
+          "skills": [
+            "deutsch.kommas"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Der Satz lautet: Er sagt dass sie kommt weil sie Zeit hat. Wie viele Kommas gehören hinein?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "multiply",
+            "operand": 6
+          },
+          "second": {
+            "de": "Ein Brief hat {x} Kommas pro Absatz. Er hat 6 Absätze mit gleich gebauten Sätzen. Wie viele Kommas sind das insgesamt?"
+          }
+        },
+        {
+          "id": "d4-6",
+          "skills": [
+            "deutsch.kommas"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Vor welchem Wort steht in einer Aufzählung kein Komma?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "aber"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "doch"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "und"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "sondern"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/bibliothek-3",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Bibliothek: Rechtschreibung und Satzglieder"
+      },
+      "subject": "deutsch",
+      "grade": 10,
+      "place": "bibliothek",
+      "tasks": [
+        {
+          "id": "d5-1",
+          "skills": [
+            "deutsch.rechtschreibung"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz ist richtig geschrieben?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Ich glaube, das das Buch spannend ist."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Ich glaube, dass das Buch spannend ist."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Ich glaube, dass dass Buch spannend ist."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Ich glaube, das dass Buch spannend ist."
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "d5-2",
+          "skills": [
+            "deutsch.rechtschreibung"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Frage gehört zu welchem Satzglied oder Fall?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Nominativ"
+              },
+              "right": {
+                "de": "Wer oder was?"
+              }
+            },
+            {
+              "left": {
+                "de": "Genitiv"
+              },
+              "right": {
+                "de": "Wessen?"
+              }
+            },
+            {
+              "left": {
+                "de": "Dativ"
+              },
+              "right": {
+                "de": "Wem?"
+              }
+            },
+            {
+              "left": {
+                "de": "Akkusativ"
+              },
+              "right": {
+                "de": "Wen oder was?"
+              }
+            },
+            {
+              "left": {
+                "de": "Ortsangabe"
+              },
+              "right": {
+                "de": "Wo?"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d5-3",
+          "skills": [
+            "deutsch.rechtschreibung"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Der Satz lautet: Der Lehrer gab dem Schüler ein Buch."
+          },
+          "prompt": {
+            "de": "Aus wie vielen Satzgliedern besteht der Satz?"
+          },
+          "answer": 4
+        },
+        {
+          "id": "d5-4",
+          "skills": [
+            "deutsch.rechtschreibung"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Wie viele Nomen stehen im Satz „Der Fluss fließt durch die Stadt zum Meer.“?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 20
+          },
+          "second": {
+            "de": "Der Satz hat {x} Nomen. Die Bibliothek hat 20 solche Sätze auf Karten. Wie viele Nomen sind das zusammen?"
+          }
+        },
+        {
+          "id": "d5-5",
+          "skills": [
+            "deutsch.rechtschreibung"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz ist richtig?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Seid gestern seit ihr da."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Seit gestern seid ihr da."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Seit gestern seit ihr da."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Seid gestern seid ihr da."
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/flughafen",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Flughafen: Passive"
+      },
+      "subject": "englisch",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "e1-1",
+          "skills": [
+            "englisch.passive"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz ist das Passiv von „They build the airport.“?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "The airport builds."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "The airport is being building."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "The airport is built."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "The airport was build."
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 1
+        },
+        {
+          "id": "e1-2",
+          "skills": [
+            "englisch.passive"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Aktivform gehört zu welcher Passivform?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "writes"
+              },
+              "right": {
+                "de": "is written"
+              }
+            },
+            {
+              "left": {
+                "de": "wrote"
+              },
+              "right": {
+                "de": "was written"
+              }
+            },
+            {
+              "left": {
+                "de": "has written"
+              },
+              "right": {
+                "de": "has been written"
+              }
+            },
+            {
+              "left": {
+                "de": "will write"
+              },
+              "right": {
+                "de": "will be written"
+              }
+            },
+            {
+              "left": {
+                "de": "is writing"
+              },
+              "right": {
+                "de": "is being written"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1-3",
+          "skills": [
+            "englisch.passive"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Aktivsatz: The workers have repaired the runway. Das Passiv mit Handelnden lautet: The runway has been repaired by the workers."
+          },
+          "prompt": {
+            "de": "Wie viele Wörter hat der Passivsatz?"
+          },
+          "answer": 8
+        },
+        {
+          "id": "e1-4",
+          "skills": [
+            "englisch.passive"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Das Passiv von „They open the gates at six.“ lautet „The gates are opened at six.“ Wie viele Wörter hat dieser Satz?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Der Satz hat {x} Wörter. Er steht auf zwei Schildern. Wie viele Wörter sind das insgesamt?"
+          }
+        },
+        {
+          "id": "e1-5",
+          "skills": [
+            "englisch.passive"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz kann nicht ins Passiv gesetzt werden?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "The pilot flew the plane."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "They closed the gate."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "The plane landed."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Someone found my bag."
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/flughafen-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Flughafen: Reported Speech"
+      },
+      "subject": "englisch",
+      "grade": 10,
+      "place": "flughafen",
+      "tasks": [
+        {
+          "id": "e2-1",
+          "skills": [
+            "englisch.reported-speech"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Direct: He said, “I am tired.” Wie lautet die indirekte Rede?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "He said that I am tired."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "He said he was tired."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "He said he had been tired."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "He said he would be tired."
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "e2-2",
+          "skills": [
+            "englisch.reported-speech"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Was wird in der indirekten Rede aus …?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "is / am"
+              },
+              "right": {
+                "de": "was"
+              }
+            },
+            {
+              "left": {
+                "de": "will"
+              },
+              "right": {
+                "de": "would"
+              }
+            },
+            {
+              "left": {
+                "de": "can"
+              },
+              "right": {
+                "de": "could"
+              }
+            },
+            {
+              "left": {
+                "de": "has gone"
+              },
+              "right": {
+                "de": "had gone"
+              }
+            },
+            {
+              "left": {
+                "de": "tomorrow"
+              },
+              "right": {
+                "de": "the next day"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e2-3",
+          "skills": [
+            "englisch.reported-speech"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Tom sagte: “We are waiting at gate 12.” Der Satz in indirekter Rede lautet: Tom said they were waiting at gate 12."
+          },
+          "prompt": {
+            "de": "An welchem Gate warten sie laut dem indirekten Satz?"
+          },
+          "answer": 12,
+          "difficulty": 1
+        },
+        {
+          "id": "e2-4",
+          "skills": [
+            "englisch.reported-speech"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Direct: “Where do you live?” she asked. Wie lautet die indirekte Frage?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "She asked where did I live."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "She asked where do I live."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "She asked where I lived."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "She asked that where I lived."
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "e2-5",
+          "skills": [
+            "englisch.reported-speech"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Direct: “I saw him yesterday.” Was passt? He said he ___ him the day before."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "would see"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "had seen"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "has seen"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "sees"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/flughafen-3",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Flughafen: If-Sätze Typ II"
+      },
+      "subject": "englisch",
+      "grade": 10,
+      "place": "flughafen",
+      "tasks": [
+        {
+          "id": "e3-1",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "If I ___ more money, I would buy a ticket."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "have"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "had"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "would have"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "will have"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "e3-2",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welcher If-Satz-Typ hat welche Form?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Typ 0"
+              },
+              "right": {
+                "de": "If + Simple Present, Simple Present"
+              }
+            },
+            {
+              "left": {
+                "de": "Typ I"
+              },
+              "right": {
+                "de": "If + Simple Present, will + Infinitiv"
+              }
+            },
+            {
+              "left": {
+                "de": "Typ II"
+              },
+              "right": {
+                "de": "If + Simple Past, would + Infinitiv"
+              }
+            },
+            {
+              "left": {
+                "de": "Typ III"
+              },
+              "right": {
+                "de": "If + Past Perfect, would have + Partizip"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e3-3",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz ist richtig?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "If I would win the lottery, I would travel."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "If I win the lottery, I would travel."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "If I won the lottery, I would travel."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "If I winning the lottery, I would travel."
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "e3-4",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Ticket kostet 20 Euro. Der Satz lautet: If I had 100 euros, I would buy as many tickets as possible."
+          },
+          "prompt": {
+            "de": "Wie viele Tickets wären das?"
+          },
+          "answer": 5
+        },
+        {
+          "id": "e3-5",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was drückt „If I were you, I would wait.“ aus?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Eine Tatsache"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Eine Drohung"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Ein Versprechen"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Einen Rat"
+              }
+            }
+          ],
+          "correct": "d",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/flughafen-4",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Flughafen: If-Sätze Typ III"
+      },
+      "subject": "englisch",
+      "grade": 10,
+      "place": "flughafen",
+      "tasks": [
+        {
+          "id": "e4-1",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "If she ___ earlier, she would have caught the train."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "left"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "would leave"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "had left"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "has left"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 1
+        },
+        {
+          "id": "e4-2",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welcher englische Satz passt zu welcher Aussage?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "If I had known, I would have called."
+              },
+              "right": {
+                "de": "Ich wusste es nicht und rief nicht an."
+              }
+            },
+            {
+              "left": {
+                "de": "If I knew, I would call."
+              },
+              "right": {
+                "de": "Ich weiß es nicht und rufe nicht an."
+              }
+            },
+            {
+              "left": {
+                "de": "If I know, I will call."
+              },
+              "right": {
+                "de": "Vielleicht weiß ich es, dann rufe ich an."
+              }
+            },
+            {
+              "left": {
+                "de": "If we had missed the bus, we would have walked."
+              },
+              "right": {
+                "de": "Wir haben den Bus nicht verpasst."
+              }
+            }
+          ]
+        },
+        {
+          "id": "e4-3",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Satz ist falsch?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "If he had come, we would have won."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "If he would have come, we would have won."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Had he come, we would have won."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "We would have won if he had come."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "e4-4",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Mia kam 25 Minuten nach der Abfahrt des Zuges an. Der Zug fuhr um 8:10 Uhr ab."
+          },
+          "prompt": {
+            "de": "Um wie viel Uhr kam Mia an?"
+          },
+          "answer": 515,
+          "answerFormat": "time"
+        },
+        {
+          "id": "e4-5",
+          "skills": [
+            "englisch.conditionals"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "If I had slept more, I ___ so tired now."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "wouldn't have been"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "won't be"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "wouldn't be"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "wasn't"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/labor",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Labor: Atombau"
+      },
+      "subject": "chemie",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "c1-1",
+          "skills": [
+            "chemie.atombau"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Atom hat 11 Protonen und 12 Neutronen."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Massenzahl?"
+          },
+          "answer": 23,
+          "difficulty": 1
+        },
+        {
+          "id": "c1-2",
+          "skills": [
+            "chemie.atombau"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Aluminiumatom hat die Ordnungszahl 13 und die Massenzahl 27."
+          },
+          "prompt": {
+            "de": "Wie viele Neutronen hat es?"
+          },
+          "answer": 14
+        },
+        {
+          "id": "c1-3",
+          "skills": [
+            "chemie.atombau"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welches Teilchen oder welcher Bereich hat welche Eigenschaft?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Proton"
+              },
+              "right": {
+                "de": "positiv geladen, im Kern"
+              }
+            },
+            {
+              "left": {
+                "de": "Neutron"
+              },
+              "right": {
+                "de": "ungeladen, im Kern"
+              }
+            },
+            {
+              "left": {
+                "de": "Elektron"
+              },
+              "right": {
+                "de": "negativ geladen"
+              }
+            },
+            {
+              "left": {
+                "de": "Atomkern"
+              },
+              "right": {
+                "de": "enthält fast die ganze Masse des Atoms"
+              }
+            },
+            {
+              "left": {
+                "de": "Atomhülle"
+              },
+              "right": {
+                "de": "Hier bewegen sich die Elektronen"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c1-4",
+          "skills": [
+            "chemie.atombau"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein Chloratom hat 17 Protonen. Wie viele Elektronen hat das neutrale Atom?"
+          },
+          "firstAnswer": 17,
+          "operation": {
+            "op": "add",
+            "operand": 18
+          },
+          "second": {
+            "de": "Das neutrale Atom hat so viele Protonen wie Elektronen, also {x}, und 18 Neutronen. Wie groß ist die Massenzahl?"
+          }
+        },
+        {
+          "id": "c1-5",
+          "skills": [
+            "chemie.atombau"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was gilt für Isotope eines Elements?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Gleiche Neutronenzahl, verschiedene Protonenzahl"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Gleiche Protonenzahl, verschiedene Neutronenzahl"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Gleiche Massenzahl, verschiedene Protonenzahl"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Verschiedene Elemente mit gleicher Elektronenzahl"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        },
+        {
+          "id": "c1-6",
+          "skills": [
+            "chemie.atombau"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Schalen eines Atoms heißen K, L, M. Auf die K-Schale passen 2 Elektronen, auf die L-Schale mehr."
+          },
+          "prompt": {
+            "de": "Wie viele Elektronen passen höchstens auf die L-Schale (zweite Schale)?"
+          },
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/labor-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Labor: Periodensystem"
+      },
+      "subject": "chemie",
+      "grade": 9,
+      "place": "labor",
+      "tasks": [
+        {
+          "id": "c2-1",
+          "skills": [
+            "chemie.periodensystem"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wie heißen die senkrechten Spalten im Periodensystem?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Gruppen"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Perioden"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Reihen"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Schalen"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "c2-2",
+          "skills": [
+            "chemie.periodensystem"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welches Symbol gehört zu welchem Element?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Na"
+              },
+              "right": {
+                "de": "Natrium"
+              }
+            },
+            {
+              "left": {
+                "de": "Fe"
+              },
+              "right": {
+                "de": "Eisen"
+              }
+            },
+            {
+              "left": {
+                "de": "Cu"
+              },
+              "right": {
+                "de": "Kupfer"
+              }
+            },
+            {
+              "left": {
+                "de": "Pb"
+              },
+              "right": {
+                "de": "Blei"
+              }
+            },
+            {
+              "left": {
+                "de": "Au"
+              },
+              "right": {
+                "de": "Gold"
+              }
+            },
+            {
+              "left": {
+                "de": "K"
+              },
+              "right": {
+                "de": "Kalium"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c2-3",
+          "skills": [
+            "chemie.periodensystem"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Gruppe hat welchen Namen?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "1. Hauptgruppe"
+              },
+              "right": {
+                "de": "Alkalimetalle"
+              }
+            },
+            {
+              "left": {
+                "de": "2. Hauptgruppe"
+              },
+              "right": {
+                "de": "Erdalkalimetalle"
+              }
+            },
+            {
+              "left": {
+                "de": "7. Hauptgruppe"
+              },
+              "right": {
+                "de": "Halogene"
+              }
+            },
+            {
+              "left": {
+                "de": "8. Hauptgruppe"
+              },
+              "right": {
+                "de": "Edelgase"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c2-4",
+          "skills": [
+            "chemie.periodensystem"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Wie viele Elektronen hat ein neutrales Kohlenstoffatom (Ordnungszahl 6)?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Ein Kohlenstoffatom hat {x} Elektronen. Wie viele Elektronen haben zwei Kohlenstoffatome zusammen?"
+          }
+        },
+        {
+          "id": "c2-5",
+          "skills": [
+            "chemie.periodensystem"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Element steht in der 3. Periode und in der 2. Hauptgruppe. Es ist Magnesium."
+          },
+          "prompt": {
+            "de": "Welche Ordnungszahl hat Magnesium?"
+          },
+          "answer": 12,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/labor-3",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Labor: Reaktionsgleichungen"
+      },
+      "subject": "chemie",
+      "grade": 10,
+      "place": "labor",
+      "tasks": [
+        {
+          "id": "c4-1",
+          "skills": [
+            "chemie.reaktionsgleichungen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Gleichung lautet: 2 H₂ + O₂ → 2 H₂O."
+          },
+          "prompt": {
+            "de": "Wie viele Wasserstoffatome stehen links vom Pfeil?"
+          },
+          "answer": 4,
+          "difficulty": 1
+        },
+        {
+          "id": "c4-2",
+          "skills": [
+            "chemie.reaktionsgleichungen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Gleichung ist richtig ausgeglichen?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "H₂ + O₂ → H₂O"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "H₂ + O₂ → 2 H₂O"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "2 H₂ + 2 O₂ → 2 H₂O"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "2 H₂ + O₂ → 2 H₂O"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "c4-3",
+          "skills": [
+            "chemie.reaktionsgleichungen"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Bei der Verbrennung von Methan gilt: CH₄ + 2 O₂ → CO₂ + 2 H₂O. Wie viele Sauerstoffatome stehen links vom Pfeil?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "subtract",
+            "operand": 2
+          },
+          "second": {
+            "de": "Links stehen {x} Sauerstoffatome. 2 davon stecken im CO₂. Wie viele Sauerstoffatome stecken in den 2 H₂O?"
+          }
+        },
+        {
+          "id": "c4-4",
+          "skills": [
+            "chemie.reaktionsgleichungen"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welcher Stoff hat welche Formel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Wasser"
+              },
+              "right": {
+                "de": "H₂O"
+              }
+            },
+            {
+              "left": {
+                "de": "Kohlenstoffdioxid"
+              },
+              "right": {
+                "de": "CO₂"
+              }
+            },
+            {
+              "left": {
+                "de": "Methan"
+              },
+              "right": {
+                "de": "CH₄"
+              }
+            },
+            {
+              "left": {
+                "de": "Ammoniak"
+              },
+              "right": {
+                "de": "NH₃"
+              }
+            },
+            {
+              "left": {
+                "de": "Natriumchlorid"
+              },
+              "right": {
+                "de": "NaCl"
+              }
+            },
+            {
+              "left": {
+                "de": "Sauerstoff"
+              },
+              "right": {
+                "de": "O₂"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c4-5",
+          "skills": [
+            "chemie.reaktionsgleichungen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was bleibt bei jeder chemischen Reaktion erhalten?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Die Anzahl der Moleküle"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Die Stoffeigenschaften"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Das Volumen"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Die Gesamtmasse"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "c4-6",
+          "skills": [
+            "chemie.reaktionsgleichungen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Die Gleichung lautet: __ Al + 3 O₂ → 2 Al₂O₃. Rechts stehen insgesamt 4 Aluminiumatome."
+          },
+          "prompt": {
+            "de": "Welche Zahl muss vor Al stehen?"
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/wasserwerk",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Wasserwerk: Säuren und Basen"
+      },
+      "subject": "chemie",
+      "grade": 10,
+      "tasks": [
+        {
+          "id": "c3-1",
+          "skills": [
+            "chemie.saeuren-basen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welchen pH-Wert hat eine neutrale Lösung?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "pH 7"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "pH 0"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "pH 14"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "pH 10"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "c3-2",
+          "skills": [
+            "chemie.saeuren-basen"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welcher Stoff hat ungefähr welchen pH-Wert?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Magensäure"
+              },
+              "right": {
+                "de": "pH 1"
+              }
+            },
+            {
+              "left": {
+                "de": "Essig"
+              },
+              "right": {
+                "de": "pH 3"
+              }
+            },
+            {
+              "left": {
+                "de": "Reines Wasser"
+              },
+              "right": {
+                "de": "pH 7"
+              }
+            },
+            {
+              "left": {
+                "de": "Seifenlauge"
+              },
+              "right": {
+                "de": "pH 10"
+              }
+            },
+            {
+              "left": {
+                "de": "Natronlauge"
+              },
+              "right": {
+                "de": "pH 13"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c3-3",
+          "skills": [
+            "chemie.saeuren-basen"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welche Farbe hat Universalindikator in saurer Lösung?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "blau"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "grün"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "violett"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "rot"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "c3-4",
+          "skills": [
+            "chemie.saeuren-basen"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Eine Salzsäure hat den pH-Wert 1. Wie viele pH-Stufen liegt sie unter dem neutralen Wert 7?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "add",
+            "operand": 1
+          },
+          "second": {
+            "de": "Die Säure liegt {x} pH-Stufen unter 7. Eine Lauge liegt auf der anderen Seite 1 Stufe weiter von 7 entfernt. Wie viele Stufen liegt die Lauge über 7?"
+          }
+        },
+        {
+          "id": "c3-5",
+          "skills": [
+            "chemie.saeuren-basen"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Lösung A hat den pH-Wert 2, Lösung B den pH-Wert 5. Pro pH-Stufe ändert sich die Säurestärke um den Faktor 10."
+          },
+          "prompt": {
+            "de": "Um welchen Faktor ist Lösung A saurer als Lösung B?"
+          },
+          "answer": 1000,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/wasserwerk-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Wasserwerk: Neutralisation und Salze"
+      },
+      "subject": "chemie",
+      "grade": 10,
+      "place": "wasserwerk",
+      "tasks": [
+        {
+          "id": "c5-1",
+          "skills": [
+            "chemie.neutralisation"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was entsteht bei der Neutralisation von Salzsäure mit Natronlauge?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Natriumchlorid und Wasser"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Natriumhydroxid und Chlor"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Kochsalz und Wasserstoff"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Chlorwasserstoff und Wasser"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "c5-2",
+          "skills": [
+            "chemie.neutralisation"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Säure bildet welche Salze?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Salzsäure"
+              },
+              "right": {
+                "de": "Chloride"
+              }
+            },
+            {
+              "left": {
+                "de": "Schwefelsäure"
+              },
+              "right": {
+                "de": "Sulfate"
+              }
+            },
+            {
+              "left": {
+                "de": "Salpetersäure"
+              },
+              "right": {
+                "de": "Nitrate"
+              }
+            },
+            {
+              "left": {
+                "de": "Kohlensäure"
+              },
+              "right": {
+                "de": "Carbonate"
+              }
+            },
+            {
+              "left": {
+                "de": "Phosphorsäure"
+              },
+              "right": {
+                "de": "Phosphate"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c5-3",
+          "skills": [
+            "chemie.neutralisation"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Für 20 mL Salzsäure braucht man 20 mL Natronlauge gleicher Konzentration (Verhältnis 1 : 1)."
+          },
+          "prompt": {
+            "de": "Wie viele mL Lauge braucht man für 50 mL der gleichen Salzsäure?"
+          },
+          "answer": 50
+        },
+        {
+          "id": "c5-4",
+          "skills": [
+            "chemie.neutralisation"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Eine Lösung hat den pH-Wert 3. Um wie viele pH-Stufen muss sie steigen, bis sie neutral (pH 7) ist?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "multiply",
+            "operand": 10
+          },
+          "second": {
+            "de": "Die Lösung muss um {x} pH-Stufen steigen. Pro Stufe nimmt man im Versuch 10 mL Lauge. Wie viele mL sind das?"
+          }
+        },
+        {
+          "id": "c5-5",
+          "skills": [
+            "chemie.neutralisation"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welcher Stoff gehört zu den Salzen?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Salzsäure"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Natronlauge"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Wasser"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Calciumcarbonat (Kalk)"
+              }
+            }
+          ],
+          "correct": "d",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/rathaus",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Rathaus: Grundgesetz"
+      },
+      "subject": "politik",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "p1-1",
+          "skills": [
+            "politik.grundgesetz"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Der Schutz der Menschenwürde steht in Artikel 1 des Grundgesetzes. Das Grundgesetz trat 1949 in Kraft."
+          },
+          "prompt": {
+            "de": "In welchem Jahr trat das Grundgesetz in Kraft?"
+          },
+          "answer": 1949,
+          "difficulty": 1
+        },
+        {
+          "id": "p1-2",
+          "skills": [
+            "politik.grundgesetz"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welches Grundrecht steht in welchem Artikel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Menschenwürde"
+              },
+              "right": {
+                "de": "Artikel 1"
+              }
+            },
+            {
+              "left": {
+                "de": "Gleichheit vor dem Gesetz"
+              },
+              "right": {
+                "de": "Artikel 3"
+              }
+            },
+            {
+              "left": {
+                "de": "Meinungsfreiheit"
+              },
+              "right": {
+                "de": "Artikel 5"
+              }
+            },
+            {
+              "left": {
+                "de": "Versammlungsfreiheit"
+              },
+              "right": {
+                "de": "Artikel 8"
+              }
+            },
+            {
+              "left": {
+                "de": "Briefgeheimnis"
+              },
+              "right": {
+                "de": "Artikel 10"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p1-3",
+          "skills": [
+            "politik.grundgesetz"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Welches Recht ist in Artikel 5 des Grundgesetzes geschützt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Das Wahlrecht"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Die Meinungsfreiheit"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Die Schulpflicht"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Das Recht auf Eigentum"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "p1-4",
+          "skills": [
+            "politik.grundgesetz"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ab welchem Alter darf man in Deutschland den Bundestag wählen?"
+          },
+          "firstAnswer": 18,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "de": "Wer mit {x} Jahren zum ersten Mal wählt, ist bei der nächsten Bundestagswahl vier Jahre später wie alt?"
+          }
+        },
+        {
+          "id": "p1-5",
+          "skills": [
+            "politik.grundgesetz"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Angenommen, im Bundestag sitzen 630 Abgeordnete. Eine Änderung des Grundgesetzes braucht eine Zweidrittelmehrheit aller Mitglieder des Bundestages."
+          },
+          "prompt": {
+            "de": "Wie viele Ja-Stimmen sind mindestens nötig?"
+          },
+          "answer": 420,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/rathaus-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Rathaus: Wirtschaft im Alltag"
+      },
+      "subject": "politik",
+      "grade": 10,
+      "place": "rathaus",
+      "tasks": [
+        {
+          "id": "p5-1",
+          "skills": [
+            "politik.wirtschaft"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Ein Café hat in einem Monat 4 000 € Einnahmen und 3 200 € Ausgaben."
+          },
+          "prompt": {
+            "de": "Wie hoch ist der Gewinn in Euro?"
+          },
+          "answer": 800,
+          "difficulty": 1
+        },
+        {
+          "id": "p5-2",
+          "skills": [
+            "politik.wirtschaft"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welcher Begriff passt zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Inflation"
+              },
+              "right": {
+                "de": "Die Preise steigen allgemein."
+              }
+            },
+            {
+              "left": {
+                "de": "Bruttolohn"
+              },
+              "right": {
+                "de": "Lohn vor allen Abzügen"
+              }
+            },
+            {
+              "left": {
+                "de": "Nettolohn"
+              },
+              "right": {
+                "de": "Lohn nach Steuern und Abgaben"
+              }
+            },
+            {
+              "left": {
+                "de": "Mehrwertsteuer"
+              },
+              "right": {
+                "de": "Steuer, die im Preis beim Kauf steckt"
+              }
+            },
+            {
+              "left": {
+                "de": "Angebot und Nachfrage"
+              },
+              "right": {
+                "de": "bestimmen die Preise am Markt"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p5-3",
+          "skills": [
+            "politik.wirtschaft"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Ein Fahrrad hat den Nettopreis 400 €. Wie viel Euro sind 19 % Mehrwertsteuer darauf?"
+          },
+          "firstAnswer": 76,
+          "operation": {
+            "op": "add",
+            "operand": 400
+          },
+          "second": {
+            "de": "Die Mehrwertsteuer beträgt {x} €. Der Nettopreis ist 400 €. Wie viel Euro kostet das Rad brutto?"
+          }
+        },
+        {
+          "id": "p5-4",
+          "skills": [
+            "politik.wirtschaft"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was bedeutet Inflation?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Die Preise sinken allgemein."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Das allgemeine Preisniveau steigt, das Geld verliert an Wert."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Die Löhne werden gesenkt."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Der Staat nimmt mehr Steuern ein."
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "p5-5",
+          "skills": [
+            "politik.wirtschaft"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Jemand verdient brutto 3 000 €. 20 Prozent gehen für Steuern und Sozialabgaben ab."
+          },
+          "prompt": {
+            "de": "Wie viel Euro bleiben netto?"
+          },
+          "answer": 2400
+        },
+        {
+          "id": "p5-6",
+          "skills": [
+            "politik.wirtschaft"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Jemand legt 2 000 € an. Es gibt 10 Prozent Zinsen pro Jahr. Die Zinsen werden mit angelegt (Zinseszins)."
+          },
+          "prompt": {
+            "de": "Wie viel Euro sind es nach 2 Jahren?"
+          },
+          "answer": 2420,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/parlament",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Parlament: Der Bundestag"
+      },
+      "subject": "politik",
+      "grade": 9,
+      "tasks": [
+        {
+          "id": "p2-1",
+          "skills": [
+            "politik.bundestag"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wer wählt die Bundeskanzlerin oder den Bundeskanzler?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Das Volk direkt"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Der Bundesrat"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Der Bundespräsident"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Der Bundestag"
+              }
+            }
+          ],
+          "correct": "d",
+          "difficulty": 1
+        },
+        {
+          "id": "p2-2",
+          "skills": [
+            "politik.bundestag"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welches Organ hat welche Aufgabe?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Bundestag"
+              },
+              "right": {
+                "de": "beschließt Gesetze"
+              }
+            },
+            {
+              "left": {
+                "de": "Bundesrat"
+              },
+              "right": {
+                "de": "vertritt die Länder"
+              }
+            },
+            {
+              "left": {
+                "de": "Bundesregierung"
+              },
+              "right": {
+                "de": "führt die Gesetze aus"
+              }
+            },
+            {
+              "left": {
+                "de": "Bundespräsident"
+              },
+              "right": {
+                "de": "ist das Staatsoberhaupt"
+              }
+            },
+            {
+              "left": {
+                "de": "Bundesverfassungsgericht"
+              },
+              "right": {
+                "de": "prüft, ob Gesetze zum Grundgesetz passen"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p2-3",
+          "skills": [
+            "politik.bundestag"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Eine Partei braucht mindestens 5 Prozent der Zweitstimmen. Es gab 40 Millionen gültige Zweitstimmen."
+          },
+          "prompt": {
+            "de": "Wie viele Millionen Zweitstimmen sind für 5 Prozent nötig?"
+          },
+          "answer": 2
+        },
+        {
+          "id": "p2-4",
+          "skills": [
+            "politik.bundestag"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Der Bundestag wird alle 4 Jahre gewählt. Wie viele Wahlen gibt es in 20 Jahren?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Es gibt {x} Wahlen. Bei jeder Wahl hat man 2 Stimmen. Wie viele Stimmen gibt eine Person in 20 Jahren ab?"
+          }
+        },
+        {
+          "id": "p2-5",
+          "skills": [
+            "politik.bundestag"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was gehört zu den Aufgaben des Bundestags?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Urteile sprechen"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Gesetze beschließen und die Regierung kontrollieren"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Verträge mit anderen Staaten allein unterschreiben"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Gesetze anwenden"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/parlament-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Parlament: Bundesrat und Gesetze"
+      },
+      "subject": "politik",
+      "grade": 10,
+      "place": "parlament",
+      "tasks": [
+        {
+          "id": "p3-1",
+          "skills": [
+            "politik.gesetzgebung"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wen vertritt der Bundesrat?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Die Länder"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Die Städte"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Die Parteien"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Die Wählerinnen und Wähler direkt"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "p3-2",
+          "skills": [
+            "politik.gesetzgebung"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Der Bundesrat hat 69 Stimmen. Für einen Beschluss braucht man mehr als die Hälfte der Stimmen."
+          },
+          "prompt": {
+            "de": "Wie viele Stimmen sind mindestens nötig?"
+          },
+          "answer": 35
+        },
+        {
+          "id": "p3-3",
+          "skills": [
+            "politik.gesetzgebung"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welcher Schritt der Gesetzgebung passt zu welcher Beschreibung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Gesetzentwurf"
+              },
+              "right": {
+                "de": "wird im Bundestag eingebracht"
+              }
+            },
+            {
+              "left": {
+                "de": "Lesungen"
+              },
+              "right": {
+                "de": "Beratung und Abstimmung im Bundestag"
+              }
+            },
+            {
+              "left": {
+                "de": "Bundesrat"
+              },
+              "right": {
+                "de": "wird am Gesetz beteiligt"
+              }
+            },
+            {
+              "left": {
+                "de": "Ausfertigung"
+              },
+              "right": {
+                "de": "Der Bundespräsident unterzeichnet."
+              }
+            },
+            {
+              "left": {
+                "de": "Verkündung"
+              },
+              "right": {
+                "de": "Veröffentlichung im Bundesgesetzblatt"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p3-4",
+          "skills": [
+            "politik.gesetzgebung"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Wie viele Bundesländer hat Deutschland?"
+          },
+          "firstAnswer": 16,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "de": "Jedes der {x} Länder hat im Bundesrat mindestens 3 Stimmen. Wie viele Stimmen sind das mindestens insgesamt?"
+          }
+        },
+        {
+          "id": "p3-5",
+          "skills": [
+            "politik.gesetzgebung"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Was ist ein Zustimmungsgesetz?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Ein Gesetz, das ohne Zustimmung des Bundesrates nicht zustande kommt"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Ein Gesetz, das nur der Bundeskanzler beschließt"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Ein Gesetz, das nur für ein Land gilt"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Ein Gesetz, das ein Gericht erlässt"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.klasse-9-10/gericht",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Gericht: Gewaltenteilung"
+      },
+      "subject": "politik",
+      "grade": 10,
+      "tasks": [
+        {
+          "id": "p4-1",
+          "skills": [
+            "politik.gewaltenteilung"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Warum gibt es die Gewaltenteilung?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Damit Gesetze schneller beschlossen werden"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Damit keine Gruppe allein zu viel Macht hat"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Damit es weniger Wahlen gibt"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Damit die Länder weniger Aufgaben haben"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "p4-2",
+          "skills": [
+            "politik.gewaltenteilung"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "de": "Welche Gewalt hat welche Aufgabe, und wer nimmt sie wahr?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Legislative (Gesetze machen)"
+              },
+              "right": {
+                "de": "Bundestag"
+              }
+            },
+            {
+              "left": {
+                "de": "Exekutive (Gesetze ausführen)"
+              },
+              "right": {
+                "de": "Bundesregierung"
+              }
+            },
+            {
+              "left": {
+                "de": "Judikative (Recht sprechen)"
+              },
+              "right": {
+                "de": "Gerichte"
+              }
+            },
+            {
+              "left": {
+                "de": "Staatsoberhaupt"
+              },
+              "right": {
+                "de": "Bundespräsident"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p4-3",
+          "skills": [
+            "politik.gewaltenteilung"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "de": "Das Bundesverfassungsgericht hat zwei Senate mit je 8 Richterinnen und Richtern."
+          },
+          "prompt": {
+            "de": "Wie viele Richterinnen und Richter hat das Gericht insgesamt?"
+          },
+          "answer": 16
+        },
+        {
+          "id": "p4-4",
+          "skills": [
+            "politik.gewaltenteilung"
+          ],
+          "type": "relay",
+          "first": {
+            "de": "Der Bundespräsident wird für 5 Jahre gewählt und darf einmal wiedergewählt werden. Wie viele Jahre kann er höchstens im Amt sein?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "subtract",
+            "operand": 6
+          },
+          "second": {
+            "de": "Höchstens {x} Jahre. Jemand ist schon 6 Jahre im Amt. Wie viele Jahre darf er höchstens noch bleiben?"
+          }
+        },
+        {
+          "id": "p4-5",
+          "skills": [
+            "politik.gewaltenteilung"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "de": "Wer wählt die Bundespräsidentin oder den Bundespräsidenten?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Das Volk direkt"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Der Bundestag allein"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Der Bundesrat allein"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Die Bundesversammlung"
+              }
+            }
+          ],
+          "correct": "d",
+          "difficulty": 3
+        }
+      ]
+    }
+  ]
+}

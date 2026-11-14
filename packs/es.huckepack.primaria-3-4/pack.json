@@ -1,0 +1,4357 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "es.huckepack.primaria-3-4",
+  "version": 2,
+  "title": {
+    "es": "Un pueblo de primaria (3.º y 4.º)",
+    "en": "A Village for Primary School (grades 3-4, Spanish)"
+  },
+  "description": {
+    "es": "Mundo para 3.º y 4.º de primaria (8 a 10 años) con contenidos comunes de los currículos de México (SEP) y España (LOMLOE).",
+    "en": "World for Spanish-speaking primary school, grades 3 and 4 (ages 8-10), based on content common to the Mexican (SEP) and Spanish (LOMLOE) curricula."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "matematicas",
+      "title": {
+        "es": "Matemáticas",
+        "en": "Mathematics"
+      }
+    },
+    {
+      "id": "lengua",
+      "title": {
+        "es": "Lengua",
+        "en": "Language"
+      }
+    },
+    {
+      "id": "naturales",
+      "title": {
+        "es": "Ciencias Naturales",
+        "en": "Natural Sciences"
+      }
+    },
+    {
+      "id": "sociales",
+      "title": {
+        "es": "Ciencias Sociales",
+        "en": "Social Studies"
+      }
+    }
+  ],
+  "skills": {
+    "matematicas.multiplicacion": {
+      "es": "Multiplicar",
+      "en": "Multiplication"
+    },
+    "matematicas.division": {
+      "es": "Dividir",
+      "en": "Division"
+    },
+    "matematicas.fracciones": {
+      "es": "Fracciones sencillas",
+      "en": "Simple fractions"
+    },
+    "matematicas.dinero": {
+      "es": "Calcular con monedas",
+      "en": "Calculating with coins"
+    },
+    "matematicas.medidas": {
+      "es": "Medidas de longitud, masa y capacidad",
+      "en": "Measures of length, mass and capacity"
+    },
+    "matematicas.hora": {
+      "es": "La hora y la duración",
+      "en": "Telling time and durations"
+    },
+    "lengua.clases-de-palabras": {
+      "es": "Sustantivos, adjetivos y verbos",
+      "en": "Nouns, adjectives and verbs"
+    },
+    "lengua.ortografia-b-v": {
+      "es": "Ortografía de b y v",
+      "en": "Spelling of b and v"
+    },
+    "lengua.verbos-tiempos": {
+      "es": "Verbos: presente, pasado y futuro",
+      "en": "Verbs: present, past and future"
+    },
+    "lengua.acentuacion": {
+      "es": "Sílabas y tilde",
+      "en": "Syllables and written accents"
+    },
+    "lengua.vocabulario": {
+      "es": "Sinónimos, antónimos y familias de palabras",
+      "en": "Synonyms, antonyms and word families"
+    },
+    "lengua.puntuacion": {
+      "es": "Oraciones, mayúsculas y signos",
+      "en": "Sentences, capitals and punctuation"
+    },
+    "naturales.agua": {
+      "es": "El agua y su ciclo",
+      "en": "Water and its cycle"
+    },
+    "naturales.animales": {
+      "es": "Los animales",
+      "en": "Animals"
+    },
+    "naturales.plantas": {
+      "es": "Las plantas",
+      "en": "Plants"
+    },
+    "naturales.cuerpo-humano": {
+      "es": "El cuerpo humano",
+      "en": "The human body"
+    },
+    "sociales.continentes": {
+      "es": "Continentes y océanos",
+      "en": "Continents and oceans"
+    },
+    "sociales.rios": {
+      "es": "Los ríos",
+      "en": "Rivers"
+    },
+    "sociales.trabajos": {
+      "es": "Trabajos y servicios del pueblo",
+      "en": "Jobs and services in the village"
+    },
+    "sociales.relieve": {
+      "es": "Relieve y paisajes",
+      "en": "Landforms and landscapes"
+    },
+    "sociales.mapas": {
+      "es": "Mapas y orientación",
+      "en": "Maps and orientation"
+    },
+    "sociales.mundo": {
+      "es": "La Tierra y el mundo",
+      "en": "The Earth and the world"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "entrada",
+    "nodes": [
+      {
+        "id": "entrada",
+        "title": {
+          "es": "Entrada del pueblo"
+        },
+        "x": 0.12,
+        "y": 0.86,
+        "requires": []
+      },
+      {
+        "id": "plaza",
+        "title": {
+          "es": "Plaza mayor"
+        },
+        "x": 0.3,
+        "y": 0.72,
+        "level": "es.huckepack.primaria-3-4/plaza",
+        "requires": []
+      },
+      {
+        "id": "mercado",
+        "title": {
+          "es": "Mercado"
+        },
+        "x": 0.5,
+        "y": 0.84,
+        "level": "es.huckepack.primaria-3-4/mercado",
+        "requires": [
+          "es.huckepack.primaria-3-4/plaza"
+        ]
+      },
+      {
+        "id": "reloj",
+        "title": {
+          "es": "Torre del reloj"
+        },
+        "x": 0.14,
+        "y": 0.58,
+        "level": "es.huckepack.primaria-3-4/reloj",
+        "requires": [
+          "es.huckepack.primaria-3-4/plaza"
+        ]
+      },
+      {
+        "id": "escuela",
+        "title": {
+          "es": "Escuela"
+        },
+        "x": 0.14,
+        "y": 0.38,
+        "level": "es.huckepack.primaria-3-4/escuela",
+        "requires": [
+          "es.huckepack.primaria-3-4/reloj"
+        ]
+      },
+      {
+        "id": "biblioteca",
+        "title": {
+          "es": "Biblioteca"
+        },
+        "x": 0.14,
+        "y": 0.18,
+        "level": "es.huckepack.primaria-3-4/biblioteca",
+        "requires": [
+          "es.huckepack.primaria-3-4/escuela"
+        ]
+      },
+      {
+        "id": "parque",
+        "title": {
+          "es": "Parque"
+        },
+        "x": 0.34,
+        "y": 0.16,
+        "miniGame": "ticTacToe",
+        "requires": []
+      },
+      {
+        "id": "fuente",
+        "title": {
+          "es": "Fuente"
+        },
+        "x": 0.42,
+        "y": 0.52,
+        "level": "es.huckepack.primaria-3-4/fuente",
+        "requires": [
+          "es.huckepack.primaria-3-4/plaza"
+        ]
+      },
+      {
+        "id": "granja",
+        "title": {
+          "es": "Granja"
+        },
+        "x": 0.74,
+        "y": 0.86,
+        "level": "es.huckepack.primaria-3-4/granja",
+        "requires": [
+          "es.huckepack.primaria-3-4/mercado"
+        ]
+      },
+      {
+        "id": "huerto",
+        "title": {
+          "es": "Huerto"
+        },
+        "x": 0.76,
+        "y": 0.64,
+        "level": "es.huckepack.primaria-3-4/huerto",
+        "requires": [
+          "es.huckepack.primaria-3-4/granja"
+        ]
+      },
+      {
+        "id": "puente",
+        "title": {
+          "es": "Puente viejo"
+        },
+        "x": 0.52,
+        "y": 0.32,
+        "level": "es.huckepack.primaria-3-4/puente",
+        "requires": [
+          "es.huckepack.primaria-3-4/fuente"
+        ]
+      },
+      {
+        "id": "molino",
+        "title": {
+          "es": "Molino"
+        },
+        "x": 0.7,
+        "y": 0.2,
+        "level": "es.huckepack.primaria-3-4/molino",
+        "requires": [
+          "es.huckepack.primaria-3-4/puente"
+        ]
+      },
+      {
+        "id": "montana",
+        "title": {
+          "es": "Montaña"
+        },
+        "x": 0.88,
+        "y": 0.34,
+        "level": "es.huckepack.primaria-3-4/montana",
+        "requires": [
+          "es.huckepack.primaria-3-4/molino"
+        ]
+      },
+      {
+        "id": "mirador",
+        "title": {
+          "es": "Mirador"
+        },
+        "x": 0.9,
+        "y": 0.56,
+        "level": "es.huckepack.primaria-3-4/mirador",
+        "requires": [
+          "es.huckepack.primaria-3-4/montana"
+        ]
+      }
+    ],
+    "paths": [
+      [
+        "entrada",
+        "plaza"
+      ],
+      [
+        "plaza",
+        "mercado"
+      ],
+      [
+        "plaza",
+        "reloj"
+      ],
+      [
+        "plaza",
+        "fuente"
+      ],
+      [
+        "reloj",
+        "escuela"
+      ],
+      [
+        "escuela",
+        "biblioteca"
+      ],
+      [
+        "biblioteca",
+        "parque"
+      ],
+      [
+        "escuela",
+        "parque"
+      ],
+      [
+        "mercado",
+        "granja"
+      ],
+      [
+        "granja",
+        "huerto"
+      ],
+      [
+        "fuente",
+        "puente"
+      ],
+      [
+        "puente",
+        "molino"
+      ],
+      [
+        "molino",
+        "montana"
+      ],
+      [
+        "montana",
+        "mirador"
+      ],
+      [
+        "mirador",
+        "huerto"
+      ],
+      [
+        "fuente",
+        "huerto"
+      ],
+      [
+        "parque",
+        "puente"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "es.huckepack.primaria-3-4/plaza",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La plaza mayor: tablas"
+      },
+      "subject": "matematicas",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "plaza-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "clue": {
+            "es": "En la plaza hay 6 bancos. En cada banco se sientan 4 palomas."
+          },
+          "prompt": {
+            "es": "¿Cuántas palomas hay en total?"
+          },
+          "answer": 24,
+          "difficulty": 1
+        },
+        {
+          "id": "plaza-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "prompt": {
+            "es": "¿Qué multiplicación va con qué resultado? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "3 × 7"
+              },
+              "right": {
+                "es": "21"
+              }
+            },
+            {
+              "left": {
+                "es": "6 × 4"
+              },
+              "right": {
+                "es": "24"
+              }
+            },
+            {
+              "left": {
+                "es": "8 × 5"
+              },
+              "right": {
+                "es": "40"
+              }
+            },
+            {
+              "left": {
+                "es": "9 × 6"
+              },
+              "right": {
+                "es": "54"
+              }
+            }
+          ]
+        },
+        {
+          "id": "plaza-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "first": {
+            "es": "En la plaza hay 5 filas de 8 sillas. ¿Cuántas sillas hay?"
+          },
+          "firstAnswer": 40,
+          "operation": {
+            "op": "subtract",
+            "operand": 6
+          },
+          "second": {
+            "es": "Hay {x} sillas, pero se llevan 6 al escenario. ¿Cuántas sillas quedan?"
+          }
+        },
+        {
+          "id": "plaza-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "question": {
+            "es": "¿Qué multiplicación da como resultado 56?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "7 × 8"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "7 × 9"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "6 × 8"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "8 × 8"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "plaza-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "clue": {
+            "es": "En la plaza hay 4 fuentes pequeñas. Cada fuente tiene 3 caños y cada caño llena 5 jarras."
+          },
+          "prompt": {
+            "es": "¿Cuántas jarras se llenan en total?"
+          },
+          "answer": 60,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/plaza-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "Repartos en la plaza"
+      },
+      "subject": "matematicas",
+      "grade": 3,
+      "place": "plaza",
+      "tasks": [
+        {
+          "id": "plaza-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.division"
+          ],
+          "clue": {
+            "es": "La panadera tiene 48 panecillos y los reparte en 6 cestas iguales."
+          },
+          "prompt": {
+            "es": "¿Cuántos panecillos hay en cada cesta?"
+          },
+          "answer": 8,
+          "difficulty": 1
+        },
+        {
+          "id": "plaza-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.division"
+          ],
+          "prompt": {
+            "es": "¿Qué división va con qué resultado? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "24 : 3"
+              },
+              "right": {
+                "es": "8"
+              }
+            },
+            {
+              "left": {
+                "es": "35 : 5"
+              },
+              "right": {
+                "es": "7"
+              }
+            },
+            {
+              "left": {
+                "es": "45 : 9"
+              },
+              "right": {
+                "es": "5"
+              }
+            },
+            {
+              "left": {
+                "es": "72 : 8"
+              },
+              "right": {
+                "es": "9"
+              }
+            }
+          ]
+        },
+        {
+          "id": "plaza-2-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.division"
+          ],
+          "first": {
+            "es": "En la plaza hay 36 niños que forman equipos de 4. ¿Cuántos equipos hay?"
+          },
+          "firstAnswer": 9,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "es": "Hay {x} equipos. Cada equipo recibe 3 pelotas. ¿Cuántas pelotas hacen falta?"
+          }
+        },
+        {
+          "id": "plaza-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.division"
+          ],
+          "question": {
+            "es": "Se reparten 30 caramelos entre 4 niños, todos iguales. ¿Cuántos caramelos sobran?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "7"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "2"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "0"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "6"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "plaza-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.division"
+          ],
+          "clue": {
+            "es": "Hay 100 sillas. Se colocan en filas de 8 sillas y se llenan todas las filas posibles."
+          },
+          "prompt": {
+            "es": "¿Cuántas sillas quedan sin fila?"
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/plaza-3",
+      "schemaVersion": 1,
+      "title": {
+        "es": "Fracciones en la plaza"
+      },
+      "subject": "matematicas",
+      "grade": 4,
+      "place": "plaza",
+      "tasks": [
+        {
+          "id": "plaza-3-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.fracciones"
+          ],
+          "clue": {
+            "es": "Una pizza se corta en 8 trozos iguales. Los amigos se comen 3 trozos."
+          },
+          "prompt": {
+            "es": "¿Cuántos trozos quedan?"
+          },
+          "answer": 5,
+          "difficulty": 1
+        },
+        {
+          "id": "plaza-3-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.fracciones"
+          ],
+          "prompt": {
+            "es": "¿Qué fracción va con su nombre? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "1/2"
+              },
+              "right": {
+                "es": "la mitad"
+              }
+            },
+            {
+              "left": {
+                "es": "1/4"
+              },
+              "right": {
+                "es": "un cuarto"
+              }
+            },
+            {
+              "left": {
+                "es": "1/3"
+              },
+              "right": {
+                "es": "un tercio"
+              }
+            },
+            {
+              "left": {
+                "es": "3/4"
+              },
+              "right": {
+                "es": "tres cuartos"
+              }
+            }
+          ]
+        },
+        {
+          "id": "plaza-3-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.fracciones"
+          ],
+          "first": {
+            "es": "Una cuerda mide 24 metros. ¿Cuántos metros son 1/4 de la cuerda?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "es": "Un cuarto de la cuerda mide {x} metros. ¿Cuántos metros son 3/4 de la cuerda?"
+          }
+        },
+        {
+          "id": "plaza-3-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.fracciones"
+          ],
+          "question": {
+            "es": "Todas las pizzas son iguales. ¿Qué parte es la más grande?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "1/4"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "1/8"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "1/2"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "1/6"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "plaza-3-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.fracciones"
+          ],
+          "clue": {
+            "es": "En la plaza hay 20 palomas. Las 3/5 están en el suelo."
+          },
+          "prompt": {
+            "es": "¿Cuántas palomas están en el suelo?"
+          },
+          "answer": 12,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/mercado",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El mercado: monedas"
+      },
+      "subject": "matematicas",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "mercado-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.dinero"
+          ],
+          "clue": {
+            "es": "Una manzana cuesta 3 monedas. Compras 5 manzanas."
+          },
+          "prompt": {
+            "es": "¿Cuántas monedas pagas?"
+          },
+          "answer": 15,
+          "difficulty": 1
+        },
+        {
+          "id": "mercado-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.dinero"
+          ],
+          "prompt": {
+            "es": "¿Qué compra va con qué precio total? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "5 tomates a 4 monedas"
+              },
+              "right": {
+                "es": "20"
+              }
+            },
+            {
+              "left": {
+                "es": "3 quesos a 7 monedas"
+              },
+              "right": {
+                "es": "21"
+              }
+            },
+            {
+              "left": {
+                "es": "6 peras a 5 monedas"
+              },
+              "right": {
+                "es": "30"
+              }
+            },
+            {
+              "left": {
+                "es": "4 melones a 8 monedas"
+              },
+              "right": {
+                "es": "32"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mercado-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.dinero"
+          ],
+          "first": {
+            "es": "Una bolsa de naranjas cuesta 12 monedas. Compras 3 bolsas. ¿Cuántas monedas cuestan?"
+          },
+          "firstAnswer": 36,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "es": "La cuenta es de {x} monedas. Te descuentan 5 monedas. ¿Cuántas monedas pagas?"
+          }
+        },
+        {
+          "id": "mercado-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.dinero"
+          ],
+          "question": {
+            "es": "Pagas con 20 monedas una cuenta de 13 monedas. ¿Cuántas monedas te devuelven?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "8"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "33"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "17"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "7"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "mercado-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.dinero"
+          ],
+          "clue": {
+            "es": "En el puesto de quesos hay tres quesos. Uno cuesta 9 monedas, otro cuesta 14 y otro cuesta 12. Compras uno de cada."
+          },
+          "prompt": {
+            "es": "¿Cuántas monedas cuestan los tres juntos?"
+          },
+          "answer": 35,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/mercado-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El mercado: cuentas grandes"
+      },
+      "subject": "matematicas",
+      "grade": 4,
+      "place": "mercado",
+      "tasks": [
+        {
+          "id": "mercado-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "clue": {
+            "es": "En el mercado hay 12 puestos. Cada puesto vende 25 cajas de fruta."
+          },
+          "prompt": {
+            "es": "¿Cuántas cajas se venden en total?"
+          },
+          "answer": 300,
+          "difficulty": 1
+        },
+        {
+          "id": "mercado-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "prompt": {
+            "es": "¿Qué multiplicación va con qué resultado? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "10 × 34"
+              },
+              "right": {
+                "es": "340"
+              }
+            },
+            {
+              "left": {
+                "es": "20 × 15"
+              },
+              "right": {
+                "es": "300"
+              }
+            },
+            {
+              "left": {
+                "es": "30 × 12"
+              },
+              "right": {
+                "es": "360"
+              }
+            },
+            {
+              "left": {
+                "es": "50 × 16"
+              },
+              "right": {
+                "es": "800"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mercado-2-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "first": {
+            "es": "Un camión trae 15 cajas con 24 huevos cada una. ¿Cuántos huevos trae?"
+          },
+          "firstAnswer": 360,
+          "operation": {
+            "op": "subtract",
+            "operand": 60
+          },
+          "second": {
+            "es": "Llegan {x} huevos, pero se rompen 60. ¿Cuántos huevos quedan?"
+          }
+        },
+        {
+          "id": "mercado-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "question": {
+            "es": "¿Cuánto es 45 × 6?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "270"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "240"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "2700"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "320"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "mercado-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.multiplicacion"
+          ],
+          "clue": {
+            "es": "Un panadero hace 125 panes cada día. Trabaja 6 días a la semana."
+          },
+          "prompt": {
+            "es": "¿Cuántos panes hace en una semana?"
+          },
+          "answer": 750,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/mercado-3",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El mercado: pesos y medidas"
+      },
+      "subject": "matematicas",
+      "grade": 4,
+      "place": "mercado",
+      "tasks": [
+        {
+          "id": "mercado-3-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.medidas"
+          ],
+          "clue": {
+            "es": "Una bolsa de harina pesa 2 kilogramos. Compras 6 bolsas."
+          },
+          "prompt": {
+            "es": "¿Cuántos kilogramos pesan las 6 bolsas juntas?"
+          },
+          "answer": 12,
+          "difficulty": 1
+        },
+        {
+          "id": "mercado-3-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.medidas"
+          ],
+          "prompt": {
+            "es": "¿Qué medida va con su equivalencia? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "1 kilogramo"
+              },
+              "right": {
+                "es": "1000 gramos"
+              }
+            },
+            {
+              "left": {
+                "es": "1 litro"
+              },
+              "right": {
+                "es": "1000 mililitros"
+              }
+            },
+            {
+              "left": {
+                "es": "1 metro"
+              },
+              "right": {
+                "es": "100 centímetros"
+              }
+            },
+            {
+              "left": {
+                "es": "medio kilogramo"
+              },
+              "right": {
+                "es": "500 gramos"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mercado-3-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.medidas"
+          ],
+          "first": {
+            "es": "Una jarra de limonada tiene 2 litros. ¿Cuántos mililitros son?"
+          },
+          "firstAnswer": 2000,
+          "operation": {
+            "op": "divide",
+            "operand": 8
+          },
+          "second": {
+            "es": "En la jarra hay {x} mililitros. Se reparten en 8 vasos iguales. ¿Cuántos mililitros hay en cada vaso?"
+          }
+        },
+        {
+          "id": "mercado-3-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.medidas"
+          ],
+          "question": {
+            "es": "¿Cuál de estas bolsas pesa más?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "1 kilogramo"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "1200 gramos"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "900 gramos"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "750 gramos"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "mercado-3-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.medidas"
+          ],
+          "clue": {
+            "es": "Una caja pesa 3 kilogramos y 500 gramos. Hay 4 cajas iguales."
+          },
+          "prompt": {
+            "es": "¿Cuántos gramos pesan las 4 cajas juntas?"
+          },
+          "answer": 14000,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/reloj",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La torre del reloj"
+      },
+      "subject": "matematicas",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "reloj-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "clue": {
+            "es": "Mira el reloj de la torre. Es por la mañana. Describe a tu pareja dónde están las dos agujas."
+          },
+          "prompt": {
+            "es": "¿Qué hora marca el reloj? Teclea la hora."
+          },
+          "answer": 570,
+          "difficulty": 1,
+          "answerFormat": "time",
+          "clueVisual": {
+            "clock": {
+              "hour": 9,
+              "minute": 30
+            }
+          }
+        },
+        {
+          "id": "reloj-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "prompt": {
+            "es": "¿Qué hora dicha con palabras va con la hora en números? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "las tres y cuarto"
+              },
+              "right": {
+                "es": "3:15"
+              }
+            },
+            {
+              "left": {
+                "es": "las cinco y media"
+              },
+              "right": {
+                "es": "5:30"
+              }
+            },
+            {
+              "left": {
+                "es": "las siete menos cuarto"
+              },
+              "right": {
+                "es": "6:45"
+              }
+            },
+            {
+              "left": {
+                "es": "las doce en punto"
+              },
+              "right": {
+                "es": "12:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "reloj-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "first": {
+            "es": "El mercado abre a las 8:15 y cierra 4 horas y 30 minutos después. ¿A qué hora cierra?"
+          },
+          "firstAnswer": 765,
+          "operation": {
+            "op": "add",
+            "operand": 75
+          },
+          "second": {
+            "es": "El mercado cierra a las {x}. La limpieza dura 75 minutos. ¿A qué hora termina?"
+          },
+          "answerFormat": "time"
+        },
+        {
+          "id": "reloj-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "question": {
+            "es": "¿Qué reloj marca las ocho y diez de la mañana?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "Reloj A"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 8,
+                  "minute": 50
+                }
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "Reloj B"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 10,
+                  "minute": 8
+                }
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "Reloj C"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 8,
+                  "minute": 10
+                }
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "Reloj D"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 7,
+                  "minute": 10
+                }
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "reloj-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "clue": {
+            "es": "Por la tarde, la película empieza a las 16:20 y dura 95 minutos."
+          },
+          "prompt": {
+            "es": "¿A qué hora termina la película? Teclea la hora."
+          },
+          "answer": 1075,
+          "difficulty": 3,
+          "answerFormat": "time"
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/reloj-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La torre: tiempo y duración"
+      },
+      "subject": "matematicas",
+      "grade": 4,
+      "place": "reloj",
+      "tasks": [
+        {
+          "id": "reloj-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "clue": {
+            "es": "Una clase dura 45 minutos. Hay 4 clases seguidas."
+          },
+          "prompt": {
+            "es": "¿Cuántos minutos duran las 4 clases juntas?"
+          },
+          "answer": 180,
+          "difficulty": 1,
+          "answerFormat": "minutes"
+        },
+        {
+          "id": "reloj-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "prompt": {
+            "es": "¿Qué unidad de tiempo va con su equivalencia? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "1 hora"
+              },
+              "right": {
+                "es": "60 minutos"
+              }
+            },
+            {
+              "left": {
+                "es": "1 día"
+              },
+              "right": {
+                "es": "24 horas"
+              }
+            },
+            {
+              "left": {
+                "es": "1 minuto"
+              },
+              "right": {
+                "es": "60 segundos"
+              }
+            },
+            {
+              "left": {
+                "es": "1 semana"
+              },
+              "right": {
+                "es": "7 días"
+              }
+            }
+          ]
+        },
+        {
+          "id": "reloj-2-3",
+          "type": "relay",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "first": {
+            "es": "El tren sale a las 10:40 y tarda 50 minutos. ¿A qué hora llega?"
+          },
+          "firstAnswer": 690,
+          "operation": {
+            "op": "add",
+            "operand": 25
+          },
+          "second": {
+            "es": "El tren llegó a las {x}. Luego caminas 25 minutos hasta casa. ¿A qué hora llegas a casa?"
+          },
+          "answerFormat": "time"
+        },
+        {
+          "id": "reloj-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "question": {
+            "es": "El partido empieza a las 17:15 y termina a las 18:45. ¿Cuánto dura?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "1 hora y 45 minutos"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "1 hora y 15 minutos"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "2 horas y 30 minutos"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "1 hora y 30 minutos"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "reloj-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "matematicas.hora"
+          ],
+          "clue": {
+            "es": "Un niño se acuesta a las 21:30 y se levanta a las 7:00 de la mañana."
+          },
+          "prompt": {
+            "es": "¿Cuántos minutos duerme?"
+          },
+          "answer": 570,
+          "difficulty": 3,
+          "answerFormat": "minutes"
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/escuela",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La escuela: clases de palabras"
+      },
+      "subject": "lengua",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "escuela-1",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.clases-de-palabras"
+          ],
+          "clue": {
+            "es": "La frase es: «Los niños leen un libro divertido en la escuela.»"
+          },
+          "prompt": {
+            "es": "¿Cuántas palabras tiene la frase?"
+          },
+          "answer": 9,
+          "difficulty": 1
+        },
+        {
+          "id": "escuela-2",
+          "type": "matchPairs",
+          "skills": [
+            "lengua.clases-de-palabras"
+          ],
+          "prompt": {
+            "es": "¿Qué palabra va con su clase? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "casa"
+              },
+              "right": {
+                "es": "sustantivo"
+              }
+            },
+            {
+              "left": {
+                "es": "bonita"
+              },
+              "right": {
+                "es": "adjetivo"
+              }
+            },
+            {
+              "left": {
+                "es": "cantan"
+              },
+              "right": {
+                "es": "verbo"
+              }
+            },
+            {
+              "left": {
+                "es": "la"
+              },
+              "right": {
+                "es": "artículo"
+              }
+            }
+          ]
+        },
+        {
+          "id": "escuela-3",
+          "type": "relay",
+          "skills": [
+            "lengua.clases-de-palabras"
+          ],
+          "first": {
+            "es": "¿Cuántas sílabas tiene la palabra «escuela»?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 4
+          },
+          "second": {
+            "es": "La palabra tiene {x} sílabas. La dices 4 veces seguidas. ¿Cuántas sílabas dices en total?"
+          }
+        },
+        {
+          "id": "escuela-4",
+          "type": "bothAgree",
+          "skills": [
+            "lengua.clases-de-palabras"
+          ],
+          "question": {
+            "es": "En la frase «La vaca blanca come hierba», ¿qué palabra es un adjetivo?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "blanca"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "vaca"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "come"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "hierba"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "escuela-5",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.clases-de-palabras"
+          ],
+          "clue": {
+            "es": "La frase es: «La niña alta pinta flores amarillas y rojas.»"
+          },
+          "prompt": {
+            "es": "¿Cuántos adjetivos hay en la frase?"
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/escuela-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La escuela: b y v"
+      },
+      "subject": "lengua",
+      "grade": 3,
+      "place": "escuela",
+      "tasks": [
+        {
+          "id": "escuela-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.ortografia-b-v"
+          ],
+          "clue": {
+            "es": "La palabra es «biblioteca»."
+          },
+          "prompt": {
+            "es": "¿Cuántas veces aparece la letra b en la palabra?"
+          },
+          "answer": 2,
+          "difficulty": 1
+        },
+        {
+          "id": "escuela-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "lengua.ortografia-b-v"
+          ],
+          "prompt": {
+            "es": "¿Qué palabra va con su significado? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "vaca"
+              },
+              "right": {
+                "es": "animal que da leche"
+              }
+            },
+            {
+              "left": {
+                "es": "baca"
+              },
+              "right": {
+                "es": "portaequipajes del techo de un coche"
+              }
+            },
+            {
+              "left": {
+                "es": "vello"
+              },
+              "right": {
+                "es": "pelo fino del cuerpo"
+              }
+            },
+            {
+              "left": {
+                "es": "bello"
+              },
+              "right": {
+                "es": "bonito"
+              }
+            }
+          ]
+        },
+        {
+          "id": "escuela-2-3",
+          "type": "bothAgree",
+          "skills": [
+            "lengua.ortografia-b-v"
+          ],
+          "question": {
+            "es": "¿Qué palabra está bien escrita?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "biaje"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "viaje"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "viage"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "biage"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "escuela-2-4",
+          "type": "relay",
+          "skills": [
+            "lengua.ortografia-b-v"
+          ],
+          "first": {
+            "es": "¿Cuántas letras tiene la palabra «volcán»?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "es": "La palabra tiene {x} letras. La escribes 3 veces. ¿Cuántas letras escribes en total?"
+          }
+        },
+        {
+          "id": "escuela-2-5",
+          "type": "bothAgree",
+          "skills": [
+            "lengua.ortografia-b-v"
+          ],
+          "question": {
+            "es": "Los verbos terminados en -bir se escriben con b. ¿Cuál de estos verbos es una excepción y se escribe con v?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "escribir"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "recibir"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "vivir"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "subir"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/escuela-3",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La escuela: verbos"
+      },
+      "subject": "lengua",
+      "grade": 4,
+      "place": "escuela",
+      "tasks": [
+        {
+          "id": "escuela-3-1",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.verbos-tiempos"
+          ],
+          "clue": {
+            "es": "La frase es: «Mañana iremos al río, cantaremos y jugaremos.»"
+          },
+          "prompt": {
+            "es": "¿Cuántos verbos hay en la frase?"
+          },
+          "answer": 3,
+          "difficulty": 1
+        },
+        {
+          "id": "escuela-3-2",
+          "type": "matchPairs",
+          "skills": [
+            "lengua.verbos-tiempos"
+          ],
+          "prompt": {
+            "es": "¿Qué frase va con su tiempo? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "Ayer comí pan."
+              },
+              "right": {
+                "es": "pasado"
+              }
+            },
+            {
+              "left": {
+                "es": "Hoy leo un cuento."
+              },
+              "right": {
+                "es": "presente"
+              }
+            },
+            {
+              "left": {
+                "es": "Mañana saltaré."
+              },
+              "right": {
+                "es": "futuro"
+              }
+            }
+          ]
+        },
+        {
+          "id": "escuela-3-3",
+          "type": "relay",
+          "skills": [
+            "lengua.verbos-tiempos"
+          ],
+          "first": {
+            "es": "¿Cuántas sílabas tiene la palabra «cantaremos»?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "es": "«Cantaremos» tiene {x} sílabas. La palabra «mañana» tiene 3 sílabas. ¿Cuántas sílabas tiene «mañana cantaremos»?"
+          }
+        },
+        {
+          "id": "escuela-3-4",
+          "type": "bothAgree",
+          "skills": [
+            "lengua.verbos-tiempos"
+          ],
+          "question": {
+            "es": "¿Qué verbo está en futuro?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "juego"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "jugué"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "jugaba"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "jugaré"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "escuela-3-5",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.verbos-tiempos"
+          ],
+          "clue": {
+            "es": "La palabra es «comíamos». Se separa así: co-mí-a-mos."
+          },
+          "prompt": {
+            "es": "¿En qué sílaba va la tilde? Cuenta desde el principio."
+          },
+          "answer": 2,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/biblioteca",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La biblioteca: tilde"
+      },
+      "subject": "lengua",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "biblioteca-1",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.acentuacion"
+          ],
+          "clue": {
+            "es": "La palabra es «biblioteca». Se separa así: bi-blio-te-ca."
+          },
+          "prompt": {
+            "es": "¿Cuántas sílabas tiene la palabra?"
+          },
+          "answer": 4,
+          "difficulty": 1
+        },
+        {
+          "id": "biblioteca-2",
+          "type": "matchPairs",
+          "skills": [
+            "lengua.acentuacion"
+          ],
+          "prompt": {
+            "es": "¿Qué palabra va con su clase? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "canción"
+              },
+              "right": {
+                "es": "aguda con tilde"
+              }
+            },
+            {
+              "left": {
+                "es": "árbol"
+              },
+              "right": {
+                "es": "llana con tilde"
+              }
+            },
+            {
+              "left": {
+                "es": "música"
+              },
+              "right": {
+                "es": "esdrújula"
+              }
+            },
+            {
+              "left": {
+                "es": "mesa"
+              },
+              "right": {
+                "es": "llana sin tilde"
+              }
+            }
+          ]
+        },
+        {
+          "id": "biblioteca-3",
+          "type": "relay",
+          "skills": [
+            "lengua.acentuacion"
+          ],
+          "first": {
+            "es": "¿Cuántas vocales tiene la palabra «biblioteca»?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "subtract",
+            "operand": 2
+          },
+          "second": {
+            "es": "La palabra tiene {x} vocales. Tachas 2 vocales. ¿Cuántas vocales quedan?"
+          }
+        },
+        {
+          "id": "biblioteca-4",
+          "type": "bothAgree",
+          "skills": [
+            "lengua.acentuacion"
+          ],
+          "question": {
+            "es": "¿Qué palabra está bien escrita?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "camión"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "camion"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "cámion"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "camíon"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "biblioteca-5",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.acentuacion"
+          ],
+          "clue": {
+            "es": "La lista es: lámpara, mesa, camión, libro, teléfono."
+          },
+          "prompt": {
+            "es": "¿Cuántas palabras de la lista llevan tilde?"
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/biblioteca-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La biblioteca: palabras"
+      },
+      "subject": "lengua",
+      "grade": 3,
+      "place": "biblioteca",
+      "tasks": [
+        {
+          "id": "biblioteca-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.vocabulario"
+          ],
+          "clue": {
+            "es": "El título del libro es «El zorro y la luna»."
+          },
+          "prompt": {
+            "es": "¿Cuántas palabras tiene el título?"
+          },
+          "answer": 5,
+          "difficulty": 1
+        },
+        {
+          "id": "biblioteca-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "lengua.vocabulario"
+          ],
+          "prompt": {
+            "es": "¿Qué palabra tiene el significado contrario? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "alto"
+              },
+              "right": {
+                "es": "bajo"
+              }
+            },
+            {
+              "left": {
+                "es": "caliente"
+              },
+              "right": {
+                "es": "frío"
+              }
+            },
+            {
+              "left": {
+                "es": "lleno"
+              },
+              "right": {
+                "es": "vacío"
+              }
+            },
+            {
+              "left": {
+                "es": "rápido"
+              },
+              "right": {
+                "es": "lento"
+              }
+            }
+          ]
+        },
+        {
+          "id": "biblioteca-2-3",
+          "type": "bothAgree",
+          "skills": [
+            "lengua.vocabulario"
+          ],
+          "question": {
+            "es": "¿Qué palabra significa casi lo mismo que «pequeño»?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "enorme"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "chico"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "alto"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "largo"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "biblioteca-2-4",
+          "type": "relay",
+          "skills": [
+            "lengua.vocabulario"
+          ],
+          "first": {
+            "es": "Cuenta las letras de la palabra «Caperucita»."
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "divide",
+            "operand": 2
+          },
+          "second": {
+            "es": "La palabra tiene {x} letras. La partes en dos mitades iguales. ¿Cuántas letras tiene cada mitad?"
+          }
+        },
+        {
+          "id": "biblioteca-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.vocabulario"
+          ],
+          "clue": {
+            "es": "La lista es: panadero, panadería, patata, panecillo, pato. Todas se comparan con la palabra «pan»."
+          },
+          "prompt": {
+            "es": "¿Cuántas palabras de la lista son de la familia de «pan»?"
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/biblioteca-3",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La biblioteca: oraciones"
+      },
+      "subject": "lengua",
+      "grade": 4,
+      "place": "biblioteca",
+      "tasks": [
+        {
+          "id": "biblioteca-3-1",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.puntuacion"
+          ],
+          "clue": {
+            "es": "El texto es: «Hoy llueve. ¿Vamos a la biblioteca? ¡Sí!»"
+          },
+          "prompt": {
+            "es": "¿Cuántas oraciones tiene el texto?"
+          },
+          "answer": 3,
+          "difficulty": 1
+        },
+        {
+          "id": "biblioteca-3-2",
+          "type": "matchPairs",
+          "skills": [
+            "lengua.puntuacion"
+          ],
+          "prompt": {
+            "es": "¿Qué signo va con su uso? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "¿ ?"
+              },
+              "right": {
+                "es": "preguntar"
+              }
+            },
+            {
+              "left": {
+                "es": "¡ !"
+              },
+              "right": {
+                "es": "exclamar o sorprenderse"
+              }
+            },
+            {
+              "left": {
+                "es": ". (punto)"
+              },
+              "right": {
+                "es": "terminar una oración"
+              }
+            },
+            {
+              "left": {
+                "es": ", (coma)"
+              },
+              "right": {
+                "es": "separar los elementos de una lista"
+              }
+            }
+          ]
+        },
+        {
+          "id": "biblioteca-3-3",
+          "type": "relay",
+          "skills": [
+            "lengua.puntuacion"
+          ],
+          "first": {
+            "es": "Cuenta las palabras de la frase: «El libro rojo está en la mesa grande.»"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "subtract",
+            "operand": 2
+          },
+          "second": {
+            "es": "La frase tiene {x} palabras. Tachas los dos artículos («el» y «la»). ¿Cuántas palabras quedan?"
+          }
+        },
+        {
+          "id": "biblioteca-3-4",
+          "type": "bothAgree",
+          "skills": [
+            "lengua.puntuacion"
+          ],
+          "question": {
+            "es": "¿Qué frase está bien escrita?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "Dónde está la biblioteca?"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "¿dónde está la biblioteca"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "¿Dónde está la biblioteca?"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "¿Dónde está la Biblioteca"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "biblioteca-3-5",
+          "type": "splitInfo",
+          "skills": [
+            "lengua.puntuacion"
+          ],
+          "clue": {
+            "es": "La frase sin comas es: «Compré pan queso fruta y miel en el mercado.»"
+          },
+          "prompt": {
+            "es": "¿Cuántas comas hay que añadir en la lista de lo que se compró?"
+          },
+          "answer": 2,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/fuente",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La fuente: el agua"
+      },
+      "subject": "naturales",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "fuente-1",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.agua"
+          ],
+          "clue": {
+            "es": "Una fuente da 5 litros de agua cada minuto. Se deja abierta 6 minutos."
+          },
+          "prompt": {
+            "es": "¿Cuántos litros de agua salen?"
+          },
+          "answer": 30,
+          "difficulty": 1
+        },
+        {
+          "id": "fuente-2",
+          "type": "matchPairs",
+          "skills": [
+            "naturales.agua"
+          ],
+          "prompt": {
+            "es": "¿Qué cambio o paso del agua va con su nombre? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "El Sol calienta el agua y sube como vapor"
+              },
+              "right": {
+                "es": "evaporación"
+              }
+            },
+            {
+              "left": {
+                "es": "El vapor se enfría y forma gotitas"
+              },
+              "right": {
+                "es": "condensación"
+              }
+            },
+            {
+              "left": {
+                "es": "Cae lluvia o nieve"
+              },
+              "right": {
+                "es": "precipitación"
+              }
+            },
+            {
+              "left": {
+                "es": "El agua se convierte en hielo"
+              },
+              "right": {
+                "es": "solidificación"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fuente-3",
+          "type": "relay",
+          "skills": [
+            "naturales.agua"
+          ],
+          "first": {
+            "es": "Una ducha corta gasta 40 litros. Una ducha larga gasta el doble. ¿Cuántos litros gasta la ducha larga?"
+          },
+          "firstAnswer": 80,
+          "operation": {
+            "op": "subtract",
+            "operand": 25
+          },
+          "second": {
+            "es": "La ducha larga gasta {x} litros. Si cierras el grifo mientras te enjabonas, ahorras 25 litros. ¿Cuántos litros gastas?"
+          }
+        },
+        {
+          "id": "fuente-4",
+          "type": "bothAgree",
+          "skills": [
+            "naturales.agua"
+          ],
+          "question": {
+            "es": "¿A qué temperatura hierve el agua al nivel del mar?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "0 °C"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "50 °C"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "20 °C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "100 °C"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "fuente-5",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.agua"
+          ],
+          "clue": {
+            "es": "Un grifo estropeado pierde 3 litros de agua cada día. Pasan 2 semanas."
+          },
+          "prompt": {
+            "es": "¿Cuántos litros se pierden?"
+          },
+          "answer": 42,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/fuente-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La fuente: agua dulce y salada"
+      },
+      "subject": "naturales",
+      "grade": 4,
+      "place": "fuente",
+      "tasks": [
+        {
+          "id": "fuente-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.agua"
+          ],
+          "clue": {
+            "es": "Imagina que la Tierra se divide en 10 partes iguales. 7 de ellas son agua."
+          },
+          "prompt": {
+            "es": "¿Cuántas partes son tierra firme?"
+          },
+          "answer": 3,
+          "difficulty": 1
+        },
+        {
+          "id": "fuente-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "naturales.agua"
+          ],
+          "prompt": {
+            "es": "¿Qué masa de agua va con su descripción? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "mar"
+              },
+              "right": {
+                "es": "agua salada"
+              }
+            },
+            {
+              "left": {
+                "es": "río"
+              },
+              "right": {
+                "es": "agua dulce que corre hacia el mar"
+              }
+            },
+            {
+              "left": {
+                "es": "glaciar"
+              },
+              "right": {
+                "es": "hielo acumulado en las montañas"
+              }
+            },
+            {
+              "left": {
+                "es": "pozo"
+              },
+              "right": {
+                "es": "agua que está bajo el suelo"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fuente-2-3",
+          "type": "relay",
+          "skills": [
+            "naturales.agua"
+          ],
+          "first": {
+            "es": "Un grifo abierto gasta 12 litros por minuto. ¿Cuántos litros gasta en 5 minutos?"
+          },
+          "firstAnswer": 60,
+          "operation": {
+            "op": "divide",
+            "operand": 2
+          },
+          "second": {
+            "es": "El grifo gastó {x} litros. Si lo hubieras cerrado la mitad del tiempo, gastarías la mitad. ¿Cuántos litros serían?"
+          }
+        },
+        {
+          "id": "fuente-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "naturales.agua"
+          ],
+          "question": {
+            "es": "¿Por qué no podemos beber agua del mar?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "Porque tiene mucha sal"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "Porque está demasiado fría"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "Porque no es un líquido"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "Porque tiene muchos peces"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "fuente-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.agua"
+          ],
+          "clue": {
+            "es": "Supón que cada persona usa 120 litros de agua al día. En la casa viven 4 personas."
+          },
+          "prompt": {
+            "es": "¿Cuántos litros usa la familia en 2 días?"
+          },
+          "answer": 960,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/granja",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La granja: animales"
+      },
+      "subject": "naturales",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "granja-1",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.animales"
+          ],
+          "clue": {
+            "es": "La granja tiene 4 corrales. En cada corral hay 6 gallinas."
+          },
+          "prompt": {
+            "es": "¿Cuántas gallinas hay?"
+          },
+          "answer": 24,
+          "difficulty": 1
+        },
+        {
+          "id": "granja-2",
+          "type": "matchPairs",
+          "skills": [
+            "naturales.animales"
+          ],
+          "prompt": {
+            "es": "¿Qué animal va con lo que nos da? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "gallina"
+              },
+              "right": {
+                "es": "huevos"
+              }
+            },
+            {
+              "left": {
+                "es": "vaca"
+              },
+              "right": {
+                "es": "leche"
+              }
+            },
+            {
+              "left": {
+                "es": "oveja"
+              },
+              "right": {
+                "es": "lana"
+              }
+            },
+            {
+              "left": {
+                "es": "abeja"
+              },
+              "right": {
+                "es": "miel"
+              }
+            }
+          ]
+        },
+        {
+          "id": "granja-3",
+          "type": "relay",
+          "skills": [
+            "naturales.animales"
+          ],
+          "first": {
+            "es": "Una vaca da 20 litros de leche al día. ¿Cuántos litros dan 3 vacas?"
+          },
+          "firstAnswer": 60,
+          "operation": {
+            "op": "divide",
+            "operand": 4
+          },
+          "second": {
+            "es": "Las vacas dieron {x} litros de leche. Se llenan jarras de 4 litros. ¿Cuántas jarras se llenan?"
+          }
+        },
+        {
+          "id": "granja-4",
+          "type": "bothAgree",
+          "skills": [
+            "naturales.animales"
+          ],
+          "question": {
+            "es": "¿Qué animal nace de un huevo?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "la vaca"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "la gallina"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "la oveja"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "el cerdo"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "granja-5",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.animales"
+          ],
+          "clue": {
+            "es": "En el corral hay 6 gallinas y 4 conejos."
+          },
+          "prompt": {
+            "es": "¿Cuántas patas hay en total?"
+          },
+          "answer": 28,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/granja-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La granja: cómo comen los animales"
+      },
+      "subject": "naturales",
+      "grade": 4,
+      "place": "granja",
+      "tasks": [
+        {
+          "id": "granja-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.animales"
+          ],
+          "clue": {
+            "es": "Un caballo come 8 kilogramos de heno al día."
+          },
+          "prompt": {
+            "es": "¿Cuántos kilogramos de heno come en 5 días?"
+          },
+          "answer": 40,
+          "difficulty": 1
+        },
+        {
+          "id": "granja-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "naturales.animales"
+          ],
+          "prompt": {
+            "es": "¿Qué animal va con su alimentación? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "conejo"
+              },
+              "right": {
+                "es": "herbívoro"
+              }
+            },
+            {
+              "left": {
+                "es": "león"
+              },
+              "right": {
+                "es": "carnívoro"
+              }
+            },
+            {
+              "left": {
+                "es": "cerdo"
+              },
+              "right": {
+                "es": "omnívoro"
+              }
+            }
+          ]
+        },
+        {
+          "id": "granja-2-3",
+          "type": "relay",
+          "skills": [
+            "naturales.animales"
+          ],
+          "first": {
+            "es": "Una abeja visita 50 flores en cada viaje. Hace 6 viajes. ¿Cuántas flores visita?"
+          },
+          "firstAnswer": 300,
+          "operation": {
+            "op": "divide",
+            "operand": 3
+          },
+          "second": {
+            "es": "Tres abejas se reparten las {x} flores por igual. ¿Cuántas flores visita cada abeja?"
+          }
+        },
+        {
+          "id": "granja-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "naturales.animales"
+          ],
+          "question": {
+            "es": "En una cadena alimentaria, la hierba es un productor. ¿Qué es la vaca que se come la hierba?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "productor"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "descomponedor"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "consumidor"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "mineral"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "granja-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.animales"
+          ],
+          "clue": {
+            "es": "En el estanque hay 3 peces, 4 ranas y 2 patos."
+          },
+          "prompt": {
+            "es": "¿Cuántos animales son anfibios?"
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/huerto",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El huerto: las plantas"
+      },
+      "subject": "naturales",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "huerto-1",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.plantas"
+          ],
+          "clue": {
+            "es": "En el huerto hay 5 surcos. En cada surco hay 8 lechugas."
+          },
+          "prompt": {
+            "es": "¿Cuántas lechugas hay?"
+          },
+          "answer": 40,
+          "difficulty": 1
+        },
+        {
+          "id": "huerto-2",
+          "type": "matchPairs",
+          "skills": [
+            "naturales.plantas"
+          ],
+          "prompt": {
+            "es": "¿Qué parte de la planta va con su función? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "raíz"
+              },
+              "right": {
+                "es": "sujeta la planta y absorbe agua"
+              }
+            },
+            {
+              "left": {
+                "es": "tallo"
+              },
+              "right": {
+                "es": "lleva el agua hacia arriba"
+              }
+            },
+            {
+              "left": {
+                "es": "hoja"
+              },
+              "right": {
+                "es": "fabrica el alimento con la luz del sol"
+              }
+            },
+            {
+              "left": {
+                "es": "fruto"
+              },
+              "right": {
+                "es": "protege las semillas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "huerto-3",
+          "type": "relay",
+          "skills": [
+            "naturales.plantas"
+          ],
+          "first": {
+            "es": "Siembras 3 semillas en cada maceta. Tienes 7 macetas. ¿Cuántas semillas siembras?"
+          },
+          "firstAnswer": 21,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "es": "Sembraste {x} semillas, pero 5 no germinan. ¿Cuántas plantitas nacen?"
+          }
+        },
+        {
+          "id": "huerto-4",
+          "type": "bothAgree",
+          "skills": [
+            "naturales.plantas"
+          ],
+          "question": {
+            "es": "¿Qué parte de la planta comemos cuando comemos una zanahoria?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "el tallo"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "la hoja"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "el fruto"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "la raíz"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "huerto-5",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.plantas"
+          ],
+          "clue": {
+            "es": "Un girasol mide 4 centímetros el primer día. Después crece 3 centímetros cada día durante 10 días."
+          },
+          "prompt": {
+            "es": "¿Cuántos centímetros mide al final?"
+          },
+          "answer": 34,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/huerto-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El huerto: el cuerpo humano"
+      },
+      "subject": "naturales",
+      "grade": 4,
+      "place": "huerto",
+      "tasks": [
+        {
+          "id": "huerto-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.cuerpo-humano"
+          ],
+          "clue": {
+            "es": "Cada persona tiene 5 dedos en cada mano. En la reunión hay 6 personas."
+          },
+          "prompt": {
+            "es": "¿Cuántos dedos de las manos hay en total?"
+          },
+          "answer": 60,
+          "difficulty": 1
+        },
+        {
+          "id": "huerto-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "naturales.cuerpo-humano"
+          ],
+          "prompt": {
+            "es": "¿Qué órgano va con su función? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "corazón"
+              },
+              "right": {
+                "es": "bombea la sangre"
+              }
+            },
+            {
+              "left": {
+                "es": "pulmones"
+              },
+              "right": {
+                "es": "toman el oxígeno del aire"
+              }
+            },
+            {
+              "left": {
+                "es": "estómago"
+              },
+              "right": {
+                "es": "mezcla y digiere los alimentos"
+              }
+            },
+            {
+              "left": {
+                "es": "cerebro"
+              },
+              "right": {
+                "es": "controla el cuerpo y permite pensar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "huerto-2-3",
+          "type": "relay",
+          "skills": [
+            "naturales.cuerpo-humano"
+          ],
+          "first": {
+            "es": "Los niños tienen 20 dientes de leche. Los adultos tienen 32 dientes. ¿Cuántos dientes más tiene un adulto?"
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "es": "Un adulto tiene {x} dientes más que un niño. ¿Cuántos dientes más tienen 2 adultos que 2 niños?"
+          }
+        },
+        {
+          "id": "huerto-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "naturales.cuerpo-humano"
+          ],
+          "question": {
+            "es": "¿Cuántos sentidos tiene el ser humano?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "5"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "3"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "4"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "6"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "huerto-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "naturales.cuerpo-humano"
+          ],
+          "clue": {
+            "es": "Un adulto tiene 206 huesos. Supón que un bebé nace con 300 huesos, que se van uniendo."
+          },
+          "prompt": {
+            "es": "¿Cuántos huesos menos tiene un adulto que un bebé?"
+          },
+          "answer": 94,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/puente",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El puente viejo: continentes"
+      },
+      "subject": "sociales",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "puente-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.continentes"
+          ],
+          "clue": {
+            "es": "En este mapa hay 6 continentes: África, América, Antártida, Asia, Europa y Oceanía."
+          },
+          "prompt": {
+            "es": "¿Cuántos continentes del mapa no son América ni Europa?"
+          },
+          "answer": 4,
+          "difficulty": 1
+        },
+        {
+          "id": "puente-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.continentes"
+          ],
+          "prompt": {
+            "es": "¿Qué continente va con un lugar famoso? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "África"
+              },
+              "right": {
+                "es": "desierto del Sáhara"
+              }
+            },
+            {
+              "left": {
+                "es": "Asia"
+              },
+              "right": {
+                "es": "montañas del Himalaya"
+              }
+            },
+            {
+              "left": {
+                "es": "América"
+              },
+              "right": {
+                "es": "río Amazonas"
+              }
+            },
+            {
+              "left": {
+                "es": "Oceanía"
+              },
+              "right": {
+                "es": "Australia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "puente-3",
+          "type": "relay",
+          "skills": [
+            "sociales.continentes"
+          ],
+          "first": {
+            "es": "En el mapamundi de la clase se cuentan 6 continentes y 5 océanos. ¿Cuántas zonas grandes hay en total?"
+          },
+          "firstAnswer": 11,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "es": "El mapa tiene {x} zonas grandes. Pegas 2 pegatinas en cada zona. ¿Cuántas pegatinas pegas?"
+          }
+        },
+        {
+          "id": "puente-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.continentes"
+          ],
+          "question": {
+            "es": "¿Cuál es el océano más grande?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "Atlántico"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "Pacífico"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "Índico"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "Ártico"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "puente-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.continentes"
+          ],
+          "clue": {
+            "es": "La lista es: África, Asia, Brasil, Europa, Pacífico, Oceanía, Atlántico."
+          },
+          "prompt": {
+            "es": "¿Cuántos nombres de la lista son continentes?"
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/puente-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El puente viejo: el río"
+      },
+      "subject": "sociales",
+      "grade": 4,
+      "place": "puente",
+      "tasks": [
+        {
+          "id": "puente-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.rios"
+          ],
+          "clue": {
+            "es": "El río mide 120 kilómetros. El puente está a 45 kilómetros del nacimiento."
+          },
+          "prompt": {
+            "es": "¿Cuántos kilómetros hay del puente a la desembocadura?"
+          },
+          "answer": 75,
+          "difficulty": 1
+        },
+        {
+          "id": "puente-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.rios"
+          ],
+          "prompt": {
+            "es": "¿Qué parte del río va con su descripción? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "nacimiento"
+              },
+              "right": {
+                "es": "donde empieza el río"
+              }
+            },
+            {
+              "left": {
+                "es": "desembocadura"
+              },
+              "right": {
+                "es": "donde el río llega al mar"
+              }
+            },
+            {
+              "left": {
+                "es": "afluente"
+              },
+              "right": {
+                "es": "río pequeño que se une a otro más grande"
+              }
+            },
+            {
+              "left": {
+                "es": "cauce"
+              },
+              "right": {
+                "es": "el lecho por donde corre el agua"
+              }
+            }
+          ]
+        },
+        {
+          "id": "puente-2-3",
+          "type": "relay",
+          "skills": [
+            "sociales.rios"
+          ],
+          "first": {
+            "es": "Un barco avanza 18 kilómetros por hora río abajo. ¿Cuántos kilómetros avanza en 4 horas?"
+          },
+          "firstAnswer": 72,
+          "operation": {
+            "op": "add",
+            "operand": 12
+          },
+          "second": {
+            "es": "El barco avanzó {x} kilómetros y luego sigue 12 kilómetros más. ¿Cuántos kilómetros avanza en total?"
+          }
+        },
+        {
+          "id": "puente-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.rios"
+          ],
+          "question": {
+            "es": "¿En qué parte del río el agua suele ir más rápida, cerca de la montaña?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "en el curso bajo"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "en la desembocadura"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "en el curso alto"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "en el mar"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "puente-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.rios"
+          ],
+          "clue": {
+            "es": "El puente viejo tiene 5 arcos de 6 metros de ancho cada uno. Entre los arcos hay 4 pilares de 2 metros."
+          },
+          "prompt": {
+            "es": "¿Cuántos metros mide el puente en total?"
+          },
+          "answer": 38,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/molino",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El molino: de dónde viene el pan"
+      },
+      "subject": "sociales",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "molino-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "clue": {
+            "es": "El molino muele 30 kilogramos de trigo cada hora y trabaja 4 horas."
+          },
+          "prompt": {
+            "es": "¿Cuántos kilogramos de trigo muele?"
+          },
+          "answer": 120,
+          "difficulty": 1
+        },
+        {
+          "id": "molino-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "prompt": {
+            "es": "¿Qué oficio va con su tarea? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "panadero"
+              },
+              "right": {
+                "es": "hace el pan"
+              }
+            },
+            {
+              "left": {
+                "es": "agricultor"
+              },
+              "right": {
+                "es": "cultiva el campo"
+              }
+            },
+            {
+              "left": {
+                "es": "pastor"
+              },
+              "right": {
+                "es": "cuida las ovejas"
+              }
+            },
+            {
+              "left": {
+                "es": "molinero"
+              },
+              "right": {
+                "es": "muele el grano"
+              }
+            }
+          ]
+        },
+        {
+          "id": "molino-3",
+          "type": "relay",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "first": {
+            "es": "Se recogen 8 sacos con 25 kilogramos de trigo cada uno. ¿Cuántos kilogramos son?"
+          },
+          "firstAnswer": 200,
+          "operation": {
+            "op": "divide",
+            "operand": 5
+          },
+          "second": {
+            "es": "Hay {x} kilogramos de trigo. Se reparten por igual en 5 carros. ¿Cuántos kilogramos lleva cada carro?"
+          }
+        },
+        {
+          "id": "molino-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "question": {
+            "es": "¿Qué trabajo es del sector primario, es decir, obtiene algo directo de la naturaleza?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "hacer pan en la panadería"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "vender pan en una tienda"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "repartir pan en una furgoneta"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "cultivar trigo en el campo"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "molino-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "clue": {
+            "es": "El molinero cobra 2 monedas por cada saco. Hoy muele 15 sacos: 9 son de un agricultor y el resto, de otro."
+          },
+          "prompt": {
+            "es": "¿Cuántas monedas cobra al segundo agricultor?"
+          },
+          "answer": 12,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/molino-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El molino: servicios del pueblo"
+      },
+      "subject": "sociales",
+      "grade": 4,
+      "place": "molino",
+      "tasks": [
+        {
+          "id": "molino-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "clue": {
+            "es": "El pueblo tiene 3 calles principales. En cada calle hay 4 farolas del ayuntamiento."
+          },
+          "prompt": {
+            "es": "¿Cuántas farolas hay?"
+          },
+          "answer": 12,
+          "difficulty": 1
+        },
+        {
+          "id": "molino-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "prompt": {
+            "es": "¿Qué trabajador va con su tarea? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "bombero"
+              },
+              "right": {
+                "es": "apaga incendios"
+              }
+            },
+            {
+              "left": {
+                "es": "médico"
+              },
+              "right": {
+                "es": "cuida la salud en el centro de salud"
+              }
+            },
+            {
+              "left": {
+                "es": "maestra"
+              },
+              "right": {
+                "es": "enseña en la escuela"
+              }
+            },
+            {
+              "left": {
+                "es": "cartero"
+              },
+              "right": {
+                "es": "reparte las cartas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "molino-2-3",
+          "type": "relay",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "first": {
+            "es": "El pueblo tiene 4 barrios con 35 personas cada uno. ¿Cuántas personas viven en el pueblo?"
+          },
+          "firstAnswer": 140,
+          "operation": {
+            "op": "subtract",
+            "operand": 40
+          },
+          "second": {
+            "es": "En el pueblo viven {x} personas. De ellas, 40 son niños. ¿Cuántas personas no son niños?"
+          }
+        },
+        {
+          "id": "molino-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "question": {
+            "es": "¿Cuál de estos es un servicio público del pueblo?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "la recogida de basura"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "una tienda de ropa"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "una pastelería"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "un restaurante"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "molino-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.trabajos"
+          ],
+          "clue": {
+            "es": "El camión de la basura pasa los lunes, los miércoles y los viernes. Pasan 4 semanas."
+          },
+          "prompt": {
+            "es": "¿Cuántas veces pasa el camión en total?"
+          },
+          "answer": 12,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/montana",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La montaña: el relieve"
+      },
+      "subject": "sociales",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "montana-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "clue": {
+            "es": "La montaña tiene 1200 metros de altura. Ya hemos subido 700 metros."
+          },
+          "prompt": {
+            "es": "¿Cuántos metros faltan para llegar a la cima?"
+          },
+          "answer": 500,
+          "difficulty": 1
+        },
+        {
+          "id": "montana-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "prompt": {
+            "es": "¿Qué forma del relieve va con su descripción? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "montaña"
+              },
+              "right": {
+                "es": "gran elevación del terreno con una cima"
+              }
+            },
+            {
+              "left": {
+                "es": "valle"
+              },
+              "right": {
+                "es": "terreno bajo entre montañas"
+              }
+            },
+            {
+              "left": {
+                "es": "llanura"
+              },
+              "right": {
+                "es": "terreno plano"
+              }
+            },
+            {
+              "left": {
+                "es": "colina"
+              },
+              "right": {
+                "es": "elevación pequeña y suave"
+              }
+            }
+          ]
+        },
+        {
+          "id": "montana-3",
+          "type": "relay",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "first": {
+            "es": "El sendero sube 150 metros la primera hora y 150 metros la segunda hora. ¿Cuántos metros sube?"
+          },
+          "firstAnswer": 300,
+          "operation": {
+            "op": "add",
+            "operand": 120
+          },
+          "second": {
+            "es": "Ya subiste {x} metros. El último tramo sube 120 metros más. ¿Cuántos metros subes en total?"
+          }
+        },
+        {
+          "id": "montana-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "question": {
+            "es": "¿Cómo se llama la parte más alta de una montaña?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "ladera"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "cima"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "falda"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "valle"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "montana-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "clue": {
+            "es": "En el mapa, la base de la montaña está a 600 metros sobre el nivel del mar y la cima, a 1850 metros."
+          },
+          "prompt": {
+            "es": "¿Cuántos metros hay de la base a la cima?"
+          },
+          "answer": 1250,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/montana-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "La montaña: paisajes"
+      },
+      "subject": "sociales",
+      "grade": 4,
+      "place": "montana",
+      "tasks": [
+        {
+          "id": "montana-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "clue": {
+            "es": "El camino del pueblo a la cima tiene 3 refugios. Del pueblo al primer refugio hay 2 kilómetros y entre un refugio y el siguiente también hay 2 kilómetros."
+          },
+          "prompt": {
+            "es": "¿Cuántos kilómetros hay del pueblo al tercer refugio?"
+          },
+          "answer": 6,
+          "difficulty": 1
+        },
+        {
+          "id": "montana-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "prompt": {
+            "es": "¿Qué tipo de paisaje va con su descripción? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "paisaje rural"
+              },
+              "right": {
+                "es": "campos, granjas y pocas personas"
+              }
+            },
+            {
+              "left": {
+                "es": "paisaje urbano"
+              },
+              "right": {
+                "es": "edificios y muchas personas"
+              }
+            },
+            {
+              "left": {
+                "es": "paisaje de costa"
+              },
+              "right": {
+                "es": "playas y acantilados junto al mar"
+              }
+            },
+            {
+              "left": {
+                "es": "paisaje de montaña"
+              },
+              "right": {
+                "es": "laderas, bosques y cimas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "montana-2-3",
+          "type": "relay",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "first": {
+            "es": "Un sendero mide 12 kilómetros. Caminas 3 kilómetros por hora. ¿Cuántas horas tardas en subir?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "es": "Tardas {x} horas en subir y lo mismo en bajar. ¿Cuántas horas dura la excursión entera?"
+          }
+        },
+        {
+          "id": "montana-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "question": {
+            "es": "¿Qué es una cordillera?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "una montaña aislada"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "un río muy largo"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "un conjunto de montañas unidas"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "un lago de montaña"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "montana-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.relieve"
+          ],
+          "clue": {
+            "es": "En la montaña la temperatura baja unos 6 grados por cada 1000 metros que subes. En el pueblo hay 20 grados. Subes 2000 metros."
+          },
+          "prompt": {
+            "es": "¿Cuántos grados hay arriba?"
+          },
+          "answer": 8,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/mirador",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El mirador: mapas"
+      },
+      "subject": "sociales",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "mirador-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.mapas"
+          ],
+          "clue": {
+            "es": "En el mapa, la escala es 1 centímetro = 5 kilómetros. Dos pueblos están a 6 centímetros."
+          },
+          "prompt": {
+            "es": "¿Cuántos kilómetros hay entre los dos pueblos?"
+          },
+          "answer": 30,
+          "difficulty": 1
+        },
+        {
+          "id": "mirador-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.mapas"
+          ],
+          "prompt": {
+            "es": "¿Qué descripción va con su punto cardinal? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "donde sale el Sol"
+              },
+              "right": {
+                "es": "Este"
+              }
+            },
+            {
+              "left": {
+                "es": "donde se pone el Sol"
+              },
+              "right": {
+                "es": "Oeste"
+              }
+            },
+            {
+              "left": {
+                "es": "lo contrario del Norte"
+              },
+              "right": {
+                "es": "Sur"
+              }
+            },
+            {
+              "left": {
+                "es": "arriba en un mapa"
+              },
+              "right": {
+                "es": "Norte"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mirador-3",
+          "type": "relay",
+          "skills": [
+            "sociales.mapas"
+          ],
+          "first": {
+            "es": "Caminas 4 kilómetros al norte y luego 3 kilómetros al este. ¿Cuántos kilómetros caminas?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "es": "Caminaste {x} kilómetros. Vuelves por el mismo camino. ¿Cuántos kilómetros caminas en total, entre la ida y la vuelta?"
+          }
+        },
+        {
+          "id": "mirador-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.mapas"
+          ],
+          "question": {
+            "es": "Miras hacia el Norte. ¿Qué punto cardinal tienes a tu derecha?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "Oeste"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "Sur"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "Norte"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "Este"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "mirador-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.mapas"
+          ],
+          "clue": {
+            "es": "En el mapa, el río está a 8 centímetros del mirador. La escala es 1 centímetro = 250 metros."
+          },
+          "prompt": {
+            "es": "¿Cuántos metros hay del mirador al río?"
+          },
+          "answer": 2000,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "es.huckepack.primaria-3-4/mirador-2",
+      "schemaVersion": 1,
+      "title": {
+        "es": "El mirador: la Tierra"
+      },
+      "subject": "sociales",
+      "grade": 4,
+      "place": "mirador",
+      "tasks": [
+        {
+          "id": "mirador-2-1",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.mundo"
+          ],
+          "clue": {
+            "es": "Cada vuelta de la Tierra alrededor del Sol dura 1 año. Hay un árbol de 12 años."
+          },
+          "prompt": {
+            "es": "¿Cuántas vueltas al Sol ha vivido el árbol?"
+          },
+          "answer": 12,
+          "difficulty": 1
+        },
+        {
+          "id": "mirador-2-2",
+          "type": "matchPairs",
+          "skills": [
+            "sociales.mundo"
+          ],
+          "prompt": {
+            "es": "¿Qué palabra va con su descripción? Descríbele tus tarjetas a tu pareja."
+          },
+          "pairs": [
+            {
+              "left": {
+                "es": "Ecuador"
+              },
+              "right": {
+                "es": "línea imaginaria que divide la Tierra en dos mitades"
+              }
+            },
+            {
+              "left": {
+                "es": "Polo Norte"
+              },
+              "right": {
+                "es": "punto más al norte de la Tierra"
+              }
+            },
+            {
+              "left": {
+                "es": "Polo Sur"
+              },
+              "right": {
+                "es": "punto más al sur de la Tierra"
+              }
+            },
+            {
+              "left": {
+                "es": "globo terráqueo"
+              },
+              "right": {
+                "es": "maqueta redonda de la Tierra"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mirador-2-3",
+          "type": "relay",
+          "skills": [
+            "sociales.mundo"
+          ],
+          "first": {
+            "es": "Un barco tarda 5 días en cruzar un océano. ¿Cuántos días tarda en ir y volver?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "add",
+            "operand": 2
+          },
+          "second": {
+            "es": "El viaje de ida y vuelta dura {x} días. Además descansa 2 días en el puerto. ¿Cuántos días son en total?"
+          }
+        },
+        {
+          "id": "mirador-2-4",
+          "type": "bothAgree",
+          "skills": [
+            "sociales.mundo"
+          ],
+          "question": {
+            "es": "¿Cuál es el continente más frío?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "es": "la Antártida"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "es": "Asia"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "es": "África"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "es": "Oceanía"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "mirador-2-5",
+          "type": "splitInfo",
+          "skills": [
+            "sociales.mundo"
+          ],
+          "clue": {
+            "es": "Un avión vuela 800 kilómetros cada hora. El viaje a otro continente dura 6 horas."
+          },
+          "prompt": {
+            "es": "¿Cuántos kilómetros recorre el avión?"
+          },
+          "answer": 4800,
+          "difficulty": 3
+        }
+      ]
+    }
+  ]
+}

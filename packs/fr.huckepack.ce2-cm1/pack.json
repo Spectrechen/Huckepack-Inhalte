@@ -1,0 +1,5190 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "fr.huckepack.ce2-cm1",
+  "version": 2,
+  "title": {
+    "fr": "Le village du château",
+    "en": "The castle village"
+  },
+  "description": {
+    "fr": "Pour les élèves de CE2 et CM1 en France (programmes des cycles 2 et 3, 8 à 10 ans) : mathématiques, français, sciences et histoire-géographie.",
+    "en": "For pupils in France in CE2 and CM1 (cycles 2 and 3, ages 8 to 10): maths, French, science, history and geography."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "maths",
+      "title": {
+        "fr": "Mathématiques",
+        "en": "Mathematics"
+      }
+    },
+    {
+      "id": "francais",
+      "title": {
+        "fr": "Français",
+        "en": "French"
+      }
+    },
+    {
+      "id": "sciences",
+      "title": {
+        "fr": "Sciences",
+        "en": "Science"
+      }
+    },
+    {
+      "id": "histgeo",
+      "title": {
+        "fr": "Histoire-Géographie",
+        "en": "History and Geography"
+      }
+    }
+  ],
+  "skills": {
+    "maths.heure.lire": {
+      "fr": "Lire l'heure"
+    },
+    "maths.heure.duree": {
+      "fr": "Calculer des durées"
+    },
+    "maths.monnaie.compter": {
+      "fr": "Compter la monnaie"
+    },
+    "maths.monnaie.calculer": {
+      "fr": "Calculer avec des euros et des centimes"
+    },
+    "francais.homophones.a-a": {
+      "fr": "Homophones a / à"
+    },
+    "francais.lecture.livres": {
+      "fr": "Types de livres"
+    },
+    "francais.homophones.on-ont-ou-ou": {
+      "fr": "Homophones on / ont, ou / où"
+    },
+    "francais.conjugaison.present": {
+      "fr": "Conjugaison au présent"
+    },
+    "francais.accords.groupe-nominal": {
+      "fr": "Accords dans le groupe nominal"
+    },
+    "francais.homophones.et-est": {
+      "fr": "Homophones et / est, son / sont"
+    },
+    "francais.conjugaison.imparfait": {
+      "fr": "Conjugaison à l'imparfait"
+    },
+    "francais.conjugaison.temps": {
+      "fr": "Futur et passé composé"
+    },
+    "sciences.vivant.plantes": {
+      "fr": "Les plantes et leur développement"
+    },
+    "sciences.matiere.eau": {
+      "fr": "L'eau et ses états"
+    },
+    "sciences.energie.sources": {
+      "fr": "Sources d'énergie"
+    },
+    "sciences.vivant.animaux": {
+      "fr": "Les animaux et leur milieu"
+    },
+    "sciences.vivant.arbres": {
+      "fr": "Les arbres de la forêt"
+    },
+    "sciences.vivant.alimentation": {
+      "fr": "Chaînes alimentaires et recyclage"
+    },
+    "histgeo.geo.fleuves": {
+      "fr": "Les fleuves de France"
+    },
+    "histgeo.geo.reliefs": {
+      "fr": "Reliefs et mers de France"
+    },
+    "histgeo.geo.commune": {
+      "fr": "Commune, régions et villes"
+    },
+    "histgeo.histoire.chateau": {
+      "fr": "Le château fort"
+    },
+    "histgeo.histoire.reperes": {
+      "fr": "Repères chronologiques"
+    },
+    "maths.mesures.conversions": {
+      "fr": "Mesures et conversions"
+    },
+    "maths.fractions.simples": {
+      "fr": "Fractions simples"
+    },
+    "maths.decimaux.comparer": {
+      "fr": "Nombres décimaux"
+    },
+    "maths.geometrie.figures": {
+      "fr": "Figures planes et périmètre"
+    },
+    "maths.geometrie.symetrie-aire": {
+      "fr": "Symétrie et aire"
+    },
+    "maths.multiplication.tables": {
+      "fr": "Tables de multiplication"
+    },
+    "maths.multiplication.posee": {
+      "fr": "Multiplication posée et division"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "place",
+    "nodes": [
+      {
+        "id": "place",
+        "title": {
+          "fr": "Place du village"
+        },
+        "x": 0.3,
+        "y": 0.8,
+        "requires": []
+      },
+      {
+        "id": "gare",
+        "title": {
+          "fr": "La gare"
+        },
+        "x": 0.1,
+        "y": 0.62,
+        "level": "fr.huckepack.ce2-cm1/gare",
+        "requires": []
+      },
+      {
+        "id": "marche",
+        "title": {
+          "fr": "Le marché"
+        },
+        "x": 0.5,
+        "y": 0.7,
+        "level": "fr.huckepack.ce2-cm1/marche",
+        "requires": []
+      },
+      {
+        "id": "bibliotheque",
+        "title": {
+          "fr": "La bibliothèque"
+        },
+        "x": 0.36,
+        "y": 0.64,
+        "level": "fr.huckepack.ce2-cm1/bibliotheque",
+        "requires": []
+      },
+      {
+        "id": "potager",
+        "title": {
+          "fr": "Le potager"
+        },
+        "x": 0.08,
+        "y": 0.86,
+        "level": "fr.huckepack.ce2-cm1/potager",
+        "requires": []
+      },
+      {
+        "id": "ecole",
+        "title": {
+          "fr": "L'école"
+        },
+        "x": 0.22,
+        "y": 0.47,
+        "level": "fr.huckepack.ce2-cm1/ecole",
+        "requires": [
+          "fr.huckepack.ce2-cm1/gare"
+        ]
+      },
+      {
+        "id": "boulangerie",
+        "title": {
+          "fr": "La boulangerie"
+        },
+        "x": 0.5,
+        "y": 0.9,
+        "level": "fr.huckepack.ce2-cm1/boulangerie",
+        "requires": [
+          "fr.huckepack.ce2-cm1/marche"
+        ]
+      },
+      {
+        "id": "pont",
+        "title": {
+          "fr": "Le vieux pont"
+        },
+        "x": 0.68,
+        "y": 0.78,
+        "level": "fr.huckepack.ce2-cm1/pont",
+        "requires": [
+          "fr.huckepack.ce2-cm1/marche"
+        ]
+      },
+      {
+        "id": "mairie",
+        "title": {
+          "fr": "La mairie"
+        },
+        "x": 0.44,
+        "y": 0.48,
+        "level": "fr.huckepack.ce2-cm1/mairie",
+        "requires": [
+          "fr.huckepack.ce2-cm1/bibliotheque"
+        ]
+      },
+      {
+        "id": "fontaine",
+        "title": {
+          "fr": "La fontaine"
+        },
+        "x": 0.1,
+        "y": 0.3,
+        "level": "fr.huckepack.ce2-cm1/fontaine",
+        "requires": [
+          "fr.huckepack.ce2-cm1/ecole"
+        ]
+      },
+      {
+        "id": "moulin",
+        "title": {
+          "fr": "Le moulin"
+        },
+        "x": 0.86,
+        "y": 0.64,
+        "level": "fr.huckepack.ce2-cm1/moulin",
+        "requires": [
+          "fr.huckepack.ce2-cm1/pont"
+        ]
+      },
+      {
+        "id": "ferme",
+        "title": {
+          "fr": "La ferme"
+        },
+        "x": 0.9,
+        "y": 0.88,
+        "level": "fr.huckepack.ce2-cm1/ferme",
+        "requires": [
+          "fr.huckepack.ce2-cm1/pont"
+        ]
+      },
+      {
+        "id": "lavoir",
+        "title": {
+          "fr": "Le lavoir"
+        },
+        "x": 0.72,
+        "y": 0.5,
+        "level": "fr.huckepack.ce2-cm1/lavoir",
+        "requires": [
+          "fr.huckepack.ce2-cm1/mairie"
+        ]
+      },
+      {
+        "id": "etang",
+        "title": {
+          "fr": "L'étang"
+        },
+        "x": 0.44,
+        "y": 0.28,
+        "level": "fr.huckepack.ce2-cm1/etang",
+        "requires": [
+          "fr.huckepack.ce2-cm1/mairie"
+        ]
+      },
+      {
+        "id": "foret",
+        "title": {
+          "fr": "La forêt"
+        },
+        "x": 0.26,
+        "y": 0.17,
+        "level": "fr.huckepack.ce2-cm1/foret",
+        "requires": [
+          "fr.huckepack.ce2-cm1/etang"
+        ]
+      },
+      {
+        "id": "cabane",
+        "title": {
+          "fr": "La cabane du forestier"
+        },
+        "x": 0.08,
+        "y": 0.12,
+        "level": "fr.huckepack.ce2-cm1/cabane",
+        "requires": [
+          "fr.huckepack.ce2-cm1/foret"
+        ]
+      },
+      {
+        "id": "vignes",
+        "title": {
+          "fr": "Les vignes"
+        },
+        "x": 0.62,
+        "y": 0.34,
+        "level": "fr.huckepack.ce2-cm1/vignes",
+        "requires": [
+          "fr.huckepack.ce2-cm1/lavoir"
+        ]
+      },
+      {
+        "id": "cave",
+        "title": {
+          "fr": "La cave"
+        },
+        "x": 0.86,
+        "y": 0.34,
+        "level": "fr.huckepack.ce2-cm1/cave",
+        "requires": [
+          "fr.huckepack.ce2-cm1/vignes"
+        ]
+      },
+      {
+        "id": "tour",
+        "title": {
+          "fr": "La tour de guet"
+        },
+        "x": 0.58,
+        "y": 0.12,
+        "level": "fr.huckepack.ce2-cm1/tour",
+        "requires": [
+          "fr.huckepack.ce2-cm1/vignes"
+        ]
+      },
+      {
+        "id": "chateau",
+        "title": {
+          "fr": "Le château"
+        },
+        "x": 0.8,
+        "y": 0.12,
+        "level": "fr.huckepack.ce2-cm1/chateau",
+        "requires": [
+          "fr.huckepack.ce2-cm1/tour",
+          "fr.huckepack.ce2-cm1/cave"
+        ]
+      }
+    ],
+    "paths": [
+      [
+        "place",
+        "gare"
+      ],
+      [
+        "place",
+        "marche"
+      ],
+      [
+        "place",
+        "bibliotheque"
+      ],
+      [
+        "place",
+        "potager"
+      ],
+      [
+        "potager",
+        "gare"
+      ],
+      [
+        "gare",
+        "ecole"
+      ],
+      [
+        "bibliotheque",
+        "ecole"
+      ],
+      [
+        "bibliotheque",
+        "mairie"
+      ],
+      [
+        "marche",
+        "boulangerie"
+      ],
+      [
+        "marche",
+        "pont"
+      ],
+      [
+        "ecole",
+        "fontaine"
+      ],
+      [
+        "fontaine",
+        "cabane"
+      ],
+      [
+        "mairie",
+        "lavoir"
+      ],
+      [
+        "mairie",
+        "etang"
+      ],
+      [
+        "pont",
+        "moulin"
+      ],
+      [
+        "pont",
+        "ferme"
+      ],
+      [
+        "moulin",
+        "ferme"
+      ],
+      [
+        "moulin",
+        "lavoir"
+      ],
+      [
+        "etang",
+        "foret"
+      ],
+      [
+        "foret",
+        "cabane"
+      ],
+      [
+        "lavoir",
+        "vignes"
+      ],
+      [
+        "etang",
+        "vignes"
+      ],
+      [
+        "vignes",
+        "cave"
+      ],
+      [
+        "vignes",
+        "tour"
+      ],
+      [
+        "tour",
+        "chateau"
+      ],
+      [
+        "cave",
+        "chateau"
+      ],
+      [
+        "etang",
+        "tour"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "fr.huckepack.ce2-cm1/gare",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La gare : lire l'heure"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "ga-1",
+          "skills": [
+            "maths.heure.lire"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Tu vois l'horloge de la gare (c'est l'après-midi). Décris les aiguilles à ton partenaire."
+          },
+          "prompt": {
+            "fr": "Quelle heure est-il ? Tapez l'heure."
+          },
+          "answer": 860,
+          "difficulty": 1,
+          "answerFormat": "time",
+          "clueVisual": {
+            "clock": {
+              "hour": 14,
+              "minute": 20
+            }
+          }
+        },
+        {
+          "id": "ga-2",
+          "skills": [
+            "maths.heure.lire"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle heure en mots correspond à quelle heure en chiffres ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "huit heures et quart"
+              },
+              "right": {
+                "fr": "8 h 15"
+              }
+            },
+            {
+              "left": {
+                "fr": "trois heures moins le quart"
+              },
+              "right": {
+                "fr": "2 h 45"
+              }
+            },
+            {
+              "left": {
+                "fr": "dix heures et demie"
+              },
+              "right": {
+                "fr": "10 h 30"
+              }
+            },
+            {
+              "left": {
+                "fr": "sept heures moins dix"
+              },
+              "right": {
+                "fr": "6 h 50"
+              }
+            },
+            {
+              "left": {
+                "fr": "midi et quart"
+              },
+              "right": {
+                "fr": "12 h 15"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ga-3",
+          "skills": [
+            "maths.heure.duree"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Le train part à 9 h 40 et roule 35 minutes jusqu'à la première gare. À quelle heure arrive-t-il ?"
+          },
+          "firstAnswer": 615,
+          "operation": {
+            "op": "add",
+            "operand": 20
+          },
+          "second": {
+            "fr": "Le train arrive à {x}. Vous mettez 20 minutes à pied pour aller au marché. À quelle heure y êtes-vous ?"
+          },
+          "answerFormat": "time"
+        },
+        {
+          "id": "ga-4",
+          "skills": [
+            "maths.heure.lire"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle horloge numérique indique quatre heures moins le quart de l'après-midi ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Horloge A"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 16,
+                  "minute": 15
+                }
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Horloge B"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 15,
+                  "minute": 45
+                }
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Horloge C"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 3,
+                  "minute": 45
+                }
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "Horloge D"
+              },
+              "visual": {
+                "digitalClock": {
+                  "hour": 16,
+                  "minute": 45
+                }
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "ga-5",
+          "skills": [
+            "maths.heure.duree"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le dernier train part à 22 h 10. Le train précédent part 3 heures plus tôt."
+          },
+          "prompt": {
+            "fr": "À quelle heure part le train précédent ? Tapez l'heure."
+          },
+          "answer": 1150,
+          "difficulty": 3,
+          "answerFormat": "time"
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/gare-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La gare : durées et horaires"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "place": "gare",
+      "tasks": [
+        {
+          "id": "g2-1",
+          "skills": [
+            "maths.heure.duree"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le train part à 7 h 15 et arrive à 8 h 05."
+          },
+          "prompt": {
+            "fr": "Combien de minutes dure le voyage ? Tapez la durée."
+          },
+          "answer": 50,
+          "difficulty": 1,
+          "answerFormat": "minutes"
+        },
+        {
+          "id": "g2-2",
+          "skills": [
+            "maths.heure.duree"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un train roule 1 h 20 min. Combien de minutes cela fait-il ?"
+          },
+          "firstAnswer": 80,
+          "operation": {
+            "op": "add",
+            "operand": 25
+          },
+          "second": {
+            "fr": "Le trajet dure {x}. Il y a en plus 25 minutes de marche. Combien de minutes cela fait-il en tout ?"
+          },
+          "answerFormat": "minutes"
+        },
+        {
+          "id": "g2-3",
+          "skills": [
+            "maths.heure.duree"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle durée correspond à quelle autre écriture ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "1 h 30 min"
+              },
+              "right": {
+                "fr": "90 minutes"
+              }
+            },
+            {
+              "left": {
+                "fr": "2 h"
+              },
+              "right": {
+                "fr": "120 minutes"
+              }
+            },
+            {
+              "left": {
+                "fr": "45 min"
+              },
+              "right": {
+                "fr": "trois quarts d'heure"
+              }
+            },
+            {
+              "left": {
+                "fr": "1 h 15 min"
+              },
+              "right": {
+                "fr": "75 minutes"
+              }
+            },
+            {
+              "left": {
+                "fr": "30 min"
+              },
+              "right": {
+                "fr": "une demi-heure"
+              }
+            }
+          ]
+        },
+        {
+          "id": "g2-4",
+          "skills": [
+            "maths.heure.duree"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Un film commence à 14 h 50 et dure 1 h 20. À quelle heure finit-il ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "15 h 70"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "16 h 30"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "16 h 10"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "g2-5",
+          "skills": [
+            "maths.heure.duree"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Dans la matinée, une classe a 3 séances de 45 minutes."
+          },
+          "prompt": {
+            "fr": "Combien de minutes de travail cela fait-il en tout ?"
+          },
+          "answer": 135,
+          "difficulty": 3,
+          "answerFormat": "minutes"
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/marche",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le marché : euros et centimes"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "ma-1",
+          "skills": [
+            "maths.monnaie.compter"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Tu vois les pièces du porte-monnaie. Dis à ton partenaire lesquelles il y a."
+          },
+          "prompt": {
+            "fr": "Combien d'argent y a-t-il ? Tapez le montant."
+          },
+          "answer": 380,
+          "difficulty": 1,
+          "answerFormat": "euroCents",
+          "clueVisual": {
+            "money": {
+              "cents": [
+                200,
+                100,
+                50,
+                20,
+                10
+              ]
+            }
+          }
+        },
+        {
+          "id": "ma-2",
+          "skills": [
+            "maths.monnaie.calculer"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un kilo de pommes coûte 2,40 €. Vous achetez 3 kilos. Combien payez-vous ?"
+          },
+          "firstAnswer": 720,
+          "operation": {
+            "op": "subtract",
+            "operand": 150
+          },
+          "second": {
+            "fr": "Les pommes coûtent {x}. La marchande vous fait une remise de 1,50 €. Combien payez-vous ?"
+          },
+          "answerFormat": "euroCents"
+        },
+        {
+          "id": "ma-3",
+          "skills": [
+            "maths.monnaie.calculer"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel achat correspond à quel prix ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "3 baguettes à 1,10 €"
+              },
+              "right": {
+                "fr": "3,30 €"
+              }
+            },
+            {
+              "left": {
+                "fr": "4 pommes à 0,50 €"
+              },
+              "right": {
+                "fr": "2,00 €"
+              }
+            },
+            {
+              "left": {
+                "fr": "2 melons à 2,50 €"
+              },
+              "right": {
+                "fr": "5,00 €"
+              }
+            },
+            {
+              "left": {
+                "fr": "6 œufs à 0,30 €"
+              },
+              "right": {
+                "fr": "1,80 €"
+              }
+            },
+            {
+              "left": {
+                "fr": "5 yaourts à 0,60 €"
+              },
+              "right": {
+                "fr": "3,00 €"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ma-4",
+          "skills": [
+            "maths.monnaie.calculer"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Avec un billet de 10 €, vous achetez un fromage à 6,40 €. Combien la marchande vous rend-elle ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "3,40 €"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "3,60 €"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "4,60 €"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "ma-5",
+          "skills": [
+            "maths.monnaie.calculer"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Une salade coûte 1,25 € et un chou-fleur 2,75 €. Vous achetez 2 salades et 1 chou-fleur."
+          },
+          "prompt": {
+            "fr": "Combien payez-vous ? Tapez le montant."
+          },
+          "answer": 525,
+          "difficulty": 3,
+          "answerFormat": "euroCents"
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/marche-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le marché : problèmes"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "place": "marche",
+      "tasks": [
+        {
+          "id": "m2-1",
+          "skills": [
+            "maths.monnaie.calculer"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Vous payez avec un billet de 20 €. Vos achats coûtent 13,50 €."
+          },
+          "prompt": {
+            "fr": "Combien la marchande vous rend-elle ? Tapez le montant."
+          },
+          "answer": 650,
+          "difficulty": 1,
+          "answerFormat": "euroCents"
+        },
+        {
+          "id": "m2-2",
+          "skills": [
+            "maths.monnaie.calculer"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un panier de fraises coûte 3,80 €. Vous achetez 5 paniers. Quel est le prix total ?"
+          },
+          "firstAnswer": 1900,
+          "operation": {
+            "op": "divide",
+            "operand": 4
+          },
+          "second": {
+            "fr": "Le total est de {x}. Quatre amis partagent la somme en parts égales. Combien chacun paie-t-il ?"
+          },
+          "answerFormat": "euroCents"
+        },
+        {
+          "id": "m2-3",
+          "skills": [
+            "maths.monnaie.compter"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel porte-monnaie contient quelle somme ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "Porte-monnaie A"
+              },
+              "right": {
+                "fr": "2,70 €"
+              },
+              "leftVisual": {
+                "money": {
+                  "cents": [
+                    100,
+                    100,
+                    50,
+                    20
+                  ]
+                }
+              }
+            },
+            {
+              "left": {
+                "fr": "Porte-monnaie B"
+              },
+              "right": {
+                "fr": "7,55 €"
+              },
+              "leftVisual": {
+                "money": {
+                  "cents": [
+                    500,
+                    200,
+                    50,
+                    5
+                  ]
+                }
+              }
+            },
+            {
+              "left": {
+                "fr": "Porte-monnaie C"
+              },
+              "right": {
+                "fr": "2,85 €"
+              },
+              "leftVisual": {
+                "money": {
+                  "cents": [
+                    200,
+                    50,
+                    20,
+                    10,
+                    5
+                  ]
+                }
+              }
+            },
+            {
+              "left": {
+                "fr": "Porte-monnaie D"
+              },
+              "right": {
+                "fr": "15,11 €"
+              },
+              "leftVisual": {
+                "money": {
+                  "cents": [
+                    1000,
+                    500,
+                    10,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "m2-4",
+          "skills": [
+            "maths.monnaie.compter"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Comment écrit-on 305 centimes en euros ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "3,05 €"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "30,5 €"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "3,50 €"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "m2-5",
+          "skills": [
+            "maths.monnaie.calculer"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Vous avez 12 €. Vous achetez 3 pots de miel à 2,80 € chacun."
+          },
+          "prompt": {
+            "fr": "Combien vous reste-t-il ? Tapez le montant."
+          },
+          "answer": 360,
+          "difficulty": 3,
+          "answerFormat": "euroCents"
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/bibliotheque",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La bibliothèque : a et à"
+      },
+      "subject": "francais",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "bi-1",
+          "skills": [
+            "francais.homophones.a-a"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle phrase est écrite correctement ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Il a un livre à la main."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Il à un livre a la main."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Il a un livre a la main."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "bi-2",
+          "skills": [
+            "francais.lecture.livres"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel livre correspond à quelle description ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "un roman"
+              },
+              "right": {
+                "fr": "raconte une histoire inventée"
+              }
+            },
+            {
+              "left": {
+                "fr": "un documentaire"
+              },
+              "right": {
+                "fr": "explique des faits réels"
+              }
+            },
+            {
+              "left": {
+                "fr": "une bande dessinée"
+              },
+              "right": {
+                "fr": "raconte une histoire en images"
+              }
+            },
+            {
+              "left": {
+                "fr": "un dictionnaire"
+              },
+              "right": {
+                "fr": "donne le sens des mots"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bi-3",
+          "skills": [
+            "francais.homophones.a-a"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le texte est : « Mon frère a un chat. Il va à l'école et il a un sac à dos. »"
+          },
+          "prompt": {
+            "fr": "Combien de fois trouve-t-on le mot « à » avec un accent dans le texte ?"
+          },
+          "answer": 2,
+          "difficulty": 1
+        },
+        {
+          "id": "bi-4",
+          "skills": [
+            "francais.homophones.a-a"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Dans la phrase « Il a mal à la tête. », combien y a-t-il de mots ?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "fr": "La phrase a {x} mots. Vous l'écrivez deux fois de suite. Combien de mots avez-vous écrits ?"
+          }
+        },
+        {
+          "id": "bi-5",
+          "skills": [
+            "francais.homophones.a-a"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Complète : Ma sœur ___ envie d'aller ___ la piscine."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "a ... à"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "à ... à"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "a ... a"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "à ... a"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/bibliotheque-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La bibliothèque : on, ont, ou, où"
+      },
+      "subject": "francais",
+      "grade": 4,
+      "place": "bibliotheque",
+      "tasks": [
+        {
+          "id": "b2-1",
+          "skills": [
+            "francais.homophones.on-ont-ou-ou"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle phrase est écrite correctement ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Les élèves on lu un livre."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Les élèves ont lu un livre."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "On ont lu un livre."
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "b2-2",
+          "skills": [
+            "francais.homophones.on-ont-ou-ou"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel petit mot correspond à quelle astuce ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "on"
+              },
+              "right": {
+                "fr": "on peut le remplacer par « il »"
+              }
+            },
+            {
+              "left": {
+                "fr": "ont"
+              },
+              "right": {
+                "fr": "on peut le remplacer par « avaient »"
+              }
+            },
+            {
+              "left": {
+                "fr": "ou"
+              },
+              "right": {
+                "fr": "on peut le remplacer par « ou bien »"
+              }
+            },
+            {
+              "left": {
+                "fr": "où"
+              },
+              "right": {
+                "fr": "il indique un lieu : « dans quel endroit ? »"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b2-3",
+          "skills": [
+            "francais.homophones.on-ont-ou-ou"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le texte est : « On cherche où sont les clés. Où ont-ils pu les poser ? Ils ont oublié le sac ou le panier. »"
+          },
+          "prompt": {
+            "fr": "Combien de fois trouve-t-on le mot « où » avec un accent dans le texte ?"
+          },
+          "answer": 2,
+          "difficulty": 2
+        },
+        {
+          "id": "b2-4",
+          "skills": [
+            "francais.homophones.on-ont-ou-ou"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Dans la phrase « On ne sait pas où ils ont mis le ballon. », combien y a-t-il de mots ?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "subtract",
+            "operand": 4
+          },
+          "second": {
+            "fr": "La phrase a {x} mots. Vous enlevez les 4 mots « on ne sait pas ». Combien de mots restent-ils ?"
+          }
+        },
+        {
+          "id": "b2-5",
+          "skills": [
+            "francais.homophones.on-ont-ou-ou"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Complète : ___ va jouer dans le jardin ___ les enfants ___ construit une cabane."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "On ... ou ... ont"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Ont ... où ... on"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "On ... où ... ont"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "On ... où ... on"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/ecole",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "L'école : le présent"
+      },
+      "subject": "francais",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "ec-1",
+          "skills": [
+            "francais.conjugaison.present"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Complète : Nous ___ (chanter) à l'école."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "chantons"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "chantez"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "chantent"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "chante"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "ec-2",
+          "skills": [
+            "francais.conjugaison.present"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle forme du verbe « manger » va avec quel pronom ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "Je"
+              },
+              "right": {
+                "fr": "mange"
+              }
+            },
+            {
+              "left": {
+                "fr": "Tu"
+              },
+              "right": {
+                "fr": "manges"
+              }
+            },
+            {
+              "left": {
+                "fr": "Nous"
+              },
+              "right": {
+                "fr": "mangeons"
+              }
+            },
+            {
+              "left": {
+                "fr": "Vous"
+              },
+              "right": {
+                "fr": "mangez"
+              }
+            },
+            {
+              "left": {
+                "fr": "Ils"
+              },
+              "right": {
+                "fr": "mangent"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ec-3",
+          "skills": [
+            "francais.conjugaison.present"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Combien y a-t-il de personnes de conjugaison (je, tu, il, nous, vous, ils) ?"
+          },
+          "firstAnswer": 6,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "fr": "On conjugue à {x} personnes. Vous conjuguez le verbe « jouer » 3 fois. Combien de formes avez-vous écrites ?"
+          }
+        },
+        {
+          "id": "ec-4",
+          "skills": [
+            "francais.conjugaison.present"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "La phrase est : « Nous mangeons des pommes et vous chantez. »"
+          },
+          "prompt": {
+            "fr": "Combien de verbes conjugués y a-t-il dans la phrase ?"
+          },
+          "answer": 2,
+          "difficulty": 2
+        },
+        {
+          "id": "ec-5",
+          "skills": [
+            "francais.conjugaison.present"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle phrase est écrite correctement ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Tu as faim et nous avons soif."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Tu a faim et nous avons soif."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Tu as faim et nous avez soif."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "Tu as faim et nous ont soif."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/ecole-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "L'école : accords"
+      },
+      "subject": "francais",
+      "grade": 3,
+      "place": "ecole",
+      "tasks": [
+        {
+          "id": "e2-1",
+          "skills": [
+            "francais.accords.groupe-nominal"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle phrase est bien accordée ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Les petites filles sont contentes."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Les petit fille sont contentes."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Les petites filles sont content."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "e2-2",
+          "skills": [
+            "francais.accords.groupe-nominal"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel mot au singulier correspond à quel pluriel ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "un cheval"
+              },
+              "right": {
+                "fr": "des chevaux"
+              }
+            },
+            {
+              "left": {
+                "fr": "un journal"
+              },
+              "right": {
+                "fr": "des journaux"
+              }
+            },
+            {
+              "left": {
+                "fr": "un bijou"
+              },
+              "right": {
+                "fr": "des bijoux"
+              }
+            },
+            {
+              "left": {
+                "fr": "un œil"
+              },
+              "right": {
+                "fr": "des yeux"
+              }
+            },
+            {
+              "left": {
+                "fr": "un cheveu"
+              },
+              "right": {
+                "fr": "des cheveux"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e2-3",
+          "skills": [
+            "francais.accords.groupe-nominal"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "La phrase est : « Les grandes cloches sonnent le soir. »"
+          },
+          "prompt": {
+            "fr": "Combien de mots se terminent par la marque « s » du pluriel ?"
+          },
+          "answer": 3,
+          "difficulty": 2
+        },
+        {
+          "id": "e2-4",
+          "skills": [
+            "francais.accords.groupe-nominal"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Combien de lettres a le mot « chevaux » ?"
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "subtract",
+            "operand": 6
+          },
+          "second": {
+            "fr": "« Chevaux » a {x} lettres. Le mot « cheval » en a 6. Combien de lettres de plus a le mot au pluriel ?"
+          }
+        },
+        {
+          "id": "e2-5",
+          "skills": [
+            "francais.accords.groupe-nominal"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Complète : Les fleurs du jardin sont (beau) ___ et (parfumé) ___."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "belles ... parfumées"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "beaux ... parfumés"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "belle ... parfumée"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "belles ... parfumés"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/lavoir",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le lavoir : et, est, son, sont"
+      },
+      "subject": "francais",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "la-1",
+          "skills": [
+            "francais.homophones.et-est"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle phrase est écrite correctement ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Le linge est propre et sec."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Le linge et propre est sec."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Le linge est propre est sec."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "la-2",
+          "skills": [
+            "francais.homophones.et-est"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel petit mot correspond à quelle astuce ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "et"
+              },
+              "right": {
+                "fr": "on peut le remplacer par « et puis »"
+              }
+            },
+            {
+              "left": {
+                "fr": "est"
+              },
+              "right": {
+                "fr": "on peut le remplacer par « était »"
+              }
+            },
+            {
+              "left": {
+                "fr": "son"
+              },
+              "right": {
+                "fr": "on peut le remplacer par « mon »"
+              }
+            },
+            {
+              "left": {
+                "fr": "sont"
+              },
+              "right": {
+                "fr": "on peut le remplacer par « étaient »"
+              }
+            }
+          ]
+        },
+        {
+          "id": "la-3",
+          "skills": [
+            "francais.homophones.et-est"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le texte est : « La mère et son père sont au lavoir. Le linge est mouillé et lourd. »"
+          },
+          "prompt": {
+            "fr": "Combien de fois trouve-t-on le petit mot « et » dans le texte ?"
+          },
+          "answer": 2,
+          "difficulty": 2
+        },
+        {
+          "id": "la-4",
+          "skills": [
+            "francais.homophones.et-est"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Dans la phrase « Ils sont au lavoir et il est tard. », combien y a-t-il de mots ?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "fr": "La phrase a {x} mots. Vous la recopiez 3 fois. Combien de mots avez-vous écrits ?"
+          }
+        },
+        {
+          "id": "la-5",
+          "skills": [
+            "francais.homophones.et-est"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Complète : Les poules ___ dans la cour ___ le coq ___ sur son perchoir."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "sont ... est ... et"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "sont ... et ... est"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "son ... et ... est"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "sont ... et ... et"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/cabane",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La cabane : l'imparfait"
+      },
+      "subject": "francais",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "ca-1",
+          "skills": [
+            "francais.conjugaison.imparfait"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Complète à l'imparfait : Autrefois, nous ___ (jouer) dans la cabane."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "jouions"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "jouons"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "jouerons"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "jouâmes"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "ca-2",
+          "skills": [
+            "francais.conjugaison.imparfait"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle forme de « chanter » à l'imparfait va avec quel pronom ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "Je"
+              },
+              "right": {
+                "fr": "chantais"
+              }
+            },
+            {
+              "left": {
+                "fr": "Nous"
+              },
+              "right": {
+                "fr": "chantions"
+              }
+            },
+            {
+              "left": {
+                "fr": "Vous"
+              },
+              "right": {
+                "fr": "chantiez"
+              }
+            },
+            {
+              "left": {
+                "fr": "Ils"
+              },
+              "right": {
+                "fr": "chantaient"
+              }
+            },
+            {
+              "left": {
+                "fr": "Il"
+              },
+              "right": {
+                "fr": "chantait"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca-3",
+          "skills": [
+            "francais.conjugaison.imparfait"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le texte est : « Autrefois, le forestier habitait dans la cabane. Il coupait du bois et il allumait un feu. »"
+          },
+          "prompt": {
+            "fr": "Combien de verbes à l'imparfait y a-t-il dans le texte ?"
+          },
+          "answer": 3,
+          "difficulty": 2
+        },
+        {
+          "id": "ca-4",
+          "skills": [
+            "francais.conjugaison.imparfait"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Combien de lettres a le verbe « jouaient » ?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "subtract",
+            "operand": 6
+          },
+          "second": {
+            "fr": "« Jouaient » a {x} lettres. « Jouent » en a 6. Combien de lettres de plus a la forme de l'imparfait ?"
+          }
+        },
+        {
+          "id": "ca-5",
+          "skills": [
+            "francais.conjugaison.imparfait"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle phrase est à l'imparfait ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Hier, tu regardais les étoiles."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Demain, tu regarderas les étoiles."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Aujourd'hui, tu regardes les étoiles."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "Hier, tu as regardé les étoiles."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/cabane-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La cabane : futur et passé composé"
+      },
+      "subject": "francais",
+      "grade": 4,
+      "place": "cabane",
+      "tasks": [
+        {
+          "id": "c2-1",
+          "skills": [
+            "francais.conjugaison.temps"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Complète au futur : Demain, nous ___ (aller) dans la forêt."
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "irons"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "allons"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "allions"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "sommes allés"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "c2-2",
+          "skills": [
+            "francais.conjugaison.temps"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle phrase correspond à quel temps ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "Hier, il a mangé."
+              },
+              "right": {
+                "fr": "passé composé"
+              }
+            },
+            {
+              "left": {
+                "fr": "Demain, il mangera."
+              },
+              "right": {
+                "fr": "futur"
+              }
+            },
+            {
+              "left": {
+                "fr": "Il mangeait souvent."
+              },
+              "right": {
+                "fr": "imparfait"
+              }
+            },
+            {
+              "left": {
+                "fr": "Maintenant, il mange."
+              },
+              "right": {
+                "fr": "présent"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c2-3",
+          "skills": [
+            "francais.conjugaison.temps"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le texte est : « Hier, le renard a couru. Demain, il dormira. Autrefois, il chassait. Il boit de l'eau. »"
+          },
+          "prompt": {
+            "fr": "Combien de verbes sont au passé ?"
+          },
+          "answer": 2,
+          "difficulty": 2
+        },
+        {
+          "id": "c2-4",
+          "skills": [
+            "francais.conjugaison.temps"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Au futur, « nous chanterons » : combien de lettres a le mot « chanterons » ?"
+          },
+          "firstAnswer": 10,
+          "operation": {
+            "op": "subtract",
+            "operand": 8
+          },
+          "second": {
+            "fr": "« Chanterons » a {x} lettres. « Chantons » en a 8. Combien de lettres de plus a la forme du futur ?"
+          }
+        },
+        {
+          "id": "c2-5",
+          "skills": [
+            "francais.conjugaison.temps"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle phrase est au passé composé ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Ils ont ramassé des champignons."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Ils ramassaient des champignons."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Ils ramasseront des champignons."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "Ils ramassent des champignons."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/potager",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le potager : les plantes"
+      },
+      "subject": "sciences",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "po-1",
+          "skills": [
+            "sciences.vivant.plantes"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Un tournesol a 12 feuilles. Chaque jour, 2 nouvelles feuilles poussent, pendant 5 jours."
+          },
+          "prompt": {
+            "fr": "Combien de feuilles a-t-il au bout de 5 jours ?"
+          },
+          "answer": 22,
+          "difficulty": 1
+        },
+        {
+          "id": "po-2",
+          "skills": [
+            "sciences.vivant.plantes"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle partie de la plante a quel rôle ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "la racine"
+              },
+              "right": {
+                "fr": "absorbe l'eau et les sels minéraux"
+              }
+            },
+            {
+              "left": {
+                "fr": "la tige"
+              },
+              "right": {
+                "fr": "porte les feuilles et les fleurs"
+              }
+            },
+            {
+              "left": {
+                "fr": "la feuille"
+              },
+              "right": {
+                "fr": "fabrique la nourriture avec la lumière"
+              }
+            },
+            {
+              "left": {
+                "fr": "la fleur"
+              },
+              "right": {
+                "fr": "donne les fruits et les graines"
+              }
+            }
+          ]
+        },
+        {
+          "id": "po-3",
+          "skills": [
+            "sciences.vivant.plantes"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "De quoi une graine a-t-elle besoin pour germer ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "d'eau, d'air et d'une température adaptée"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "uniquement de lumière du soleil"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "uniquement d'engrais"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 2
+        },
+        {
+          "id": "po-4",
+          "skills": [
+            "sciences.vivant.plantes"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un plant de tomates donne 9 tomates. Vous avez 4 plants. Combien de tomates avez-vous ?"
+          },
+          "firstAnswer": 36,
+          "operation": {
+            "op": "divide",
+            "operand": 6
+          },
+          "second": {
+            "fr": "Vous avez {x} tomates. Vous les rangez par 6 dans des cagettes. Combien de cagettes remplissez-vous ?"
+          }
+        },
+        {
+          "id": "po-5",
+          "skills": [
+            "sciences.vivant.plantes"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel est le point commun de tous les êtres vivants ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Ils se déplacent tous."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Ils ont tous des pattes."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Ils naissent, grandissent, se nourrissent et meurent."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "Ils vivent tous dans l'eau."
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/fontaine",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La fontaine : l'eau"
+      },
+      "subject": "sciences",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "fo-1",
+          "skills": [
+            "sciences.matiere.eau"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Comment s'appelle le passage de l'eau liquide à la glace ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "la solidification"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "la fusion"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "l'évaporation"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "la condensation"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "fo-2",
+          "skills": [
+            "sciences.matiere.eau"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel changement d'état correspond à quel exemple ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "la fusion"
+              },
+              "right": {
+                "fr": "un glaçon fond"
+              }
+            },
+            {
+              "left": {
+                "fr": "l'évaporation"
+              },
+              "right": {
+                "fr": "le linge sèche au soleil"
+              }
+            },
+            {
+              "left": {
+                "fr": "la condensation"
+              },
+              "right": {
+                "fr": "de la buée se forme sur une vitre froide"
+              }
+            },
+            {
+              "left": {
+                "fr": "la solidification"
+              },
+              "right": {
+                "fr": "l'eau devient de la glace au congélateur"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fo-3",
+          "skills": [
+            "sciences.matiere.eau"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "L'eau gèle à 0 °C et bout à 100 °C. L'eau du bassin est à 20 °C."
+          },
+          "prompt": {
+            "fr": "De combien de degrés faut-il la chauffer pour qu'elle bouille ?"
+          },
+          "answer": 80,
+          "difficulty": 2
+        },
+        {
+          "id": "fo-4",
+          "skills": [
+            "sciences.matiere.eau"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un seau contient 5 litres d'eau. La fontaine remplit 4 seaux. Combien de litres cela fait-il ?"
+          },
+          "firstAnswer": 20,
+          "operation": {
+            "op": "divide",
+            "operand": 5
+          },
+          "second": {
+            "fr": "La fontaine a rempli {x} litres. Chaque jour, 5 litres s'évaporent. Au bout de combien de jours n'y a-t-il plus d'eau ?"
+          }
+        },
+        {
+          "id": "fo-5",
+          "skills": [
+            "sciences.matiere.eau"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "L'eau d'une flaque disparaît au soleil. Que devient-elle ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "De la vapeur d'eau, invisible, dans l'air."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Elle disparaît pour toujours."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Elle devient de la glace."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "Elle devient de la terre."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/moulin",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le moulin : l'énergie"
+      },
+      "subject": "sciences",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "mo-1",
+          "skills": [
+            "sciences.energie.sources"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Qu'est-ce qui fait tourner la roue d'un moulin à eau ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le courant de la rivière"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le vent"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le soleil"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "l'essence"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "mo-2",
+          "skills": [
+            "sciences.energie.sources"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle source d'énergie correspond à quel usage ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "le vent"
+              },
+              "right": {
+                "fr": "fait tourner les ailes d'un moulin à vent"
+              }
+            },
+            {
+              "left": {
+                "fr": "l'eau qui coule"
+              },
+              "right": {
+                "fr": "fait tourner une roue à aubes"
+              }
+            },
+            {
+              "left": {
+                "fr": "le soleil"
+              },
+              "right": {
+                "fr": "produit de l'électricité avec des panneaux"
+              }
+            },
+            {
+              "left": {
+                "fr": "le bois"
+              },
+              "right": {
+                "fr": "brûle dans une cheminée pour chauffer"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mo-3",
+          "skills": [
+            "sciences.energie.sources"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Un moulin moud 3 kilos de blé par minute. Il tourne pendant 15 minutes."
+          },
+          "prompt": {
+            "fr": "Combien de kilos de blé moud-il en tout ?"
+          },
+          "answer": 45,
+          "difficulty": 2
+        },
+        {
+          "id": "mo-4",
+          "skills": [
+            "sciences.energie.sources"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "La roue du moulin fait 12 tours par minute. Combien de tours fait-elle en 5 minutes ?"
+          },
+          "firstAnswer": 60,
+          "operation": {
+            "op": "divide",
+            "operand": 4
+          },
+          "second": {
+            "fr": "La roue a fait {x} tours. Il faut 4 tours pour remplir un sac de farine. Combien de sacs remplit-on ?"
+          }
+        },
+        {
+          "id": "mo-5",
+          "skills": [
+            "sciences.energie.sources"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle source d'énergie est renouvelable ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "l'énergie du vent"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le pétrole"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le charbon"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "le gaz"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/etang",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "L'étang : les animaux"
+      },
+      "subject": "sciences",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "et-1",
+          "skills": [
+            "sciences.vivant.animaux"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Dans l'étang, il y a 4 nénuphars. Sur chaque nénuphar, il y a 3 grenouilles."
+          },
+          "prompt": {
+            "fr": "Combien de grenouilles y a-t-il en tout ?"
+          },
+          "answer": 12,
+          "difficulty": 1
+        },
+        {
+          "id": "et-2",
+          "skills": [
+            "sciences.vivant.animaux"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel animal appartient à quel groupe ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "la grenouille"
+              },
+              "right": {
+                "fr": "amphibien"
+              }
+            },
+            {
+              "left": {
+                "fr": "la carpe"
+              },
+              "right": {
+                "fr": "poisson"
+              }
+            },
+            {
+              "left": {
+                "fr": "le canard"
+              },
+              "right": {
+                "fr": "oiseau"
+              }
+            },
+            {
+              "left": {
+                "fr": "la libellule"
+              },
+              "right": {
+                "fr": "insecte"
+              }
+            }
+          ]
+        },
+        {
+          "id": "et-3",
+          "skills": [
+            "sciences.vivant.animaux"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle est la bonne suite du cycle de vie d'une grenouille ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "œuf, têtard, grenouille adulte"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "têtard, œuf, grenouille adulte"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "œuf, grenouille adulte, têtard"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 2
+        },
+        {
+          "id": "et-4",
+          "skills": [
+            "sciences.vivant.animaux"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Une grenouille pond 300 œufs. Trois grenouilles pondent. Combien d'œufs y a-t-il en tout ?"
+          },
+          "firstAnswer": 900,
+          "operation": {
+            "op": "divide",
+            "operand": 100
+          },
+          "second": {
+            "fr": "Il y a {x} œufs. Imaginons qu'un seul œuf sur 100 devienne une grenouille adulte. Combien de grenouilles adultes y a-t-il ?"
+          }
+        },
+        {
+          "id": "et-5",
+          "skills": [
+            "sciences.vivant.animaux"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Qu'est-ce qui est vrai pour les poissons ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Ils respirent avec des branchies."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Ils respirent avec des poumons."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Ils ont de la fourrure."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "Ils ont quatre pattes."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/foret",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La forêt : les arbres"
+      },
+      "subject": "sciences",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "fr-1",
+          "skills": [
+            "sciences.vivant.arbres"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel arbre perd ses feuilles en automne ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le chêne"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le sapin"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le pin"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "l'épicéa"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "fr-2",
+          "skills": [
+            "sciences.vivant.arbres"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel arbre donne quel fruit ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "le chêne"
+              },
+              "right": {
+                "fr": "le gland"
+              }
+            },
+            {
+              "left": {
+                "fr": "le châtaignier"
+              },
+              "right": {
+                "fr": "la châtaigne"
+              }
+            },
+            {
+              "left": {
+                "fr": "le noisetier"
+              },
+              "right": {
+                "fr": "la noisette"
+              }
+            },
+            {
+              "left": {
+                "fr": "le pin"
+              },
+              "right": {
+                "fr": "la pomme de pin"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fr-3",
+          "skills": [
+            "sciences.vivant.arbres"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Un chêne a 120 ans. Un sapin voisin a 45 ans de moins."
+          },
+          "prompt": {
+            "fr": "Quel âge a le sapin ? Tapez le nombre d'années."
+          },
+          "answer": 75,
+          "difficulty": 2
+        },
+        {
+          "id": "fr-4",
+          "skills": [
+            "sciences.vivant.arbres"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un écureuil cache 8 noisettes par jour pendant 6 jours. Combien de noisettes a-t-il cachées ?"
+          },
+          "firstAnswer": 48,
+          "operation": {
+            "op": "subtract",
+            "operand": 15
+          },
+          "second": {
+            "fr": "Il a caché {x} noisettes. Des geais en ont pris 15. Combien en reste-t-il ?"
+          }
+        },
+        {
+          "id": "fr-5",
+          "skills": [
+            "sciences.vivant.alimentation"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle chaîne alimentaire est correcte (la flèche veut dire « est mangé par ») ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "faucon → mésange → chenille → feuille"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "feuille → chenille → mésange → faucon"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "chenille → feuille → faucon → mésange"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/foret-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La forêt : le sol et le recyclage"
+      },
+      "subject": "sciences",
+      "grade": 4,
+      "place": "foret",
+      "tasks": [
+        {
+          "id": "f2-1",
+          "skills": [
+            "sciences.vivant.alimentation"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Que deviennent les feuilles mortes sur le sol ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Des petits êtres vivants les transforment en terreau."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Elles disparaissent sans rien laisser."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Elles se transforment en plastique."
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "f2-2",
+          "skills": [
+            "sciences.vivant.alimentation"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel animal correspond à quel régime alimentaire ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "herbivore"
+              },
+              "right": {
+                "fr": "le chevreuil"
+              }
+            },
+            {
+              "left": {
+                "fr": "carnivore"
+              },
+              "right": {
+                "fr": "la chouette"
+              }
+            },
+            {
+              "left": {
+                "fr": "omnivore"
+              },
+              "right": {
+                "fr": "le sanglier"
+              }
+            },
+            {
+              "left": {
+                "fr": "insectivore"
+              },
+              "right": {
+                "fr": "le hérisson"
+              }
+            }
+          ]
+        },
+        {
+          "id": "f2-3",
+          "skills": [
+            "sciences.vivant.alimentation"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Une chouette mange 3 souris par nuit. Elle chasse pendant 7 nuits."
+          },
+          "prompt": {
+            "fr": "Combien de souris mange-t-elle en tout ?"
+          },
+          "answer": 21,
+          "difficulty": 2
+        },
+        {
+          "id": "f2-4",
+          "skills": [
+            "sciences.vivant.alimentation"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un tas de feuilles pèse 40 kg. En pourrissant, il perd la moitié de sa masse. Combien pèse-t-il alors, en kg ?"
+          },
+          "firstAnswer": 20,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "fr": "Un tas pèse {x} kg. Vous avez 3 tas pareils. Combien de kg cela fait-il en tout ?"
+          }
+        },
+        {
+          "id": "f2-5",
+          "skills": [
+            "sciences.vivant.alimentation"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel être vivant aide à décomposer la matière du sol ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le ver de terre"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le chevreuil"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "la chouette"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "le sanglier"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/pont",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le vieux pont : les fleuves"
+      },
+      "subject": "histgeo",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "pt-1",
+          "skills": [
+            "histgeo.geo.fleuves"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel fleuve traverse Paris ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "la Seine"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "la Loire"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le Rhône"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "la Garonne"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "pt-2",
+          "skills": [
+            "histgeo.geo.fleuves"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle ville est au bord de quel fleuve ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "la Seine"
+              },
+              "right": {
+                "fr": "Rouen"
+              }
+            },
+            {
+              "left": {
+                "fr": "la Loire"
+              },
+              "right": {
+                "fr": "Nantes"
+              }
+            },
+            {
+              "left": {
+                "fr": "la Garonne"
+              },
+              "right": {
+                "fr": "Toulouse"
+              }
+            },
+            {
+              "left": {
+                "fr": "le Rhône"
+              },
+              "right": {
+                "fr": "Lyon"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pt-3",
+          "skills": [
+            "histgeo.geo.fleuves"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "On arrondit les longueurs : la Loire mesure 1 000 km et la Seine 800 km."
+          },
+          "prompt": {
+            "fr": "Combien de kilomètres de plus mesure la Loire ?"
+          },
+          "answer": 200,
+          "difficulty": 2
+        },
+        {
+          "id": "pt-4",
+          "skills": [
+            "histgeo.geo.fleuves"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un bateau parcourt 25 km par jour sur la Seine. Combien de km parcourt-il en 4 jours ?"
+          },
+          "firstAnswer": 100,
+          "operation": {
+            "op": "add",
+            "operand": 35
+          },
+          "second": {
+            "fr": "Le bateau a fait {x} km. Le jour suivant, il fait encore 35 km. Combien de km a-t-il fait en tout ?"
+          }
+        },
+        {
+          "id": "pt-5",
+          "skills": [
+            "histgeo.geo.fleuves"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel fleuve se jette dans la mer Méditerranée ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le Rhône"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "la Loire"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "la Seine"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "la Meuse"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/pont-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le vieux pont : mers et montagnes"
+      },
+      "subject": "histgeo",
+      "grade": 4,
+      "place": "pont",
+      "tasks": [
+        {
+          "id": "p2-1",
+          "skills": [
+            "histgeo.geo.reliefs"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle mer borde le sud de la France ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "la Méditerranée"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "la mer du Nord"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "la Manche"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "la mer Noire"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "p2-2",
+          "skills": [
+            "histgeo.geo.reliefs"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel massif correspond à quelle description ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "les Pyrénées"
+              },
+              "right": {
+                "fr": "frontière avec l'Espagne"
+              }
+            },
+            {
+              "left": {
+                "fr": "les Alpes"
+              },
+              "right": {
+                "fr": "le mont Blanc est leur plus haut sommet"
+              }
+            },
+            {
+              "left": {
+                "fr": "les Vosges"
+              },
+              "right": {
+                "fr": "massif de l'est, près de l'Alsace"
+              }
+            },
+            {
+              "left": {
+                "fr": "le Massif central"
+              },
+              "right": {
+                "fr": "anciens volcans d'Auvergne"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p2-3",
+          "skills": [
+            "histgeo.geo.reliefs"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "On arrondit : le mont Blanc mesure 4 800 m. Des randonneurs sont déjà à 1 200 m."
+          },
+          "prompt": {
+            "fr": "Combien de mètres leur reste-t-il à monter pour atteindre le sommet ?"
+          },
+          "answer": 3600,
+          "difficulty": 2
+        },
+        {
+          "id": "p2-4",
+          "skills": [
+            "histgeo.geo.reliefs"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un randonneur monte de 300 m par heure pendant 4 heures. De combien de mètres monte-t-il ?"
+          },
+          "firstAnswer": 1200,
+          "operation": {
+            "op": "add",
+            "operand": 800
+          },
+          "second": {
+            "fr": "Il est monté de {x} m. Il continue et monte encore de 800 m. De combien de mètres est-il monté en tout ?"
+          }
+        },
+        {
+          "id": "p2-5",
+          "skills": [
+            "histgeo.geo.reliefs"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel est le plus haut sommet de France ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le mont Blanc"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le Puy de Dôme"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le ballon d'Alsace"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "le Puy de Sancy"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/mairie",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La mairie : commune et territoire"
+      },
+      "subject": "histgeo",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "mi-1",
+          "skills": [
+            "histgeo.geo.commune"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Qui dirige la commune, avec le conseil municipal ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le maire"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le directeur de l'école"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le facteur"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "mi-2",
+          "skills": [
+            "histgeo.geo.commune"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle ville correspond à quelle description ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "Paris"
+              },
+              "right": {
+                "fr": "la capitale de la France"
+              }
+            },
+            {
+              "left": {
+                "fr": "Marseille"
+              },
+              "right": {
+                "fr": "grand port au bord de la Méditerranée"
+              }
+            },
+            {
+              "left": {
+                "fr": "Bordeaux"
+              },
+              "right": {
+                "fr": "grande ville sur la Garonne"
+              }
+            },
+            {
+              "left": {
+                "fr": "Strasbourg"
+              },
+              "right": {
+                "fr": "ville près du Rhin, à l'est"
+              }
+            },
+            {
+              "left": {
+                "fr": "Lille"
+              },
+              "right": {
+                "fr": "grande ville du Nord de la France"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mi-3",
+          "skills": [
+            "histgeo.geo.commune"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "La France compte 13 régions en métropole et 5 régions d'outre-mer."
+          },
+          "prompt": {
+            "fr": "Combien de régions la France compte-t-elle en tout ?"
+          },
+          "answer": 18,
+          "difficulty": 2
+        },
+        {
+          "id": "mi-4",
+          "skills": [
+            "histgeo.geo.commune"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un village a 1 200 habitants. 350 sont des enfants. Combien d'adultes y a-t-il ?"
+          },
+          "firstAnswer": 850,
+          "operation": {
+            "op": "subtract",
+            "operand": 100
+          },
+          "second": {
+            "fr": "Le village a {x} adultes. Parmi eux, 100 sont retraités. Combien d'adultes ne sont pas retraités ?"
+          }
+        },
+        {
+          "id": "mi-5",
+          "skills": [
+            "histgeo.geo.commune"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelles sont les couleurs du drapeau français ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "bleu, blanc, rouge"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "vert, blanc, rouge"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "bleu, jaune, rouge"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "noir, blanc, bleu"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/tour",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La tour de guet : le château fort"
+      },
+      "subject": "histgeo",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "to-1",
+          "skills": [
+            "histgeo.histoire.chateau"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Comment s'appelle la haute tour principale d'un château fort ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le donjon"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "la douve"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le pont-levis"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "la meurtrière"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "to-2",
+          "skills": [
+            "histgeo.histoire.chateau"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel mot correspond à quelle définition ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "les douves"
+              },
+              "right": {
+                "fr": "fossé rempli d'eau autour du château"
+              }
+            },
+            {
+              "left": {
+                "fr": "le pont-levis"
+              },
+              "right": {
+                "fr": "pont qu'on peut lever"
+              }
+            },
+            {
+              "left": {
+                "fr": "la meurtrière"
+              },
+              "right": {
+                "fr": "fente pour tirer des flèches"
+              }
+            },
+            {
+              "left": {
+                "fr": "le rempart"
+              },
+              "right": {
+                "fr": "mur épais qui protège le château"
+              }
+            }
+          ]
+        },
+        {
+          "id": "to-3",
+          "skills": [
+            "histgeo.histoire.chateau"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Les remparts du château ont 8 tours. Chaque tour a 3 étages."
+          },
+          "prompt": {
+            "fr": "Combien d'étages y a-t-il en tout dans les tours ?"
+          },
+          "answer": 24,
+          "difficulty": 2
+        },
+        {
+          "id": "to-4",
+          "skills": [
+            "histgeo.histoire.reperes"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un château a été construit en 1150. En quelle année a-t-il 300 ans ?"
+          },
+          "firstAnswer": 1450,
+          "operation": {
+            "op": "add",
+            "operand": 50
+          },
+          "second": {
+            "fr": "Le château a 300 ans en {x}. Un nouveau mur est construit 50 ans plus tard. En quelle année ?"
+          }
+        },
+        {
+          "id": "to-5",
+          "skills": [
+            "histgeo.histoire.chateau"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Pourquoi construisait-on souvent un château fort sur une colline ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "Pour avoir plus chaud."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "Pour mieux voir arriver les ennemis et se défendre."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "Pour être plus près des nuages."
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/tour-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La tour de guet : repères dans le temps"
+      },
+      "subject": "histgeo",
+      "grade": 4,
+      "place": "tour",
+      "tasks": [
+        {
+          "id": "t2-1",
+          "skills": [
+            "histgeo.histoire.reperes"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle période vient en premier ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "l'Antiquité"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le Moyen Âge"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "les Temps modernes"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "l'époque contemporaine"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "t2-2",
+          "skills": [
+            "histgeo.histoire.reperes"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle période correspond à quel exemple ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "l'Antiquité"
+              },
+              "right": {
+                "fr": "les Gaulois et les Romains"
+              }
+            },
+            {
+              "left": {
+                "fr": "le Moyen Âge"
+              },
+              "right": {
+                "fr": "les châteaux forts et les chevaliers"
+              }
+            },
+            {
+              "left": {
+                "fr": "les Temps modernes"
+              },
+              "right": {
+                "fr": "les grandes découvertes et Louis XIV"
+              }
+            },
+            {
+              "left": {
+                "fr": "l'époque contemporaine"
+              },
+              "right": {
+                "fr": "la Révolution de 1789 et aujourd'hui"
+              }
+            }
+          ]
+        },
+        {
+          "id": "t2-3",
+          "skills": [
+            "histgeo.histoire.reperes"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "La prise de la Bastille a eu lieu en 1789. La tour Eiffel a été construite en 1889."
+          },
+          "prompt": {
+            "fr": "Combien d'années séparent ces deux événements ?"
+          },
+          "answer": 100,
+          "difficulty": 2
+        },
+        {
+          "id": "t2-4",
+          "skills": [
+            "histgeo.histoire.reperes"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un siècle dure 100 ans. Combien d'années y a-t-il dans 8 siècles ?"
+          },
+          "firstAnswer": 800,
+          "operation": {
+            "op": "add",
+            "operand": 250
+          },
+          "second": {
+            "fr": "Charlemagne a été couronné empereur en l'an {x}. Un château est construit 250 ans plus tard. En quelle année ?"
+          }
+        },
+        {
+          "id": "t2-5",
+          "skills": [
+            "histgeo.histoire.reperes"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "En 1789, dans quel siècle sommes-nous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "le 18e siècle"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "le 17e siècle"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "le 19e siècle"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "le 20e siècle"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/ferme",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La ferme : les mesures"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "fe-1",
+          "skills": [
+            "maths.mesures.conversions"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Combien y a-t-il de centimètres dans 1 mètre ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "10"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "100"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "1 000"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "fe-2",
+          "skills": [
+            "maths.mesures.conversions"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle mesure est égale à quelle autre ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "2 m"
+              },
+              "right": {
+                "fr": "200 cm"
+              }
+            },
+            {
+              "left": {
+                "fr": "3 kg"
+              },
+              "right": {
+                "fr": "3 000 g"
+              }
+            },
+            {
+              "left": {
+                "fr": "1 km"
+              },
+              "right": {
+                "fr": "1 000 m"
+              }
+            },
+            {
+              "left": {
+                "fr": "2 L"
+              },
+              "right": {
+                "fr": "200 cL"
+              }
+            },
+            {
+              "left": {
+                "fr": "4 L"
+              },
+              "right": {
+                "fr": "4 000 mL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fe-3",
+          "skills": [
+            "maths.mesures.conversions"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "La ferme a 6 vaches. Chaque vache donne 20 litres de lait par jour."
+          },
+          "prompt": {
+            "fr": "Combien de litres de lait donnent-elles en tout par jour ?"
+          },
+          "answer": 120,
+          "difficulty": 2
+        },
+        {
+          "id": "fe-4",
+          "skills": [
+            "maths.mesures.conversions"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un sac de grain pèse 25 kg. La ferme a 8 sacs. Combien de kg de grain y a-t-il ?"
+          },
+          "firstAnswer": 200,
+          "operation": {
+            "op": "divide",
+            "operand": 5
+          },
+          "second": {
+            "fr": "Il y a {x} kg de grain. On le partage entre 5 enclos, à parts égales. Combien de kg reçoit chaque enclos ?"
+          }
+        },
+        {
+          "id": "fe-5",
+          "skills": [
+            "maths.mesures.conversions"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Une barrière mesure 2,5 m. Le champ a besoin de 12 barrières."
+          },
+          "prompt": {
+            "fr": "Quelle est la longueur de la clôture, en mètres ?"
+          },
+          "answer": 30,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/vignes",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Les vignes : les fractions"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "vi-1",
+          "skills": [
+            "maths.fractions.simples"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Une tarte est coupée en 4 parts égales. Vous mangez 3 parts. Quelle fraction avez-vous mangée ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "3/4"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "4/3"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "1/4"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "vi-2",
+          "skills": [
+            "maths.fractions.simples"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle fraction correspond à quels mots ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "1/2"
+              },
+              "right": {
+                "fr": "la moitié"
+              }
+            },
+            {
+              "left": {
+                "fr": "1/4"
+              },
+              "right": {
+                "fr": "un quart"
+              }
+            },
+            {
+              "left": {
+                "fr": "3/4"
+              },
+              "right": {
+                "fr": "trois quarts"
+              }
+            },
+            {
+              "left": {
+                "fr": "1/10"
+              },
+              "right": {
+                "fr": "un dixième"
+              }
+            },
+            {
+              "left": {
+                "fr": "1/3"
+              },
+              "right": {
+                "fr": "un tiers"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vi-3",
+          "skills": [
+            "maths.fractions.simples"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le vigneron a 24 rangs de vigne. Il vendange 1/4 des rangs aujourd'hui."
+          },
+          "prompt": {
+            "fr": "Combien de rangs vendange-t-il aujourd'hui ?"
+          },
+          "answer": 6,
+          "difficulty": 2
+        },
+        {
+          "id": "vi-4",
+          "skills": [
+            "maths.fractions.simples"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un panier contient 36 grappes. Les 2/3 des grappes sont bien mûres. Combien de grappes sont mûres ?"
+          },
+          "firstAnswer": 24,
+          "operation": {
+            "op": "divide",
+            "operand": 4
+          },
+          "second": {
+            "fr": "Il y a {x} grappes mûres. On les partage en 4 caisses égales. Combien de grappes met-on dans une caisse ?"
+          }
+        },
+        {
+          "id": "vi-5",
+          "skills": [
+            "maths.fractions.simples"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle fraction est la plus grande ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "1/3"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "1/2"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "1/4"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "3/10"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/cave",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La cave : les nombres décimaux"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "cv-1",
+          "skills": [
+            "maths.decimaux.comparer"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel nombre est le plus grand ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "3,05"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "3,25"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "3,5"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "2,9"
+              }
+            }
+          ],
+          "correct": "c",
+          "difficulty": 1
+        },
+        {
+          "id": "cv-2",
+          "skills": [
+            "maths.decimaux.comparer"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle écriture correspond à quel nombre décimal ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "2 + 0,5"
+              },
+              "right": {
+                "fr": "2,5"
+              }
+            },
+            {
+              "left": {
+                "fr": "3 + 0,07"
+              },
+              "right": {
+                "fr": "3,07"
+              }
+            },
+            {
+              "left": {
+                "fr": "12 dixièmes"
+              },
+              "right": {
+                "fr": "1,2"
+              }
+            },
+            {
+              "left": {
+                "fr": "5 centièmes"
+              },
+              "right": {
+                "fr": "0,05"
+              }
+            },
+            {
+              "left": {
+                "fr": "1 + 0,25"
+              },
+              "right": {
+                "fr": "1,25"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cv-3",
+          "skills": [
+            "maths.decimaux.comparer"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Une bouteille contient 0,75 litre de jus de raisin. Il y a 8 bouteilles."
+          },
+          "prompt": {
+            "fr": "Combien de litres de jus de raisin y a-t-il en tout ?"
+          },
+          "answer": 6,
+          "difficulty": 2
+        },
+        {
+          "id": "cv-4",
+          "skills": [
+            "maths.decimaux.comparer"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Une bouteille contient 0,5 litre. Combien de bouteilles faut-il pour 12 litres ?"
+          },
+          "firstAnswer": 24,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "fr": "On a rempli {x} bouteilles. Chaque bouteille est vendue 3 €. Combien d'euros cela fait-il ?"
+          }
+        },
+        {
+          "id": "cv-5",
+          "skills": [
+            "maths.decimaux.comparer"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Comment écrit-on 4 + 3/10 + 5/100 en nombre décimal ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "4,305"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "43,5"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "4,53"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "4,35"
+              }
+            }
+          ],
+          "correct": "d",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/chateau",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le château : figures et périmètre"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "tasks": [
+        {
+          "id": "ch-1",
+          "skills": [
+            "maths.geometrie.figures"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Comment s'appelle un quadrilatère qui a 4 côtés égaux et 4 angles droits ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "un carré"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "un rectangle"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "un losange"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "un triangle"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 1
+        },
+        {
+          "id": "ch-2",
+          "skills": [
+            "maths.geometrie.figures"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle figure correspond à quelle description ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "le triangle"
+              },
+              "right": {
+                "fr": "3 côtés"
+              }
+            },
+            {
+              "left": {
+                "fr": "le carré"
+              },
+              "right": {
+                "fr": "4 côtés égaux et 4 angles droits"
+              }
+            },
+            {
+              "left": {
+                "fr": "le pentagone"
+              },
+              "right": {
+                "fr": "5 côtés"
+              }
+            },
+            {
+              "left": {
+                "fr": "l'hexagone"
+              },
+              "right": {
+                "fr": "6 côtés"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ch-3",
+          "skills": [
+            "maths.geometrie.figures"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "La cour du château est un rectangle de 30 m de long et 20 m de large."
+          },
+          "prompt": {
+            "fr": "Quel est le périmètre de la cour, en mètres ?"
+          },
+          "answer": 100,
+          "difficulty": 2
+        },
+        {
+          "id": "ch-4",
+          "skills": [
+            "maths.geometrie.figures"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Le côté d'une tour carrée mesure 6 m. Quel est son périmètre, en mètres ?"
+          },
+          "firstAnswer": 24,
+          "operation": {
+            "op": "subtract",
+            "operand": 2
+          },
+          "second": {
+            "fr": "Le mur autour de la tour mesure {x} m. Une porte de 2 m n'a pas de mur. Combien de mètres de mur faut-il construire ?"
+          }
+        },
+        {
+          "id": "ch-5",
+          "skills": [
+            "maths.geometrie.figures"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quel outil sert à vérifier qu'un angle est droit ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "une équerre"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "un compas"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "une règle seule"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "une balance"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/chateau-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "Le château : symétrie et aire"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "place": "chateau",
+      "tasks": [
+        {
+          "id": "c2s-1",
+          "skills": [
+            "maths.geometrie.symetrie-aire"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Combien d'axes de symétrie a un rectangle qui n'est pas un carré ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "1"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "2"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "4"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "0"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "c2s-2",
+          "skills": [
+            "maths.geometrie.symetrie-aire"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quelle figure a combien d'axes de symétrie ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "le carré"
+              },
+              "right": {
+                "fr": "4 axes"
+              }
+            },
+            {
+              "left": {
+                "fr": "le rectangle"
+              },
+              "right": {
+                "fr": "2 axes"
+              }
+            },
+            {
+              "left": {
+                "fr": "le triangle équilatéral"
+              },
+              "right": {
+                "fr": "3 axes"
+              }
+            },
+            {
+              "left": {
+                "fr": "le cercle"
+              },
+              "right": {
+                "fr": "une infinité d'axes"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c2s-3",
+          "skills": [
+            "maths.geometrie.symetrie-aire"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "La salle du trône est un rectangle de 8 m de long et 5 m de large."
+          },
+          "prompt": {
+            "fr": "Quelle est son aire, en m² ?"
+          },
+          "answer": 40,
+          "difficulty": 2
+        },
+        {
+          "id": "c2s-4",
+          "skills": [
+            "maths.geometrie.symetrie-aire"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Un carré a 7 cm de côté. Quelle est son aire, en cm² ?"
+          },
+          "firstAnswer": 49,
+          "operation": {
+            "op": "subtract",
+            "operand": 9
+          },
+          "second": {
+            "fr": "L'aire est de {x} cm². On découpe un coin carré de 3 cm de côté (aire : 9 cm²). Quelle aire reste-t-il ?"
+          }
+        },
+        {
+          "id": "c2s-5",
+          "skills": [
+            "maths.geometrie.symetrie-aire"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le château a une cour carrée de 12 m de côté. On veut poser une clôture sur tout le tour."
+          },
+          "prompt": {
+            "fr": "Quelle longueur de clôture faut-il, en mètres ?"
+          },
+          "answer": 48,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/boulangerie",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La boulangerie : les tables"
+      },
+      "subject": "maths",
+      "grade": 3,
+      "tasks": [
+        {
+          "id": "bo-1",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Combien font 7 × 8 ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "54"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "56"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "58"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "64"
+              }
+            }
+          ],
+          "correct": "b",
+          "difficulty": 1
+        },
+        {
+          "id": "bo-2",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel calcul donne quel résultat ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "6 × 7"
+              },
+              "right": {
+                "fr": "42"
+              }
+            },
+            {
+              "left": {
+                "fr": "8 × 9"
+              },
+              "right": {
+                "fr": "72"
+              }
+            },
+            {
+              "left": {
+                "fr": "7 × 9"
+              },
+              "right": {
+                "fr": "63"
+              }
+            },
+            {
+              "left": {
+                "fr": "6 × 8"
+              },
+              "right": {
+                "fr": "48"
+              }
+            },
+            {
+              "left": {
+                "fr": "9 × 9"
+              },
+              "right": {
+                "fr": "81"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bo-3",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le boulanger fait 9 fournées. Dans chaque fournée, il y a 8 baguettes."
+          },
+          "prompt": {
+            "fr": "Combien de baguettes cela fait-il en tout ?"
+          },
+          "answer": 72,
+          "difficulty": 2
+        },
+        {
+          "id": "bo-4",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Une boîte contient 6 croissants. Combien de croissants y a-t-il dans 7 boîtes ?"
+          },
+          "firstAnswer": 42,
+          "operation": {
+            "op": "subtract",
+            "operand": 5
+          },
+          "second": {
+            "fr": "Il y a {x} croissants. Vous en mangez 5. Combien en reste-t-il ?"
+          }
+        },
+        {
+          "id": "bo-5",
+          "skills": [
+            "maths.multiplication.tables"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Quelle multiplication a pour résultat 63 ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "6 × 9"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "8 × 8"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "7 × 8"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "7 × 9"
+              }
+            }
+          ],
+          "correct": "d",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "fr.huckepack.ce2-cm1/boulangerie-2",
+      "schemaVersion": 1,
+      "title": {
+        "fr": "La boulangerie : multiplication posée"
+      },
+      "subject": "maths",
+      "grade": 4,
+      "place": "boulangerie",
+      "tasks": [
+        {
+          "id": "b2m-1",
+          "skills": [
+            "maths.multiplication.posee"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "Le boulanger vend 124 baguettes par jour pendant 3 jours."
+          },
+          "prompt": {
+            "fr": "Combien de baguettes vend-il en tout ?"
+          },
+          "answer": 372,
+          "difficulty": 1
+        },
+        {
+          "id": "b2m-2",
+          "skills": [
+            "maths.multiplication.posee"
+          ],
+          "type": "matchPairs",
+          "prompt": {
+            "fr": "Quel calcul donne quel résultat ?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "fr": "23 × 4"
+              },
+              "right": {
+                "fr": "92"
+              }
+            },
+            {
+              "left": {
+                "fr": "35 × 6"
+              },
+              "right": {
+                "fr": "210"
+              }
+            },
+            {
+              "left": {
+                "fr": "48 × 5"
+              },
+              "right": {
+                "fr": "240"
+              }
+            },
+            {
+              "left": {
+                "fr": "125 × 3"
+              },
+              "right": {
+                "fr": "375"
+              }
+            },
+            {
+              "left": {
+                "fr": "16 × 12"
+              },
+              "right": {
+                "fr": "192"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b2m-3",
+          "skills": [
+            "maths.multiplication.posee"
+          ],
+          "type": "relay",
+          "first": {
+            "fr": "Une boulangerie fait 36 pains par heure. Combien de pains fait-elle en 12 heures ?"
+          },
+          "firstAnswer": 432,
+          "operation": {
+            "op": "divide",
+            "operand": 6
+          },
+          "second": {
+            "fr": "Elle a fait {x} pains. Elle les range par paquets de 6. Combien de paquets cela fait-il ?"
+          }
+        },
+        {
+          "id": "b2m-4",
+          "skills": [
+            "maths.multiplication.posee"
+          ],
+          "type": "bothAgree",
+          "question": {
+            "fr": "Pour calculer 24 × 13, quelle écriture est correcte ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "fr": "24 × 10 + 24 × 3"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "fr": "24 × 10 + 3"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "fr": "24 + 10 × 3"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "fr": "24 × 3 + 10"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 2
+        },
+        {
+          "id": "b2m-5",
+          "skills": [
+            "maths.multiplication.posee"
+          ],
+          "type": "splitInfo",
+          "clue": {
+            "fr": "On range 250 croissants dans des sacs de 6 croissants."
+          },
+          "prompt": {
+            "fr": "Combien de sacs pleins peut-on remplir ?"
+          },
+          "answer": 41,
+          "difficulty": 3
+        }
+      ]
+    }
+  ]
+}

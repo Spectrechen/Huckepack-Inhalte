@@ -13,7 +13,7 @@ PLACES = {"numbers-hill", "mill", "market", "clock-tower", "syllable-school", "l
           "weather-station", "crossing", "bus-stop", "tea-house", "zoo", "lighthouse"}
 TYPES = {"splitInfo", "relay", "matchPairs", "bothAgree"}
 SUBJECTS = {"math", "german", "science", "english"}
-FORMATS = {"integer", "euroCents", "time", "minutes"}
+FORMATS = {"integer", "euroCents", "dollarCents", "poundPence", "rupeePaise", "realCentavos", "time", "minutes"}
 OPS = {"add", "subtract", "multiply", "divide"}
 MINIGAMES = {"ticTacToe", "dotsAndBoxes"}
 EUROS = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000}
@@ -49,7 +49,9 @@ def image_size(path):
 
 
 def is_text(v):
-    return isinstance(v, dict) and isinstance(v.get("de"), str) and v["de"] != "" and all(isinstance(x, str) for x in v.values())
+    # Any language (ISO 639-1 key, e.g. "de", "en", "es"); at least one non-empty text.
+    return isinstance(v, dict) and len(v) > 0 and all(isinstance(k, str) and 2 <= len(k) <= 5 for k in v) \
+        and all(isinstance(x, str) for x in v.values()) and any(x != "" for x in v.values())
 
 
 def check_visual(where, v, errors):

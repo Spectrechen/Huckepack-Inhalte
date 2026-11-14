@@ -1,0 +1,4137 @@
+{
+  "$schema": "../../docs/schema/pack.schema.json",
+  "id": "de.huckepack.oberstufe",
+  "version": 1,
+  "title": {
+    "de": "Campus: Abitur gemeinsam",
+    "en": "Campus: Revising for the Abitur together"
+  },
+  "description": {
+    "de": "Gemeinsam für das Abitur lernen: Mathe, Physik, Biologie, Englisch und Deutsch der gymnasialen Oberstufe in Deutschland (Klasse 11 bis 13, 16 bis 19 Jahre).",
+    "en": "Revising together for the Abitur: maths, physics, biology, English and German for the upper secondary school in Germany (grades 11 to 13, ages 16 to 19)."
+  },
+  "author": "Huckepack",
+  "licence": "CC-BY-4.0",
+  "courses": [
+    {
+      "id": "mathe",
+      "title": {
+        "de": "Mathe",
+        "en": "Maths"
+      }
+    },
+    {
+      "id": "physik",
+      "title": {
+        "de": "Physik",
+        "en": "Physics"
+      }
+    },
+    {
+      "id": "biologie",
+      "title": {
+        "de": "Biologie",
+        "en": "Biology"
+      }
+    },
+    {
+      "id": "englisch",
+      "title": {
+        "de": "Englisch",
+        "en": "English"
+      }
+    },
+    {
+      "id": "deutsch",
+      "title": {
+        "de": "Deutsch",
+        "en": "German"
+      }
+    }
+  ],
+  "skills": {
+    "mathe.ableitungen": {
+      "de": "Ableitungen bilden"
+    },
+    "mathe.kettenregel": {
+      "de": "Ketten- und Produktregel"
+    },
+    "mathe.extrempunkte": {
+      "de": "Extrempunkte bestimmen"
+    },
+    "mathe.integrale": {
+      "de": "Integrale berechnen"
+    },
+    "mathe.flaeche": {
+      "de": "Flächen mit Integralen"
+    },
+    "mathe.vektoren": {
+      "de": "Vektoren und Geraden"
+    },
+    "mathe.binomial": {
+      "de": "Binomialverteilung"
+    },
+    "mathe.erwartungswert": {
+      "de": "Erwartungswert"
+    },
+    "physik.kinematik": {
+      "de": "Kinematik"
+    },
+    "physik.bewegung": {
+      "de": "Bremsen und Wurf"
+    },
+    "physik.energie": {
+      "de": "Energie und Arbeit"
+    },
+    "physik.elektrisches-feld": {
+      "de": "Elektrisches Feld"
+    },
+    "physik.schwingungen": {
+      "de": "Schwingungen"
+    },
+    "biologie.genetik": {
+      "de": "Genetik"
+    },
+    "biologie.proteinbiosynthese": {
+      "de": "Proteinbiosynthese"
+    },
+    "biologie.enzyme": {
+      "de": "Enzyme"
+    },
+    "biologie.oekologie": {
+      "de": "Ökologie"
+    },
+    "englisch.vocabulary": {
+      "de": "Vocabulary C1"
+    },
+    "englisch.collocations": {
+      "de": "Verben und falsche Freunde"
+    },
+    "englisch.grammar": {
+      "de": "Advanced Grammar"
+    },
+    "englisch.grammar-advanced": {
+      "de": "Satzstrukturen"
+    },
+    "deutsch.epochen": {
+      "de": "Literaturepochen"
+    },
+    "deutsch.literatur20": {
+      "de": "Literatur des 20. Jahrhunderts"
+    },
+    "deutsch.rhetorik": {
+      "de": "Rhetorische Mittel"
+    },
+    "deutsch.argumentation": {
+      "de": "Argumentation"
+    }
+  },
+  "world": {
+    "image": {
+      "file": "karte.jpg",
+      "width": 2048,
+      "height": 1536
+    },
+    "start": "tor",
+    "nodes": [
+      {
+        "id": "tor",
+        "title": {
+          "de": "Campustor",
+          "en": "Campus gate"
+        },
+        "x": 0.1,
+        "y": 0.86,
+        "requires": []
+      },
+      {
+        "id": "hoersaal",
+        "title": {
+          "de": "Hörsaal",
+          "en": "Lecture hall"
+        },
+        "x": 0.26,
+        "y": 0.76,
+        "requires": [],
+        "level": "de.huckepack.oberstufe/ableitungen"
+      },
+      {
+        "id": "bibliothek",
+        "title": {
+          "de": "Bibliothek",
+          "en": "Library"
+        },
+        "x": 0.1,
+        "y": 0.66,
+        "requires": [],
+        "level": "de.huckepack.oberstufe/epochen"
+      },
+      {
+        "id": "mensa",
+        "title": {
+          "de": "Mensa",
+          "en": "Canteen"
+        },
+        "x": 0.44,
+        "y": 0.86,
+        "requires": [
+          "de.huckepack.oberstufe/ableitungen"
+        ],
+        "level": "de.huckepack.oberstufe/enzyme"
+      },
+      {
+        "id": "seminar",
+        "title": {
+          "de": "Seminarraum",
+          "en": "Seminar room"
+        },
+        "x": 0.42,
+        "y": 0.66,
+        "requires": [
+          "de.huckepack.oberstufe/ableitungen"
+        ],
+        "level": "de.huckepack.oberstufe/extrempunkte"
+      },
+      {
+        "id": "campuswiese",
+        "title": {
+          "de": "Campuswiese",
+          "en": "Campus lawn"
+        },
+        "x": 0.6,
+        "y": 0.8,
+        "requires": [
+          "de.huckepack.oberstufe/enzyme"
+        ],
+        "level": "de.huckepack.oberstufe/binomialverteilung"
+      },
+      {
+        "id": "botgarten",
+        "title": {
+          "de": "Botanischer Garten",
+          "en": "Botanical garden"
+        },
+        "x": 0.8,
+        "y": 0.7,
+        "requires": [
+          "de.huckepack.oberstufe/binomialverteilung"
+        ],
+        "level": "de.huckepack.oberstufe/genetik"
+      },
+      {
+        "id": "hafen",
+        "title": {
+          "de": "Hafen",
+          "en": "Harbour"
+        },
+        "x": 0.9,
+        "y": 0.88,
+        "requires": [
+          "de.huckepack.oberstufe/genetik"
+        ],
+        "level": "de.huckepack.oberstufe/vocabulary"
+      },
+      {
+        "id": "sprachzentrum",
+        "title": {
+          "de": "Sprachzentrum",
+          "en": "Language centre"
+        },
+        "x": 0.88,
+        "y": 0.5,
+        "requires": [
+          "de.huckepack.oberstufe/vocabulary"
+        ],
+        "level": "de.huckepack.oberstufe/grammar"
+      },
+      {
+        "id": "labor",
+        "title": {
+          "de": "Physiklabor",
+          "en": "Physics lab"
+        },
+        "x": 0.64,
+        "y": 0.58,
+        "requires": [
+          "de.huckepack.oberstufe/binomialverteilung"
+        ],
+        "level": "de.huckepack.oberstufe/elektrisches-feld"
+      },
+      {
+        "id": "rechenzentrum",
+        "title": {
+          "de": "Rechenzentrum",
+          "en": "Computer centre"
+        },
+        "x": 0.44,
+        "y": 0.46,
+        "requires": [
+          "de.huckepack.oberstufe/extrempunkte"
+        ],
+        "level": "de.huckepack.oberstufe/integrale"
+      },
+      {
+        "id": "sternwarte",
+        "title": {
+          "de": "Sternwarte",
+          "en": "Observatory"
+        },
+        "x": 0.26,
+        "y": 0.52,
+        "requires": [
+          "de.huckepack.oberstufe/epochen"
+        ],
+        "level": "de.huckepack.oberstufe/kinematik"
+      },
+      {
+        "id": "aula",
+        "title": {
+          "de": "Aula",
+          "en": "Great hall"
+        },
+        "x": 0.1,
+        "y": 0.44,
+        "requires": [
+          "de.huckepack.oberstufe/epochen"
+        ],
+        "level": "de.huckepack.oberstufe/rhetorik"
+      },
+      {
+        "id": "debattierhaus",
+        "title": {
+          "de": "Debattierhaus",
+          "en": "Debating house"
+        },
+        "x": 0.12,
+        "y": 0.24,
+        "requires": [
+          "de.huckepack.oberstufe/rhetorik"
+        ],
+        "level": "de.huckepack.oberstufe/argumentation"
+      },
+      {
+        "id": "uhrenturm",
+        "title": {
+          "de": "Uhrenturm",
+          "en": "Clock tower"
+        },
+        "x": 0.3,
+        "y": 0.24,
+        "requires": [
+          "de.huckepack.oberstufe/kinematik"
+        ],
+        "level": "de.huckepack.oberstufe/schwingungen"
+      },
+      {
+        "id": "kraftwerk",
+        "title": {
+          "de": "Heizkraftwerk",
+          "en": "Power plant"
+        },
+        "x": 0.48,
+        "y": 0.24,
+        "requires": [
+          "de.huckepack.oberstufe/integrale"
+        ],
+        "level": "de.huckepack.oberstufe/energie"
+      },
+      {
+        "id": "vermessung",
+        "title": {
+          "de": "Vermessungsturm",
+          "en": "Surveying tower"
+        },
+        "x": 0.68,
+        "y": 0.34,
+        "requires": [
+          "de.huckepack.oberstufe/elektrisches-feld"
+        ],
+        "level": "de.huckepack.oberstufe/vektoren"
+      },
+      {
+        "id": "gewaechshaus",
+        "title": {
+          "de": "Gewächshaus",
+          "en": "Greenhouse"
+        },
+        "x": 0.88,
+        "y": 0.24,
+        "requires": [
+          "de.huckepack.oberstufe/vektoren"
+        ],
+        "level": "de.huckepack.oberstufe/oekologie"
+      }
+    ],
+    "paths": [
+      [
+        "tor",
+        "hoersaal"
+      ],
+      [
+        "tor",
+        "bibliothek"
+      ],
+      [
+        "hoersaal",
+        "seminar"
+      ],
+      [
+        "hoersaal",
+        "mensa"
+      ],
+      [
+        "bibliothek",
+        "sternwarte"
+      ],
+      [
+        "bibliothek",
+        "aula"
+      ],
+      [
+        "aula",
+        "debattierhaus"
+      ],
+      [
+        "sternwarte",
+        "uhrenturm"
+      ],
+      [
+        "debattierhaus",
+        "uhrenturm"
+      ],
+      [
+        "seminar",
+        "rechenzentrum"
+      ],
+      [
+        "sternwarte",
+        "rechenzentrum"
+      ],
+      [
+        "mensa",
+        "campuswiese"
+      ],
+      [
+        "campuswiese",
+        "botgarten"
+      ],
+      [
+        "campuswiese",
+        "labor"
+      ],
+      [
+        "botgarten",
+        "hafen"
+      ],
+      [
+        "hafen",
+        "sprachzentrum"
+      ],
+      [
+        "botgarten",
+        "sprachzentrum"
+      ],
+      [
+        "rechenzentrum",
+        "kraftwerk"
+      ],
+      [
+        "labor",
+        "vermessung"
+      ],
+      [
+        "kraftwerk",
+        "vermessung"
+      ],
+      [
+        "vermessung",
+        "gewaechshaus"
+      ],
+      [
+        "sprachzentrum",
+        "gewaechshaus"
+      ],
+      [
+        "seminar",
+        "campuswiese"
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "de.huckepack.oberstufe/ableitungen",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Ableitungen"
+      },
+      "subject": "mathe",
+      "grade": 11,
+      "tasks": [
+        {
+          "id": "ableit-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.ableitungen"
+          ],
+          "clue": {
+            "de": "Die Funktion lautet f(x) = 3x² + 5x."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Steigung f'(4)?"
+          },
+          "answer": 29,
+          "difficulty": 1
+        },
+        {
+          "id": "ableit-2",
+          "type": "relay",
+          "skills": [
+            "mathe.ableitungen"
+          ],
+          "first": {
+            "de": "Leite f(x) = x³ ab und berechne f'(2)."
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "add",
+            "operand": 5
+          },
+          "second": {
+            "de": "Es gilt f'(2) = {x}. Wie groß ist h'(2) für h(x) = x³ + 5x?"
+          }
+        },
+        {
+          "id": "ableit-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.ableitungen"
+          ],
+          "prompt": {
+            "de": "Welche Funktion gehört zu welcher Ableitung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "x⁵"
+              },
+              "right": {
+                "de": "5x⁴"
+              }
+            },
+            {
+              "left": {
+                "de": "4x³"
+              },
+              "right": {
+                "de": "12x²"
+              }
+            },
+            {
+              "left": {
+                "de": "ln(x)"
+              },
+              "right": {
+                "de": "1/x"
+              }
+            },
+            {
+              "left": {
+                "de": "cos(x)"
+              },
+              "right": {
+                "de": "−sin(x)"
+              }
+            },
+            {
+              "left": {
+                "de": "1/x"
+              },
+              "right": {
+                "de": "−1/x²"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ableit-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.ableitungen"
+          ],
+          "question": {
+            "de": "Wie lautet die Ableitung von f(x) = x²·sin(x)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "2x·sin(x) + x²·cos(x)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "2x·cos(x)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "2x·sin(x) − x²·cos(x)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "x²·cos(x)"
+              }
+            }
+          ],
+          "correct": "a",
+          "difficulty": 3
+        },
+        {
+          "id": "ableit-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.ableitungen"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = 2x² − 12x + 5. Die Tangente soll waagerecht verlaufen."
+          },
+          "prompt": {
+            "de": "An welcher Stelle x ist das der Fall?"
+          },
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/ableitungen-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Ableitungen: Regeln"
+      },
+      "subject": "mathe",
+      "grade": 11,
+      "place": "hoersaal",
+      "tasks": [
+        {
+          "id": "ableit-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.kettenregel"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = (2x + 1)²."
+          },
+          "prompt": {
+            "de": "Wie groß ist f'(1)? Nutzt die Kettenregel."
+          },
+          "answer": 12,
+          "difficulty": 1
+        },
+        {
+          "id": "ableit-2",
+          "type": "relay",
+          "skills": [
+            "mathe.kettenregel"
+          ],
+          "first": {
+            "de": "Bestimme f'(1) für f(x) = (x² + 1)³."
+          },
+          "firstAnswer": 24,
+          "operation": {
+            "op": "add",
+            "operand": 6
+          },
+          "second": {
+            "de": "Es gilt f'(1) = {x}. Wie groß ist g'(1) für g(x) = (x² + 1)³ + 6x?"
+          }
+        },
+        {
+          "id": "ableit-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.kettenregel"
+          ],
+          "prompt": {
+            "de": "Welche Funktion gehört zu welcher Ableitung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "x·eˣ"
+              },
+              "right": {
+                "de": "eˣ·(1 + x)"
+              }
+            },
+            {
+              "left": {
+                "de": "sin(2x)"
+              },
+              "right": {
+                "de": "2·cos(2x)"
+              }
+            },
+            {
+              "left": {
+                "de": "(3x + 1)⁴"
+              },
+              "right": {
+                "de": "12·(3x + 1)³"
+              }
+            },
+            {
+              "left": {
+                "de": "e^(3x)"
+              },
+              "right": {
+                "de": "3·e^(3x)"
+              }
+            },
+            {
+              "left": {
+                "de": "x²·ln(x)"
+              },
+              "right": {
+                "de": "2x·ln(x) + x"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ableit-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.kettenregel"
+          ],
+          "question": {
+            "de": "Wie lautet die Ableitung von f(x) = e^(2x)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "e^(2x)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "2·e^(2x)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "2x·e^(2x−1)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "e^(2x)/2"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "ableit-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.kettenregel"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = x³·(x + 1). Leitet mit der Produktregel ab."
+          },
+          "prompt": {
+            "de": "Wie groß ist f'(2)?"
+          },
+          "answer": 44,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/extrempunkte",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Extrempunkte"
+      },
+      "subject": "mathe",
+      "grade": 11,
+      "tasks": [
+        {
+          "id": "extrem-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.extrempunkte"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = x² − 8x + 3."
+          },
+          "prompt": {
+            "de": "An welcher Stelle x liegt der Tiefpunkt?"
+          },
+          "answer": 4,
+          "difficulty": 1
+        },
+        {
+          "id": "extrem-2",
+          "type": "relay",
+          "skills": [
+            "mathe.extrempunkte"
+          ],
+          "first": {
+            "de": "Der Graph von f(x) = x² − 6x + 5 hat einen Tiefpunkt. Welchen x-Wert hat er?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "add",
+            "operand": 8
+          },
+          "second": {
+            "de": "Der Tiefpunkt liegt bei x = {x}. Der Graph wird um 8 nach rechts verschoben. Welchen x-Wert hat der Tiefpunkt dann?"
+          }
+        },
+        {
+          "id": "extrem-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.extrempunkte"
+          ],
+          "prompt": {
+            "de": "Welche Bedingung gehört zu welcher Aussage?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "f'(x) = 0"
+              },
+              "right": {
+                "de": "notwendig für eine Extremstelle"
+              }
+            },
+            {
+              "left": {
+                "de": "f'(x) = 0 und f''(x) > 0"
+              },
+              "right": {
+                "de": "Tiefpunkt"
+              }
+            },
+            {
+              "left": {
+                "de": "f'(x) = 0 und f''(x) < 0"
+              },
+              "right": {
+                "de": "Hochpunkt"
+              }
+            },
+            {
+              "left": {
+                "de": "f''(x) = 0 und f'''(x) ≠ 0"
+              },
+              "right": {
+                "de": "Wendestelle"
+              }
+            }
+          ]
+        },
+        {
+          "id": "extrem-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.extrempunkte"
+          ],
+          "question": {
+            "de": "Für f(x) = x³ − 3x gilt f'(x) = 3x² − 3 und f''(x) = 6x. Was stimmt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Hochpunkt bei x = 1, Tiefpunkt bei x = −1"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Nur ein Extrempunkt bei x = 0"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Tiefpunkt bei x = 1, Hochpunkt bei x = −1"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Sattelpunkt bei x = 0"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "extrem-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.extrempunkte"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = −x² + 6x + 1. Der Hochpunkt liegt bei x = 3."
+          },
+          "prompt": {
+            "de": "Wie groß ist der y-Wert des Hochpunkts?"
+          },
+          "answer": 10
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/integrale",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Integrale"
+      },
+      "subject": "mathe",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "integr-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.integrale"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = 2x. Die Grenzen sind 0 und 3."
+          },
+          "prompt": {
+            "de": "Wie groß ist das bestimmte Integral von f?"
+          },
+          "answer": 9,
+          "difficulty": 1
+        },
+        {
+          "id": "integr-2",
+          "type": "relay",
+          "skills": [
+            "mathe.integrale"
+          ],
+          "first": {
+            "de": "Berechne das Integral von 0 bis 2 über 3x² dx."
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "multiply",
+            "operand": 5
+          },
+          "second": {
+            "de": "Das Integral aus Schritt 1 ist {x}. Wie groß ist das Integral von 0 bis 2 über 15x² dx?"
+          }
+        },
+        {
+          "id": "integr-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.integrale"
+          ],
+          "prompt": {
+            "de": "Welche Funktion gehört zu welcher Stammfunktion (ohne +C)?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "4x³"
+              },
+              "right": {
+                "de": "x⁴"
+              }
+            },
+            {
+              "left": {
+                "de": "1/x"
+              },
+              "right": {
+                "de": "ln|x|"
+              }
+            },
+            {
+              "left": {
+                "de": "sin(x)"
+              },
+              "right": {
+                "de": "−cos(x)"
+              }
+            },
+            {
+              "left": {
+                "de": "e^(2x)"
+              },
+              "right": {
+                "de": "½·e^(2x)"
+              }
+            },
+            {
+              "left": {
+                "de": "6x"
+              },
+              "right": {
+                "de": "3x²"
+              }
+            }
+          ]
+        },
+        {
+          "id": "integr-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.integrale"
+          ],
+          "question": {
+            "de": "Welche Stammfunktion hat f(x) = 3x² + 2?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "6x + C"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "x³ + 2 + C"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "3x³ + 2x + C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "x³ + 2x + C"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "integr-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.integrale"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = 2x + 1. Die Grenzen sind x = 1 und x = 3."
+          },
+          "prompt": {
+            "de": "Wie groß ist der Flächeninhalt unter dem Graphen (in FE)?"
+          },
+          "answer": 10,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/integrale-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Integrale: Flächen"
+      },
+      "subject": "mathe",
+      "grade": 12,
+      "place": "rechenzentrum",
+      "tasks": [
+        {
+          "id": "integr-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.flaeche"
+          ],
+          "clue": {
+            "de": "Es ist f(x) = 4x³. Die Grenzen sind 0 und 2."
+          },
+          "prompt": {
+            "de": "Wie groß ist das bestimmte Integral?"
+          },
+          "answer": 16,
+          "difficulty": 1
+        },
+        {
+          "id": "integr-2",
+          "type": "relay",
+          "skills": [
+            "mathe.flaeche"
+          ],
+          "first": {
+            "de": "Berechne das Integral von 0 bis 3 über x² dx."
+          },
+          "firstAnswer": 9,
+          "operation": {
+            "op": "subtract",
+            "operand": 4
+          },
+          "second": {
+            "de": "Eine Fläche hat {x} FE. Ein Rechteck mit 4 FE wird abgezogen. Wie viele FE bleiben?"
+          }
+        },
+        {
+          "id": "integr-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.flaeche"
+          ],
+          "prompt": {
+            "de": "Welches Integral hat welchen Wert?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "∫₀¹ 6x dx"
+              },
+              "right": {
+                "de": "3"
+              }
+            },
+            {
+              "left": {
+                "de": "∫₀² x dx"
+              },
+              "right": {
+                "de": "2"
+              }
+            },
+            {
+              "left": {
+                "de": "∫₀³ 2x dx"
+              },
+              "right": {
+                "de": "9"
+              }
+            },
+            {
+              "left": {
+                "de": "∫₀² 3x² dx"
+              },
+              "right": {
+                "de": "8"
+              }
+            },
+            {
+              "left": {
+                "de": "∫₀² (x + 1) dx"
+              },
+              "right": {
+                "de": "4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "integr-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.flaeche"
+          ],
+          "question": {
+            "de": "Wo schneiden sich f(x) = x und g(x) = x²?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "bei x = 0 und x = 1"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "nur bei x = 1"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "bei x = 1 und x = −1"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "bei x = 0 und x = 2"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "integr-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.flaeche"
+          ],
+          "clue": {
+            "de": "Der Graph von f(x) = 6x − 3x² schließt mit der x-Achse eine Fläche ein. Die Nullstellen sind 0 und 2."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Fläche (in FE)?"
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/vektoren",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Vektoren und Geraden"
+      },
+      "subject": "mathe",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "vektor-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.vektoren"
+          ],
+          "clue": {
+            "de": "Es sind A(1|2|3) und B(4|6|15)."
+          },
+          "prompt": {
+            "de": "Wie lang ist die Strecke AB?"
+          },
+          "answer": 13,
+          "difficulty": 1
+        },
+        {
+          "id": "vektor-2",
+          "type": "relay",
+          "skills": [
+            "mathe.vektoren"
+          ],
+          "first": {
+            "de": "Berechne den Betrag des Vektors (2|3|6)."
+          },
+          "firstAnswer": 7,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "de": "Der Vektor (2|3|6) hat den Betrag {x}. Er wird mit 3 multipliziert. Wie groß ist der Betrag des neuen Vektors?"
+          }
+        },
+        {
+          "id": "vektor-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.vektoren"
+          ],
+          "prompt": {
+            "de": "Welcher Begriff gehört zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Skalarprodukt gleich 0"
+              },
+              "right": {
+                "de": "Vektoren stehen senkrecht"
+              }
+            },
+            {
+              "left": {
+                "de": "a = k·b"
+              },
+              "right": {
+                "de": "Vektoren sind parallel"
+              }
+            },
+            {
+              "left": {
+                "de": "Richtungsvektor"
+              },
+              "right": {
+                "de": "gibt die Richtung der Geraden an"
+              }
+            },
+            {
+              "left": {
+                "de": "Ortsvektor"
+              },
+              "right": {
+                "de": "zeigt vom Ursprung zum Punkt"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vektor-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.vektoren"
+          ],
+          "question": {
+            "de": "Liegt P(5|7|9) auf g: x = (1|3|5) + t·(2|2|2)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Ja, für t = 3"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Ja, für t = 2"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Nein, die y-Koordinate passt nicht"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Nein, nur die z-Koordinate passt"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "vektor-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.vektoren"
+          ],
+          "clue": {
+            "de": "Es sind u = (3|2|−1) und v = (1|k|7)."
+          },
+          "prompt": {
+            "de": "Für welches k stehen u und v senkrecht aufeinander?"
+          },
+          "answer": 2,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/binomialverteilung",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Binomialverteilung"
+      },
+      "subject": "mathe",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "binomi-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.binomial"
+          ],
+          "clue": {
+            "de": "Ein Würfel wird 60-mal geworfen. X zählt die Sechser."
+          },
+          "prompt": {
+            "de": "Wie groß ist der Erwartungswert von X?"
+          },
+          "answer": 10,
+          "difficulty": 1
+        },
+        {
+          "id": "binomi-2",
+          "type": "relay",
+          "skills": [
+            "mathe.binomial"
+          ],
+          "first": {
+            "de": "Eine Münze wird 40-mal geworfen. Wie groß ist der Erwartungswert der Anzahl Kopf?"
+          },
+          "firstAnswer": 20,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "de": "Es werden im Mittel {x}-mal Kopf erwartet. Jedes Kopf bringt 3 Punkte. Wie viele Punkte erwartet man im Mittel?"
+          }
+        },
+        {
+          "id": "binomi-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.binomial"
+          ],
+          "prompt": {
+            "de": "Welche Größe gehört zu welcher Formel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Erwartungswert"
+              },
+              "right": {
+                "de": "n·p"
+              }
+            },
+            {
+              "left": {
+                "de": "Varianz"
+              },
+              "right": {
+                "de": "n·p·(1 − p)"
+              }
+            },
+            {
+              "left": {
+                "de": "Gegenwahrscheinlichkeit"
+              },
+              "right": {
+                "de": "1 − p"
+              }
+            },
+            {
+              "left": {
+                "de": "Standardabweichung"
+              },
+              "right": {
+                "de": "√(n·p·(1 − p))"
+              }
+            }
+          ]
+        },
+        {
+          "id": "binomi-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.binomial"
+          ],
+          "question": {
+            "de": "Welche Zufallsgröße ist binomialverteilt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Körpergröße eines Schülers"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Wartezeit auf den Bus"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Anzahl Wappen bei 10 Münzwürfen"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Augensumme zweier verschiedener Würfel"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "binomi-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.binomial"
+          ],
+          "clue": {
+            "de": "Eine faire Münze wird 100-mal geworfen. X zählt die Anzahl Kopf."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Standardabweichung von X?"
+          },
+          "answer": 5,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/binomialverteilung-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Erwartungswert"
+      },
+      "subject": "mathe",
+      "grade": 13,
+      "place": "campuswiese",
+      "tasks": [
+        {
+          "id": "binomi-1",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.erwartungswert"
+          ],
+          "clue": {
+            "de": "Ein Glücksrad zahlt mit Wahrscheinlichkeit 0,5 genau 10 €, sonst 0 €."
+          },
+          "prompt": {
+            "de": "Wie groß ist der Erwartungswert der Auszahlung (in €)?"
+          },
+          "answer": 5,
+          "difficulty": 1
+        },
+        {
+          "id": "binomi-2",
+          "type": "relay",
+          "skills": [
+            "mathe.erwartungswert"
+          ],
+          "first": {
+            "de": "Ein Spiel zahlt 6 € mit Wahrscheinlichkeit 0,25 und 2 € mit Wahrscheinlichkeit 0,75. Wie groß ist der Erwartungswert in €?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 20
+          },
+          "second": {
+            "de": "Ein Spiel hat den Erwartungswert {x} €. Man spielt es 20-mal. Wie viele € erwartet man insgesamt?"
+          }
+        },
+        {
+          "id": "binomi-3",
+          "type": "matchPairs",
+          "skills": [
+            "mathe.erwartungswert"
+          ],
+          "prompt": {
+            "de": "Welcher Begriff gehört zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Erwartungswert"
+              },
+              "right": {
+                "de": "Summe aller x·P(x)"
+              }
+            },
+            {
+              "left": {
+                "de": "Faires Spiel"
+              },
+              "right": {
+                "de": "Erwartungswert des Gewinns ist 0"
+              }
+            },
+            {
+              "left": {
+                "de": "Wahrscheinlichkeitsverteilung"
+              },
+              "right": {
+                "de": "Summe aller P(x) ist 1"
+              }
+            },
+            {
+              "left": {
+                "de": "Streuung"
+              },
+              "right": {
+                "de": "Varianz und Standardabweichung"
+              }
+            }
+          ]
+        },
+        {
+          "id": "binomi-4",
+          "type": "bothAgree",
+          "skills": [
+            "mathe.erwartungswert"
+          ],
+          "question": {
+            "de": "Einsatz 2 €. Mit Wahrscheinlichkeit 0,4 bekommt man 5 € ausgezahlt, sonst nichts. Ist das Spiel fair?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Nein, im Mittel verliert man 2 €"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Nein, im Mittel gewinnt man 1 €"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Nein, im Mittel verliert man 0,50 €"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Ja, der erwartete Gewinn ist 0 €"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "binomi-5",
+          "type": "splitInfo",
+          "skills": [
+            "mathe.erwartungswert"
+          ],
+          "clue": {
+            "de": "Ein Würfel zahlt bei 1 bis 3 nichts, bei 4 genau 3 €, bei 5 genau 6 € und bei 6 genau 9 €."
+          },
+          "prompt": {
+            "de": "Wie groß ist der Erwartungswert der Auszahlung (in €)?"
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/kinematik",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Kinematik"
+      },
+      "subject": "physik",
+      "grade": 11,
+      "tasks": [
+        {
+          "id": "kinema-1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.kinematik"
+          ],
+          "clue": {
+            "de": "Ein Fahrrad fährt 5 s lang mit 6 m/s."
+          },
+          "prompt": {
+            "de": "Wie viele Meter legt es zurück?"
+          },
+          "answer": 30,
+          "difficulty": 1
+        },
+        {
+          "id": "kinema-2",
+          "type": "relay",
+          "skills": [
+            "physik.kinematik"
+          ],
+          "first": {
+            "de": "Ein Auto beschleunigt aus dem Stand 4 s lang mit 3 m/s². Wie schnell ist es in m/s?"
+          },
+          "firstAnswer": 12,
+          "operation": {
+            "op": "multiply",
+            "operand": 5
+          },
+          "second": {
+            "de": "Das Auto fährt mit {x} m/s und hält diese Geschwindigkeit 5 s lang. Wie viele Meter legt es zurück?"
+          }
+        },
+        {
+          "id": "kinema-3",
+          "type": "matchPairs",
+          "skills": [
+            "physik.kinematik"
+          ],
+          "prompt": {
+            "de": "Welche Größe gehört zu welcher Einheit?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Geschwindigkeit"
+              },
+              "right": {
+                "de": "m/s"
+              }
+            },
+            {
+              "left": {
+                "de": "Beschleunigung"
+              },
+              "right": {
+                "de": "m/s²"
+              }
+            },
+            {
+              "left": {
+                "de": "Kraft"
+              },
+              "right": {
+                "de": "N"
+              }
+            },
+            {
+              "left": {
+                "de": "Arbeit"
+              },
+              "right": {
+                "de": "J"
+              }
+            },
+            {
+              "left": {
+                "de": "Leistung"
+              },
+              "right": {
+                "de": "W"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kinema-4",
+          "type": "bothAgree",
+          "skills": [
+            "physik.kinematik"
+          ],
+          "question": {
+            "de": "Freier Fall aus der Ruhe (g = 10 m/s²). Welche Strecke ist nach 3 s zurückgelegt?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "45 m"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "30 m"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "90 m"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "15 m"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "kinema-5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.kinematik"
+          ],
+          "clue": {
+            "de": "Ein Stein fällt aus 80 m Höhe (g = 10 m/s², ohne Luftwiderstand)."
+          },
+          "prompt": {
+            "de": "Wie lange fällt er (in s)?"
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/kinematik-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Kinematik: Bremsen und Werfen"
+      },
+      "subject": "physik",
+      "grade": 11,
+      "place": "sternwarte",
+      "tasks": [
+        {
+          "id": "kinema-1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.bewegung"
+          ],
+          "clue": {
+            "de": "Ein Zug fährt mit 20 m/s und bremst mit 2 m/s²."
+          },
+          "prompt": {
+            "de": "Nach wie vielen Sekunden steht er?"
+          },
+          "answer": 10,
+          "difficulty": 1
+        },
+        {
+          "id": "kinema-2",
+          "type": "relay",
+          "skills": [
+            "physik.bewegung"
+          ],
+          "first": {
+            "de": "Ein Ball wird senkrecht mit 20 m/s nach oben geworfen (g = 10 m/s²). Nach wie vielen Sekunden ist er oben?"
+          },
+          "firstAnswer": 2,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Der Ball steigt {x} s und fällt genauso lange zurück. Wie lange ist er insgesamt in der Luft (in s)?"
+          }
+        },
+        {
+          "id": "kinema-3",
+          "type": "matchPairs",
+          "skills": [
+            "physik.bewegung"
+          ],
+          "prompt": {
+            "de": "Welche Bewegung gehört zu welcher Formel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "gleichförmig"
+              },
+              "right": {
+                "de": "s = v·t"
+              }
+            },
+            {
+              "left": {
+                "de": "gleichmäßig beschleunigt"
+              },
+              "right": {
+                "de": "s = ½·a·t²"
+              }
+            },
+            {
+              "left": {
+                "de": "freier Fall"
+              },
+              "right": {
+                "de": "v = g·t"
+              }
+            },
+            {
+              "left": {
+                "de": "Kreisbewegung"
+              },
+              "right": {
+                "de": "a = v²/r"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kinema-4",
+          "type": "bothAgree",
+          "skills": [
+            "physik.bewegung"
+          ],
+          "question": {
+            "de": "Ein Körper hat eine konstante Beschleunigung. Wie sieht sein v-t-Diagramm aus?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "waagerechte Gerade"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Gerade mit konstanter Steigung"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Parabel"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Hyperbel"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "kinema-5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.bewegung"
+          ],
+          "clue": {
+            "de": "Ein Auto fährt mit 108 km/h und bremst gleichmäßig in 5 s bis zum Stillstand."
+          },
+          "prompt": {
+            "de": "Wie lang ist der Bremsweg (in m)?"
+          },
+          "answer": 75,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/energie",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Energie und Arbeit"
+      },
+      "subject": "physik",
+      "grade": 11,
+      "tasks": [
+        {
+          "id": "energi-1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.energie"
+          ],
+          "clue": {
+            "de": "Ein Körper mit 2 kg wird 5 m hoch gehoben (g = 10 m/s²)."
+          },
+          "prompt": {
+            "de": "Um wie viele Joule nimmt seine Lageenergie zu?"
+          },
+          "answer": 100,
+          "difficulty": 1
+        },
+        {
+          "id": "energi-2",
+          "type": "relay",
+          "skills": [
+            "physik.energie"
+          ],
+          "first": {
+            "de": "Ein Wagen mit 4 kg fährt mit 5 m/s. Wie groß ist seine Bewegungsenergie in J?"
+          },
+          "firstAnswer": 50,
+          "operation": {
+            "op": "add",
+            "operand": 30
+          },
+          "second": {
+            "de": "Der Wagen hat {x} J Bewegungsenergie. Ein Motor führt 30 J zu. Wie viele J sind es dann?"
+          }
+        },
+        {
+          "id": "energi-3",
+          "type": "matchPairs",
+          "skills": [
+            "physik.energie"
+          ],
+          "prompt": {
+            "de": "Welche Größe gehört zu welcher Formel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Lageenergie"
+              },
+              "right": {
+                "de": "m·g·h"
+              }
+            },
+            {
+              "left": {
+                "de": "Bewegungsenergie"
+              },
+              "right": {
+                "de": "½·m·v²"
+              }
+            },
+            {
+              "left": {
+                "de": "Spannenergie"
+              },
+              "right": {
+                "de": "½·D·s²"
+              }
+            },
+            {
+              "left": {
+                "de": "Leistung"
+              },
+              "right": {
+                "de": "W/t"
+              }
+            },
+            {
+              "left": {
+                "de": "Arbeit"
+              },
+              "right": {
+                "de": "F·s"
+              }
+            }
+          ]
+        },
+        {
+          "id": "energi-4",
+          "type": "bothAgree",
+          "skills": [
+            "physik.energie"
+          ],
+          "question": {
+            "de": "Ein Ball fällt reibungsfrei aus 20 m Höhe (g = 10 m/s²). Wie schnell ist er unten?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "40 m/s"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "10 m/s"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "20 m/s"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "400 m/s"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "energi-5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.energie"
+          ],
+          "clue": {
+            "de": "Ein Kran hebt 500 kg in 10 s um 4 m (g = 10 m/s²)."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Leistung in W?"
+          },
+          "answer": 2000,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/elektrisches-feld",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Elektrisches Feld"
+      },
+      "subject": "physik",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "elektr-1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.elektrisches-feld"
+          ],
+          "clue": {
+            "de": "Ein Plattenkondensator hat U = 200 V und den Plattenabstand d = 0,1 m."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Feldstärke in V/m?"
+          },
+          "answer": 2000,
+          "difficulty": 1
+        },
+        {
+          "id": "elektr-2",
+          "type": "relay",
+          "skills": [
+            "physik.elektrisches-feld"
+          ],
+          "first": {
+            "de": "Ein Kondensator hat C = 5 µF und liegt an 12 V. Wie groß ist die Ladung Q in µC?"
+          },
+          "firstAnswer": 60,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Ein Kondensator trägt {x} µC. Zwei gleiche Kondensatoren liegen parallel an derselben Spannung. Wie groß ist die Gesamtladung in µC?"
+          }
+        },
+        {
+          "id": "elektr-3",
+          "type": "matchPairs",
+          "skills": [
+            "physik.elektrisches-feld"
+          ],
+          "prompt": {
+            "de": "Welche Größe gehört zu welcher Einheit?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Feldstärke"
+              },
+              "right": {
+                "de": "V/m"
+              }
+            },
+            {
+              "left": {
+                "de": "Spannung"
+              },
+              "right": {
+                "de": "V"
+              }
+            },
+            {
+              "left": {
+                "de": "Kapazität"
+              },
+              "right": {
+                "de": "F"
+              }
+            },
+            {
+              "left": {
+                "de": "Ladung"
+              },
+              "right": {
+                "de": "C"
+              }
+            },
+            {
+              "left": {
+                "de": "Stromstärke"
+              },
+              "right": {
+                "de": "A"
+              }
+            }
+          ]
+        },
+        {
+          "id": "elektr-4",
+          "type": "bothAgree",
+          "skills": [
+            "physik.elektrisches-feld"
+          ],
+          "question": {
+            "de": "Der Abstand zweier Punktladungen wird verdoppelt. Was passiert mit der Kraft?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Sie halbiert sich"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Sie verdoppelt sich"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Sie wird viermal so groß"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Sie sinkt auf ein Viertel"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "elektr-5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.elektrisches-feld"
+          ],
+          "clue": {
+            "de": "Ein Kondensator hat C = 4 µF und U = 10 V. Es gilt W = ½·C·U²."
+          },
+          "prompt": {
+            "de": "Wie viele µJ Energie sind gespeichert?"
+          },
+          "answer": 200,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/schwingungen",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Schwingungen"
+      },
+      "subject": "physik",
+      "grade": 13,
+      "tasks": [
+        {
+          "id": "schwin-1",
+          "type": "splitInfo",
+          "skills": [
+            "physik.schwingungen"
+          ],
+          "clue": {
+            "de": "Ein Pendel macht 30 Schwingungen in 60 s."
+          },
+          "prompt": {
+            "de": "Wie groß ist die Periodendauer in s?"
+          },
+          "answer": 2,
+          "difficulty": 1
+        },
+        {
+          "id": "schwin-2",
+          "type": "relay",
+          "skills": [
+            "physik.schwingungen"
+          ],
+          "first": {
+            "de": "Ein Pendel hat die Periodendauer T = 2 s. Wie viele volle Schwingungen macht es in 60 s?"
+          },
+          "firstAnswer": 30,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Das Pendel macht {x} Schwingungen. Bei jeder geht es 2-mal durch die Ruhelage. Wie oft insgesamt?"
+          }
+        },
+        {
+          "id": "schwin-3",
+          "type": "matchPairs",
+          "skills": [
+            "physik.schwingungen"
+          ],
+          "prompt": {
+            "de": "Welche Größe gehört zu welcher Formel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Periodendauer"
+              },
+              "right": {
+                "de": "T = 1/f"
+              }
+            },
+            {
+              "left": {
+                "de": "Federpendel"
+              },
+              "right": {
+                "de": "T = 2π·√(m/D)"
+              }
+            },
+            {
+              "left": {
+                "de": "Fadenpendel"
+              },
+              "right": {
+                "de": "T = 2π·√(l/g)"
+              }
+            },
+            {
+              "left": {
+                "de": "Kreisfrequenz"
+              },
+              "right": {
+                "de": "ω = 2π·f"
+              }
+            }
+          ]
+        },
+        {
+          "id": "schwin-4",
+          "type": "bothAgree",
+          "skills": [
+            "physik.schwingungen"
+          ],
+          "question": {
+            "de": "Die Länge eines Fadenpendels wird vervierfacht. Was passiert mit der Periodendauer?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Sie verdoppelt sich"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Sie vervierfacht sich"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Sie halbiert sich"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Sie sinkt auf ein Viertel"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "schwin-5",
+          "type": "splitInfo",
+          "skills": [
+            "physik.schwingungen"
+          ],
+          "clue": {
+            "de": "Ein Federpendel hat D = 400 N/m und m = 4 kg. Es gilt ω = √(D/m)."
+          },
+          "prompt": {
+            "de": "Wie groß ist ω in 1/s?"
+          },
+          "answer": 10,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/genetik",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Genetik"
+      },
+      "subject": "biologie",
+      "grade": 11,
+      "tasks": [
+        {
+          "id": "geneti-1",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.genetik"
+          ],
+          "clue": {
+            "de": "Eine menschliche Körperzelle hat 46 Chromosomen."
+          },
+          "prompt": {
+            "de": "Wie viele Chromosomen hat eine Eizelle?"
+          },
+          "answer": 23,
+          "difficulty": 1
+        },
+        {
+          "id": "geneti-2",
+          "type": "relay",
+          "skills": [
+            "biologie.genetik"
+          ],
+          "first": {
+            "de": "Ein Mensch hat 46 Chromosomen in einer Körperzelle. Wie viele Chromosomenpaare sind das?"
+          },
+          "firstAnswer": 23,
+          "operation": {
+            "op": "subtract",
+            "operand": 1
+          },
+          "second": {
+            "de": "Es gibt {x} Chromosomenpaare. Ein Paar sind die Geschlechtschromosomen. Wie viele Autosomenpaare gibt es?"
+          }
+        },
+        {
+          "id": "geneti-3",
+          "type": "matchPairs",
+          "skills": [
+            "biologie.genetik"
+          ],
+          "prompt": {
+            "de": "Welcher Begriff gehört zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Allel"
+              },
+              "right": {
+                "de": "Variante eines Gens"
+              }
+            },
+            {
+              "left": {
+                "de": "Genotyp"
+              },
+              "right": {
+                "de": "Gesamtheit der Allele"
+              }
+            },
+            {
+              "left": {
+                "de": "Phänotyp"
+              },
+              "right": {
+                "de": "sichtbare Merkmale"
+              }
+            },
+            {
+              "left": {
+                "de": "homozygot"
+              },
+              "right": {
+                "de": "zwei gleiche Allele"
+              }
+            },
+            {
+              "left": {
+                "de": "Gonosom"
+              },
+              "right": {
+                "de": "Geschlechtschromosom"
+              }
+            }
+          ]
+        },
+        {
+          "id": "geneti-4",
+          "type": "bothAgree",
+          "skills": [
+            "biologie.genetik"
+          ],
+          "question": {
+            "de": "Kreuzung Aa × Aa (A dominant). Wie viel Prozent der Nachkommen zeigen das rezessive Merkmal?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "50 %"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "25 %"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "75 %"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "0 %"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "geneti-5",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.genetik"
+          ],
+          "clue": {
+            "de": "Kreuzung Aa × Aa. Das Merkmal A ist dominant. Es gibt 80 Nachkommen."
+          },
+          "prompt": {
+            "de": "Wie viele zeigen im Mittel das dominante Merkmal?"
+          },
+          "answer": 60,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/genetik-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Genetik: Vom Gen zum Protein"
+      },
+      "subject": "biologie",
+      "grade": 11,
+      "place": "botgarten",
+      "tasks": [
+        {
+          "id": "geneti-1",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.proteinbiosynthese"
+          ],
+          "clue": {
+            "de": "Ein Codon besteht aus 3 Basen. Eine mRNA hat 12 Basen im Leseraster."
+          },
+          "prompt": {
+            "de": "Wie viele Codons sind das?"
+          },
+          "answer": 4,
+          "difficulty": 1
+        },
+        {
+          "id": "geneti-2",
+          "type": "relay",
+          "skills": [
+            "biologie.proteinbiosynthese"
+          ],
+          "first": {
+            "de": "Ein Gen codiert 100 Aminosäuren. Wie viele Basen hat die mRNA im codierenden Bereich (ohne Stoppcodon)?"
+          },
+          "firstAnswer": 300,
+          "operation": {
+            "op": "add",
+            "operand": 3
+          },
+          "second": {
+            "de": "Der codierende Bereich hat {x} Basen. Das Stoppcodon fügt 3 Basen hinzu. Wie viele Basen sind es insgesamt?"
+          }
+        },
+        {
+          "id": "geneti-3",
+          "type": "matchPairs",
+          "skills": [
+            "biologie.proteinbiosynthese"
+          ],
+          "prompt": {
+            "de": "Welcher Vorgang gehört zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Transkription"
+              },
+              "right": {
+                "de": "DNA wird zu mRNA abgeschrieben"
+              }
+            },
+            {
+              "left": {
+                "de": "Translation"
+              },
+              "right": {
+                "de": "mRNA wird in Protein übersetzt"
+              }
+            },
+            {
+              "left": {
+                "de": "Replikation"
+              },
+              "right": {
+                "de": "DNA wird verdoppelt"
+              }
+            },
+            {
+              "left": {
+                "de": "Anticodon"
+              },
+              "right": {
+                "de": "liegt auf der tRNA"
+              }
+            }
+          ]
+        },
+        {
+          "id": "geneti-4",
+          "type": "bothAgree",
+          "skills": [
+            "biologie.proteinbiosynthese"
+          ],
+          "question": {
+            "de": "Welche Base ersetzt in der RNA das Thymin?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Adenin"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Cytosin"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Uracil"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Guanin"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "geneti-5",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.proteinbiosynthese"
+          ],
+          "clue": {
+            "de": "In einer doppelsträngigen DNA sind 20 % der Basen Adenin."
+          },
+          "prompt": {
+            "de": "Wie viel Prozent der Basen sind Cytosin?"
+          },
+          "answer": 30,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/enzyme",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Enzyme"
+      },
+      "subject": "biologie",
+      "grade": 11,
+      "tasks": [
+        {
+          "id": "enzyme-1",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.enzyme"
+          ],
+          "clue": {
+            "de": "Bei 20 °C setzt ein Enzym 5 Einheiten pro Minute um. Der Umsatz verdoppelt sich je 10 °C (unterhalb des Optimums)."
+          },
+          "prompt": {
+            "de": "Wie viele Einheiten pro Minute sind es bei 40 °C?"
+          },
+          "answer": 20,
+          "difficulty": 1
+        },
+        {
+          "id": "enzyme-2",
+          "type": "relay",
+          "skills": [
+            "biologie.enzyme"
+          ],
+          "first": {
+            "de": "Ein Enzym setzt 12 µmol Substrat pro Minute um. Wie viele µmol sind es in 5 min?"
+          },
+          "firstAnswer": 60,
+          "operation": {
+            "op": "divide",
+            "operand": 3
+          },
+          "second": {
+            "de": "Es wurden {x} µmol umgesetzt. Ein Drittel davon wird als Produkt abgetrennt. Wie viele µmol sind das?"
+          }
+        },
+        {
+          "id": "enzyme-3",
+          "type": "matchPairs",
+          "skills": [
+            "biologie.enzyme"
+          ],
+          "prompt": {
+            "de": "Welcher Begriff gehört zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Substrat"
+              },
+              "right": {
+                "de": "wird vom Enzym umgesetzt"
+              }
+            },
+            {
+              "left": {
+                "de": "aktives Zentrum"
+              },
+              "right": {
+                "de": "Bindestelle des Enzyms"
+              }
+            },
+            {
+              "left": {
+                "de": "Denaturierung"
+              },
+              "right": {
+                "de": "Strukturverlust durch Hitze"
+              }
+            },
+            {
+              "left": {
+                "de": "kompetitive Hemmung"
+              },
+              "right": {
+                "de": "Hemmstoff blockiert das aktive Zentrum"
+              }
+            },
+            {
+              "left": {
+                "de": "Produkt"
+              },
+              "right": {
+                "de": "Ergebnis der Reaktion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "enzyme-4",
+          "type": "bothAgree",
+          "skills": [
+            "biologie.enzyme"
+          ],
+          "question": {
+            "de": "Was passiert mit einem Enzym bei 90 °C?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Es arbeitet doppelt so schnell"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Es bleibt unverändert"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Es wird selbst zum Substrat"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Es wird denaturiert und verliert seine Wirkung"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "enzyme-5",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.enzyme"
+          ],
+          "clue": {
+            "de": "Es gilt v = Vmax·[S]/(KM + [S]). Vmax = 80 µmol/min, KM = 2 mmol/l."
+          },
+          "prompt": {
+            "de": "Wie groß ist v bei [S] = 2 mmol/l (in µmol/min)?"
+          },
+          "answer": 40,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/oekologie",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Ökologie"
+      },
+      "subject": "biologie",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "oekolo-1",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.oekologie"
+          ],
+          "clue": {
+            "de": "Nach der Zehnerregel gibt jede Stufe der Nahrungskette etwa 10 % ihrer Energie weiter. Pflanzen speichern 1000 kJ."
+          },
+          "prompt": {
+            "de": "Wie viele kJ erreichen die Pflanzenfresser?"
+          },
+          "answer": 100,
+          "difficulty": 1
+        },
+        {
+          "id": "oekolo-2",
+          "type": "relay",
+          "skills": [
+            "biologie.oekologie"
+          ],
+          "first": {
+            "de": "Produzenten speichern 20000 kJ. Wie viele kJ erreichen die Primärkonsumenten (Zehnerregel)?"
+          },
+          "firstAnswer": 2000,
+          "operation": {
+            "op": "divide",
+            "operand": 10
+          },
+          "second": {
+            "de": "Die Primärkonsumenten haben {x} kJ. Wie viele kJ erreichen die Sekundärkonsumenten (Zehnerregel)?"
+          }
+        },
+        {
+          "id": "oekolo-3",
+          "type": "matchPairs",
+          "skills": [
+            "biologie.oekologie"
+          ],
+          "prompt": {
+            "de": "Welcher Begriff gehört zu welchem Beispiel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Produzent"
+              },
+              "right": {
+                "de": "Eiche"
+              }
+            },
+            {
+              "left": {
+                "de": "Primärkonsument"
+              },
+              "right": {
+                "de": "Reh"
+              }
+            },
+            {
+              "left": {
+                "de": "Destruent"
+              },
+              "right": {
+                "de": "Schimmelpilz"
+              }
+            },
+            {
+              "left": {
+                "de": "Symbiose"
+              },
+              "right": {
+                "de": "Flechte"
+              }
+            },
+            {
+              "left": {
+                "de": "Parasitismus"
+              },
+              "right": {
+                "de": "Bandwurm"
+              }
+            }
+          ]
+        },
+        {
+          "id": "oekolo-4",
+          "type": "bothAgree",
+          "skills": [
+            "biologie.oekologie"
+          ],
+          "question": {
+            "de": "Welcher Faktor ist ein abiotischer Umweltfaktor?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Lichtintensität"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Konkurrenz"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Fressfeinde"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Parasitenbefall"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "oekolo-5",
+          "type": "splitInfo",
+          "skills": [
+            "biologie.oekologie"
+          ],
+          "clue": {
+            "de": "Fang-Wiederfang: 40 Tiere werden markiert und wieder freigelassen. Im zweiten Fang sind 30 Tiere dabei, davon 5 markiert. Schätzung: Population = (markierte Tiere · Tiere im zweiten Fang) : markierte Tiere im zweiten Fang."
+          },
+          "prompt": {
+            "de": "Wie groß ist die geschätzte Population?"
+          },
+          "answer": 240,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/vocabulary",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Vocabulary C1"
+      },
+      "subject": "englisch",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "vocabu-1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.vocabulary"
+          ],
+          "clue": {
+            "de": "Bedeutung: present everywhere at the same time"
+          },
+          "prompt": {
+            "de": "Welches Wort passt? 1 ambiguous  2 ubiquitous  3 meticulous  4 reluctant. Tippt die Nummer."
+          },
+          "answer": 2,
+          "difficulty": 1
+        },
+        {
+          "id": "vocabu-2",
+          "type": "relay",
+          "skills": [
+            "englisch.vocabulary"
+          ],
+          "first": {
+            "de": "Wie viele Silben hat das Wort 'ubiquitous'?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "add",
+            "operand": 4
+          },
+          "second": {
+            "de": "'ubiquitous' hat {x} Silben. 'meticulous' hat 4 Silben. Wie viele Silben haben beide zusammen?"
+          }
+        },
+        {
+          "id": "vocabu-3",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.vocabulary"
+          ],
+          "prompt": {
+            "de": "Which word means the same?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "ubiquitous"
+              },
+              "right": {
+                "de": "omnipresent"
+              }
+            },
+            {
+              "left": {
+                "de": "ephemeral"
+              },
+              "right": {
+                "de": "short-lived"
+              }
+            },
+            {
+              "left": {
+                "de": "reluctant"
+              },
+              "right": {
+                "de": "unwilling"
+              }
+            },
+            {
+              "left": {
+                "de": "meticulous"
+              },
+              "right": {
+                "de": "extremely careful"
+              }
+            },
+            {
+              "left": {
+                "de": "scarce"
+              },
+              "right": {
+                "de": "in short supply"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vocabu-4",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.vocabulary"
+          ],
+          "question": {
+            "de": "Choose the best word: 'The politician gave an ___ answer, so nobody knew his real opinion.'"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "ubiquitous"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "ambiguous"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "meticulous"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "ephemeral"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "vocabu-5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.vocabulary"
+          ],
+          "clue": {
+            "de": "Bedeutung: lasting for a very short time"
+          },
+          "prompt": {
+            "de": "Welches Wort passt? 1 permanent  2 profound  3 ephemeral  4 tangible. Tippt die Nummer."
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/vocabulary-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Vocabulary: Verbs and False Friends"
+      },
+      "subject": "englisch",
+      "grade": 12,
+      "place": "hafen",
+      "tasks": [
+        {
+          "id": "vocabu-1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.collocations"
+          ],
+          "clue": {
+            "de": "Bedeutung: to make a pain or problem less severe"
+          },
+          "prompt": {
+            "de": "Welches Wort passt? 1 exacerbate  2 undermine  3 alleviate  4 aggravate. Tippt die Nummer."
+          },
+          "answer": 3,
+          "difficulty": 1
+        },
+        {
+          "id": "vocabu-2",
+          "type": "relay",
+          "skills": [
+            "englisch.collocations"
+          ],
+          "first": {
+            "de": "Wie viele Silben hat das Wort 'comprehensive'?"
+          },
+          "firstAnswer": 4,
+          "operation": {
+            "op": "add",
+            "operand": 5
+          },
+          "second": {
+            "de": "'comprehensive' hat {x} Silben. 'sophisticated' hat 5 Silben. Wie viele Silben haben beide zusammen?"
+          }
+        },
+        {
+          "id": "vocabu-3",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.collocations"
+          ],
+          "prompt": {
+            "de": "Which German word is the right translation?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "eventually"
+              },
+              "right": {
+                "de": "schließlich"
+              }
+            },
+            {
+              "left": {
+                "de": "actually"
+              },
+              "right": {
+                "de": "tatsächlich"
+              }
+            },
+            {
+              "left": {
+                "de": "sensible"
+              },
+              "right": {
+                "de": "vernünftig"
+              }
+            },
+            {
+              "left": {
+                "de": "sympathetic"
+              },
+              "right": {
+                "de": "mitfühlend"
+              }
+            },
+            {
+              "left": {
+                "de": "become"
+              },
+              "right": {
+                "de": "werden"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vocabu-4",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.collocations"
+          ],
+          "question": {
+            "de": "What does 'eventually' mean?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "eventuell"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "ereignisreich"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "schließlich"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "unbedingt"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "vocabu-5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.collocations"
+          ],
+          "clue": {
+            "de": "Bedeutung: to leave something out"
+          },
+          "prompt": {
+            "de": "Welches Wort passt? 1 omit  2 admit  3 commit  4 permit. Tippt die Nummer."
+          },
+          "answer": 1,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/grammar",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Advanced Grammar"
+      },
+      "subject": "englisch",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "gramma-1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.grammar"
+          ],
+          "clue": {
+            "de": "Regel: Conditional type 3 nutzt 'had + past participle' im if-Satz und 'would have + past participle' im Hauptsatz."
+          },
+          "prompt": {
+            "de": "Welcher Satz ist Typ 3? 1 If I study, I will pass.  2 If I studied, I would pass.  3 If I had studied, I would have passed.  4 If I would study, I pass. Tippt die Nummer."
+          },
+          "answer": 3,
+          "difficulty": 1
+        },
+        {
+          "id": "gramma-2",
+          "type": "relay",
+          "skills": [
+            "englisch.grammar"
+          ],
+          "first": {
+            "de": "Wie viele Wörter hat der Satz 'If I had known, I would have called you.'?"
+          },
+          "firstAnswer": 9,
+          "operation": {
+            "op": "subtract",
+            "operand": 8
+          },
+          "second": {
+            "de": "Der Satz hat {x} Wörter. 'He said that he would have called me.' hat 8 Wörter. Wie viele Wörter hat der erste Satz mehr?"
+          }
+        },
+        {
+          "id": "gramma-3",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.grammar"
+          ],
+          "prompt": {
+            "de": "Which reported sentence belongs to the direct speech?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "\"I am tired.\""
+              },
+              "right": {
+                "de": "She said she was tired."
+              }
+            },
+            {
+              "left": {
+                "de": "\"I will come.\""
+              },
+              "right": {
+                "de": "He said he would come."
+              }
+            },
+            {
+              "left": {
+                "de": "\"We have finished.\""
+              },
+              "right": {
+                "de": "They said they had finished."
+              }
+            },
+            {
+              "left": {
+                "de": "\"I saw him.\""
+              },
+              "right": {
+                "de": "She said she had seen him."
+              }
+            }
+          ]
+        },
+        {
+          "id": "gramma-4",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.grammar"
+          ],
+          "question": {
+            "de": "Choose the correct passive: 'They are building a new library.'"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "A new library is built."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "A new library has been built."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "A new library was building."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "A new library is being built."
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "gramma-5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.grammar"
+          ],
+          "clue": {
+            "de": "Regel: Nach 'I wish' über die Gegenwart steht das Past Simple (bei 'be' meist 'were')."
+          },
+          "prompt": {
+            "de": "Welcher Satz ist richtig? 1 I wish I will be taller.  2 I wish I were taller.  3 I wish I would be taller.  4 I wish I am taller. Tippt die Nummer."
+          },
+          "answer": 2,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/grammar-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Advanced Grammar: Structures"
+      },
+      "subject": "englisch",
+      "grade": 13,
+      "place": "sprachzentrum",
+      "tasks": [
+        {
+          "id": "gramma-1",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.grammar-advanced"
+          ],
+          "clue": {
+            "de": "Regel: Für eine Vermutung über die Vergangenheit nutzt man 'must have' + past participle."
+          },
+          "prompt": {
+            "de": "Welcher Satz ist richtig? 1 He must have gone out.  2 He must went out.  3 He can has gone out.  4 He must be gone out. Tippt die Nummer."
+          },
+          "answer": 1,
+          "difficulty": 1
+        },
+        {
+          "id": "gramma-2",
+          "type": "relay",
+          "skills": [
+            "englisch.grammar-advanced"
+          ],
+          "first": {
+            "de": "Wie viele Wörter hat der Satz 'Hardly had she left when the phone rang.'?"
+          },
+          "firstAnswer": 8,
+          "operation": {
+            "op": "multiply",
+            "operand": 3
+          },
+          "second": {
+            "de": "Der Satz hat {x} Wörter. Ein Absatz enthält drei solche Sätze. Wie viele Wörter sind das?"
+          }
+        },
+        {
+          "id": "gramma-3",
+          "type": "matchPairs",
+          "skills": [
+            "englisch.grammar-advanced"
+          ],
+          "prompt": {
+            "de": "Which structure fits the example?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "inversion"
+              },
+              "right": {
+                "de": "Never have I seen such a mess."
+              }
+            },
+            {
+              "left": {
+                "de": "cleft sentence"
+              },
+              "right": {
+                "de": "It was Anna who called."
+              }
+            },
+            {
+              "left": {
+                "de": "mixed conditional"
+              },
+              "right": {
+                "de": "If I had slept, I would be fit now."
+              }
+            },
+            {
+              "left": {
+                "de": "participle clause"
+              },
+              "right": {
+                "de": "Having finished, she left."
+              }
+            },
+            {
+              "left": {
+                "de": "subjunctive"
+              },
+              "right": {
+                "de": "I suggest that he be on time."
+              }
+            }
+          ]
+        },
+        {
+          "id": "gramma-4",
+          "type": "bothAgree",
+          "skills": [
+            "englisch.grammar-advanced"
+          ],
+          "question": {
+            "de": "Choose the correct word: 'Scarcely had we arrived ___ it began to rain.'"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "when"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "than"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "after"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "as soon"
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "gramma-5",
+          "type": "splitInfo",
+          "skills": [
+            "englisch.grammar-advanced"
+          ],
+          "clue": {
+            "de": "Regel: Nach 'despite' folgt ein Nomen oder eine -ing-Form, kein vollständiger Nebensatz."
+          },
+          "prompt": {
+            "de": "Welcher Satz ist richtig? 1 Despite it was raining, we left.  2 Despite of the rain, we left.  3 Despite the rain, we left.  4 Despite that it rained, we left. Tippt die Nummer."
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/epochen",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Epochen der Literatur"
+      },
+      "subject": "deutsch",
+      "grade": 12,
+      "tasks": [
+        {
+          "id": "epoche-1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.epochen"
+          ],
+          "clue": {
+            "de": "Um 1770 bis 1785: Gefühl, Genie und Aufbegehren gegen Regeln, Goethes Jugendwerke."
+          },
+          "prompt": {
+            "de": "Welche Epoche ist das? 1 Barock  2 Sturm und Drang  3 Biedermeier  4 Naturalismus. Tippt die Nummer."
+          },
+          "answer": 2,
+          "difficulty": 1
+        },
+        {
+          "id": "epoche-2",
+          "type": "relay",
+          "skills": [
+            "deutsch.epochen"
+          ],
+          "first": {
+            "de": "Schillers 'Die Räuber' erschien 1781, 'Kabale und Liebe' 1784. Wie viele Jahre liegen dazwischen?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 12
+          },
+          "second": {
+            "de": "Zwischen den Werken liegen {x} Jahre. Wie viele Monate sind das?"
+          }
+        },
+        {
+          "id": "epoche-3",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.epochen"
+          ],
+          "prompt": {
+            "de": "Welche Epoche gehört zu welchem Werk?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Aufklärung"
+              },
+              "right": {
+                "de": "Lessing: Nathan der Weise"
+              }
+            },
+            {
+              "left": {
+                "de": "Sturm und Drang"
+              },
+              "right": {
+                "de": "Goethe: Die Leiden des jungen Werthers"
+              }
+            },
+            {
+              "left": {
+                "de": "Klassik"
+              },
+              "right": {
+                "de": "Schiller: Wilhelm Tell"
+              }
+            },
+            {
+              "left": {
+                "de": "Romantik"
+              },
+              "right": {
+                "de": "Eichendorff: Aus dem Leben eines Taugenichts"
+              }
+            },
+            {
+              "left": {
+                "de": "Realismus"
+              },
+              "right": {
+                "de": "Fontane: Effi Briest"
+              }
+            },
+            {
+              "left": {
+                "de": "Naturalismus"
+              },
+              "right": {
+                "de": "Hauptmann: Die Weber"
+              }
+            }
+          ]
+        },
+        {
+          "id": "epoche-4",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.epochen"
+          ],
+          "question": {
+            "de": "Welches Merkmal gehört zur Romantik?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Vernunft und Toleranz als oberstes Ziel"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Sehnsucht nach dem Unendlichen (blaue Blume)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Sachliche Schilderung des Arbeiteralltags"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Vergänglichkeit und Memento mori"
+              }
+            }
+          ],
+          "correct": "b"
+        },
+        {
+          "id": "epoche-5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.epochen"
+          ],
+          "clue": {
+            "de": "Um 1848 bis 1890: nüchterne Darstellung der Wirklichkeit, zum Beispiel bei Fontane und Storm."
+          },
+          "prompt": {
+            "de": "Welche Epoche ist das? 1 Romantik  2 Expressionismus  3 Realismus  4 Barock. Tippt die Nummer."
+          },
+          "answer": 3,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/epochen-2",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Literatur im 20. Jahrhundert"
+      },
+      "subject": "deutsch",
+      "grade": 12,
+      "place": "bibliothek",
+      "tasks": [
+        {
+          "id": "epoche-1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.literatur20"
+          ],
+          "clue": {
+            "de": "Um 1910 bis 1925: verzerrte Bilder, Großstadt, Krieg und Angst."
+          },
+          "prompt": {
+            "de": "Welche Epoche ist das? 1 Expressionismus  2 Biedermeier  3 Aufklärung  4 Barock. Tippt die Nummer."
+          },
+          "answer": 1,
+          "difficulty": 1
+        },
+        {
+          "id": "epoche-2",
+          "type": "relay",
+          "skills": [
+            "deutsch.literatur20"
+          ],
+          "first": {
+            "de": "Kafkas 'Die Verwandlung' erschien 1915, Brechts 'Dreigroschenoper' 1928. Wie viele Jahre liegen dazwischen?"
+          },
+          "firstAnswer": 13,
+          "operation": {
+            "op": "add",
+            "operand": 10
+          },
+          "second": {
+            "de": "Zwischen den Werken liegen {x} Jahre. Ein drittes Werk erscheint 10 Jahre nach der Dreigroschenoper. Wie viele Jahre nach der Verwandlung?"
+          }
+        },
+        {
+          "id": "epoche-3",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.literatur20"
+          ],
+          "prompt": {
+            "de": "Welcher Autor gehört zu welchem Werk?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Kafka"
+              },
+              "right": {
+                "de": "Der Prozess"
+              }
+            },
+            {
+              "left": {
+                "de": "Brecht"
+              },
+              "right": {
+                "de": "Mutter Courage und ihre Kinder"
+              }
+            },
+            {
+              "left": {
+                "de": "Thomas Mann"
+              },
+              "right": {
+                "de": "Buddenbrooks"
+              }
+            },
+            {
+              "left": {
+                "de": "Böll"
+              },
+              "right": {
+                "de": "Die verlorene Ehre der Katharina Blum"
+              }
+            },
+            {
+              "left": {
+                "de": "Dürrenmatt"
+              },
+              "right": {
+                "de": "Der Besuch der alten Dame"
+              }
+            },
+            {
+              "left": {
+                "de": "Frisch"
+              },
+              "right": {
+                "de": "Homo faber"
+              }
+            }
+          ]
+        },
+        {
+          "id": "epoche-4",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.literatur20"
+          ],
+          "question": {
+            "de": "Was kennzeichnet das epische Theater Brechts?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Einfühlung und Katharsis"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Einheit von Ort, Zeit und Handlung"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Verfremdung: Zuschauer sollen kritisch denken"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Strenger Vers und Reim"
+              }
+            }
+          ],
+          "correct": "c"
+        },
+        {
+          "id": "epoche-5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.literatur20"
+          ],
+          "clue": {
+            "de": "Nach 1945: Trümmer, Neuanfang, nüchterne und ehrliche Sprache."
+          },
+          "prompt": {
+            "de": "Welcher Begriff passt? 1 Romantik  2 Barock  3 Sturm und Drang  4 Trümmerliteratur. Tippt die Nummer."
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/rhetorik",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Rhetorische Mittel"
+      },
+      "subject": "deutsch",
+      "grade": 11,
+      "tasks": [
+        {
+          "id": "rhetor-1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "clue": {
+            "de": "Beispiel: 'Der Wind flüstert durch die Bäume.'"
+          },
+          "prompt": {
+            "de": "Welches Mittel ist das? 1 Metapher  2 Personifikation  3 Anapher  4 Ironie. Tippt die Nummer."
+          },
+          "answer": 2,
+          "difficulty": 1
+        },
+        {
+          "id": "rhetor-2",
+          "type": "relay",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "first": {
+            "de": "'Ich kam, ich sah, ich siegte.' Wie viele Verben stehen im Satz?"
+          },
+          "firstAnswer": 3,
+          "operation": {
+            "op": "multiply",
+            "operand": 2
+          },
+          "second": {
+            "de": "Der Satz hat {x} Glieder (Trikolon). Zwei solche Sätze folgen aufeinander. Wie viele Glieder sind das?"
+          }
+        },
+        {
+          "id": "rhetor-3",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "prompt": {
+            "de": "Welches Mittel gehört zu welchem Beispiel?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "Anapher"
+              },
+              "right": {
+                "de": "Ich will Frieden, ich will Freiheit, ich will Recht."
+              }
+            },
+            {
+              "left": {
+                "de": "Alliteration"
+              },
+              "right": {
+                "de": "Milch macht müde Männer munter."
+              }
+            },
+            {
+              "left": {
+                "de": "Vergleich"
+              },
+              "right": {
+                "de": "stark wie ein Bär"
+              }
+            },
+            {
+              "left": {
+                "de": "Antithese"
+              },
+              "right": {
+                "de": "Himmelhoch jauchzend, zu Tode betrübt"
+              }
+            },
+            {
+              "left": {
+                "de": "Rhetorische Frage"
+              },
+              "right": {
+                "de": "Wer wollte das schon?"
+              }
+            },
+            {
+              "left": {
+                "de": "Hyperbel"
+              },
+              "right": {
+                "de": "Ich habe es dir tausendmal gesagt."
+              }
+            }
+          ]
+        },
+        {
+          "id": "rhetor-4",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "question": {
+            "de": "Welches Mittel ist 'Er ist entschlafen.' (für: er ist gestorben)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Hyperbel"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Ironie"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Metapher"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Euphemismus"
+              }
+            }
+          ],
+          "correct": "d"
+        },
+        {
+          "id": "rhetor-5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.rhetorik"
+          ],
+          "clue": {
+            "de": "Zwei Wörter, die sich widersprechen, werden verbunden: 'beredtes Schweigen', 'bittersüß'."
+          },
+          "prompt": {
+            "de": "Welches Mittel ist das? 1 Chiasmus  2 Zeugma  3 Hyperbel  4 Oxymoron. Tippt die Nummer."
+          },
+          "answer": 4,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "de.huckepack.oberstufe/argumentation",
+      "schemaVersion": 1,
+      "title": {
+        "de": "Argumentation"
+      },
+      "subject": "deutsch",
+      "grade": 13,
+      "tasks": [
+        {
+          "id": "argume-1",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.argumentation"
+          ],
+          "clue": {
+            "de": "Ein Argument besteht aus Behauptung, Begründung und Beleg."
+          },
+          "prompt": {
+            "de": "Aus wie vielen Bestandteilen besteht ein Argument?"
+          },
+          "answer": 3,
+          "difficulty": 1
+        },
+        {
+          "id": "argume-2",
+          "type": "relay",
+          "skills": [
+            "deutsch.argumentation"
+          ],
+          "first": {
+            "de": "Ein Aufsatz hat eine Einleitung, einen Schluss und im Hauptteil 3 Argumente (je ein Absatz). Wie viele Absätze sind das?"
+          },
+          "firstAnswer": 5,
+          "operation": {
+            "op": "add",
+            "operand": 1
+          },
+          "second": {
+            "de": "Der Text hat {x} Absätze. Ein weiterer Absatz mit einem Gegenargument kommt hinzu. Wie viele Absätze sind es dann?"
+          }
+        },
+        {
+          "id": "argume-3",
+          "type": "matchPairs",
+          "skills": [
+            "deutsch.argumentation"
+          ],
+          "prompt": {
+            "de": "Welcher Begriff gehört zu welcher Erklärung?"
+          },
+          "pairs": [
+            {
+              "left": {
+                "de": "These"
+              },
+              "right": {
+                "de": "Behauptung"
+              }
+            },
+            {
+              "left": {
+                "de": "Argument"
+              },
+              "right": {
+                "de": "Begründung der These"
+              }
+            },
+            {
+              "left": {
+                "de": "Beleg"
+              },
+              "right": {
+                "de": "Fakt oder Beispiel als Stütze"
+              }
+            },
+            {
+              "left": {
+                "de": "Antithese"
+              },
+              "right": {
+                "de": "Gegenposition"
+              }
+            },
+            {
+              "left": {
+                "de": "Synthese"
+              },
+              "right": {
+                "de": "Vermittlung beider Positionen"
+              }
+            },
+            {
+              "left": {
+                "de": "Zitat"
+              },
+              "right": {
+                "de": "wörtlich übernommene Textstelle"
+              }
+            }
+          ]
+        },
+        {
+          "id": "argume-4",
+          "type": "bothAgree",
+          "skills": [
+            "deutsch.argumentation"
+          ],
+          "question": {
+            "de": "Welcher Satz enthält ein vollständiges Argument?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "de": "Die Schule sollte später beginnen, weil Jugendliche morgens weniger leistungsfähig sind."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "de": "Die Schule sollte später beginnen."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "de": "Das ist doch klar."
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "de": "Alle finden das gut."
+              }
+            }
+          ],
+          "correct": "a"
+        },
+        {
+          "id": "argume-5",
+          "type": "splitInfo",
+          "skills": [
+            "deutsch.argumentation"
+          ],
+          "clue": {
+            "de": "Argument: 'Meine drei Freunde haben ein Handy, also hat jeder Mensch eins.'"
+          },
+          "prompt": {
+            "de": "Welcher Fehlschluss ist das? 1 Zirkelschluss  2 Verallgemeinerung  3 Angriff auf die Person  4 Berufung auf eine Autorität. Tippt die Nummer."
+          },
+          "answer": 2,
+          "difficulty": 3
+        }
+      ]
+    }
+  ]
+}
