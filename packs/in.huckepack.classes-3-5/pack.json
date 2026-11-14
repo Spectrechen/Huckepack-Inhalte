@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "in.huckepack.classes-3-5",
-  "version": 1,
+  "version": 2,
   "title": {
     "en": "The River Village: Classes 3 to 5"
   },
@@ -744,11 +744,25 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "Your word is: elephant. Clap it out and tell your partner how many claps you made."
+            "en": "Your word is: bucket. Describe it without saying it: you carry water in it and it has a handle."
           },
           "prompt": {
-            "en": "Your partner claps a word. How many syllables does it have? Type the number."
+            "en": "Your partner describes a noun. Which word is it?"
           },
+          "options": [
+            {
+              "en": "broom"
+            },
+            {
+              "en": "bench"
+            },
+            {
+              "en": "bucket"
+            },
+            {
+              "en": "book"
+            }
+          ],
           "answer": 3
         },
         {
@@ -1360,10 +1374,10 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "Imran buys a pencil box for ₹45 and a ruler for ₹12. He gives the shopkeeper ₹100."
+            "en": "Imran buys a pencil box for ₹45 and a ruler for ₹12."
           },
           "prompt": {
-            "en": "How many rupees does he get back?"
+            "en": "He gives the shopkeeper ₹100. How many rupees does he get back?"
           },
           "answer": 43
         },
@@ -1507,12 +1521,26 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "Your word is: vegetable. Count its vowels (a, e, i, o, u) and tell your partner."
+            "en": "Your word is: knife. Say the word and ask your partner for the plural, when there are many."
           },
           "prompt": {
-            "en": "Your partner counts the vowels in a word. How many vowels does it have? Type the number."
+            "en": "Your partner says a word and asks for its plural. Which is correct?"
           },
-          "answer": 4
+          "options": [
+            {
+              "en": "knifes"
+            },
+            {
+              "en": "knives"
+            },
+            {
+              "en": "knife's"
+            },
+            {
+              "en": "knifs"
+            }
+          ],
+          "answer": 2
         },
         {
           "id": "market-2-4",
@@ -1840,12 +1868,26 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "Read this sentence aloud to your partner: The little frog jumped into the cool pond."
+            "en": "Your word is: frog. Say it aloud and ask your partner to find a word that rhymes with it."
           },
           "prompt": {
-            "en": "Your partner reads a sentence aloud. How many words does it have? Type the number."
+            "en": "Your partner says a word. Which word rhymes with it?"
           },
-          "answer": 8
+          "options": [
+            {
+              "en": "flag"
+            },
+            {
+              "en": "fish"
+            },
+            {
+              "en": "log"
+            },
+            {
+              "en": "fan"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "pond-2-4",
@@ -2150,10 +2192,10 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "The Ganga is about 2500 km long. A boat travels 100 km each day."
+            "en": "The Ganga is about 2500 km long."
           },
           "prompt": {
-            "en": "About how many days would the boat need to travel the whole river?"
+            "en": "A boat travels 100 km each day. About how many days would it need to travel the whole river?"
           },
           "answer": 25
         },
@@ -2589,10 +2631,10 @@
           "difficulty": 1,
           "type": "splitInfo",
           "clue": {
-            "en": "Every 1000 m up a hill, the air gets about 6 degrees Celsius colder. The village is at 30 degrees Celsius. The hilltop is 2000 m higher."
+            "en": "Every 1000 m up a hill, the air gets about 6 degrees Celsius colder. The hilltop is 2000 m higher than the village."
           },
           "prompt": {
-            "en": "About how many degrees Celsius is it at the hilltop?"
+            "en": "The village is at 30 degrees Celsius. About how many degrees Celsius is it at the hilltop?"
           },
           "answer": 18
         },
@@ -2857,10 +2899,10 @@
             "en": "The train leaves at 9:15 in the morning. The journey takes 40 minutes."
           },
           "prompt": {
-            "en": "When does the train arrive? Type the time as four digits, like 0830."
+            "en": "When does the train arrive? Type the time and pick a.m. or p.m."
           },
           "answer": 595,
-          "answerFormat": "time"
+          "answerFormat": "time12"
         },
         {
           "id": "station-2",
@@ -3086,9 +3128,20 @@
             "en": "Read this announcement aloud to your partner: The train from Delhi will arrive at platform number seven in ten minutes."
           },
           "prompt": {
-            "en": "Your partner reads an announcement aloud. How many words does it have? Type the number."
+            "en": "Your partner reads an announcement. In which tense is it written?"
           },
-          "answer": 13
+          "options": [
+            {
+              "en": "Past tense"
+            },
+            {
+              "en": "Present tense"
+            },
+            {
+              "en": "Future tense"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "station-2-4",
@@ -3250,12 +3303,26 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "Your word is: address. Clap it out and tell your partner how many claps you made."
+            "en": "Read this sentence aloud: The postman carried a heavy bag. Then say: look at the word \"heavy\"."
           },
           "prompt": {
-            "en": "Your partner claps a word. How many syllables does it have? Type the number."
+            "en": "Your partner reads a sentence and names one word from it. What kind of word is it?"
           },
-          "answer": 2
+          "options": [
+            {
+              "en": "noun"
+            },
+            {
+              "en": "verb"
+            },
+            {
+              "en": "adjective"
+            },
+            {
+              "en": "adverb"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "post-4",
@@ -3583,11 +3650,25 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "Your word is: watermelon. Clap it out and tell your partner how many claps you made."
+            "en": "Your word is: glad. Say it to your partner and ask: which word means the same?"
           },
           "prompt": {
-            "en": "Your partner claps a word. How many syllables does it have? Type the number."
+            "en": "Your partner says a word. Which word means almost the same?"
           },
+          "options": [
+            {
+              "en": "sad"
+            },
+            {
+              "en": "angry"
+            },
+            {
+              "en": "tired"
+            },
+            {
+              "en": "happy"
+            }
+          ],
           "answer": 4
         },
         {
@@ -4039,9 +4120,23 @@
             "en": "Read this riddle aloud: I have a face and two hands but no arms or legs. I tell you the time."
           },
           "prompt": {
-            "en": "Your partner reads a riddle aloud. How many letters are in the answer word? Type the number."
+            "en": "Your partner reads a riddle. What is the answer?"
           },
-          "answer": 5
+          "options": [
+            {
+              "en": "mirror"
+            },
+            {
+              "en": "doll"
+            },
+            {
+              "en": "clock"
+            },
+            {
+              "en": "coin"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "tower-2-4",

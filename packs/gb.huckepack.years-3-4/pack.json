@@ -1,7 +1,7 @@
 {
  "$schema": "../../docs/schema/pack.schema.json",
  "id": "gb.huckepack.years-3-4",
- "version": 1,
+ "version": 2,
  "title": {
   "en": "Huckepack Village: Years 3 and 4"
  },
@@ -1283,7 +1283,7 @@
       "en": "It is the afternoon. The hour hand is just before the 4 and the minute hand is at the 9."
      },
      "prompt": {
-      "en": "What time is it? Type four digits in 24-hour time."
+      "en": "What time is it? Type the time (like 345) and pick a.m. or p.m."
      },
      "answer": 945,
      "clueVisual": {
@@ -1292,7 +1292,7 @@
        "minute": 45
       }
      },
-     "answerFormat": "time"
+     "answerFormat": "time12"
     },
     {
      "id": "t2",
@@ -1880,12 +1880,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "en": "The word is 'butterfly'."
+      "en": "The word is 'butterfly'. Clap it out loud and say it slowly."
      },
      "prompt": {
-      "en": "How many syllables are in the word?"
+      "en": "Which is the right way to split your partner's word into syllables?"
      },
-     "answer": 3
+     "options": [
+      {
+       "en": "but-ter-fly"
+      },
+      {
+       "en": "butter-fly"
+      },
+      {
+       "en": "but-terfly"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "t2",
@@ -2005,12 +2016,26 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "en": "The word is 'unfortunately'."
+      "en": "The word is 'unfortunately'. It is the opposite of 'luckily'. Say it slowly."
      },
      "prompt": {
-      "en": "How many syllables are in the word?"
+      "en": "Which spelling matches the word your partner says?"
      },
-     "answer": 5
+     "options": [
+      {
+       "en": "unfortunately"
+      },
+      {
+       "en": "unfortunatly"
+      },
+      {
+       "en": "unfortunetely"
+      },
+      {
+       "en": "unfortunatley"
+      }
+     ],
+     "answer": 1
     }
    ]
   },
@@ -2117,12 +2142,26 @@
      "difficulty": 2,
      "type": "splitInfo",
      "clue": {
-      "en": "The word is 'knight'."
+      "en": "The word is 'knight'. Say it out loud."
      },
      "prompt": {
-      "en": "How many letters in the word are silent (you cannot hear them)?"
+      "en": "Which letters are silent in your partner's word?"
      },
-     "answer": 3
+     "options": [
+      {
+       "en": "k, g and h"
+      },
+      {
+       "en": "k only"
+      },
+      {
+       "en": "g and h only"
+      },
+      {
+       "en": "t only"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "t4",
@@ -2170,12 +2209,26 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "en": "The word is 'adventurous'."
+      "en": "Say this sentence out loud: The knight rode through the night."
      },
      "prompt": {
-      "en": "How many syllables are in the word?"
+      "en": "Which pair of homophones (same sound, different spelling) is in your partner's sentence?"
      },
-     "answer": 4
+     "options": [
+      {
+       "en": "knight / night"
+      },
+      {
+       "en": "rode / road"
+      },
+      {
+       "en": "through / threw"
+      },
+      {
+       "en": "the / thee"
+      }
+     ],
+     "answer": 1
     }
    ]
   },
@@ -2199,9 +2252,23 @@
       "en": "The sentence is: The small dog barked loudly at the cat."
      },
      "prompt": {
-      "en": "How many nouns are in the sentence?"
+      "en": "Which word in your partner's sentence is an adverb?"
      },
-     "answer": 2
+     "options": [
+      {
+       "en": "loudly"
+      },
+      {
+       "en": "small"
+      },
+      {
+       "en": "barked"
+      },
+      {
+       "en": "cat"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "t2",
@@ -2332,9 +2399,23 @@
       "en": "The sentence is: The brave knight quickly climbed the tall, grey tower."
      },
      "prompt": {
-      "en": "How many adjectives are in the sentence?"
+      "en": "Which of these words in your partner's sentence is NOT an adjective?"
      },
-     "answer": 3
+     "options": [
+      {
+       "en": "brave"
+      },
+      {
+       "en": "tall"
+      },
+      {
+       "en": "grey"
+      },
+      {
+       "en": "quickly"
+      }
+     ],
+     "answer": 4
     }
    ]
   },
@@ -2447,12 +2528,23 @@
      "difficulty": 2,
      "type": "splitInfo",
      "clue": {
-      "en": "Tom said hello. Then Anna said hi."
+      "en": "Tom said hello to Anna. Tell your partner exactly what Tom said."
      },
      "prompt": {
-      "en": "To write both spoken words with speech marks, how many speech marks do you need altogether? Count every single mark, opening and closing."
+      "en": "Which sentence shows what Tom said, with the speech marks in the right places?"
      },
-     "answer": 4
+     "options": [
+      {
+       "en": "‘Hello,’ said Tom."
+      },
+      {
+       "en": "‘Hello, said Tom.’"
+      },
+      {
+       "en": "Hello, ‘said Tom’."
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "t4",
@@ -2500,12 +2592,26 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "en": "The sentence is: Yesterday, the knights' horses ate the farmer's apples."
+      "en": "The phrase is: the knights' horses. The apostrophe comes after the s."
      },
      "prompt": {
-      "en": "How many apostrophes are in the sentence?"
+      "en": "What does the apostrophe in your partner's phrase show?"
      },
-     "answer": 2
+     "options": [
+      {
+       "en": "The horses belong to several knights"
+      },
+      {
+       "en": "The horses belong to one knight"
+      },
+      {
+       "en": "A letter is missing"
+      },
+      {
+       "en": "The word is a question"
+      }
+     ],
+     "answer": 1
     }
    ]
   },
@@ -4268,12 +4374,26 @@
      "difficulty": 2,
      "type": "splitInfo",
      "clue": {
-      "en": "The Normans built many castles after the year 1066. One castle was built in the year 1086."
+      "en": "It is a castle with a high mound of earth. A wooden tower stands on top, and a fenced yard lies below."
      },
      "prompt": {
-      "en": "How many years after 1066 was it built?"
+      "en": "Which type of castle does your partner describe?"
      },
-     "answer": 20
+     "options": [
+      {
+       "en": "motte-and-bailey"
+      },
+      {
+       "en": "stone keep with a curtain wall"
+      },
+      {
+       "en": "concentric castle"
+      },
+      {
+       "en": "hillfort"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "t4",
@@ -4397,12 +4517,26 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "en": "The Romans invaded Britain in the year AD 43. They left in about the year AD 410 (use 410 for the sum)."
+      "en": "A group of about 5,000 Roman soldiers."
      },
      "prompt": {
-      "en": "Using those two years, how many years did the Romans stay?"
+      "en": "What is the Roman name for the group of soldiers your partner describes?"
      },
-     "answer": 367
+     "options": [
+      {
+       "en": "legion"
+      },
+      {
+       "en": "senate"
+      },
+      {
+       "en": "forum"
+      },
+      {
+       "en": "villa"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "t3",
@@ -4753,12 +4887,26 @@
      "difficulty": 2,
      "type": "splitInfo",
      "clue": {
-      "en": "The Vikings first raided Lindisfarne in the year AD 793."
+      "en": "A holy island off the north-east coast of England with a monastery. Vikings raided it in the year AD 793."
      },
      "prompt": {
-      "en": "How many years was that before the year 1066?"
+      "en": "Which place does your partner describe?"
      },
-     "answer": 273
+     "options": [
+      {
+       "en": "Lindisfarne"
+      },
+      {
+       "en": "Iona"
+      },
+      {
+       "en": "Jarrow"
+      },
+      {
+       "en": "Whitby"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "t4",

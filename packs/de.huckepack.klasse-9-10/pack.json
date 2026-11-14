@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "de.huckepack.klasse-9-10",
-  "version": 1,
+  "version": 2,
   "title": {
     "de": "Großstadt: Klasse 9 und 10",
     "en": "Big city: grades 9 and 10"
@@ -1850,12 +1850,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Ein Redner sagt: „Wir wollen Frieden. Wir wollen Freiheit. Wir wollen Zukunft.“"
+            "de": "Ein Redner sagt: „Wir wollen Frieden. Wir wollen Freiheit. Wir wollen Zukunft.“ Lies die Sätze vor und achte darauf, wie jeder Satz beginnt."
           },
           "prompt": {
-            "de": "Wie viele Sätze beginnen mit demselben Wort (Anapher)?"
+            "de": "Dein Partner liest dir drei Sätze vor. Welches rhetorische Mittel ist es, wenn jeder Satz mit demselben Wort beginnt?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "Anapher"
+            },
+            {
+              "de": "Metapher"
+            },
+            {
+              "de": "Ironie"
+            },
+            {
+              "de": "Antithese"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "d1-4",
@@ -2022,12 +2036,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Eine Nachricht beantwortet diese sechs W-Fragen: Wer, was, wann, wo, wie, warum."
+            "de": "Ein Text berichtet sachlich über ein aktuelles Ereignis. Im ersten Absatz stehen die wichtigsten Angaben: Wer, was, wann, wo, wie, warum. Eine Meinung des Verfassers kommt nicht vor."
           },
           "prompt": {
-            "de": "Wie viele W-Fragen stehen in dieser Liste?"
+            "de": "Dein Partner beschreibt einen Text. Um welche Textsorte handelt es sich?"
           },
-          "answer": 6
+          "options": [
+            {
+              "de": "Nachricht"
+            },
+            {
+              "de": "Kommentar"
+            },
+            {
+              "de": "Leserbrief"
+            },
+            {
+              "de": "Glosse"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "d2-4",
@@ -2261,12 +2289,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Der Satz „Ich habe Hunger, und ich komme gleich“ wird in indirekte Rede gesetzt."
+            "de": "Aus dem Satz „Lena sagt: Ich habe Hunger.“ soll indirekte Rede werden. Lena spricht von sich selbst, und der Konjunktiv I von „haben“ ist „habe“ (3. Person Singular)."
           },
           "prompt": {
-            "de": "Wie viele Verben müssen in den Konjunktiv?"
+            "de": "Dein Partner nennt dir einen Satz in direkter Rede. Welche Version ist richtige indirekte Rede?"
           },
-          "answer": 2
+          "options": [
+            {
+              "de": "Lena sagt, sie habe Hunger."
+            },
+            {
+              "de": "Lena sagt, ich habe Hunger."
+            },
+            {
+              "de": "Lena sagt, sie hat Hunger."
+            },
+            {
+              "de": "Lena sagt, du habest Hunger."
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "d3-5",
@@ -2343,12 +2385,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Der Satz lautet: Ich kaufe Brot Milch Eier und Käse."
+            "de": "Der Satz lautet: Ich kaufe Brot Milch Eier und Käse. Es werden mehrere Dinge nacheinander genannt, nur vor „und“ steht kein Komma."
           },
           "prompt": {
-            "de": "Wie viele Kommas muss man setzen?"
+            "de": "Dein Partner liest dir einen Satz vor, in dem Kommas fehlen. Welche Kommaregel braucht dieser Satz?"
           },
-          "answer": 2,
+          "options": [
+            {
+              "de": "Komma bei Aufzählungen"
+            },
+            {
+              "de": "Komma vor einem Nebensatz"
+            },
+            {
+              "de": "Komma bei Anrede"
+            },
+            {
+              "de": "Komma bei Einschub"
+            }
+          ],
+          "answer": 1,
           "difficulty": 1
         },
         {
@@ -2358,11 +2414,25 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Der Satz lautet: Weil es regnet bleiben wir zu Hause."
+            "de": "Der Satz lautet: Weil es regnet bleiben wir zu Hause. Er besteht aus einem Nebensatz mit „weil“ am Anfang und einem Hauptsatz."
           },
           "prompt": {
-            "de": "Wie viele Kommas gehören in den Satz?"
+            "de": "Dein Partner liest dir einen Satz vor, in dem ein Komma fehlt. Wo gehört das Komma hin?"
           },
+          "options": [
+            {
+              "de": "Nach „regnet“"
+            },
+            {
+              "de": "Nach „Weil“"
+            },
+            {
+              "de": "Nach „bleiben“"
+            },
+            {
+              "de": "Nach „wir“"
+            }
+          ],
           "answer": 1
         },
         {
@@ -2619,12 +2689,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Der Satz lautet: Der Lehrer gab dem Schüler ein Buch."
+            "de": "Der Satz lautet: Der Lehrer gab dem Schüler ein Buch. Das unterstrichene Satzglied ist „dem Schüler“. Man fragt nach ihm mit „Wem gab der Lehrer ein Buch?“."
           },
           "prompt": {
-            "de": "Aus wie vielen Satzgliedern besteht der Satz?"
+            "de": "Dein Partner beschreibt ein unterstrichenes Satzglied. Welches Satzglied ist es?"
           },
-          "answer": 4
+          "options": [
+            {
+              "de": "Dativobjekt"
+            },
+            {
+              "de": "Akkusativobjekt"
+            },
+            {
+              "de": "Subjekt"
+            },
+            {
+              "de": "Prädikat"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "d5-4",
@@ -2790,12 +2874,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Aktivsatz: The workers have repaired the runway. Das Passiv mit Handelnden lautet: The runway has been repaired by the workers."
+            "de": "Aktivsatz: The workers have repaired the runway. Lies den Satz deinem Partner vor. Er soll das Passiv mit Handelnden bilden."
           },
           "prompt": {
-            "de": "Wie viele Wörter hat der Passivsatz?"
+            "de": "Dein Partner nennt dir einen Aktivsatz. Welcher Satz ist das Passiv mit Handelnden (Present Perfect)?"
           },
-          "answer": 8
+          "options": [
+            {
+              "de": "The runway has been repaired by the workers."
+            },
+            {
+              "de": "The runway was repaired by the workers."
+            },
+            {
+              "de": "The runway have been repaired by the workers."
+            },
+            {
+              "de": "The workers have been repaired by the runway."
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "e1-4",
@@ -2962,12 +3060,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Tom sagte: “We are waiting at gate 12.” Der Satz in indirekter Rede lautet: Tom said they were waiting at gate 12."
+            "de": "Tom sagte: “We are waiting at gate 12.” Lies den Satz deinem Partner vor."
           },
           "prompt": {
-            "de": "An welchem Gate warten sie laut dem indirekten Satz?"
+            "de": "Dein Partner nennt dir einen Satz in direkter Rede. Welche Version in indirekter Rede (Reported Speech) ist richtig?"
           },
-          "answer": 12,
+          "options": [
+            {
+              "de": "Tom said they were waiting at gate 12."
+            },
+            {
+              "de": "Tom said we are waiting at gate 12."
+            },
+            {
+              "de": "Tom said they are waiting at gate 12."
+            },
+            {
+              "de": "Tom said we were waiting at gate 12."
+            }
+          ],
+          "answer": 1,
           "difficulty": 1
         },
         {
@@ -3753,12 +3865,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Ein Element steht in der 3. Periode und in der 2. Hauptgruppe. Es ist Magnesium."
+            "de": "Ein Element steht in der 3. Periode und in der 2. Hauptgruppe. Es ist ein Erdalkalimetall mit zwei Außenelektronen."
           },
           "prompt": {
-            "de": "Welche Ordnungszahl hat Magnesium?"
+            "de": "Dein Partner beschreibt die Stellung eines Elements im Periodensystem. Welches Element ist es?"
           },
-          "answer": 12,
+          "options": [
+            {
+              "de": "Magnesium"
+            },
+            {
+              "de": "Natrium"
+            },
+            {
+              "de": "Calcium"
+            },
+            {
+              "de": "Aluminium"
+            }
+          ],
+          "answer": 1,
           "difficulty": 3
         }
       ]
@@ -4316,12 +4442,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "de": "Der Schutz der Menschenwürde steht in Artikel 1 des Grundgesetzes. Das Grundgesetz trat 1949 in Kraft."
+            "de": "In Artikel 1 steht: „Die Würde des Menschen ist unantastbar.“ Der Artikel schützt die Menschenwürde und steht ganz am Anfang des Textes."
           },
           "prompt": {
-            "de": "In welchem Jahr trat das Grundgesetz in Kraft?"
+            "de": "Dein Partner liest dir einen berühmten Satz vor. In welchem Text steht dieser Artikel 1?"
           },
-          "answer": 1949,
+          "options": [
+            {
+              "de": "Grundgesetz"
+            },
+            {
+              "de": "Strafgesetzbuch"
+            },
+            {
+              "de": "Bürgerliches Gesetzbuch"
+            },
+            {
+              "de": "Schulordnung"
+            }
+          ],
+          "answer": 1,
           "difficulty": 1
         },
         {

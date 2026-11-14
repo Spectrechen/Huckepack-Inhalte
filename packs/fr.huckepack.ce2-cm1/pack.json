@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "fr.huckepack.ce2-cm1",
-  "version": 2,
+  "version": 3,
   "title": {
     "fr": "Le village du château",
     "en": "The castle village"
@@ -1239,11 +1239,19 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "fr": "Le texte est : « Mon frère a un chat. Il va à l'école et il a un sac à dos. »"
+            "fr": "La phrase est : « Il va ___ l'école. » Astuce : on ne peut pas dire « il va avait l'école »."
           },
           "prompt": {
-            "fr": "Combien de fois trouve-t-on le mot « à » avec un accent dans le texte ?"
+            "fr": "Ton partenaire lit une phrase avec un trou. Quel mot faut-il écrire dans le trou ?"
           },
+          "options": [
+            {
+              "fr": "a"
+            },
+            {
+              "fr": "à"
+            }
+          ],
           "answer": 2,
           "difficulty": 1
         },
@@ -1398,11 +1406,25 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "fr": "Le texte est : « On cherche où sont les clés. Où ont-ils pu les poser ? Ils ont oublié le sac ou le panier. »"
+            "fr": "La phrase est : « Ils ___ oublié le sac. » Astuce : on peut dire « ils avaient oublié le sac »."
           },
           "prompt": {
-            "fr": "Combien de fois trouve-t-on le mot « où » avec un accent dans le texte ?"
+            "fr": "Ton partenaire lit une phrase avec un trou. Quel mot faut-il écrire dans le trou ?"
           },
+          "options": [
+            {
+              "fr": "on"
+            },
+            {
+              "fr": "ont"
+            },
+            {
+              "fr": "ou"
+            },
+            {
+              "fr": "où"
+            }
+          ],
           "answer": 2,
           "difficulty": 2
         },
@@ -1588,11 +1610,25 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "fr": "La phrase est : « Nous mangeons des pommes et vous chantez. »"
+            "fr": "La phrase est : « Nous ___ des pommes. » Le verbe à écrire est « manger » au présent, avec le sujet « nous »."
           },
           "prompt": {
-            "fr": "Combien de verbes conjugués y a-t-il dans la phrase ?"
+            "fr": "Ton partenaire lit une phrase avec un trou. Quelle forme du verbe faut-il écrire ?"
           },
+          "options": [
+            {
+              "fr": "mangons"
+            },
+            {
+              "fr": "mangeons"
+            },
+            {
+              "fr": "mangeont"
+            },
+            {
+              "fr": "mangez"
+            }
+          ],
           "answer": 2,
           "difficulty": 2
         },
@@ -1737,12 +1773,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "fr": "La phrase est : « Les grandes cloches sonnent le soir. »"
+            "fr": "On veut écrire au pluriel le groupe de mots « un grand cheval ». Dis à ton partenaire de quel groupe il s'agit."
           },
           "prompt": {
-            "fr": "Combien de mots se terminent par la marque « s » du pluriel ?"
+            "fr": "Quel est le bon pluriel de ce groupe de mots ?"
           },
-          "answer": 3,
+          "options": [
+            {
+              "fr": "des grands chevaux"
+            },
+            {
+              "fr": "des grand chevaux"
+            },
+            {
+              "fr": "des grands chevals"
+            },
+            {
+              "fr": "des grand chevals"
+            }
+          ],
+          "answer": 1,
           "difficulty": 2
         },
         {
@@ -1895,12 +1945,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "fr": "Le texte est : « La mère et son père sont au lavoir. Le linge est mouillé et lourd. »"
+            "fr": "La phrase est : « Le linge ___ mouillé ___ lourd. » Astuce : on peut dire « le linge était mouillé », mais pas « mouillé était lourd »."
           },
           "prompt": {
-            "fr": "Combien de fois trouve-t-on le petit mot « et » dans le texte ?"
+            "fr": "Ton partenaire lit une phrase avec deux trous. Quels mots faut-il écrire dans les trous, dans l'ordre ?"
           },
-          "answer": 2,
+          "options": [
+            {
+              "fr": "est ... et"
+            },
+            {
+              "fr": "et ... est"
+            },
+            {
+              "fr": "est ... est"
+            },
+            {
+              "fr": "et ... et"
+            }
+          ],
+          "answer": 1,
           "difficulty": 2
         },
         {
@@ -2067,12 +2131,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "fr": "Le texte est : « Autrefois, le forestier habitait dans la cabane. Il coupait du bois et il allumait un feu. »"
+            "fr": "La phrase est : « Autrefois, le forestier ___ dans la cabane. » Le verbe est « habiter », à l'imparfait."
           },
           "prompt": {
-            "fr": "Combien de verbes à l'imparfait y a-t-il dans le texte ?"
+            "fr": "Ton partenaire lit une phrase avec un trou. Quelle forme du verbe faut-il écrire ?"
           },
-          "answer": 3,
+          "options": [
+            {
+              "fr": "habitait"
+            },
+            {
+              "fr": "habitais"
+            },
+            {
+              "fr": "habitera"
+            },
+            {
+              "fr": "habite"
+            }
+          ],
+          "answer": 1,
           "difficulty": 2
         },
         {
@@ -2232,12 +2310,26 @@
           ],
           "type": "splitInfo",
           "clue": {
-            "fr": "Le texte est : « Hier, le renard a couru. Demain, il dormira. Autrefois, il chassait. Il boit de l'eau. »"
+            "fr": "La phrase est : « Hier, le renard ___ dans la forêt. » Le verbe est « courir », au passé composé avec l'auxiliaire avoir."
           },
           "prompt": {
-            "fr": "Combien de verbes sont au passé ?"
+            "fr": "Ton partenaire lit une phrase avec un trou. Quelle forme du verbe faut-il écrire ?"
           },
-          "answer": 2,
+          "options": [
+            {
+              "fr": "a couru"
+            },
+            {
+              "fr": "courra"
+            },
+            {
+              "fr": "courait"
+            },
+            {
+              "fr": "court"
+            }
+          ],
+          "answer": 1,
           "difficulty": 2
         },
         {

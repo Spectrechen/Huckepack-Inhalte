@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "br.huckepack.anos-3-4",
-  "version": 1,
+  "version": 2,
   "title": {
     "pt": "Cidade do Farol",
     "en": "Lighthouse Town"
@@ -572,10 +572,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "pt": "O caderno custa R$ 18 e a caneta custa R$ 7. Vocês têm uma nota de R$ 50."
+            "pt": "O caderno custa R$ 18 e a caneta custa R$ 7."
           },
           "prompt": {
-            "pt": "Vocês compram o caderno e a caneta. Quanto sobra de troco?"
+            "pt": "Vocês têm uma nota de R$ 50 e compram o caderno e a caneta. Quanto sobra de troco?"
           },
           "answer": 2500,
           "answerFormat": "realCentavos",
@@ -718,10 +718,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "pt": "A bola custa R$ 46, a corda custa R$ 18 e o apito custa R$ 12. Vocês levam R$ 100."
+            "pt": "A bola custa R$ 46, a corda custa R$ 18 e o apito custa R$ 12."
           },
           "prompt": {
-            "pt": "Quanto sobra depois de comprar a bola, a corda e o apito?"
+            "pt": "Vocês levam R$ 100. Quanto sobra depois de comprar a bola, a corda e o apito?"
           },
           "answer": 2400,
           "answerFormat": "realCentavos",
@@ -1341,10 +1341,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "pt": "Um garrafão tem 2 litros de suco. Cada copo leva 250 mL."
+            "pt": "Um garrafão tem 2 litros de suco."
           },
           "prompt": {
-            "pt": "Quantos copos cheios dá para encher com o garrafão?"
+            "pt": "Cada copo leva 250 mL. Quantos copos cheios dá para encher com o garrafão?"
           },
           "answer": 8,
           "id": "farol-2-5"
@@ -1493,10 +1493,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "pt": "Uma fita mede 24 centímetros. Vamos usar 3/4 da fita."
+            "pt": "Uma fita mede 24 centímetros."
           },
           "prompt": {
-            "pt": "Quantos centímetros de fita vamos usar?"
+            "pt": "Vamos usar 3/4 da fita. Quantos centímetros de fita vamos usar?"
           },
           "answer": 18,
           "id": "coreto-5"
@@ -1519,12 +1519,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "pt": "A palavra é BORBOLETA. Diga a palavra ao seu parceiro."
+            "pt": "A palavra é BORBOLETA. Bata palmas em cada sílaba (4 palmas) e diga ao parceiro que é um bicho que voa."
           },
           "prompt": {
-            "pt": "Quantas sílabas tem a palavra que o seu parceiro vai dizer?"
+            "pt": "Seu parceiro bate palmas e diz que é um bicho que voa. Qual palavra tem esse número de sílabas?"
           },
-          "answer": 4,
+          "options": [
+            {
+              "pt": "mosca"
+            },
+            {
+              "pt": "abelha"
+            },
+            {
+              "pt": "borboleta"
+            },
+            {
+              "pt": "besouro"
+            }
+          ],
+          "answer": 3,
           "id": "escola-1"
         },
         {
@@ -1644,12 +1658,23 @@
           ],
           "difficulty": 3,
           "clue": {
-            "pt": "A palavra é PÁSSARO. Diga a palavra e soletre as letras para o seu parceiro."
+            "pt": "A palavra é PÁSSARO. Diga a palavra ao parceiro falando a sílaba mais forte mais alto: PÁS-sa-ro."
           },
           "prompt": {
-            "pt": "Some o número de sílabas com o número de letras da palavra que o seu parceiro vai dizer. Quanto dá?"
+            "pt": "Seu parceiro diz uma palavra e fala uma sílaba mais forte. Qual sílaba é a mais forte?"
           },
-          "answer": 10,
+          "options": [
+            {
+              "pt": "a primeira sílaba"
+            },
+            {
+              "pt": "a segunda sílaba"
+            },
+            {
+              "pt": "a terceira sílaba"
+            }
+          ],
+          "answer": 1,
           "id": "escola-5"
         }
       ]
@@ -1670,12 +1695,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "pt": "Frase: Os gatos dormem no sofá. Leia a frase em voz alta para o seu parceiro."
+            "pt": "Frase: Os gatos dormem no sofá. Leia a frase e diga ao parceiro a palavra GATOS."
           },
           "prompt": {
-            "pt": "Quantos substantivos há na frase que o seu parceiro vai ler?"
+            "pt": "Seu parceiro lê uma frase e diz uma palavra dela. Que tipo de palavra é?"
           },
-          "answer": 2,
+          "options": [
+            {
+              "pt": "verbo"
+            },
+            {
+              "pt": "adjetivo"
+            },
+            {
+              "pt": "substantivo"
+            },
+            {
+              "pt": "artigo"
+            }
+          ],
+          "answer": 3,
           "id": "escola-2-1"
         },
         {
@@ -1869,12 +1908,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "pt": "A palavra é BICICLETA. Soletre a palavra para o seu parceiro."
+            "pt": "Soletre ao parceiro, letra por letra: B-I-C-I-C-L-E-T-A."
           },
           "prompt": {
-            "pt": "Quantas letras tem a palavra?"
+            "pt": "Seu parceiro soletra uma palavra. Qual é a palavra escrita certa?"
           },
-          "answer": 9,
+          "options": [
+            {
+              "pt": "bissicleta"
+            },
+            {
+              "pt": "bicicleta"
+            },
+            {
+              "pt": "biciqleta"
+            },
+            {
+              "pt": "bicicreta"
+            }
+          ],
+          "answer": 2,
           "id": "biblioteca-2"
         },
         {
@@ -2088,11 +2141,25 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "Frase: A vovó bebeu café e saiu da cozinha no sábado. Leia a frase para o seu parceiro."
+            "pt": "A palavra é CAFÉ. Diga ao parceiro: 'a sílaba forte é a última e o acento é agudo'."
           },
           "prompt": {
-            "pt": "Quantas palavras da frase têm acento agudo?"
+            "pt": "Seu parceiro diz uma palavra com acento agudo. Como se escreve certo?"
           },
+          "options": [
+            {
+              "pt": "cafe"
+            },
+            {
+              "pt": "cafê"
+            },
+            {
+              "pt": "café"
+            },
+            {
+              "pt": "cáfe"
+            }
+          ],
           "answer": 3,
           "id": "biblioteca-2-3"
         },
@@ -2263,11 +2330,25 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "Frase: A menina esperta pintou a casa amarela e o barco velho. Leia a frase para o seu parceiro."
+            "pt": "Frase: A menina esperta pintou a casa amarela e o barco velho. Leia a frase e pergunte: 'Como é o barco?'"
           },
           "prompt": {
-            "pt": "Quantos adjetivos há na frase que o seu parceiro vai ler?"
+            "pt": "Seu parceiro lê uma frase e pergunta como o barco é. Qual palavra diz como ele é?"
           },
+          "options": [
+            {
+              "pt": "novo"
+            },
+            {
+              "pt": "rápido"
+            },
+            {
+              "pt": "velho"
+            },
+            {
+              "pt": "grande"
+            }
+          ],
           "answer": 3,
           "id": "ponte-3"
         },
@@ -2432,8 +2513,19 @@
             "pt": "Frase: As crianças correm na praia e pulam nas ondas. Leia a frase para o seu parceiro."
           },
           "prompt": {
-            "pt": "Quantos verbos há na frase que o seu parceiro vai ler?"
+            "pt": "Seu parceiro lê uma frase. Em que tempo estão os verbos?"
           },
+          "options": [
+            {
+              "pt": "passado"
+            },
+            {
+              "pt": "presente"
+            },
+            {
+              "pt": "futuro"
+            }
+          ],
           "answer": 2,
           "id": "ponte-2-3"
         },
@@ -2596,12 +2688,23 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "Texto: Ana chegou à praia. Viu o mar? Nossa, que lindo! Correu para a água. Leia o texto para o seu parceiro."
+            "pt": "Leia ao parceiro, com voz bem animada, de espanto: 'Nossa, que lindo'. A frase ainda está sem sinal no fim."
           },
           "prompt": {
-            "pt": "Quantos pontos finais (.) tem o texto que o seu parceiro vai ler?"
+            "pt": "Seu parceiro lê uma frase com voz de espanto. Qual sinal vai no fim?"
           },
-          "answer": 2,
+          "options": [
+            {
+              "pt": "ponto final (.)"
+            },
+            {
+              "pt": "interrogação (?)"
+            },
+            {
+              "pt": "exclamação (!)"
+            }
+          ],
+          "answer": 3,
           "id": "coreto-2-3"
         },
         {
@@ -2861,12 +2964,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "pt": "Cadeia alimentar: alface, lagarta, passarinho, gavião. Leia para o seu parceiro."
+            "pt": "O gavião caça e come passarinhos, e nenhum outro animal o caça. Descreva o gavião ao parceiro sem dizer o nome."
           },
           "prompt": {
-            "pt": "Quantos animais há na cadeia alimentar que o seu parceiro vai ler?"
+            "pt": "Seu parceiro descreve um animal que caça e come outros e ninguém o caça. Que papel ele tem na cadeia alimentar?"
           },
-          "answer": 3,
+          "options": [
+            {
+              "pt": "produtor"
+            },
+            {
+              "pt": "predador"
+            },
+            {
+              "pt": "presa"
+            },
+            {
+              "pt": "decompositor"
+            }
+          ],
+          "answer": 2,
           "id": "fazenda-2-1"
         },
         {
@@ -3435,12 +3552,26 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "A água congela a 0 graus Celsius e ferve a 100 graus Celsius. A água da panela está a 25 graus."
+            "pt": "A água da panela está a 100 graus Celsius, borbulha e solta vapor. Conte isso ao seu parceiro."
           },
           "prompt": {
-            "pt": "Quantos graus faltam para a água da panela ferver?"
+            "pt": "Seu parceiro descreve a água na panela. Que mudança de estado acontece?"
           },
-          "answer": 75,
+          "options": [
+            {
+              "pt": "evaporação (fervura)"
+            },
+            {
+              "pt": "solidificação"
+            },
+            {
+              "pt": "condensação"
+            },
+            {
+              "pt": "derretimento"
+            }
+          ],
+          "answer": 1,
           "id": "cachoeira-3"
         },
         {
@@ -3942,11 +4073,25 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "Você está olhando para o Norte. O mar está à sua direita."
+            "pt": "O mar está à direita de quem olha."
           },
           "prompt": {
-            "pt": "Em qual direção fica o mar? Digite 1 para Norte, 2 para Sul, 3 para Leste ou 4 para Oeste."
+            "pt": "Você está olhando para o Norte. Seu parceiro diz de que lado fica o mar. Em qual direção fica o mar?"
           },
+          "options": [
+            {
+              "pt": "Norte"
+            },
+            {
+              "pt": "Sul"
+            },
+            {
+              "pt": "Leste"
+            },
+            {
+              "pt": "Oeste"
+            }
+          ],
           "answer": 3,
           "id": "mirante-3"
         },
@@ -4116,12 +4261,26 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "O Brasil tem 26 estados e o Distrito Federal. Isso dá 27 partes. O Sudeste tem 4 estados."
+            "pt": "Descreva ao parceiro uma região do Brasil: é a maior de todas e tem a Floresta Amazônica."
           },
           "prompt": {
-            "pt": "Quantas partes (estados e o Distrito Federal) existem fora da região Sudeste?"
+            "pt": "Seu parceiro descreve uma região do Brasil. Qual é?"
           },
-          "answer": 23,
+          "options": [
+            {
+              "pt": "Sul"
+            },
+            {
+              "pt": "Norte"
+            },
+            {
+              "pt": "Nordeste"
+            },
+            {
+              "pt": "Sudeste"
+            }
+          ],
+          "answer": 2,
           "id": "mirante-2-3"
         },
         {
@@ -4283,12 +4442,26 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "Os portugueses chegaram ao Brasil em 1500. A Independência do Brasil foi em 1822."
+            "pt": "Diga ao parceiro apenas o ano: 1822."
           },
           "prompt": {
-            "pt": "Quantos anos se passaram entre 1500 e 1822?"
+            "pt": "Seu parceiro diz um ano. O que aconteceu no Brasil nesse ano?"
           },
-          "answer": 322,
+          "options": [
+            {
+              "pt": "a chegada dos portugueses"
+            },
+            {
+              "pt": "a Proclamação da República"
+            },
+            {
+              "pt": "a Independência do Brasil"
+            },
+            {
+              "pt": "o fim da escravidão"
+            }
+          ],
+          "answer": 3,
           "id": "museu-3"
         },
         {
@@ -4449,12 +4622,23 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "O farol foi construído em 1920 e reformado em 1990."
+            "pt": "Você tem uma carta escrita à mão pelo faroleiro, em 1920. Descreva ao parceiro o que você tem."
           },
           "prompt": {
-            "pt": "Quantos anos se passaram entre a construção e a reforma do farol?"
+            "pt": "Seu parceiro descreve algo que ajuda a conhecer o passado. Que tipo de fonte histórica é?"
           },
-          "answer": 70,
+          "options": [
+            {
+              "pt": "fonte escrita"
+            },
+            {
+              "pt": "fonte oral"
+            },
+            {
+              "pt": "fonte material (objeto)"
+            }
+          ],
+          "answer": 1,
           "id": "museu-2-3"
         },
         {
@@ -4843,12 +5027,26 @@
           ],
           "difficulty": 2,
           "clue": {
-            "pt": "O Nordeste tem 9 estados e o Sudeste tem 4 estados. Cada estado tem uma capital."
+            "pt": "O estado é a Bahia. Diga o nome do estado ao seu parceiro."
           },
           "prompt": {
-            "pt": "Quantas capitais de estados há no Nordeste e no Sudeste juntos?"
+            "pt": "Seu parceiro diz um estado do Nordeste. Qual é a capital dele?"
           },
-          "answer": 13,
+          "options": [
+            {
+              "pt": "Salvador"
+            },
+            {
+              "pt": "Recife"
+            },
+            {
+              "pt": "Fortaleza"
+            },
+            {
+              "pt": "São Luís"
+            }
+          ],
+          "answer": 1,
           "id": "mangue-2-4"
         },
         {
@@ -4980,12 +5178,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "pt": "Os biomas do Brasil são: Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa."
+            "pt": "Descreva ao parceiro um bioma do Brasil: é seco, fica no Nordeste e tem plantas como o mandacaru."
           },
           "prompt": {
-            "pt": "Quantos desses biomas têm o nome começando com a letra C?"
+            "pt": "Seu parceiro descreve um bioma. Qual é?"
           },
-          "answer": 2,
+          "options": [
+            {
+              "pt": "Pantanal"
+            },
+            {
+              "pt": "Pampa"
+            },
+            {
+              "pt": "Caatinga"
+            },
+            {
+              "pt": "Mata Atlântica"
+            }
+          ],
+          "answer": 3,
           "id": "floresta-2-3"
         },
         {

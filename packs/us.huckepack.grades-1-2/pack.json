@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "us.huckepack.grades-1-2",
-  "version": 1,
+  "version": 2,
   "title": {
     "en": "Huckepack Town: Grades 1-2"
   },
@@ -716,18 +716,29 @@
       "tasks": [
         {
           "id": "library-1",
-          "type": "splitInfo",
           "skills": [
             "us-reading.rhyme-words"
           ],
           "difficulty": 1,
+          "type": "splitInfo",
           "clue": {
-            "en": "Sentence: The cat sat on a red mat."
+            "en": "Your word is cat. Say it out loud."
           },
           "prompt": {
-            "en": "How many words are in the sentence?"
+            "en": "Your partner says a word. Which word rhymes with it?"
           },
-          "answer": 7
+          "options": [
+            {
+              "en": "hat"
+            },
+            {
+              "en": "cup"
+            },
+            {
+              "en": "dog"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "library-2",
@@ -830,18 +841,32 @@
         },
         {
           "id": "library-5",
-          "type": "splitInfo",
           "skills": [
             "us-reading.rhyme-words"
           ],
           "difficulty": 3,
+          "type": "splitInfo",
           "clue": {
-            "en": "The word is splash. Spell it out loud, letter by letter."
+            "en": "Your word starts with the sounds s-p-l and ends with -ash. Say each sound slowly."
           },
           "prompt": {
-            "en": "How many letters does the word have?"
+            "en": "Which word does your partner say?"
           },
-          "answer": 6
+          "options": [
+            {
+              "en": "splash"
+            },
+            {
+              "en": "slash"
+            },
+            {
+              "en": "stash"
+            },
+            {
+              "en": "flash"
+            }
+          ],
+          "answer": 1
         }
       ]
     },
@@ -1294,15 +1319,16 @@
             "en": "Look at the clock. It is in the afternoon. Tell your partner where the short hand and the long hand point."
           },
           "prompt": {
-            "en": "What hour is it? Type the hour number."
+            "en": "What time is it? Type the time (like 345) and pick a.m. or p.m."
           },
-          "answer": 3,
+          "answer": 900,
           "clueVisual": {
             "clock": {
               "hour": 3,
               "minute": 0
             }
-          }
+          },
+          "answerFormat": "time12"
         },
         {
           "id": "clock-2",
@@ -1429,12 +1455,13 @@
           ],
           "difficulty": 3,
           "clue": {
-            "en": "School starts at 8 o'clock. Lunch is 4 hours later."
+            "en": "School starts at 8:00 in the morning. Lunch is 4 hours later."
           },
           "prompt": {
-            "en": "At what hour is lunch? Type the hour number."
+            "en": "What time is lunch? Type the time (like 345) and pick a.m. or p.m."
           },
-          "answer": 12
+          "answer": 720,
+          "answerFormat": "time12"
         }
       ]
     },
@@ -1456,18 +1483,19 @@
           ],
           "difficulty": 1,
           "clue": {
-            "en": "Look at the clock. The long hand points to the 3. The short hand is just past the 7."
+            "en": "Look at the clock. It is morning. The long hand points to the 3. The short hand is just past the 7."
           },
           "prompt": {
-            "en": "How many minutes after 7 o'clock is it? Type the number of minutes."
+            "en": "What time is it? Type the time (like 345) and pick a.m. or p.m."
           },
-          "answer": 15,
+          "answer": 435,
           "clueVisual": {
             "clock": {
               "hour": 7,
               "minute": 15
             }
-          }
+          },
+          "answerFormat": "time12"
         },
         {
           "id": "clock-2-2",
@@ -1620,18 +1648,29 @@
       "tasks": [
         {
           "id": "school-1",
-          "type": "splitInfo",
           "skills": [
             "us-writing.sentences"
           ],
           "difficulty": 1,
+          "type": "splitInfo",
           "clue": {
-            "en": "Sentence: The red hen sat on the nest."
+            "en": "Read this out loud like a question: Where is my hat"
           },
           "prompt": {
-            "en": "How many words are in the sentence?"
+            "en": "Your partner reads a sentence. Which mark belongs at the end?"
           },
-          "answer": 7
+          "options": [
+            {
+              "en": "period (.)"
+            },
+            {
+              "en": "question mark (?)"
+            },
+            {
+              "en": "exclamation mark (!)"
+            }
+          ],
+          "answer": 2
         },
         {
           "id": "school-2",
@@ -1776,18 +1815,32 @@
       "tasks": [
         {
           "id": "school-2-1",
-          "type": "splitInfo",
           "skills": [
             "us-writing.spelling"
           ],
           "difficulty": 1,
+          "type": "splitInfo",
           "clue": {
             "en": "The word is bridge. Spell it out loud, letter by letter."
           },
           "prompt": {
-            "en": "How many letters does the word have?"
+            "en": "Which word is your partner spelling?"
           },
-          "answer": 6
+          "options": [
+            {
+              "en": "bridge"
+            },
+            {
+              "en": "brige"
+            },
+            {
+              "en": "bridg"
+            },
+            {
+              "en": "bridje"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "school-2-2",
@@ -3733,18 +3786,32 @@
       "tasks": [
         {
           "id": "orchard-1",
-          "type": "splitInfo",
           "skills": [
             "us-writing.nouns-verbs"
           ],
           "difficulty": 1,
+          "type": "splitInfo",
           "clue": {
             "en": "Sentence: The bird sings in the tree."
           },
           "prompt": {
-            "en": "How many nouns (naming words) are in the sentence?"
+            "en": "Which two words in your partner's sentence are nouns (naming words)?"
           },
-          "answer": 2
+          "options": [
+            {
+              "en": "bird and tree"
+            },
+            {
+              "en": "bird and sings"
+            },
+            {
+              "en": "sings and in"
+            },
+            {
+              "en": "The and tree"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "orchard-2",
@@ -3889,18 +3956,32 @@
       "tasks": [
         {
           "id": "orchard-2-1",
-          "type": "splitInfo",
           "skills": [
             "us-writing.adjectives"
           ],
           "difficulty": 1,
+          "type": "splitInfo",
           "clue": {
             "en": "Sentence: The big red apple fell down."
           },
           "prompt": {
-            "en": "How many describing words (adjectives) are in the sentence?"
+            "en": "Which two words in your partner's sentence are adjectives (describing words)?"
           },
-          "answer": 2
+          "options": [
+            {
+              "en": "big and red"
+            },
+            {
+              "en": "apple and fell"
+            },
+            {
+              "en": "red and fell"
+            },
+            {
+              "en": "The and big"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "orchard-2-2",
@@ -4329,18 +4410,32 @@
       "tasks": [
         {
           "id": "hill-1",
-          "type": "splitInfo",
           "skills": [
             "us-reading.vowel-sounds"
           ],
           "difficulty": 1,
+          "type": "splitInfo",
           "clue": {
-            "en": "The words are: bike, hat, kite, cat, hide."
+            "en": "Say this word slowly: kite."
           },
           "prompt": {
-            "en": "How many of the words have the long i sound?"
+            "en": "Your partner says a word with the long i sound. Which word is it?"
           },
-          "answer": 3
+          "options": [
+            {
+              "en": "kit"
+            },
+            {
+              "en": "kite"
+            },
+            {
+              "en": "kid"
+            },
+            {
+              "en": "kick"
+            }
+          ],
+          "answer": 2
         },
         {
           "id": "hill-2",
@@ -4493,18 +4588,32 @@
       "tasks": [
         {
           "id": "hill-2-1",
-          "type": "splitInfo",
           "skills": [
             "us-reading.nonfiction"
           ],
           "difficulty": 1,
+          "type": "splitInfo",
           "clue": {
-            "en": "Sentence: Berries grow on the hill and they taste sweet."
+            "en": "Read this out loud: Berries grow on the hill and they taste sweet."
           },
           "prompt": {
-            "en": "How many words are in the sentence?"
+            "en": "Where do the berries grow? Ask your partner to read it to you."
           },
-          "answer": 9
+          "options": [
+            {
+              "en": "on the hill"
+            },
+            {
+              "en": "in the pond"
+            },
+            {
+              "en": "on the bridge"
+            },
+            {
+              "en": "in the barn"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "hill-2-2",

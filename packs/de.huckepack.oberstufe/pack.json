@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "de.huckepack.oberstufe",
-  "version": 1,
+  "version": 2,
   "title": {
     "de": "Campus: Abitur gemeinsam",
     "en": "Campus: Revising for the Abitur together"
@@ -2941,10 +2941,24 @@
             "de": "Bedeutung: present everywhere at the same time"
           },
           "prompt": {
-            "de": "Welches Wort passt? 1 ambiguous  2 ubiquitous  3 meticulous  4 reluctant. Tippt die Nummer."
+            "de": "Welches Wort passt?"
           },
           "answer": 2,
-          "difficulty": 1
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "ambiguous"
+            },
+            {
+              "de": "ubiquitous"
+            },
+            {
+              "de": "meticulous"
+            },
+            {
+              "de": "reluctant"
+            }
+          ]
         },
         {
           "id": "vocabu-2",
@@ -3063,10 +3077,24 @@
             "de": "Bedeutung: lasting for a very short time"
           },
           "prompt": {
-            "de": "Welches Wort passt? 1 permanent  2 profound  3 ephemeral  4 tangible. Tippt die Nummer."
+            "de": "Welches Wort passt?"
           },
           "answer": 3,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "permanent"
+            },
+            {
+              "de": "profound"
+            },
+            {
+              "de": "ephemeral"
+            },
+            {
+              "de": "tangible"
+            }
+          ]
         }
       ]
     },
@@ -3090,10 +3118,24 @@
             "de": "Bedeutung: to make a pain or problem less severe"
           },
           "prompt": {
-            "de": "Welches Wort passt? 1 exacerbate  2 undermine  3 alleviate  4 aggravate. Tippt die Nummer."
+            "de": "Welches Wort passt?"
           },
           "answer": 3,
-          "difficulty": 1
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "exacerbate"
+            },
+            {
+              "de": "undermine"
+            },
+            {
+              "de": "alleviate"
+            },
+            {
+              "de": "aggravate"
+            }
+          ]
         },
         {
           "id": "vocabu-2",
@@ -3212,10 +3254,24 @@
             "de": "Bedeutung: to leave something out"
           },
           "prompt": {
-            "de": "Welches Wort passt? 1 omit  2 admit  3 commit  4 permit. Tippt die Nummer."
+            "de": "Welches Wort passt?"
           },
           "answer": 1,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "omit"
+            },
+            {
+              "de": "admit"
+            },
+            {
+              "de": "commit"
+            },
+            {
+              "de": "permit"
+            }
+          ]
         }
       ]
     },
@@ -3238,10 +3294,24 @@
             "de": "Regel: Conditional type 3 nutzt 'had + past participle' im if-Satz und 'would have + past participle' im Hauptsatz."
           },
           "prompt": {
-            "de": "Welcher Satz ist Typ 3? 1 If I study, I will pass.  2 If I studied, I would pass.  3 If I had studied, I would have passed.  4 If I would study, I pass. Tippt die Nummer."
+            "de": "Welcher Satz ist Typ 3?"
           },
           "answer": 3,
-          "difficulty": 1
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "If I study, I will pass."
+            },
+            {
+              "de": "If I studied, I would pass."
+            },
+            {
+              "de": "If I had studied, I would have passed."
+            },
+            {
+              "de": "If I would study, I pass."
+            }
+          ]
         },
         {
           "id": "gramma-2",
@@ -3352,10 +3422,24 @@
             "de": "Regel: Nach 'I wish' über die Gegenwart steht das Past Simple (bei 'be' meist 'were')."
           },
           "prompt": {
-            "de": "Welcher Satz ist richtig? 1 I wish I will be taller.  2 I wish I were taller.  3 I wish I would be taller.  4 I wish I am taller. Tippt die Nummer."
+            "de": "Welcher Satz ist richtig?"
           },
           "answer": 2,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "I wish I will be taller."
+            },
+            {
+              "de": "I wish I were taller."
+            },
+            {
+              "de": "I wish I would be taller."
+            },
+            {
+              "de": "I wish I am taller."
+            }
+          ]
         }
       ]
     },
@@ -3379,10 +3463,24 @@
             "de": "Regel: Für eine Vermutung über die Vergangenheit nutzt man 'must have' + past participle."
           },
           "prompt": {
-            "de": "Welcher Satz ist richtig? 1 He must have gone out.  2 He must went out.  3 He can has gone out.  4 He must be gone out. Tippt die Nummer."
+            "de": "Welcher Satz ist richtig?"
           },
           "answer": 1,
-          "difficulty": 1
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "He must have gone out."
+            },
+            {
+              "de": "He must went out."
+            },
+            {
+              "de": "He can has gone out."
+            },
+            {
+              "de": "He must be gone out."
+            }
+          ]
         },
         {
           "id": "gramma-2",
@@ -3501,10 +3599,24 @@
             "de": "Regel: Nach 'despite' folgt ein Nomen oder eine -ing-Form, kein vollständiger Nebensatz."
           },
           "prompt": {
-            "de": "Welcher Satz ist richtig? 1 Despite it was raining, we left.  2 Despite of the rain, we left.  3 Despite the rain, we left.  4 Despite that it rained, we left. Tippt die Nummer."
+            "de": "Welcher Satz ist richtig?"
           },
           "answer": 3,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "Despite it was raining, we left."
+            },
+            {
+              "de": "Despite of the rain, we left."
+            },
+            {
+              "de": "Despite the rain, we left."
+            },
+            {
+              "de": "Despite that it rained, we left."
+            }
+          ]
         }
       ]
     },
@@ -3527,10 +3639,24 @@
             "de": "Um 1770 bis 1785: Gefühl, Genie und Aufbegehren gegen Regeln, Goethes Jugendwerke."
           },
           "prompt": {
-            "de": "Welche Epoche ist das? 1 Barock  2 Sturm und Drang  3 Biedermeier  4 Naturalismus. Tippt die Nummer."
+            "de": "Welche Epoche ist das?"
           },
           "answer": 2,
-          "difficulty": 1
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "Barock"
+            },
+            {
+              "de": "Sturm und Drang"
+            },
+            {
+              "de": "Biedermeier"
+            },
+            {
+              "de": "Naturalismus"
+            }
+          ]
         },
         {
           "id": "epoche-2",
@@ -3657,10 +3783,24 @@
             "de": "Um 1848 bis 1890: nüchterne Darstellung der Wirklichkeit, zum Beispiel bei Fontane und Storm."
           },
           "prompt": {
-            "de": "Welche Epoche ist das? 1 Romantik  2 Expressionismus  3 Realismus  4 Barock. Tippt die Nummer."
+            "de": "Welche Epoche ist das?"
           },
           "answer": 3,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "Romantik"
+            },
+            {
+              "de": "Expressionismus"
+            },
+            {
+              "de": "Realismus"
+            },
+            {
+              "de": "Barock"
+            }
+          ]
         }
       ]
     },
@@ -3684,10 +3824,24 @@
             "de": "Um 1910 bis 1925: verzerrte Bilder, Großstadt, Krieg und Angst."
           },
           "prompt": {
-            "de": "Welche Epoche ist das? 1 Expressionismus  2 Biedermeier  3 Aufklärung  4 Barock. Tippt die Nummer."
+            "de": "Welche Epoche ist das?"
           },
           "answer": 1,
-          "difficulty": 1
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "Expressionismus"
+            },
+            {
+              "de": "Biedermeier"
+            },
+            {
+              "de": "Aufklärung"
+            },
+            {
+              "de": "Barock"
+            }
+          ]
         },
         {
           "id": "epoche-2",
@@ -3814,10 +3968,24 @@
             "de": "Nach 1945: Trümmer, Neuanfang, nüchterne und ehrliche Sprache."
           },
           "prompt": {
-            "de": "Welcher Begriff passt? 1 Romantik  2 Barock  3 Sturm und Drang  4 Trümmerliteratur. Tippt die Nummer."
+            "de": "Welcher Begriff passt?"
           },
           "answer": 4,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "Romantik"
+            },
+            {
+              "de": "Barock"
+            },
+            {
+              "de": "Sturm und Drang"
+            },
+            {
+              "de": "Trümmerliteratur"
+            }
+          ]
         }
       ]
     },
@@ -3840,10 +4008,24 @@
             "de": "Beispiel: 'Der Wind flüstert durch die Bäume.'"
           },
           "prompt": {
-            "de": "Welches Mittel ist das? 1 Metapher  2 Personifikation  3 Anapher  4 Ironie. Tippt die Nummer."
+            "de": "Welches Mittel ist das?"
           },
           "answer": 2,
-          "difficulty": 1
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "Metapher"
+            },
+            {
+              "de": "Personifikation"
+            },
+            {
+              "de": "Anapher"
+            },
+            {
+              "de": "Ironie"
+            }
+          ]
         },
         {
           "id": "rhetor-2",
@@ -3970,10 +4152,24 @@
             "de": "Zwei Wörter, die sich widersprechen, werden verbunden: 'beredtes Schweigen', 'bittersüß'."
           },
           "prompt": {
-            "de": "Welches Mittel ist das? 1 Chiasmus  2 Zeugma  3 Hyperbel  4 Oxymoron. Tippt die Nummer."
+            "de": "Welches Mittel ist das?"
           },
           "answer": 4,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "Chiasmus"
+            },
+            {
+              "de": "Zeugma"
+            },
+            {
+              "de": "Hyperbel"
+            },
+            {
+              "de": "Oxymoron"
+            }
+          ]
         }
       ]
     },
@@ -3993,13 +4189,27 @@
             "deutsch.argumentation"
           ],
           "clue": {
-            "de": "Ein Argument besteht aus Behauptung, Begründung und Beleg."
+            "de": "Das Argument lautet: „Handys sollten im Unterricht ausbleiben, denn sie lenken ab.“ Es fehlt noch etwas, zum Beispiel eine Studie oder ein Zahlenbeispiel, das die Begründung stützt."
           },
           "prompt": {
-            "de": "Aus wie vielen Bestandteilen besteht ein Argument?"
+            "de": "Dein Partner liest dir ein unvollständiges Argument vor. Welcher Bestandteil fehlt?"
           },
-          "answer": 3,
-          "difficulty": 1
+          "answer": 1,
+          "difficulty": 1,
+          "options": [
+            {
+              "de": "Beleg"
+            },
+            {
+              "de": "Behauptung"
+            },
+            {
+              "de": "Begründung"
+            },
+            {
+              "de": "Fazit"
+            }
+          ]
         },
         {
           "id": "argume-2",
@@ -4126,10 +4336,24 @@
             "de": "Argument: 'Meine drei Freunde haben ein Handy, also hat jeder Mensch eins.'"
           },
           "prompt": {
-            "de": "Welcher Fehlschluss ist das? 1 Zirkelschluss  2 Verallgemeinerung  3 Angriff auf die Person  4 Berufung auf eine Autorität. Tippt die Nummer."
+            "de": "Welcher Fehlschluss ist das?"
           },
           "answer": 2,
-          "difficulty": 3
+          "difficulty": 3,
+          "options": [
+            {
+              "de": "Zirkelschluss"
+            },
+            {
+              "de": "Verallgemeinerung"
+            },
+            {
+              "de": "Angriff auf die Person"
+            },
+            {
+              "de": "Berufung auf eine Autorität"
+            }
+          ]
         }
       ]
     }

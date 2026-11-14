@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "es.huckepack.primaria-3-4",
-  "version": 2,
+  "version": 3,
   "title": {
     "es": "Un pueblo de primaria (3.º y 4.º)",
     "en": "A Village for Primary School (grades 3-4, Spanish)"
@@ -1551,12 +1551,26 @@
             "lengua.clases-de-palabras"
           ],
           "clue": {
-            "es": "La frase es: «Los niños leen un libro divertido en la escuela.»"
+            "es": "La frase es: «Los niños leen un libro divertido en la escuela.» Léela y dile a tu pareja que mire la palabra «divertido»."
           },
           "prompt": {
-            "es": "¿Cuántas palabras tiene la frase?"
+            "es": "Tu pareja lee una frase y señala una palabra. ¿Qué clase de palabra es?"
           },
-          "answer": 9,
+          "options": [
+            {
+              "es": "sustantivo"
+            },
+            {
+              "es": "verbo"
+            },
+            {
+              "es": "adjetivo"
+            },
+            {
+              "es": "artículo"
+            }
+          ],
+          "answer": 3,
           "difficulty": 1
         },
         {
@@ -1665,12 +1679,26 @@
             "lengua.clases-de-palabras"
           ],
           "clue": {
-            "es": "La frase es: «La niña alta pinta flores amarillas y rojas.»"
+            "es": "La frase es: «La niña alta pinta flores amarillas.» Léela a tu pareja y pregúntale qué hace la niña."
           },
           "prompt": {
-            "es": "¿Cuántos adjetivos hay en la frase?"
+            "es": "Tu pareja lee una frase sobre una niña. ¿Qué hace la niña?"
           },
-          "answer": 3,
+          "options": [
+            {
+              "es": "canta"
+            },
+            {
+              "es": "pinta"
+            },
+            {
+              "es": "corre"
+            },
+            {
+              "es": "salta"
+            }
+          ],
+          "answer": 2,
           "difficulty": 3
         }
       ]
@@ -1692,11 +1720,25 @@
             "lengua.ortografia-b-v"
           ],
           "clue": {
-            "es": "La palabra es «biblioteca»."
+            "es": "Dicta a tu pareja la palabra «avión» sin deletrearla: es lo que vuela y lleva pasajeros."
           },
           "prompt": {
-            "es": "¿Cuántas veces aparece la letra b en la palabra?"
+            "es": "Tu pareja te dicta una palabra. ¿Cómo se escribe bien?"
           },
+          "options": [
+            {
+              "es": "abión"
+            },
+            {
+              "es": "avión"
+            },
+            {
+              "es": "abion"
+            },
+            {
+              "es": "avion"
+            }
+          ],
           "answer": 2,
           "difficulty": 1
         },
@@ -1856,11 +1898,22 @@
             "lengua.verbos-tiempos"
           ],
           "clue": {
-            "es": "La frase es: «Mañana iremos al río, cantaremos y jugaremos.»"
+            "es": "La frase es: «Mañana iremos al río, cantaremos y jugaremos.» Léela a tu pareja."
           },
           "prompt": {
-            "es": "¿Cuántos verbos hay en la frase?"
+            "es": "Tu pareja lee una frase. ¿En qué tiempo están los verbos?"
           },
+          "options": [
+            {
+              "es": "pasado"
+            },
+            {
+              "es": "presente"
+            },
+            {
+              "es": "futuro"
+            }
+          ],
           "answer": 3,
           "difficulty": 1
         },
@@ -1962,11 +2015,25 @@
             "lengua.verbos-tiempos"
           ],
           "clue": {
-            "es": "La palabra es «comíamos». Se separa así: co-mí-a-mos."
+            "es": "La frase es: «Los niños cantaban en el coro.» Léela y pregunta a tu pareja por el infinitivo del verbo."
           },
           "prompt": {
-            "es": "¿En qué sílaba va la tilde? Cuenta desde el principio."
+            "es": "Tu pareja lee una frase con un verbo. ¿Cuál es su infinitivo?"
           },
+          "options": [
+            {
+              "es": "contar"
+            },
+            {
+              "es": "cantar"
+            },
+            {
+              "es": "cantor"
+            },
+            {
+              "es": "cenar"
+            }
+          ],
           "answer": 2,
           "difficulty": 3
         }
@@ -1988,12 +2055,23 @@
             "lengua.acentuacion"
           ],
           "clue": {
-            "es": "La palabra es «biblioteca». Se separa así: bi-blio-te-ca."
+            "es": "La palabra es «papel». Dila a tu pareja marcando bien la sílaba más fuerte: pa-PEL."
           },
           "prompt": {
-            "es": "¿Cuántas sílabas tiene la palabra?"
+            "es": "Tu pareja dice una palabra y marca la sílaba más fuerte. ¿Dónde está esa sílaba?"
           },
-          "answer": 4,
+          "options": [
+            {
+              "es": "en la última sílaba"
+            },
+            {
+              "es": "en la penúltima sílaba"
+            },
+            {
+              "es": "en la antepenúltima sílaba"
+            }
+          ],
+          "answer": 1,
           "difficulty": 1
         },
         {
@@ -2102,12 +2180,26 @@
             "lengua.acentuacion"
           ],
           "clue": {
-            "es": "La lista es: lámpara, mesa, camión, libro, teléfono."
+            "es": "La palabra es «camión». Díctala a tu pareja y dile que la fuerza va en la última sílaba."
           },
           "prompt": {
-            "es": "¿Cuántas palabras de la lista llevan tilde?"
+            "es": "Tu pareja dicta una palabra con la fuerza en la última sílaba y terminada en -n. ¿Cómo se escribe bien?"
           },
-          "answer": 3,
+          "options": [
+            {
+              "es": "camion"
+            },
+            {
+              "es": "camión"
+            },
+            {
+              "es": "cámion"
+            },
+            {
+              "es": "cámión"
+            }
+          ],
+          "answer": 2,
           "difficulty": 3
         }
       ]
@@ -2129,12 +2221,26 @@
             "lengua.vocabulario"
           ],
           "clue": {
-            "es": "El título del libro es «El zorro y la luna»."
+            "es": "Lee esta definición a tu pareja: «Lugar donde se guardan libros para leerlos o pedirlos prestados.»"
           },
           "prompt": {
-            "es": "¿Cuántas palabras tiene el título?"
+            "es": "Tu pareja lee una definición. ¿Qué palabra es?"
           },
-          "answer": 5,
+          "options": [
+            {
+              "es": "librería"
+            },
+            {
+              "es": "papelería"
+            },
+            {
+              "es": "biblioteca"
+            },
+            {
+              "es": "escuela"
+            }
+          ],
+          "answer": 3,
           "difficulty": 1
         },
         {
@@ -2243,12 +2349,26 @@
             "lengua.vocabulario"
           ],
           "clue": {
-            "es": "La lista es: panadero, panadería, patata, panecillo, pato. Todas se comparan con la palabra «pan»."
+            "es": "Dile a tu pareja la palabra «pan» y pregúntale qué palabra de su lista es de la misma familia."
           },
           "prompt": {
-            "es": "¿Cuántas palabras de la lista son de la familia de «pan»?"
+            "es": "Tu pareja dice una palabra. ¿Qué palabra es de su misma familia?"
           },
-          "answer": 3,
+          "options": [
+            {
+              "es": "patata"
+            },
+            {
+              "es": "panadería"
+            },
+            {
+              "es": "pato"
+            },
+            {
+              "es": "palo"
+            }
+          ],
+          "answer": 2,
           "difficulty": 3
         }
       ]
@@ -2270,12 +2390,23 @@
             "lengua.puntuacion"
           ],
           "clue": {
-            "es": "El texto es: «Hoy llueve. ¿Vamos a la biblioteca? ¡Sí!»"
+            "es": "Lee esta frase a tu pareja con voz de sorpresa: «Qué libro tan grande». Dile que la frase no tiene signos."
           },
           "prompt": {
-            "es": "¿Cuántas oraciones tiene el texto?"
+            "es": "Tu pareja lee una frase con voz de pregunta, de sorpresa o normal. ¿Qué signos hay que poner?"
           },
-          "answer": 3,
+          "options": [
+            {
+              "es": "¿ … ?"
+            },
+            {
+              "es": "¡ … !"
+            },
+            {
+              "es": "solo un punto"
+            }
+          ],
+          "answer": 2,
           "difficulty": 1
         },
         {
@@ -2938,12 +3069,26 @@
             "naturales.animales"
           ],
           "clue": {
-            "es": "En el estanque hay 3 peces, 4 ranas y 2 patos."
+            "es": "Describe a tu pareja un animal: nace en el agua, de adulto vive en tierra y en agua, salta y hace «croac»."
           },
           "prompt": {
-            "es": "¿Cuántos animales son anfibios?"
+            "es": "Tu pareja describe un animal anfibio. ¿Cuál es?"
           },
-          "answer": 4,
+          "options": [
+            {
+              "es": "pato"
+            },
+            {
+              "es": "pez"
+            },
+            {
+              "es": "rana"
+            },
+            {
+              "es": "conejo"
+            }
+          ],
+          "answer": 3,
           "difficulty": 3
         }
       ]
@@ -3245,12 +3390,26 @@
             "sociales.continentes"
           ],
           "clue": {
-            "es": "En este mapa hay 6 continentes: África, América, Antártida, Asia, Europa y Oceanía."
+            "es": "Describe a tu pareja un continente: es el más frío, está en el polo sur, cubierto de hielo, y no tiene ciudades."
           },
           "prompt": {
-            "es": "¿Cuántos continentes del mapa no son América ni Europa?"
+            "es": "Tu pareja describe un continente. ¿Cuál es?"
           },
-          "answer": 4,
+          "options": [
+            {
+              "es": "Asia"
+            },
+            {
+              "es": "Oceanía"
+            },
+            {
+              "es": "Antártida"
+            },
+            {
+              "es": "Europa"
+            }
+          ],
+          "answer": 3,
           "difficulty": 1
         },
         {
@@ -3359,12 +3518,26 @@
             "sociales.continentes"
           ],
           "clue": {
-            "es": "La lista es: África, Asia, Brasil, Europa, Pacífico, Oceanía, Atlántico."
+            "es": "Describe a tu pareja un lugar del mapa: es un océano enorme que separa América de Europa y de África."
           },
           "prompt": {
-            "es": "¿Cuántos nombres de la lista son continentes?"
+            "es": "Tu pareja describe un océano. ¿Cuál es?"
           },
-          "answer": 4,
+          "options": [
+            {
+              "es": "Pacífico"
+            },
+            {
+              "es": "Atlántico"
+            },
+            {
+              "es": "Índico"
+            },
+            {
+              "es": "Ártico"
+            }
+          ],
+          "answer": 2,
           "difficulty": 3
         }
       ]
@@ -3640,10 +3813,10 @@
             "sociales.trabajos"
           ],
           "clue": {
-            "es": "El molinero cobra 2 monedas por cada saco. Hoy muele 15 sacos: 9 son de un agricultor y el resto, de otro."
+            "es": "Hoy el molinero muele 15 sacos: 9 son de un agricultor y el resto, de otro."
           },
           "prompt": {
-            "es": "¿Cuántas monedas cobra al segundo agricultor?"
+            "es": "El molinero cobra 2 monedas por cada saco. ¿Cuántas monedas cobra al segundo agricultor?"
           },
           "answer": 12,
           "difficulty": 3
@@ -4062,10 +4235,10 @@
             "sociales.relieve"
           ],
           "clue": {
-            "es": "En la montaña la temperatura baja unos 6 grados por cada 1000 metros que subes. En el pueblo hay 20 grados. Subes 2000 metros."
+            "es": "En la montaña la temperatura baja unos 6 grados por cada 1000 metros que subes."
           },
           "prompt": {
-            "es": "¿Cuántos grados hay arriba?"
+            "es": "En el pueblo hay 20 grados y subes 2000 metros. ¿Cuántos grados hay arriba?"
           },
           "answer": 8,
           "difficulty": 3
@@ -4088,10 +4261,10 @@
             "sociales.mapas"
           ],
           "clue": {
-            "es": "En el mapa, la escala es 1 centímetro = 5 kilómetros. Dos pueblos están a 6 centímetros."
+            "es": "En el mapa, dos pueblos están a 6 centímetros."
           },
           "prompt": {
-            "es": "¿Cuántos kilómetros hay entre los dos pueblos?"
+            "es": "La escala es 1 centímetro = 5 kilómetros. ¿Cuántos kilómetros hay entre los dos pueblos?"
           },
           "answer": 30,
           "difficulty": 1
@@ -4202,10 +4375,10 @@
             "sociales.mapas"
           ],
           "clue": {
-            "es": "En el mapa, el río está a 8 centímetros del mirador. La escala es 1 centímetro = 250 metros."
+            "es": "En el mapa, el río está a 8 centímetros del mirador."
           },
           "prompt": {
-            "es": "¿Cuántos metros hay del mirador al río?"
+            "es": "La escala es 1 centímetro = 250 metros. ¿Cuántos metros hay del mirador al río?"
           },
           "answer": 2000,
           "difficulty": 3
