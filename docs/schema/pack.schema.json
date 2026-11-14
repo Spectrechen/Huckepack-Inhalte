@@ -242,6 +242,7 @@
         "rupeePaise",
         "realCentavos",
         "time",
+        "time12",
         "minutes"
       ]
     },
