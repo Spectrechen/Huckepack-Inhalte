@@ -197,6 +197,7 @@ und tippt die Zahl ein.
 | `prompt` | ja | Frage. **Nur** das Eingabe-Kind sieht sie, dazu das Ziffernfeld. |
 | `answer` | ja | Die Lösung als ganze Zahl (nicht negativ), siehe [Antwortformate](#8-antwortformate). |
 | `answerFormat` | nein | `integer` (Standard), `euroCents`, `dollarCents`, `poundPence`, `rupeePaise`, `realCentavos`, `time`, `minutes`. |
+| `options` | nein | 2–6 Texte. Dann tippt das Eingabe-Kind eine dieser Antworten an statt einer Zahl; `answer` ist die Nummer der richtigen (1 = erste). Ohne `answerFormat`. Gut für Wörter, Begriffe und Regeln: Das Hinweis-Kind erklärt (z. B. eine Definition), das andere wählt das passende Wort. |
 
 Wer sieht was:
 

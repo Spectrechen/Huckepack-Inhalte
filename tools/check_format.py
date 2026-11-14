@@ -105,6 +105,14 @@ def check_task(where, t, errors):
             errors.append(f"{where}: answer must be an integer >= 0")
         elif fmt == "time" and not 0 <= a < 1440:
             errors.append(f"{where}: time answer must be minutes since midnight (0-1439)")
+        opts = t.get("options")
+        if opts is not None:
+            if not isinstance(opts, list) or not 2 <= len(opts) <= 6 or not all(is_text(o) for o in opts):
+                errors.append(f"{where}: options must be a list of 2-6 texts")
+            elif isinstance(a, int) and not 1 <= a <= len(opts):
+                errors.append(f"{where}: with options, answer is the option number 1-{len(opts)}")
+            if fmt is not None:
+                errors.append(f"{where}: options and answerFormat don't go together")
     elif kind == "relay":
         need_text("first", "second")
         a = t.get("firstAnswer")
