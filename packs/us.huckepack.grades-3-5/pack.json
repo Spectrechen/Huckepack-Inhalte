@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "us.huckepack.grades-3-5",
-  "version": 1,
+  "version": 2,
   "title": {
     "en": "Coast Adventure: Grades 3 to 5"
   },
@@ -1629,9 +1629,23 @@
             "en": "Read the sentence: The gulls fly over the boats."
           },
           "prompt": {
-            "en": "How many nouns are in the sentence? Your partner reads the sentence to you."
+            "en": "Which two words in your partner's sentence are nouns? Your partner reads it to you."
           },
-          "answer": 2
+          "options": [
+            {
+              "en": "gulls and boats"
+            },
+            {
+              "en": "gulls and fly"
+            },
+            {
+              "en": "fly and over"
+            },
+            {
+              "en": "over and the"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "i2",
@@ -1754,8 +1768,22 @@
             "en": "Read the sentence: Pelicans dive, splash, and swim near the pier."
           },
           "prompt": {
-            "en": "How many verbs are in the sentence? Your partner reads it to you."
+            "en": "Which word in your partner's sentence is NOT a verb? Your partner reads it to you."
           },
+          "options": [
+            {
+              "en": "dive"
+            },
+            {
+              "en": "splash"
+            },
+            {
+              "en": "pier"
+            },
+            {
+              "en": "swim"
+            }
+          ],
           "answer": 3
         }
       ]
@@ -1781,9 +1809,23 @@
             "en": "Read the sentence: The old red boat sailed slowly into the busy harbor."
           },
           "prompt": {
-            "en": "How many adjectives are in the sentence?"
+            "en": "Which word in your partner's sentence is an adverb?"
           },
-          "answer": 3
+          "options": [
+            {
+              "en": "slowly"
+            },
+            {
+              "en": "busy"
+            },
+            {
+              "en": "old"
+            },
+            {
+              "en": "harbor"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "j2",
@@ -1956,9 +1998,23 @@
             "en": "The word is rewrite. Its prefix is re-, which means again."
           },
           "prompt": {
-            "en": "How many letters are in the base word, without the prefix?"
+            "en": "Your partner tells you a word with a prefix. What does the word mean?"
           },
-          "answer": 5
+          "options": [
+            {
+              "en": "to write again"
+            },
+            {
+              "en": "to write first"
+            },
+            {
+              "en": "to not write"
+            },
+            {
+              "en": "to write well"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "k2",
@@ -2130,8 +2186,22 @@
             "en": "The contraction is don't. It stands for do not."
           },
           "prompt": {
-            "en": "How many letters does the apostrophe replace?"
+            "en": "Your partner reads you a contraction. Which letter does its apostrophe replace?"
           },
+          "options": [
+            {
+              "en": "o"
+            },
+            {
+              "en": "n"
+            },
+            {
+              "en": "t"
+            },
+            {
+              "en": "d"
+            }
+          ],
           "answer": 1
         },
         {
@@ -2252,12 +2322,26 @@
           "difficulty": 2,
           "type": "splitInfo",
           "clue": {
-            "en": "These phrases need apostrophes: the captains hat, the pelicans beak, the childrens boat."
+            "en": "Say this phrase: the boat belongs to the children. There is more than one child."
           },
           "prompt": {
-            "en": "How many apostrophes are needed in all (one for each phrase)?"
+            "en": "Which way of writing your partner's phrase is correct?"
           },
-          "answer": 3
+          "options": [
+            {
+              "en": "the children's boat"
+            },
+            {
+              "en": "the childrens' boat"
+            },
+            {
+              "en": "the childrens boat"
+            },
+            {
+              "en": "the childrens's boat"
+            }
+          ],
+          "answer": 1
         }
       ]
     },
@@ -2282,9 +2366,23 @@
             "en": "Nina walked along the pier at sunrise. She counted 5 pelicans on the railing and 3 more in the water. Then a boat horn made them all fly away."
           },
           "prompt": {
-            "en": "How many pelicans did Nina count before they flew away?"
+            "en": "What made the pelicans fly away? Ask your partner to read the story to you."
           },
-          "answer": 8
+          "options": [
+            {
+              "en": "a boat horn"
+            },
+            {
+              "en": "a storm"
+            },
+            {
+              "en": "a fox"
+            },
+            {
+              "en": "a big wave"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "m2",
@@ -2454,12 +2552,26 @@
           "difficulty": 1,
           "type": "splitInfo",
           "clue": {
-            "en": "1) The fog was as thick as soup. 2) The waves danced. 3) The sea was a mirror. 4) The wind howled like a wolf."
+            "en": "The sentence is: The fog was as thick as soup."
           },
           "prompt": {
-            "en": "How many of these four sentences are similes?"
+            "en": "What kind of figurative language is your partner's sentence?"
           },
-          "answer": 2
+          "options": [
+            {
+              "en": "simile"
+            },
+            {
+              "en": "metaphor"
+            },
+            {
+              "en": "personification"
+            },
+            {
+              "en": "idiom"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "n2",
@@ -3146,9 +3258,23 @@
             "en": "A food chain: sun, grass, rabbit, fox."
           },
           "prompt": {
-            "en": "How many living things are in the chain?"
+            "en": "Which one in your partner's food chain is the producer (it makes its own food)?"
           },
-          "answer": 3
+          "options": [
+            {
+              "en": "grass"
+            },
+            {
+              "en": "rabbit"
+            },
+            {
+              "en": "fox"
+            },
+            {
+              "en": "sun"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "r2",
@@ -3801,12 +3927,26 @@
           "difficulty": 1,
           "type": "splitInfo",
           "clue": {
-            "en": "The United States has 50 states. The lower 48 states are joined together. Alaska and Hawaii are the other states."
+            "en": "Your state is Alaska. It is the largest state, in the far northwest, next to Canada, and it is not joined to the other states."
           },
           "prompt": {
-            "en": "How many states are not part of the lower 48?"
+            "en": "Which state does your partner describe?"
           },
-          "answer": 2
+          "options": [
+            {
+              "en": "Alaska"
+            },
+            {
+              "en": "Texas"
+            },
+            {
+              "en": "Florida"
+            },
+            {
+              "en": "Maine"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "v2",
@@ -3976,12 +4116,26 @@
           "difficulty": 1,
           "type": "splitInfo",
           "clue": {
-            "en": "The Great Lakes are Superior, Michigan, Huron, Erie and Ontario."
+            "en": "Your lake is Lake Superior. It is the largest of the five Great Lakes."
           },
           "prompt": {
-            "en": "How many Great Lakes are there?"
+            "en": "Which Great Lake does your partner describe?"
           },
-          "answer": 5
+          "options": [
+            {
+              "en": "Superior"
+            },
+            {
+              "en": "Erie"
+            },
+            {
+              "en": "Ontario"
+            },
+            {
+              "en": "Huron"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "w2",
@@ -4151,12 +4305,26 @@
           "difficulty": 1,
           "type": "splitInfo",
           "clue": {
-            "en": "The list: fish, delivery, haircut, net, boat repair, bread."
+            "en": "The word is haircut. It is work that a barber does for you."
           },
           "prompt": {
-            "en": "How many things on the list are services? (A service is work done for you.)"
+            "en": "Which word fits what your partner describes?"
           },
-          "answer": 3
+          "options": [
+            {
+              "en": "a service"
+            },
+            {
+              "en": "a good (a thing)"
+            },
+            {
+              "en": "a tax"
+            },
+            {
+              "en": "a loan"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "x2",

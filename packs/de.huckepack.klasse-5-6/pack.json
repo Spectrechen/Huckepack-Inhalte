@@ -1,7 +1,7 @@
 {
  "$schema": "../../docs/schema/pack.schema.json",
  "id": "de.huckepack.klasse-5-6",
- "version": 1,
+ "version": 2,
  "title": {
   "de": "Küste und Hafen: Klasse 5 und 6",
   "en": "Coast and Harbour: Grades 5 and 6"
@@ -557,10 +557,10 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Ein Kilo Krabben kostet 12,40 €. Ihr kauft ein halbes Kilo."
+      "de": "Ein Kilo Krabben kostet 12,40 €."
      },
      "prompt": {
-      "de": "Wie viel kostet das halbe Kilo? Tippt den Betrag."
+      "de": "Ihr kauft ein halbes Kilo. Wie viel kostet das halbe Kilo? Tippt den Betrag."
      },
      "answer": 620,
      "answerFormat": "euroCents"
@@ -703,10 +703,10 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Ein Fischer hat 36 Heringe. In jede Kiste legt er 4 Heringe."
+      "de": "Ein Fischer hat 36 Heringe."
      },
      "prompt": {
-      "de": "Wie viele Kisten braucht er?"
+      "de": "In jede Kiste legt er 4 Heringe. Wie viele Kisten braucht er?"
      },
      "answer": 9
     },
@@ -820,10 +820,10 @@
      "type": "splitInfo",
      "difficulty": 3,
      "clue": {
-      "de": "Zwei Leuchtfeuer blinken: das eine alle 6 Sekunden, das andere alle 8 Sekunden. Gerade blinken beide gleichzeitig."
+      "de": "Ein Leuchtfeuer blinkt alle 6 Sekunden. Gerade blinkt es zusammen mit einem zweiten."
      },
      "prompt": {
-      "de": "Nach wie vielen Sekunden blinken beide zum ersten Mal wieder gleichzeitig?"
+      "de": "Das zweite Leuchtfeuer blinkt alle 8 Sekunden. Nach wie vielen Sekunden blinken beide zum ersten Mal wieder gleichzeitig?"
      },
      "answer": 24
     }
@@ -846,10 +846,10 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Das Deck eines Bootes ist ein Rechteck: 8 m lang und 3 m breit."
+      "de": "Das Deck eines Bootes ist ein Rechteck. Es ist 8 m lang."
      },
      "prompt": {
-      "de": "Wie groß ist die Fläche des Decks in Quadratmetern?"
+      "de": "Das Deck ist 3 m breit. Wie groß ist die Fläche des Decks in Quadratmetern?"
      },
      "answer": 24
     },
@@ -963,10 +963,10 @@
      "type": "splitInfo",
      "difficulty": 3,
      "clue": {
-      "de": "Die Werfthalle besteht aus zwei Rechtecken: eines ist 10 m mal 4 m, das andere 6 m mal 3 m."
+      "de": "Die Werfthalle besteht aus zwei Rechtecken. Eines ist 10 m mal 4 m."
      },
      "prompt": {
-      "de": "Wie groß ist die gesamte Fläche der Halle in Quadratmetern?"
+      "de": "Das andere Rechteck ist 6 m mal 3 m. Wie groß ist die gesamte Fläche der Halle in Quadratmetern?"
      },
      "answer": 58
     }
@@ -990,10 +990,10 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Ein Fischkutter hat 24 Kisten geladen. Ein Viertel der Kisten ist für den Markt."
+      "de": "Ein Fischkutter hat 24 Kisten geladen."
      },
      "prompt": {
-      "de": "Wie viele Kisten sind für den Markt?"
+      "de": "Ein Viertel der Kisten ist für den Markt. Wie viele Kisten sind für den Markt?"
      },
      "answer": 6
     },
@@ -1107,10 +1107,10 @@
      "type": "splitInfo",
      "difficulty": 3,
      "clue": {
-      "de": "Auf dem Boot sind 3/8 der Fracht Fischkisten. Das sind 15 Kisten."
+      "de": "Auf dem Boot sind 3/8 der Fracht Fischkisten."
      },
      "prompt": {
-      "de": "Wie viele Kisten hat das Boot insgesamt geladen?"
+      "de": "Das sind 15 Kisten. Wie viele Kisten hat das Boot insgesamt geladen?"
      },
      "answer": 40
     }
@@ -1133,10 +1133,10 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Morgens zeigt das Thermometer am Deich −3 Grad. Mittags sind es 5 Grad."
+      "de": "Morgens zeigt das Thermometer am Deich −3 Grad."
      },
      "prompt": {
-      "de": "Um wie viele Grad ist es mittags wärmer als morgens?"
+      "de": "Mittags sind es 5 Grad. Um wie viele Grad ist es mittags wärmer als morgens?"
      },
      "answer": 8
     },
@@ -1250,10 +1250,10 @@
      "type": "splitInfo",
      "difficulty": 3,
      "clue": {
-      "de": "Ein Tauchroboter ist bei −15 m. Er taucht weiter bis −38 m und steigt dann 10 m auf."
+      "de": "Ein Tauchroboter ist bei −15 m. Er taucht weiter bis −38 m."
      },
      "prompt": {
-      "de": "Wie tief unter dem Meeresspiegel ist er jetzt? Tippt die Tiefe in Metern ohne Minuszeichen."
+      "de": "Dann steigt er 10 m auf. Wie tief unter dem Meeresspiegel ist er jetzt? Tippt die Tiefe in Metern ohne Minuszeichen."
      },
      "answer": 28
     }
@@ -1291,10 +1291,10 @@
      "type": "splitInfo",
      "difficulty": 2,
      "clue": {
-      "de": "Das Schiff legt um 13:45 Uhr ab. Die Fahrt dauert 2 Stunden und 30 Minuten."
+      "de": "Das Schiff legt um 13:45 Uhr ab."
      },
      "prompt": {
-      "de": "Wann kommt es an? Tippt die Uhrzeit."
+      "de": "Die Fahrt dauert 2 Stunden und 30 Minuten. Wann kommt es an? Tippt die Uhrzeit."
      },
      "answer": 975,
      "answerFormat": "time"
@@ -1466,12 +1466,26 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Der Satz lautet: Der alte Fischer flickt das große Netz am Hafen."
+      "de": "Der Satz lautet: Der alte Fischer flickt das große Netz am Hafen. Das gesuchte Wort ist „große“."
      },
      "prompt": {
-      "de": "Wie viele Nomen stehen im Satz, den dein Partner vorliest?"
+      "de": "Welche Wortart hat das Wort, das dein Partner nennt?"
      },
-     "answer": 3
+     "options": [
+      {
+       "de": "Adjektiv"
+      },
+      {
+       "de": "Nomen"
+      },
+      {
+       "de": "Verb"
+      },
+      {
+       "de": "Artikel"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "fd-3",
@@ -1633,12 +1647,26 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Der Satz lautet: Am Morgen fängt der Fischer viele Heringe."
+      "de": "Der Satz lautet: Am Morgen fängt der Fischer viele Heringe. Das gesuchte Satzglied ist „Am Morgen“."
      },
      "prompt": {
-      "de": "Aus wie vielen Satzgliedern besteht der Satz, den dein Partner vorliest?"
+      "de": "Welches Satzglied ist das, das dein Partner nennt?"
      },
-     "answer": 4
+     "options": [
+      {
+       "de": "Objekt"
+      },
+      {
+       "de": "Adverbiale"
+      },
+      {
+       "de": "Subjekt"
+      },
+      {
+       "de": "Prädikat"
+      }
+     ],
+     "answer": 2
     },
     {
      "id": "fz-3",
@@ -1831,12 +1859,26 @@
      "type": "splitInfo",
      "difficulty": 2,
      "clue": {
-      "de": "Vier Sätze: 1) Ich lache. 2) Wir sind gesegelt. 3) Er wird kommen. 4) Sie sprang."
+      "de": "Der Satz lautet: Wir sind gesegelt."
      },
      "prompt": {
-      "de": "In wie vielen der vier Sätze, die dein Partner vorliest, geht es um die Vergangenheit?"
+      "de": "In welcher Zeitform steht der Satz, den dein Partner vorliest?"
      },
-     "answer": 2
+     "options": [
+      {
+       "de": "Futur"
+      },
+      {
+       "de": "Präteritum"
+      },
+      {
+       "de": "Perfekt"
+      },
+      {
+       "de": "Präsens"
+      }
+     ],
+     "answer": 3
     },
     {
      "id": "sb-4",
@@ -1915,12 +1957,26 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Der Satz lautet: Am Strand liegen Muscheln Steine Algen und Quallen."
+      "de": "Der Satz lautet: Am Strand liegen Muscheln, Steine, Algen und Quallen. Gemeint sind die Kommas zwischen „Muscheln“, „Steine“ und „Algen“."
      },
      "prompt": {
-      "de": "Wie viele Kommas braucht der Satz, den dein Partner vorliest?"
+      "de": "Welche Regel gilt für diese Kommas?"
      },
-     "answer": 2
+     "options": [
+      {
+       "de": "Nebensatz"
+      },
+      {
+       "de": "Anrede"
+      },
+      {
+       "de": "Zusatz"
+      },
+      {
+       "de": "Aufzählung"
+      }
+     ],
+     "answer": 4
     },
     {
      "id": "sk-2",
@@ -2190,12 +2246,23 @@
      "type": "splitInfo",
      "difficulty": 2,
      "clue": {
-      "de": "Sechs Wörter: Meer, Boot, Seefahrer, Wal, Quelle, Strand."
+      "de": "Das Wort bezeichnet das große Wasser, in dem Wale schwimmen. Es klingt wie „mehr“ und hat ein langes e."
      },
      "prompt": {
-      "de": "Wie viele der sechs Wörter haben einen Doppelvokal (aa, ee oder oo)?"
+      "de": "Wie schreibt man das Wort richtig?"
      },
-     "answer": 3
+     "options": [
+      {
+       "de": "Mär"
+      },
+      {
+       "de": "Meer"
+      },
+      {
+       "de": "Mehr"
+      }
+     ],
+     "answer": 2
     },
     {
      "id": "ms-5",
@@ -2340,9 +2407,23 @@
       "de": "Der Wetterbericht lautet: „Today it is sunny and windy. It is eighteen degrees.“"
      },
      "prompt": {
-      "de": "Wie viele Grad sind es laut Wetterbericht, den dein Partner vorliest?"
+      "de": "Wie ist das Wetter laut Bericht, den dein Partner vorliest?"
      },
-     "answer": 18
+     "options": [
+      {
+       "de": "Regnerisch und kalt"
+      },
+      {
+       "de": "Bewölkt und windstill"
+      },
+      {
+       "de": "Sonnig und windstill"
+      },
+      {
+       "de": "Sonnig und windig"
+      }
+     ],
+     "answer": 4
     },
     {
      "id": "wa-4",
@@ -3001,10 +3082,10 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Am Kiosk sagt der Verkäufer: „An ice cream is two euros fifty. A lemonade is one euro eighty.“"
+      "de": "Am Kiosk sagt der Verkäufer: „An ice cream is two euros fifty.“"
      },
      "prompt": {
-      "de": "Wie viel kosten Eis und Limonade zusammen? Tippt den Betrag."
+      "de": "Eine Limonade kostet 1,80 €. Wie viel kosten Eis und Limonade zusammen? Tippt den Betrag."
      },
      "answer": 430,
      "answerFormat": "euroCents"
@@ -3169,12 +3250,26 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Die sieben Kontinente heißen: Afrika, Antarktis, Asien, Australien, Europa, Nordamerika, Südamerika."
+      "de": "Dieser Kontinent ist der größte der Erde. Er liegt östlich von Europa."
      },
      "prompt": {
-      "de": "Wie viele Kontinente beginnen mit dem Buchstaben A?"
+      "de": "Welchen Kontinent beschreibt dein Partner?"
      },
-     "answer": 4
+     "options": [
+      {
+       "de": "Antarktis"
+      },
+      {
+       "de": "Asien"
+      },
+      {
+       "de": "Afrika"
+      },
+      {
+       "de": "Australien"
+      }
+     ],
+     "answer": 2
     },
     {
      "id": "vw-3",
@@ -3344,11 +3439,25 @@
      "type": "splitInfo",
      "difficulty": 1,
      "clue": {
-      "de": "Deutschland hat 16 Bundesländer. Berlin, Hamburg und Bremen sind Stadtstaaten."
+      "de": "Dieses Bundesland ist zugleich eine Stadt. Sie ist ein großer Hafen an der Elbe."
      },
      "prompt": {
-      "de": "Wie viele Stadtstaaten hat Deutschland?"
+      "de": "Welches Bundesland beschreibt dein Partner?"
      },
+     "options": [
+      {
+       "de": "Berlin"
+      },
+      {
+       "de": "Sachsen"
+      },
+      {
+       "de": "Hamburg"
+      },
+      {
+       "de": "Bremen"
+      }
+     ],
      "answer": 3
     },
     {
@@ -3582,10 +3691,10 @@
      "type": "splitInfo",
      "difficulty": 3,
      "clue": {
-      "de": "Ein Schiff startet bei 20° Süd und fährt 45 Breitengrade genau nach Norden."
+      "de": "Ein Schiff startet bei 20° Süd."
      },
      "prompt": {
-      "de": "Auf welcher Breite ist das Schiff danach? Tippt die Zahl der Grad Nord."
+      "de": "Es fährt 45 Breitengrade genau nach Norden. Auf welcher Breite ist das Schiff danach? Tippt die Zahl der Grad Nord."
      },
      "answer": 25
     }
@@ -3654,10 +3763,10 @@
      "type": "splitInfo",
      "difficulty": 2,
      "clue": {
-      "de": "Eine Karte hat den Maßstab 1 : 100 000. Zwei Orte sind auf der Karte 3 cm voneinander entfernt."
+      "de": "Eine Karte hat den Maßstab 1 : 100 000."
      },
      "prompt": {
-      "de": "Wie viele Kilometer sind die Orte in Wirklichkeit voneinander entfernt?"
+      "de": "Zwei Orte sind auf der Karte 3 cm voneinander entfernt. Wie viele Kilometer sind die Orte in Wirklichkeit voneinander entfernt?"
      },
      "answer": 3
     },
@@ -3858,10 +3967,10 @@
      "type": "splitInfo",
      "difficulty": 2,
      "clue": {
-      "de": "Eine Strandpflanze hat 5 Blüten. Jede Blüte hat 4 Blütenblätter."
+      "de": "Eine Strandpflanze hat 5 Blüten."
      },
      "prompt": {
-      "de": "Wie viele Blütenblätter hat die Pflanze insgesamt?"
+      "de": "Jede Blüte hat 4 Blütenblätter. Wie viele Blütenblätter hat die Pflanze insgesamt?"
      },
      "answer": 20
     },
@@ -4025,10 +4134,10 @@
      "type": "splitInfo",
      "difficulty": 2,
      "clue": {
-      "de": "Am Mikroskop vergrößert das Okular 10-fach und das Objektiv 40-fach."
+      "de": "Am Mikroskop vergrößert das Okular 10-fach."
      },
      "prompt": {
-      "de": "Wie stark ist die Gesamtvergrößerung?"
+      "de": "Das Objektiv vergrößert 40-fach. Wie stark ist die Gesamtvergrößerung?"
      },
      "answer": 400
     },
@@ -4199,10 +4308,10 @@
      "type": "splitInfo",
      "difficulty": 2,
      "clue": {
-      "de": "Eine Möwe legt 3 Eier in ihr Nest. Am Strand sind 6 Nester."
+      "de": "Eine Möwe legt 3 Eier in ihr Nest."
      },
      "prompt": {
-      "de": "Wie viele Eier liegen in den Nestern insgesamt?"
+      "de": "Am Strand sind 6 Nester. Wie viele Eier liegen in den Nestern insgesamt?"
      },
      "answer": 18
     },

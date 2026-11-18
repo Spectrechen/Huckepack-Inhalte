@@ -196,7 +196,8 @@ und tippt die Zahl ein.
 | `clueVisual` | nein | [Bild](#7-bilder-in-aufgaben-visuals) (Uhr, Geld), ebenfalls nur beim Hinweis-Kind. |
 | `prompt` | ja | Frage. **Nur** das Eingabe-Kind sieht sie, dazu das Ziffernfeld. |
 | `answer` | ja | Die Lösung als ganze Zahl (nicht negativ), siehe [Antwortformate](#8-antwortformate). |
-| `answerFormat` | nein | `integer` (Standard), `euroCents`, `dollarCents`, `poundPence`, `rupeePaise`, `realCentavos`, `time`, `minutes`. |
+| `answerFormat` | nein | `integer` (Standard), `euroCents`, `dollarCents`, `poundPence`, `rupeePaise`, `realCentavos`, `time`, `time12`, `minutes`. |
+| `options` | nein | 2–6 Texte. Dann tippt das Eingabe-Kind eine dieser Antworten an statt einer Zahl; `answer` ist die Nummer der richtigen (1 = erste). Ohne `answerFormat`. Gut für Wörter, Begriffe und Regeln: Das Hinweis-Kind erklärt (z. B. eine Definition), das andere wählt das passende Wort. |
 
 Wer sieht was:
 
@@ -387,8 +388,9 @@ Beispiele:
 - Andere Währungen genauso, immer in der kleinsten Einheit gespeichert: `dollarCents` ($5.50 → 550), `poundPence`
   (£5.50 → 550), `rupeePaise` (₹5.50 → 550), `realCentavos` (R$ 5,50 → 550). Das Bild `money` (Münzen und Scheine)
   zeigt bisher nur Euro; für andere Währungen die Beträge im Text nennen.
-- Die Uhrzeit (`time`, `digitalClock`) wird im 24-Stunden-Format getippt und gezeigt; eine 12-Stunden-Eingabe mit
-  a.m./p.m. gibt es noch nicht. Die analoge Uhr (`clock`) passt für beide.
+- `time` ist die 24-Stunden-Uhr (`15:45`). `time12` ist die 12-Stunden-Uhr: Die Kinder tippen Stunde und Minuten
+  (`345`) und wählen a.m. oder p.m.; gezeigt wird `3:45 p.m.`. Gespeichert wird bei beiden die Minute seit Mitternacht
+  (15:45 → 945). Das Bild `digitalClock` zeigt 24 Stunden; die analoge Uhr (`clock`) passt für beide.
 - 7:05 Uhr → `"answer": 425, "answerFormat": "time"`
 - 1 h 20 min → `"answer": 80, "answerFormat": "minutes"`
 - 0,87 € → `87` (die Kinder tippen `87`)

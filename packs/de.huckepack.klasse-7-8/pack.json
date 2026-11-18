@@ -1,7 +1,7 @@
 {
   "$schema": "../../docs/schema/pack.schema.json",
   "id": "de.huckepack.klasse-7-8",
-  "version": 1,
+  "version": 2,
   "title": {
     "de": "Gebirge: Klasse 7 und 8",
     "en": "Mountains: grades 7 and 8"
@@ -493,10 +493,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Im Dorfladen kostet eine Jacke 80 €. Sie ist um 25 % reduziert."
+            "de": "Im Dorfladen kostet eine Jacke 80 €."
           },
           "prompt": {
-            "de": "Wie viel Euro Rabatt gibt es auf die Jacke?"
+            "de": "Sie ist um 25 % reduziert. Wie viel Euro Rabatt gibt es auf die Jacke?"
           },
           "answer": 20
         },
@@ -618,10 +618,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Ein Smartphone kostet nach 20 % Rabatt noch 240 €."
+            "de": "Ein Smartphone kostet nach dem Rabatt noch 240 €."
           },
           "prompt": {
-            "de": "Wie viel Euro kostete es vor dem Rabatt?"
+            "de": "Der Rabatt betrug 20 %. Wie viel Euro kostete es vor dem Rabatt?"
           },
           "answer": 300
         }
@@ -645,10 +645,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Ihr zahlt 500 € auf ein Sparbuch ein. Die Bank gibt 2 % Zinsen im Jahr."
+            "de": "Ihr zahlt 500 € auf ein Sparbuch ein."
           },
           "prompt": {
-            "de": "Wie viel Euro Zinsen gibt es nach einem Jahr?"
+            "de": "Die Bank gibt 2 % Zinsen im Jahr. Wie viel Euro Zinsen gibt es nach einem Jahr?"
           },
           "answer": 10
         },
@@ -762,10 +762,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Auf einem Konto liegen 2 000 €. Nach einem Jahr gab es 60 € Zinsen."
+            "de": "Auf einem Konto liegen 2 000 €."
           },
           "prompt": {
-            "de": "Wie hoch ist der Zinssatz in Prozent?"
+            "de": "Nach einem Jahr gab es 60 € Zinsen. Wie hoch ist der Zinssatz in Prozent?"
           },
           "answer": 3
         }
@@ -788,10 +788,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Die Gleichung lautet 3x + 5 = 20."
+            "de": "Die linke Seite der Gleichung lautet 3x + 5."
           },
           "prompt": {
-            "de": "Wie groß ist x?"
+            "de": "Rechts vom Gleichheitszeichen steht 20. Wie groß ist x?"
           },
           "answer": 5
         },
@@ -905,10 +905,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Ein Rechteck hat die Breite x und die Länge x + 5. Der Umfang beträgt 34 cm."
+            "de": "Ein Rechteck hat die Breite x und die Länge x + 5."
           },
           "prompt": {
-            "de": "Wie groß ist x in cm?"
+            "de": "Der Umfang beträgt 34 cm. Wie groß ist x in cm?"
           },
           "answer": 6
         }
@@ -1066,10 +1066,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Ein Dreieck hat zwei Winkel: 50 Grad und 60 Grad."
+            "de": "Zwei Winkel messen 50 Grad und 60 Grad."
           },
           "prompt": {
-            "de": "Wie groß ist der dritte Winkel in Grad?"
+            "de": "Sie gehören zu einem Dreieck. Wie groß ist der dritte Winkel in Grad?"
           },
           "answer": 70
         },
@@ -1183,10 +1183,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Ein Viereck hat drei Winkel: 85, 95 und 110 Grad."
+            "de": "Ein Viereck hat zwei Winkel mit 85 und 95 Grad."
           },
           "prompt": {
-            "de": "Wie groß ist der vierte Winkel in Grad?"
+            "de": "Der dritte Winkel hat 110 Grad. Wie groß ist der vierte Winkel in Grad?"
           },
           "answer": 70
         }
@@ -1327,10 +1327,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Ein runder Tisch hat den Durchmesser 20 dm. Rechnet mit π ≈ 3,14."
+            "de": "Ein runder Tisch hat den Durchmesser 20 dm."
           },
           "prompt": {
-            "de": "Wie groß ist die Tischfläche in dm²?"
+            "de": "Rechnet mit π ≈ 3,14. Wie groß ist die Tischfläche in dm²?"
           },
           "answer": 314
         }
@@ -1353,12 +1353,23 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "1. Der Bäcker backt Brot. 2. Das Brot wird gebacken. 3. Die Mühle wurde gebaut. 4. Der Müller sieht den Bach."
+            "de": "Der Satz lautet: Das Brot wird gebacken."
           },
           "prompt": {
-            "de": "Wie viele der vier Sätze stehen im Passiv?"
+            "de": "In welcher Form steht der Satz, den dein Partner vorliest?"
           },
-          "answer": 2
+          "options": [
+            {
+              "de": "Passiv"
+            },
+            {
+              "de": "Aktiv"
+            },
+            {
+              "de": "Imperativ"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "saegemuehle-v2",
@@ -1470,12 +1481,26 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Text: Die Mühle wurde 1850 gebaut. Sie wird heute noch genutzt. Früher mahlte man dort Korn. Das Mehl wurde verkauft. Die Kinder besuchen die Mühle."
+            "de": "Der Satz lautet: Das Mehl wurde vom Müller verkauft."
           },
           "prompt": {
-            "de": "Wie viele Passivsätze stehen im Text?"
+            "de": "Wie lautet der Satz im Aktiv?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "Der Müller verkauft das Mehl."
+            },
+            {
+              "de": "Der Müller verkaufte das Mehl."
+            },
+            {
+              "de": "Der Müller wurde das Mehl verkauft."
+            },
+            {
+              "de": "Das Mehl verkaufte den Müller."
+            }
+          ],
+          "answer": 2
         }
       ]
     },
@@ -1497,12 +1522,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "1. Wenn ich Zeit hätte, käme ich. 2. Ich habe Zeit. 3. Er wäre gern dabei. 4. Sie kommt."
+            "de": "Der Satz lautet: Er wäre gern dabei."
           },
           "prompt": {
-            "de": "Wie viele der vier Sätze stehen im Konjunktiv II?"
+            "de": "In welchem Modus steht der Satz, den dein Partner vorliest?"
           },
-          "answer": 2
+          "options": [
+            {
+              "de": "Imperativ"
+            },
+            {
+              "de": "Konjunktiv I"
+            },
+            {
+              "de": "Konjunktiv II"
+            },
+            {
+              "de": "Indikativ"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "konjunktiv-j2",
@@ -1614,12 +1653,23 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "1. Hätte ich ein Floß, führe ich über den See. 2. Ich würde dich mitnehmen. 3. Ich bin müde. 4. Wäre es nicht so kalt, bliebe ich."
+            "de": "Der Satz lautet: Wenn ich Zeit hätte, käme ich. Das gesuchte Wort ist „käme“."
           },
           "prompt": {
-            "de": "Wie viele Sätze enthalten einen Konjunktiv II (auch die Form mit „würde“)?"
+            "de": "Wie lautet die Grundform des Verbs, das dein Partner nennt?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "kommen"
+            },
+            {
+              "de": "kämmen"
+            },
+            {
+              "de": "kamen"
+            }
+          ],
+          "answer": 1
         }
       ]
     },
@@ -1640,12 +1690,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Der Satz lautet: Wir bleiben in der Hütte, weil es regnet."
+            "de": "Der Satz lautet: Wir bleiben in der Hütte, weil es regnet. Das gesuchte Satzstück ist „weil es regnet“."
           },
           "prompt": {
-            "de": "Wie viele Teilsätze (Hauptsatz und Nebensatz zusammen) hat das Satzgefüge?"
+            "de": "Was ist das Satzstück, das dein Partner nennt?"
           },
-          "answer": 2
+          "options": [
+            {
+              "de": "Nebensatz"
+            },
+            {
+              "de": "Hauptsatz"
+            },
+            {
+              "de": "Prädikat"
+            },
+            {
+              "de": "Attribut"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "huette-satzgefuege-s2",
@@ -1757,12 +1821,26 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Text: Die Kinder gingen los, obwohl es spät war. Sie wollten rasten, falls die Hütte offen wäre. Zuerst aßen sie, dann tranken sie. Sie schliefen, bis die Sonne aufging."
+            "de": "Der Satz lautet: Die Kinder gingen los, obwohl es spät war."
           },
           "prompt": {
-            "de": "Wie viele Nebensätze enthält der Text?"
+            "de": "Welche Art von Nebensatz steht im Satz, den dein Partner vorliest?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "Konditionalsatz"
+            },
+            {
+              "de": "Konzessivsatz"
+            },
+            {
+              "de": "Kausalsatz"
+            },
+            {
+              "de": "Temporalsatz"
+            }
+          ],
+          "answer": 2
         }
       ]
     },
@@ -1783,12 +1861,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Der Satz ohne Kommas: Wir gehen wandern weil die Sonne scheint und wir Zeit haben."
+            "de": "Der Satz ohne Kommas: Wir gehen wandern weil die Sonne scheint und wir Zeit haben. Das fehlende Komma steht vor „weil“."
           },
           "prompt": {
-            "de": "Wie viele Kommas fehlen?"
+            "de": "Warum braucht man dort ein Komma?"
           },
-          "answer": 1
+          "options": [
+            {
+              "de": "Anrede"
+            },
+            {
+              "de": "Zusatz"
+            },
+            {
+              "de": "Ein Nebensatz beginnt"
+            },
+            {
+              "de": "Aufzählung"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "wetterwarte-c2",
@@ -1900,12 +1992,26 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Der Satz ohne Kommas: Der Wanderer der gestern ankam erzählte uns dass der Pass offen ist."
+            "de": "Der Satz ohne Kommas: Der Wanderer der gestern ankam erzählte uns dass der Pass offen ist. Gemeint ist das Komma nach „ankam“."
           },
           "prompt": {
-            "de": "Wie viele Kommas fehlen?"
+            "de": "Welchen Satzteil beendet dieses Komma?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "dass-Satz"
+            },
+            {
+              "de": "Aufzählung"
+            },
+            {
+              "de": "Anrede"
+            },
+            {
+              "de": "Relativsatz"
+            }
+          ],
+          "answer": 4
         }
       ]
     },
@@ -1927,12 +2033,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Der Satz lautet: Der kleine Hund holt am Morgen den Stock."
+            "de": "Der Satz lautet: Der kleine Hund holt am Morgen den Stock. Das gesuchte Satzglied ist „den Stock“."
           },
           "prompt": {
-            "de": "Wie viele Satzglieder hat der Satz?"
+            "de": "Welches Satzglied ist das, das dein Partner nennt?"
           },
-          "answer": 4
+          "options": [
+            {
+              "de": "Akkusativobjekt"
+            },
+            {
+              "de": "Subjekt"
+            },
+            {
+              "de": "Prädikat"
+            },
+            {
+              "de": "Adverbiale"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "wetterwarte-2-g2",
@@ -2044,11 +2164,25 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Der Satz lautet: Dem Gast reicht die Wirtin heute einen heißen Tee."
+            "de": "Der Satz lautet: Dem Gast reicht die Wirtin heute einen heißen Tee. Das gesuchte Satzglied ist „Dem Gast“."
           },
           "prompt": {
-            "de": "Wie viele Objekte (Dativ- und Akkusativobjekte zusammen) hat der Satz?"
+            "de": "Welches Satzglied ist das, das dein Partner nennt?"
           },
+          "options": [
+            {
+              "de": "Adverbiale"
+            },
+            {
+              "de": "Dativobjekt"
+            },
+            {
+              "de": "Akkusativobjekt"
+            },
+            {
+              "de": "Subjekt"
+            }
+          ],
           "answer": 2
         }
       ]
@@ -2070,12 +2204,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "1. I have never seen a glacier. 2. We climbed the hill last week. 3. She has lost her key. 4. They arrived at noon."
+            "de": "Der Satz lautet: She has lost her key."
           },
           "prompt": {
-            "de": "Wie viele der vier Sätze stehen im present perfect?"
+            "de": "Welche Zeitform steht im Satz, den dein Partner vorliest?"
           },
-          "answer": 2
+          "options": [
+            {
+              "de": "past perfect"
+            },
+            {
+              "de": "present simple"
+            },
+            {
+              "de": "present perfect"
+            },
+            {
+              "de": "simple past"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "bruecke-tenses-t2",
@@ -2187,12 +2335,26 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "1. She has lived here since 2019. 2. She moved here in 2019. 3. We have known him for years. 4. We met him last summer. 5. He has been ill since Monday. 6. He fell ill on Monday."
+            "de": "Der Satz lautet: He has been ill since Monday. Das Signalwort ist „since Monday“."
           },
           "prompt": {
-            "de": "Wie viele der sechs Sätze stehen im simple past?"
+            "de": "Welche Zeitform braucht man mit diesem Signalwort?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "simple past"
+            },
+            {
+              "de": "present simple"
+            },
+            {
+              "de": "past perfect"
+            },
+            {
+              "de": "present perfect"
+            }
+          ],
+          "answer": 4
         }
       ]
     },
@@ -2214,12 +2376,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Liste: walk, go, eat, play, see, help, write, jump."
+            "de": "Das Verb lautet „go“."
           },
           "prompt": {
-            "de": "Wie viele dieser Verben sind unregelmäßig (irregular)?"
+            "de": "Wie heißt das simple past von dem Verb, das dein Partner nennt?"
           },
-          "answer": 4
+          "options": [
+            {
+              "de": "went"
+            },
+            {
+              "de": "goed"
+            },
+            {
+              "de": "gone"
+            },
+            {
+              "de": "going"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "bruecke-irregular-i2",
@@ -2339,12 +2515,26 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "1. She has swam. 2. They have gone. 3. He has wrote a letter. 4. We have eaten. 5. I have saw it."
+            "de": "Das Verb lautet „write“."
           },
           "prompt": {
-            "de": "Wie viele der fünf Sätze enthalten einen Fehler?"
+            "de": "Wie heißt das past participle von dem Verb, das dein Partner nennt?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "writen"
+            },
+            {
+              "de": "written"
+            },
+            {
+              "de": "wrote"
+            },
+            {
+              "de": "writed"
+            }
+          ],
+          "answer": 2
         }
       ]
     },
@@ -2365,12 +2555,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "1. If it rains, we will stay home. 2. If it rained, we would stay home. 3. If I see him, I will tell him."
+            "de": "Der Satz lautet: If it rains, we will stay home."
           },
           "prompt": {
-            "de": "Wie viele Sätze sind Conditional I (if + present, will)?"
+            "de": "Welcher Typ von if-Satz ist das, den dein Partner vorliest?"
           },
-          "answer": 2
+          "options": [
+            {
+              "de": "Conditional III"
+            },
+            {
+              "de": "Zero conditional"
+            },
+            {
+              "de": "Conditional I"
+            },
+            {
+              "de": "Conditional II"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "aussichtsturm-c2",
@@ -2482,12 +2686,26 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "1. If you will come, I wait. 2. If you come, I will wait. 3. If he helps, we will finish. 4. If she will call, we answer. 5. If they hurry, we will be on time."
+            "de": "Der Satzanfang lautet: If I had more time, …"
           },
           "prompt": {
-            "de": "Wie viele Sätze enthalten einen Fehler?"
+            "de": "Wie geht der Satz richtig weiter? Dein Partner liest den Anfang vor."
           },
-          "answer": 2
+          "options": [
+            {
+              "de": "I will read more."
+            },
+            {
+              "de": "I would have read more."
+            },
+            {
+              "de": "I read more."
+            },
+            {
+              "de": "I would read more."
+            }
+          ],
+          "answer": 4
         }
       ]
     },
@@ -2508,12 +2726,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Wörter: valley, lake, bread, peak, cave, shirt, rope, bridge."
+            "de": "Das deutsche Wort ist „Tal“."
           },
           "prompt": {
-            "de": "Wie viele dieser Wörter bezeichnen etwas Natürliches in der Landschaft?"
+            "de": "Wie heißt das Wort auf Englisch? Dein Partner nennt das deutsche Wort."
           },
-          "answer": 4
+          "options": [
+            {
+              "de": "valley"
+            },
+            {
+              "de": "peak"
+            },
+            {
+              "de": "cave"
+            },
+            {
+              "de": "bridge"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "hoehle-vocab-v2",
@@ -2668,12 +2900,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Wörter: big, beautiful, dangerous, small, interesting."
+            "de": "Das Wort lautet „beautiful“."
           },
           "prompt": {
-            "de": "Wie viele davon steigert man mit „more“ und „most“ statt mit „-er“ und „-est“?"
+            "de": "Wie lautet der Komparativ des Wortes, das dein Partner nennt?"
           },
-          "answer": 3
+          "options": [
+            {
+              "de": "most beautiful"
+            },
+            {
+              "de": "more beautiful"
+            },
+            {
+              "de": "beautifuller"
+            },
+            {
+              "de": "beautifuler"
+            }
+          ],
+          "answer": 2
         },
         {
           "id": "hoehle-comparison-m2",
@@ -2785,11 +3031,25 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "1. This is gooder than that. 2. She is taller than me. 3. It is the baddest day. 4. He runs faster than I. 5. The trail is more long."
+            "de": "Das Wort lautet „bad“."
           },
           "prompt": {
-            "de": "Wie viele Sätze enthalten einen Fehler?"
+            "de": "Wie lautet der Superlativ des Wortes, das dein Partner nennt? („the … day“)"
           },
+          "options": [
+            {
+              "de": "most bad"
+            },
+            {
+              "de": "worse"
+            },
+            {
+              "de": "worst"
+            },
+            {
+              "de": "baddest"
+            }
+          ],
           "answer": 3
         }
       ]
@@ -2814,9 +3074,23 @@
             "de": "Ein Lichtstrahl trifft unter 35 Grad zum Lot auf einen ebenen Spiegel."
           },
           "prompt": {
-            "de": "Unter wie viel Grad zum Lot wird der Strahl zurückgeworfen?"
+            "de": "Unter welchem Winkel zum Lot wird der Strahl zurückgeworfen?"
           },
-          "answer": 35
+          "options": [
+            {
+              "de": "55°"
+            },
+            {
+              "de": "70°"
+            },
+            {
+              "de": "90°"
+            },
+            {
+              "de": "35°"
+            }
+          ],
+          "answer": 4
         },
         {
           "id": "bergsee-o2",
@@ -2955,12 +3229,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Nach der klassischen Einteilung zählt man beim Regenbogen diese Farben: Rot, Orange, Gelb, Grün, Blau, Indigo und Violett."
+            "de": "Der Regenbogen zeigt die Farben des Lichts. Die Farbe außen oben im Bogen hat die größte Wellenlänge."
           },
           "prompt": {
-            "de": "Wie viele Farben sind das?"
+            "de": "Welche Farbe ist das?"
           },
-          "answer": 7
+          "options": [
+            {
+              "de": "Rot"
+            },
+            {
+              "de": "Violett"
+            },
+            {
+              "de": "Grün"
+            },
+            {
+              "de": "Gelb"
+            }
+          ],
+          "answer": 1
         },
         {
           "id": "bergsee-2-b2",
@@ -3098,10 +3386,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Die Seilbahn fährt 3 km in 10 Minuten."
+            "de": "Die Seilbahn fährt 3 km weit."
           },
           "prompt": {
-            "de": "Wie viele Meter fährt sie in einer Minute?"
+            "de": "Sie braucht dafür 10 Minuten. Wie viele Meter fährt sie in einer Minute?"
           },
           "answer": 300
         },
@@ -3215,10 +3503,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Ein Zug fährt 150 km in 1 Stunde und 30 Minuten."
+            "de": "Ein Zug fährt 150 km weit."
           },
           "prompt": {
-            "de": "Wie schnell fährt er im Durchschnitt, in km/h?"
+            "de": "Er braucht dafür 1 Stunde und 30 Minuten. Wie schnell fährt er im Durchschnitt, in km/h?"
           },
           "answer": 100
         }
@@ -3242,10 +3530,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Ein Rucksack hat die Masse 8 kg. Rechnet mit 10 N pro kg."
+            "de": "Ein Rucksack hat die Masse 8 kg."
           },
           "prompt": {
-            "de": "Wie groß ist seine Gewichtskraft in Newton?"
+            "de": "Rechnet mit 10 N pro kg. Wie groß ist seine Gewichtskraft in Newton?"
           },
           "answer": 80
         },
@@ -3359,10 +3647,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Eine Seilbahn-Kabine mit Fahrgästen hat die Masse 600 kg. Rechnet mit 10 N pro kg."
+            "de": "Eine Seilbahn-Kabine mit Fahrgästen hat die Masse 600 kg."
           },
           "prompt": {
-            "de": "Wie groß muss die Kraft des Seils mindestens sein, um sie zu halten, in Newton?"
+            "de": "Rechnet mit 10 N pro kg. Wie groß muss die Kraft des Seils mindestens sein, um sie zu halten, in Newton?"
           },
           "answer": 6000
         }
@@ -3385,10 +3673,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Eine Lampe liegt an 12 Volt und hat den Widerstand 4 Ohm."
+            "de": "Eine Lampe liegt an 12 Volt."
           },
           "prompt": {
-            "de": "Wie groß ist die Stromstärke in Ampere?"
+            "de": "Sie hat den Widerstand 4 Ohm. Wie groß ist die Stromstärke in Ampere?"
           },
           "answer": 3
         },
@@ -3502,10 +3790,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Ein Gerät nimmt bei 230 Volt eine Stromstärke von 5 Ampere auf."
+            "de": "Ein Gerät hängt an 230 Volt."
           },
           "prompt": {
-            "de": "Wie groß ist die Leistung in Watt? (P = U · I)"
+            "de": "Es nimmt eine Stromstärke von 5 Ampere auf. Wie groß ist die Leistung in Watt? (P = U · I)"
           },
           "answer": 1150
         }
@@ -3528,12 +3816,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Das Mittelalter dauerte etwa von 500 bis 1500."
+            "de": "Dieses Zeitalter dauerte etwa von 500 bis 1500. Es kam nach der Antike."
           },
           "prompt": {
-            "de": "Wie viele Jahre dauerte es etwa?"
+            "de": "Wie heißt das Zeitalter, das dein Partner beschreibt?"
           },
-          "answer": 1000
+          "options": [
+            {
+              "de": "Steinzeit"
+            },
+            {
+              "de": "Mittelalter"
+            },
+            {
+              "de": "Antike"
+            },
+            {
+              "de": "Neuzeit"
+            }
+          ],
+          "answer": 2
         },
         {
           "id": "burg-m2",
@@ -3653,10 +3955,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Mit 7 Jahren wurde ein Junge Page, mit 14 Knappe und mit 21 Ritter."
+            "de": "Mit 7 Jahren wurde ein Junge Page, mit 14 Knappe."
           },
           "prompt": {
-            "de": "Wie viele Jahre dauerte die Ausbildung vom Page bis zum Ritterschlag?"
+            "de": "Mit 21 wurde er Ritter. Wie viele Jahre dauerte die Ausbildung vom Page bis zum Ritterschlag?"
           },
           "answer": 14
         }
@@ -3679,10 +3981,10 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Im Jahr 1200 hatte eine Stadt 2 000 Einwohner. 100 Jahre später waren es dreimal so viele."
+            "de": "Im Jahr 1200 hatte eine Stadt 2 000 Einwohner."
           },
           "prompt": {
-            "de": "Wie viele Einwohner hatte die Stadt im Jahr 1300?"
+            "de": "100 Jahre später waren es dreimal so viele. Wie viele Einwohner hatte die Stadt im Jahr 1300?"
           },
           "answer": 6000
         },
@@ -3804,10 +4106,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Eine Stadt hat 4 Tore. An jedem Tor stehen am Tag 3 Wachen und in der Nacht 2."
+            "de": "Eine Stadt hat 4 Tore. An jedem Tor stehen am Tag 3 Wachen."
           },
           "prompt": {
-            "de": "Wie viele Wachen sind es insgesamt an allen Toren (Tag und Nacht)?"
+            "de": "In der Nacht stehen an jedem Tor 2 Wachen. Wie viele Wachen sind es insgesamt an allen Toren (Tag und Nacht)?"
           },
           "answer": 20
         }
@@ -3830,12 +4132,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Kolumbus segelte 1492 los und erreichte Amerika. Vasco da Gama kam 1498 in Indien an."
+            "de": "Dieser portugiesische Seefahrer umsegelte Afrika und kam 1498 in Indien an."
           },
           "prompt": {
-            "de": "Wie viele Jahre liegen zwischen beiden Ereignissen?"
+            "de": "Welcher Seefahrer ist das?"
           },
-          "answer": 6
+          "options": [
+            {
+              "de": "Magellan"
+            },
+            {
+              "de": "James Cook"
+            },
+            {
+              "de": "Vasco da Gama"
+            },
+            {
+              "de": "Kolumbus"
+            }
+          ],
+          "answer": 3
         },
         {
           "id": "passhoehe-d2",
@@ -3947,10 +4263,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Konstantinopel wurde 1453 von den Osmanen erobert. Kolumbus segelte 1492."
+            "de": "Konstantinopel wurde 1453 von den Osmanen erobert."
           },
           "prompt": {
-            "de": "Wie viele Jahre liegen zwischen der Eroberung und Kolumbus' Fahrt?"
+            "de": "Kolumbus segelte 1492. Wie viele Jahre liegen zwischen der Eroberung und Kolumbus' Fahrt?"
           },
           "answer": 39
         }
@@ -3973,12 +4289,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Gutenberg erfand um das Jahr 1450 den Buchdruck mit beweglichen Lettern. Luther veröffentlichte 1517 seine Thesen."
+            "de": "Er lebte in Mainz und erfand um 1450 den Buchdruck mit beweglichen Lettern."
           },
           "prompt": {
-            "de": "Wie viele Jahre liegen zwischen 1450 und 1517?"
+            "de": "Wer ist die Person, die dein Partner beschreibt?"
           },
-          "answer": 67
+          "options": [
+            {
+              "de": "Luther"
+            },
+            {
+              "de": "Kolumbus"
+            },
+            {
+              "de": "Karl der Große"
+            },
+            {
+              "de": "Gutenberg"
+            }
+          ],
+          "answer": 4
         },
         {
           "id": "burgmarkt-r2",
@@ -4090,12 +4420,26 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Luthers Thesen erschienen 1517, der Reichstag in Worms war 1521, der Augsburger Religionsfriede 1555."
+            "de": "Im Jahr 1555 wurde beschlossen: Der Landesherr bestimmt die Konfession seiner Untertanen."
           },
           "prompt": {
-            "de": "Wie viele Jahre liegen zwischen den Thesen und dem Religionsfrieden?"
+            "de": "Wie heißt dieser Beschluss?"
           },
-          "answer": 38
+          "options": [
+            {
+              "de": "Augsburger Religionsfriede"
+            },
+            {
+              "de": "Wormser Edikt"
+            },
+            {
+              "de": "Westfälischer Friede"
+            },
+            {
+              "de": "Ablasshandel"
+            }
+          ],
+          "answer": 1
         }
       ]
     },
@@ -4117,12 +4461,26 @@
           ],
           "difficulty": 1,
           "clue": {
-            "de": "Karl der Große wurde im Jahr 800 Kaiser. Otto der Große wurde im Jahr 962 Kaiser."
+            "de": "Im Jahr 800 krönte der Papst in Rom einen Frankenkönig zum Kaiser."
           },
           "prompt": {
-            "de": "Wie viele Jahre liegen dazwischen?"
+            "de": "Welcher Herrscher war das?"
           },
-          "answer": 162
+          "options": [
+            {
+              "de": "Chlodwig"
+            },
+            {
+              "de": "Karl der Große"
+            },
+            {
+              "de": "Otto der Große"
+            },
+            {
+              "de": "Friedrich Barbarossa"
+            }
+          ],
+          "answer": 2
         },
         {
           "id": "burg-2-z2",
@@ -4242,10 +4600,10 @@
           ],
           "difficulty": 3,
           "clue": {
-            "de": "Eine Burg wurde 1180 gebaut und 1480 erweitert."
+            "de": "Eine Burg wurde 1180 gebaut."
           },
           "prompt": {
-            "de": "Wie viele Jahre war die Burg bei der Erweiterung alt?"
+            "de": "1480 wurde sie erweitert. Wie viele Jahre war die Burg bei der Erweiterung alt?"
           },
           "answer": 300
         }

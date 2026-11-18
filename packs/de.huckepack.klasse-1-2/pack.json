@@ -1,7 +1,7 @@
 {
  "$schema": "../../docs/schema/pack.schema.json",
  "id": "de.huckepack.klasse-1-2",
- "version": 1,
+ "version": 2,
  "title": {
   "de": "Bauernhof und Dorf (Klasse 1–2)",
   "en": "Farm and Village (Grades 1–2)"
@@ -443,10 +443,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Im Stall stehen 6 Kühe. Dann kommen 3 Kühe dazu."
+      "de": "Im Stall stehen 6 Kühe."
      },
      "prompt": {
-      "de": "Wie viele Kühe sind es jetzt?"
+      "de": "Dann kommen 3 Kühe dazu. Wie viele Kühe sind es jetzt?"
      },
      "answer": 9
     },
@@ -562,10 +562,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Auf der Weide sind 9 Kühe. Im Stall sind 7 Kühe. Auf dem Hof sind 4 Kühe."
+      "de": "Auf der Weide sind 9 Kühe. Im Stall sind 7 Kühe."
      },
      "prompt": {
-      "de": "Wie viele Kühe sind es zusammen?"
+      "de": "Auf dem Hof sind 4 Kühe. Wie viele Kühe sind es zusammen?"
      },
      "answer": 20
     }
@@ -589,10 +589,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Es gibt 10 Eimer. 4 Eimer sind kaputt."
+      "de": "Es gibt 10 Eimer."
      },
      "prompt": {
-      "de": "Wie viele Eimer sind noch ganz?"
+      "de": "4 Eimer sind kaputt. Wie viele Eimer sind noch ganz?"
      },
      "answer": 6
     },
@@ -708,10 +708,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Im Stall sind 20 Tiere. 6 Kühe gehen raus. 5 Schafe gehen auch raus."
+      "de": "Im Stall sind 20 Tiere. 6 Kühe gehen raus."
      },
      "prompt": {
-      "de": "Wie viele Tiere sind noch im Stall?"
+      "de": "Auch 5 Schafe gehen raus. Wie viele Tiere sind noch im Stall?"
      },
      "answer": 9
     }
@@ -734,10 +734,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Im Hühnerhof stehen 4 Kisten. In jeder Kiste sind 10 Eier."
+      "de": "Im Hühnerhof stehen 4 Kisten."
      },
      "prompt": {
-      "de": "Wie viele Eier sind es?"
+      "de": "In jeder Kiste sind 10 Eier. Wie viele Eier sind es?"
      },
      "answer": 40
     },
@@ -845,10 +845,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Es sind 7 Kisten mit je 10 Eiern. Dazu kommen 8 einzelne Eier."
+      "de": "Es sind 7 Kisten mit je 10 Eiern."
      },
      "prompt": {
-      "de": "Wie viele Eier sind es?"
+      "de": "Dazu kommen 8 einzelne Eier. Wie viele Eier sind es?"
      },
      "answer": 78
     }
@@ -872,10 +872,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Auf dem Zaun sitzen 6 Hühner. Auf dem Boden sind doppelt so viele."
+      "de": "Auf dem Zaun sitzen 6 Hühner."
      },
      "prompt": {
-      "de": "Wie viele Hühner sind auf dem Boden?"
+      "de": "Auf dem Boden sind doppelt so viele. Wie viele Hühner sind auf dem Boden?"
      },
      "answer": 12
     },
@@ -991,10 +991,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Der Bauer hat 36 Hühner. Die Hälfte davon ist braun."
+      "de": "Der Bauer hat 36 Hühner."
      },
      "prompt": {
-      "de": "Wie viele Hühner sind nicht braun?"
+      "de": "Die Hälfte davon ist braun. Wie viele Hühner sind nicht braun?"
      },
      "answer": 18
     }
@@ -1017,10 +1017,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "In der Scheune liegen 30 Heuballen. Der Bauer bringt 20 Ballen dazu."
+      "de": "In der Scheune liegen 30 Heuballen."
      },
      "prompt": {
-      "de": "Wie viele Heuballen sind es jetzt?"
+      "de": "Der Bauer bringt 20 Ballen dazu. Wie viele Heuballen sind es jetzt?"
      },
      "answer": 50
     },
@@ -1136,10 +1136,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Zuerst sind 85 Heuballen da. 40 Ballen werden verkauft. 15 Ballen kommen neu dazu."
+      "de": "Zuerst sind 85 Heuballen da. 40 Ballen werden verkauft."
      },
      "prompt": {
-      "de": "Wie viele Ballen sind dann da?"
+      "de": "Dann kommen 15 Ballen neu dazu. Wie viele Ballen sind dann da?"
      },
      "answer": 60
     }
@@ -1163,10 +1163,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "5 Körbe stehen in der Scheune. In jedem Korb sind 2 Äpfel."
+      "de": "5 Körbe stehen in der Scheune."
      },
      "prompt": {
-      "de": "Wie viele Äpfel sind es?"
+      "de": "In jedem Korb sind 2 Äpfel. Wie viele Äpfel sind es?"
      },
      "answer": 10
     },
@@ -1282,10 +1282,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Auf dem Hof sind 6 Zäune. Jeder Zaun hat 10 Latten. 5 Latten sind kaputt."
+      "de": "Auf dem Hof sind 6 Zäune. Jeder Zaun hat 10 Latten."
      },
      "prompt": {
-      "de": "Wie viele Latten sind noch ganz?"
+      "de": "5 Latten sind kaputt. Wie viele Latten sind noch ganz?"
      },
      "answer": 55
     }
@@ -1454,10 +1454,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Auf dem Etikett steht 60. Der Müller braucht 100."
+      "de": "Auf dem Etikett steht 60."
      },
      "prompt": {
-      "de": "Wie viele fehlen bis 100?"
+      "de": "Der Müller braucht 100. Wie viele fehlen bis 100?"
      },
      "answer": 40
     },
@@ -1573,10 +1573,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "In der Mühle sind 56 Säcke. Am Morgen kommen 27 Säcke dazu."
+      "de": "In der Mühle sind 56 Säcke."
      },
      "prompt": {
-      "de": "Wie viele Säcke sind es dann?"
+      "de": "Am Morgen kommen 27 Säcke dazu. Wie viele Säcke sind es dann?"
      },
      "answer": 83
     }
@@ -1746,10 +1746,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Das ist die Uhr am Turm. Der Bus kommt 3 Stunden später."
+      "de": "Das ist die Uhr am Turm. Sag deinem Partner, wie spät es ist."
      },
      "prompt": {
-      "de": "Um wie viel Uhr kommt der Bus? Tippt die Zahl: Er kommt um … Uhr."
+      "de": "Der Bus kommt 3 Stunden später. Um wie viel Uhr kommt der Bus? Tippt die Zahl: Er kommt um … Uhr."
      },
      "answer": 5,
      "clueVisual": {
@@ -1928,10 +1928,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Der Film beginnt um halb vier nachmittags. Er dauert 1 Stunde."
+      "de": "Der Film beginnt um halb vier nachmittags."
      },
      "prompt": {
-      "de": "Wann ist der Film zu Ende? Tippt die Uhrzeit."
+      "de": "Er dauert 1 Stunde. Wann ist der Film zu Ende? Tippt die Uhrzeit."
      },
      "answer": 990,
      "answerFormat": "time"
@@ -2121,10 +2121,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Eine Milch kostet 90 Cent. Ein Brot kostet 1,10 €."
+      "de": "Eine Milch kostet 90 Cent."
      },
      "prompt": {
-      "de": "Wie viel kosten Milch und Brot zusammen?"
+      "de": "Ein Brot kostet 1,10 €. Wie viel kosten Milch und Brot zusammen?"
      },
      "answer": 200,
      "answerFormat": "euroCents"
@@ -2149,10 +2149,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Ein Ball kostet 2 €. Du gibst dem Verkäufer 5 €."
+      "de": "Ein Ball kostet 2 €."
      },
      "prompt": {
-      "de": "Wie viel Wechselgeld bekommst du?"
+      "de": "Du gibst dem Verkäufer 5 €. Wie viel Wechselgeld bekommst du?"
      },
      "answer": 300,
      "answerFormat": "euroCents"
@@ -2277,10 +2277,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Du hast 10 €. Du kaufst Käse für 4 € und Butter für 2 €."
+      "de": "Du hast 10 €. Du kaufst Käse für 4 €."
      },
      "prompt": {
-      "de": "Wie viel Geld hast du noch?"
+      "de": "Du kaufst auch Butter für 2 €. Wie viel Geld hast du noch?"
      },
      "answer": 400,
      "answerFormat": "euroCents"
@@ -2304,12 +2304,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Das Wort ist: BIRNE."
+      "de": "Ein Obst. Es ist rot und rund. Es wächst am Baum."
      },
      "prompt": {
-      "de": "Wie viele Buchstaben hat das Wort?"
+      "de": "Welches Obst beschreibt dein Partner?"
      },
-     "answer": 5
+     "options": [
+      {
+       "de": "Apfel"
+      },
+      {
+       "de": "Banane"
+      },
+      {
+       "de": "Zitrone"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "obstwiese-2",
@@ -2423,12 +2434,23 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Das Wort ist: SCHAF. Sch ist ein Laut."
+      "de": "Das Wort fängt mit Sch an. Es ist ein Tier mit Wolle."
      },
      "prompt": {
-      "de": "Wie viele Laute hat das Wort?"
+      "de": "Welches Wort meint dein Partner?"
      },
-     "answer": 3
+     "options": [
+      {
+       "de": "Schal"
+      },
+      {
+       "de": "Schaf"
+      },
+      {
+       "de": "Schuh"
+      }
+     ],
+     "answer": 2
     }
    ]
   },
@@ -2450,11 +2472,22 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Das Wort ist: Banane."
+      "de": "Ba – na – ne. Sag es langsam und klatsche dazu."
      },
      "prompt": {
-      "de": "Wie viele Silben hat das Wort? Klatscht mit."
+      "de": "Welches Wort hört ihr?"
      },
+     "options": [
+      {
+       "de": "Birne"
+      },
+      {
+       "de": "Nase"
+      },
+      {
+       "de": "Banane"
+      }
+     ],
      "answer": 3
     },
     {
@@ -2561,12 +2594,23 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Die Wörter sind: Hase, Igel, Schmetterling."
+      "de": "Das Wort reimt sich auf Maus."
      },
      "prompt": {
-      "de": "Wie viele Silben haben alle drei Wörter zusammen?"
+      "de": "Welches Wort meint dein Partner?"
      },
-     "answer": 7
+     "options": [
+      {
+       "de": "Haus"
+      },
+      {
+       "de": "Hund"
+      },
+      {
+       "de": "Baum"
+      }
+     ],
+     "answer": 1
     }
    ]
   },
@@ -2587,12 +2631,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Der Satz heißt: Der Bäcker backt Brot und Brötchen."
+      "de": "Der Bäcker backt Brot. Lies den Satz vor."
      },
      "prompt": {
-      "de": "Wie viele Nomen sind im Satz?"
+      "de": "Welches Wort im Satz sagt, was der Bäcker tut?"
      },
-     "answer": 3
+     "options": [
+      {
+       "de": "Bäcker"
+      },
+      {
+       "de": "backt"
+      },
+      {
+       "de": "Brot"
+      }
+     ],
+     "answer": 2
     },
     {
      "id": "baeckerei-2",
@@ -2725,12 +2780,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Das Wort ist: Semmel. Du zählst das m."
+      "de": "Das Wort heißt Semmel. Sag es langsam: Sem – mel."
      },
      "prompt": {
-      "de": "Wie oft steht das m im Wort?"
+      "de": "Wie schreibt man das Wort?"
      },
-     "answer": 2
+     "options": [
+      {
+       "de": "Semel"
+      },
+      {
+       "de": "Sehmel"
+      },
+      {
+       "de": "Semmel"
+      }
+     ],
+     "answer": 3
     },
     {
      "id": "baeckerei-2-2",
@@ -3127,12 +3193,23 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Die Wörter sind: hell, Sonne, singen, lang, springen, Wiese, rot."
+      "de": "Das Wort sagt, wie die Sonne ist. Es fängt mit h an."
      },
      "prompt": {
-      "de": "Wie viele davon sind Adjektive (Wiewörter)?"
+      "de": "Welches Wort meint dein Partner?"
      },
-     "answer": 3
+     "options": [
+      {
+       "de": "heiß"
+      },
+      {
+       "de": "kalt"
+      },
+      {
+       "de": "nass"
+      }
+     ],
+     "answer": 1
     }
    ]
   },
@@ -3153,11 +3230,22 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Es gibt 4 Jahreszeiten. Zuerst kommt der Frühling. Dann kommen Sommer, Herbst und Winter."
+      "de": "Es ist heiß. Die Kinder gehen baden."
      },
      "prompt": {
-      "de": "Der Sommer ist die wievielte Jahreszeit?"
+      "de": "Welche Jahreszeit meint dein Partner?"
      },
+     "options": [
+      {
+       "de": "Herbst"
+      },
+      {
+       "de": "Sommer"
+      },
+      {
+       "de": "Winter"
+      }
+     ],
      "answer": 2
     },
     {
@@ -3291,12 +3379,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Eine Blume hat vier Teile: Wurzel, Stängel, Blatt und Blüte."
+      "de": "Dieser Teil der Blume steckt in der Erde. Er trinkt Wasser."
      },
      "prompt": {
-      "de": "Wie viele Teile hat die Blume?"
+      "de": "Welcher Teil der Blume ist das?"
      },
-     "answer": 4
+     "options": [
+      {
+       "de": "Blüte"
+      },
+      {
+       "de": "Blatt"
+      },
+      {
+       "de": "Wurzel"
+      }
+     ],
+     "answer": 3
     },
     {
      "id": "garten-2-2",
@@ -3428,10 +3527,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Am Teich sitzen 3 Frösche. 2 Enten schwimmen. 4 Fische sind im Wasser."
+      "de": "Am Teich sitzen 3 Frösche. 2 Enten schwimmen."
      },
      "prompt": {
-      "de": "Wie viele Tiere sind es zusammen?"
+      "de": "4 Fische sind im Wasser. Wie viele Tiere sind es zusammen?"
      },
      "answer": 9
     },
@@ -3539,10 +3638,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Ein Frosch hat 4 Beine. Am Teich sind 6 Frösche."
+      "de": "Ein Frosch hat 4 Beine."
      },
      "prompt": {
-      "de": "Wie viele Froschbeine sind das?"
+      "de": "Am Teich sind 6 Frösche. Wie viele Froschbeine sind das?"
      },
      "answer": 24
     }
@@ -3566,12 +3665,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Wasser kann Eis sein, flüssiges Wasser oder Dampf."
+      "de": "Im Winter ist der Teich hart und glatt. Das Wasser ist fest."
      },
      "prompt": {
-      "de": "Wie viele Formen hat Wasser?"
+      "de": "Wie heißt das Wasser dann?"
      },
-     "answer": 3
+     "options": [
+      {
+       "de": "Eis"
+      },
+      {
+       "de": "Dampf"
+      },
+      {
+       "de": "Regen"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "teich-2-2",
@@ -3677,10 +3787,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Der Teich ist im Dezember, Januar und Februar zugefroren."
+      "de": "Der Teich friert im Dezember zu."
      },
      "prompt": {
-      "de": "Wie viele Monate ist der Teich zugefroren?"
+      "de": "Im März taut er wieder auf. Wie viele Monate ist er zugefroren?"
      },
      "answer": 3
     }
@@ -3703,12 +3813,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Die Ampel hat 3 Lichter: rot, gelb und grün."
+      "de": "Du stehst an der Ampel. Das Licht ist an und du musst stehen bleiben."
      },
      "prompt": {
-      "de": "Wie viele Lichter hat die Ampel?"
+      "de": "Welche Farbe hat das Licht?"
      },
-     "answer": 3
+     "options": [
+      {
+       "de": "Gelb"
+      },
+      {
+       "de": "Rot"
+      },
+      {
+       "de": "Grün"
+      }
+     ],
+     "answer": 2
     },
     {
      "id": "strasse-2",
@@ -3814,10 +3935,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Ein Auto hat 4 Räder. Ein Fahrrad hat 2 Räder. Auf der Straße sind 5 Autos und 3 Fahrräder."
+      "de": "Ein Auto hat 4 Räder. Ein Fahrrad hat 2 Räder."
      },
      "prompt": {
-      "de": "Wie viele Räder sind es zusammen?"
+      "de": "Auf der Straße sind 5 Autos und 3 Fahrräder. Wie viele Räder sind es zusammen?"
      },
      "answer": 26
     }
@@ -3841,10 +3962,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Der Schulweg hat 3 Straßen. An jeder Straße ist ein Zebrastreifen."
+      "de": "Der Schulweg hat 3 Straßen."
      },
      "prompt": {
-      "de": "Wie viele Zebrastreifen sind es?"
+      "de": "An jeder Straße ist ein Zebrastreifen. Wie viele Zebrastreifen sind es?"
      },
      "answer": 3
     },
@@ -3953,10 +4074,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Der Bus hat 20 Plätze. 5 Plätze sind schon besetzt. 12 Kinder warten an der Haltestelle."
+      "de": "Der Bus hat 20 Plätze. 5 Plätze sind schon besetzt."
      },
      "prompt": {
-      "de": "Wie viele Plätze bleiben frei, wenn alle 12 Kinder einsteigen?"
+      "de": "12 Kinder warten an der Haltestelle und steigen alle ein. Wie viele Plätze bleiben frei?"
      },
      "answer": 3
     }
@@ -3979,12 +4100,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Im Wald leben ein Fuchs, ein Reh, ein Igel und ein Eichhörnchen."
+      "de": "Ein Tier im Wald. Es hat rotes Fell und einen buschigen Schwanz."
      },
      "prompt": {
-      "de": "Wie viele Tiere sind das?"
+      "de": "Welches Tier beschreibt dein Partner?"
      },
-     "answer": 4
+     "options": [
+      {
+       "de": "Reh"
+      },
+      {
+       "de": "Igel"
+      },
+      {
+       "de": "Fuchs"
+      }
+     ],
+     "answer": 3
     },
     {
      "id": "wald-2",
@@ -4090,10 +4222,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Im Wald leben 4 Igelmütter. Jede hat 2 Junge."
+      "de": "Im Wald leben 4 Igelmütter."
      },
      "prompt": {
-      "de": "Wie viele Igeljunge sind das?"
+      "de": "Jede hat 2 Junge. Wie viele Igeljunge sind das?"
      },
      "answer": 8
     }
@@ -4117,10 +4249,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Im Herbst fallen die Blätter. Unter dem Baum liegen 7 rote und 5 gelbe Blätter."
+      "de": "Im Herbst fallen die Blätter. Unter dem Baum liegen 7 rote Blätter."
      },
      "prompt": {
-      "de": "Wie viele Blätter liegen unter dem Baum?"
+      "de": "Dazu kommen 5 gelbe Blätter. Wie viele Blätter liegen unter dem Baum?"
      },
      "answer": 12
     },
@@ -4228,10 +4360,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Der Förster pflanzt 3 Reihen mit je 8 jungen Bäumen."
+      "de": "Der Förster pflanzt 3 Reihen."
      },
      "prompt": {
-      "de": "Wie viele junge Bäume sind das?"
+      "de": "In jeder Reihe stehen 8 junge Bäume. Wie viele junge Bäume sind das?"
      },
      "answer": 24
     }
@@ -4254,12 +4386,23 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Die Sinne sind: Sehen, Hören, Riechen, Schmecken und Fühlen."
+      "de": "Du hältst die Nase an eine Blume."
      },
      "prompt": {
-      "de": "Wie viele Sinne hat ein Mensch?"
+      "de": "Welcher Sinn ist das?"
      },
-     "answer": 5
+     "options": [
+      {
+       "de": "Riechen"
+      },
+      {
+       "de": "Hören"
+      },
+      {
+       "de": "Sehen"
+      }
+     ],
+     "answer": 1
     },
     {
      "id": "huette-2",
@@ -4373,10 +4516,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Ein Kind hat 20 Milchzähne. 3 Zähne sind ausgefallen."
+      "de": "Ein Kind hat 20 Milchzähne."
      },
      "prompt": {
-      "de": "Wie viele Milchzähne sind noch da?"
+      "de": "3 Zähne sind ausgefallen. Wie viele Milchzähne sind noch da?"
      },
      "answer": 17
     }
@@ -4400,10 +4543,10 @@
      "difficulty": 1,
      "type": "splitInfo",
      "clue": {
-      "de": "Man putzt die Zähne morgens und abends. Das sind 2 Mal am Tag. Eine Woche hat 7 Tage."
+      "de": "Man putzt die Zähne morgens und abends."
      },
      "prompt": {
-      "de": "Wie oft putzt man die Zähne in einer Woche?"
+      "de": "Eine Woche hat 7 Tage. Wie oft putzt man die Zähne in einer Woche?"
      },
      "answer": 14
     },
@@ -4512,10 +4655,10 @@
      "difficulty": 3,
      "type": "splitInfo",
      "clue": {
-      "de": "Man soll am Tag 5 Mal Obst oder Gemüse essen. Heute hast du schon 2 Mal gegessen."
+      "de": "Man soll am Tag 5 Mal Obst oder Gemüse essen."
      },
      "prompt": {
-      "de": "Wie oft musst du heute noch Obst oder Gemüse essen?"
+      "de": "Heute hast du schon 2 Mal gegessen. Wie oft musst du heute noch Obst oder Gemüse essen?"
      },
      "answer": 3
     }

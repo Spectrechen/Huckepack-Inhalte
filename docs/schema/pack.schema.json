@@ -242,6 +242,7 @@
         "rupeePaise",
         "realCentavos",
         "time",
+        "time12",
         "minutes"
       ]
     },
@@ -325,6 +326,15 @@
         },
         "answerFormat": {
           "$ref": "#/$defs/answerFormat"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {
+            "$ref": "#/$defs/localizedText"
+          },
+          "description": "Instead of the number pad, the answering player taps one of these. answer is then the option number (1 = first). No answerFormat."
         }
       },
       "allOf": [

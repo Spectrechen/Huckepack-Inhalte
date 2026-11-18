@@ -13,7 +13,7 @@ PLACES = {"numbers-hill", "mill", "market", "clock-tower", "syllable-school", "l
           "weather-station", "crossing", "bus-stop", "tea-house", "zoo", "lighthouse"}
 TYPES = {"splitInfo", "relay", "matchPairs", "bothAgree"}
 SUBJECTS = {"math", "german", "science", "english"}
-FORMATS = {"integer", "euroCents", "dollarCents", "poundPence", "rupeePaise", "realCentavos", "time", "minutes"}
+FORMATS = {"integer", "euroCents", "dollarCents", "poundPence", "rupeePaise", "realCentavos", "time", "time12", "minutes"}
 OPS = {"add", "subtract", "multiply", "divide"}
 MINIGAMES = {"ticTacToe", "dotsAndBoxes"}
 EUROS = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000}
@@ -103,8 +103,16 @@ def check_task(where, t, errors):
         a = t.get("answer")
         if not isinstance(a, int) or isinstance(a, bool) or a < 0:
             errors.append(f"{where}: answer must be an integer >= 0")
-        elif fmt == "time" and not 0 <= a < 1440:
+        elif fmt in ("time", "time12") and not 0 <= a < 1440:
             errors.append(f"{where}: time answer must be minutes since midnight (0-1439)")
+        opts = t.get("options")
+        if opts is not None:
+            if not isinstance(opts, list) or not 2 <= len(opts) <= 6 or not all(is_text(o) for o in opts):
+                errors.append(f"{where}: options must be a list of 2-6 texts")
+            elif isinstance(a, int) and not 1 <= a <= len(opts):
+                errors.append(f"{where}: with options, answer is the option number 1-{len(opts)}")
+            if fmt is not None:
+                errors.append(f"{where}: options and answerFormat don't go together")
     elif kind == "relay":
         need_text("first", "second")
         a = t.get("firstAnswer")
@@ -123,7 +131,7 @@ def check_task(where, t, errors):
                  "divide": lambda: a // op["operand"] if op["operand"] else 0}[op["op"]]()
             if r < 0:
                 errors.append(f"{where}: second answer would be negative ({r}); kids cannot type that")
-            if fmt == "time" and not (0 <= a < 1440 and 0 <= r < 1440):
+            if fmt in ("time", "time12") and not (0 <= a < 1440 and 0 <= r < 1440):
                 errors.append(f"{where}: with answerFormat time both answers must be 0-1439")
     elif kind == "matchPairs":
         need_text("prompt")
