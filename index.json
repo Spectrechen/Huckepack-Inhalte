@@ -2,7 +2,7 @@
   "packs": [
     {
       "author": "Huckepack",
-      "bytes": 123063,
+      "bytes": 127622,
       "courses": [
         {
           "en": "Maths",
@@ -44,7 +44,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/br.huckepack.anos-3-4/",
       "places": 17,
-      "sha256": "1f1d72682d4268d6ce563aeb832f83923940eb15354fe3098360ec0c951efab7",
+      "sha256": "056eccca8a94a6db239b5e74153a8413f1fdf07efe6c1eae11eb2b3d49f5556d",
       "subjects": [
         "ciencias",
         "geo-historia",
@@ -55,7 +55,7 @@
         "en": "Lighthouse Town",
         "pt": "Cidade do Farol"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
@@ -110,7 +110,7 @@
     },
     {
       "author": "Huckepack",
-      "bytes": 83485,
+      "bytes": 85305,
       "courses": [
         {
           "de": "Mathe",
@@ -152,7 +152,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/de.huckepack.klasse-1-2/",
       "places": 16,
-      "sha256": "79af39263029c08017b3a821c3b442bbc96bdde8c6f64281380448c925d2b7b0",
+      "sha256": "492cb20f84bcacf9e373b208cb35654307d8a86ec0f2ee75225b7362f9893a63",
       "subjects": [
         "deutsch",
         "mathe",
@@ -163,11 +163,11 @@
         "de": "Bauernhof und Dorf (Klasse 1–2)",
         "en": "Farm and Village (Grades 1–2)"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
-      "bytes": 84745,
+      "bytes": 86298,
       "courses": [
         {
           "de": "Mathe",
@@ -196,9 +196,9 @@
       },
       "files": [
         {
-          "bytes": 936159,
+          "bytes": 999262,
           "name": "karte.jpg",
-          "sha256": "efa3b03a6a840592ea699a681f1e3ddb7f56411a3cfcf0384540ea8715db1bdb"
+          "sha256": "b2916782ec51f84472a62f20345eff488802efd15e5c76236067be8cf1b8f1a2"
         }
       ],
       "grades": [
@@ -213,7 +213,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/de.huckepack.klasse-5-6/",
       "places": 16,
-      "sha256": "b19033db8967bdc177d10307915fc577d9dfeeeab5a14135bf74819b92e6c14b",
+      "sha256": "48a3f4b387a3bc0238512dd9dee4bec93431a5a6a35c14a51e1658b653848f31",
       "subjects": [
         "biologie",
         "deutsch",
@@ -225,11 +225,11 @@
         "de": "Küste und Hafen: Klasse 5 und 6",
         "en": "Coast and Harbour: Grades 5 and 6"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
-      "bytes": 107582,
+      "bytes": 114293,
       "courses": [
         {
           "de": "Mathe",
@@ -258,9 +258,9 @@
       },
       "files": [
         {
-          "bytes": 940994,
+          "bytes": 999587,
           "name": "karte.jpg",
-          "sha256": "0be43cf36ecffba2477e0a6635a39247c72dba86a918b0e443473a0c223f4f5b"
+          "sha256": "07473c5ce767409f8a4b5faa5e19c51db4f4bbb57682de38a79718d95c2f90a9"
         }
       ],
       "grades": [
@@ -275,7 +275,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/de.huckepack.klasse-7-8/",
       "places": 18,
-      "sha256": "fb0f9dd1e3635e9314547984103265ef957f970778e99ea7ac71281e5a8caad5",
+      "sha256": "003610f1c4d730378f817d70ded73a0c3e9598712a578dedf9161c6c06a031e4",
       "subjects": [
         "deutsch",
         "englisch",
@@ -287,11 +287,11 @@
         "de": "Gebirge: Klasse 7 und 8",
         "en": "Mountains: grades 7 and 8"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
-      "bytes": 125095,
+      "bytes": 129383,
       "courses": [
         {
           "de": "Mathe",
@@ -320,9 +320,9 @@
       },
       "files": [
         {
-          "bytes": 933262,
+          "bytes": 991422,
           "name": "karte.jpg",
-          "sha256": "845ec006f4ce8f96ec13c0e820d88485aaacf33d66ac777a13c618c865d0f02f"
+          "sha256": "c1de86c07a9c2683aa071fb7dde146a9e89dd768381caab4a7883da521a2da27"
         }
       ],
       "grades": [
@@ -337,7 +337,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/de.huckepack.klasse-9-10/",
       "places": 16,
-      "sha256": "4459157546fa0a0e5e4eaa9ef45bfec8ee6728c4dc96e1e92a5b310eeaca8267",
+      "sha256": "2c66c14a6233cfdc2bf3ee40e8ebe1d320b9a4b8fdf2695c0161eafc20cd7d4f",
       "subjects": [
         "chemie",
         "deutsch",
@@ -349,7 +349,7 @@
         "de": "Großstadt: Klasse 9 und 10",
         "en": "Big city: grades 9 and 10"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
@@ -381,7 +381,7 @@
     },
     {
       "author": "Huckepack",
-      "bytes": 102628,
+      "bytes": 106204,
       "courses": [
         {
           "de": "Mathe",
@@ -410,9 +410,9 @@
       },
       "files": [
         {
-          "bytes": 931891,
+          "bytes": 985319,
           "name": "karte.jpg",
-          "sha256": "072199fd94d8c69d76b4b6cfcc9df0b7b88fb88d5573200cd383da21b35135d3"
+          "sha256": "1dc003f4c014e7cab43b6429cacc1f7b6b574eec89da2acc9be4da5129f39823"
         }
       ],
       "grades": [
@@ -428,7 +428,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/de.huckepack.oberstufe/",
       "places": 18,
-      "sha256": "1d8664b706aff8ba88b6e457402ab62f04272f94673e73eaec39a493d0977d32",
+      "sha256": "d64ebc8ebd8c86aa0459765be248dceea5e5190d573677953fa924623b6271cc",
       "subjects": [
         "biologie",
         "deutsch",
@@ -440,11 +440,11 @@
         "de": "Campus: Abitur gemeinsam",
         "en": "Campus: Revising for the Abitur together"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
-      "bytes": 108103,
+      "bytes": 112313,
       "courses": [
         {
           "en": "Mathematics",
@@ -486,7 +486,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/es.huckepack.primaria-3-4/",
       "places": 14,
-      "sha256": "bbfba480521c00f0e2dc5dd5126093338a5d6ca81764ee409484dfecc429b4a6",
+      "sha256": "8e091e475e1c4b596c0ae1ecff0598e6474f85ae4e891c23c2f2746d8bb64cfd",
       "subjects": [
         "lengua",
         "matematicas",
@@ -497,11 +497,11 @@
         "en": "A Village for Primary School (grades 3-4, Spanish)",
         "es": "Un pueblo de primaria (3.º y 4.º)"
       },
-      "version": 2
+      "version": 3
     },
     {
       "author": "Huckepack",
-      "bytes": 126543,
+      "bytes": 128641,
       "courses": [
         {
           "en": "Mathematics",
@@ -543,7 +543,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/fr.huckepack.ce2-cm1/",
       "places": 20,
-      "sha256": "d0e00e0b1a4dd7a0bd7b97646ad5ec57cb9177240650efa861284fdf8ad05591",
+      "sha256": "d788d84df7c40c47122098fa3d9efa041de74f1a0c85f01f464abf40ce4c2f98",
       "subjects": [
         "francais",
         "histgeo",
@@ -554,11 +554,11 @@
         "en": "The castle village",
         "fr": "Le village du château"
       },
-      "version": 2
+      "version": 3
     },
     {
       "author": "Huckepack",
-      "bytes": 87870,
+      "bytes": 90302,
       "courses": [
         {
           "en": "Maths"
@@ -595,7 +595,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/gb.huckepack.years-3-4/",
       "places": 15,
-      "sha256": "2e380fba484897ba99b2d69f0d07fec83dd8285f75582e07f0f059b251810679",
+      "sha256": "cfe19173ea17639f2c130cb26c2a31eb9faa1bd869c64fb8a8bdddf4d09d0610",
       "subjects": [
         "english-ks2",
         "history-geog",
@@ -605,11 +605,11 @@
       "title": {
         "en": "Huckepack Village: Years 3 and 4"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
-      "bytes": 98531,
+      "bytes": 100222,
       "courses": [
         {
           "en": "Mathematics"
@@ -644,7 +644,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/in.huckepack.classes-3-5/",
       "places": 14,
-      "sha256": "e784bbc49e17ea761e2b7dfc0862895ee04e18cb676034d80fd832b9e196c6c0",
+      "sha256": "00229645c67d312d6b371c90a8f43e34ec89a0a1dc0381dcb6bdfed836d073f4",
       "subjects": [
         "eng",
         "evs",
@@ -653,11 +653,11 @@
       "title": {
         "en": "The River Village: Classes 3 to 5"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
-      "bytes": 110537,
+      "bytes": 112971,
       "courses": [
         {
           "en": "Math"
@@ -694,7 +694,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/us.huckepack.grades-1-2/",
       "places": 16,
-      "sha256": "72badd04be9ac177b728617d5ddf7b55aed471b9752322251dc1bcb60e577230",
+      "sha256": "53ebeae594a2507e89acebeb530ad9e8e0c8e9e8b00e4372a3bebefdc00ec9e6",
       "subjects": [
         "us-math",
         "us-reading",
@@ -704,11 +704,11 @@
       "title": {
         "en": "Huckepack Town: Grades 1-2"
       },
-      "version": 1
+      "version": 2
     },
     {
       "author": "Huckepack",
-      "bytes": 105310,
+      "bytes": 108686,
       "courses": [
         {
           "en": "Math"
@@ -746,7 +746,7 @@
       "licence": "CC-BY-4.0",
       "path": "packs/us.huckepack.grades-3-5/",
       "places": 13,
-      "sha256": "daa8424a081a9a526326541469903ae46c2978567a99a6de9332cd4f61c4559a",
+      "sha256": "05f5de66c792efc4f05815121feae666e57a24ade6926d351b4ea62f5da57148",
       "subjects": [
         "coast-ela",
         "coast-math",
@@ -756,7 +756,7 @@
       "title": {
         "en": "Coast Adventure: Grades 3 to 5"
       },
-      "version": 1
+      "version": 2
     }
   ],
   "schemaVersion": 1
